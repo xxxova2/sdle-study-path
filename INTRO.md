@@ -59,3 +59,20 @@ Use Chrome or Safari. Rotate to landscape for long quizzes if you like. Tabs scr
 Study with intention. One day path at a time. Mark the step done. Move.
 
 — SDLE Study Path maintainers  
+
+---
+
+## النسخة العربية (مختصرة)
+
+**مسار SDLE** تطبيق مجاني من المتصفح لامتحان الترخيص السعودي لطب الأسنان — **ليس** الامتحان الرسمي.
+
+- خطط 14–90 يومًا · نفس 14 درسًا عميقًا  
+- قراءة داخل التطبيق · فيديو على Drive · آلاف الأسئلة  
+- **اللبية = اليوم 6** (مستقلة عن الترميمي)  
+- **Feedback بدون تسجيل دخول**  
+- الهدف: تمرين ≥80% ودفتر أخطاء نظيف  
+
+الرابط: https://xxxova2.github.io/sdle-study-path/  
+
+النص الكامل بالإنجليزي + العربي (منشور): [docs/INTRO_POST_EN_AR.md](./docs/INTRO_POST_EN_AR.md)  
+

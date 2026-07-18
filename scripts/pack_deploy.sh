@@ -48,7 +48,7 @@ This folder is the same app as local:
   cd sdle-prep && python3 -m http.server 8765
 
 Includes:
-  - All 7 tabs (Today, Days, Pass, Always, Extra, MCQs, Progress)
+  - All 8 tabs (Today, Days, Pass, Always, Extra, MCQs, Progress, Feedback)
   - Full in-app readings (lessons.js)
   - Full MCQ bank + quizzes/mocks (questions.js)
   - Google Drive video links (no video files)
@@ -69,10 +69,11 @@ Host (examples):
 Progress is stored in the browser (localStorage), same as localhost.
 EOF
 
-# Sanity: every script tag target exists
+# Sanity: every local script/link target exists (strip ?v= cache-bust)
 missing=0
 while read -r src; do
   [[ -z "$src" ]] && continue
+  src="${src%%\?*}"
   if [[ ! -f "$OUT/$src" ]]; then
     echo "ERROR: index references missing $src" >&2
     missing=1

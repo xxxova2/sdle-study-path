@@ -2809,6 +2809,13 @@
         <div class="stat-box"><div class="num" style="color:${goalHit ? "var(--accent2)" : "var(--warn)"}">${state.sessionAnswered}/${state.dailyGoal}</div><div class="lbl">Today MCQ goal</div></div>
       </div>
       <div class="alert">Target practice <strong>≥80%</strong>. Official pass ~542/800. Timer on top bar follows your plan day.</div>
+      <div class="alert" style="font-size:0.92rem">
+        <strong>System check (synced):</strong>
+        ${inv.all} usable MCQs · ${Array.isArray(window.LESSONS) ? window.LESSONS.length : 0}/14 lessons ·
+        plan ${state.planLength}d · free points ${inv.always} · endo ${inv.endo} · perio ${inv.perio} ·
+        op ${inv.operative} · Drive links ${typeof window.videoDriveLink === "function" ? "on" : "off"} ·
+        feedback ${window.SDLE_FEEDBACK && window.SDLE_FEEDBACK.ntfyTopic ? "ntfy" : "off"}
+      </div>
 
       <section class="simple-panel">
         <h3 class="section-label">Fix weak spots</h3>
