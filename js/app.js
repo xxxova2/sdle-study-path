@@ -2542,18 +2542,26 @@
     let okNtfy = false;
     let okEmail = false;
 
-    // 1) ntfy.sh — free, no login for sender or reader (open topic URL)
+    // 1) ntfy.sh — free, no login for sender or reader (open topic URL).
+    // Use JSON body (not Title/Tags headers): fetch rejects header values with
+    // newlines or non-Latin-1 chars → "Invalid value".
     if (cfg.ntfyTopic) {
       try {
-        const res = await fetch("https://ntfy.sh/" + encodeURIComponent(cfg.ntfyTopic), {
+        const title = ("[SDLE " + kindLabel + "] " + String(payload.message || ""))
+          .replace(/[\r\n\t]+/g, " ")
+          .replace(/[^\x20-\x7E]/g, "")
+          .trim()
+          .slice(0, 90) || ("[SDLE " + kindLabel + "]");
+        const res = await fetch("https://ntfy.sh/", {
           method: "POST",
-          headers: {
-            Title: ("[SDLE " + kindLabel + "] " + payload.message).slice(0, 90),
-            Priority: "default",
-            Tags: "speech_balloon,dental_care",
-            Filename: "feedback.txt",
-          },
-          body: text,
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            topic: cfg.ntfyTopic,
+            title: title,
+            message: text,
+            priority: 3,
+            tags: ["speech_balloon"],
+          }),
         });
         if (!res.ok) throw new Error("ntfy HTTP " + res.status);
         okNtfy = true;
