@@ -3,6 +3,24 @@
   const $ = (s, el = document) => el.querySelector(s);
   const app = $("#app");
 
+  let storeWriteWarned = false;
+  function showStorageWarn() {
+    if (storeWriteWarned) return;
+    storeWriteWarned = true;
+    try {
+      console.warn("sdle: localStorage write failed (quota or private mode)");
+      if (document.getElementById("sdle-storage-warn")) return;
+      const el = document.createElement("div");
+      el.id = "sdle-storage-warn";
+      el.setAttribute("role", "alert");
+      el.style.cssText =
+        "position:fixed;bottom:12px;left:12px;right:12px;z-index:9999;background:#7f1d1d;color:#fff;padding:10px 14px;border-radius:8px;font:14px/1.4 system-ui,sans-serif;box-shadow:0 4px 20px rgba(0,0,0,.4)";
+      el.textContent =
+        "Could not save progress (storage full or private mode). Free space or leave private browsing.";
+      document.body.appendChild(el);
+    } catch (_) {}
+  }
+
   const store = {
     get(k, d) {
       try {
@@ -21,10 +39,70 @@
         try {
           console.warn("sdle store.set failed:", k, e && e.name);
         } catch (_) {}
+        showStorageWarn();
         return false;
       }
     },
   };
+
+  function isPlainObject(o) {
+    return o != null && typeof o === "object" && !Array.isArray(o);
+  }
+  function asArray(v, fallback) {
+    return Array.isArray(v) ? v : fallback;
+  }
+  function asObject(v, fallback) {
+    return isPlainObject(v) ? v : fallback;
+  }
+  function normalizeWrongBook(v) {
+    if (!Array.isArray(v)) return [];
+    return v
+      .filter((id) => id != null && (typeof id === "string" || typeof id === "number"))
+      .slice(-500);
+  }
+  function normalizeStats(v) {
+    const s = asObject(v, null);
+    if (!s) return { answered: 0, correct: 0, byTopic: {}, bySubtopic: {} };
+    return {
+      answered: Number.isFinite(+s.answered) ? +s.answered : 0,
+      correct: Number.isFinite(+s.correct) ? +s.correct : 0,
+      byTopic: asObject(s.byTopic, {}),
+      bySubtopic: asObject(s.bySubtopic, {}),
+    };
+  }
+
+  /** Approximate SDLE domain weights for practice balance (not an official SCFHS score). */
+  const BLUEPRINT_WEIGHTS = {
+    restorative: 0.4,
+    perio: 0.18,
+    endo: 0.17,
+    oms: 0.15,
+    ortho_pedo: 0.1,
+  };
+
+  const PERSISTED_KEYS = [
+    "day",
+    "planLength",
+    "stepsDone",
+    "dayDone",
+    "stats",
+    "wrongBook",
+    "seenIds",
+    "cardKnown",
+    "sessionDate",
+    "sessionAnswered",
+    "planDayVolumeKey",
+    "planDayAnswered",
+    "dailyGoal",
+    "dailyGoalUserOverride",
+    "focusMode",
+    "examQa",
+    "history",
+    "planChosen",
+    "viewStack",
+    "pomoMode",
+    "pomoRemaining",
+  ];
 
   /** Local calendar day key (YYYY-MM-DD) for "Today Q" rollover. */
   function todayKey() {
@@ -35,35 +113,45 @@
     return y + "-" + m + "-" + day;
   }
 
+  const rawPlan =
+    typeof window.normalizePlanLength === "function"
+      ? window.normalizePlanLength(store.get("planLength", 14))
+      : [14, 30, 45, 60, 90].indexOf(+store.get("planLength", 14)) >= 0
+        ? +store.get("planLength", 14)
+        : 14;
+  const rawDay = +store.get("day", 1);
+  const rawGoal = +store.get("dailyGoal", 150);
+
   const state = {
     view: "today",
-    day: store.get("day", 1),
+    day: Number.isFinite(rawDay) && rawDay >= 1 ? rawDay : 1,
     /** Calendar track: 14 | 30 | 45 | 60 | 90. Content still from 14 LESSONS. */
-    planLength:
-      typeof window.normalizePlanLength === "function"
-        ? window.normalizePlanLength(store.get("planLength", 14))
-        : [14, 30, 45, 60, 90].indexOf(+store.get("planLength", 14)) >= 0
-          ? +store.get("planLength", 14)
-          : 14,
-    stepsDone: store.get("stepsDone", {}), // { "1-read": true, ... }
-    dayDone: store.get("dayDone", {}),
-    stats: store.get("stats", { answered: 0, correct: 0, byTopic: {} }),
-    wrongBook: store.get("wrongBook", []),
+    planLength: rawPlan,
+    stepsDone: asObject(store.get("stepsDone", {}), {}), // { "1-read": true, ... }
+    dayDone: asObject(store.get("dayDone", {}), {}),
+    stats: normalizeStats(store.get("stats", { answered: 0, correct: 0, byTopic: {} })),
+    wrongBook: normalizeWrongBook(store.get("wrongBook", [])),
     /** Question ids already answered (any mode) — powers Unseen packs */
-    seenIds: store.get("seenIds", {}),
+    seenIds: asObject(store.get("seenIds", {}), {}),
     cardIx: 0,
-    cardKnown: store.get("cardKnown", {}),
+    cardKnown: asObject(store.get("cardKnown", {}), {}),
     quiz: null,
     // Loaded after focusModeCssSafe migration at init
     focusMode: false,
-    dailyGoal: store.get("dailyGoal", 150),
-    /** MCQs answered on this calendar day (resets at local midnight). */
-    sessionAnswered: store.get("sessionAnswered", 0),
-    sessionDate: store.get("sessionDate", ""),
+    dailyGoal: Number.isFinite(rawGoal) && rawGoal > 0 ? rawGoal : 150,
+    /** MCQs answered on this calendar day (resets at local midnight). Top-bar "Today Q". */
+    sessionAnswered: Math.max(0, +store.get("sessionAnswered", 0) || 0),
+    sessionDate: store.get("sessionDate", "") || "",
+    /**
+     * MCQs on the current plan day (planLength:day). Day-complete / next-day gates use this
+     * so volume on Day 1 does not auto-satisfy Day 2 the same calendar day.
+     */
+    planDayVolumeKey: store.get("planDayVolumeKey", "") || "",
+    planDayAnswered: Math.max(0, +store.get("planDayAnswered", 0) || 0),
     /** In-lesson Exam Q&A picks: { [data-id]: { choice: 0-3, ok: bool } } */
-    examQa: store.get("examQa", {}),
+    examQa: asObject(store.get("examQa", {}), {}),
     /** Recent quiz sessions: { ts, mode, label, topic, total, correct, pct, sec } */
-    history: store.get("history", []),
+    history: asArray(store.get("history", []), []),
   };
 
   /** Roll "Today Q" when the local calendar day changes. */
@@ -75,15 +163,48 @@
     store.set("sessionDate", state.sessionDate);
     store.set("sessionAnswered", 0);
   }
+
+  function planDayVolumeKeyOf() {
+    return String(state.planLength) + ":" + String(state.day);
+  }
+
+  /** Reset plan-day volume when calendar plan day (or track length) changes. */
+  function ensurePlanDayVolume() {
+    const key = planDayVolumeKeyOf();
+    if (state.planDayVolumeKey === key) return;
+    state.planDayVolumeKey = key;
+    state.planDayAnswered = 0;
+  }
+
+  /** Count one MCQ toward calendar "Today Q" and plan-day day-gate volume. */
+  function bumpVolume() {
+    ensureSessionDay();
+    ensurePlanDayVolume();
+    state.sessionAnswered = (state.sessionAnswered || 0) + 1;
+    state.planDayAnswered = (state.planDayAnswered || 0) + 1;
+  }
+
   ensureSessionDay();
+  ensurePlanDayVolume();
 
   let timer = null;
   let pomoTimer = null;
   let quizKeyHandler = null;
   let cardKeyHandler = null;
   /** In-app back stack (tabs + overlays). Never drops content — only navigation memory. */
-  let viewStack = store.get("viewStack", []);
-  if (!Array.isArray(viewStack)) viewStack = [];
+  const TAB_VIEW_SET = new Set([
+    "today",
+    "days",
+    "pass",
+    "always",
+    "practice",
+    "mcqs",
+    "progress",
+    "feedback",
+  ]);
+  let viewStack = asArray(store.get("viewStack", []), []).filter(
+    (v) => typeof v === "string" && (TAB_VIEW_SET.has(v) || v === "quiz" || v === "cards")
+  );
 
   function defaultFocusSec() {
     const fm =
@@ -105,6 +226,10 @@
   }
 
   function save() {
+    ensurePlanDayVolume();
+    if (Array.isArray(state.wrongBook) && state.wrongBook.length > 500) {
+      state.wrongBook = state.wrongBook.slice(-500);
+    }
     store.set("day", state.day);
     store.set("planLength", state.planLength);
     store.set("stepsDone", state.stepsDone);
@@ -115,6 +240,8 @@
     store.set("cardKnown", state.cardKnown);
     store.set("sessionDate", state.sessionDate || todayKey());
     store.set("sessionAnswered", state.sessionAnswered);
+    store.set("planDayVolumeKey", state.planDayVolumeKey || planDayVolumeKeyOf());
+    store.set("planDayAnswered", state.planDayAnswered || 0);
     store.set("dailyGoal", state.dailyGoal);
     store.set("focusMode", state.focusMode);
     store.set("examQa", state.examQa);
@@ -166,6 +293,7 @@
     }
     state.planLength = len;
     clampDay();
+    ensurePlanDayVolume();
     // Switching plan re-syncs goal + timer from track (not hard-coded 150/45)
     store.set("dailyGoalUserOverride", false);
     const meta = trackMeta();
@@ -300,17 +428,23 @@
   function goBack() {
     // Prefer quiz/cards returnView if mid-session
     if (state.view === "quiz" && state.quiz) {
-      let back = state.quiz.returnView || viewStack.pop() || "today";
+      // Peek only — do not mutate stack until leave is confirmed (timer confirm cancel)
+      let back = state.quiz.returnView;
+      if (!back) back = viewStack[viewStack.length - 1] || "today";
+      const ok = leaveQuizOrCards({ nextView: back, abandon: true, confirmTimed: true });
+      if (!ok) return;
       if (viewStack[viewStack.length - 1] === back) viewStack.pop();
       saveViewStack();
-      leaveQuizOrCards({ nextView: back, abandon: true, confirmTimed: true });
       return;
     }
     if (state.view === "cards") {
-      let back = viewStack.pop() || "today";
-      if (back === "cards") back = viewStack.pop() || "today";
+      let back = viewStack[viewStack.length - 1] || "today";
+      if (back === "cards") back = viewStack[viewStack.length - 2] || "today";
+      const ok = leaveQuizOrCards({ nextView: back, abandon: true, confirmTimed: false });
+      if (!ok) return;
+      if (viewStack[viewStack.length - 1] === "cards") viewStack.pop();
+      if (viewStack[viewStack.length - 1] === back) viewStack.pop();
       saveViewStack();
-      leaveQuizOrCards({ nextView: back, abandon: true, confirmTimed: false });
       return;
     }
     let prev = viewStack.pop();
@@ -392,7 +526,120 @@
     ];
     const okN = gates.filter((g) => g.ok).length;
     const score = Math.round((100 * okN) / gates.length);
-    return { pct, wrongN, daysDone, answered, weak, gates, score, ready: okN >= 4 && (pct || 0) >= 80 };
+    const blueprint = blueprintWeightedScore();
+    return {
+      pct,
+      wrongN,
+      daysDone,
+      answered,
+      weak,
+      gates,
+      score,
+      ready: okN >= 4 && (pct || 0) >= 80,
+      blueprint,
+    };
+  }
+
+  /**
+   * Weighted practice accuracy by approximate exam domain mix.
+   * Requires ≥20 answered per included topic. Not a predicted SCFHS score.
+   */
+  function blueprintWeightedScore() {
+    let score = 0;
+    let totalWeight = 0;
+    const parts = [];
+    for (const [topic, w] of Object.entries(BLUEPRINT_WEIGHTS)) {
+      const x = (state.stats.byTopic && state.stats.byTopic[topic]) || {};
+      const a = x.a || 0;
+      const c = x.c || 0;
+      if (a >= 20) {
+        const p = c / a;
+        score += p * w;
+        totalWeight += w;
+        parts.push({ topic, w, a, c, pct: Math.round(100 * p) });
+      }
+    }
+    if (totalWeight <= 0) return null;
+    return {
+      pct: Math.round((score / totalWeight) * 100),
+      coveredWeight: Math.round(totalWeight * 100),
+      parts,
+    };
+  }
+
+  /**
+   * One data-driven next action — wrong book first, else highest blueprint gap.
+   * Never removes content; only suggests.
+   */
+  function nextBestAction() {
+    const wrongN = (state.wrongBook || []).length;
+    if (wrongN >= 15) {
+      return {
+        topic: "wrong",
+        n: Math.min(50, wrongN),
+        title: "Clear wrong book first",
+        detail: `${wrongN} open misses. Empty these before new volume — free points stay open on Always tab.`,
+        mode: "learn",
+      };
+    }
+    const wrongByTopic = {};
+    (state.wrongBook || []).forEach((id) => {
+      const q = (window.QUESTION_BANK || []).find((x) => x && x.id === id);
+      if (q && q.topic) wrongByTopic[q.topic] = (wrongByTopic[q.topic] || 0) + 1;
+    });
+    let best = null;
+    for (const [topic, w] of Object.entries(BLUEPRINT_WEIGHTS)) {
+      const x = (state.stats.byTopic && state.stats.byTopic[topic]) || {};
+      const a = x.a || 0;
+      const c = x.c || 0;
+      const acc = a >= 5 ? c / a : 0.5;
+      const bias = 1 + Math.min(1, (wrongByTopic[topic] || 0) / 20);
+      const priority = (1 - acc) * w * bias * (a < 20 ? 1.25 : 1);
+      if (!best || priority > best.priority) {
+        best = {
+          topic,
+          n: 50,
+          title: `Work on ${topic}`,
+          detail:
+            a < 5
+              ? `~${Math.round(w * 100)}% of exam weight · almost no practice yet (${a}Q).`
+              : `~${Math.round(w * 100)}% of exam weight · you are at ${Math.round(acc * 100)}% on ${a}Q` +
+                (wrongByTopic[topic] ? ` · ${wrongByTopic[topic]} in wrong book` : "") +
+                ".",
+          mode: "learn",
+          priority,
+        };
+      }
+    }
+    if (!best) {
+      return {
+        topic: "always_src",
+        n: 25,
+        title: "Warm free points",
+        detail: "Build a few answers, then re-open Progress for a topic pick.",
+        mode: "learn",
+      };
+    }
+    return best;
+  }
+
+  function nextBestActionHtml() {
+    const nb = nextBestAction();
+    const label =
+      nb.topic === "wrong"
+        ? "Wrong book"
+        : nb.topic === "always_src"
+          ? "Free points"
+          : nb.topic;
+    return `<div class="next-best alert" role="region" aria-label="Next best study action">
+      <strong>Next best:</strong> ${escapeHtml(nb.title)}
+      <p class="muted" style="margin:6px 0 10px">${escapeHtml(nb.detail)}</p>
+      <div class="volume-grid">
+        ${volBtn(nb.topic, nb.n, label, "success")}
+        ${nb.topic !== "wrong" ? volBtn("wrong", 25, "Wrong 25", "ghost") : ""}
+        ${volBtn("weak", 50, "Weak pack", "ghost")}
+      </div>
+    </div>`;
   }
 
   function passReadinessHtml(opts) {
@@ -406,11 +653,17 @@
           `<li class="${g.ok ? "gate-ok" : "gate-miss"}">${g.ok ? "✓" : "○"} ${escapeHtml(g.label)}</li>`
       )
       .join("");
+    const bp = r.blueprint;
+    const bpLine =
+      bp == null
+        ? "Weighted practice: need ≥20Q on restorative/perio/endo/OMS/ortho-pedo"
+        : `Weighted practice accuracy ~${bp.pct}% (covers ~${bp.coveredWeight}% of blueprint weights — not an official score)`;
     if (compact) {
       return `<div class="pass-ready ${tone}" title="Practice readiness, not exam guarantee">
         <strong>Practice readiness ${r.score}%</strong>
         · ${r.pct != null ? r.pct + "%" : "—"} acc · wrong ${r.wrongN}
         · ${r.ready ? "on track for ≥80% practice" : "keep wrong-book + volume"}
+        <div class="muted" style="margin-top:4px">${escapeHtml(bpLine)}</div>
       </div>`;
     }
     return `<div class="pass-ready-card ${tone}">
@@ -419,6 +672,7 @@
         <span class="badge ${r.ready ? "green" : "yellow"}">${r.score}%</span>
       </div>
       <p class="muted">This is <em>in-app practice readiness</em> — SCFHS pass is scaled ~542/800. Honest gates only.</p>
+      <p class="muted"><strong>${escapeHtml(bpLine)}</strong></p>
       <ul class="pass-ready-gates">${gateLis}</ul>
       <div class="volume-grid" style="margin-top:8px">
         ${volBtn("wrong", 50, "Wrong book", "ghost")}
@@ -505,6 +759,7 @@
       <div class="mode-coach-cta"><strong>Do now:</strong> ${escapeHtml(pb.cta)}</div>
       ${mode === "review" ? reviewWeakPanelHtml() : ""}
       ${passReadinessHtml({ compact: true })}
+      ${nextBestActionHtml()}
     </div>`;
   }
 
@@ -800,7 +1055,10 @@
       };
   }
 
-  /** Sticky “Note this” callout for notebook — exam weight reminders. */
+  /**
+   * Sticky “Note this” callout. Title is escaped; body is trusted author HTML only
+   * (hardcoded call sites — do not pass user/MCQ text).
+   */
   function noteThisHtml(title, body) {
     return `<aside class="note-this" role="note">
       <div class="note-this-label">Note this</div>
@@ -865,6 +1123,7 @@
   }
 
   function escapeHtml(s) {
+    if (s == null) return "";
     return String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   }
 
@@ -919,6 +1178,29 @@
     });
   }
 
+  function clearQuizTimer() {
+    if (timer) {
+      clearInterval(timer);
+      timer = null;
+    }
+  }
+
+  /** Start/restart timed quiz countdown. Safe if quiz missing or untimed. */
+  function startQuizTimer() {
+    clearQuizTimer();
+    if (!state.quiz || !state.quiz.timed || state.quiz.seconds == null) return;
+    timer = setInterval(() => {
+      if (!state.quiz || state.quiz.seconds == null) return;
+      state.quiz.seconds--;
+      const t = $("#quiz-timer");
+      if (t) t.textContent = formatTime(state.quiz.seconds);
+      if (state.quiz.seconds <= 0) {
+        clearQuizTimer();
+        finishQuiz();
+      }
+    }, 1000);
+  }
+
   /**
    * Leave quiz/cards cleanly before any view switch. Prevents timer finish after nav away.
    * @returns {boolean} false if user cancelled timed abandon
@@ -930,16 +1212,18 @@
       inQuiz && qz.timed && qz.seconds != null && qz.i < (qz.items || []).length;
 
     if (abandon && unfinishedTimed && confirmTimed) {
+      // Pause timer before sync confirm() so finishQuiz cannot race the dialog
+      clearQuizTimer();
       const ok = confirm(
         "Leave timed quiz? Timer will stop. Progress so far may be partial (not fully scored)."
       );
-      if (!ok) return false;
+      if (!ok) {
+        if (state.quiz && state.view === "quiz") startQuizTimer();
+        return false;
+      }
     }
 
-    if (timer) {
-      clearInterval(timer);
-      timer = null;
-    }
+    clearQuizTimer();
     unbindQuizKeys();
     unbindCardKeys();
 
@@ -952,7 +1236,8 @@
           mode: qz.mode || "learn",
           label: (qz.label || "Quiz") + " (partial)",
           topic: qz.topic,
-          total: qz.learnN,
+          total: (qz.items && qz.items.length) || qz.learnN,
+          answered: qz.learnN,
           correct: qz.learnOk,
           pct: Math.round((100 * (qz.learnOk || 0)) / qz.learnN),
           sec,
@@ -1068,6 +1353,7 @@
     $("#day-select") &&
       ($("#day-select").onchange = (e) => {
         state.day = +e.target.value;
+        ensurePlanDayVolume();
         const meta = trackMeta();
         if (meta.dailyGoal && !store.get("dailyGoalUserOverride", false)) state.dailyGoal = meta.dailyGoal;
         syncPomoFromPlan({ force: true });
@@ -1078,6 +1364,7 @@
       ($("#prev-day").onclick = () => {
         if (state.day > 1) {
           state.day--;
+          ensurePlanDayVolume();
           const meta = trackMeta();
           if (meta.dailyGoal && !store.get("dailyGoalUserOverride", false)) state.dailyGoal = meta.dailyGoal;
           syncPomoFromPlan({ force: true });
@@ -1089,6 +1376,7 @@
       ($("#next-day").onclick = () => {
         if (state.day < maxDay()) {
           state.day++;
+          ensurePlanDayVolume();
           const meta = trackMeta();
           if (meta.dailyGoal && !store.get("dailyGoalUserOverride", false)) state.dailyGoal = meta.dailyGoal;
           syncPomoFromPlan({ force: true });
@@ -1142,7 +1430,7 @@
     else if (mode === "review") keys = ["quiz", "always", "cards", "read", "video"];
     else if (mode === "mock") keys = ["mock", "quiz", "always", "cards", "read", "video"];
     else if (mode === "light") keys = ["always", "cards", "quiz", "read", "video"];
-    else keys = ["read", "video", "cards", "quiz"]; // learn default
+    else keys = ["read", "video", "cards", "quiz", "always"]; // learn: free points last (matches Today DOM)
 
     if (L.mockType && !keys.includes("mock")) {
       // insert mock before always when lesson has mock
@@ -1554,6 +1842,7 @@
           · Stay in-app except listed videos.</p>
         ${dayPickerBar()}
         ${dayPlanCardHtml(L)}
+        ${modeCoachHtml(L)}
         <div class="meta">
           <span class="badge blue">Focus: ${escapeHtml(L.focus)}</span>
           <span class="badge ${dayComplete ? "green" : "yellow"}">${dayComplete ? "Day complete" : "In progress"}</span>
@@ -1607,8 +1896,12 @@
       resetQ.onclick = () => {
         state.sessionAnswered = 0;
         state.sessionDate = todayKey();
+        state.planDayAnswered = 0;
+        state.planDayVolumeKey = planDayVolumeKeyOf();
         store.set("sessionDate", state.sessionDate);
         store.set("sessionAnswered", 0);
+        store.set("planDayAnswered", 0);
+        store.set("planDayVolumeKey", state.planDayVolumeKey);
         updateTop();
         renderToday();
       };
@@ -1651,9 +1944,11 @@
       ($("#day-complete").onchange = (e) => {
         if (e.target.checked) {
           const goal = state.dailyGoal || 150;
-          if (state.sessionAnswered < goal) {
+          ensurePlanDayVolume();
+          const vol = state.planDayAnswered || 0;
+          if (vol < goal) {
             const force = confirm(
-              `Day gate: only ${state.sessionAnswered}/${goal} MCQs this session.\n\nOK = mark day done anyway\nCancel = keep studying volume`
+              `Day gate: only ${vol}/${goal} MCQs on this plan day.\n\nOK = mark day done anyway\nCancel = keep studying volume`
             );
             if (!force) {
               e.target.checked = false;
@@ -1668,14 +1963,17 @@
     $("#to-next") &&
       ($("#to-next").onclick = () => {
         const goal = state.dailyGoal || 150;
-        if (!state.dayDone[state.day] && state.sessionAnswered < goal) {
+        ensurePlanDayVolume();
+        const vol = state.planDayAnswered || 0;
+        if (!state.dayDone[state.day] && vol < goal) {
           const force = confirm(
-            `Only ${state.sessionAnswered}/${goal} MCQs today and day not ticked done.\n\nOK = go to next day anyway\nCancel = stay and do more volume`
+            `Only ${vol}/${goal} MCQs on this plan day and day not ticked done.\n\nOK = go to next day anyway\nCancel = stay and do more volume`
           );
           if (!force) return;
         }
         if (state.day < maxDay()) {
           state.day++;
+          ensurePlanDayVolume();
           const meta = trackMeta();
           if (meta.dailyGoal && !store.get("dailyGoalUserOverride", false)) state.dailyGoal = meta.dailyGoal;
           syncPomoFromPlan({ force: true });
@@ -1826,9 +2124,8 @@
         if (correctIdx == null || choiceIdx < 0 || choiceIdx > 3) return;
         const ok = choiceIdx === correctIdx;
         state.examQa[id] = { choice: choiceIdx, ok, day: +day, block };
-        // session + cumulative stats (lesson Qs count toward daily goal)
-        ensureSessionDay();
-        state.sessionAnswered = (state.sessionAnswered || 0) + 1;
+        // session + plan-day volume + cumulative stats (lesson Qs count toward daily goal)
+        bumpVolume();
         state.stats.answered = (state.stats.answered || 0) + 1;
         if (ok) state.stats.correct = (state.stats.correct || 0) + 1;
         const t = "exam_qa";
@@ -1954,6 +2251,7 @@
     app.querySelectorAll(".day-tile").forEach((b) => {
       b.onclick = () => {
         state.day = +b.dataset.d;
+        ensurePlanDayVolume();
         const meta = trackMeta();
         if (meta.dailyGoal) state.dailyGoal = meta.dailyGoal;
         state.view = "today";
@@ -2510,6 +2808,156 @@
     URL.revokeObjectURL(a.href);
   }
 
+  /** Full progress backup (all persisted keys). Never deletes content files. */
+  function exportFullProgress() {
+    const data = {
+      version: 1,
+      exportedAt: new Date().toISOString(),
+      app: "sdle-study-path",
+      keys: {},
+    };
+    PERSISTED_KEYS.forEach((k) => {
+      data.keys[k] = store.get(k, null);
+    });
+    const blob = new Blob([JSON.stringify(data, null, 2)], { type: "application/json;charset=utf-8" });
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = `sdle-backup-${todayKey()}.json`;
+    a.click();
+    URL.revokeObjectURL(a.href);
+  }
+
+  function importFullProgressFromObject(data) {
+    if (!data || typeof data !== "object") throw new Error("Invalid backup file");
+    const keys = data.keys && typeof data.keys === "object" ? data.keys : data;
+    if (!keys || typeof keys !== "object") throw new Error("No progress keys in file");
+    let wrote = 0;
+    PERSISTED_KEYS.forEach((k) => {
+      if (Object.prototype.hasOwnProperty.call(keys, k) && keys[k] != null) {
+        if (store.set(k, keys[k])) wrote++;
+      }
+    });
+    if (!wrote) throw new Error("Nothing imported (empty or unreadable keys)");
+    return wrote;
+  }
+
+  function bindImportProgress(inputEl) {
+    if (!inputEl) return;
+    inputEl.onchange = () => {
+      const file = inputEl.files && inputEl.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = () => {
+        try {
+          const data = JSON.parse(String(reader.result || ""));
+          const ok = confirm(
+            "Import this backup? It will overwrite progress on THIS browser (stats, wrong book, days, history). Content lessons and MCQ bank are never deleted.\n\nOK = import and reload."
+          );
+          if (!ok) {
+            inputEl.value = "";
+            return;
+          }
+          importFullProgressFromObject(data);
+          location.reload();
+        } catch (e) {
+          alert("Import failed: " + (e && e.message ? e.message : "bad JSON"));
+          inputEl.value = "";
+        }
+      };
+      reader.readAsText(file);
+    };
+  }
+
+  /** Per-topic mock breakdown + optional delta vs previous full mock. */
+  function mockTopicBreakdown(qz) {
+    const byTopic = {};
+    (qz.items || []).forEach((item, i) => {
+      const t = item.topic || "mixed";
+      if (!byTopic[t]) byTopic[t] = { a: 0, c: 0 };
+      byTopic[t].a++;
+      if (qz.answers[i] === item.answer) byTopic[t].c++;
+    });
+    return byTopic;
+  }
+
+  function mockFatigue(qz) {
+    const n = (qz.items || []).length;
+    if (n < 100) return null;
+    const mid = Math.floor(n / 2);
+    let firstOk = 0;
+    let secondOk = 0;
+    for (let i = 0; i < mid; i++) {
+      if (qz.answers[i] === qz.items[i].answer) firstOk++;
+    }
+    for (let i = mid; i < n; i++) {
+      if (qz.answers[i] === qz.items[i].answer) secondOk++;
+    }
+    const firstN = mid;
+    const secondN = n - mid;
+    const firstPct = firstN ? Math.round((100 * firstOk) / firstN) : null;
+    const secondPct = secondN ? Math.round((100 * secondOk) / secondN) : null;
+    return {
+      firstPct,
+      secondPct,
+      delta: firstPct != null && secondPct != null ? secondPct - firstPct : null,
+    };
+  }
+
+  function findPriorMock(afterTs) {
+    const list = state.history || [];
+    for (let i = 0; i < list.length; i++) {
+      const h = list[i];
+      if (!h) continue;
+      if (afterTs && h.ts === afterTs) continue;
+      if (h.isMock || (h.mode === "exam" && (h.total || 0) >= 100)) return h;
+    }
+    return null;
+  }
+
+  function mockDeltaHtml(current, prior) {
+    if (!current || !current.byTopic) return "";
+    const topics = Object.keys(current.byTopic).sort();
+    if (!topics.length) return "";
+    const rows = topics
+      .map((t) => {
+        const cur = current.byTopic[t] || { a: 0, c: 0 };
+        const curPct = cur.a ? Math.round((100 * cur.c) / cur.a) : null;
+        let priorPct = null;
+        if (prior && prior.byTopic && prior.byTopic[t] && prior.byTopic[t].a) {
+          const p = prior.byTopic[t];
+          priorPct = Math.round((100 * p.c) / p.a);
+        }
+        const d = curPct != null && priorPct != null ? curPct - priorPct : null;
+        const dLabel =
+          d == null ? "—" : d > 0 ? `+${d}% ↑` : d < 0 ? `${d}% ↓` : "0%";
+        return `<tr>
+          <td>${escapeHtml(t)}</td>
+          <td>${priorPct != null ? priorPct + "%" : "—"}</td>
+          <td>${curPct != null ? curPct + "%" : "—"}</td>
+          <td style="color:${d == null ? "inherit" : d >= 0 ? "var(--accent2)" : "var(--warn)"}">${escapeHtml(dLabel)}</td>
+        </tr>`;
+      })
+      .join("");
+    const fatigue = current.fatigue;
+    const fatigueLine =
+      fatigue && fatigue.firstPct != null
+        ? `<p class="muted">Pace check: first half <b>${fatigue.firstPct}%</b> · second half <b>${fatigue.secondPct}%</b>${
+            fatigue.delta != null
+              ? ` · ${fatigue.delta >= 0 ? "+" : ""}${fatigue.delta}% second-half shift`
+              : ""
+          }</p>`
+        : "";
+    return `<div class="mock-delta alert" style="margin-top:14px">
+      <strong>Mock domain scores${prior ? " vs previous mock" : ""}</strong>
+      <p class="muted">Compare domains — not an official SCFHS report.</p>
+      ${fatigueLine}
+      <table class="hist-table inv-table" style="margin-top:8px">
+        <thead><tr><th>Topic</th><th>Prior</th><th>This mock</th><th>Δ</th></tr></thead>
+        <tbody>${rows}</tbody>
+      </table>
+    </div>`;
+  }
+
   function feedbackConfig() {
     const c = window.SDLE_FEEDBACK || {};
     return {
@@ -2801,6 +3249,7 @@
       <h1>Progress</h1>
       <p class="lead simple-lead">${state.planLength}-day plan · today <b>${escapeHtml(sch.hoursLabel || "—")}</b> · focus timer <b>${sch.focusMinutes || 45} min</b> · Q goal <b>${state.sessionAnswered}/${state.dailyGoal}</b></p>
       ${trackSwitcherHtml()}
+      ${nextBestActionHtml()}
       ${passReadinessHtml({ compact: false })}
       <div class="stat-row">
         <div class="stat-box"><div class="num">${daysDone}/${m}</div><div class="lbl">Days done</div></div>
@@ -2826,6 +3275,18 @@
           ${volBtn("unseen", 100, "Unseen", "")}
           ${volBtn("always_src", 50, "Free points", "")}
           <button type="button" class="btn ghost" id="export-wrong">Export wrong book</button>
+        </div>
+      </section>
+
+      <section class="simple-panel">
+        <h3 class="section-label">Backup progress (device transfer)</h3>
+        <p class="muted">Export JSON to move stats/wrong book/days to another browser. <b>Never deletes lessons or MCQ bank</b> — only your local progress keys.</p>
+        <div class="volume-grid" style="margin:12px 0">
+          <button type="button" class="btn success" id="export-full">Export full progress</button>
+          <label class="btn ghost" style="cursor:pointer;display:inline-flex;align-items:center">
+            Import progress…
+            <input type="file" id="import-full" accept="application/json,.json" hidden />
+          </label>
         </div>
       </section>
 
@@ -2875,6 +3336,24 @@
             .join("")}
         </tbody>
       </table>
+      ${(() => {
+        const st = s.bySubtopic || {};
+        const keys = Object.keys(st).filter((k) => st[k] && st[k].a > 0).sort();
+        if (!keys.length) return `<p class="muted">Subtopic accuracy: answer tagged restorative items to fill operative/fixed/RPD…</p>`;
+        return `<h4 class="vol-sub">Subtopic accuracy</h4>
+          <table>
+            <thead><tr><th>Subtopic</th><th>Correct</th><th>%</th></tr></thead>
+            <tbody>
+              ${keys
+                .map((k) => {
+                  const x = st[k] || { a: 0, c: 0 };
+                  const p = x.a ? Math.round((100 * x.c) / x.a) : "—";
+                  return `<tr><td>${escapeHtml(k)}</td><td>${x.c}/${x.a}</td><td>${p}${x.a ? "%" : ""}</td></tr>`;
+                })
+                .join("")}
+            </tbody>
+          </table>`;
+      })()}
       ${inventoryTableHtml(inv)}
       <div class="volume-grid" style="margin:12px 0">
         ${volBtn("unseen", QUIZ_ALL, "Unseen ALL", "success")}
@@ -2891,6 +3370,8 @@
     bindTrackSwitcher();
     bindVolButtons(app);
     $("#export-wrong") && ($("#export-wrong").onclick = exportWrongBook);
+    $("#export-full") && ($("#export-full").onclick = exportFullProgress);
+    bindImportProgress($("#import-full"));
     $("#clear-hist") &&
       ($("#clear-hist").onclick = () => {
         if (confirm("Clear session history log only? (stats/wrong book kept)")) {
@@ -2901,7 +3382,7 @@
       });
     $("#reset").onclick = () => {
       if (confirm("Reset progress, stats, wrong book, seen history, session log, and lesson Exam Q&A scores?")) {
-        state.stats = { answered: 0, correct: 0, byTopic: {} };
+        state.stats = { answered: 0, correct: 0, byTopic: {}, bySubtopic: {} };
         state.wrongBook = [];
         state.seenIds = {};
         state.history = [];
@@ -2911,6 +3392,8 @@
         state.examQa = {};
         state.sessionAnswered = 0;
         state.sessionDate = todayKey();
+        state.planDayAnswered = 0;
+        state.planDayVolumeKey = planDayVolumeKeyOf();
         save();
         render();
       }
@@ -3306,19 +3789,8 @@
       if (viewStack.length > 24) viewStack = viewStack.slice(-24);
       saveViewStack();
     }
-    if (timer) clearInterval(timer);
-    if (timed) {
-      timer = setInterval(() => {
-        if (!state.quiz || state.quiz.seconds == null) return;
-        state.quiz.seconds--;
-        const t = $("#quiz-timer");
-        if (t) t.textContent = formatTime(state.quiz.seconds);
-        if (state.quiz.seconds <= 0) {
-          clearInterval(timer);
-          finishQuiz();
-        }
-      }, 1000);
-    }
+    if (timed) startQuizTimer();
+    else clearQuizTimer();
     state.view = "quiz";
     renderQuizUI();
   }
@@ -3471,16 +3943,20 @@
   }
 
   function record(item, ok) {
-    ensureSessionDay();
-    state.sessionAnswered = (state.sessionAnswered || 0) + 1;
-    store.set("sessionDate", state.sessionDate);
-    store.set("sessionAnswered", state.sessionAnswered);
+    bumpVolume();
     state.stats.answered++;
     if (ok) state.stats.correct++;
     const t = item.topic || "mixed";
     if (!state.stats.byTopic[t]) state.stats.byTopic[t] = { a: 0, c: 0 };
     state.stats.byTopic[t].a++;
     if (ok) state.stats.byTopic[t].c++;
+    if (!state.stats.bySubtopic) state.stats.bySubtopic = {};
+    (item.subtopics || []).forEach((st) => {
+      if (!st) return;
+      if (!state.stats.bySubtopic[st]) state.stats.bySubtopic[st] = { a: 0, c: 0 };
+      state.stats.bySubtopic[st].a++;
+      if (ok) state.stats.bySubtopic[st].c++;
+    });
     markSeen(item.id);
     if (!ok) {
       if (!state.wrongBook.includes(item.id)) state.wrongBook.push(item.id);
@@ -3491,7 +3967,7 @@
   }
 
   function finishQuiz() {
-    if (timer) clearInterval(timer);
+    clearQuizTimer();
     unbindQuizKeys();
     const qz = state.quiz;
     if (!qz) return;
@@ -3531,16 +4007,29 @@
     const displayPct =
       displayTotal > 0 ? Math.round((100 * displayCorrect) / displayTotal) : pct;
     const sec = Math.round((Date.now() - (qz.startedAt || Date.now())) / 1000);
-    logSession({
-      ts: Date.now(),
+    const itemCount = (qz.items && qz.items.length) || 0;
+    const isMock = qz.mode === "exam" && itemCount >= 100;
+    const byTopicMock = isMock ? mockTopicBreakdown(qz) : null;
+    const fatigue = isMock ? mockFatigue(qz) : null;
+    const sessionTs = Date.now();
+    const sessionEntry = {
+      ts: sessionTs,
       mode: qz.mode || "learn",
       label: qz.label,
       topic: qz.topic,
-      total: displayTotal,
+      total: itemCount || displayTotal,
+      answered: qz.mode === "exam" ? (qz.answers || []).filter((a) => a != null).length : qz.learnN || 0,
       correct: displayCorrect,
       pct: displayPct,
       sec,
-    });
+    };
+    if (isMock) {
+      sessionEntry.isMock = true;
+      sessionEntry.byTopic = byTopicMock;
+      if (fatigue) sessionEntry.fatigue = fatigue;
+    }
+    const priorMock = isMock ? findPriorMock(null) : null;
+    logSession(sessionEntry);
     save();
     const showReview = qz.mode === "exam" || qz.mode === "test";
     const backView = qz.returnView || (qz.mode === "test" ? "mcqs" : viewStack[viewStack.length - 1] || "today");
@@ -3556,6 +4045,7 @@
               : backView === "progress"
                 ? "← Back to Progress"
                 : "← Back";
+    const deltaBlock = isMock ? mockDeltaHtml(sessionEntry, priorMock) : "";
     app.innerHTML = `
       ${backBarHtml(backLabel)}
       <div class="q-card">
@@ -3570,6 +4060,8 @@
                <p class="lead">${displayPct >= 80 ? "On target for 80%+." : "Review below, then wrong book."} Logged in Progress history.</p>`
             : `<p class="lead">Session finished (${formatDur(sec)}). Check Progress for history + score.</p>`
         }
+        ${deltaBlock}
+        ${nextBestActionHtml()}
         <div class="volume-grid">
           <button class="btn" id="back">${backLabel}</button>
           <button class="btn ghost" id="wb">Wrong book</button>
@@ -3602,6 +4094,7 @@
     const topicRetake = qz.topic;
     state.quiz = null;
     bindBackBar();
+    bindVolButtons(app);
     $("#back").onclick = () => {
       // Prefer stack, fall back to returnView
       if (viewStack.length) goBack();
