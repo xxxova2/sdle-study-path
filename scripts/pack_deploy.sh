@@ -24,7 +24,8 @@ for f in \
   video_links.js \
   book_index.js \
   lessons.js \
-  questions.js
+  questions.js \
+  feedback_config.js
 do
   if [[ ! -f "$ROOT/data/$f" ]]; then
     echo "ERROR: missing data/$f" >&2

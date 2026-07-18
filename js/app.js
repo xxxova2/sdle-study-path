@@ -2512,18 +2512,123 @@
     URL.revokeObjectURL(a.href);
   }
 
+  function feedbackConfig() {
+    const c = window.SDLE_FEEDBACK || {};
+    return {
+      ntfyTopic: (c.ntfyTopic || "sdle-study-path-feedback-xxxova2-k7m9").replace(/[^\w.-]/g, ""),
+      email: String(c.email || "").trim(),
+      ownerReadHint: c.ownerReadHint || "",
+    };
+  }
+
+  function feedbackNtfyUrl() {
+    return "https://ntfy.sh/" + feedbackConfig().ntfyTopic;
+  }
+
+  /** Deliver feedback with NO client login (ntfy + optional email). */
+  async function deliverFeedback(payload) {
+    const cfg = feedbackConfig();
+    const kindLabel = payload.kindLabel;
+    const text = [
+      "Type: " + kindLabel,
+      "From: " + (payload.name || "(anonymous)"),
+      "When: " + payload.when,
+      "URL: " + payload.appUrl,
+      "",
+      payload.message,
+      "",
+      "Device: " + (payload.device || "").slice(0, 180),
+    ].join("\n");
+
+    const errors = [];
+    let okNtfy = false;
+    let okEmail = false;
+
+    // 1) ntfy.sh — free, no login for sender or reader (open topic URL)
+    if (cfg.ntfyTopic) {
+      try {
+        const res = await fetch("https://ntfy.sh/" + encodeURIComponent(cfg.ntfyTopic), {
+          method: "POST",
+          headers: {
+            Title: ("[SDLE " + kindLabel + "] " + payload.message).slice(0, 90),
+            Priority: "default",
+            Tags: "speech_balloon,dental_care",
+            Filename: "feedback.txt",
+          },
+          body: text,
+        });
+        if (!res.ok) throw new Error("ntfy HTTP " + res.status);
+        okNtfy = true;
+      } catch (err) {
+        errors.push("ntfy: " + (err && err.message ? err.message : "fail"));
+      }
+    }
+
+    // 2) Optional email copy via FormSubmit (no login for client; owner confirms email once)
+    if (cfg.email && cfg.email.includes("@") && !/@users\.noreply\.github\.com$/i.test(cfg.email)) {
+      try {
+        const res = await fetch("https://formsubmit.co/ajax/" + encodeURIComponent(cfg.email), {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify({
+            name: payload.name || "Anonymous student",
+            _subject: "[SDLE Feedback] " + kindLabel,
+            _template: "table",
+            type: kindLabel,
+            message: payload.message,
+            app_url: payload.appUrl,
+            when: payload.when,
+            device: (payload.device || "").slice(0, 240),
+            _captcha: "false",
+          }),
+        });
+        const data = await res.json().catch(() => ({}));
+        if (!res.ok && data.success !== "true" && data.success !== true) {
+          throw new Error((data && data.message) || "email HTTP " + res.status);
+        }
+        okEmail = true;
+      } catch (err) {
+        errors.push("email: " + (err && err.message ? err.message : "fail"));
+      }
+    }
+
+    // 3) Remember on this device (not shared — only proof for the sender)
+    try {
+      const log = store.get("feedbackSentLog", []);
+      log.unshift({
+        ts: payload.when,
+        kind: payload.kind,
+        name: payload.name,
+        message: payload.message.slice(0, 500),
+        okNtfy,
+        okEmail,
+      });
+      store.set("feedbackSentLog", log.slice(0, 40));
+    } catch (_) {}
+
+    return { okNtfy, okEmail, errors };
+  }
+
   function renderFeedback() {
     const draft = store.get("feedbackDraft", {
       name: "",
       kind: "bug",
       message: "",
     });
+    const cfg = feedbackConfig();
+    const ntfyUrl = feedbackNtfyUrl();
+    const sentLog = store.get("feedbackSentLog", []);
+    const emailOn = !!(cfg.email && cfg.email.includes("@") && !/@users\.noreply\.github\.com$/i.test(cfg.email));
+
     app.innerHTML = `
       ${backBarHtml("← Back")}
       <h1>Feedback</h1>
-      <p class="lead">Found a bug, wrong MCQ, thin lesson, or have an idea? Write it here.
-        Your note opens a <strong>GitHub Issue</strong> so the maintainer can read it and fix the app.
-        Free GitHub account is enough to submit (or paste the text into a new issue).</p>
+      <p class="lead"><strong>No GitHub account. No login.</strong>
+        Write below and tap Send — your note is delivered to the maintainer automatically.
+        Optional name only. Use this for bugs, wrong MCQs, thin lessons, or mobile problems.</p>
 
       <section class="feedback-card simple-panel">
         <form id="feedback-form" class="feedback-form" novalidate>
@@ -2557,14 +2662,35 @@
       </section>
 
       <section class="simple-panel" style="margin-top:16px">
-        <h3 class="section-label">For the maintainer</h3>
-        <p class="lead">All public feedback lives on GitHub Issues (label <code>feedback</code>). Open this on phone or PC:</p>
+        <h3 class="section-label">How the owner reads feedback</h3>
+        <p class="lead">Students do <b>not</b> need accounts. You (maintainer) open this inbox anytime:</p>
         <div class="volume-grid">
-          <a class="btn" href="${FEEDBACK_ISSUES_URL}" target="_blank" rel="noopener">Read all feedback</a>
-          <a class="btn ghost" href="${REPO_URL}" target="_blank" rel="noopener">Open source repo</a>
+          <a class="btn success" href="${escapeHtml(ntfyUrl)}" target="_blank" rel="noopener">Open feedback inbox</a>
+          <a class="btn ghost" href="${REPO_URL}" target="_blank" rel="noopener">Source code</a>
           <a class="btn ghost" href="${REPO_URL}/blob/main/INTRO.md" target="_blank" rel="noopener">Intro letter</a>
         </div>
-      </section>`;
+        <p class="muted-hint" style="margin-top:10px">
+          Inbox link: <code style="word-break:break-all">${escapeHtml(ntfyUrl)}</code><br>
+          Email copies: <b>${emailOn ? "ON → " + escapeHtml(cfg.email) : "OFF — set your Gmail in data/feedback_config.js for permanent email archive"}</b><br>
+          Free ntfy keeps recent messages; email is better for long-term history.
+        </p>
+      </section>
+
+      ${
+        sentLog.length
+          ? `<section class="simple-panel" style="margin-top:16px">
+        <h3 class="section-label">Sent from this device (${sentLog.length})</h3>
+        <ul class="fb-sent-list">${sentLog
+          .slice(0, 8)
+          .map(
+            (x) =>
+              `<li><b>${escapeHtml(x.kind || "")}</b> · ${escapeHtml((x.message || "").slice(0, 120))}
+              <span class="muted-hint">${escapeHtml(x.ts || "")} · ${x.okNtfy ? "delivered" : "may have failed"}</span></li>`
+          )
+          .join("")}</ul>
+      </section>`
+          : ""
+      }`;
 
     bindBackBar();
 
@@ -2580,16 +2706,17 @@
       ($("#fb-save-draft").onclick = () => {
         saveDraft();
         const st = $("#fb-status");
-        if (st) st.textContent = "Draft saved on this phone/computer only.";
+        if (st) st.textContent = "Draft saved on this phone/computer only (not sent yet).";
       });
 
     $("#feedback-form") &&
-      ($("#feedback-form").onsubmit = (e) => {
+      ($("#feedback-form").onsubmit = async (e) => {
         e.preventDefault();
         const name = (($("#fb-name") && $("#fb-name").value) || "").trim();
         const kind = (($("#fb-kind") && $("#fb-kind").value) || "other").trim();
         const message = (($("#fb-message") && $("#fb-message").value) || "").trim();
         const st = $("#fb-status");
+        const btn = $("#fb-submit");
         if (!message || message.length < 8) {
           if (st) st.textContent = "Please write a bit more detail (at least a short sentence).";
           return;
@@ -2602,36 +2729,49 @@
           idea: "Idea",
           other: "Feedback",
         }[kind] || "Feedback";
-        const title = `[${kindLabel}] ${(message.slice(0, 60) + (message.length > 60 ? "…" : "")).replace(/\s+/g, " ")}`;
-        const body = [
-          "## Feedback from the app",
-          "",
-          `**Type:** ${kindLabel}`,
-          `**From:** ${name || "(not given)"}`,
-          `**When:** ${new Date().toISOString()}`,
-          `**App URL:** ${typeof location !== "undefined" ? location.href : ""}`,
-          `**Device:** ${typeof navigator !== "undefined" ? navigator.userAgent : ""}`,
-          "",
-          "### Message",
-          "",
-          message,
-          "",
-          "---",
-          "_Sent from the Feedback tab in SDLE Study Path._",
-        ].join("\n");
-        const url =
-          FEEDBACK_NEW_ISSUE +
-          "?labels=feedback&title=" +
-          encodeURIComponent(title) +
-          "&body=" +
-          encodeURIComponent(body);
-        if (st) {
-          st.innerHTML =
-            'Opening GitHub… If nothing opens, <a href="' +
-            escapeHtml(url) +
-            '" target="_blank" rel="noopener">tap here to submit</a>.';
+
+        if (btn) {
+          btn.disabled = true;
+          btn.textContent = "Sending…";
         }
-        window.open(url, "_blank", "noopener");
+        if (st) st.textContent = "Sending — no login needed…";
+
+        const result = await deliverFeedback({
+          name,
+          kind,
+          kindLabel,
+          message,
+          when: new Date().toISOString(),
+          appUrl: typeof location !== "undefined" ? location.href : "",
+          device: typeof navigator !== "undefined" ? navigator.userAgent : "",
+        });
+
+        if (btn) {
+          btn.disabled = false;
+          btn.textContent = "Send feedback";
+        }
+
+        if (result.okNtfy || result.okEmail) {
+          store.set("feedbackDraft", { name, kind, message: "" });
+          if ($("#fb-message")) $("#fb-message").value = "";
+          if (st) {
+            st.innerHTML =
+              "<strong>Sent.</strong> The maintainer can read it in the feedback inbox" +
+              (result.okEmail ? " and by email" : "") +
+              ". Thank you — no account required.";
+          }
+          // refresh sent list quietly
+          setTimeout(() => {
+            if (state.view === "feedback") renderFeedback();
+          }, 600);
+        } else {
+          if (st) {
+            st.innerHTML =
+              "Could not deliver (" +
+              escapeHtml((result.errors || []).join("; ") || "network") +
+              "). Check internet and try again.";
+          }
+        }
       });
   }
 

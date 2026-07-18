@@ -66,12 +66,13 @@ VL=$(echo "$ORDER" | grep -n 'data/video_links.js' | head -1 | cut -d: -f1)
 BI=$(echo "$ORDER" | grep -n 'data/book_index.js' | head -1 | cut -d: -f1)
 LE=$(echo "$ORDER" | grep -n 'data/lessons.js' | head -1 | cut -d: -f1)
 QU=$(echo "$ORDER" | grep -n 'data/questions.js' | head -1 | cut -d: -f1)
+FB=$(echo "$ORDER" | grep -n 'data/feedback_config.js' | head -1 | cut -d: -f1)
 AP=$(echo "$ORDER" | grep -n 'js/app.js' | head -1 | cut -d: -f1)
-if [[ -n "$HY" && -n "$SC" && -n "$PT" && -n "$VL" && -n "$BI" && -n "$LE" && -n "$QU" && -n "$AP" ]] \
-  && [[ "$HY" -lt "$SC" && "$SC" -lt "$PT" && "$PT" -lt "$VL" && "$VL" -lt "$BI" && "$BI" -lt "$LE" && "$LE" -lt "$QU" && "$QU" -lt "$AP" ]]; then
-  ok "load order highyield → scfhs → tracks → video_links → book_index → lessons → questions → app"
+if [[ -n "$HY" && -n "$SC" && -n "$PT" && -n "$VL" && -n "$BI" && -n "$LE" && -n "$QU" && -n "$FB" && -n "$AP" ]] \
+  && [[ "$HY" -lt "$SC" && "$SC" -lt "$PT" && "$PT" -lt "$VL" && "$VL" -lt "$BI" && "$BI" -lt "$LE" && "$LE" -lt "$QU" && "$QU" -lt "$FB" && "$FB" -lt "$AP" ]]; then
+  ok "load order highyield → … → questions → feedback_config → app"
 else
-  fail "script order wrong (hy=$HY sc=$SC pt=$PT vl=$VL bi=$BI le=$LE qu=$QU ap=$AP)"
+  fail "script order wrong (hy=$HY sc=$SC pt=$PT vl=$VL bi=$BI le=$LE qu=$QU fb=$FB ap=$AP)"
   echo "$ORDER"
 fi
 

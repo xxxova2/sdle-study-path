@@ -75,16 +75,20 @@ GitHub Pages already serves the repo root (live link above).
 
 ---
 
-## Feedback (how it works)
+## Feedback (how it works — no login)
 
-1. User opens the **Feedback** tab in the app  
-2. Writes a message and taps **Send feedback**  
-3. A **GitHub Issue** opens (label `feedback`)  
-4. **You** read issues here:  
-   https://github.com/xxxova2/sdle-study-path/issues?q=is%3Aissue+label%3Afeedback  
-5. Fix the app, push to `main` — site updates automatically  
+Students do **not** need GitHub or any account.
 
-Optional: save a draft on the device without sending.
+1. User opens **Feedback**, writes a note, taps **Send**  
+2. Message is delivered automatically (free **ntfy** inbox + optional email)  
+3. **You** read messages here (bookmark on phone):  
+   https://ntfy.sh/sdle-study-path-feedback-xxxova2-k7m9  
+4. Fix the app, push to `main` — live site updates  
+
+**Optional permanent email archive:** edit `data/feedback_config.js`, set `email: "you@gmail.com"`, push.  
+Confirm FormSubmit’s one-time activation email, then every feedback also lands in your inbox.
+
+Drafts can be saved on the device only (not sent until Send).
 
 ---
 

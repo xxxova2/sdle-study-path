@@ -2095,6 +2095,22 @@ body.focus-mode .plan-chooser:not(.plan-chooser-gate) {
   color: var(--accent);
 }
 
+.fb-sent-list {
+  margin: 0;
+  padding-left: 1.2em;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.fb-sent-list li {
+  margin-bottom: 8px;
+}
+
+.fb-sent-list b {
+  color: var(--text);
+}
+
 /* ——— Mobile / phone browser ——— */
 @media (max-width: 720px) {
   .topbar.simple {
