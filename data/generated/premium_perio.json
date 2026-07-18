@@ -1,0 +1,2702 @@
+[
+  {
+    "id": "per_boost_001",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "What does periodontal staging primarily describe?",
+    "options": [
+      "Only patient age",
+      "Only plaque index",
+      "Severity and complexity of management",
+      "Rate of progression only"
+    ],
+    "answer": 2,
+    "explanation": "Stage = how bad / how hard to treat.",
+    "source": "premium_perio",
+    "subtopics": [
+      "classification"
+    ]
+  },
+  {
+    "id": "per_boost_002",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "What does periodontal grading primarily describe?",
+    "options": [
+      "Rate of progression and risk profile",
+      "Only furcation class",
+      "Only probing depth today",
+      "Only tooth count"
+    ],
+    "answer": 0,
+    "explanation": "Grade A/B/C = progression risk.",
+    "source": "premium_perio",
+    "subtopics": [
+      "classification"
+    ]
+  },
+  {
+    "id": "per_boost_003",
+    "topic": "perio",
+    "difficulty": "medium",
+    "q": "A patient with many complex factors (vertical defects, furcation, bite collapse) is most consistent with which idea?",
+    "options": [
+      "Always Stage I",
+      "Higher stage (more complex management)",
+      "No classification needed",
+      "Grade only, never stage"
+    ],
+    "answer": 1,
+    "explanation": "Complexity drives stage upward.",
+    "source": "premium_perio",
+    "subtopics": [
+      "classification"
+    ]
+  },
+  {
+    "id": "per_boost_004",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "Grade C periodontitis implies:",
+    "options": [
+      "Only gingivitis",
+      "Healed implants only",
+      "No risk factors ever",
+      "Rapid progression / high risk factors"
+    ],
+    "answer": 3,
+    "explanation": "C = rapid/high risk.",
+    "source": "premium_perio",
+    "subtopics": [
+      "classification"
+    ]
+  },
+  {
+    "id": "per_boost_005",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "Grade A periodontitis implies:",
+    "options": [
+      "Only grade for implants",
+      "Same as Grade C",
+      "Slow rate of progression",
+      "Always tooth loss inevitable"
+    ],
+    "answer": 2,
+    "explanation": "A = slow progression.",
+    "source": "premium_perio",
+    "subtopics": [
+      "classification"
+    ]
+  },
+  {
+    "id": "per_boost_006",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "Clinical attachment level (CAL) is measured from:",
+    "options": [
+      "Incisal edge to cusp",
+      "CEJ to base of pocket",
+      "Only radiographic apex",
+      "Gingival margin only to CEJ"
+    ],
+    "answer": 1,
+    "explanation": "CAL accounts for recession vs PD.",
+    "source": "premium_perio",
+    "subtopics": [
+      "cal"
+    ]
+  },
+  {
+    "id": "per_boost_007",
+    "topic": "perio",
+    "difficulty": "medium",
+    "q": "Probing depth alone fails to fully describe damage because:",
+    "options": [
+      "PD measures enamel hardness",
+      "PD never changes",
+      "PD is always equal to CAL",
+      "It ignores recession/attachment history"
+    ],
+    "answer": 3,
+    "explanation": "PD ≠ CAL when recession present.",
+    "source": "premium_perio",
+    "subtopics": [
+      "cal"
+    ]
+  },
+  {
+    "id": "per_boost_008",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "Bleeding on probing primarily indicates:",
+    "options": [
+      "Pulp necrosis",
+      "Inflammation of the pocket wall",
+      "Always irreversible bone loss",
+      "Need for immediate extraction"
+    ],
+    "answer": 1,
+    "explanation": "BOP = inflammation marker.",
+    "source": "premium_perio",
+    "subtopics": [
+      "bop"
+    ]
+  },
+  {
+    "id": "per_boost_009",
+    "topic": "perio",
+    "difficulty": "medium",
+    "q": "True periodontal pocket involves:",
+    "options": [
+      "Only swollen gingiva without attachment loss",
+      "Only occlusal caries",
+      "Enamel hypoplasia",
+      "Apical migration of junctional epithelium / attachment loss"
+    ],
+    "answer": 3,
+    "explanation": "True pocket = attachment loss.",
+    "source": "premium_perio",
+    "subtopics": [
+      "pathogenesis"
+    ]
+  },
+  {
+    "id": "per_boost_010",
+    "topic": "perio",
+    "difficulty": "medium",
+    "q": "Pseudopocket is mainly due to:",
+    "options": [
+      "Missing MB2",
+      "Gingival enlargement without attachment loss",
+      "Vertical root fracture only",
+      "Apical periodontitis only"
+    ],
+    "answer": 1,
+    "explanation": "Edema/hyperplasia can deepen PD without CAL loss.",
+    "source": "premium_perio",
+    "subtopics": [
+      "pathogenesis"
+    ]
+  },
+  {
+    "id": "per_boost_011",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "Glickman Class I furcation means:",
+    "options": [
+      "Tooth must be extracted always",
+      "Only radiographic apex open",
+      "Incipient involvement; probe catches but not horizontal into furcation deeply",
+      "Through-and-through visible"
+    ],
+    "answer": 2,
+    "explanation": "I = early/incipient.",
+    "source": "premium_perio",
+    "subtopics": [
+      "furcation"
+    ]
+  },
+  {
+    "id": "per_boost_012",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "Glickman Class II furcation means:",
+    "options": [
+      "Cul-de-sac; horizontal loss into furcation but not through-and-through",
+      "Always Class IV",
+      "Only soft tissue",
+      "No bone loss ever"
+    ],
+    "answer": 0,
+    "explanation": "II = cul-de-sac.",
+    "source": "premium_perio",
+    "subtopics": [
+      "furcation"
+    ]
+  },
+  {
+    "id": "per_boost_013",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "Glickman Class III furcation means:",
+    "options": [
+      "Through-and-through involvement",
+      "Only enamel pearl",
+      "Incipient only",
+      "No probe entry"
+    ],
+    "answer": 0,
+    "explanation": "III = through-and-through.",
+    "source": "premium_perio",
+    "subtopics": [
+      "furcation"
+    ]
+  },
+  {
+    "id": "per_boost_014",
+    "topic": "perio",
+    "difficulty": "medium",
+    "q": "Glickman Class IV furcation means:",
+    "options": [
+      "Only soft tissue swelling",
+      "Through-and-through with gingival recession making furcation visible",
+      "Only Class I",
+      "No involvement"
+    ],
+    "answer": 1,
+    "explanation": "IV = III + visible recession.",
+    "source": "premium_perio",
+    "subtopics": [
+      "furcation"
+    ]
+  },
+  {
+    "id": "per_boost_015",
+    "topic": "perio",
+    "difficulty": "medium",
+    "q": "Most common root for furcation issues on mandibular molars relates to:",
+    "options": [
+      "Always single-rooted premolars only",
+      "Only maxillary centrals",
+      "Bifurcation anatomy and bone loss pattern",
+      "Only third molars never"
+    ],
+    "answer": 2,
+    "explanation": "Mandibular molars have buccal/lingual furcation access.",
+    "source": "premium_perio",
+    "subtopics": [
+      "furcation"
+    ]
+  },
+  {
+    "id": "per_boost_016",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "Primary etiologic agent of plaque-induced gingivitis is:",
+    "options": [
+      "Dental plaque biofilm",
+      "Occlusal trauma alone",
+      "Fluoride tablets",
+      "Only genetics without plaque"
+    ],
+    "answer": 0,
+    "explanation": "Biofilm is necessary cause for plaque-induced disease.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_017",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "Smoking effect on periodontium includes:",
+    "options": [
+      "Protects against bone loss",
+      "Worse disease, impaired healing, may mask bleeding",
+      "No effect on implants",
+      "Always improves BOP reliability"
+    ],
+    "answer": 1,
+    "explanation": "Smoking = major risk; masks BOP.",
+    "source": "premium_perio",
+    "subtopics": [
+      "risk"
+    ]
+  },
+  {
+    "id": "per_boost_018",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "Diabetes and periodontitis relationship is best described as:",
+    "options": [
+      "Perio never affects glycemic control considerations",
+      "Bidirectional risk / mutual worsening potential",
+      "Diabetes never affects gingiva",
+      "Only type 1 irrelevant"
+    ],
+    "answer": 1,
+    "explanation": "Bidirectional association is high-yield.",
+    "source": "premium_perio",
+    "subtopics": [
+      "risk"
+    ]
+  },
+  {
+    "id": "per_boost_019",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "Drug-induced gingival enlargement classic triad includes:",
+    "options": [
+      "Nifedipine, phenytoin, cyclosporine",
+      "Lidocaine, epinephrine, articaine",
+      "Fluoride, xylitol, chlorhexidine",
+      "Paracetamol, amoxicillin, ibuprofen"
+    ],
+    "answer": 0,
+    "explanation": "Ca-channel blocker / anticonvulsant / immunosuppressant.",
+    "source": "premium_perio",
+    "subtopics": [
+      "drugs"
+    ]
+  },
+  {
+    "id": "per_boost_020",
+    "topic": "perio",
+    "difficulty": "medium",
+    "q": "Best first management step for drug-induced gingival enlargement often includes:",
+    "options": [
+      "Immediate full mouth extraction only option",
+      "Only bleaching",
+      "Ignore plaque",
+      "Oral hygiene + plaque control ± drug substitution coordination"
+    ],
+    "answer": 3,
+    "explanation": "Cause-related + medical liaison.",
+    "source": "premium_perio",
+    "subtopics": [
+      "drugs"
+    ]
+  },
+  {
+    "id": "per_boost_021",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "Foundation of cause-related non-surgical perio therapy is:",
+    "options": [
+      "Antibiotics alone without debridement",
+      "Only occlusal adjustment",
+      "Scaling and root planing (SRP) with OH instruction",
+      "Only free gingival graft first always"
+    ],
+    "answer": 2,
+    "explanation": "SRP + OH first-line.",
+    "source": "premium_perio",
+    "subtopics": [
+      "therapy"
+    ]
+  },
+  {
+    "id": "per_boost_022",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "Re-evaluation after SRP is typically used to:",
+    "options": [
+      "Prove extraction always needed",
+      "Assess residual pockets/inflammation and plan further care",
+      "Measure pulp vitality only",
+      "Replace diagnosis of caries"
+    ],
+    "answer": 1,
+    "explanation": "Re-eval guides surgery vs maintenance.",
+    "source": "premium_perio",
+    "subtopics": [
+      "therapy"
+    ]
+  },
+  {
+    "id": "per_boost_023",
+    "topic": "perio",
+    "difficulty": "medium",
+    "q": "Systemic antibiotics as perio therapy are best thought as:",
+    "options": [
+      "Never used in any case",
+      "Adjuncts in selected cases, not sole therapy",
+      "Replacement for plaque control",
+      "Always first-line alone for gingivitis"
+    ],
+    "answer": 1,
+    "explanation": "Abx adjunct only when indicated.",
+    "source": "premium_perio",
+    "subtopics": [
+      "therapy"
+    ]
+  },
+  {
+    "id": "per_boost_024",
+    "topic": "perio",
+    "difficulty": "medium",
+    "q": "Indications for periodontal surgery often include:",
+    "options": [
+      "Always before any SRP",
+      "Persistent deep pockets / access for root debridement / regenerative opportunities after cause control",
+      "All gingivitis on day 1",
+      "Only white spot lesions"
+    ],
+    "answer": 1,
+    "explanation": "Surgery after or with cause control as indicated.",
+    "source": "premium_perio",
+    "subtopics": [
+      "surgery"
+    ]
+  },
+  {
+    "id": "per_boost_025",
+    "topic": "perio",
+    "difficulty": "medium",
+    "q": "Guided tissue regeneration aims to:",
+    "options": [
+      "Replace RCTs",
+      "Only whiten teeth",
+      "Only extract third molars",
+      "Regenerate periodontal attachment apparatus under barrier principles"
+    ],
+    "answer": 3,
+    "explanation": "GTR = regenerative concept.",
+    "source": "premium_perio",
+    "subtopics": [
+      "surgery"
+    ]
+  },
+  {
+    "id": "per_boost_026",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "Biological width (supracrestal tissue attachment) violation often leads to:",
+    "options": [
+      "Better papilla always",
+      "Chronic inflammation around subgingival restorations",
+      "Faster enamel maturation",
+      "No clinical effect"
+    ],
+    "answer": 1,
+    "explanation": "Margin invasion → chronic inflam.",
+    "source": "premium_perio",
+    "subtopics": [
+      "bio_width"
+    ]
+  },
+  {
+    "id": "per_boost_027",
+    "topic": "perio",
+    "difficulty": "medium",
+    "q": "Approximate classic teaching height of biologic width / supracrestal attachment is about:",
+    "options": [
+      "~2 mm combined connective + epithelial attachment (classic exam figure)",
+      "Equal to full root length",
+      "0.1 mm only enamel",
+      "20 mm always"
+    ],
+    "answer": 0,
+    "explanation": "Classic ~2 mm figure tested often.",
+    "source": "premium_perio",
+    "subtopics": [
+      "bio_width"
+    ]
+  },
+  {
+    "id": "per_boost_028",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "Peri-implant mucositis is characterized by:",
+    "options": [
+      "Only pulpitis",
+      "Soft tissue inflammation without progressive crestal bone loss of peri-implantitis",
+      "Always progressive bone loss",
+      "Only dry socket"
+    ],
+    "answer": 1,
+    "explanation": "Mucositis = soft tissue only.",
+    "source": "premium_perio",
+    "subtopics": [
+      "implant"
+    ]
+  },
+  {
+    "id": "per_boost_029",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "Peri-implantitis includes:",
+    "options": [
+      "Inflammation with progressive bone loss around implant",
+      "Only reversible pulpitis",
+      "Healthy soft tissue only",
+      "Only natal teeth"
+    ],
+    "answer": 0,
+    "explanation": "Peri-implantitis = bone loss.",
+    "source": "premium_perio",
+    "subtopics": [
+      "implant"
+    ]
+  },
+  {
+    "id": "per_boost_030",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "Primary prevention of peri-implant disease emphasizes:",
+    "options": [
+      "Never cleaning implants",
+      "Only antibiotics lifelong",
+      "Always remove prosthesis monthly",
+      "Plaque control and maintenance recall"
+    ],
+    "answer": 3,
+    "explanation": "Maintenance is critical.",
+    "source": "premium_perio",
+    "subtopics": [
+      "implant"
+    ]
+  },
+  {
+    "id": "per_boost_031",
+    "topic": "perio",
+    "difficulty": "medium",
+    "q": "Necrotizing ulcerative gingivitis classic features include:",
+    "options": [
+      "Only enamel hypoplasia",
+      "Painless white plaque only that never bleeds",
+      "Pain, bleeding, necrosis of papillae, often fetor; stress/smoking risk",
+      "Only Class III malocclusion"
+    ],
+    "answer": 2,
+    "explanation": "NUG is acute painful necrosis pattern.",
+    "source": "premium_perio",
+    "subtopics": [
+      "nug"
+    ]
+  },
+  {
+    "id": "per_boost_032",
+    "topic": "perio",
+    "difficulty": "medium",
+    "q": "Periodontal abscess management cornerstone is:",
+    "options": [
+      "Antibiotics alone without local care always enough",
+      "Drainage + debridement of cause + risk control",
+      "Immediate RCT of every tooth always",
+      "Only bleaching"
+    ],
+    "answer": 1,
+    "explanation": "Local cause control essential.",
+    "source": "premium_perio",
+    "subtopics": [
+      "abscess"
+    ]
+  },
+  {
+    "id": "per_boost_033",
+    "topic": "perio",
+    "difficulty": "hard",
+    "q": "Miller mobility Class II roughly means:",
+    "options": [
+      "Ankylosis only",
+      "No mobility",
+      "Only vertical 1 cm always",
+      "Increased mobility in horizontal direction beyond normal, not depressible (classic teaching bands)"
+    ],
+    "answer": 3,
+    "explanation": "Mobility grades are exam favorites.",
+    "source": "premium_perio",
+    "subtopics": [
+      "mobility"
+    ]
+  },
+  {
+    "id": "per_boost_034",
+    "topic": "perio",
+    "difficulty": "medium",
+    "q": "Primary occlusal trauma means:",
+    "options": [
+      "Always needs extraction",
+      "Injury from excessive occlusal force on a periodontium of normal support",
+      "Only trauma from plaque",
+      "Only endo diagnosis"
+    ],
+    "answer": 1,
+    "explanation": "Primary = normal support + excess force.",
+    "source": "premium_perio",
+    "subtopics": [
+      "occlusion"
+    ]
+  },
+  {
+    "id": "per_boost_035",
+    "topic": "perio",
+    "difficulty": "medium",
+    "q": "Secondary occlusal trauma means:",
+    "options": [
+      "Only primary herpetic gingivostomatitis",
+      "Only fluorosis",
+      "Always healthy bone",
+      "Normal or excess forces on a reduced periodontium"
+    ],
+    "answer": 3,
+    "explanation": "Secondary = reduced support.",
+    "source": "premium_perio",
+    "subtopics": [
+      "occlusion"
+    ]
+  },
+  {
+    "id": "per_boost_036",
+    "topic": "perio",
+    "difficulty": "hard",
+    "q": "Old term 'aggressive periodontitis' maps roughly to:",
+    "options": [
+      "Only caries",
+      "Only dry socket",
+      "Rapidly progressive / Grade C-type patterns in modern thinking",
+      "Only gingivitis"
+    ],
+    "answer": 2,
+    "explanation": "Map old→new for bank questions.",
+    "source": "premium_perio",
+    "subtopics": [
+      "classification"
+    ]
+  },
+  {
+    "id": "per_boost_037",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "Most important daily patient factor for perio success is:",
+    "options": [
+      "Only whitening strips",
+      "Monthly professional care only without home care",
+      "Avoiding all vegetables",
+      "Effective plaque control / oral hygiene"
+    ],
+    "answer": 3,
+    "explanation": "OH is non-negotiable.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_038",
+    "topic": "perio",
+    "difficulty": "medium",
+    "q": "When residual deep pockets remain after excellent SRP and OH, next often considered is:",
+    "options": [
+      "Ignore forever",
+      "Immediate full denture always",
+      "Only fluoride varnish always",
+      "Surgical access / further periodontal therapy as indicated"
+    ],
+    "answer": 3,
+    "explanation": "Escalate appropriately.",
+    "source": "premium_perio",
+    "subtopics": [
+      "surgery"
+    ]
+  },
+  {
+    "id": "per_boost_039",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "Radiographic bone loss assessment in staging is used as:",
+    "options": [
+      "Replacement for BOP",
+      "Only way to diagnose pulpitis",
+      "Part of severity/complexity appraisal (with clinical findings)",
+      "Only for ortho bonding"
+    ],
+    "answer": 2,
+    "explanation": "Radiographs support staging.",
+    "source": "premium_perio",
+    "subtopics": [
+      "classification"
+    ]
+  },
+  {
+    "id": "per_boost_040",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "Furcation involvement generally increases:",
+    "options": [
+      "Complexity of management (stage considerations)",
+      "Enamel hardness",
+      "Need for fluoride tablets only",
+      "Likelihood of spontaneous self-cure always"
+    ],
+    "answer": 0,
+    "explanation": "Furcation = complexity.",
+    "source": "premium_perio",
+    "subtopics": [
+      "furcation"
+    ]
+  },
+  {
+    "id": "per_boost_041",
+    "topic": "perio",
+    "difficulty": "medium",
+    "q": "Horizontal bone loss pattern is often associated with:",
+    "options": [
+      "Suprabony pockets / relatively even loss patterns",
+      "Only VRF",
+      "Only vertical defects always",
+      "Only implants"
+    ],
+    "answer": 0,
+    "explanation": "Pattern recognition.",
+    "source": "premium_perio",
+    "subtopics": [
+      "pathogenesis"
+    ]
+  },
+  {
+    "id": "per_boost_042",
+    "topic": "perio",
+    "difficulty": "medium",
+    "q": "Vertical/angular bone defects may be candidates for:",
+    "options": [
+      "No therapy",
+      "Only bleaching",
+      "Always extraction only",
+      "Regenerative approaches when anatomy allows"
+    ],
+    "answer": 3,
+    "explanation": "Angular defects ↔ regenerative potential.",
+    "source": "premium_perio",
+    "subtopics": [
+      "surgery"
+    ]
+  },
+  {
+    "id": "per_boost_043",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "Probe force should be:",
+    "options": [
+      "Gentle standardized light force (not stabbing)",
+      "Zero contact ever",
+      "Only ultrasonic always",
+      "As hard as possible always"
+    ],
+    "answer": 0,
+    "explanation": "Technique matters for PD.",
+    "source": "premium_perio",
+    "subtopics": [
+      "exam"
+    ]
+  },
+  {
+    "id": "per_boost_044",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "Gingivitis without attachment loss is:",
+    "options": [
+      "Reversible with plaque control (classic)",
+      "Always irreversible bone loss",
+      "Same as Stage IV",
+      "Always needs surgery first"
+    ],
+    "answer": 0,
+    "explanation": "Gingivitis reversible.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_045",
+    "topic": "perio",
+    "difficulty": "medium",
+    "q": "Maintenance interval after active therapy is often:",
+    "options": [
+      "Only every 10 years",
+      "Never again",
+      "Risk-based recall (many 3–4 months early)",
+      "Daily SRP in office"
+    ],
+    "answer": 2,
+    "explanation": "Supportive perio therapy.",
+    "source": "premium_perio",
+    "subtopics": [
+      "therapy"
+    ]
+  },
+  {
+    "id": "per_boost_046",
+    "topic": "perio",
+    "difficulty": "hard",
+    "q": "Local drug delivery (e.g., antimicrobials in pocket) is:",
+    "options": [
+      "Only for caries",
+      "Cure for Stage IV alone",
+      "Adjunct in selected residual sites",
+      "Replacement for extraction always"
+    ],
+    "answer": 2,
+    "explanation": "Local adjunct concept.",
+    "source": "premium_perio",
+    "subtopics": [
+      "therapy"
+    ]
+  },
+  {
+    "id": "per_boost_047",
+    "topic": "perio",
+    "difficulty": "medium",
+    "q": "Pregnancy-associated gingival changes are mainly related to:",
+    "options": [
+      "Hormonal influence amplifying plaque response",
+      "Fluoride deficiency only",
+      "Always pemphigus",
+      "Need for immediate all extractions"
+    ],
+    "answer": 0,
+    "explanation": "Hormones + plaque.",
+    "source": "premium_perio",
+    "subtopics": [
+      "risk"
+    ]
+  },
+  {
+    "id": "per_boost_048",
+    "topic": "perio",
+    "difficulty": "hard",
+    "q": "HIV-related perio presentations historically include:",
+    "options": [
+      "Only Class II Div 2",
+      "Only dry socket",
+      "Only dens in dente",
+      "Necrotizing forms in susceptible hosts"
+    ],
+    "answer": 3,
+    "explanation": "Immunosuppression risk.",
+    "source": "premium_perio",
+    "subtopics": [
+      "nug"
+    ]
+  },
+  {
+    "id": "per_boost_049",
+    "topic": "perio",
+    "difficulty": "medium",
+    "q": "Tooth mobility may improve after:",
+    "options": [
+      "Inflammation control and/or occlusal adjustment when indicated",
+      "Only ignoring pockets",
+      "Only bleaching",
+      "Always endo first always"
+    ],
+    "answer": 0,
+    "explanation": "Treat causes of mobility.",
+    "source": "premium_perio",
+    "subtopics": [
+      "mobility"
+    ]
+  },
+  {
+    "id": "per_boost_050",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "Prognosis worsens with:",
+    "options": [
+      "Only young age always good alone",
+      "Always implants without maintenance",
+      "Uncontrolled systemic disease, smoking, poor OH, advanced furcation",
+      "Perfect OH and health"
+    ],
+    "answer": 2,
+    "explanation": "Risk stack.",
+    "source": "premium_perio",
+    "subtopics": [
+      "risk"
+    ]
+  },
+  {
+    "id": "per_boost_051",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "Which drug is classically linked to gingival enlargement (item 1)?",
+    "options": [
+      "Nifedipine",
+      "Paracetamol",
+      "Xylitol rinse only",
+      "Amoxicillin"
+    ],
+    "answer": 0,
+    "explanation": "nifedipine is in the classic triad.",
+    "source": "premium_perio",
+    "subtopics": [
+      "drugs"
+    ]
+  },
+  {
+    "id": "per_boost_052",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "Which drug is classically linked to gingival enlargement (item 2)?",
+    "options": [
+      "Paracetamol",
+      "Phenytoin",
+      "Xylitol rinse only",
+      "Amoxicillin"
+    ],
+    "answer": 1,
+    "explanation": "phenytoin is in the classic triad.",
+    "source": "premium_perio",
+    "subtopics": [
+      "drugs"
+    ]
+  },
+  {
+    "id": "per_boost_053",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "Which drug is classically linked to gingival enlargement (item 3)?",
+    "options": [
+      "Amoxicillin",
+      "Cyclosporine",
+      "Xylitol rinse only",
+      "Paracetamol"
+    ],
+    "answer": 1,
+    "explanation": "cyclosporine is in the classic triad.",
+    "source": "premium_perio",
+    "subtopics": [
+      "drugs"
+    ]
+  },
+  {
+    "id": "per_boost_054",
+    "topic": "perio",
+    "difficulty": "medium",
+    "q": "In 2017 classification, Stage I primarily indicates:",
+    "options": [
+      "Only pulp diagnosis",
+      "Only fluoride dose",
+      "Initial periodontitis severity band",
+      "Only Angle Class"
+    ],
+    "answer": 2,
+    "explanation": "Stage I is a severity/complexity band.",
+    "source": "premium_perio",
+    "subtopics": [
+      "classification"
+    ]
+  },
+  {
+    "id": "per_boost_055",
+    "topic": "perio",
+    "difficulty": "medium",
+    "q": "In 2017 classification, Stage II primarily indicates:",
+    "options": [
+      "Moderate severity band",
+      "Only pulp diagnosis",
+      "Only fluoride dose",
+      "Only Angle Class"
+    ],
+    "answer": 0,
+    "explanation": "Stage II is a severity/complexity band.",
+    "source": "premium_perio",
+    "subtopics": [
+      "classification"
+    ]
+  },
+  {
+    "id": "per_boost_056",
+    "topic": "perio",
+    "difficulty": "medium",
+    "q": "In 2017 classification, Stage III primarily indicates:",
+    "options": [
+      "Only pulp diagnosis",
+      "Severe with potential for tooth loss complexity",
+      "Only Angle Class",
+      "Only fluoride dose"
+    ],
+    "answer": 1,
+    "explanation": "Stage III is a severity/complexity band.",
+    "source": "premium_perio",
+    "subtopics": [
+      "classification"
+    ]
+  },
+  {
+    "id": "per_boost_057",
+    "topic": "perio",
+    "difficulty": "medium",
+    "q": "In 2017 classification, Stage IV primarily indicates:",
+    "options": [
+      "Only pulp diagnosis",
+      "Only Angle Class",
+      "Only fluoride dose",
+      "Advanced with complex rehabilitation needs"
+    ],
+    "answer": 3,
+    "explanation": "Stage IV is a severity/complexity band.",
+    "source": "premium_perio",
+    "subtopics": [
+      "classification"
+    ]
+  },
+  {
+    "id": "per_boost_058",
+    "topic": "perio",
+    "difficulty": "medium",
+    "q": "Deep residual 7 mm pockets after good SRP, good OH, BOP residual — next logical step?",
+    "options": [
+      "Only orthodontic expansion always",
+      "Ignore BOP",
+      "Consider surgical access / further perio therapy planning",
+      "Stop all care"
+    ],
+    "answer": 2,
+    "explanation": "Escalate after cause control.",
+    "source": "premium_perio",
+    "subtopics": [
+      "surgery"
+    ]
+  },
+  {
+    "id": "per_boost_059",
+    "topic": "perio",
+    "difficulty": "medium",
+    "q": "Smoker with pale gingiva and little BOP but radiographic bone loss — concern?",
+    "options": [
+      "Only needs whitening",
+      "Smoking can mask bleeding despite disease",
+      "Always healthy",
+      "Disease impossible if no BOP"
+    ],
+    "answer": 1,
+    "explanation": "Masked inflammation.",
+    "source": "premium_perio",
+    "subtopics": [
+      "risk"
+    ]
+  },
+  {
+    "id": "per_boost_060",
+    "topic": "perio",
+    "difficulty": "medium",
+    "q": "Uncontrolled diabetes, progressive perio — management priority includes:",
+    "options": [
+      "Medical control coordination + periodontal cause-related care",
+      "Ignore HbA1c",
+      "Antibiotics alone forever",
+      "Only extract all immediately without medical liaison"
+    ],
+    "answer": 0,
+    "explanation": "Systemic + local.",
+    "source": "premium_perio",
+    "subtopics": [
+      "risk"
+    ]
+  },
+  {
+    "id": "per_boost_061",
+    "topic": "perio",
+    "difficulty": "medium",
+    "q": "Crown margin deep subgingival with chronic inflammation and bone loss adjacent — think:",
+    "options": [
+      "Always only TMD",
+      "Always natal tooth",
+      "Possible biologic width violation / plaque trap",
+      "Always only pulpitis"
+    ],
+    "answer": 2,
+    "explanation": "Restorative–perio interface.",
+    "source": "premium_perio",
+    "subtopics": [
+      "bio_width"
+    ]
+  },
+  {
+    "id": "per_boost_062",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "Implant with bleeding, swelling, no progressive bone loss on serial films — most like:",
+    "options": [
+      "Peri-implant mucositis",
+      "Only dry socket",
+      "Healthy peri-implant tissues",
+      "Vertical root fracture of natural tooth only"
+    ],
+    "answer": 0,
+    "explanation": "Mucositis definition.",
+    "source": "premium_perio",
+    "subtopics": [
+      "implant"
+    ]
+  },
+  {
+    "id": "per_boost_063",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "Implant with progressive crater bone loss and inflammation — most like:",
+    "options": [
+      "Reversible pulpitis",
+      "Peri-implantitis",
+      "Mucositis only",
+      "Leukoplakia"
+    ],
+    "answer": 1,
+    "explanation": "Bone loss = peri-implantitis.",
+    "source": "premium_perio",
+    "subtopics": [
+      "implant"
+    ]
+  },
+  {
+    "id": "per_boost_064",
+    "topic": "perio",
+    "difficulty": "medium",
+    "q": "Grade B vs C decision often weighs:",
+    "options": [
+      "Only tooth color",
+      "Only patient preference for soda",
+      "Evidence of progression rate and risk factors (e.g., smoking, diabetes)",
+      "Only amalgam brand"
+    ],
+    "answer": 2,
+    "explanation": "Grading risk.",
+    "source": "premium_perio",
+    "subtopics": [
+      "classification"
+    ]
+  },
+  {
+    "id": "per_boost_065",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "Best way to monitor home care success clinically includes:",
+    "options": [
+      "Plaque scores, BOP reduction, patient demonstration",
+      "Only asking once",
+      "Only vitality tests",
+      "Only radiographs forever without clinical"
+    ],
+    "answer": 0,
+    "explanation": "Clinical monitoring.",
+    "source": "premium_perio",
+    "subtopics": [
+      "therapy"
+    ]
+  },
+  {
+    "id": "per_boost_066",
+    "topic": "perio",
+    "difficulty": "hard",
+    "q": "Furcation Class III on a strategic molar may require:",
+    "options": [
+      "Only bleaching",
+      "Only fluoride drops",
+      "No options exist",
+      "Complex management options (root resection, regenerative attempt, tunnel, or extraction/plan)"
+    ],
+    "answer": 3,
+    "explanation": "Complex decisions.",
+    "source": "premium_perio",
+    "subtopics": [
+      "furcation"
+    ]
+  },
+  {
+    "id": "per_boost_067",
+    "topic": "perio",
+    "difficulty": "medium",
+    "q": "Occlusal adjustment in perio is:",
+    "options": [
+      "Never considered",
+      "Only for primary teeth SSC",
+      "Cure for all periodontitis alone",
+      "Adjunctive when traumatic occlusion contributes — not a substitute for plaque control"
+    ],
+    "answer": 3,
+    "explanation": "Adjunct concept.",
+    "source": "premium_perio",
+    "subtopics": [
+      "occlusion"
+    ]
+  },
+  {
+    "id": "per_boost_068",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #68: plaque biofilm role is best stated as:",
+    "options": [
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease",
+      "Only genetic, plaque never matters",
+      "Only related to endo irrigants",
+      "Irrelevant if patient flosses once a year"
+    ],
+    "answer": 0,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_069",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #69: plaque biofilm role is best stated as:",
+    "options": [
+      "Irrelevant if patient flosses once a year",
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease",
+      "Only genetic, plaque never matters",
+      "Only related to endo irrigants"
+    ],
+    "answer": 1,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_070",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #70: plaque biofilm role is best stated as:",
+    "options": [
+      "Only genetic, plaque never matters",
+      "Irrelevant if patient flosses once a year",
+      "Only related to endo irrigants",
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease"
+    ],
+    "answer": 3,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_071",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #71: plaque biofilm role is best stated as:",
+    "options": [
+      "Only related to endo irrigants",
+      "Only genetic, plaque never matters",
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease",
+      "Irrelevant if patient flosses once a year"
+    ],
+    "answer": 2,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_072",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #72: plaque biofilm role is best stated as:",
+    "options": [
+      "Only genetic, plaque never matters",
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease",
+      "Irrelevant if patient flosses once a year",
+      "Only related to endo irrigants"
+    ],
+    "answer": 1,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_073",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #73: plaque biofilm role is best stated as:",
+    "options": [
+      "Only related to endo irrigants",
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease",
+      "Irrelevant if patient flosses once a year",
+      "Only genetic, plaque never matters"
+    ],
+    "answer": 1,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_074",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #74: plaque biofilm role is best stated as:",
+    "options": [
+      "Only related to endo irrigants",
+      "Irrelevant if patient flosses once a year",
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease",
+      "Only genetic, plaque never matters"
+    ],
+    "answer": 2,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_075",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #75: plaque biofilm role is best stated as:",
+    "options": [
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease",
+      "Irrelevant if patient flosses once a year",
+      "Only genetic, plaque never matters",
+      "Only related to endo irrigants"
+    ],
+    "answer": 0,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_076",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #76: plaque biofilm role is best stated as:",
+    "options": [
+      "Only related to endo irrigants",
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease",
+      "Only genetic, plaque never matters",
+      "Irrelevant if patient flosses once a year"
+    ],
+    "answer": 1,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_077",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #77: plaque biofilm role is best stated as:",
+    "options": [
+      "Only genetic, plaque never matters",
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease",
+      "Only related to endo irrigants",
+      "Irrelevant if patient flosses once a year"
+    ],
+    "answer": 1,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_078",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #78: plaque biofilm role is best stated as:",
+    "options": [
+      "Only genetic, plaque never matters",
+      "Only related to endo irrigants",
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease",
+      "Irrelevant if patient flosses once a year"
+    ],
+    "answer": 2,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_079",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #79: plaque biofilm role is best stated as:",
+    "options": [
+      "Irrelevant if patient flosses once a year",
+      "Only related to endo irrigants",
+      "Only genetic, plaque never matters",
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease"
+    ],
+    "answer": 3,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_080",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #80: plaque biofilm role is best stated as:",
+    "options": [
+      "Only related to endo irrigants",
+      "Irrelevant if patient flosses once a year",
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease",
+      "Only genetic, plaque never matters"
+    ],
+    "answer": 2,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_081",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #81: plaque biofilm role is best stated as:",
+    "options": [
+      "Only related to endo irrigants",
+      "Irrelevant if patient flosses once a year",
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease",
+      "Only genetic, plaque never matters"
+    ],
+    "answer": 2,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_082",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #82: plaque biofilm role is best stated as:",
+    "options": [
+      "Irrelevant if patient flosses once a year",
+      "Only related to endo irrigants",
+      "Only genetic, plaque never matters",
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease"
+    ],
+    "answer": 3,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_083",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #83: plaque biofilm role is best stated as:",
+    "options": [
+      "Irrelevant if patient flosses once a year",
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease",
+      "Only genetic, plaque never matters",
+      "Only related to endo irrigants"
+    ],
+    "answer": 1,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_084",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #84: plaque biofilm role is best stated as:",
+    "options": [
+      "Only related to endo irrigants",
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease",
+      "Irrelevant if patient flosses once a year",
+      "Only genetic, plaque never matters"
+    ],
+    "answer": 1,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_085",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #85: plaque biofilm role is best stated as:",
+    "options": [
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease",
+      "Only related to endo irrigants",
+      "Irrelevant if patient flosses once a year",
+      "Only genetic, plaque never matters"
+    ],
+    "answer": 0,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_086",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #86: plaque biofilm role is best stated as:",
+    "options": [
+      "Only genetic, plaque never matters",
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease",
+      "Irrelevant if patient flosses once a year",
+      "Only related to endo irrigants"
+    ],
+    "answer": 1,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_087",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #87: plaque biofilm role is best stated as:",
+    "options": [
+      "Only genetic, plaque never matters",
+      "Irrelevant if patient flosses once a year",
+      "Only related to endo irrigants",
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease"
+    ],
+    "answer": 3,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_088",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #88: plaque biofilm role is best stated as:",
+    "options": [
+      "Only genetic, plaque never matters",
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease",
+      "Only related to endo irrigants",
+      "Irrelevant if patient flosses once a year"
+    ],
+    "answer": 1,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_089",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #89: plaque biofilm role is best stated as:",
+    "options": [
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease",
+      "Only related to endo irrigants",
+      "Irrelevant if patient flosses once a year",
+      "Only genetic, plaque never matters"
+    ],
+    "answer": 0,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_090",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #90: plaque biofilm role is best stated as:",
+    "options": [
+      "Only related to endo irrigants",
+      "Irrelevant if patient flosses once a year",
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease",
+      "Only genetic, plaque never matters"
+    ],
+    "answer": 2,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_091",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #91: plaque biofilm role is best stated as:",
+    "options": [
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease",
+      "Irrelevant if patient flosses once a year",
+      "Only related to endo irrigants",
+      "Only genetic, plaque never matters"
+    ],
+    "answer": 0,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_092",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #92: plaque biofilm role is best stated as:",
+    "options": [
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease",
+      "Only related to endo irrigants",
+      "Only genetic, plaque never matters",
+      "Irrelevant if patient flosses once a year"
+    ],
+    "answer": 0,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_093",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #93: plaque biofilm role is best stated as:",
+    "options": [
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease",
+      "Only genetic, plaque never matters",
+      "Irrelevant if patient flosses once a year",
+      "Only related to endo irrigants"
+    ],
+    "answer": 0,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_094",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #94: plaque biofilm role is best stated as:",
+    "options": [
+      "Irrelevant if patient flosses once a year",
+      "Only related to endo irrigants",
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease",
+      "Only genetic, plaque never matters"
+    ],
+    "answer": 2,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_095",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #95: plaque biofilm role is best stated as:",
+    "options": [
+      "Irrelevant if patient flosses once a year",
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease",
+      "Only related to endo irrigants",
+      "Only genetic, plaque never matters"
+    ],
+    "answer": 1,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_096",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #96: plaque biofilm role is best stated as:",
+    "options": [
+      "Only related to endo irrigants",
+      "Irrelevant if patient flosses once a year",
+      "Only genetic, plaque never matters",
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease"
+    ],
+    "answer": 3,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_097",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #97: plaque biofilm role is best stated as:",
+    "options": [
+      "Only related to endo irrigants",
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease",
+      "Only genetic, plaque never matters",
+      "Irrelevant if patient flosses once a year"
+    ],
+    "answer": 1,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_098",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #98: plaque biofilm role is best stated as:",
+    "options": [
+      "Only genetic, plaque never matters",
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease",
+      "Only related to endo irrigants",
+      "Irrelevant if patient flosses once a year"
+    ],
+    "answer": 1,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_099",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #99: plaque biofilm role is best stated as:",
+    "options": [
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease",
+      "Only genetic, plaque never matters",
+      "Irrelevant if patient flosses once a year",
+      "Only related to endo irrigants"
+    ],
+    "answer": 0,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_100",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #100: plaque biofilm role is best stated as:",
+    "options": [
+      "Only related to endo irrigants",
+      "Only genetic, plaque never matters",
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease",
+      "Irrelevant if patient flosses once a year"
+    ],
+    "answer": 2,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_101",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #101: plaque biofilm role is best stated as:",
+    "options": [
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease",
+      "Only genetic, plaque never matters",
+      "Irrelevant if patient flosses once a year",
+      "Only related to endo irrigants"
+    ],
+    "answer": 0,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_102",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #102: plaque biofilm role is best stated as:",
+    "options": [
+      "Only genetic, plaque never matters",
+      "Irrelevant if patient flosses once a year",
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease",
+      "Only related to endo irrigants"
+    ],
+    "answer": 2,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_103",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #103: plaque biofilm role is best stated as:",
+    "options": [
+      "Only genetic, plaque never matters",
+      "Irrelevant if patient flosses once a year",
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease",
+      "Only related to endo irrigants"
+    ],
+    "answer": 2,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_104",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #104: plaque biofilm role is best stated as:",
+    "options": [
+      "Only related to endo irrigants",
+      "Irrelevant if patient flosses once a year",
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease",
+      "Only genetic, plaque never matters"
+    ],
+    "answer": 2,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_105",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #105: plaque biofilm role is best stated as:",
+    "options": [
+      "Only genetic, plaque never matters",
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease",
+      "Only related to endo irrigants",
+      "Irrelevant if patient flosses once a year"
+    ],
+    "answer": 1,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_106",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #106: plaque biofilm role is best stated as:",
+    "options": [
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease",
+      "Irrelevant if patient flosses once a year",
+      "Only genetic, plaque never matters",
+      "Only related to endo irrigants"
+    ],
+    "answer": 0,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_107",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #107: plaque biofilm role is best stated as:",
+    "options": [
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease",
+      "Only genetic, plaque never matters",
+      "Irrelevant if patient flosses once a year",
+      "Only related to endo irrigants"
+    ],
+    "answer": 0,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_108",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #108: plaque biofilm role is best stated as:",
+    "options": [
+      "Only related to endo irrigants",
+      "Irrelevant if patient flosses once a year",
+      "Only genetic, plaque never matters",
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease"
+    ],
+    "answer": 3,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_109",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #109: plaque biofilm role is best stated as:",
+    "options": [
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease",
+      "Only genetic, plaque never matters",
+      "Only related to endo irrigants",
+      "Irrelevant if patient flosses once a year"
+    ],
+    "answer": 0,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_110",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #110: plaque biofilm role is best stated as:",
+    "options": [
+      "Only genetic, plaque never matters",
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease",
+      "Irrelevant if patient flosses once a year",
+      "Only related to endo irrigants"
+    ],
+    "answer": 1,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_111",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #111: plaque biofilm role is best stated as:",
+    "options": [
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease",
+      "Only genetic, plaque never matters",
+      "Irrelevant if patient flosses once a year",
+      "Only related to endo irrigants"
+    ],
+    "answer": 0,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_112",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #112: plaque biofilm role is best stated as:",
+    "options": [
+      "Irrelevant if patient flosses once a year",
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease",
+      "Only related to endo irrigants",
+      "Only genetic, plaque never matters"
+    ],
+    "answer": 1,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_113",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #113: plaque biofilm role is best stated as:",
+    "options": [
+      "Only genetic, plaque never matters",
+      "Irrelevant if patient flosses once a year",
+      "Only related to endo irrigants",
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease"
+    ],
+    "answer": 3,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_114",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #114: plaque biofilm role is best stated as:",
+    "options": [
+      "Only genetic, plaque never matters",
+      "Only related to endo irrigants",
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease",
+      "Irrelevant if patient flosses once a year"
+    ],
+    "answer": 2,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_115",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #115: plaque biofilm role is best stated as:",
+    "options": [
+      "Only related to endo irrigants",
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease",
+      "Only genetic, plaque never matters",
+      "Irrelevant if patient flosses once a year"
+    ],
+    "answer": 1,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_116",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #116: plaque biofilm role is best stated as:",
+    "options": [
+      "Only genetic, plaque never matters",
+      "Only related to endo irrigants",
+      "Irrelevant if patient flosses once a year",
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease"
+    ],
+    "answer": 3,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_117",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #117: plaque biofilm role is best stated as:",
+    "options": [
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease",
+      "Irrelevant if patient flosses once a year",
+      "Only genetic, plaque never matters",
+      "Only related to endo irrigants"
+    ],
+    "answer": 0,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_118",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #118: plaque biofilm role is best stated as:",
+    "options": [
+      "Only genetic, plaque never matters",
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease",
+      "Irrelevant if patient flosses once a year",
+      "Only related to endo irrigants"
+    ],
+    "answer": 1,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_119",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #119: plaque biofilm role is best stated as:",
+    "options": [
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease",
+      "Only related to endo irrigants",
+      "Only genetic, plaque never matters",
+      "Irrelevant if patient flosses once a year"
+    ],
+    "answer": 0,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_120",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #120: plaque biofilm role is best stated as:",
+    "options": [
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease",
+      "Only related to endo irrigants",
+      "Irrelevant if patient flosses once a year",
+      "Only genetic, plaque never matters"
+    ],
+    "answer": 0,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_121",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #121: plaque biofilm role is best stated as:",
+    "options": [
+      "Only related to endo irrigants",
+      "Irrelevant if patient flosses once a year",
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease",
+      "Only genetic, plaque never matters"
+    ],
+    "answer": 2,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_122",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #122: plaque biofilm role is best stated as:",
+    "options": [
+      "Irrelevant if patient flosses once a year",
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease",
+      "Only related to endo irrigants",
+      "Only genetic, plaque never matters"
+    ],
+    "answer": 1,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_123",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #123: plaque biofilm role is best stated as:",
+    "options": [
+      "Only genetic, plaque never matters",
+      "Irrelevant if patient flosses once a year",
+      "Only related to endo irrigants",
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease"
+    ],
+    "answer": 3,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_124",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #124: plaque biofilm role is best stated as:",
+    "options": [
+      "Only genetic, plaque never matters",
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease",
+      "Irrelevant if patient flosses once a year",
+      "Only related to endo irrigants"
+    ],
+    "answer": 1,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_125",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #125: plaque biofilm role is best stated as:",
+    "options": [
+      "Only related to endo irrigants",
+      "Only genetic, plaque never matters",
+      "Irrelevant if patient flosses once a year",
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease"
+    ],
+    "answer": 3,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_126",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #126: plaque biofilm role is best stated as:",
+    "options": [
+      "Only related to endo irrigants",
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease",
+      "Irrelevant if patient flosses once a year",
+      "Only genetic, plaque never matters"
+    ],
+    "answer": 1,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_127",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #127: plaque biofilm role is best stated as:",
+    "options": [
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease",
+      "Irrelevant if patient flosses once a year",
+      "Only genetic, plaque never matters",
+      "Only related to endo irrigants"
+    ],
+    "answer": 0,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_128",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #128: plaque biofilm role is best stated as:",
+    "options": [
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease",
+      "Only related to endo irrigants",
+      "Irrelevant if patient flosses once a year",
+      "Only genetic, plaque never matters"
+    ],
+    "answer": 0,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_129",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #129: plaque biofilm role is best stated as:",
+    "options": [
+      "Irrelevant if patient flosses once a year",
+      "Only related to endo irrigants",
+      "Only genetic, plaque never matters",
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease"
+    ],
+    "answer": 3,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_130",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #130: plaque biofilm role is best stated as:",
+    "options": [
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease",
+      "Only related to endo irrigants",
+      "Only genetic, plaque never matters",
+      "Irrelevant if patient flosses once a year"
+    ],
+    "answer": 0,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_131",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #131: plaque biofilm role is best stated as:",
+    "options": [
+      "Irrelevant if patient flosses once a year",
+      "Only genetic, plaque never matters",
+      "Only related to endo irrigants",
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease"
+    ],
+    "answer": 3,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_132",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #132: plaque biofilm role is best stated as:",
+    "options": [
+      "Only related to endo irrigants",
+      "Only genetic, plaque never matters",
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease",
+      "Irrelevant if patient flosses once a year"
+    ],
+    "answer": 2,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_133",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #133: plaque biofilm role is best stated as:",
+    "options": [
+      "Irrelevant if patient flosses once a year",
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease",
+      "Only related to endo irrigants",
+      "Only genetic, plaque never matters"
+    ],
+    "answer": 1,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_134",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #134: plaque biofilm role is best stated as:",
+    "options": [
+      "Only related to endo irrigants",
+      "Only genetic, plaque never matters",
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease",
+      "Irrelevant if patient flosses once a year"
+    ],
+    "answer": 2,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_135",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #135: plaque biofilm role is best stated as:",
+    "options": [
+      "Irrelevant if patient flosses once a year",
+      "Only genetic, plaque never matters",
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease",
+      "Only related to endo irrigants"
+    ],
+    "answer": 2,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_136",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #136: plaque biofilm role is best stated as:",
+    "options": [
+      "Only genetic, plaque never matters",
+      "Irrelevant if patient flosses once a year",
+      "Only related to endo irrigants",
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease"
+    ],
+    "answer": 3,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_137",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #137: plaque biofilm role is best stated as:",
+    "options": [
+      "Only genetic, plaque never matters",
+      "Irrelevant if patient flosses once a year",
+      "Only related to endo irrigants",
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease"
+    ],
+    "answer": 3,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_138",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #138: plaque biofilm role is best stated as:",
+    "options": [
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease",
+      "Only genetic, plaque never matters",
+      "Irrelevant if patient flosses once a year",
+      "Only related to endo irrigants"
+    ],
+    "answer": 0,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_139",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #139: plaque biofilm role is best stated as:",
+    "options": [
+      "Only genetic, plaque never matters",
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease",
+      "Only related to endo irrigants",
+      "Irrelevant if patient flosses once a year"
+    ],
+    "answer": 1,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_140",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #140: plaque biofilm role is best stated as:",
+    "options": [
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease",
+      "Irrelevant if patient flosses once a year",
+      "Only genetic, plaque never matters",
+      "Only related to endo irrigants"
+    ],
+    "answer": 0,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_141",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #141: plaque biofilm role is best stated as:",
+    "options": [
+      "Irrelevant if patient flosses once a year",
+      "Only genetic, plaque never matters",
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease",
+      "Only related to endo irrigants"
+    ],
+    "answer": 2,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_142",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #142: plaque biofilm role is best stated as:",
+    "options": [
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease",
+      "Only genetic, plaque never matters",
+      "Only related to endo irrigants",
+      "Irrelevant if patient flosses once a year"
+    ],
+    "answer": 0,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_143",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #143: plaque biofilm role is best stated as:",
+    "options": [
+      "Irrelevant if patient flosses once a year",
+      "Only genetic, plaque never matters",
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease",
+      "Only related to endo irrigants"
+    ],
+    "answer": 2,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_144",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #144: plaque biofilm role is best stated as:",
+    "options": [
+      "Irrelevant if patient flosses once a year",
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease",
+      "Only genetic, plaque never matters",
+      "Only related to endo irrigants"
+    ],
+    "answer": 1,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_145",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #145: plaque biofilm role is best stated as:",
+    "options": [
+      "Only related to endo irrigants",
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease",
+      "Irrelevant if patient flosses once a year",
+      "Only genetic, plaque never matters"
+    ],
+    "answer": 1,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_146",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #146: plaque biofilm role is best stated as:",
+    "options": [
+      "Only genetic, plaque never matters",
+      "Irrelevant if patient flosses once a year",
+      "Only related to endo irrigants",
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease"
+    ],
+    "answer": 3,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_147",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #147: plaque biofilm role is best stated as:",
+    "options": [
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease",
+      "Irrelevant if patient flosses once a year",
+      "Only genetic, plaque never matters",
+      "Only related to endo irrigants"
+    ],
+    "answer": 0,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_148",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #148: plaque biofilm role is best stated as:",
+    "options": [
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease",
+      "Irrelevant if patient flosses once a year",
+      "Only genetic, plaque never matters",
+      "Only related to endo irrigants"
+    ],
+    "answer": 0,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_149",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #149: plaque biofilm role is best stated as:",
+    "options": [
+      "Irrelevant if patient flosses once a year",
+      "Only genetic, plaque never matters",
+      "Only related to endo irrigants",
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease"
+    ],
+    "answer": 3,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  },
+  {
+    "id": "per_boost_150",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "High-yield perio principle #150: plaque biofilm role is best stated as:",
+    "options": [
+      "Irrelevant if patient flosses once a year",
+      "Only related to endo irrigants",
+      "Only genetic, plaque never matters",
+      "Necessary primary etiology for plaque-induced gingival/periodontal disease"
+    ],
+    "answer": 3,
+    "explanation": "Biofilm remains central.",
+    "source": "premium_perio",
+    "subtopics": [
+      "etiology"
+    ]
+  }
+]

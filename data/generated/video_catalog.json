@@ -1,0 +1,737 @@
+{
+  "video_root": "/data/prometric/prometric",
+  "total_on_disk": 52,
+  "total_in_catalog": 52,
+  "orphans_on_disk": [],
+  "missing_from_disk": [],
+  "subjects": [
+    {
+      "id": "endo",
+      "path": "endo",
+      "lectures": [
+        {
+          "id": "lec.1",
+          "rel": "endo/lec.1",
+          "videos": [
+            {
+              "file": "endo/lec.1/المحاضره الاولي كورس 46.mp4",
+              "name": "المحاضره الاولي كورس 46.mp4",
+              "part": 1,
+              "order_in_folder": 1
+            }
+          ],
+          "count": 1
+        },
+        {
+          "id": "lec.2",
+          "rel": "endo/lec.2",
+          "videos": [
+            {
+              "file": "endo/lec.2/محاضره الثانيه كورس 46.mp4",
+              "name": "محاضره الثانيه كورس 46.mp4",
+              "part": 1,
+              "order_in_folder": 1
+            }
+          ],
+          "count": 1
+        },
+        {
+          "id": "lec.3",
+          "rel": "endo/lec.3",
+          "videos": [
+            {
+              "file": "endo/lec.3/المحاضره الثالثه كورس 46.mp4",
+              "name": "المحاضره الثالثه كورس 46.mp4",
+              "part": 1,
+              "order_in_folder": 1
+            }
+          ],
+          "count": 1
+        },
+        {
+          "id": "lec.4",
+          "rel": "endo/lec.4",
+          "videos": [
+            {
+              "file": "endo/lec.4/محاضره الرابعه كورس 46.mp4",
+              "name": "محاضره الرابعه كورس 46.mp4",
+              "part": 1,
+              "order_in_folder": 1
+            }
+          ],
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "perio",
+      "path": "perio",
+      "lectures": [
+        {
+          "id": "lec.5",
+          "rel": "perio/lec.5",
+          "videos": [
+            {
+              "file": "perio/lec.5/المحاضرة الخامسة البريو.mp4",
+              "name": "المحاضرة الخامسة البريو.mp4",
+              "part": 1,
+              "order_in_folder": 1
+            }
+          ],
+          "count": 1
+        },
+        {
+          "id": "lec.6",
+          "rel": "perio/lec.6",
+          "videos": [
+            {
+              "file": "perio/lec.6/المحاضره السادسه كورس 46.mp4",
+              "name": "المحاضره السادسه كورس 46.mp4",
+              "part": 1,
+              "order_in_folder": 1
+            }
+          ],
+          "count": 1
+        },
+        {
+          "id": "lec.7",
+          "rel": "perio/lec.7",
+          "videos": [
+            {
+              "file": "perio/lec.7/المحاضره السابعه الجزء الاول.mp4",
+              "name": "المحاضره السابعه الجزء الاول.mp4",
+              "part": 1,
+              "order_in_folder": 1
+            },
+            {
+              "file": "perio/lec.7/المحاضره السابعه الجزء الثاني.mp4",
+              "name": "المحاضره السابعه الجزء الثاني.mp4",
+              "part": 2,
+              "order_in_folder": 2
+            },
+            {
+              "file": "perio/lec.7/المحاضره السابعه الجزء الثالث.mp4",
+              "name": "المحاضره السابعه الجزء الثالث.mp4",
+              "part": 3,
+              "order_in_folder": 3
+            }
+          ],
+          "count": 3
+        },
+        {
+          "id": "lec.8",
+          "rel": "perio/lec.8",
+          "videos": [
+            {
+              "file": "perio/lec.8/المحاضره الثامنه الجزء الاول.mp4",
+              "name": "المحاضره الثامنه الجزء الاول.mp4",
+              "part": 1,
+              "order_in_folder": 1
+            },
+            {
+              "file": "perio/lec.8/المحاضره الثامنه الجزء الثاني.mp4",
+              "name": "المحاضره الثامنه الجزء الثاني.mp4",
+              "part": 2,
+              "order_in_folder": 2
+            },
+            {
+              "file": "perio/lec.8/الجزء الثالث.mp4",
+              "name": "الجزء الثالث.mp4",
+              "part": 3,
+              "order_in_folder": 3
+            }
+          ],
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": "prostho",
+      "path": "prostho",
+      "lectures": [
+        {
+          "id": "lec.9",
+          "rel": "prostho/lec.9",
+          "videos": [
+            {
+              "file": "prostho/lec.9/المحاصضره التاسعه الجزء الول.mp4",
+              "name": "المحاصضره التاسعه الجزء الول.mp4",
+              "part": 1,
+              "order_in_folder": 1
+            },
+            {
+              "file": "prostho/lec.9/المحاضره التاسعه الجزء الثاني.mp4",
+              "name": "المحاضره التاسعه الجزء الثاني.mp4",
+              "part": 2,
+              "order_in_folder": 2
+            },
+            {
+              "file": "prostho/lec.9/المحاضره التاسعه الجزء الثالث.mp4",
+              "name": "المحاضره التاسعه الجزء الثالث.mp4",
+              "part": 3,
+              "order_in_folder": 3
+            }
+          ],
+          "count": 3
+        },
+        {
+          "id": "lec.10",
+          "rel": "prostho/lec.10",
+          "videos": [
+            {
+              "file": "prostho/lec.10/المحاضره العاشره الجزء الاول.mp4",
+              "name": "المحاضره العاشره الجزء الاول.mp4",
+              "part": 1,
+              "order_in_folder": 1
+            },
+            {
+              "file": "prostho/lec.10/المحاضره العاشره الجزء الثاني.mp4",
+              "name": "المحاضره العاشره الجزء الثاني.mp4",
+              "part": 2,
+              "order_in_folder": 2
+            }
+          ],
+          "count": 2
+        },
+        {
+          "id": "lec.11",
+          "rel": "prostho/lec.11",
+          "videos": [
+            {
+              "file": "prostho/lec.11/المحاضره الحاديه عشر الجزء الاول.mp4",
+              "name": "المحاضره الحاديه عشر الجزء الاول.mp4",
+              "part": 1,
+              "order_in_folder": 1
+            },
+            {
+              "file": "prostho/lec.11/المحاضره الحاديه عشر الجزء الثاني.mp4",
+              "name": "المحاضره الحاديه عشر الجزء الثاني.mp4",
+              "part": 2,
+              "order_in_folder": 2
+            },
+            {
+              "file": "prostho/lec.11/المحاضره الحاديه عشر الجزء الثالث.mp4",
+              "name": "المحاضره الحاديه عشر الجزء الثالث.mp4",
+              "part": 3,
+              "order_in_folder": 3
+            }
+          ],
+          "count": 3
+        },
+        {
+          "id": "lec.12",
+          "rel": "prostho/lec.12",
+          "videos": [
+            {
+              "file": "prostho/lec.12/المحاضره الثانيه عشر  الجزء الاول.mp4",
+              "name": "المحاضره الثانيه عشر  الجزء الاول.mp4",
+              "part": 1,
+              "order_in_folder": 1
+            },
+            {
+              "file": "prostho/lec.12/المحاضره الثانيه عشر الجزء الثاني.mp4",
+              "name": "المحاضره الثانيه عشر الجزء الثاني.mp4",
+              "part": 2,
+              "order_in_folder": 2
+            }
+          ],
+          "count": 2
+        },
+        {
+          "id": "lec.13",
+          "rel": "prostho/lec.13",
+          "videos": [
+            {
+              "file": "prostho/lec.13/المحاضره الثالثه شر الجزء الاول.mp4",
+              "name": "المحاضره الثالثه شر الجزء الاول.mp4",
+              "part": 1,
+              "order_in_folder": 1
+            },
+            {
+              "file": "prostho/lec.13/المحاضره الثالثه شر الجزء الثاني.mp4",
+              "name": "المحاضره الثالثه شر الجزء الثاني.mp4",
+              "part": 2,
+              "order_in_folder": 2
+            }
+          ],
+          "count": 2
+        },
+        {
+          "id": "lec.14",
+          "rel": "prostho/lec.14",
+          "videos": [
+            {
+              "file": "prostho/lec.14/المحاضره الرابعه عشر الجزء الاول.mp4",
+              "name": "المحاضره الرابعه عشر الجزء الاول.mp4",
+              "part": 1,
+              "order_in_folder": 1
+            },
+            {
+              "file": "prostho/lec.14/المحاضره الرابعه عشر الجزء الثاني.mp4",
+              "name": "المحاضره الرابعه عشر الجزء الثاني.mp4",
+              "part": 2,
+              "order_in_folder": 2
+            },
+            {
+              "file": "prostho/lec.14/المحاضره الرابعه عشر الجزء الثالث.mp4",
+              "name": "المحاضره الرابعه عشر الجزء الثالث.mp4",
+              "part": 3,
+              "order_in_folder": 3
+            }
+          ],
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": "surgery",
+      "path": "surgery",
+      "lectures": [
+        {
+          "id": "lec.15",
+          "rel": "surgery/lec.15",
+          "videos": [
+            {
+              "file": "surgery/lec.15/المحاضره الخامسه عشر الجزء الاول.mp4",
+              "name": "المحاضره الخامسه عشر الجزء الاول.mp4",
+              "part": 1,
+              "order_in_folder": 1
+            },
+            {
+              "file": "surgery/lec.15/المحاضره الخامسه عشر الجزء الثاني.mp4",
+              "name": "المحاضره الخامسه عشر الجزء الثاني.mp4",
+              "part": 2,
+              "order_in_folder": 2
+            }
+          ],
+          "count": 2
+        },
+        {
+          "id": "lec.16",
+          "rel": "surgery/lec.16",
+          "videos": [
+            {
+              "file": "surgery/lec.16/المحاضره السادسه عشر الجزء الاول.mp4",
+              "name": "المحاضره السادسه عشر الجزء الاول.mp4",
+              "part": 1,
+              "order_in_folder": 1
+            },
+            {
+              "file": "surgery/lec.16/المحاضره السادسه عشر الجزء الثاني.mp4",
+              "name": "المحاضره السادسه عشر الجزء الثاني.mp4",
+              "part": 2,
+              "order_in_folder": 2
+            },
+            {
+              "file": "surgery/lec.16/المحاضره السادسه عشر الجزء الثالث.mp4",
+              "name": "المحاضره السادسه عشر الجزء الثالث.mp4",
+              "part": 3,
+              "order_in_folder": 3
+            }
+          ],
+          "count": 3
+        },
+        {
+          "id": "lec.17",
+          "rel": "surgery/lec.17",
+          "videos": [
+            {
+              "file": "surgery/lec.17/المحاضره السابعه عشر الجزء الاول.mp4",
+              "name": "المحاضره السابعه عشر الجزء الاول.mp4",
+              "part": 1,
+              "order_in_folder": 1
+            },
+            {
+              "file": "surgery/lec.17/المحاضره السابعه عشر الجزء الثاني.mp4",
+              "name": "المحاضره السابعه عشر الجزء الثاني.mp4",
+              "part": 2,
+              "order_in_folder": 2
+            },
+            {
+              "file": "surgery/lec.17/المحاضره السابعه عشر الجزء الثالث.mp4",
+              "name": "المحاضره السابعه عشر الجزء الثالث.mp4",
+              "part": 3,
+              "order_in_folder": 3
+            }
+          ],
+          "count": 3
+        },
+        {
+          "id": "lec.18",
+          "rel": "surgery/lec.18",
+          "videos": [
+            {
+              "file": "surgery/lec.18/المحاضره الثامنه عشر الجزء الاول.mp4",
+              "name": "المحاضره الثامنه عشر الجزء الاول.mp4",
+              "part": 1,
+              "order_in_folder": 1
+            },
+            {
+              "file": "surgery/lec.18/المحاضره الثامنه عشر الجزء الثاني.mp4",
+              "name": "المحاضره الثامنه عشر الجزء الثاني.mp4",
+              "part": 2,
+              "order_in_folder": 2
+            }
+          ],
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": "operative",
+      "path": "operative",
+      "lectures": [
+        {
+          "id": "lec.19",
+          "rel": "operative/lec.19",
+          "videos": [
+            {
+              "file": "operative/lec.19/محاضره التاسعه عشر الجزء الاول.mp4",
+              "name": "محاضره التاسعه عشر الجزء الاول.mp4",
+              "part": 1,
+              "order_in_folder": 1
+            },
+            {
+              "file": "operative/lec.19/المحاضره التاسعه عشر الجزء الثاني.mp4",
+              "name": "المحاضره التاسعه عشر الجزء الثاني.mp4",
+              "part": 2,
+              "order_in_folder": 2
+            }
+          ],
+          "count": 2
+        },
+        {
+          "id": "lec.20",
+          "rel": "operative/lec.20",
+          "videos": [
+            {
+              "file": "operative/lec.20/المحاضره العشرون.mp4",
+              "name": "المحاضره العشرون.mp4",
+              "part": 1,
+              "order_in_folder": 1
+            },
+            {
+              "file": "operative/lec.20/المحاضره العشرون الجزء الثاني.mp4",
+              "name": "المحاضره العشرون الجزء الثاني.mp4",
+              "part": 2,
+              "order_in_folder": 2
+            },
+            {
+              "file": "operative/lec.20/المحاضره العشرون الجزظء الثالث.mp4",
+              "name": "المحاضره العشرون الجزظء الثالث.mp4",
+              "part": 3,
+              "order_in_folder": 3
+            }
+          ],
+          "count": 3
+        },
+        {
+          "id": "lec.21",
+          "rel": "operative/lec.21",
+          "videos": [
+            {
+              "file": "operative/lec.21/المحاضره الواحد والعشرون الجزء الاول.mp4",
+              "name": "المحاضره الواحد والعشرون الجزء الاول.mp4",
+              "part": 1,
+              "order_in_folder": 1
+            },
+            {
+              "file": "operative/lec.21/المحاضره الواحد والعشرون الجزء الثاني.mp4",
+              "name": "المحاضره الواحد والعشرون الجزء الثاني.mp4",
+              "part": 2,
+              "order_in_folder": 2
+            }
+          ],
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": "ortho_pedo",
+      "path": "ortho and pedo",
+      "lectures": [
+        {
+          "id": "lec.22",
+          "rel": "ortho and pedo/lec.22",
+          "videos": [
+            {
+              "file": "ortho and pedo/lec.22/المحاضره الثانيه والعشرون الجزء الاول.mp4",
+              "name": "المحاضره الثانيه والعشرون الجزء الاول.mp4",
+              "part": 1,
+              "order_in_folder": 1
+            },
+            {
+              "file": "ortho and pedo/lec.22/المحاضره الثانيه والعشرون الجزء الثاني.mp4",
+              "name": "المحاضره الثانيه والعشرون الجزء الثاني.mp4",
+              "part": 2,
+              "order_in_folder": 2
+            }
+          ],
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": "path",
+      "path": "مدسن وباثولوجي",
+      "lectures": [
+        {
+          "id": "lec.23",
+          "rel": "مدسن وباثولوجي/lec.23",
+          "videos": [
+            {
+              "file": "مدسن وباثولوجي/lec.23/المحاضره الثالثه والعشرون الجزء الاول.mp4",
+              "name": "المحاضره الثالثه والعشرون الجزء الاول.mp4",
+              "part": 1,
+              "order_in_folder": 1
+            },
+            {
+              "file": "مدسن وباثولوجي/lec.23/المحاضره الثالثه والعشرون الجزء الثاني.mp4",
+              "name": "المحاضره الثالثه والعشرون الجزء الثاني.mp4",
+              "part": 2,
+              "order_in_folder": 2
+            }
+          ],
+          "count": 2
+        },
+        {
+          "id": "lec.24",
+          "rel": "مدسن وباثولوجي/lec.24",
+          "videos": [
+            {
+              "file": "مدسن وباثولوجي/lec.24/محاضره الخامسه والعشرين الجزء الاول.mp4",
+              "name": "محاضره الخامسه والعشرين الجزء الاول.mp4",
+              "part": 1,
+              "order_in_folder": 1
+            },
+            {
+              "file": "مدسن وباثولوجي/lec.24/محاضره الخامسه وعشرون الجزء الثاني.mp4",
+              "name": "محاضره الخامسه وعشرون الجزء الثاني.mp4",
+              "part": 2,
+              "order_in_folder": 2
+            },
+            {
+              "file": "مدسن وباثولوجي/lec.24/محاضره الخامسه وعشرين الجزء الثالث.mp4",
+              "name": "محاضره الخامسه وعشرين الجزء الثالث.mp4",
+              "part": 3,
+              "order_in_folder": 3
+            }
+          ],
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": "ethics",
+      "path": "ethics",
+      "lectures": [
+        {
+          "id": ".",
+          "rel": "ethics",
+          "videos": [
+            {
+              "file": "ethics/محاضره الثلاثين الجزء الثاني.mp4",
+              "name": "محاضره الثلاثين الجزء الثاني.mp4",
+              "part": 2,
+              "order_in_folder": 1
+            }
+          ],
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "day_map": {
+    "1": {
+      "focus": "operative",
+      "folders": [
+        "operative/lec.19",
+        "operative/lec.20",
+        "operative/lec.21"
+      ],
+      "files": [
+        "operative/lec.19/محاضره التاسعه عشر الجزء الاول.mp4",
+        "operative/lec.19/المحاضره التاسعه عشر الجزء الثاني.mp4",
+        "operative/lec.20/المحاضره العشرون.mp4",
+        "operative/lec.20/المحاضره العشرون الجزء الثاني.mp4",
+        "operative/lec.20/المحاضره العشرون الجزظء الثالث.mp4",
+        "operative/lec.21/المحاضره الواحد والعشرون الجزء الاول.mp4",
+        "operative/lec.21/المحاضره الواحد والعشرون الجزء الثاني.mp4"
+      ],
+      "count": 7
+    },
+    "2": {
+      "focus": "fixed_implant",
+      "folders": [
+        "prostho/lec.9",
+        "prostho/lec.10",
+        "prostho/lec.11"
+      ],
+      "files": [
+        "prostho/lec.9/المحاصضره التاسعه الجزء الول.mp4",
+        "prostho/lec.9/المحاضره التاسعه الجزء الثاني.mp4",
+        "prostho/lec.9/المحاضره التاسعه الجزء الثالث.mp4",
+        "prostho/lec.10/المحاضره العاشره الجزء الاول.mp4",
+        "prostho/lec.10/المحاضره العاشره الجزء الثاني.mp4",
+        "prostho/lec.11/المحاضره الحاديه عشر الجزء الاول.mp4",
+        "prostho/lec.11/المحاضره الحاديه عشر الجزء الثاني.mp4",
+        "prostho/lec.11/المحاضره الحاديه عشر الجزء الثالث.mp4"
+      ],
+      "count": 8
+    },
+    "3": {
+      "focus": "rpd_cd_materials",
+      "folders": [
+        "prostho/lec.12",
+        "prostho/lec.13",
+        "prostho/lec.14"
+      ],
+      "files": [
+        "prostho/lec.12/المحاضره الثانيه عشر  الجزء الاول.mp4",
+        "prostho/lec.12/المحاضره الثانيه عشر الجزء الثاني.mp4",
+        "prostho/lec.13/المحاضره الثالثه شر الجزء الاول.mp4",
+        "prostho/lec.13/المحاضره الثالثه شر الجزء الثاني.mp4",
+        "prostho/lec.14/المحاضره الرابعه عشر الجزء الاول.mp4",
+        "prostho/lec.14/المحاضره الرابعه عشر الجزء الثاني.mp4",
+        "prostho/lec.14/المحاضره الرابعه عشر الجزء الثالث.mp4"
+      ],
+      "count": 7
+    },
+    "4": {
+      "focus": "resto_integration",
+      "folders": [
+        "operative/lec.20",
+        "prostho/lec.10",
+        "prostho/lec.14"
+      ],
+      "files": [
+        "operative/lec.20/المحاضره العشرون.mp4",
+        "operative/lec.20/المحاضره العشرون الجزء الثاني.mp4",
+        "operative/lec.20/المحاضره العشرون الجزظء الثالث.mp4",
+        "prostho/lec.10/المحاضره العاشره الجزء الاول.mp4",
+        "prostho/lec.10/المحاضره العاشره الجزء الثاني.mp4",
+        "prostho/lec.14/المحاضره الرابعه عشر الجزء الاول.mp4",
+        "prostho/lec.14/المحاضره الرابعه عشر الجزء الثاني.mp4",
+        "prostho/lec.14/المحاضره الرابعه عشر الجزء الثالث.mp4"
+      ],
+      "count": 8
+    },
+    "5": {
+      "focus": "perio",
+      "folders": [
+        "perio/lec.5",
+        "perio/lec.6",
+        "perio/lec.7",
+        "perio/lec.8"
+      ],
+      "files": [
+        "perio/lec.5/المحاضرة الخامسة البريو.mp4",
+        "perio/lec.6/المحاضره السادسه كورس 46.mp4",
+        "perio/lec.7/المحاضره السابعه الجزء الاول.mp4",
+        "perio/lec.7/المحاضره السابعه الجزء الثاني.mp4",
+        "perio/lec.7/المحاضره السابعه الجزء الثالث.mp4",
+        "perio/lec.8/المحاضره الثامنه الجزء الاول.mp4",
+        "perio/lec.8/المحاضره الثامنه الجزء الثاني.mp4",
+        "perio/lec.8/الجزء الثالث.mp4"
+      ],
+      "count": 8
+    },
+    "6": {
+      "focus": "endo",
+      "folders": [
+        "endo/lec.1",
+        "endo/lec.2",
+        "endo/lec.3",
+        "endo/lec.4"
+      ],
+      "files": [
+        "endo/lec.1/المحاضره الاولي كورس 46.mp4",
+        "endo/lec.2/محاضره الثانيه كورس 46.mp4",
+        "endo/lec.3/المحاضره الثالثه كورس 46.mp4",
+        "endo/lec.4/محاضره الرابعه كورس 46.mp4"
+      ],
+      "count": 4
+    },
+    "7": {
+      "focus": "oms",
+      "folders": [
+        "surgery/lec.15",
+        "surgery/lec.16",
+        "surgery/lec.17",
+        "surgery/lec.18"
+      ],
+      "files": [
+        "surgery/lec.15/المحاضره الخامسه عشر الجزء الاول.mp4",
+        "surgery/lec.15/المحاضره الخامسه عشر الجزء الثاني.mp4",
+        "surgery/lec.16/المحاضره السادسه عشر الجزء الاول.mp4",
+        "surgery/lec.16/المحاضره السادسه عشر الجزء الثاني.mp4",
+        "surgery/lec.16/المحاضره السادسه عشر الجزء الثالث.mp4",
+        "surgery/lec.17/المحاضره السابعه عشر الجزء الاول.mp4",
+        "surgery/lec.17/المحاضره السابعه عشر الجزء الثاني.mp4",
+        "surgery/lec.17/المحاضره السابعه عشر الجزء الثالث.mp4",
+        "surgery/lec.18/المحاضره الثامنه عشر الجزء الاول.mp4",
+        "surgery/lec.18/المحاضره الثامنه عشر الجزء الثاني.mp4"
+      ],
+      "count": 10
+    },
+    "8": {
+      "focus": "path_ethics",
+      "folders": [
+        "مدسن وباثولوجي/lec.23",
+        "مدسن وباثولوجي/lec.24",
+        "ethics"
+      ],
+      "files": [
+        "مدسن وباثولوجي/lec.23/المحاضره الثالثه والعشرون الجزء الاول.mp4",
+        "مدسن وباثولوجي/lec.23/المحاضره الثالثه والعشرون الجزء الثاني.mp4",
+        "مدسن وباثولوجي/lec.24/محاضره الخامسه والعشرين الجزء الاول.mp4",
+        "مدسن وباثولوجي/lec.24/محاضره الخامسه وعشرون الجزء الثاني.mp4",
+        "مدسن وباثولوجي/lec.24/محاضره الخامسه وعشرين الجزء الثالث.mp4",
+        "ethics/محاضره الثلاثين الجزء الثاني.mp4"
+      ],
+      "count": 6
+    },
+    "9": {
+      "focus": "ortho_pedo",
+      "folders": [
+        "ortho and pedo/lec.22"
+      ],
+      "files": [
+        "ortho and pedo/lec.22/المحاضره الثانيه والعشرون الجزء الاول.mp4",
+        "ortho and pedo/lec.22/المحاضره الثانيه والعشرون الجزء الثاني.mp4"
+      ],
+      "count": 2
+    },
+    "10": {
+      "focus": "mock",
+      "folders": [],
+      "files": [],
+      "count": 0
+    },
+    "11": {
+      "focus": "weak",
+      "folders": [],
+      "files": [],
+      "count": 0
+    },
+    "12": {
+      "focus": "mock",
+      "folders": [],
+      "files": [],
+      "count": 0
+    },
+    "13": {
+      "focus": "mock",
+      "folders": [],
+      "files": [],
+      "count": 0
+    },
+    "14": {
+      "focus": "taper",
+      "folders": [],
+      "files": [],
+      "count": 0
+    }
+  },
+  "watch_order_note": "Within each lecture folder, order is part 1→2→3 (not alpha/Drive UI)."
+}

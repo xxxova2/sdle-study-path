@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=SDLE Study App
+GenericName=SDLE Prep
+Comment=Start SDLE study site on localhost and open browser
+Exec=/bin/bash /data/prometric/sdle-prep/start-sdle-study.sh
+Path=/data/prometric/sdle-prep
+Icon=applications-education
+Terminal=false
+StartupNotify=true
+Categories=Education;
+Keywords=SDLE;dental;study;prometric;

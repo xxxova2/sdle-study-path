@@ -1,0 +1,3399 @@
+{
+  "built": "2026-07-18",
+  "disclaimer": "Local PDF keyword hits only — page numbers from pdftotext on curated sdle_book files. Not SCFHS official keys.",
+  "books": [
+    {
+      "title": "Basic Guide to Infection Prevention and Control in Dentistry. 2009",
+      "file": "Basic Guide to Infection Prevention and Control in Dentistry. 2009.pdf",
+      "rel": "Ethics + infection control + local anasthesia/Basic Guide to Infection Prevention and Control in Dentistry. 2009.pdf",
+      "topic": "ethics",
+      "pagesIndexed": 148,
+      "driveId": "1lTVmTe0jj4kILoRc3VRbREndcfyAx_2Y",
+      "driveUrl": "https://drive.google.com/file/d/1lTVmTe0jj4kILoRc3VRbREndcfyAx_2Y/view",
+      "local": "/data/prometric/sdle-prep/data/raw/books/sdle_book/Ethics + infection control + local anasthesia/Basic Guide to Infection Prevention and Control in Dentistry. 2009.pdf"
+    },
+    {
+      "title": "GUIDELINES FOR INFECTION CONTROL-2003",
+      "file": "GUIDELINES FOR INFECTION CONTROL-2003.pdf",
+      "rel": "Ethics + infection control + local anasthesia/GUIDELINES FOR INFECTION CONTROL-2003.pdf",
+      "topic": "ethics",
+      "pagesIndexed": 76,
+      "driveId": "1PCo_4O6vB6EuOHZ9Ti8LtDVi-K5Zmtru",
+      "driveUrl": "https://drive.google.com/file/d/1PCo_4O6vB6EuOHZ9Ti8LtDVi-K5Zmtru/view",
+      "local": "/data/prometric/sdle-prep/data/raw/books/sdle_book/Ethics + infection control + local anasthesia/GUIDELINES FOR INFECTION CONTROL-2003.pdf"
+    },
+    {
+      "title": "Hand book of local anesthesia 6th",
+      "file": "Hand book of local anesthesia 6th.pdf",
+      "rel": "Ethics + infection control + local anasthesia/Hand book of local anesthesia 6th.pdf",
+      "topic": "ethics",
+      "pagesIndexed": 150,
+      "driveId": "1lSHU-Y2lPzGEM-1F5ge0bhexGQHrLQFi",
+      "driveUrl": "https://drive.google.com/file/d/1lSHU-Y2lPzGEM-1F5ge0bhexGQHrLQFi/view",
+      "local": "/data/prometric/sdle-prep/data/raw/books/sdle_book/Ethics + infection control + local anasthesia/Hand book of local anesthesia 6th.pdf"
+    },
+    {
+      "title": "Professionalism and Ethics Handbook for Residents",
+      "file": "Professionalism and Ethics Handbook for Residents.pdf",
+      "rel": "Ethics + infection control + local anasthesia/Professionalism and Ethics Handbook for Residents.pdf",
+      "topic": "ethics",
+      "pagesIndexed": 128,
+      "driveId": "1PD5B4rNkBQ7M8HaK3EVXdVNMt6za-WMC",
+      "driveUrl": "https://drive.google.com/file/d/1PD5B4rNkBQ7M8HaK3EVXdVNMt6za-WMC/view",
+      "local": "/data/prometric/sdle-prep/data/raw/books/sdle_book/Ethics + infection control + local anasthesia/Professionalism and Ethics Handbook for Residents.pdf"
+    },
+    {
+      "title": "Stanley_F_Malamed_handbook_of_local_anes",
+      "file": "Stanley_F_Malamed_handbook_of_local_anes.pdf",
+      "rel": "Ethics + infection control + local anasthesia/Stanley_F_Malamed_handbook_of_local_anes.pdf",
+      "topic": "ethics",
+      "pagesIndexed": 148,
+      "driveId": "1lTAYXA8RbLIdsXXUzEoTM7lQ4livFrtT",
+      "driveUrl": "https://drive.google.com/file/d/1lTAYXA8RbLIdsXXUzEoTM7lQ4livFrtT/view",
+      "local": "/data/prometric/sdle-prep/data/raw/books/sdle_book/Ethics + infection control + local anasthesia/Stanley_F_Malamed_handbook_of_local_anes.pdf"
+    },
+    {
+      "title": "Manegment of medically compromised PT",
+      "file": "Manegment of medically compromised PT.pdf",
+      "rel": "Oral surgary/Manegment of medically compromised PT.pdf",
+      "topic": "oms",
+      "pagesIndexed": 149,
+      "driveId": "1PDkxiSbLJrLaW1dgP9SePG_BA0GBsv4R",
+      "driveUrl": "https://drive.google.com/file/d/1PDkxiSbLJrLaW1dgP9SePG_BA0GBsv4R/view",
+      "local": "/data/prometric/sdle-prep/data/raw/books/sdle_book/Oral surgary/Manegment of medically compromised PT.pdf"
+    },
+    {
+      "title": "Oral and Maxillofacial Pathology",
+      "file": "Oral and Maxillofacial Pathology.pdf",
+      "rel": "Oral surgary/Oral and Maxillofacial Pathology.pdf",
+      "topic": "oms",
+      "pagesIndexed": 149,
+      "driveId": "1PEBO9N01A2WC1_zzvN0RASe5YTv2rvxM",
+      "driveUrl": "https://drive.google.com/file/d/1PEBO9N01A2WC1_zzvN0RASe5YTv2rvxM/view",
+      "local": "/data/prometric/sdle-prep/data/raw/books/sdle_book/Oral surgary/Oral and Maxillofacial Pathology.pdf"
+    },
+    {
+      "title": "McCracken_s Removable Partial Prosthodontics",
+      "file": "McCracken_s Removable Partial Prosthodontics.pdf",
+      "rel": "Removable/McCracken_s Removable Partial Prosthodontics.pdf",
+      "topic": "restorative",
+      "pagesIndexed": 147,
+      "driveId": "1PH4FOZ9kqTK2T6UN1tJOJOlumsIa2LMs",
+      "driveUrl": "https://drive.google.com/file/d/1PH4FOZ9kqTK2T6UN1tJOJOlumsIa2LMs/view",
+      "local": "/data/prometric/sdle-prep/data/raw/books/sdle_book/Removable/McCracken_s Removable Partial Prosthodontics.pdf"
+    },
+    {
+      "title": "Textbook of Complete Dentures",
+      "file": "Textbook of Complete Dentures.pdf",
+      "rel": "Removable/Textbook of Complete Dentures.pdf",
+      "topic": "restorative",
+      "pagesIndexed": 149,
+      "driveId": "1PH75I-J5Lt558TTdKysuSK2fMob13B2r",
+      "driveUrl": "https://drive.google.com/file/d/1PH75I-J5Lt558TTdKysuSK2fMob13B2r/view",
+      "local": "/data/prometric/sdle-prep/data/raw/books/sdle_book/Removable/Textbook of Complete Dentures.pdf"
+    },
+    {
+      "title": "An Introduction to Orthodontics (2)",
+      "file": "An Introduction to Orthodontics (2).pdf",
+      "rel": "ortho/An Introduction to Orthodontics (2).pdf",
+      "topic": "ortho_pedo",
+      "pagesIndexed": 149,
+      "driveId": "1PEsBi9VA5dECogR9K_sv-h-jXfZPBAbJ",
+      "driveUrl": "https://drive.google.com/file/d/1PEsBi9VA5dECogR9K_sv-h-jXfZPBAbJ/view",
+      "local": "/data/prometric/sdle-prep/data/raw/books/sdle_book/ortho/An Introduction to Orthodontics (2).pdf"
+    },
+    {
+      "title": "Contemporary Orthodontics 5th",
+      "file": "Contemporary Orthodontics 5th.pdf",
+      "rel": "ortho/Contemporary Orthodontics 5th.pdf",
+      "topic": "ortho_pedo",
+      "pagesIndexed": 147,
+      "driveId": "1PFZZK0hIbGZijtNS31sHxHvUE92WgqlO",
+      "driveUrl": "https://drive.google.com/file/d/1PFZZK0hIbGZijtNS31sHxHvUE92WgqlO/view",
+      "local": "/data/prometric/sdle-prep/data/raw/books/sdle_book/ortho/Contemporary Orthodontics 5th.pdf"
+    },
+    {
+      "title": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE",
+      "file": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE.pdf",
+      "rel": "pedo/Pediatric Dentistry INFANCY THROUGH ADOLESCENCE.pdf",
+      "topic": "ortho_pedo",
+      "pagesIndexed": 149,
+      "driveId": "1PGKeUn1kemuvZDtR8aq_5V2WY-xS6LV8",
+      "driveUrl": "https://drive.google.com/file/d/1PGKeUn1kemuvZDtR8aq_5V2WY-xS6LV8/view",
+      "local": "/data/prometric/sdle-prep/data/raw/books/sdle_book/pedo/Pediatric Dentistry INFANCY THROUGH ADOLESCENCE.pdf"
+    },
+    {
+      "title": "Periodontics Medicine Surgery Implants",
+      "file": "Periodontics Medicine Surgery Implants.pdf",
+      "rel": "perio/Periodontics Medicine Surgery Implants.pdf",
+      "topic": "perio",
+      "pagesIndexed": 150,
+      "driveId": "1PHE7dgCcRfdAvMyhFjBJD7Z5Anuu0zSF",
+      "driveUrl": "https://drive.google.com/file/d/1PHE7dgCcRfdAvMyhFjBJD7Z5Anuu0zSF/view",
+      "local": "/data/prometric/sdle-prep/data/raw/books/sdle_book/perio/Periodontics Medicine Surgery Implants.pdf"
+    }
+  ],
+  "byTopic": {
+    "ethics": [
+      "Basic Guide to Infection Prevention and Control in Dentistry. 2009",
+      "GUIDELINES FOR INFECTION CONTROL-2003",
+      "Hand book of local anesthesia 6th",
+      "Professionalism and Ethics Handbook for Residents",
+      "Stanley_F_Malamed_handbook_of_local_anes"
+    ],
+    "oms": [
+      "Manegment of medically compromised PT",
+      "Oral and Maxillofacial Pathology"
+    ],
+    "restorative": [
+      "McCracken_s Removable Partial Prosthodontics",
+      "Textbook of Complete Dentures"
+    ],
+    "ortho_pedo": [
+      "An Introduction to Orthodontics (2)",
+      "Contemporary Orthodontics 5th",
+      "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE"
+    ],
+    "perio": [
+      "Periodontics Medicine Surgery Implants"
+    ]
+  },
+  "keywords": {
+    "rubber dam": [
+      {
+        "book": "Basic Guide to Infection Prevention and Control in Dentistry. 2009",
+        "file": "Basic Guide to Infection Prevention and Control in Dentistry. 2009.pdf",
+        "topic": "ethics",
+        "pages": [
+          87,
+          88,
+          89
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1lTVmTe0jj4kILoRc3VRbREndcfyAx_2Y/view"
+      },
+      {
+        "book": "GUIDELINES FOR INFECTION CONTROL-2003",
+        "file": "GUIDELINES FOR INFECTION CONTROL-2003.pdf",
+        "topic": "ethics",
+        "pages": [
+          4,
+          22,
+          34
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PCo_4O6vB6EuOHZ9Ti8LtDVi-K5Zmtru/view"
+      },
+      {
+        "book": "Stanley_F_Malamed_handbook_of_local_anes",
+        "file": "Stanley_F_Malamed_handbook_of_local_anes.pdf",
+        "topic": "ethics",
+        "pages": [
+          87,
+          99
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1lTAYXA8RbLIdsXXUzEoTM7lQ4livFrtT/view"
+      },
+      {
+        "book": "Manegment of medically compromised PT",
+        "file": "Manegment of medically compromised PT.pdf",
+        "topic": "oms",
+        "pages": [
+          46,
+          68,
+          147
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PDkxiSbLJrLaW1dgP9SePG_BA0GBsv4R/view"
+      },
+      {
+        "book": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE",
+        "file": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE.pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          82,
+          105,
+          135
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PGKeUn1kemuvZDtR8aq_5V2WY-xS6LV8/view"
+      }
+    ],
+    "composite": [
+      {
+        "book": "Basic Guide to Infection Prevention and Control in Dentistry. 2009",
+        "file": "Basic Guide to Infection Prevention and Control in Dentistry. 2009.pdf",
+        "topic": "ethics",
+        "pages": [
+          142
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1lTVmTe0jj4kILoRc3VRbREndcfyAx_2Y/view"
+      },
+      {
+        "book": "GUIDELINES FOR INFECTION CONTROL-2003",
+        "file": "GUIDELINES FOR INFECTION CONTROL-2003.pdf",
+        "topic": "ethics",
+        "pages": [
+          20
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PCo_4O6vB6EuOHZ9Ti8LtDVi-K5Zmtru/view"
+      },
+      {
+        "book": "Oral and Maxillofacial Pathology",
+        "file": "Oral and Maxillofacial Pathology.pdf",
+        "topic": "oms",
+        "pages": [
+          61,
+          73,
+          87
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PEBO9N01A2WC1_zzvN0RASe5YTv2rvxM/view"
+      },
+      {
+        "book": "McCracken_s Removable Partial Prosthodontics",
+        "file": "McCracken_s Removable Partial Prosthodontics.pdf",
+        "topic": "restorative",
+        "pages": [
+          39,
+          75,
+          123
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PH4FOZ9kqTK2T6UN1tJOJOlumsIa2LMs/view"
+      },
+      {
+        "book": "An Introduction to Orthodontics (2)",
+        "file": "An Introduction to Orthodontics (2).pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          120,
+          121,
+          124
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PEsBi9VA5dECogR9K_sv-h-jXfZPBAbJ/view"
+      },
+      {
+        "book": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE",
+        "file": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE.pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          16,
+          17,
+          19
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PGKeUn1kemuvZDtR8aq_5V2WY-xS6LV8/view"
+      },
+      {
+        "book": "Periodontics Medicine Surgery Implants",
+        "file": "Periodontics Medicine Surgery Implants.pdf",
+        "topic": "perio",
+        "pages": [
+          114
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PHE7dgCcRfdAvMyhFjBJD7Z5Anuu0zSF/view"
+      }
+    ],
+    "amalgam": [
+      {
+        "book": "Basic Guide to Infection Prevention and Control in Dentistry. 2009",
+        "file": "Basic Guide to Infection Prevention and Control in Dentistry. 2009.pdf",
+        "topic": "ethics",
+        "pages": [
+          7,
+          93
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1lTVmTe0jj4kILoRc3VRbREndcfyAx_2Y/view"
+      },
+      {
+        "book": "GUIDELINES FOR INFECTION CONTROL-2003",
+        "file": "GUIDELINES FOR INFECTION CONTROL-2003.pdf",
+        "topic": "ethics",
+        "pages": [
+          22,
+          35,
+          49
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PCo_4O6vB6EuOHZ9Ti8LtDVi-K5Zmtru/view"
+      },
+      {
+        "book": "Manegment of medically compromised PT",
+        "file": "Manegment of medically compromised PT.pdf",
+        "topic": "oms",
+        "pages": [
+          117
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PDkxiSbLJrLaW1dgP9SePG_BA0GBsv4R/view"
+      },
+      {
+        "book": "Oral and Maxillofacial Pathology",
+        "file": "Oral and Maxillofacial Pathology.pdf",
+        "topic": "oms",
+        "pages": [
+          64,
+          72,
+          111
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PEBO9N01A2WC1_zzvN0RASe5YTv2rvxM/view"
+      },
+      {
+        "book": "McCracken_s Removable Partial Prosthodontics",
+        "file": "McCracken_s Removable Partial Prosthodontics.pdf",
+        "topic": "restorative",
+        "pages": [
+          75
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PH4FOZ9kqTK2T6UN1tJOJOlumsIa2LMs/view"
+      },
+      {
+        "book": "An Introduction to Orthodontics (2)",
+        "file": "An Introduction to Orthodontics (2).pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          110
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PEsBi9VA5dECogR9K_sv-h-jXfZPBAbJ/view"
+      },
+      {
+        "book": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE",
+        "file": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE.pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          17,
+          19,
+          35
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PGKeUn1kemuvZDtR8aq_5V2WY-xS6LV8/view"
+      }
+    ],
+    "GIC": [
+      {
+        "book": "Basic Guide to Infection Prevention and Control in Dentistry. 2009",
+        "file": "Basic Guide to Infection Prevention and Control in Dentistry. 2009.pdf",
+        "topic": "ethics",
+        "pages": [
+          6,
+          8,
+          17
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1lTVmTe0jj4kILoRc3VRbREndcfyAx_2Y/view"
+      },
+      {
+        "book": "GUIDELINES FOR INFECTION CONTROL-2003",
+        "file": "GUIDELINES FOR INFECTION CONTROL-2003.pdf",
+        "topic": "ethics",
+        "pages": [
+          2,
+          3,
+          5
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PCo_4O6vB6EuOHZ9Ti8LtDVi-K5Zmtru/view"
+      },
+      {
+        "book": "Hand book of local anesthesia 6th",
+        "file": "Hand book of local anesthesia 6th.pdf",
+        "topic": "ethics",
+        "pages": [
+          5,
+          15,
+          17
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1lSHU-Y2lPzGEM-1F5ge0bhexGQHrLQFi/view"
+      },
+      {
+        "book": "Professionalism and Ethics Handbook for Residents",
+        "file": "Professionalism and Ethics Handbook for Residents.pdf",
+        "topic": "ethics",
+        "pages": [
+          14,
+          27,
+          29
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PD5B4rNkBQ7M8HaK3EVXdVNMt6za-WMC/view"
+      },
+      {
+        "book": "Stanley_F_Malamed_handbook_of_local_anes",
+        "file": "Stanley_F_Malamed_handbook_of_local_anes.pdf",
+        "topic": "ethics",
+        "pages": [
+          19,
+          21,
+          22
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1lTAYXA8RbLIdsXXUzEoTM7lQ4livFrtT/view"
+      },
+      {
+        "book": "Manegment of medically compromised PT",
+        "file": "Manegment of medically compromised PT.pdf",
+        "topic": "oms",
+        "pages": [
+          2,
+          9,
+          14
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PDkxiSbLJrLaW1dgP9SePG_BA0GBsv4R/view"
+      },
+      {
+        "book": "Oral and Maxillofacial Pathology",
+        "file": "Oral and Maxillofacial Pathology.pdf",
+        "topic": "oms",
+        "pages": [
+          8,
+          10,
+          11
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PEBO9N01A2WC1_zzvN0RASe5YTv2rvxM/view"
+      },
+      {
+        "book": "McCracken_s Removable Partial Prosthodontics",
+        "file": "McCracken_s Removable Partial Prosthodontics.pdf",
+        "topic": "restorative",
+        "pages": [
+          5,
+          6,
+          10
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PH4FOZ9kqTK2T6UN1tJOJOlumsIa2LMs/view"
+      },
+      {
+        "book": "Textbook of Complete Dentures",
+        "file": "Textbook of Complete Dentures.pdf",
+        "topic": "restorative",
+        "pages": [
+          9,
+          10,
+          18
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PH75I-J5Lt558TTdKysuSK2fMob13B2r/view"
+      },
+      {
+        "book": "An Introduction to Orthodontics (2)",
+        "file": "An Introduction to Orthodontics (2).pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          14,
+          17,
+          18
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PEsBi9VA5dECogR9K_sv-h-jXfZPBAbJ/view"
+      },
+      {
+        "book": "Contemporary Orthodontics 5th",
+        "file": "Contemporary Orthodontics 5th.pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          14,
+          15,
+          18
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PFZZK0hIbGZijtNS31sHxHvUE92WgqlO/view"
+      },
+      {
+        "book": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE",
+        "file": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE.pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          11,
+          13,
+          14
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PGKeUn1kemuvZDtR8aq_5V2WY-xS6LV8/view"
+      },
+      {
+        "book": "Periodontics Medicine Surgery Implants",
+        "file": "Periodontics Medicine Surgery Implants.pdf",
+        "topic": "perio",
+        "pages": [
+          4,
+          5,
+          14
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PHE7dgCcRfdAvMyhFjBJD7Z5Anuu0zSF/view"
+      }
+    ],
+    "glass ionomer": [
+      {
+        "book": "Oral and Maxillofacial Pathology",
+        "file": "Oral and Maxillofacial Pathology.pdf",
+        "topic": "oms",
+        "pages": [
+          65,
+          105,
+          109
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PEBO9N01A2WC1_zzvN0RASe5YTv2rvxM/view"
+      }
+    ],
+    "Class II": [
+      {
+        "book": "Manegment of medically compromised PT",
+        "file": "Manegment of medically compromised PT.pdf",
+        "topic": "oms",
+        "pages": [
+          86,
+          104,
+          115
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PDkxiSbLJrLaW1dgP9SePG_BA0GBsv4R/view"
+      },
+      {
+        "book": "Oral and Maxillofacial Pathology",
+        "file": "Oral and Maxillofacial Pathology.pdf",
+        "topic": "oms",
+        "pages": [
+          24,
+          48,
+          72
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PEBO9N01A2WC1_zzvN0RASe5YTv2rvxM/view"
+      },
+      {
+        "book": "McCracken_s Removable Partial Prosthodontics",
+        "file": "McCracken_s Removable Partial Prosthodontics.pdf",
+        "topic": "restorative",
+        "pages": [
+          28,
+          29,
+          31
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PH4FOZ9kqTK2T6UN1tJOJOlumsIa2LMs/view"
+      },
+      {
+        "book": "Textbook of Complete Dentures",
+        "file": "Textbook of Complete Dentures.pdf",
+        "topic": "restorative",
+        "pages": [
+          73,
+          75,
+          78
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PH75I-J5Lt558TTdKysuSK2fMob13B2r/view"
+      },
+      {
+        "book": "An Introduction to Orthodontics (2)",
+        "file": "An Introduction to Orthodontics (2).pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          10,
+          12,
+          13
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PEsBi9VA5dECogR9K_sv-h-jXfZPBAbJ/view"
+      },
+      {
+        "book": "Contemporary Orthodontics 5th",
+        "file": "Contemporary Orthodontics 5th.pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          14,
+          19,
+          20
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PFZZK0hIbGZijtNS31sHxHvUE92WgqlO/view"
+      },
+      {
+        "book": "Periodontics Medicine Surgery Implants",
+        "file": "Periodontics Medicine Surgery Implants.pdf",
+        "topic": "perio",
+        "pages": [
+          97,
+          125
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PHE7dgCcRfdAvMyhFjBJD7Z5Anuu0zSF/view"
+      }
+    ],
+    "Class V": [
+      {
+        "book": "Manegment of medically compromised PT",
+        "file": "Manegment of medically compromised PT.pdf",
+        "topic": "oms",
+        "pages": [
+          115,
+          116
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PDkxiSbLJrLaW1dgP9SePG_BA0GBsv4R/view"
+      },
+      {
+        "book": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE",
+        "file": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE.pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          123
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PGKeUn1kemuvZDtR8aq_5V2WY-xS6LV8/view"
+      }
+    ],
+    "bevel": [
+      {
+        "book": "Stanley_F_Malamed_handbook_of_local_anes",
+        "file": "Stanley_F_Malamed_handbook_of_local_anes.pdf",
+        "topic": "ethics",
+        "pages": [
+          116,
+          117,
+          120
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1lTAYXA8RbLIdsXXUzEoTM7lQ4livFrtT/view"
+      },
+      {
+        "book": "McCracken_s Removable Partial Prosthodontics",
+        "file": "McCracken_s Removable Partial Prosthodontics.pdf",
+        "topic": "restorative",
+        "pages": [
+          70,
+          76,
+          120
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PH4FOZ9kqTK2T6UN1tJOJOlumsIa2LMs/view"
+      }
+    ],
+    "etch": [
+      {
+        "book": "GUIDELINES FOR INFECTION CONTROL-2003",
+        "file": "GUIDELINES FOR INFECTION CONTROL-2003.pdf",
+        "topic": "ethics",
+        "pages": [
+          62
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PCo_4O6vB6EuOHZ9Ti8LtDVi-K5Zmtru/view"
+      },
+      {
+        "book": "Hand book of local anesthesia 6th",
+        "file": "Hand book of local anesthesia 6th.pdf",
+        "topic": "ethics",
+        "pages": [
+          22
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1lSHU-Y2lPzGEM-1F5ge0bhexGQHrLQFi/view"
+      },
+      {
+        "book": "Stanley_F_Malamed_handbook_of_local_anes",
+        "file": "Stanley_F_Malamed_handbook_of_local_anes.pdf",
+        "topic": "ethics",
+        "pages": [
+          22,
+          104,
+          113
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1lTAYXA8RbLIdsXXUzEoTM7lQ4livFrtT/view"
+      },
+      {
+        "book": "Manegment of medically compromised PT",
+        "file": "Manegment of medically compromised PT.pdf",
+        "topic": "oms",
+        "pages": [
+          57
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PDkxiSbLJrLaW1dgP9SePG_BA0GBsv4R/view"
+      },
+      {
+        "book": "Oral and Maxillofacial Pathology",
+        "file": "Oral and Maxillofacial Pathology.pdf",
+        "topic": "oms",
+        "pages": [
+          14,
+          21,
+          56
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PEBO9N01A2WC1_zzvN0RASe5YTv2rvxM/view"
+      },
+      {
+        "book": "McCracken_s Removable Partial Prosthodontics",
+        "file": "McCracken_s Removable Partial Prosthodontics.pdf",
+        "topic": "restorative",
+        "pages": [
+          48,
+          75,
+          76
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PH4FOZ9kqTK2T6UN1tJOJOlumsIa2LMs/view"
+      },
+      {
+        "book": "Textbook of Complete Dentures",
+        "file": "Textbook of Complete Dentures.pdf",
+        "topic": "restorative",
+        "pages": [
+          39,
+          42,
+          110
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PH75I-J5Lt558TTdKysuSK2fMob13B2r/view"
+      },
+      {
+        "book": "An Introduction to Orthodontics (2)",
+        "file": "An Introduction to Orthodontics (2).pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          60,
+          63,
+          109
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PEsBi9VA5dECogR9K_sv-h-jXfZPBAbJ/view"
+      },
+      {
+        "book": "Contemporary Orthodontics 5th",
+        "file": "Contemporary Orthodontics 5th.pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          33,
+          66
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PFZZK0hIbGZijtNS31sHxHvUE92WgqlO/view"
+      },
+      {
+        "book": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE",
+        "file": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE.pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          15,
+          16,
+          28
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PGKeUn1kemuvZDtR8aq_5V2WY-xS6LV8/view"
+      }
+    ],
+    "bonding": [
+      {
+        "book": "Basic Guide to Infection Prevention and Control in Dentistry. 2009",
+        "file": "Basic Guide to Infection Prevention and Control in Dentistry. 2009.pdf",
+        "topic": "ethics",
+        "pages": [
+          142,
+          143,
+          144
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1lTVmTe0jj4kILoRc3VRbREndcfyAx_2Y/view"
+      },
+      {
+        "book": "GUIDELINES FOR INFECTION CONTROL-2003",
+        "file": "GUIDELINES FOR INFECTION CONTROL-2003.pdf",
+        "topic": "ethics",
+        "pages": [
+          20,
+          56
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PCo_4O6vB6EuOHZ9Ti8LtDVi-K5Zmtru/view"
+      },
+      {
+        "book": "Oral and Maxillofacial Pathology",
+        "file": "Oral and Maxillofacial Pathology.pdf",
+        "topic": "oms",
+        "pages": [
+          105,
+          109
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PEBO9N01A2WC1_zzvN0RASe5YTv2rvxM/view"
+      },
+      {
+        "book": "McCracken_s Removable Partial Prosthodontics",
+        "file": "McCracken_s Removable Partial Prosthodontics.pdf",
+        "topic": "restorative",
+        "pages": [
+          114,
+          120,
+          121
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PH4FOZ9kqTK2T6UN1tJOJOlumsIa2LMs/view"
+      },
+      {
+        "book": "Textbook of Complete Dentures",
+        "file": "Textbook of Complete Dentures.pdf",
+        "topic": "restorative",
+        "pages": [
+          29
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PH75I-J5Lt558TTdKysuSK2fMob13B2r/view"
+      },
+      {
+        "book": "Contemporary Orthodontics 5th",
+        "file": "Contemporary Orthodontics 5th.pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          70
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PFZZK0hIbGZijtNS31sHxHvUE92WgqlO/view"
+      }
+    ],
+    "polymerization": [
+      {
+        "book": "Textbook of Complete Dentures",
+        "file": "Textbook of Complete Dentures.pdf",
+        "topic": "restorative",
+        "pages": [
+          28,
+          29,
+          30
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PH75I-J5Lt558TTdKysuSK2fMob13B2r/view"
+      },
+      {
+        "book": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE",
+        "file": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE.pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          80
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PGKeUn1kemuvZDtR8aq_5V2WY-xS6LV8/view"
+      }
+    ],
+    "crown preparation": [
+      {
+        "book": "Oral and Maxillofacial Pathology",
+        "file": "Oral and Maxillofacial Pathology.pdf",
+        "topic": "oms",
+        "pages": [
+          102
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PEBO9N01A2WC1_zzvN0RASe5YTv2rvxM/view"
+      },
+      {
+        "book": "McCracken_s Removable Partial Prosthodontics",
+        "file": "McCracken_s Removable Partial Prosthodontics.pdf",
+        "topic": "restorative",
+        "pages": [
+          96
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PH4FOZ9kqTK2T6UN1tJOJOlumsIa2LMs/view"
+      }
+    ],
+    "abutment": [
+      {
+        "book": "Oral and Maxillofacial Pathology",
+        "file": "Oral and Maxillofacial Pathology.pdf",
+        "topic": "oms",
+        "pages": [
+          82,
+          94,
+          97
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PEBO9N01A2WC1_zzvN0RASe5YTv2rvxM/view"
+      },
+      {
+        "book": "McCracken_s Removable Partial Prosthodontics",
+        "file": "McCracken_s Removable Partial Prosthodontics.pdf",
+        "topic": "restorative",
+        "pages": [
+          10,
+          11,
+          14
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PH4FOZ9kqTK2T6UN1tJOJOlumsIa2LMs/view"
+      }
+    ],
+    "pontic": [
+      {
+        "book": "Oral and Maxillofacial Pathology",
+        "file": "Oral and Maxillofacial Pathology.pdf",
+        "topic": "oms",
+        "pages": [
+          25,
+          26,
+          52
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PEBO9N01A2WC1_zzvN0RASe5YTv2rvxM/view"
+      },
+      {
+        "book": "McCracken_s Removable Partial Prosthodontics",
+        "file": "McCracken_s Removable Partial Prosthodontics.pdf",
+        "topic": "restorative",
+        "pages": [
+          37
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PH4FOZ9kqTK2T6UN1tJOJOlumsIa2LMs/view"
+      }
+    ],
+    "RPD": [
+      {
+        "book": "Manegment of medically compromised PT",
+        "file": "Manegment of medically compromised PT.pdf",
+        "topic": "oms",
+        "pages": [
+          20,
+          23,
+          25
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PDkxiSbLJrLaW1dgP9SePG_BA0GBsv4R/view"
+      },
+      {
+        "book": "McCracken_s Removable Partial Prosthodontics",
+        "file": "McCracken_s Removable Partial Prosthodontics.pdf",
+        "topic": "restorative",
+        "pages": [
+          5,
+          11,
+          18
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PH4FOZ9kqTK2T6UN1tJOJOlumsIa2LMs/view"
+      }
+    ],
+    "clasp": [
+      {
+        "book": "McCracken_s Removable Partial Prosthodontics",
+        "file": "McCracken_s Removable Partial Prosthodontics.pdf",
+        "topic": "restorative",
+        "pages": [
+          9,
+          11,
+          14
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PH4FOZ9kqTK2T6UN1tJOJOlumsIa2LMs/view"
+      }
+    ],
+    "rest seat": [
+      {
+        "book": "McCracken_s Removable Partial Prosthodontics",
+        "file": "McCracken_s Removable Partial Prosthodontics.pdf",
+        "topic": "restorative",
+        "pages": [
+          9,
+          48,
+          50
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PH4FOZ9kqTK2T6UN1tJOJOlumsIa2LMs/view"
+      }
+    ],
+    "major connector": [
+      {
+        "book": "McCracken_s Removable Partial Prosthodontics",
+        "file": "McCracken_s Removable Partial Prosthodontics.pdf",
+        "topic": "restorative",
+        "pages": [
+          9,
+          15,
+          35
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PH4FOZ9kqTK2T6UN1tJOJOlumsIa2LMs/view"
+      }
+    ],
+    "indirect retainer": [
+      {
+        "book": "McCracken_s Removable Partial Prosthodontics",
+        "file": "McCracken_s Removable Partial Prosthodontics.pdf",
+        "topic": "restorative",
+        "pages": [
+          9,
+          15,
+          35
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PH4FOZ9kqTK2T6UN1tJOJOlumsIa2LMs/view"
+      }
+    ],
+    "complete denture": [
+      {
+        "book": "McCracken_s Removable Partial Prosthodontics",
+        "file": "McCracken_s Removable Partial Prosthodontics.pdf",
+        "topic": "restorative",
+        "pages": [
+          10,
+          17,
+          18
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PH4FOZ9kqTK2T6UN1tJOJOlumsIa2LMs/view"
+      },
+      {
+        "book": "Textbook of Complete Dentures",
+        "file": "Textbook of Complete Dentures.pdf",
+        "topic": "restorative",
+        "pages": [
+          2,
+          4,
+          6
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PH75I-J5Lt558TTdKysuSK2fMob13B2r/view"
+      }
+    ],
+    "centric relation": [
+      {
+        "book": "McCracken_s Removable Partial Prosthodontics",
+        "file": "McCracken_s Removable Partial Prosthodontics.pdf",
+        "topic": "restorative",
+        "pages": [
+          123
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PH4FOZ9kqTK2T6UN1tJOJOlumsIa2LMs/view"
+      },
+      {
+        "book": "Textbook of Complete Dentures",
+        "file": "Textbook of Complete Dentures.pdf",
+        "topic": "restorative",
+        "pages": [
+          11,
+          12,
+          23
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PH75I-J5Lt558TTdKysuSK2fMob13B2r/view"
+      }
+    ],
+    "vertical dimension": [
+      {
+        "book": "Oral and Maxillofacial Pathology",
+        "file": "Oral and Maxillofacial Pathology.pdf",
+        "topic": "oms",
+        "pages": [
+          109
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PEBO9N01A2WC1_zzvN0RASe5YTv2rvxM/view"
+      },
+      {
+        "book": "McCracken_s Removable Partial Prosthodontics",
+        "file": "McCracken_s Removable Partial Prosthodontics.pdf",
+        "topic": "restorative",
+        "pages": [
+          16
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PH4FOZ9kqTK2T6UN1tJOJOlumsIa2LMs/view"
+      },
+      {
+        "book": "Textbook of Complete Dentures",
+        "file": "Textbook of Complete Dentures.pdf",
+        "topic": "restorative",
+        "pages": [
+          11,
+          12,
+          24
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PH75I-J5Lt558TTdKysuSK2fMob13B2r/view"
+      },
+      {
+        "book": "An Introduction to Orthodontics (2)",
+        "file": "An Introduction to Orthodontics (2).pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          51,
+          57,
+          58
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PEsBi9VA5dECogR9K_sv-h-jXfZPBAbJ/view"
+      }
+    ],
+    "neutral zone": [
+      {
+        "book": "Basic Guide to Infection Prevention and Control in Dentistry. 2009",
+        "file": "Basic Guide to Infection Prevention and Control in Dentistry. 2009.pdf",
+        "topic": "ethics",
+        "pages": [
+          59
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1lTVmTe0jj4kILoRc3VRbREndcfyAx_2Y/view"
+      }
+    ],
+    "implant": [
+      {
+        "book": "Basic Guide to Infection Prevention and Control in Dentistry. 2009",
+        "file": "Basic Guide to Infection Prevention and Control in Dentistry. 2009.pdf",
+        "topic": "ethics",
+        "pages": [
+          81,
+          100
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1lTVmTe0jj4kILoRc3VRbREndcfyAx_2Y/view"
+      },
+      {
+        "book": "GUIDELINES FOR INFECTION CONTROL-2003",
+        "file": "GUIDELINES FOR INFECTION CONTROL-2003.pdf",
+        "topic": "ethics",
+        "pages": [
+          7,
+          25,
+          26
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PCo_4O6vB6EuOHZ9Ti8LtDVi-K5Zmtru/view"
+      },
+      {
+        "book": "Hand book of local anesthesia 6th",
+        "file": "Hand book of local anesthesia 6th.pdf",
+        "topic": "ethics",
+        "pages": [
+          7
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1lSHU-Y2lPzGEM-1F5ge0bhexGQHrLQFi/view"
+      },
+      {
+        "book": "Stanley_F_Malamed_handbook_of_local_anes",
+        "file": "Stanley_F_Malamed_handbook_of_local_anes.pdf",
+        "topic": "ethics",
+        "pages": [
+          14,
+          92
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1lTAYXA8RbLIdsXXUzEoTM7lQ4livFrtT/view"
+      },
+      {
+        "book": "Manegment of medically compromised PT",
+        "file": "Manegment of medically compromised PT.pdf",
+        "topic": "oms",
+        "pages": [
+          56,
+          73,
+          74
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PDkxiSbLJrLaW1dgP9SePG_BA0GBsv4R/view"
+      },
+      {
+        "book": "Oral and Maxillofacial Pathology",
+        "file": "Oral and Maxillofacial Pathology.pdf",
+        "topic": "oms",
+        "pages": [
+          36,
+          46,
+          66
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PEBO9N01A2WC1_zzvN0RASe5YTv2rvxM/view"
+      },
+      {
+        "book": "McCracken_s Removable Partial Prosthodontics",
+        "file": "McCracken_s Removable Partial Prosthodontics.pdf",
+        "topic": "restorative",
+        "pages": [
+          5,
+          6,
+          7
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PH4FOZ9kqTK2T6UN1tJOJOlumsIa2LMs/view"
+      },
+      {
+        "book": "Textbook of Complete Dentures",
+        "file": "Textbook of Complete Dentures.pdf",
+        "topic": "restorative",
+        "pages": [
+          13,
+          24,
+          65
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PH75I-J5Lt558TTdKysuSK2fMob13B2r/view"
+      },
+      {
+        "book": "An Introduction to Orthodontics (2)",
+        "file": "An Introduction to Orthodontics (2).pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          57,
+          67,
+          80
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PEsBi9VA5dECogR9K_sv-h-jXfZPBAbJ/view"
+      },
+      {
+        "book": "Contemporary Orthodontics 5th",
+        "file": "Contemporary Orthodontics 5th.pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          47,
+          48,
+          79
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PFZZK0hIbGZijtNS31sHxHvUE92WgqlO/view"
+      },
+      {
+        "book": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE",
+        "file": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE.pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          84,
+          86,
+          91
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PGKeUn1kemuvZDtR8aq_5V2WY-xS6LV8/view"
+      },
+      {
+        "book": "Periodontics Medicine Surgery Implants",
+        "file": "Periodontics Medicine Surgery Implants.pdf",
+        "topic": "perio",
+        "pages": [
+          1,
+          2,
+          3
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PHE7dgCcRfdAvMyhFjBJD7Z5Anuu0zSF/view"
+      }
+    ],
+    "probing depth": [
+      {
+        "book": "Periodontics Medicine Surgery Implants",
+        "file": "Periodontics Medicine Surgery Implants.pdf",
+        "topic": "perio",
+        "pages": [
+          59,
+          120,
+          128
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PHE7dgCcRfdAvMyhFjBJD7Z5Anuu0zSF/view"
+      }
+    ],
+    "clinical attachment": [
+      {
+        "book": "Periodontics Medicine Surgery Implants",
+        "file": "Periodontics Medicine Surgery Implants.pdf",
+        "topic": "perio",
+        "pages": [
+          30,
+          48,
+          57
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PHE7dgCcRfdAvMyhFjBJD7Z5Anuu0zSF/view"
+      }
+    ],
+    "furcation": [
+      {
+        "book": "Manegment of medically compromised PT",
+        "file": "Manegment of medically compromised PT.pdf",
+        "topic": "oms",
+        "pages": [
+          94,
+          111
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PDkxiSbLJrLaW1dgP9SePG_BA0GBsv4R/view"
+      },
+      {
+        "book": "Oral and Maxillofacial Pathology",
+        "file": "Oral and Maxillofacial Pathology.pdf",
+        "topic": "oms",
+        "pages": [
+          77,
+          92,
+          93
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PEBO9N01A2WC1_zzvN0RASe5YTv2rvxM/view"
+      },
+      {
+        "book": "An Introduction to Orthodontics (2)",
+        "file": "An Introduction to Orthodontics (2).pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          43,
+          57,
+          108
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PEsBi9VA5dECogR9K_sv-h-jXfZPBAbJ/view"
+      },
+      {
+        "book": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE",
+        "file": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE.pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          55,
+          57,
+          61
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PGKeUn1kemuvZDtR8aq_5V2WY-xS6LV8/view"
+      },
+      {
+        "book": "Periodontics Medicine Surgery Implants",
+        "file": "Periodontics Medicine Surgery Implants.pdf",
+        "topic": "perio",
+        "pages": [
+          6,
+          15,
+          37
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PHE7dgCcRfdAvMyhFjBJD7Z5Anuu0zSF/view"
+      }
+    ],
+    "scaling": [
+      {
+        "book": "Basic Guide to Infection Prevention and Control in Dentistry. 2009",
+        "file": "Basic Guide to Infection Prevention and Control in Dentistry. 2009.pdf",
+        "topic": "ethics",
+        "pages": [
+          115,
+          118,
+          143
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1lTVmTe0jj4kILoRc3VRbREndcfyAx_2Y/view"
+      },
+      {
+        "book": "GUIDELINES FOR INFECTION CONTROL-2003",
+        "file": "GUIDELINES FOR INFECTION CONTROL-2003.pdf",
+        "topic": "ethics",
+        "pages": [
+          32,
+          61
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PCo_4O6vB6EuOHZ9Ti8LtDVi-K5Zmtru/view"
+      },
+      {
+        "book": "Stanley_F_Malamed_handbook_of_local_anes",
+        "file": "Stanley_F_Malamed_handbook_of_local_anes.pdf",
+        "topic": "ethics",
+        "pages": [
+          87,
+          95,
+          101
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1lTAYXA8RbLIdsXXUzEoTM7lQ4livFrtT/view"
+      },
+      {
+        "book": "Manegment of medically compromised PT",
+        "file": "Manegment of medically compromised PT.pdf",
+        "topic": "oms",
+        "pages": [
+          24,
+          45,
+          68
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PDkxiSbLJrLaW1dgP9SePG_BA0GBsv4R/view"
+      },
+      {
+        "book": "Oral and Maxillofacial Pathology",
+        "file": "Oral and Maxillofacial Pathology.pdf",
+        "topic": "oms",
+        "pages": [
+          68
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PEBO9N01A2WC1_zzvN0RASe5YTv2rvxM/view"
+      },
+      {
+        "book": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE",
+        "file": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE.pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          39,
+          82,
+          88
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PGKeUn1kemuvZDtR8aq_5V2WY-xS6LV8/view"
+      },
+      {
+        "book": "Periodontics Medicine Surgery Implants",
+        "file": "Periodontics Medicine Surgery Implants.pdf",
+        "topic": "perio",
+        "pages": [
+          51,
+          64,
+          76
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PHE7dgCcRfdAvMyhFjBJD7Z5Anuu0zSF/view"
+      }
+    ],
+    "root planing": [
+      {
+        "book": "Stanley_F_Malamed_handbook_of_local_anes",
+        "file": "Stanley_F_Malamed_handbook_of_local_anes.pdf",
+        "topic": "ethics",
+        "pages": [
+          87,
+          95,
+          109
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1lTAYXA8RbLIdsXXUzEoTM7lQ4livFrtT/view"
+      },
+      {
+        "book": "Manegment of medically compromised PT",
+        "file": "Manegment of medically compromised PT.pdf",
+        "topic": "oms",
+        "pages": [
+          45,
+          68
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PDkxiSbLJrLaW1dgP9SePG_BA0GBsv4R/view"
+      },
+      {
+        "book": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE",
+        "file": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE.pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          135
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PGKeUn1kemuvZDtR8aq_5V2WY-xS6LV8/view"
+      },
+      {
+        "book": "Periodontics Medicine Surgery Implants",
+        "file": "Periodontics Medicine Surgery Implants.pdf",
+        "topic": "perio",
+        "pages": [
+          51,
+          64,
+          76
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PHE7dgCcRfdAvMyhFjBJD7Z5Anuu0zSF/view"
+      }
+    ],
+    "periodontal abscess": [
+      {
+        "book": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE",
+        "file": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE.pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          57
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PGKeUn1kemuvZDtR8aq_5V2WY-xS6LV8/view"
+      },
+      {
+        "book": "Periodontics Medicine Surgery Implants",
+        "file": "Periodontics Medicine Surgery Implants.pdf",
+        "topic": "perio",
+        "pages": [
+          56,
+          64,
+          69
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PHE7dgCcRfdAvMyhFjBJD7Z5Anuu0zSF/view"
+      }
+    ],
+    "aggressive periodontitis": [
+      {
+        "book": "Periodontics Medicine Surgery Implants",
+        "file": "Periodontics Medicine Surgery Implants.pdf",
+        "topic": "perio",
+        "pages": [
+          48,
+          54,
+          60
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PHE7dgCcRfdAvMyhFjBJD7Z5Anuu0zSF/view"
+      }
+    ],
+    "maintenance": [
+      {
+        "book": "Basic Guide to Infection Prevention and Control in Dentistry. 2009",
+        "file": "Basic Guide to Infection Prevention and Control in Dentistry. 2009.pdf",
+        "topic": "ethics",
+        "pages": [
+          7,
+          12,
+          20
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1lTVmTe0jj4kILoRc3VRbREndcfyAx_2Y/view"
+      },
+      {
+        "book": "GUIDELINES FOR INFECTION CONTROL-2003",
+        "file": "GUIDELINES FOR INFECTION CONTROL-2003.pdf",
+        "topic": "ethics",
+        "pages": [
+          4,
+          12,
+          24
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PCo_4O6vB6EuOHZ9Ti8LtDVi-K5Zmtru/view"
+      },
+      {
+        "book": "Hand book of local anesthesia 6th",
+        "file": "Hand book of local anesthesia 6th.pdf",
+        "topic": "ethics",
+        "pages": [
+          87
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1lSHU-Y2lPzGEM-1F5ge0bhexGQHrLQFi/view"
+      },
+      {
+        "book": "Stanley_F_Malamed_handbook_of_local_anes",
+        "file": "Stanley_F_Malamed_handbook_of_local_anes.pdf",
+        "topic": "ethics",
+        "pages": [
+          51,
+          57,
+          104
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1lTAYXA8RbLIdsXXUzEoTM7lQ4livFrtT/view"
+      },
+      {
+        "book": "Manegment of medically compromised PT",
+        "file": "Manegment of medically compromised PT.pdf",
+        "topic": "oms",
+        "pages": [
+          34,
+          45,
+          66
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PDkxiSbLJrLaW1dgP9SePG_BA0GBsv4R/view"
+      },
+      {
+        "book": "Oral and Maxillofacial Pathology",
+        "file": "Oral and Maxillofacial Pathology.pdf",
+        "topic": "oms",
+        "pages": [
+          77,
+          134
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PEBO9N01A2WC1_zzvN0RASe5YTv2rvxM/view"
+      },
+      {
+        "book": "McCracken_s Removable Partial Prosthodontics",
+        "file": "McCracken_s Removable Partial Prosthodontics.pdf",
+        "topic": "restorative",
+        "pages": [
+          5,
+          6,
+          11
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PH4FOZ9kqTK2T6UN1tJOJOlumsIa2LMs/view"
+      },
+      {
+        "book": "Textbook of Complete Dentures",
+        "file": "Textbook of Complete Dentures.pdf",
+        "topic": "restorative",
+        "pages": [
+          88
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PH75I-J5Lt558TTdKysuSK2fMob13B2r/view"
+      },
+      {
+        "book": "An Introduction to Orthodontics (2)",
+        "file": "An Introduction to Orthodontics (2).pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          38,
+          121,
+          122
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PEsBi9VA5dECogR9K_sv-h-jXfZPBAbJ/view"
+      },
+      {
+        "book": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE",
+        "file": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE.pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          12,
+          14,
+          80
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PGKeUn1kemuvZDtR8aq_5V2WY-xS6LV8/view"
+      },
+      {
+        "book": "Periodontics Medicine Surgery Implants",
+        "file": "Periodontics Medicine Surgery Implants.pdf",
+        "topic": "perio",
+        "pages": [
+          5,
+          15,
+          51
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PHE7dgCcRfdAvMyhFjBJD7Z5Anuu0zSF/view"
+      }
+    ],
+    "EDTA": [
+      {
+        "book": "Basic Guide to Infection Prevention and Control in Dentistry. 2009",
+        "file": "Basic Guide to Infection Prevention and Control in Dentistry. 2009.pdf",
+        "topic": "ethics",
+        "pages": [
+          66
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1lTVmTe0jj4kILoRc3VRbREndcfyAx_2Y/view"
+      }
+    ],
+    "calcium hydroxide": [
+      {
+        "book": "Oral and Maxillofacial Pathology",
+        "file": "Oral and Maxillofacial Pathology.pdf",
+        "topic": "oms",
+        "pages": [
+          89,
+          91
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PEBO9N01A2WC1_zzvN0RASe5YTv2rvxM/view"
+      }
+    ],
+    "MTA": [
+      {
+        "book": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE",
+        "file": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE.pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          20
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PGKeUn1kemuvZDtR8aq_5V2WY-xS6LV8/view"
+      }
+    ],
+    "avulsion": [
+      {
+        "book": "Oral and Maxillofacial Pathology",
+        "file": "Oral and Maxillofacial Pathology.pdf",
+        "topic": "oms",
+        "pages": [
+          68,
+          96
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PEBO9N01A2WC1_zzvN0RASe5YTv2rvxM/view"
+      },
+      {
+        "book": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE",
+        "file": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE.pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          76
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PGKeUn1kemuvZDtR8aq_5V2WY-xS6LV8/view"
+      }
+    ],
+    "luxation": [
+      {
+        "book": "Oral and Maxillofacial Pathology",
+        "file": "Oral and Maxillofacial Pathology.pdf",
+        "topic": "oms",
+        "pages": [
+          77
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PEBO9N01A2WC1_zzvN0RASe5YTv2rvxM/view"
+      },
+      {
+        "book": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE",
+        "file": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE.pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          95
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PGKeUn1kemuvZDtR8aq_5V2WY-xS6LV8/view"
+      }
+    ],
+    "rotary": [
+      {
+        "book": "Basic Guide to Infection Prevention and Control in Dentistry. 2009",
+        "file": "Basic Guide to Infection Prevention and Control in Dentistry. 2009.pdf",
+        "topic": "ethics",
+        "pages": [
+          32,
+          97,
+          143
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1lTVmTe0jj4kILoRc3VRbREndcfyAx_2Y/view"
+      },
+      {
+        "book": "GUIDELINES FOR INFECTION CONTROL-2003",
+        "file": "GUIDELINES FOR INFECTION CONTROL-2003.pdf",
+        "topic": "ethics",
+        "pages": [
+          6,
+          18,
+          29
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PCo_4O6vB6EuOHZ9Ti8LtDVi-K5Zmtru/view"
+      },
+      {
+        "book": "McCracken_s Removable Partial Prosthodontics",
+        "file": "McCracken_s Removable Partial Prosthodontics.pdf",
+        "topic": "restorative",
+        "pages": [
+          35
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PH4FOZ9kqTK2T6UN1tJOJOlumsIa2LMs/view"
+      },
+      {
+        "book": "Textbook of Complete Dentures",
+        "file": "Textbook of Complete Dentures.pdf",
+        "topic": "restorative",
+        "pages": [
+          23,
+          91,
+          93
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PH75I-J5Lt558TTdKysuSK2fMob13B2r/view"
+      },
+      {
+        "book": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE",
+        "file": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE.pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          20
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PGKeUn1kemuvZDtR8aq_5V2WY-xS6LV8/view"
+      }
+    ],
+    "inferior alveolar": [
+      {
+        "book": "Hand book of local anesthesia 6th",
+        "file": "Hand book of local anesthesia 6th.pdf",
+        "topic": "ethics",
+        "pages": [
+          51,
+          56,
+          122
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1lSHU-Y2lPzGEM-1F5ge0bhexGQHrLQFi/view"
+      },
+      {
+        "book": "Stanley_F_Malamed_handbook_of_local_anes",
+        "file": "Stanley_F_Malamed_handbook_of_local_anes.pdf",
+        "topic": "ethics",
+        "pages": [
+          36,
+          38,
+          42
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1lTAYXA8RbLIdsXXUzEoTM7lQ4livFrtT/view"
+      },
+      {
+        "book": "Oral and Maxillofacial Pathology",
+        "file": "Oral and Maxillofacial Pathology.pdf",
+        "topic": "oms",
+        "pages": [
+          136,
+          139
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PEBO9N01A2WC1_zzvN0RASe5YTv2rvxM/view"
+      },
+      {
+        "book": "Textbook of Complete Dentures",
+        "file": "Textbook of Complete Dentures.pdf",
+        "topic": "restorative",
+        "pages": [
+          85
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PH75I-J5Lt558TTdKysuSK2fMob13B2r/view"
+      },
+      {
+        "book": "An Introduction to Orthodontics (2)",
+        "file": "An Introduction to Orthodontics (2).pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          62
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PEsBi9VA5dECogR9K_sv-h-jXfZPBAbJ/view"
+      },
+      {
+        "book": "Contemporary Orthodontics 5th",
+        "file": "Contemporary Orthodontics 5th.pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          51,
+          115,
+          116
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PFZZK0hIbGZijtNS31sHxHvUE92WgqlO/view"
+      },
+      {
+        "book": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE",
+        "file": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE.pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          113
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PGKeUn1kemuvZDtR8aq_5V2WY-xS6LV8/view"
+      }
+    ],
+    "IAN": [
+      {
+        "book": "Basic Guide to Infection Prevention and Control in Dentistry. 2009",
+        "file": "Basic Guide to Infection Prevention and Control in Dentistry. 2009.pdf",
+        "topic": "ethics",
+        "pages": [
+          21,
+          24,
+          28
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1lTVmTe0jj4kILoRc3VRbREndcfyAx_2Y/view"
+      },
+      {
+        "book": "GUIDELINES FOR INFECTION CONTROL-2003",
+        "file": "GUIDELINES FOR INFECTION CONTROL-2003.pdf",
+        "topic": "ethics",
+        "pages": [
+          4,
+          9,
+          12
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PCo_4O6vB6EuOHZ9Ti8LtDVi-K5Zmtru/view"
+      },
+      {
+        "book": "Hand book of local anesthesia 6th",
+        "file": "Hand book of local anesthesia 6th.pdf",
+        "topic": "ethics",
+        "pages": [
+          3,
+          9,
+          20
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1lSHU-Y2lPzGEM-1F5ge0bhexGQHrLQFi/view"
+      },
+      {
+        "book": "Professionalism and Ethics Handbook for Residents",
+        "file": "Professionalism and Ethics Handbook for Residents.pdf",
+        "topic": "ethics",
+        "pages": [
+          2,
+          3,
+          9
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PD5B4rNkBQ7M8HaK3EVXdVNMt6za-WMC/view"
+      },
+      {
+        "book": "Stanley_F_Malamed_handbook_of_local_anes",
+        "file": "Stanley_F_Malamed_handbook_of_local_anes.pdf",
+        "topic": "ethics",
+        "pages": [
+          20,
+          38,
+          41
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1lTAYXA8RbLIdsXXUzEoTM7lQ4livFrtT/view"
+      },
+      {
+        "book": "Manegment of medically compromised PT",
+        "file": "Manegment of medically compromised PT.pdf",
+        "topic": "oms",
+        "pages": [
+          6,
+          9,
+          12
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PDkxiSbLJrLaW1dgP9SePG_BA0GBsv4R/view"
+      },
+      {
+        "book": "Oral and Maxillofacial Pathology",
+        "file": "Oral and Maxillofacial Pathology.pdf",
+        "topic": "oms",
+        "pages": [
+          8,
+          9,
+          10
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PEBO9N01A2WC1_zzvN0RASe5YTv2rvxM/view"
+      },
+      {
+        "book": "McCracken_s Removable Partial Prosthodontics",
+        "file": "McCracken_s Removable Partial Prosthodontics.pdf",
+        "topic": "restorative",
+        "pages": [
+          5,
+          7,
+          8
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PH4FOZ9kqTK2T6UN1tJOJOlumsIa2LMs/view"
+      },
+      {
+        "book": "Textbook of Complete Dentures",
+        "file": "Textbook of Complete Dentures.pdf",
+        "topic": "restorative",
+        "pages": [
+          21,
+          22,
+          23
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PH75I-J5Lt558TTdKysuSK2fMob13B2r/view"
+      },
+      {
+        "book": "An Introduction to Orthodontics (2)",
+        "file": "An Introduction to Orthodontics (2).pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          8,
+          10,
+          13
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PEsBi9VA5dECogR9K_sv-h-jXfZPBAbJ/view"
+      },
+      {
+        "book": "Contemporary Orthodontics 5th",
+        "file": "Contemporary Orthodontics 5th.pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          9,
+          11,
+          14
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PFZZK0hIbGZijtNS31sHxHvUE92WgqlO/view"
+      },
+      {
+        "book": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE",
+        "file": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE.pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          6,
+          7,
+          8
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PGKeUn1kemuvZDtR8aq_5V2WY-xS6LV8/view"
+      },
+      {
+        "book": "Periodontics Medicine Surgery Implants",
+        "file": "Periodontics Medicine Surgery Implants.pdf",
+        "topic": "perio",
+        "pages": [
+          2,
+          4,
+          6
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PHE7dgCcRfdAvMyhFjBJD7Z5Anuu0zSF/view"
+      }
+    ],
+    "local anesthesia": [
+      {
+        "book": "Hand book of local anesthesia 6th",
+        "file": "Hand book of local anesthesia 6th.pdf",
+        "topic": "ethics",
+        "pages": [
+          1,
+          2,
+          3
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1lSHU-Y2lPzGEM-1F5ge0bhexGQHrLQFi/view"
+      },
+      {
+        "book": "Stanley_F_Malamed_handbook_of_local_anes",
+        "file": "Stanley_F_Malamed_handbook_of_local_anes.pdf",
+        "topic": "ethics",
+        "pages": [
+          3,
+          6,
+          8
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1lTAYXA8RbLIdsXXUzEoTM7lQ4livFrtT/view"
+      },
+      {
+        "book": "Manegment of medically compromised PT",
+        "file": "Manegment of medically compromised PT.pdf",
+        "topic": "oms",
+        "pages": [
+          43,
+          56,
+          57
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PDkxiSbLJrLaW1dgP9SePG_BA0GBsv4R/view"
+      },
+      {
+        "book": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE",
+        "file": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE.pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          12,
+          41,
+          100
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PGKeUn1kemuvZDtR8aq_5V2WY-xS6LV8/view"
+      }
+    ],
+    "lidocaine": [
+      {
+        "book": "Hand book of local anesthesia 6th",
+        "file": "Hand book of local anesthesia 6th.pdf",
+        "topic": "ethics",
+        "pages": [
+          7,
+          17,
+          37
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1lSHU-Y2lPzGEM-1F5ge0bhexGQHrLQFi/view"
+      },
+      {
+        "book": "Stanley_F_Malamed_handbook_of_local_anes",
+        "file": "Stanley_F_Malamed_handbook_of_local_anes.pdf",
+        "topic": "ethics",
+        "pages": [
+          8,
+          19,
+          29
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1lTAYXA8RbLIdsXXUzEoTM7lQ4livFrtT/view"
+      },
+      {
+        "book": "Manegment of medically compromised PT",
+        "file": "Manegment of medically compromised PT.pdf",
+        "topic": "oms",
+        "pages": [
+          89,
+          116,
+          137
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PDkxiSbLJrLaW1dgP9SePG_BA0GBsv4R/view"
+      },
+      {
+        "book": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE",
+        "file": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE.pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          111,
+          112,
+          113
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PGKeUn1kemuvZDtR8aq_5V2WY-xS6LV8/view"
+      }
+    ],
+    "epinephrine": [
+      {
+        "book": "Hand book of local anesthesia 6th",
+        "file": "Hand book of local anesthesia 6th.pdf",
+        "topic": "ethics",
+        "pages": [
+          43,
+          47,
+          48
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1lSHU-Y2lPzGEM-1F5ge0bhexGQHrLQFi/view"
+      },
+      {
+        "book": "Stanley_F_Malamed_handbook_of_local_anes",
+        "file": "Stanley_F_Malamed_handbook_of_local_anes.pdf",
+        "topic": "ethics",
+        "pages": [
+          32,
+          35,
+          43
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1lTAYXA8RbLIdsXXUzEoTM7lQ4livFrtT/view"
+      },
+      {
+        "book": "Manegment of medically compromised PT",
+        "file": "Manegment of medically compromised PT.pdf",
+        "topic": "oms",
+        "pages": [
+          16,
+          17,
+          21
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PDkxiSbLJrLaW1dgP9SePG_BA0GBsv4R/view"
+      },
+      {
+        "book": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE",
+        "file": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE.pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          46,
+          112,
+          113
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PGKeUn1kemuvZDtR8aq_5V2WY-xS6LV8/view"
+      }
+    ],
+    "maxillary sinus": [
+      {
+        "book": "Oral and Maxillofacial Pathology",
+        "file": "Oral and Maxillofacial Pathology.pdf",
+        "topic": "oms",
+        "pages": [
+          45,
+          81,
+          132
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PEBO9N01A2WC1_zzvN0RASe5YTv2rvxM/view"
+      },
+      {
+        "book": "Textbook of Complete Dentures",
+        "file": "Textbook of Complete Dentures.pdf",
+        "topic": "restorative",
+        "pages": [
+          72,
+          85,
+          91
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PH75I-J5Lt558TTdKysuSK2fMob13B2r/view"
+      },
+      {
+        "book": "An Introduction to Orthodontics (2)",
+        "file": "An Introduction to Orthodontics (2).pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          56
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PEsBi9VA5dECogR9K_sv-h-jXfZPBAbJ/view"
+      },
+      {
+        "book": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE",
+        "file": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE.pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          94
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PGKeUn1kemuvZDtR8aq_5V2WY-xS6LV8/view"
+      }
+    ],
+    "dry socket": [
+      {
+        "book": "Oral and Maxillofacial Pathology",
+        "file": "Oral and Maxillofacial Pathology.pdf",
+        "topic": "oms",
+        "pages": [
+          143,
+          145,
+          146
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PEBO9N01A2WC1_zzvN0RASe5YTv2rvxM/view"
+      }
+    ],
+    "biopsy": [
+      {
+        "book": "GUIDELINES FOR INFECTION CONTROL-2003",
+        "file": "GUIDELINES FOR INFECTION CONTROL-2003.pdf",
+        "topic": "ethics",
+        "pages": [
+          2,
+          34,
+          35
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PCo_4O6vB6EuOHZ9Ti8LtDVi-K5Zmtru/view"
+      },
+      {
+        "book": "Hand book of local anesthesia 6th",
+        "file": "Hand book of local anesthesia 6th.pdf",
+        "topic": "ethics",
+        "pages": [
+          88
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1lSHU-Y2lPzGEM-1F5ge0bhexGQHrLQFi/view"
+      },
+      {
+        "book": "Stanley_F_Malamed_handbook_of_local_anes",
+        "file": "Stanley_F_Malamed_handbook_of_local_anes.pdf",
+        "topic": "ethics",
+        "pages": [
+          100
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1lTAYXA8RbLIdsXXUzEoTM7lQ4livFrtT/view"
+      },
+      {
+        "book": "Manegment of medically compromised PT",
+        "file": "Manegment of medically compromised PT.pdf",
+        "topic": "oms",
+        "pages": [
+          19,
+          23
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PDkxiSbLJrLaW1dgP9SePG_BA0GBsv4R/view"
+      },
+      {
+        "book": "Oral and Maxillofacial Pathology",
+        "file": "Oral and Maxillofacial Pathology.pdf",
+        "topic": "oms",
+        "pages": [
+          11,
+          14,
+          18
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PEBO9N01A2WC1_zzvN0RASe5YTv2rvxM/view"
+      },
+      {
+        "book": "Textbook of Complete Dentures",
+        "file": "Textbook of Complete Dentures.pdf",
+        "topic": "restorative",
+        "pages": [
+          69
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PH75I-J5Lt558TTdKysuSK2fMob13B2r/view"
+      },
+      {
+        "book": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE",
+        "file": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE.pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          28,
+          31,
+          36
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PGKeUn1kemuvZDtR8aq_5V2WY-xS6LV8/view"
+      },
+      {
+        "book": "Periodontics Medicine Surgery Implants",
+        "file": "Periodontics Medicine Surgery Implants.pdf",
+        "topic": "perio",
+        "pages": [
+          58
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PHE7dgCcRfdAvMyhFjBJD7Z5Anuu0zSF/view"
+      }
+    ],
+    "leukoplakia": [
+      {
+        "book": "Oral and Maxillofacial Pathology",
+        "file": "Oral and Maxillofacial Pathology.pdf",
+        "topic": "oms",
+        "pages": [
+          14,
+          20
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PEBO9N01A2WC1_zzvN0RASe5YTv2rvxM/view"
+      },
+      {
+        "book": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE",
+        "file": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE.pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          28,
+          29
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PGKeUn1kemuvZDtR8aq_5V2WY-xS6LV8/view"
+      },
+      {
+        "book": "Periodontics Medicine Surgery Implants",
+        "file": "Periodontics Medicine Surgery Implants.pdf",
+        "topic": "perio",
+        "pages": [
+          111
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PHE7dgCcRfdAvMyhFjBJD7Z5Anuu0zSF/view"
+      }
+    ],
+    "lichen planus": [
+      {
+        "book": "Oral and Maxillofacial Pathology",
+        "file": "Oral and Maxillofacial Pathology.pdf",
+        "topic": "oms",
+        "pages": [
+          14
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PEBO9N01A2WC1_zzvN0RASe5YTv2rvxM/view"
+      },
+      {
+        "book": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE",
+        "file": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE.pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          30,
+          35
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PGKeUn1kemuvZDtR8aq_5V2WY-xS6LV8/view"
+      },
+      {
+        "book": "Periodontics Medicine Surgery Implants",
+        "file": "Periodontics Medicine Surgery Implants.pdf",
+        "topic": "perio",
+        "pages": [
+          53,
+          68
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PHE7dgCcRfdAvMyhFjBJD7Z5Anuu0zSF/view"
+      }
+    ],
+    "pemphigus": [
+      {
+        "book": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE",
+        "file": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE.pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          78
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PGKeUn1kemuvZDtR8aq_5V2WY-xS6LV8/view"
+      },
+      {
+        "book": "Periodontics Medicine Surgery Implants",
+        "file": "Periodontics Medicine Surgery Implants.pdf",
+        "topic": "perio",
+        "pages": [
+          53,
+          58,
+          68
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PHE7dgCcRfdAvMyhFjBJD7Z5Anuu0zSF/view"
+      }
+    ],
+    "candidiasis": [
+      {
+        "book": "Manegment of medically compromised PT",
+        "file": "Manegment of medically compromised PT.pdf",
+        "topic": "oms",
+        "pages": [
+          146
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PDkxiSbLJrLaW1dgP9SePG_BA0GBsv4R/view"
+      },
+      {
+        "book": "Oral and Maxillofacial Pathology",
+        "file": "Oral and Maxillofacial Pathology.pdf",
+        "topic": "oms",
+        "pages": [
+          14,
+          19
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PEBO9N01A2WC1_zzvN0RASe5YTv2rvxM/view"
+      },
+      {
+        "book": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE",
+        "file": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE.pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          28,
+          29,
+          30
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PGKeUn1kemuvZDtR8aq_5V2WY-xS6LV8/view"
+      },
+      {
+        "book": "Periodontics Medicine Surgery Implants",
+        "file": "Periodontics Medicine Surgery Implants.pdf",
+        "topic": "perio",
+        "pages": [
+          53,
+          111
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PHE7dgCcRfdAvMyhFjBJD7Z5Anuu0zSF/view"
+      }
+    ],
+    "osteonecrosis": [
+      {
+        "book": "Manegment of medically compromised PT",
+        "file": "Manegment of medically compromised PT.pdf",
+        "topic": "oms",
+        "pages": [
+          11,
+          23,
+          48
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PDkxiSbLJrLaW1dgP9SePG_BA0GBsv4R/view"
+      },
+      {
+        "book": "Oral and Maxillofacial Pathology",
+        "file": "Oral and Maxillofacial Pathology.pdf",
+        "topic": "oms",
+        "pages": [
+          27,
+          135
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PEBO9N01A2WC1_zzvN0RASe5YTv2rvxM/view"
+      },
+      {
+        "book": "An Introduction to Orthodontics (2)",
+        "file": "An Introduction to Orthodontics (2).pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          70
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PEsBi9VA5dECogR9K_sv-h-jXfZPBAbJ/view"
+      },
+      {
+        "book": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE",
+        "file": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE.pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          81,
+          84,
+          86
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PGKeUn1kemuvZDtR8aq_5V2WY-xS6LV8/view"
+      }
+    ],
+    "infection control": [
+      {
+        "book": "Basic Guide to Infection Prevention and Control in Dentistry. 2009",
+        "file": "Basic Guide to Infection Prevention and Control in Dentistry. 2009.pdf",
+        "topic": "ethics",
+        "pages": [
+          4,
+          5,
+          8
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1lTVmTe0jj4kILoRc3VRbREndcfyAx_2Y/view"
+      },
+      {
+        "book": "GUIDELINES FOR INFECTION CONTROL-2003",
+        "file": "GUIDELINES FOR INFECTION CONTROL-2003.pdf",
+        "topic": "ethics",
+        "pages": [
+          1,
+          2,
+          3
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PCo_4O6vB6EuOHZ9Ti8LtDVi-K5Zmtru/view"
+      },
+      {
+        "book": "Manegment of medically compromised PT",
+        "file": "Manegment of medically compromised PT.pdf",
+        "topic": "oms",
+        "pages": [
+          2,
+          14,
+          46
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PDkxiSbLJrLaW1dgP9SePG_BA0GBsv4R/view"
+      },
+      {
+        "book": "McCracken_s Removable Partial Prosthodontics",
+        "file": "McCracken_s Removable Partial Prosthodontics.pdf",
+        "topic": "restorative",
+        "pages": [
+          10
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PH4FOZ9kqTK2T6UN1tJOJOlumsIa2LMs/view"
+      }
+    ],
+    "sterilization": [
+      {
+        "book": "Basic Guide to Infection Prevention and Control in Dentistry. 2009",
+        "file": "Basic Guide to Infection Prevention and Control in Dentistry. 2009.pdf",
+        "topic": "ethics",
+        "pages": [
+          6,
+          7,
+          38
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1lTVmTe0jj4kILoRc3VRbREndcfyAx_2Y/view"
+      },
+      {
+        "book": "GUIDELINES FOR INFECTION CONTROL-2003",
+        "file": "GUIDELINES FOR INFECTION CONTROL-2003.pdf",
+        "topic": "ethics",
+        "pages": [
+          2,
+          3,
+          5
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PCo_4O6vB6EuOHZ9Ti8LtDVi-K5Zmtru/view"
+      },
+      {
+        "book": "Stanley_F_Malamed_handbook_of_local_anes",
+        "file": "Stanley_F_Malamed_handbook_of_local_anes.pdf",
+        "topic": "ethics",
+        "pages": [
+          103,
+          131
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1lTAYXA8RbLIdsXXUzEoTM7lQ4livFrtT/view"
+      }
+    ],
+    "disinfection": [
+      {
+        "book": "Basic Guide to Infection Prevention and Control in Dentistry. 2009",
+        "file": "Basic Guide to Infection Prevention and Control in Dentistry. 2009.pdf",
+        "topic": "ethics",
+        "pages": [
+          6,
+          7,
+          81
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1lTVmTe0jj4kILoRc3VRbREndcfyAx_2Y/view"
+      },
+      {
+        "book": "GUIDELINES FOR INFECTION CONTROL-2003",
+        "file": "GUIDELINES FOR INFECTION CONTROL-2003.pdf",
+        "topic": "ethics",
+        "pages": [
+          2,
+          3,
+          5
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PCo_4O6vB6EuOHZ9Ti8LtDVi-K5Zmtru/view"
+      },
+      {
+        "book": "Textbook of Complete Dentures",
+        "file": "Textbook of Complete Dentures.pdf",
+        "topic": "restorative",
+        "pages": [
+          35
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PH75I-J5Lt558TTdKysuSK2fMob13B2r/view"
+      }
+    ],
+    "hand hygiene": [
+      {
+        "book": "Basic Guide to Infection Prevention and Control in Dentistry. 2009",
+        "file": "Basic Guide to Infection Prevention and Control in Dentistry. 2009.pdf",
+        "topic": "ethics",
+        "pages": [
+          6,
+          34,
+          72
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1lTVmTe0jj4kILoRc3VRbREndcfyAx_2Y/view"
+      },
+      {
+        "book": "GUIDELINES FOR INFECTION CONTROL-2003",
+        "file": "GUIDELINES FOR INFECTION CONTROL-2003.pdf",
+        "topic": "ethics",
+        "pages": [
+          2,
+          3,
+          5
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PCo_4O6vB6EuOHZ9Ti8LtDVi-K5Zmtru/view"
+      }
+    ],
+    "informed consent": [
+      {
+        "book": "Basic Guide to Infection Prevention and Control in Dentistry. 2009",
+        "file": "Basic Guide to Infection Prevention and Control in Dentistry. 2009.pdf",
+        "topic": "ethics",
+        "pages": [
+          66
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1lTVmTe0jj4kILoRc3VRbREndcfyAx_2Y/view"
+      },
+      {
+        "book": "Professionalism and Ethics Handbook for Residents",
+        "file": "Professionalism and Ethics Handbook for Residents.pdf",
+        "topic": "ethics",
+        "pages": [
+          9,
+          12,
+          13
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PD5B4rNkBQ7M8HaK3EVXdVNMt6za-WMC/view"
+      },
+      {
+        "book": "Stanley_F_Malamed_handbook_of_local_anes",
+        "file": "Stanley_F_Malamed_handbook_of_local_anes.pdf",
+        "topic": "ethics",
+        "pages": [
+          98
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1lTAYXA8RbLIdsXXUzEoTM7lQ4livFrtT/view"
+      },
+      {
+        "book": "McCracken_s Removable Partial Prosthodontics",
+        "file": "McCracken_s Removable Partial Prosthodontics.pdf",
+        "topic": "restorative",
+        "pages": [
+          23
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PH4FOZ9kqTK2T6UN1tJOJOlumsIa2LMs/view"
+      },
+      {
+        "book": "An Introduction to Orthodontics (2)",
+        "file": "An Introduction to Orthodontics (2).pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          12,
+          13,
+          69
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PEsBi9VA5dECogR9K_sv-h-jXfZPBAbJ/view"
+      },
+      {
+        "book": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE",
+        "file": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE.pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          14,
+          16,
+          17
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PGKeUn1kemuvZDtR8aq_5V2WY-xS6LV8/view"
+      }
+    ],
+    "confidentiality": [
+      {
+        "book": "Basic Guide to Infection Prevention and Control in Dentistry. 2009",
+        "file": "Basic Guide to Infection Prevention and Control in Dentistry. 2009.pdf",
+        "topic": "ethics",
+        "pages": [
+          65,
+          69
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1lTVmTe0jj4kILoRc3VRbREndcfyAx_2Y/view"
+      },
+      {
+        "book": "GUIDELINES FOR INFECTION CONTROL-2003",
+        "file": "GUIDELINES FOR INFECTION CONTROL-2003.pdf",
+        "topic": "ethics",
+        "pages": [
+          12,
+          42,
+          72
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PCo_4O6vB6EuOHZ9Ti8LtDVi-K5Zmtru/view"
+      },
+      {
+        "book": "Professionalism and Ethics Handbook for Residents",
+        "file": "Professionalism and Ethics Handbook for Residents.pdf",
+        "topic": "ethics",
+        "pages": [
+          10,
+          12,
+          13
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PD5B4rNkBQ7M8HaK3EVXdVNMt6za-WMC/view"
+      }
+    ],
+    "prophylaxis": [
+      {
+        "book": "Basic Guide to Infection Prevention and Control in Dentistry. 2009",
+        "file": "Basic Guide to Infection Prevention and Control in Dentistry. 2009.pdf",
+        "topic": "ethics",
+        "pages": [
+          6,
+          41,
+          42
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1lTVmTe0jj4kILoRc3VRbREndcfyAx_2Y/view"
+      },
+      {
+        "book": "GUIDELINES FOR INFECTION CONTROL-2003",
+        "file": "GUIDELINES FOR INFECTION CONTROL-2003.pdf",
+        "topic": "ethics",
+        "pages": [
+          3,
+          11,
+          13
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PCo_4O6vB6EuOHZ9Ti8LtDVi-K5Zmtru/view"
+      },
+      {
+        "book": "Manegment of medically compromised PT",
+        "file": "Manegment of medically compromised PT.pdf",
+        "topic": "oms",
+        "pages": [
+          11,
+          16,
+          44
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PDkxiSbLJrLaW1dgP9SePG_BA0GBsv4R/view"
+      },
+      {
+        "book": "Oral and Maxillofacial Pathology",
+        "file": "Oral and Maxillofacial Pathology.pdf",
+        "topic": "oms",
+        "pages": [
+          70,
+          73
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PEBO9N01A2WC1_zzvN0RASe5YTv2rvxM/view"
+      },
+      {
+        "book": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE",
+        "file": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE.pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          79,
+          80,
+          81
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PGKeUn1kemuvZDtR8aq_5V2WY-xS6LV8/view"
+      },
+      {
+        "book": "Periodontics Medicine Surgery Implants",
+        "file": "Periodontics Medicine Surgery Implants.pdf",
+        "topic": "perio",
+        "pages": [
+          69
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PHE7dgCcRfdAvMyhFjBJD7Z5Anuu0zSF/view"
+      }
+    ],
+    "endocarditis": [
+      {
+        "book": "GUIDELINES FOR INFECTION CONTROL-2003",
+        "file": "GUIDELINES FOR INFECTION CONTROL-2003.pdf",
+        "topic": "ethics",
+        "pages": [
+          34,
+          59,
+          60
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PCo_4O6vB6EuOHZ9Ti8LtDVi-K5Zmtru/view"
+      },
+      {
+        "book": "Manegment of medically compromised PT",
+        "file": "Manegment of medically compromised PT.pdf",
+        "topic": "oms",
+        "pages": [
+          2,
+          13,
+          16
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PDkxiSbLJrLaW1dgP9SePG_BA0GBsv4R/view"
+      },
+      {
+        "book": "An Introduction to Orthodontics (2)",
+        "file": "An Introduction to Orthodontics (2).pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          70
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PEsBi9VA5dECogR9K_sv-h-jXfZPBAbJ/view"
+      },
+      {
+        "book": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE",
+        "file": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE.pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          130,
+          134,
+          135
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PGKeUn1kemuvZDtR8aq_5V2WY-xS6LV8/view"
+      }
+    ],
+    "diabetes": [
+      {
+        "book": "Basic Guide to Infection Prevention and Control in Dentistry. 2009",
+        "file": "Basic Guide to Infection Prevention and Control in Dentistry. 2009.pdf",
+        "topic": "ethics",
+        "pages": [
+          24
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1lTVmTe0jj4kILoRc3VRbREndcfyAx_2Y/view"
+      },
+      {
+        "book": "GUIDELINES FOR INFECTION CONTROL-2003",
+        "file": "GUIDELINES FOR INFECTION CONTROL-2003.pdf",
+        "topic": "ethics",
+        "pages": [
+          9
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PCo_4O6vB6EuOHZ9Ti8LtDVi-K5Zmtru/view"
+      },
+      {
+        "book": "Hand book of local anesthesia 6th",
+        "file": "Hand book of local anesthesia 6th.pdf",
+        "topic": "ethics",
+        "pages": [
+          114,
+          118
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1lSHU-Y2lPzGEM-1F5ge0bhexGQHrLQFi/view"
+      },
+      {
+        "book": "Professionalism and Ethics Handbook for Residents",
+        "file": "Professionalism and Ethics Handbook for Residents.pdf",
+        "topic": "ethics",
+        "pages": [
+          133
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PD5B4rNkBQ7M8HaK3EVXdVNMt6za-WMC/view"
+      },
+      {
+        "book": "Stanley_F_Malamed_handbook_of_local_anes",
+        "file": "Stanley_F_Malamed_handbook_of_local_anes.pdf",
+        "topic": "ethics",
+        "pages": [
+          70,
+          73,
+          98
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1lTAYXA8RbLIdsXXUzEoTM7lQ4livFrtT/view"
+      },
+      {
+        "book": "Manegment of medically compromised PT",
+        "file": "Manegment of medically compromised PT.pdf",
+        "topic": "oms",
+        "pages": [
+          2,
+          9,
+          13
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PDkxiSbLJrLaW1dgP9SePG_BA0GBsv4R/view"
+      },
+      {
+        "book": "Oral and Maxillofacial Pathology",
+        "file": "Oral and Maxillofacial Pathology.pdf",
+        "topic": "oms",
+        "pages": [
+          57,
+          62,
+          135
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PEBO9N01A2WC1_zzvN0RASe5YTv2rvxM/view"
+      },
+      {
+        "book": "McCracken_s Removable Partial Prosthodontics",
+        "file": "McCracken_s Removable Partial Prosthodontics.pdf",
+        "topic": "restorative",
+        "pages": [
+          19
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PH4FOZ9kqTK2T6UN1tJOJOlumsIa2LMs/view"
+      },
+      {
+        "book": "An Introduction to Orthodontics (2)",
+        "file": "An Introduction to Orthodontics (2).pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          70
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PEsBi9VA5dECogR9K_sv-h-jXfZPBAbJ/view"
+      },
+      {
+        "book": "Contemporary Orthodontics 5th",
+        "file": "Contemporary Orthodontics 5th.pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          26
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PFZZK0hIbGZijtNS31sHxHvUE92WgqlO/view"
+      },
+      {
+        "book": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE",
+        "file": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE.pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          24,
+          57,
+          79
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PGKeUn1kemuvZDtR8aq_5V2WY-xS6LV8/view"
+      },
+      {
+        "book": "Periodontics Medicine Surgery Implants",
+        "file": "Periodontics Medicine Surgery Implants.pdf",
+        "topic": "perio",
+        "pages": [
+          52,
+          58,
+          59
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PHE7dgCcRfdAvMyhFjBJD7Z5Anuu0zSF/view"
+      }
+    ],
+    "asthma": [
+      {
+        "book": "Basic Guide to Infection Prevention and Control in Dentistry. 2009",
+        "file": "Basic Guide to Infection Prevention and Control in Dentistry. 2009.pdf",
+        "topic": "ethics",
+        "pages": [
+          40,
+          87,
+          88
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1lTVmTe0jj4kILoRc3VRbREndcfyAx_2Y/view"
+      },
+      {
+        "book": "GUIDELINES FOR INFECTION CONTROL-2003",
+        "file": "GUIDELINES FOR INFECTION CONTROL-2003.pdf",
+        "topic": "ethics",
+        "pages": [
+          21,
+          30
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PCo_4O6vB6EuOHZ9Ti8LtDVi-K5Zmtru/view"
+      },
+      {
+        "book": "Hand book of local anesthesia 6th",
+        "file": "Hand book of local anesthesia 6th.pdf",
+        "topic": "ethics",
+        "pages": [
+          98,
+          99,
+          118
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1lSHU-Y2lPzGEM-1F5ge0bhexGQHrLQFi/view"
+      },
+      {
+        "book": "Stanley_F_Malamed_handbook_of_local_anes",
+        "file": "Stanley_F_Malamed_handbook_of_local_anes.pdf",
+        "topic": "ethics",
+        "pages": [
+          63,
+          72,
+          73
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1lTAYXA8RbLIdsXXUzEoTM7lQ4livFrtT/view"
+      },
+      {
+        "book": "Manegment of medically compromised PT",
+        "file": "Manegment of medically compromised PT.pdf",
+        "topic": "oms",
+        "pages": [
+          9,
+          46,
+          56
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PDkxiSbLJrLaW1dgP9SePG_BA0GBsv4R/view"
+      },
+      {
+        "book": "Oral and Maxillofacial Pathology",
+        "file": "Oral and Maxillofacial Pathology.pdf",
+        "topic": "oms",
+        "pages": [
+          57
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PEBO9N01A2WC1_zzvN0RASe5YTv2rvxM/view"
+      },
+      {
+        "book": "An Introduction to Orthodontics (2)",
+        "file": "An Introduction to Orthodontics (2).pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          70
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PEsBi9VA5dECogR9K_sv-h-jXfZPBAbJ/view"
+      },
+      {
+        "book": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE",
+        "file": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE.pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          72,
+          93,
+          114
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PGKeUn1kemuvZDtR8aq_5V2WY-xS6LV8/view"
+      }
+    ],
+    "COPD": [
+      {
+        "book": "Manegment of medically compromised PT",
+        "file": "Manegment of medically compromised PT.pdf",
+        "topic": "oms",
+        "pages": [
+          141,
+          142,
+          143
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PDkxiSbLJrLaW1dgP9SePG_BA0GBsv4R/view"
+      }
+    ],
+    "pregnancy": [
+      {
+        "book": "Basic Guide to Infection Prevention and Control in Dentistry. 2009",
+        "file": "Basic Guide to Infection Prevention and Control in Dentistry. 2009.pdf",
+        "topic": "ethics",
+        "pages": [
+          45,
+          47,
+          48
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1lTVmTe0jj4kILoRc3VRbREndcfyAx_2Y/view"
+      },
+      {
+        "book": "GUIDELINES FOR INFECTION CONTROL-2003",
+        "file": "GUIDELINES FOR INFECTION CONTROL-2003.pdf",
+        "topic": "ethics",
+        "pages": [
+          9,
+          67
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PCo_4O6vB6EuOHZ9Ti8LtDVi-K5Zmtru/view"
+      },
+      {
+        "book": "Hand book of local anesthesia 6th",
+        "file": "Hand book of local anesthesia 6th.pdf",
+        "topic": "ethics",
+        "pages": [
+          135,
+          141,
+          146
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1lSHU-Y2lPzGEM-1F5ge0bhexGQHrLQFi/view"
+      },
+      {
+        "book": "Professionalism and Ethics Handbook for Residents",
+        "file": "Professionalism and Ethics Handbook for Residents.pdf",
+        "topic": "ethics",
+        "pages": [
+          16,
+          23,
+          28
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PD5B4rNkBQ7M8HaK3EVXdVNMt6za-WMC/view"
+      },
+      {
+        "book": "Stanley_F_Malamed_handbook_of_local_anes",
+        "file": "Stanley_F_Malamed_handbook_of_local_anes.pdf",
+        "topic": "ethics",
+        "pages": [
+          81,
+          84,
+          87
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1lTAYXA8RbLIdsXXUzEoTM7lQ4livFrtT/view"
+      },
+      {
+        "book": "Manegment of medically compromised PT",
+        "file": "Manegment of medically compromised PT.pdf",
+        "topic": "oms",
+        "pages": [
+          11,
+          12,
+          20
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PDkxiSbLJrLaW1dgP9SePG_BA0GBsv4R/view"
+      },
+      {
+        "book": "Oral and Maxillofacial Pathology",
+        "file": "Oral and Maxillofacial Pathology.pdf",
+        "topic": "oms",
+        "pages": [
+          17,
+          57,
+          62
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PEBO9N01A2WC1_zzvN0RASe5YTv2rvxM/view"
+      },
+      {
+        "book": "Contemporary Orthodontics 5th",
+        "file": "Contemporary Orthodontics 5th.pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          120,
+          132
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PFZZK0hIbGZijtNS31sHxHvUE92WgqlO/view"
+      },
+      {
+        "book": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE",
+        "file": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE.pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          24,
+          48,
+          84
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PGKeUn1kemuvZDtR8aq_5V2WY-xS6LV8/view"
+      },
+      {
+        "book": "Periodontics Medicine Surgery Implants",
+        "file": "Periodontics Medicine Surgery Implants.pdf",
+        "topic": "perio",
+        "pages": [
+          52,
+          57,
+          80
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PHE7dgCcRfdAvMyhFjBJD7Z5Anuu0zSF/view"
+      }
+    ],
+    "anticoagulant": [
+      {
+        "book": "Manegment of medically compromised PT",
+        "file": "Manegment of medically compromised PT.pdf",
+        "topic": "oms",
+        "pages": [
+          9,
+          16,
+          26
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PDkxiSbLJrLaW1dgP9SePG_BA0GBsv4R/view"
+      },
+      {
+        "book": "Oral and Maxillofacial Pathology",
+        "file": "Oral and Maxillofacial Pathology.pdf",
+        "topic": "oms",
+        "pages": [
+          135
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PEBO9N01A2WC1_zzvN0RASe5YTv2rvxM/view"
+      },
+      {
+        "book": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE",
+        "file": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE.pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          114
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PGKeUn1kemuvZDtR8aq_5V2WY-xS6LV8/view"
+      }
+    ],
+    "warfarin": [
+      {
+        "book": "Manegment of medically compromised PT",
+        "file": "Manegment of medically compromised PT.pdf",
+        "topic": "oms",
+        "pages": [
+          26,
+          72,
+          105
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PDkxiSbLJrLaW1dgP9SePG_BA0GBsv4R/view"
+      },
+      {
+        "book": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE",
+        "file": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE.pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          99,
+          114
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PGKeUn1kemuvZDtR8aq_5V2WY-xS6LV8/view"
+      }
+    ],
+    "Angle Class": [
+      {
+        "book": "Contemporary Orthodontics 5th",
+        "file": "Contemporary Orthodontics 5th.pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          19
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PFZZK0hIbGZijtNS31sHxHvUE92WgqlO/view"
+      }
+    ],
+    "overjet": [
+      {
+        "book": "An Introduction to Orthodontics (2)",
+        "file": "An Introduction to Orthodontics (2).pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          13,
+          18,
+          19
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PEsBi9VA5dECogR9K_sv-h-jXfZPBAbJ/view"
+      },
+      {
+        "book": "Contemporary Orthodontics 5th",
+        "file": "Contemporary Orthodontics 5th.pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          21,
+          22,
+          23
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PFZZK0hIbGZijtNS31sHxHvUE92WgqlO/view"
+      }
+    ],
+    "overbite": [
+      {
+        "book": "An Introduction to Orthodontics (2)",
+        "file": "An Introduction to Orthodontics (2).pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          18,
+          26,
+          28
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PEsBi9VA5dECogR9K_sv-h-jXfZPBAbJ/view"
+      },
+      {
+        "book": "Contemporary Orthodontics 5th",
+        "file": "Contemporary Orthodontics 5th.pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          21,
+          22,
+          24
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PFZZK0hIbGZijtNS31sHxHvUE92WgqlO/view"
+      }
+    ],
+    "space maintainer": [
+      {
+        "book": "An Introduction to Orthodontics (2)",
+        "file": "An Introduction to Orthodontics (2).pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          38,
+          107,
+          122
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PEsBi9VA5dECogR9K_sv-h-jXfZPBAbJ/view"
+      },
+      {
+        "book": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE",
+        "file": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE.pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          88
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PGKeUn1kemuvZDtR8aq_5V2WY-xS6LV8/view"
+      }
+    ],
+    "fluoride": [
+      {
+        "book": "Manegment of medically compromised PT",
+        "file": "Manegment of medically compromised PT.pdf",
+        "topic": "oms",
+        "pages": [
+          32
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PDkxiSbLJrLaW1dgP9SePG_BA0GBsv4R/view"
+      },
+      {
+        "book": "Oral and Maxillofacial Pathology",
+        "file": "Oral and Maxillofacial Pathology.pdf",
+        "topic": "oms",
+        "pages": [
+          57,
+          59,
+          60
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PEBO9N01A2WC1_zzvN0RASe5YTv2rvxM/view"
+      },
+      {
+        "book": "McCracken_s Removable Partial Prosthodontics",
+        "file": "McCracken_s Removable Partial Prosthodontics.pdf",
+        "topic": "restorative",
+        "pages": [
+          73
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PH4FOZ9kqTK2T6UN1tJOJOlumsIa2LMs/view"
+      },
+      {
+        "book": "An Introduction to Orthodontics (2)",
+        "file": "An Introduction to Orthodontics (2).pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          18,
+          20,
+          109
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PEsBi9VA5dECogR9K_sv-h-jXfZPBAbJ/view"
+      },
+      {
+        "book": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE",
+        "file": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE.pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          15,
+          88,
+          135
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PGKeUn1kemuvZDtR8aq_5V2WY-xS6LV8/view"
+      }
+    ],
+    "trauma": [
+      {
+        "book": "GUIDELINES FOR INFECTION CONTROL-2003",
+        "file": "GUIDELINES FOR INFECTION CONTROL-2003.pdf",
+        "topic": "ethics",
+        "pages": [
+          12
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PCo_4O6vB6EuOHZ9Ti8LtDVi-K5Zmtru/view"
+      },
+      {
+        "book": "Hand book of local anesthesia 6th",
+        "file": "Hand book of local anesthesia 6th.pdf",
+        "topic": "ethics",
+        "pages": [
+          16
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1lSHU-Y2lPzGEM-1F5ge0bhexGQHrLQFi/view"
+      },
+      {
+        "book": "Professionalism and Ethics Handbook for Residents",
+        "file": "Professionalism and Ethics Handbook for Residents.pdf",
+        "topic": "ethics",
+        "pages": [
+          96,
+          134
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PD5B4rNkBQ7M8HaK3EVXdVNMt6za-WMC/view"
+      },
+      {
+        "book": "Stanley_F_Malamed_handbook_of_local_anes",
+        "file": "Stanley_F_Malamed_handbook_of_local_anes.pdf",
+        "topic": "ethics",
+        "pages": [
+          19,
+          90,
+          92
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1lTAYXA8RbLIdsXXUzEoTM7lQ4livFrtT/view"
+      },
+      {
+        "book": "Manegment of medically compromised PT",
+        "file": "Manegment of medically compromised PT.pdf",
+        "topic": "oms",
+        "pages": [
+          17,
+          18,
+          27
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PDkxiSbLJrLaW1dgP9SePG_BA0GBsv4R/view"
+      },
+      {
+        "book": "Oral and Maxillofacial Pathology",
+        "file": "Oral and Maxillofacial Pathology.pdf",
+        "topic": "oms",
+        "pages": [
+          12,
+          23,
+          24
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PEBO9N01A2WC1_zzvN0RASe5YTv2rvxM/view"
+      },
+      {
+        "book": "McCracken_s Removable Partial Prosthodontics",
+        "file": "McCracken_s Removable Partial Prosthodontics.pdf",
+        "topic": "restorative",
+        "pages": [
+          16,
+          19,
+          22
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PH4FOZ9kqTK2T6UN1tJOJOlumsIa2LMs/view"
+      },
+      {
+        "book": "Textbook of Complete Dentures",
+        "file": "Textbook of Complete Dentures.pdf",
+        "topic": "restorative",
+        "pages": [
+          30,
+          46,
+          50
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PH75I-J5Lt558TTdKysuSK2fMob13B2r/view"
+      },
+      {
+        "book": "An Introduction to Orthodontics (2)",
+        "file": "An Introduction to Orthodontics (2).pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          18,
+          19,
+          20
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PEsBi9VA5dECogR9K_sv-h-jXfZPBAbJ/view"
+      },
+      {
+        "book": "Contemporary Orthodontics 5th",
+        "file": "Contemporary Orthodontics 5th.pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          14,
+          27,
+          28
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PFZZK0hIbGZijtNS31sHxHvUE92WgqlO/view"
+      },
+      {
+        "book": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE",
+        "file": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE.pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          11,
+          12,
+          14
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PGKeUn1kemuvZDtR8aq_5V2WY-xS6LV8/view"
+      },
+      {
+        "book": "Periodontics Medicine Surgery Implants",
+        "file": "Periodontics Medicine Surgery Implants.pdf",
+        "topic": "perio",
+        "pages": [
+          32,
+          54,
+          57
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PHE7dgCcRfdAvMyhFjBJD7Z5Anuu0zSF/view"
+      }
+    ],
+    "Ellis": [
+      {
+        "book": "GUIDELINES FOR INFECTION CONTROL-2003",
+        "file": "GUIDELINES FOR INFECTION CONTROL-2003.pdf",
+        "topic": "ethics",
+        "pages": [
+          51,
+          53
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PCo_4O6vB6EuOHZ9Ti8LtDVi-K5Zmtru/view"
+      },
+      {
+        "book": "Oral and Maxillofacial Pathology",
+        "file": "Oral and Maxillofacial Pathology.pdf",
+        "topic": "oms",
+        "pages": [
+          9,
+          78,
+          88
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PEBO9N01A2WC1_zzvN0RASe5YTv2rvxM/view"
+      },
+      {
+        "book": "Periodontics Medicine Surgery Implants",
+        "file": "Periodontics Medicine Surgery Implants.pdf",
+        "topic": "perio",
+        "pages": [
+          66
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PHE7dgCcRfdAvMyhFjBJD7Z5Anuu0zSF/view"
+      }
+    ],
+    "SSC": [
+      {
+        "book": "Periodontics Medicine Surgery Implants",
+        "file": "Periodontics Medicine Surgery Implants.pdf",
+        "topic": "perio",
+        "pages": [
+          121
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PHE7dgCcRfdAvMyhFjBJD7Z5Anuu0zSF/view"
+      }
+    ],
+    "pulpectomy": [
+      {
+        "book": "Manegment of medically compromised PT",
+        "file": "Manegment of medically compromised PT.pdf",
+        "topic": "oms",
+        "pages": [
+          21
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PDkxiSbLJrLaW1dgP9SePG_BA0GBsv4R/view"
+      }
+    ],
+    "formocresol": [
+      {
+        "book": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE",
+        "file": "Pediatric Dentistry INFANCY THROUGH ADOLESCENCE.pdf",
+        "topic": "ortho_pedo",
+        "pages": [
+          20,
+          30
+        ],
+        "driveUrl": "https://drive.google.com/file/d/1PGKeUn1kemuvZDtR8aq_5V2WY-xS6LV8/view"
+      }
+    ]
+  }
+}

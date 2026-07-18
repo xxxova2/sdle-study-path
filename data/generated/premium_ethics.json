@@ -1,0 +1,802 @@
+[
+  {
+    "id": "eth_boost_001",
+    "topic": "ethics",
+    "difficulty": "easy",
+    "q": "Correct order for reprocessing instruments with stuck organic debris?",
+    "options": [
+      "Sterilization → cleaning → disinfection",
+      "Cleaning → disinfection → sterilization",
+      "Sterilization → disinfection → cleaning",
+      "Disinfection → cleaning → sterilization"
+    ],
+    "answer": 1,
+    "explanation": "Debris must be cleaned first; then disinfect; then sterilize. Dirty instruments must not go straight into sterilizer.",
+    "source": "premium_ethics",
+    "subtopics": []
+  },
+  {
+    "id": "eth_boost_002",
+    "topic": "ethics",
+    "difficulty": "easy",
+    "q": "Dental light handles between patients should be:",
+    "options": [
+      "Barrier-protected and/or disinfected each patient",
+      "Wiped only once a month",
+      "Autoclaved as a whole unit daily only",
+      "Never cleaned"
+    ],
+    "answer": 0,
+    "explanation": "Clinical contact surfaces: barrier or intermediate-level disinfection per patient.",
+    "source": "premium_ethics",
+    "subtopics": []
+  },
+  {
+    "id": "eth_boost_003",
+    "topic": "ethics",
+    "difficulty": "medium",
+    "q": "Purpose of PPE in dentistry primarily is to:",
+    "options": [
+      "Replace hand hygiene completely",
+      "Protect DHCP and patients by reducing exposure to infectious materials",
+      "Sterilize instruments inside the pack",
+      "Increase aerosol production intentionally"
+    ],
+    "answer": 1,
+    "explanation": "PPE is a barrier; hand hygiene remains essential.",
+    "source": "premium_ethics",
+    "subtopics": []
+  },
+  {
+    "id": "eth_boost_004",
+    "topic": "ethics",
+    "difficulty": "easy",
+    "q": "Hand hygiene is considered:",
+    "options": [
+      "Optional if gloves are worn",
+      "Replaced entirely by mask use",
+      "A cornerstone of infection prevention before/after patient contact and glove use",
+      "Only needed at end of day"
+    ],
+    "answer": 2,
+    "explanation": "Gloves do not replace hand hygiene.",
+    "source": "premium_ethics",
+    "subtopics": []
+  },
+  {
+    "id": "eth_boost_005",
+    "topic": "ethics",
+    "difficulty": "medium",
+    "q": "Critical instruments (enter sterile tissue / bloodstream) require:",
+    "options": [
+      "Only soap wash",
+      "Only wipe with alcohol between patients",
+      "Heat sterilization (or sterile single-use)",
+      "No processing if they look clean"
+    ],
+    "answer": 2,
+    "explanation": "Spaulding: critical → sterilize.",
+    "source": "premium_ethics",
+    "subtopics": []
+  },
+  {
+    "id": "eth_boost_006",
+    "topic": "ethics",
+    "difficulty": "medium",
+    "q": "Semi-critical items that touch mucous membranes ideally:",
+    "options": [
+      "No cleaning needed",
+      "Store wet in drawer",
+      "Heat sterilized; if heat-sensitive, high-level disinfection minimum",
+      "Only low-level wipe always enough"
+    ],
+    "answer": 2,
+    "explanation": "Semi-critical: sterilize preferred; HLD if heat-sensitive.",
+    "source": "premium_ethics",
+    "subtopics": []
+  },
+  {
+    "id": "eth_boost_007",
+    "topic": "ethics",
+    "difficulty": "easy",
+    "q": "Noncritical environmental surfaces (e.g., countertops) generally need:",
+    "options": [
+      "Only sterile surgical drapes always",
+      "Cleaning and intermediate/low-level disinfection as appropriate",
+      "Autoclave the entire counter daily",
+      "No cleaning ever"
+    ],
+    "answer": 1,
+    "explanation": "Noncritical: clean ± disinfect; not sterilization.",
+    "source": "premium_ethics",
+    "subtopics": []
+  },
+  {
+    "id": "eth_boost_008",
+    "topic": "ethics",
+    "difficulty": "hard",
+    "q": "Steam autoclave biological indicator (spore test) is used to:",
+    "options": [
+      "Test fluoride concentration",
+      "Replace chemical indicators completely without ever using them",
+      "Verify sterilizer kill efficacy with highly resistant spores",
+      "Measure room temperature only"
+    ],
+    "answer": 2,
+    "explanation": "BI is gold standard monitoring; chemical indicators are adjuncts.",
+    "source": "premium_ethics",
+    "subtopics": []
+  },
+  {
+    "id": "eth_boost_009",
+    "topic": "ethics",
+    "difficulty": "medium",
+    "q": "Chemical indicator on a pouch turning color means:",
+    "options": [
+      "Item was exposed to sterilizing conditions parameters of that indicator — not a guarantee of sterility alone",
+      "Instrument is contaminated",
+      "Absolute proof of sterility equal to biologic always",
+      "Autoclave is broken always"
+    ],
+    "answer": 0,
+    "explanation": "Chemical ≠ biologic; use both in a monitoring program.",
+    "source": "premium_ethics",
+    "subtopics": []
+  },
+  {
+    "id": "eth_boost_010",
+    "topic": "ethics",
+    "difficulty": "easy",
+    "q": "Needle-stick injury first immediate action?",
+    "options": [
+      "Continue working without reporting",
+      "Squeeze wound aggressively and apply bleach inside",
+      "Ignore if patient looks healthy",
+      "Wash wound with soap and water; report and follow occupational exposure protocol"
+    ],
+    "answer": 3,
+    "explanation": "Wash, report, risk assess source, PEP as indicated.",
+    "source": "premium_ethics",
+    "subtopics": []
+  },
+  {
+    "id": "eth_boost_011",
+    "topic": "ethics",
+    "difficulty": "medium",
+    "q": "After needle-stick from known HIV source, PEP should generally start:",
+    "options": [
+      "As soon as possible (hours matter); follow institutional protocol",
+      "After 2 weeks only",
+      "Only if symptoms appear",
+      "Never indicated conceptually"
+    ],
+    "answer": 0,
+    "explanation": "Post-exposure prophylaxis is time-sensitive.",
+    "source": "premium_ethics",
+    "subtopics": []
+  },
+  {
+    "id": "eth_boost_012",
+    "topic": "ethics",
+    "difficulty": "hard",
+    "q": "Multi-dose vial best practice includes:",
+    "options": [
+      "Use same syringe for multiple patients if needle changed only",
+      "Leave needle in septum between patients",
+      "Store at room temperature forever unlabeled",
+      "Aseptic access, date when opened, discard per policy; dedicate when possible"
+    ],
+    "answer": 3,
+    "explanation": "Unsafe injection practices transmit bloodborne pathogens.",
+    "source": "premium_ethics",
+    "subtopics": []
+  },
+  {
+    "id": "eth_boost_013",
+    "topic": "ethics",
+    "difficulty": "medium",
+    "q": "Sharps disposal should be into:",
+    "options": [
+      "Puncture-resistant labeled sharps container at point of use",
+      "Patient's pocket",
+      "Sterilizer chamber loose",
+      "Regular trash bag"
+    ],
+    "answer": 0,
+    "explanation": "Never recap with two hands; dispose immediately in sharps box.",
+    "source": "premium_ethics",
+    "subtopics": []
+  },
+  {
+    "id": "eth_boost_014",
+    "topic": "ethics",
+    "difficulty": "easy",
+    "q": "Informed consent requires that the patient understands:",
+    "options": [
+      "Nothing if emergency is not present and doctor decides alone always",
+      "Only the cost without risks",
+      "Only the brand of composite",
+      "Nature of procedure, risks, benefits, alternatives, and can decide voluntarily"
+    ],
+    "answer": 3,
+    "explanation": "Consent = information + capacity + voluntariness.",
+    "source": "premium_ethics",
+    "subtopics": []
+  },
+  {
+    "id": "eth_boost_015",
+    "topic": "ethics",
+    "difficulty": "medium",
+    "q": "A minor typically needs consent from:",
+    "options": [
+      "Parent/legal guardian for elective care (exceptions: emergencies / local law mature minor rules)",
+      "Classmate only",
+      "No one ever",
+      "Any adult in waiting room without authority"
+    ],
+    "answer": 0,
+    "explanation": "Know local SCFHS/KSA rules; guardian consent for minors generally.",
+    "source": "premium_ethics",
+    "subtopics": []
+  },
+  {
+    "id": "eth_boost_016",
+    "topic": "ethics",
+    "difficulty": "hard",
+    "q": "Patient refuses a recommended extraction of a hopeless tooth. Best ethical response?",
+    "options": [
+      "Extract anyway under force",
+      "Explain risks of refusal, document informed refusal, offer alternatives/follow-up — do not coerce",
+      "Refuse any future emergency care forever as punishment",
+      "Falsify chart that extraction was done"
+    ],
+    "answer": 1,
+    "explanation": "Respect autonomy; document informed refusal.",
+    "source": "premium_ethics",
+    "subtopics": []
+  },
+  {
+    "id": "eth_boost_017",
+    "topic": "ethics",
+    "difficulty": "medium",
+    "q": "Confidentiality means:",
+    "options": [
+      "Discuss full cases with names on public social media freely",
+      "Patient information is not disclosed without authorization except legal/ethical exceptions",
+      "Share records with employers without consent always",
+      "Post treatment photos of celebrities for advertising without consent"
+    ],
+    "answer": 1,
+    "explanation": "Privacy is an ethical and legal duty.",
+    "source": "premium_ethics",
+    "subtopics": []
+  },
+  {
+    "id": "eth_boost_018",
+    "topic": "ethics",
+    "difficulty": "easy",
+    "q": "Non-maleficence in dental ethics means:",
+    "options": [
+      "Ignore infection control",
+      "Always maximize clinic profit first",
+      "Do no harm — avoid unnecessary risk and negligence",
+      "Treat only family members"
+    ],
+    "answer": 2,
+    "explanation": "Primum non nocere — core principle.",
+    "source": "premium_ethics",
+    "subtopics": []
+  },
+  {
+    "id": "eth_boost_019",
+    "topic": "ethics",
+    "difficulty": "easy",
+    "q": "Beneficence means:",
+    "options": [
+      "Only do what is easiest for the dentist",
+      "Disclose secrets of other patients",
+      "Avoid all treatment always",
+      "Act in the patient's best interest to promote good oral health outcomes"
+    ],
+    "answer": 3,
+    "explanation": "Beneficence: promote well-being.",
+    "source": "premium_ethics",
+    "subtopics": []
+  },
+  {
+    "id": "eth_boost_020",
+    "topic": "ethics",
+    "difficulty": "medium",
+    "q": "Justice in healthcare ethics relates to:",
+    "options": [
+      "Ignoring disability access",
+      "Fairness in distribution of care and non-discrimination",
+      "Charging different races different quality intentionally",
+      "Only treating wealthy patients"
+    ],
+    "answer": 1,
+    "explanation": "Justice: equitable treatment.",
+    "source": "premium_ethics",
+    "subtopics": []
+  },
+  {
+    "id": "eth_boost_021",
+    "topic": "ethics",
+    "difficulty": "hard",
+    "q": "Treating a famous patient then posting identifiable photos online without consent is a breach of:",
+    "options": [
+      "Confidentiality / privacy (and often advertising ethics rules)",
+      "Only instrument sterilization rules",
+      "Nothing wrong ever",
+      "Only fluoride guidelines"
+    ],
+    "answer": 0,
+    "explanation": "No public disclosure of identifiable patient info without consent.",
+    "source": "premium_ethics",
+    "subtopics": []
+  },
+  {
+    "id": "eth_boost_022",
+    "topic": "ethics",
+    "difficulty": "medium",
+    "q": "Recent organ transplant (e.g., 3 months) needing elective restoration with gingivitis — best approach?",
+    "options": [
+      "Only extract all teeth immediately without consult",
+      "Do full mouth implants same day without labs",
+      "Ignore medical history",
+      "Defer elective care; coordinate with physician; manage infection risk carefully when treated"
+    ],
+    "answer": 3,
+    "explanation": "Immunosuppression + meds (cyclosporine → overgrowth) → defer elective; medical clearance.",
+    "source": "premium_ethics",
+    "subtopics": []
+  },
+  {
+    "id": "eth_boost_023",
+    "topic": "ethics",
+    "difficulty": "easy",
+    "q": "Preferred analgesic concept in asthmatic patient with NSAID-sensitivity concern?",
+    "options": [
+      "Paracetamol (acetaminophen) as safer first-line analgesic often",
+      "High-dose aspirin always first",
+      "Codeine only option always",
+      "Ibuprofen always mandatory"
+    ],
+    "answer": 0,
+    "explanation": "NSAID-exacerbated respiratory disease risk — prefer paracetamol.",
+    "source": "premium_ethics",
+    "subtopics": []
+  },
+  {
+    "id": "eth_boost_024",
+    "topic": "ethics",
+    "difficulty": "medium",
+    "q": "COPD patient for routine dentistry — positioning/sedation approach?",
+    "options": [
+      "Semi-supine; short appointments; cautious anxiolysis avoiding heavy respiratory depression",
+      "No modifications ever",
+      "Trendelenburg + high-dose diazepam always",
+      "Fully flat + deep IV sedation first-line always"
+    ],
+    "answer": 0,
+    "explanation": "COPD: upright/semi-upright; protect ventilation.",
+    "source": "premium_ethics",
+    "subtopics": []
+  },
+  {
+    "id": "eth_boost_025",
+    "topic": "ethics",
+    "difficulty": "hard",
+    "q": "Uncontrolled hyperthyroid patient — local anesthetic with epinephrine concern?",
+    "options": [
+      "Epinephrine is completely irrelevant",
+      "Only treat with general anesthesia always without medical eval",
+      "Use caution / medical optimization; avoid excess epinephrine that may precipitate crisis patterns",
+      "Always use maximum epi carpules without limit"
+    ],
+    "answer": 2,
+    "explanation": "Hyperthyroid: arrhythmia/crisis risk; coordinate care; careful vasoconstrictor use.",
+    "source": "premium_ethics",
+    "subtopics": []
+  },
+  {
+    "id": "eth_boost_026",
+    "topic": "ethics",
+    "difficulty": "medium",
+    "q": "Patient on warfarin for simple extraction — common modern approach concept?",
+    "options": [
+      "Always stop warfarin 2 weeks without physician always",
+      "Often continue anticoagulant if INR in therapeutic range and use local hemostatic measures (physician coordinate)",
+      "Always hospitalize for every simple extraction without exception",
+      "Ignore INR completely"
+    ],
+    "answer": 1,
+    "explanation": "Risk of thrombosis vs bleeding — often continue VKA if INR acceptable + local control.",
+    "source": "premium_ethics",
+    "subtopics": []
+  },
+  {
+    "id": "eth_boost_027",
+    "topic": "ethics",
+    "difficulty": "easy",
+    "q": "Drug-induced gingival enlargement classic drugs include:",
+    "options": [
+      "Fluoride varnish only",
+      "Nifedipine (CCBs), phenytoin, cyclosporine",
+      "Paracetamol only",
+      "Amoxicillin only"
+    ],
+    "answer": 1,
+    "explanation": "Three classics: CCB, phenytoin, cyclosporine.",
+    "source": "premium_ethics",
+    "subtopics": []
+  },
+  {
+    "id": "eth_boost_028",
+    "topic": "ethics",
+    "difficulty": "medium",
+    "q": "Renal transplant patient with gingival overgrowth on multiple meds — most likely culprit among antihypertensives?",
+    "options": [
+      "Thyroxine only",
+      "Calcium channel blocker (e.g., nifedipine) and/or cyclosporine from immunosuppression",
+      "Hydrochlorothiazide only always",
+      "Insulin only"
+    ],
+    "answer": 1,
+    "explanation": "CCB + cyclosporine both cause enlargement — exam favorite.",
+    "source": "premium_ethics",
+    "subtopics": []
+  },
+  {
+    "id": "eth_boost_029",
+    "topic": "ethics",
+    "difficulty": "hard",
+    "q": "Bisphosphonate / denosumab patient needing extraction — key concern?",
+    "options": [
+      "MRONJ risk — prefer prevention, atraumatic technique, informed consent, medical coordination",
+      "No special risk ever",
+      "Always immediately place immediate implant without discussion",
+      "Only risk is fluorosis"
+    ],
+    "answer": 0,
+    "explanation": "MRONJ: antiresorptives + trauma/infection risk factors.",
+    "source": "premium_ethics",
+    "subtopics": []
+  },
+  {
+    "id": "eth_boost_030",
+    "topic": "ethics",
+    "difficulty": "medium",
+    "q": "Pregnancy — elective extensive care timing often preferred:",
+    "options": [
+      "Second trimester when possible; emergency care any trimester with precautions",
+      "Never treat dental pain in pregnancy",
+      "Only first trimester for all x-rays and surgery elective always preferred",
+      "Only postpartum for any emergency abscess"
+    ],
+    "answer": 0,
+    "explanation": "2nd trimester preferred for elective; emergencies don't wait.",
+    "source": "premium_ethics",
+    "subtopics": []
+  },
+  {
+    "id": "eth_boost_031",
+    "topic": "ethics",
+    "difficulty": "easy",
+    "q": "Radiographs in pregnancy when clinically necessary:",
+    "options": [
+      "Use when benefit outweighs risk with proper shielding — do not withhold needed diagnostic films",
+      "No lead apron ever",
+      "Double the exposure intentionally",
+      "Never take any radiograph even for abscess"
+    ],
+    "answer": 0,
+    "explanation": "ALARA + indicated imaging is acceptable with protection.",
+    "source": "premium_ethics",
+    "subtopics": []
+  },
+  {
+    "id": "eth_boost_032",
+    "topic": "ethics",
+    "difficulty": "medium",
+    "q": "Infective endocarditis prophylaxis — modern concept:",
+    "options": [
+      "Only for complete denture delivery",
+      "Only for specific high-risk cardiac conditions and specified procedures — not universal",
+      "Never for any dental procedure ever",
+      "For every filling in all healthy patients"
+    ],
+    "answer": 1,
+    "explanation": "Guidelines narrowed prophylaxis indications — know principles.",
+    "source": "premium_ethics",
+    "subtopics": []
+  },
+  {
+    "id": "eth_boost_033",
+    "topic": "ethics",
+    "difficulty": "hard",
+    "q": "Patient with unstable angina scheduled for elective crown prep today — best action?",
+    "options": [
+      "Defer elective care; medical evaluation/optimization first",
+      "Proceed with long stressful appointment and high epi load",
+      "Extract all teeth same day",
+      "General anesthesia in office without clearance always"
+    ],
+    "answer": 0,
+    "explanation": "Unstable cardiac disease → defer elective dentistry.",
+    "source": "premium_ethics",
+    "subtopics": []
+  },
+  {
+    "id": "eth_boost_034",
+    "topic": "ethics",
+    "difficulty": "medium",
+    "q": "Uncontrolled diabetes (very high glucose / unstable) before elective implant?",
+    "options": [
+      "Ignore HbA1c",
+      "Place full-arch immediate implants same day always",
+      "Only increase sugar intake pre-op",
+      "Improve control / coordinate physician; prefer reversible options until stable"
+    ],
+    "answer": 3,
+    "explanation": "Poor control impairs healing/infection risk — especially implants.",
+    "source": "premium_ethics",
+    "subtopics": []
+  },
+  {
+    "id": "eth_boost_035",
+    "topic": "ethics",
+    "difficulty": "easy",
+    "q": "Asthma patient brings inhaler — dental appointment advice?",
+    "options": [
+      "Lie fully flat with heavy sedation first line",
+      "Use aspirin premed always",
+      "Have rescue inhaler available; reduce stress; consider late morning appointments if nocturnal symptoms",
+      "Confiscate inhaler"
+    ],
+    "answer": 2,
+    "explanation": "Prevention of bronchospasm: inhaler access, stress control.",
+    "source": "premium_ethics",
+    "subtopics": []
+  },
+  {
+    "id": "eth_boost_036",
+    "topic": "ethics",
+    "difficulty": "medium",
+    "q": "Latex allergy in dental clinic — action?",
+    "options": [
+      "Use more latex powder intentionally",
+      "Ignore history",
+      "Only cotton gloves for surgery always without barrier alternatives",
+      "Latex-free environment / nitrile gloves; flag chart"
+    ],
+    "answer": 3,
+    "explanation": "Avoid latex exposure completely for allergic patients.",
+    "source": "premium_ethics",
+    "subtopics": []
+  },
+  {
+    "id": "eth_boost_037",
+    "topic": "ethics",
+    "difficulty": "hard",
+    "q": "HIV patient requesting routine care — ethical/clinical stance?",
+    "options": [
+      "Refuse all HIV patients always",
+      "Provide care with standard precautions; may request recent labs for complex invasive planning when relevant — no unjustified refusal",
+      "Use no gloves to show trust",
+      "Announce HIV status to waiting room"
+    ],
+    "answer": 1,
+    "explanation": "Standard precautions for all; non-discrimination; clinical labs when procedure-relevant.",
+    "source": "premium_ethics",
+    "subtopics": []
+  },
+  {
+    "id": "eth_boost_038",
+    "topic": "ethics",
+    "difficulty": "medium",
+    "q": "Standard precautions mean:",
+    "options": [
+      "No need for PPE if patient is family",
+      "Assume all blood/body fluids potentially infectious — apply to all patients",
+      "Only apply PPE to patients who look ill",
+      "Only sterilize when visible blood"
+    ],
+    "answer": 1,
+    "explanation": "Standard precautions are universal baseline.",
+    "source": "premium_ethics",
+    "subtopics": []
+  },
+  {
+    "id": "eth_boost_039",
+    "topic": "ethics",
+    "difficulty": "easy",
+    "q": "After prophy cup single-use disposable type is used, correct handling?",
+    "options": [
+      "Dispose as single-use; do not reprocess for another patient",
+      "Give to patient to reuse at home as sterile surgical tool",
+      "Wash and autoclave and reuse always if rubber",
+      "Store uncleaned for next patient"
+    ],
+    "answer": 0,
+    "explanation": "Single-use items are single-use.",
+    "source": "premium_ethics",
+    "subtopics": []
+  },
+  {
+    "id": "eth_boost_040",
+    "topic": "ethics",
+    "difficulty": "medium",
+    "q": "Impression disinfection before lab send-out:",
+    "options": [
+      "Soak in pure glutaraldehyde for days destroying cast accuracy always without protocol",
+      "Autoclave alginate impression",
+      "Rinse, disinfect per material-compatible intermediate-level protocol, rinse as directed",
+      "Send dripping with saliva without disinfection"
+    ],
+    "answer": 2,
+    "explanation": "Disinfect impressions; follow material instructions.",
+    "source": "premium_ethics",
+    "subtopics": []
+  },
+  {
+    "id": "eth_boost_041",
+    "topic": "ethics",
+    "difficulty": "hard",
+    "q": "Dental unit waterlines should deliver water meeting:",
+    "options": [
+      "Only sterile water never needed for surgery and never for anything",
+      "No monitoring ever",
+      "Any stagnant biofilm-rich water is fine",
+      "Potable-quality microbial standards; purge/treat waterlines per protocol"
+    ],
+    "answer": 3,
+    "explanation": "DUWL biofilm control is required infection control element.",
+    "source": "premium_ethics",
+    "subtopics": []
+  },
+  {
+    "id": "eth_boost_042",
+    "topic": "ethics",
+    "difficulty": "medium",
+    "q": "When is autoclave load considered not released?",
+    "options": [
+      "If chemical/mechanical monitors fail or BI fails — do not use instruments until resolved",
+      "Color of pouch never matters and BI never used",
+      "Only check once a year",
+      "Always release even if BI positive"
+    ],
+    "answer": 0,
+    "explanation": "Failed monitoring → quarantine load, reprocess, investigate.",
+    "source": "premium_ethics",
+    "subtopics": []
+  },
+  {
+    "id": "eth_boost_043",
+    "topic": "ethics",
+    "difficulty": "easy",
+    "q": "Truthfulness (veracity) requires the dentist to:",
+    "options": [
+      "Hide all risks always",
+      "Alter records to hide errors",
+      "Guarantee outcomes that cannot be guaranteed",
+      "Provide honest information about diagnosis and treatment options"
+    ],
+    "answer": 3,
+    "explanation": "Veracity underpins informed consent.",
+    "source": "premium_ethics",
+    "subtopics": []
+  },
+  {
+    "id": "eth_boost_044",
+    "topic": "ethics",
+    "difficulty": "medium",
+    "q": "Error disclosure ethical approach after wrong-tooth near miss caught before prep?",
+    "options": [
+      "Blame only the patient",
+      "Delete the chart",
+      "Hide from patient and staff forever",
+      "Disclose appropriately, apologize as indicated, analyze system, document — improve safety"
+    ],
+    "answer": 3,
+    "explanation": "Culture of safety: transparency + learning.",
+    "source": "premium_ethics",
+    "subtopics": []
+  },
+  {
+    "id": "eth_boost_045",
+    "topic": "ethics",
+    "difficulty": "hard",
+    "q": "Patient offers cash to falsify sick leave dental certificate without treatment — response?",
+    "options": [
+      "Refuse; fraudulent certification is unethical and illegal",
+      "Accept cash and write false certificate",
+      "Ask for more money",
+      "Have assistant sign instead to avoid responsibility"
+    ],
+    "answer": 0,
+    "explanation": "Honesty in documentation is mandatory.",
+    "source": "premium_ethics",
+    "subtopics": []
+  },
+  {
+    "id": "eth_boost_046",
+    "topic": "ethics",
+    "difficulty": "medium",
+    "q": "Scope of practice / referral duty when case exceeds skill?",
+    "options": [
+      "Refer to appropriate specialist rather than attempt harmful care",
+      "Attempt complex surgery without training to save fee",
+      "Abandon patient without referral options",
+      "Only treat if cash paid double"
+    ],
+    "answer": 0,
+    "explanation": "Non-maleficence + competence boundaries.",
+    "source": "premium_ethics",
+    "subtopics": []
+  },
+  {
+    "id": "eth_boost_047",
+    "topic": "ethics",
+    "difficulty": "easy",
+    "q": "Emergency patient with airway-threatening infection after hours — duty?",
+    "options": [
+      "Only book in 6 months",
+      "Refuse all emergencies always",
+      "Provide/arrange emergency care; do not abandon",
+      "Send home without advice if not your patient of record ever without pathway"
+    ],
+    "answer": 2,
+    "explanation": "Emergency care / appropriate transfer is ethical duty.",
+    "source": "premium_ethics",
+    "subtopics": []
+  },
+  {
+    "id": "eth_boost_048",
+    "topic": "ethics",
+    "difficulty": "medium",
+    "q": "Child suspected abuse (non-accidental trauma) — professional duty concept?",
+    "options": [
+      "Confront parent aggressively in public only",
+      "Document carefully and report per legal mandatory reporting pathways",
+      "Ignore to avoid paperwork",
+      "Post photos on social media"
+    ],
+    "answer": 1,
+    "explanation": "Mandatory reporting laws protect children — know local process.",
+    "source": "premium_ethics",
+    "subtopics": []
+  },
+  {
+    "id": "eth_boost_049",
+    "topic": "ethics",
+    "difficulty": "hard",
+    "q": "Capacity assessment for consent is questionable when patient is:",
+    "options": [
+      "Intoxicated, severely cognitively impaired, or unable to understand/retain/weigh information",
+      "Asking questions about risks",
+      "Choosing less expensive option",
+      "Requesting a second opinion"
+    ],
+    "answer": 0,
+    "explanation": "Capacity is decision-specific; questions ≠ incapacity.",
+    "source": "premium_ethics",
+    "subtopics": []
+  },
+  {
+    "id": "eth_boost_050",
+    "topic": "ethics",
+    "difficulty": "medium",
+    "q": "Working while knowingly having highly infectious active influenza with fever — ethical infection control action?",
+    "options": [
+      "Do not provide patient care until fit; avoid exposing patients/staff",
+      "Only treat immunocompromised patients that day",
+      "Hide symptoms and continue AGPs without precautions",
+      "Work without mask and cough freely"
+    ],
+    "answer": 0,
+    "explanation": "Presenteeism harms patients — stay out when infectious.",
+    "source": "premium_ethics",
+    "subtopics": []
+  }
+]

@@ -1,0 +1,3823 @@
+[
+  {
+    "id": "saud_delta_001",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "Pt has amalgam restorations done 3 years ago, came with flat shiny surfaces and elevated amalgam restorations, whats your management",
+    "options": [
+      "replace with composite",
+      "Elevate the vertical dimension",
+      "Etched porcelain",
+      "Investigate gi problems and diet"
+    ],
+    "answer": 3,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #1. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "subtopics": [
+      "operative"
+    ],
+    "usable": true
+  },
+  {
+    "id": "saud_delta_003",
+    "topic": "perio",
+    "difficulty": "medium",
+    "q": "Probe with 3 color code",
+    "options": [
+      "Provide treatment only if patient agrees to pay out of pocket",
+      "Marquis probe",
+      "reduce pocket depth",
+      "VZV"
+    ],
+    "answer": 1,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #3. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_004",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "Pt with supernumerary teeth, flat mid face, and exophthalmos",
+    "options": [
+      "apert syndrome",
+      "mg/day",
+      "gingival swelling buccal to the tooth -2",
+      "When primary inscisors erupted"
+    ],
+    "answer": 0,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #4. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_005",
+    "topic": "endo",
+    "difficulty": "medium",
+    "q": "pt with Cavernous sinus thrombosis, they call the dentist to rule out any dental causes, what space is infected",
+    "options": [
+      "buccal",
+      "Infratemporal",
+      "Superfacial temporal",
+      "Infraorbital"
+    ],
+    "answer": 3,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #5. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_006",
+    "topic": "oms",
+    "difficulty": "medium",
+    "q": "Pt came with pain, you did an examination and found no dental cause, what's most likely will mimic dental pain",
+    "options": [
+      "Syphilis",
+      "Osteomyelitis",
+      "max sinusitis",
+      "Utitis media"
+    ],
+    "answer": 2,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #6. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_007",
+    "topic": "oms",
+    "difficulty": "medium",
+    "q": "irregular ulcer in mid palate that penetrate to the nose, the top deferential dx",
+    "options": [
+      "Osteomyelitis",
+      "Syphilis",
+      "Tb",
+      "max sinusitis"
+    ],
+    "answer": 1,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #7. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_008",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "pt has dark intrinsic staining, best type of veneers",
+    "options": [
+      "Etched porcelain",
+      "zirconia",
+      "Composite",
+      "Investigate gi problems and diet"
+    ],
+    "answer": 0,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #8. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "subtopics": [
+      "operative",
+      "fixed"
+    ],
+    "usable": true
+  },
+  {
+    "id": "saud_delta_010",
+    "topic": "ethics",
+    "difficulty": "medium",
+    "q": "you did extraction, then the assistant start cleaning the clinic, no time available to send the instruments to be sterilized because you have second pt, how should the assistant store the instruments",
+    "options": [
+      "Dry area",
+      "Pt preferences",
+      "Soak them in non ionizing solution",
+      "soak them in plain water"
+    ],
+    "answer": 2,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #10. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_012",
+    "topic": "perio",
+    "difficulty": "medium",
+    "q": "pt is diagnosed with persistent generalized stage II therapy there was generalized horizontal bone loss, the some areas, what is the rationale of his decision",
+    "options": [
+      "reduce pocket depth",
+      "Increase pt compliance",
+      "Reduce hypersensitivity of the teeth",
+      "Marquis probe"
+    ],
+    "answer": 0,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #12. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_013",
+    "topic": "ethics",
+    "difficulty": "medium",
+    "q": "pt came with destructed 46, after examination, tooth will need retx, post and core, crown lengthening, then all ceram crown as definitive tx, tooth can be extracted and replaced by implant supported crown as another treatment option. So you explained the tx options to pt with possible complications, prognosis and fees. The :tx of choice will mainly depend on",
+    "options": [
+      "dentists preferred tx option",
+      "Dentists skills",
+      "Prognosis of tx",
+      "Pt preferences"
+    ],
+    "answer": 3,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #13. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_014",
+    "topic": "oms",
+    "difficulty": "medium",
+    "q": "Pt presented with swelling with badly decayed 46 , you take occlusal RG and you see RO lines on the B cortical bone , what is the diagnosis (they : didn’t provide any pic or RG)",
+    "options": [
+      "max sinusitis",
+      "Syphilis",
+      "Osteomyelitis",
+      "osteosarcom"
+    ],
+    "answer": 2,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #14. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_015",
+    "topic": "oms",
+    "difficulty": "medium",
+    "q": "Cell with multiple myeloma",
+    "options": [
+      "max sinusitis",
+      "Plasma cells",
+      "Lymphocytes",
+      "Macrophages"
+    ],
+    "answer": 1,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #15. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_016",
+    "topic": "oms",
+    "difficulty": "medium",
+    "q": "Dr try to force the pt to forcefully show her teeth , close eyes and wrinkled forehead, which : nerve dr testing Trigeminal",
+    "options": [
+      "Facial",
+      "year old pt came to the clinic with multiple skin rash",
+      "max sinusitis",
+      "Syphilis"
+    ],
+    "answer": 0,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #16. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_017",
+    "topic": "perio",
+    "difficulty": "medium",
+    "q": "and sore throat and low grade : fever , which of the following cause",
+    "options": [
+      "HSV",
+      "EBV",
+      "Marquis probe",
+      "VZV"
+    ],
+    "answer": 3,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #17. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_018",
+    "topic": "oms",
+    "difficulty": "medium",
+    "q": "Pt with non restorable #46 need ex , pt had hyperthyroidism and dentist give lidocaine with epi , pt start get nervous and dizzy, what’s the : cause qq hypertension",
+    "options": [
+      "Syphilis",
+      "Osteomyelitis",
+      "Thyrotoxicosis",
+      "max sinusitis"
+    ],
+    "answer": 2,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #18. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_019",
+    "topic": "oms",
+    "difficulty": "medium",
+    "q": "years old pt with unilateral itchy painful facial rash and blisters",
+    "options": [
+      "Syphilis",
+      "herpes zoster",
+      "Herpes simplex",
+      "max sinusitis"
+    ],
+    "answer": 1,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #19. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_020",
+    "topic": "endo",
+    "difficulty": "medium",
+    "q": "younge patient needs #11 Apexification what type of material",
+    "options": [
+      "Tricalcium Phosphate (g-TCP)",
+      "Infraorbital",
+      "Predentin",
+      "A- Naproxen for 5 days"
+    ],
+    "answer": 0,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #20. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_022",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "short-term solubility",
+    "options": [
+      "Sebaceous gland",
+      "👍🏻 Mucoepidermoid carcinoma",
+      "ZOE",
+      "Calcium"
+    ],
+    "answer": 2,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #22. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_023",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "picture of small yellowish spots in lip",
+    "options": [
+      "A- Sialadenitis",
+      "Sebaceous gland",
+      "ZOE",
+      "👍🏻 Mucoepidermoid carcinoma"
+    ],
+    "answer": 1,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #23. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_024",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "Most common malignant in the lip",
+    "options": [
+      "👍🏻 Mucoepidermoid carcinoma",
+      "Adenoid custic carcinma",
+      "ZOE",
+      "Sebaceous gland"
+    ],
+    "answer": 0,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #24. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_025",
+    "topic": "oms",
+    "difficulty": "medium",
+    "q": "Safest analgesic with pt has severe asthma",
+    "options": [
+      "Naproxen",
+      "max sinusitis",
+      "Syphilis",
+      "Paracetamol"
+    ],
+    "answer": 3,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #25. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_026",
+    "topic": "oms",
+    "difficulty": "medium",
+    "q": "Anxious asthma and allergies-to benzodiazepine",
+    "options": [
+      "Local anesthesia",
+      "Test to confirm the allergy to benzodiazepine",
+      "Nitrous-oxide",
+      "GA"
+    ],
+    "answer": 2,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #26. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_027",
+    "topic": "endo",
+    "difficulty": "medium",
+    "q": "Prevent internal resorption",
+    "options": [
+      "A- Naproxen for 5 days",
+      "Predentin",
+      "Infraorbital",
+      "Tricalcium Phosphate (g-TCP)"
+    ],
+    "answer": 1,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #27. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_028",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "Bruxer pt with mouth guard",
+    "options": [
+      "contact on anterior and posterior",
+      "Contact on anterior only",
+      "Investigate gi problems and diet",
+      "Etched porcelain"
+    ],
+    "answer": 0,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #28. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_036",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "Case of Radiotherapy cancer pt with stensen's duct and obstruction",
+    "options": [
+      "A- Sialadenitis",
+      "B-Viral sialadenitis",
+      "C- Sialothisis",
+      "ZOE"
+    ],
+    "answer": 0,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #36. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_037",
+    "topic": "oms",
+    "difficulty": "medium",
+    "q": "While Doing Regular Check ups of Relapsed smoker for 17 yrs. You find White Grayish structure at the palate “ Nicotinic stomatitis “what is next step",
+    "options": [
+      "Excisional Biopsy",
+      "Topical Antifungal",
+      "Topical Corticosteroids",
+      "Assure the pt"
+    ],
+    "answer": 3,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #37. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_038",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "A 50 yr Female with history of knee Replacement Came to you Regarding pain at morning Jaw what the most probably Diagnostic A-Rheumatoid Arthritis",
+    "options": [
+      "Investigate gi problems and diet",
+      "Etched porcelain",
+      "B- osteoarthritis",
+      "c- Muscle pain Disorder"
+    ],
+    "answer": 2,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #38. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "subtopics": [
+      "materials"
+    ],
+    "usable": true
+  },
+  {
+    "id": "saud_delta_039",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "Pt came to the clinic with all teeth missing except #17 , #33, #43 , #44 what’s : the best approach for Tx A-Extraction for #17 and Complete for U and Transitional for L B-Extraction for #17, #33,#43#44 and Complete UL C-Extraction for #17 , #14 and complete for U and L",
+    "options": [
+      "contact on anterior and posterior",
+      "over denture",
+      "Investigate gi problems and diet",
+      "Etched porcelain"
+    ],
+    "answer": 1,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #39. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "subtopics": [
+      "rpd"
+    ],
+    "usable": true
+  },
+  {
+    "id": "saud_delta_040",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "Tooth with mobility 1 mm Buccal, lingual What’s the classification in Miller A-Type 1",
+    "options": [
+      "B-Type",
+      "C-Type 3",
+      "ZOE",
+      "Sebaceous gland"
+    ],
+    "answer": 0,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #40. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_041",
+    "topic": "ethics",
+    "difficulty": "medium",
+    "q": "What do we use to polish proximal surfaces that are inaccessible to other instruments: Rubber cups Floss Bristle wheels",
+    "options": [
+      "Soak them in non ionizing solution",
+      "Pt preferences",
+      "C- Giant cell arthritis",
+      "Dental tape with prophy paste"
+    ],
+    "answer": 3,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #41. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_042",
+    "topic": "oms",
+    "difficulty": "medium",
+    "q": "shape of the cut in excisional biopsy",
+    "options": [
+      "max sinusitis",
+      "Syphilis",
+      "Elliptical",
+      "triangular"
+    ],
+    "answer": 2,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #42. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_044",
+    "topic": "oms",
+    "difficulty": "medium",
+    "q": "Asked for what biopsy it should be used?.",
+    "options": [
+      "Lip",
+      "Cheek",
+      "Tongue",
+      "max sinusitis"
+    ],
+    "answer": 0,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #44. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_047",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "What is the cause of gross (ismuth )amalgam fracture",
+    "options": [
+      "Etched porcelain",
+      "inadequate preparatiot .",
+      "high occlusal force",
+      "Investigate gi problems and diet"
+    ],
+    "answer": 1,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #47. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "subtopics": [
+      "operative"
+    ],
+    "usable": true
+  },
+  {
+    "id": "saud_delta_048",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "A newborn live in non-fluoridated community, what is the amount of fluoride supplement he should take",
+    "options": [
+      "mg/day",
+      "mg /day",
+      "apert syndrome",
+      "gingival swelling buccal to the tooth -2"
+    ],
+    "answer": 0,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #48. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_049",
+    "topic": "endo",
+    "difficulty": "medium",
+    "q": "years old male Pt with history of MI 1 year ago and ( Hepatitis B treated 4 years ago ) his chief complain Pain on #43 and the tooth is necrotic you planned to do RCT. What medication you will give to the Pt",
+    "options": [
+      "B- Naproxen for 8 days",
+      "C- Macrolide for 7 days",
+      "D- Macrolide for 10 days",
+      "A- Naproxen for 5 days"
+    ],
+    "answer": 3,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #49. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_050",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "Pt with reverse smoking habit came with white lesion on the palate. What is the nature of the lesion",
+    "options": [
+      "C- Malignan",
+      "ZOE",
+      "A- Reactive",
+      "B- Benign"
+    ],
+    "answer": 2,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #50. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_051",
+    "topic": "oms",
+    "difficulty": "medium",
+    "q": "What is the appropriate way to diagnose fibromyalgia",
+    "options": [
+      "max sinusitis",
+      "C- By exclusion",
+      "A- Biopsy",
+      "B- Muscle electric test"
+    ],
+    "answer": 1,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #51. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_053",
+    "topic": "ethics",
+    "difficulty": "medium",
+    "q": "years old female Pt with history of fibromyalgia rheumatica complaining of pain on the right side of her face and loss of appetite and pain when she closes her mouth. What is your diagnosis? ( They",
+    "options": [
+      "mention that the Pt",
+      ") never felt a pain like this before",
+      "A- Myalgia",
+      "C- Giant cell arthritis"
+    ],
+    "answer": 3,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #53. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_058",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "Cause of effectiveness of Chlorhexidine",
+    "options": [
+      "C- Dissolve organic tissue",
+      "ZOE",
+      "A- Substantivity",
+      "B- Cytotoxicity"
+    ],
+    "answer": 2,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #58. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_059",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "Picture of External root resorption. What is the type of resorption",
+    "options": [
+      "Investigate gi problems and diet",
+      "A- surface resorption",
+      "B- inflammatory resorption",
+      "C- replacement resorption"
+    ],
+    "answer": 1,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #59. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "subtopics": [
+      "materials"
+    ],
+    "usable": true
+  },
+  {
+    "id": "saud_delta_060",
+    "topic": "ethics",
+    "difficulty": "medium",
+    "q": "Pedo pt came with her mother. he was playing with the Dental instruments and always lose focus and attention. What is your diagnosis",
+    "options": [
+      "Attention-deficit/hyperactivity",
+      "Soak them in non ionizing solution",
+      "Pt preferences",
+      "Dental tape with prophy paste"
+    ],
+    "answer": 0,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #60. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_061",
+    "topic": "oms",
+    "difficulty": "medium",
+    "q": "After injecting lidocaine 2%, patient feels palpitation",
+    "options": [
+      "Toxicity",
+      "max sinusitis",
+      "Syphilis",
+      "injecting into blood vessel"
+    ],
+    "answer": 3,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #61. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_062",
+    "topic": "ethics",
+    "difficulty": "medium",
+    "q": "Patient wearing upper complete and lower RPD has attrition on lower anterior and epulis fissuratum when removing lower RPD , what will you see when removing upper complete",
+    "options": [
+      "Knife edged",
+      "Soak them in non ionizing solution",
+      "Flabby ridge",
+      "Flat ridge"
+    ],
+    "answer": 2,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #62. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_064",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "Submandibular fluctuant swelling with firm mass. Palpable. Radiographic showing opaque mass that is palpable and painful",
+    "options": [
+      "Sialothiasis",
+      "Sialdenosis",
+      "Submandibular duct cyst",
+      "ZOE"
+    ],
+    "answer": 0,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #64. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_065",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "Patient to do implant of 11 , what is essential",
+    "options": [
+      "Closed tray impression",
+      "Non-engaging abutment",
+      "Investigate gi problems and diet",
+      "Diagnostic cast and surgical template"
+    ],
+    "answer": 3,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #65. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "subtopics": [
+      "implant",
+      "materials"
+    ],
+    "usable": true
+  },
+  {
+    "id": "saud_delta_066",
+    "topic": "oms",
+    "difficulty": "medium",
+    "q": "Needle stick injury while treating HIV patient, what is the minimum time before taking prophylactic treatment",
+    "options": [
+      "Syphilis",
+      "Osteomyelitis",
+      "weeks",
+      "max sinusitis"
+    ],
+    "answer": 2,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #66. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_067",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "in lower premolar with pain while releasing from occlusion",
+    "options": [
+      "Etched porcelain",
+      "crack",
+      "VRF",
+      "Investigate gi problems and diet"
+    ],
+    "answer": 1,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #67. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_068",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "pedo patient with primary molar indicated for extraction which of these are defi nitive diagnosis for extraction",
+    "options": [
+      "gingival swelling buccal to the tooth -2",
+      "pain on percussion-1",
+      "apert syndrome",
+      "mg/day"
+    ],
+    "answer": 0,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #68. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_069",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "tooth #21 with substandard RCT with cast post and core well crowned ( it was written like this in the )exam",
+    "options": [
+      "re-treatment with surgical retrofilling -2",
+      "re-treatment with surgical without retrofilling -3",
+      "Investigate gi problems and diet",
+      "surgical with retrofilling"
+    ],
+    "answer": 3,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #69. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "subtopics": [
+      "fixed"
+    ],
+    "usable": true
+  },
+  {
+    "id": "saud_delta_071",
+    "topic": "ethics",
+    "difficulty": "medium",
+    "q": "pt referred from her psychiatrist because of submandibular swelling which of these may cause it",
+    "options": [
+      "Soak them in non ionizing solution",
+      "eating disorder -3",
+      "schizophrenia-1",
+      "bipolar-2"
+    ],
+    "answer": 1,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #71. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_073",
+    "topic": "ethics",
+    "difficulty": "medium",
+    "q": "Uncontrolled DM , 2 days ago he has swelling left side with sever trismus but breath normally , what is most appropriate? management",
+    "options": [
+      "refer him to endocrinologist",
+      "MRI",
+      "Soak them in non ionizing solution",
+      "Immediately admit hospital and take CT"
+    ],
+    "answer": 3,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #73. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_074",
+    "topic": "ethics",
+    "difficulty": "medium",
+    "q": "Pt is well controlled diabetic(takes metformin) HBA1c was 5.6 last year last few months he was diagnosed with arthritis and corticosteroid and methotrexate were prescribed for him what could happen if he continue using? these medications",
+    "options": [
+      "Soak them in non ionizing solution",
+      "Pt preferences",
+      "Increase in Hba1c",
+      "Increased caries"
+    ],
+    "answer": 2,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #74. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_075",
+    "topic": "perio",
+    "difficulty": "medium",
+    "q": "When a patient with expired insurance coverage request you to continue treatment and accept payment once , their insuracnce renews before , what course of action should you take: Proceed with the treatment and accept payment when the insurance is",
+    "options": [
+      "Marquis probe",
+      "Provide treatment only if patient agrees to pay out of pocket",
+      "renewed",
+      "Suggest public hospital"
+    ],
+    "answer": 1,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #75. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_077",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "years old female Pt came to replace non restorable tooth with implant after radiographic examination there was multiple punched out radiolucency that are different in size what is your diagnosis",
+    "options": [
+      "A: gorlin syndrome",
+      "C: normal with age",
+      "Investigate gi problems and diet",
+      "B: multiple myeloma"
+    ],
+    "answer": 3,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #77. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "subtopics": [
+      "implant"
+    ],
+    "usable": true
+  },
+  {
+    "id": "saud_delta_078",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "Pt came with very deep caries you suspect that it is going to need crown lengthening what is the appropriate sequence",
+    "options": [
+      "caries excavation,RCT,bitewing, crown lengthening",
+      "Investigate gi problems and diet",
+      "Caries excavation,bitewings,RCT,crown lengthening",
+      "Bitewing, caries excavation, RCT,crown lengthening"
+    ],
+    "answer": 2,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #78. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "subtopics": [
+      "operative",
+      "fixed"
+    ],
+    "usable": true
+  },
+  {
+    "id": "saud_delta_079",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "Which one of the following had highest ph",
+    "options": [
+      "% chlorhexidine",
+      "% ncol",
+      "phosphoric acid",
+      "normal saline"
+    ],
+    "answer": 1,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #79. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_080",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "most inorganic component in dentin",
+    "options": [
+      "Hydroxipetite",
+      "Collagen i",
+      "Collagen v",
+      "ZOE"
+    ],
+    "answer": 0,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #80. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_081",
+    "topic": "perio",
+    "difficulty": "medium",
+    "q": "patient with diffuse erythematous gingiva, and gray circle ulcers in mucosa and tongue, what should you give",
+    "options": [
+      "Antibiotic",
+      "Corticosteroids",
+      "Marquis probe",
+      "Antiviral and adjunctive treatment"
+    ],
+    "answer": 3,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #81. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_084",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "What is the antagonist of midazolam",
+    "options": [
+      "flumazenil",
+      "ZOE",
+      "Sebaceous gland",
+      "👍🏻 Mucoepidermoid carcinoma"
+    ],
+    "answer": 0,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #84. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_087",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "Why flowable better than packable in PRR",
+    "options": [
+      "👍🏻 Mucoepidermoid carcinoma",
+      "Flow and less filler content",
+      "ZOE",
+      "Sebaceous gland"
+    ],
+    "answer": 1,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #87. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_088",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "pt 5 years old with negative behavior and multiple occlusal caries",
+    "options": [
+      "wip with fluoride varnish",
+      "professionally applied fluoride varnish",
+      "professionally applied fluoride gel",
+      "wip with fluoride gel"
+    ],
+    "answer": 0,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #88. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "subtopics": [
+      "operative"
+    ],
+    "usable": true
+  },
+  {
+    "id": "saud_delta_089",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "the other name for organic occlusion",
+    "options": [
+      "centric",
+      "eccentric",
+      "group function",
+      "mutually protected"
+    ],
+    "answer": 3,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #89. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_090",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "Paul Bunnell positive",
+    "options": [
+      "C-HSV",
+      "D-SLE",
+      "A-EBV",
+      "B-HPV"
+    ],
+    "answer": 2,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #90. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_091",
+    "topic": "perio",
+    "difficulty": "medium",
+    "q": "isolated enamel projection in furcation area",
+    "options": [
+      "Marquis probe",
+      "A:Enamel pearl",
+      "B-dens in dent",
+      "C- enamel hypoplasia"
+    ],
+    "answer": 1,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #91. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_092",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "Mother asking when the child should start brushing his teeth",
+    "options": [
+      "When primary inscisors erupted",
+      "When primary molars erupted",
+      "When permenant first molar erupted",
+      "apert syndrome"
+    ],
+    "answer": 0,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #92. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_093",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "Why does large restoration complicate ortho tx",
+    "options": [
+      "Slow movement",
+      "Fast movement",
+      "Investigate gi problems and diet",
+      "Break when removing"
+    ],
+    "answer": 3,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #93. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_095",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "year old female received #11 implant 3 years ago. A clinical picture was provided of the #11 currently and it is displaced frontosuperiorly. What is the cause",
+    "options": [
+      "Etched porcelain",
+      "osseous growth",
+      "Placement of the implant before completion of",
+      "Investigate gi problems and diet"
+    ],
+    "answer": 1,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #95. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "subtopics": [
+      "implant",
+      "materials"
+    ],
+    "usable": true
+  },
+  {
+    "id": "saud_delta_096",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "patient underwent radiation therapy with a Gy radiation dose of 70. What is the risk",
+    "options": [
+      "High",
+      "medium",
+      "ZOE",
+      "Sebaceous gland"
+    ],
+    "answer": 0,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #96. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_097",
+    "topic": "ethics",
+    "difficulty": "medium",
+    "q": "Case of patient with new gold onlay covering the mesiopalatal cusp of upper. When the patient closes, deflection occurs. The cause of this deflection is because of lack of",
+    "options": [
+      "Centric relation",
+      "Soak them in non ionizing solution",
+      "Pt preferences",
+      "Centric stop"
+    ],
+    "answer": 3,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #97. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_099",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "best impression material for final crown",
+    "options": [
+      "Investigate gi problems and diet",
+      "PVS",
+      "Alginate",
+      "Agar"
+    ],
+    "answer": 1,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #99. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "subtopics": [
+      "fixed",
+      "materials"
+    ],
+    "usable": true
+  },
+  {
+    "id": "saud_delta_100",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "Angle’s classification depends on",
+    "options": [
+      "Maxillary molar",
+      "Mandibular premolar",
+      "Canines",
+      "apert syndrome"
+    ],
+    "answer": 0,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #100. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_101",
+    "topic": "perio",
+    "difficulty": "medium",
+    "q": "mobility up to 1mm according to miller’s classification",
+    "options": [
+      "Grade II",
+      "Grade III",
+      "Marquis probe",
+      "Grade I"
+    ],
+    "answer": 3,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #101. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_102",
+    "topic": "endo",
+    "difficulty": "medium",
+    "q": "Clinical picture of pulp stones. How to remove",
+    "options": [
+      "Tricalcium Phosphate (g-TCP)",
+      "Predentin",
+      "Ultrasonic",
+      "Infraorbital"
+    ],
+    "answer": 2,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #102. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_103",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "intraoral flap is considered: Clean",
+    "options": [
+      "ZOE",
+      "Clean-contaminated",
+      "Contaminated",
+      "Dirty"
+    ],
+    "answer": 1,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #103. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_104",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "Lower premolar with class I amalgam came to the clinic with broken distal cusp. What is the cause",
+    "options": [
+      "Undermined tooth structure",
+      "High occlusal contact",
+      "Investigate gi problems and diet",
+      "Etched porcelain"
+    ],
+    "answer": 0,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #104. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "subtopics": [
+      "operative"
+    ],
+    "usable": true
+  },
+  {
+    "id": "saud_delta_105",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "Why do we use calcium hydroxide",
+    "options": [
+      "ZOE",
+      "Sebaceous gland",
+      "👍🏻 Mucoepidermoid carcinoma",
+      "High alkalinity and antibacterial"
+    ],
+    "answer": 3,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #105. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_106",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "Influenza pt",
+    "options": [
+      "Sebaceous gland",
+      "👍🏻 Mucoepidermoid carcinoma",
+      "Defer elective tx until noninfectious",
+      "ZOE"
+    ],
+    "answer": 2,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #106. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_109",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "pedo patient with limited mouth opening and? mandibulr deviation what's your managment",
+    "options": [
+      "B- NSID",
+      "C- Anterior bite plane",
+      "apert syndrome",
+      "A- gap anthroplasty"
+    ],
+    "answer": 3,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #109. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_110",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "years pedo came to the clinc with thumb sucking and her parnts tray with negative reinforcement but didn't help , what is your? manegment",
+    "options": [
+      "Investigate gi problems and diet",
+      "Etched porcelain",
+      "ortho pacifier",
+      "Palatal crib"
+    ],
+    "answer": 2,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #110. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "subtopics": [
+      "materials"
+    ],
+    "usable": true
+  },
+  {
+    "id": "saud_delta_111",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "importance the use of acid etch before restoration",
+    "options": [
+      "D- decrease the temperature",
+      "C- decrease the microleakage",
+      "A- Improve shade matching",
+      "B- decrease the staining of dentin"
+    ],
+    "answer": 1,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #111. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_112",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "you do caries risk assessment before perio treatment why",
+    "options": [
+      "A- Root sensitivity",
+      "B- loss coronal part",
+      "C- reduce pocket depth",
+      "Investigate gi problems and diet"
+    ],
+    "answer": 0,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #112. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "subtopics": [
+      "operative"
+    ],
+    "usable": true
+  },
+  {
+    "id": "saud_delta_113",
+    "topic": "perio",
+    "difficulty": "medium",
+    "q": "years old with mouth sores low grade fever and increased drooling toothing",
+    "options": [
+      "gingival herpes stomatitis",
+      "Marquis probe",
+      "reduce pocket depth",
+      "herpangina"
+    ],
+    "answer": 3,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #113. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_114",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "positive bence jones test",
+    "options": [
+      "Sebaceous gland",
+      "👍🏻 Mucoepidermoid carcinoma",
+      "multiple myloma",
+      "ZOE"
+    ],
+    "answer": 2,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #114. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_115",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "ibuprofen for patients less than 14 y/o: missing info",
+    "options": [
+      "Sebaceous gland",
+      "mg every 6hours",
+      "mg every 4hours",
+      "ZOE"
+    ],
+    "answer": 1,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #115. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_116",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "O’leary plaque index use",
+    "options": [
+      "A- disclosing agent",
+      "ZOE",
+      "Sebaceous gland",
+      "👍🏻 Mucoepidermoid carcinoma"
+    ],
+    "answer": 0,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #116. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_117",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "Pedo have enlarged gingival lot of plaque? What bacteria",
+    "options": [
+      "Positive",
+      "Staphylococcus",
+      "Actinomycetes",
+      "Negative"
+    ],
+    "answer": 3,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #117. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_118",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "Endocarditis take course of AB , you want to give prophy? No emergency",
+    "options": [
+      "Sebaceous gland",
+      "👍🏻 Mucoepidermoid carcinoma",
+      "Wait 10 days",
+      "ZOE"
+    ],
+    "answer": 2,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #118. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_119",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "Case with white nodules on buccal? Sort of gland",
+    "options": [
+      "Sebaceous gland",
+      "Sebaceous",
+      "serous",
+      "ZOE"
+    ],
+    "answer": 1,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #119. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_121",
+    "topic": "perio",
+    "difficulty": "medium",
+    "q": "Can not measure PD",
+    "options": [
+      "Marquis probe",
+      "reduce pocket depth",
+      "VZV",
+      "Gross scaling"
+    ],
+    "answer": 3,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #121. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_122",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "fractured cusp , vital tooth",
+    "options": [
+      "Composite",
+      "Investigate gi problems and diet",
+      "Ceramic onlay",
+      "Full ceramic"
+    ],
+    "answer": 2,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #122. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "subtopics": [
+      "operative"
+    ],
+    "usable": true
+  },
+  {
+    "id": "saud_delta_123",
+    "topic": "oms",
+    "difficulty": "medium",
+    "q": "pt has well controlled Diabetes and hypothyroidism and taking carbamazepine, during dental tx he lost his consciousness, what could be the reason",
+    "options": [
+      "max sinusitis",
+      "A-myxedema coma",
+      "B-syncope",
+      "C- insulin shock"
+    ],
+    "answer": 1,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #123. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_124",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "healthy patient during routine dental treatment he feels dizzy and lost his conscious",
+    "options": [
+      "Syncope",
+      "ZOE",
+      "Sebaceous gland",
+      "👍🏻 Mucoepidermoid carcinoma"
+    ],
+    "answer": 0,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #124. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_125",
+    "topic": "perio",
+    "difficulty": "medium",
+    "q": "what is the perio grade for 35 years old patient with 30% bone loss",
+    "options": [
+      "Marquis probe",
+      "reduce pocket depth",
+      "VZV",
+      "A-0.857 garde B"
+    ],
+    "answer": 3,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #125. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_126",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "obturation material for patient allergic to resin",
+    "options": [
+      "Etched porcelain",
+      "contact on anterior and posterior",
+      "resilon",
+      "Investigate gi problems and diet"
+    ],
+    "answer": 2,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #126. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_127",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "gram negative bacteria Associated with",
+    "options": [
+      "Investigate gi problems and diet",
+      "A-subgingival margin with overhang",
+      "B-smooth subgingival margin",
+      "C-supragingival margin with overhang"
+    ],
+    "answer": 1,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #127. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_128",
+    "topic": "ethics",
+    "difficulty": "medium",
+    "q": "doctors have influenza and on sick leave, one of the patient has flue like symptoms, what should be done to stop the spread of the infection",
+    "options": [
+      "A-use HEPA filter ‫دي أصح‬",
+      "B-decrease direct and indirect contact",
+      "C-use double gloves",
+      "Soak them in non ionizing solution"
+    ],
+    "answer": 0,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #128. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_129",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "during RPD framework everything was perfect except the rest was smaller than the rest seats intra orally, you return it to the cast and it was perfect on the cast, what is your management A-soldering rest",
+    "options": [
+      "C-redo the framework on the same cast",
+      "Investigate gi problems and diet",
+      "Etched porcelain",
+      "B- redo final impression and the framework"
+    ],
+    "answer": 3,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #129. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "subtopics": [
+      "rpd",
+      "materials"
+    ],
+    "usable": true
+  },
+  {
+    "id": "saud_delta_130",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "years old Patient has ortho came with a hanging wire and button in lateral toothHe said that he had surgery for canine one week ago. What was the cause of deboning",
+    "options": [
+      "use stronger bonding",
+      "wrong decision regarding the wire",
+      "difficulty in isolation because of the surgery",
+      "faulty material"
+    ],
+    "answer": 2,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #130. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_132",
+    "topic": "oms",
+    "difficulty": "medium",
+    "q": "case scenario patient complaining from soreness in her mouth, she has genital ulcers,white lesion in the wrist, bilateral white striae in her mouth with atrophy. what is the tx A-acyclovir cream B-nystatin mouthwash C-zinc supplement",
+    "options": [
+      "D-triamcinolone acetonoide",
+      "max sinusitis",
+      "Syphilis",
+      "Osteomyelitis"
+    ],
+    "answer": 0,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #132. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_133",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "omposite restoration with undecontoure and open contact, margins are sealed and perfect, what is your management",
+    "options": [
+      "B-replace the entire restoration",
+      "Investigate gi problems and diet",
+      "Etched porcelain",
+      "A-repair it by removing part of the proximal box"
+    ],
+    "answer": 3,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #133. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_134",
+    "topic": "oms",
+    "difficulty": "medium",
+    "q": "Positive venereal test with oral ulcer, what should you prescribe: For syphilis",
+    "options": [
+      "max sinusitis",
+      "Syphilis",
+      "penicillin",
+      "acyclovir"
+    ],
+    "answer": 2,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #134. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_135",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "Case about HA1C: 8% and 25% bone loss, what is the prognosis poor",
+    "options": [
+      "ZOE",
+      "fair",
+      "good",
+      "questionable"
+    ],
+    "answer": 1,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #135. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_136",
+    "topic": "ethics",
+    "difficulty": "medium",
+    "q": "tooth with worse furcation prognosis",
+    "options": [
+      "max 1st PM",
+      "distobucall root of upper 6",
+      "Soak them in non ionizing solution",
+      "Pt preferences"
+    ],
+    "answer": 0,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #136. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_137",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "diagnosis of hemicranial proxymal headache",
+    "options": [
+      "Oxygen 100%",
+      "ZOE",
+      "Sebaceous gland",
+      "indomethacin"
+    ],
+    "answer": 3,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #137. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_138",
+    "topic": "oms",
+    "difficulty": "medium",
+    "q": "Asthmatic patient had difficulty breathing and “his” :bronchodilator did not work oxygen- fast acting inhaler",
+    "options": [
+      "max sinusitis",
+      "Syphilis",
+      "short acting inhaler",
+      "activate EMS"
+    ],
+    "answer": 2,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #138. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_139",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "diabetic obese patient had radiating pain to left arm and jaw, what to give: (no nitroglycerin) Aspirin- propranolol",
+    "options": [
+      "analyzing rod",
+      "glyceryl trinitrate (another name for NG)",
+      "nstrument used to detect proximal planes in kennedy",
+      "class3"
+    ],
+    "answer": 1,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #139. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_141",
+    "topic": "ethics",
+    "difficulty": "medium",
+    "q": "case about a patient who feels pain 24 hours after the doctor did instrumentation of #37 necrotic with APP, what is the cause of pain (PA shows #37 not initiated -I guess its a Pre-op with lesion, #36 previously treated with post and :)crown",
+    "options": [
+      "Missed canal",
+      "Crack",
+      "Pain from another tooth",
+      "Flare up"
+    ],
+    "answer": 3,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #141. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_143",
+    "topic": "oms",
+    "difficulty": "medium",
+    "q": "PA of molar with large lesion that will undergo endo surgery,",
+    "options": [
+      "max sinusitis",
+      "sulcular incision with vertical release",
+      "what could cause recession",
+      "Semilunar flap"
+    ],
+    "answer": 1,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #143. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_144",
+    "topic": "oms",
+    "difficulty": "medium",
+    "q": "PA of swelling in sinus above #18 that is asymptomatic (looks like pseudocyst)",
+    "options": [
+      "No treatment",
+      "Biopsy",
+      "Remove with third molar",
+      "Extraction of third molar"
+    ],
+    "answer": 0,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #144. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_145",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "MRSA virus infection by",
+    "options": [
+      "Airborne",
+      "Investigate gi problems and diet",
+      "Etched porcelain",
+      "Direct contact"
+    ],
+    "answer": 3,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #145. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_146",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "Influenza virus infection by: Airborne- Droplets is a better answer",
+    "options": [
+      "Etched porcelain",
+      "contact on anterior and posterior",
+      "Direct contact",
+      "Investigate gi problems and diet"
+    ],
+    "answer": 2,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #146. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_147",
+    "topic": "ethics",
+    "difficulty": "medium",
+    "q": "abortion of 16y",
+    "options": [
+      "Dental tape with prophy paste",
+      "Refer to another hospital",
+      "Soak them in non ionizing solution",
+      "Pt preferences"
+    ],
+    "answer": 1,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #147. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_148",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "what to do with prophy cup after use",
+    "options": [
+      "Throw",
+      "ZOE",
+      "Sebaceous gland",
+      "👍🏻 Mucoepidermoid carcinoma"
+    ],
+    "answer": 0,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #148. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_149",
+    "topic": "oms",
+    "difficulty": "medium",
+    "q": "pain on tongue and dry mouth but tongue is moist",
+    "options": [
+      "max sinusitis",
+      "Syphilis",
+      "Osteomyelitis",
+      "burning mouth syndrome"
+    ],
+    "answer": 3,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #149. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_150",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "pic of 46,47 with cervical enamel projections and recession showing furication what to do",
+    "options": [
+      "Sebaceous gland",
+      "👍🏻 Mucoepidermoid carcinoma",
+      "Remove enamel projections at Furication",
+      "ZOE"
+    ],
+    "answer": 2,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #150. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_152",
+    "topic": "perio",
+    "difficulty": "medium",
+    "q": "What determine the bleeding and bleeding provoked",
+    "options": [
+      "severity of inflammation",
+      "location of inflammation",
+      "Marquis probe",
+      "reduce pocket depth"
+    ],
+    "answer": 0,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #152. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_154",
+    "topic": "endo",
+    "difficulty": "medium",
+    "q": "Pregnant Pt in third trimester came with pain she couldn't sleep for 2 days ( irreversible pulpits) what you will do",
+    "options": [
+      "do RCT without x ray",
+      "Infraorbital",
+      "do RCT with essintial x- Ray",
+      "told her came back after birth x"
+    ],
+    "answer": 2,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #154. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_155",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "The motion of piezoelectric",
+    "options": [
+      "Sebaceous gland",
+      "back and forth",
+      "circular",
+      "ZOE"
+    ],
+    "answer": 1,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #155. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_156",
+    "topic": "oms",
+    "difficulty": "medium",
+    "q": "Pt with heart problem taking ACE inhibitors, Ca Chanel block,Digoxin and fourth medication I can't remember it he asked about what will cause gag reflex from these medication",
+    "options": [
+      "Digoxin-1",
+      "max sinusitis",
+      "Syphilis",
+      "Osteomyelitis"
+    ],
+    "answer": 0,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #156. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_157",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "why we need primate space",
+    "options": [
+      "resolve anterior cross bite",
+      "ZOE",
+      "Sebaceous gland",
+      "resolve mild crowding"
+    ],
+    "answer": 3,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #157. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_158",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "the papilla ( cant remember the?) Options",
+    "options": [
+      "Sebaceous gland",
+      "👍🏻 Mucoepidermoid carcinoma",
+      "Flatten to papilla and dissapear",
+      "ZOE"
+    ],
+    "answer": 2,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #158. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_159",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "picture of shallow tongue injury - one layer suturing - two layers - three layers",
+    "options": [
+      "👍🏻 Mucoepidermoid carcinoma",
+      "leave it to heal by secondary intervention",
+      "ZOE",
+      "Sebaceous gland"
+    ],
+    "answer": 1,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #159. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_160",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "Polishing of conventional GiC should be done -immediately the day after",
+    "options": [
+      "after 3-5 min",
+      "Investigate gi problems and diet",
+      "Etched porcelain",
+      "contact on anterior and posterior"
+    ],
+    "answer": 0,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #160. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_161",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "Uncontrolled diabeties which result in leg gangrene, the causative factor: viral fungal",
+    "options": [
+      "ZOE",
+      "Sebaceous gland",
+      "👍🏻 Mucoepidermoid carcinoma",
+      "necrotising fasciitis"
+    ],
+    "answer": 3,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #161. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_162",
+    "topic": "oms",
+    "difficulty": "medium",
+    "q": "Biopsy after parotid swelling shows:- Acinar atrophy",
+    "options": [
+      "max sinusitis",
+      "Syphilis",
+      "Acinar hypertrophy",
+      "Leukocyte infiltrate"
+    ],
+    "answer": 2,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #162. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_164",
+    "topic": "ethics",
+    "difficulty": "medium",
+    "q": "Median rhomboid glossitis with upper CD what is the cause",
+    "options": [
+      "Candida",
+      "staphylococcus aureus",
+      "streptococcus mutans",
+      "Soak them in non ionizing solution"
+    ],
+    "answer": 0,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #164. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_165",
+    "topic": "oms",
+    "difficulty": "medium",
+    "q": "doctor has an accident needle inject from HIV patient (take his medication): -Wash your hands and send the patient to do test",
+    "options": [
+      "max sinusitis",
+      "Syphilis",
+      "Osteomyelitis",
+      "immediately go for post exposure prophylaxis"
+    ],
+    "answer": 3,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #165. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_166",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "The junction of the mandibular minor connector with major connector is.",
+    "options": [
+      "ball and socket",
+      "there is no joint",
+      "butt type joint",
+      "acrylic forms the joint"
+    ],
+    "answer": 2,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #166. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_167",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "Wits appraisal",
+    "options": [
+      "Sebaceous gland",
+      "Functional occlusal",
+      "Anatomical occlusal",
+      "ZOE"
+    ],
+    "answer": 1,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #167. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_168",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "Waterline cleaned what is the most important to prevent biofilm accumulation",
+    "options": [
+      "stagnant",
+      "ZOE",
+      "Sebaceous gland",
+      "👍🏻 Mucoepidermoid carcinoma"
+    ],
+    "answer": 0,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #168. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_170",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "Colleagues infecting each other (or something like that) definition of what",
+    "options": [
+      "Sebaceous gland",
+      "👍🏻 Mucoepidermoid carcinoma",
+      "cross infection",
+      "ZOE"
+    ],
+    "answer": 2,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #170. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_172",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "single stage implant dr put dome shaped to make the soft tissue open",
+    "options": [
+      "healing abutment",
+      "= emergency profile",
+      "Investigate gi problems and diet",
+      "Etched porcelain"
+    ],
+    "answer": 0,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #172. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "subtopics": [
+      "implant"
+    ],
+    "usable": true
+  },
+  {
+    "id": "saud_delta_178",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "Case scenario of patients with night sweating and sputum with blood what to suspect",
+    "options": [
+      "ZOE",
+      "Sebaceous gland",
+      "TB",
+      "Leukemia"
+    ],
+    "answer": 2,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #178. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_179",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "Metal tray how you will disinfict",
+    "options": [
+      "use glutraldhyide 10% for 10 minutes",
+      "under hot water (correct)",
+      "Brush the metal tray",
+      "Manual"
+    ],
+    "answer": 1,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #179. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_180",
+    "topic": "endo",
+    "difficulty": "medium",
+    "q": "Which of these added to MTA for radiopacity",
+    "options": [
+      "Bismuth oxide",
+      "NaOCl",
+      "Calcium silicate",
+      "Infraorbital"
+    ],
+    "answer": 0,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #180. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_183",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "Pic of Apex locator in the red zone and asking about the file position",
+    "options": [
+      "ZOE",
+      "Beyond the apex",
+      "Short",
+      "At the apical constriction"
+    ],
+    "answer": 1,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #183. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_184",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "y o complaining from pain “relived when?”using aspirin",
+    "options": [
+      "cm>Osteoid Osteoma",
+      "Fibroma",
+      "ZOE",
+      "Sebaceous gland"
+    ],
+    "answer": 0,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #184. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_185",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "y o pt with history of cardiac problems presented with pitting edema in the last part of his leg, that’s indicate",
+    "options": [
+      "Infective endocarditis",
+      "Hypertension",
+      "ZOE",
+      "Heart failure"
+    ],
+    "answer": 3,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #185. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_186",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "brushing technique for ortho pt",
+    "options": [
+      "mg/day",
+      "gingival swelling buccal to the tooth -2",
+      "charter Technique",
+      "apert syndrome"
+    ],
+    "answer": 2,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #186. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_187",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "Type of allergy of the rubber dam",
+    "options": [
+      "type IV",
+      "type I",
+      "type II",
+      "type III"
+    ],
+    "answer": 1,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #187. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_188",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "Patient came complaining of burning mouth with crusts on the corners (Picture showed bald red tongue with crusts on the corners of mouth looking like angular cheilitis) what should you ‫؟‬do Culture and sensitivity test",
+    "options": [
+      "Complete blood count",
+      "ZOE",
+      "Sebaceous gland",
+      "👍🏻 Mucoepidermoid carcinoma"
+    ],
+    "answer": 0,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #188. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_189",
+    "topic": "endo",
+    "difficulty": "medium",
+    "q": "Which of these muscles depresses the mandible",
+    "options": [
+      "Medial Pterygoid",
+      "Masseter",
+      "Temporalis",
+      "Digastric"
+    ],
+    "answer": 3,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #189. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_191",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "Patient extracted 43 and wanted a temporary RPD until the treatment is complete, how many rests do you place",
+    "options": [
+      "contact on anterior and posterior",
+      "No rests",
+      "Investigate gi problems and diet",
+      "Etched porcelain"
+    ],
+    "answer": 1,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #191. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "subtopics": [
+      "rpd"
+    ],
+    "usable": true
+  },
+  {
+    "id": "saud_delta_192",
+    "topic": "oms",
+    "difficulty": "medium",
+    "q": "Scenario about a patient with picture (Close up pic on the eyes having exophthalmos), with elevated blood pressure, what is the disease",
+    "options": [
+      "Graves disease",
+      "Thyroid Tumor",
+      "Hashimoto Disease",
+      "Hypothyroidism"
+    ],
+    "answer": 0,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #192. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_193",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "How to confirm VRF",
+    "options": [
+      "Cbct",
+      "Multiple PAs",
+      "Investigate gi problems and diet",
+      "Surgical exploratory"
+    ],
+    "answer": 3,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #193. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_194",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "A large open contacts how to clean Floss",
+    "options": [
+      "Super floss",
+      "Investigate gi problems and diet",
+      "Interdental brush",
+      "Conventional brush"
+    ],
+    "answer": 2,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #194. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_195",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "Most common hypersensitivity with recession",
+    "options": [
+      "Investigate gi problems and diet",
+      "Cervical root",
+      "Mid root",
+      "Cervical crown"
+    ],
+    "answer": 1,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #195. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "subtopics": [
+      "fixed"
+    ],
+    "usable": true
+  },
+  {
+    "id": "saud_delta_198",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "chemo-mechanical caries removal",
+    "options": [
+      "Etched porcelain",
+      "contact on anterior and posterior",
+      "carisolv",
+      "Investigate gi problems and diet"
+    ],
+    "answer": 2,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #198. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "subtopics": [
+      "operative"
+    ],
+    "usable": true
+  },
+  {
+    "id": "saud_delta_199",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "not giving flouride varnish",
+    "options": [
+      "Sebaceous gland",
+      "Renal",
+      "Liver",
+      "ZOE"
+    ],
+    "answer": 1,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #199. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_200",
+    "topic": "ethics",
+    "difficulty": "medium",
+    "q": "Doctor at beginning of the clinic he greets the patient and patient started to talk about he was traveling the south and taking about his family farm, doctor was interrupted him and ask about the specific complain. The doctor violate? what",
+    "options": [
+      "Treat pt as person",
+      "Patient privacy",
+      "Informed consent",
+      "Soak them in non ionizing solution"
+    ],
+    "answer": 0,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #200. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_201",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "disadvantage of silver poin",
+    "options": [
+      "ZOE",
+      "Sebaceous gland",
+      "👍🏻 Mucoepidermoid carcinoma",
+      "corroded will cause toxicity"
+    ],
+    "answer": 3,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #201. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_203",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "How to confirm a Crack in tooth",
+    "options": [
+      "ZOE",
+      "Transillumination",
+      "Pain with release bite",
+      "Pain on percussio"
+    ],
+    "answer": 1,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #203. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_205",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "pt has slight undercut in tuberosities and anterior maxilla surgical removal of both - surgical removal of anterior undercut - no tx because it helps in retention",
+    "options": [
+      "surgical removal of both ‫هنختار‬.. slight ‫خد بالك لو مقالش‬",
+      "Investigate gi problems and diet",
+      "Etched porcelain",
+      "relief of the tuberosities undercut"
+    ],
+    "answer": 3,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #205. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_206",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "Pt with heart pacemaker did dental tx and the next day he developed arrhythmia, what tx did he receive",
+    "options": [
+      "intra oral xrays",
+      "panoramic xray",
+      "electrocautery",
+      "high speed hand piece"
+    ],
+    "answer": 2,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #206. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_208",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "What is the comment early complications/ failure associated with RPP",
+    "options": [
+      "clasp",
+      "connecter",
+      "Base (in CD)",
+      "ZOE"
+    ],
+    "answer": 0,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #208. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_209",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "patient , did direct composite veneers with microfiler composite you will re do it what type of composite u will use",
+    "options": [
+      "Hybrid",
+      "Investigate gi problems and diet",
+      "Etched porcelain",
+      "nanao filers"
+    ],
+    "answer": 3,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #209. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "subtopics": [
+      "operative",
+      "fixed"
+    ],
+    "usable": true
+  },
+  {
+    "id": "saud_delta_211",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "pt with second quadrant all buccal recession (no interproximal), dx",
+    "options": [
+      "mucogingival deformity interproximal recession",
+      "mucogingical deformity buccal recession",
+      "perio stage 2",
+      "perio stage 3"
+    ],
+    "answer": 1,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #211. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_212",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "tranexemic acid used with",
+    "options": [
+      "hemophelia",
+      "stroke",
+      "dvt",
+      "atrial valve something"
+    ],
+    "answer": 0,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #212. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_213",
+    "topic": "ethics",
+    "difficulty": "medium",
+    "q": "severly autistic 20 yo came with his father and needs extraction, who to take consent from",
+    "options": [
+      "patient",
+      "brother",
+      "doctor",
+      "father"
+    ],
+    "answer": 3,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #213. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_214",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "why is chromiam chobalt better than gold in fracture resistance for denture base",
+    "options": [
+      "Etched porcelain",
+      "contact on anterior and posterior",
+      "it has high modulus of elasticity",
+      "Investigate gi problems and diet"
+    ],
+    "answer": 2,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #214. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "subtopics": [
+      "rpd"
+    ],
+    "usable": true
+  },
+  {
+    "id": "saud_delta_215",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "when to reduce from cusp tip during adjustment",
+    "options": [
+      "ZOE",
+      "both centric and non centric interference",
+      "centric interference",
+      "non centric interefence"
+    ],
+    "answer": 1,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #215. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_217",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "what to check first for denture insersion",
+    "options": [
+      "occ",
+      "border extension (2)",
+      "Investigate gi problems and diet",
+      "denture fit (١)"
+    ],
+    "answer": 3,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #217. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "subtopics": [
+      "rpd"
+    ],
+    "usable": true
+  },
+  {
+    "id": "saud_delta_218",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "yo pt reports having to use 3 pillows under his head to prevent shortness of breath, has swollen feet",
+    "options": [
+      "ZOE",
+      "Sebaceous gland",
+      "cingestive heart failure",
+      "diabetes"
+    ],
+    "answer": 2,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #218. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_220",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "pt with beefy tongue (and other things) what to do",
+    "options": [
+      "better nutrition",
+      "Could be scarlet fever",
+      "ZOE",
+      "Sebaceous gland"
+    ],
+    "answer": 0,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #220. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_221",
+    "topic": "oms",
+    "difficulty": "medium",
+    "q": "pt come complaining of sweating and pain while eating",
+    "options": [
+      "max sinusitis",
+      "Syphilis",
+      "Osteomyelitis",
+      "Frey syndrome"
+    ],
+    "answer": 3,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #221. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_222",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "pt with concentric rings",
+    "options": [
+      "Sebaceous gland",
+      "👍🏻 Mucoepidermoid carcinoma",
+      "EM",
+      "ZOE"
+    ],
+    "answer": 2,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #222. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_223",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "Which type of dentifrice causes abrasion",
+    "options": [
+      "Sebaceous gland",
+      "Powder dentifrice",
+      "Gel dentifrice",
+      "ZOE"
+    ],
+    "answer": 1,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #223. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_224",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "whats the indication of strip crown",
+    "options": [
+      "Incisal fracture",
+      "Investigate gi problems and diet",
+      "Etched porcelain",
+      "contact on anterior and posterior"
+    ],
+    "answer": 0,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #224. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "subtopics": [
+      "fixed"
+    ],
+    "usable": true
+  },
+  {
+    "id": "saud_delta_225",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "patient with previous history of Myocardial infraction, allergic to acetaminophen. What type of analgesic",
+    "options": [
+      "declofenac",
+      "ibuprofin",
+      "Investigate gi problems and diet",
+      "naproxen"
+    ],
+    "answer": 3,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #225. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_226",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "Which condition u will give pilocarpine xerostomia",
+    "options": [
+      "Sebaceous gland",
+      "👍🏻 Mucoepidermoid carcinoma",
+      "Which condition u will give pilocarpine ?xerostomia",
+      "ZOE"
+    ],
+    "answer": 2,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #226. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_227",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "A patient is having endo treatment with the use of rubber dam. He experienced whizzing and difficulty breathing after 30 min. What is the cause",
+    "options": [
+      "Etched porcelain",
+      "Asthma",
+      "Allergic reaction",
+      "Investigate gi problems and diet"
+    ],
+    "answer": 1,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #227. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_229",
+    "topic": "endo",
+    "difficulty": "medium",
+    "q": "years old patient came with avulsed #11 45 min TX",
+    "options": [
+      "non rigid splint and follow-up 3 month",
+      "rigid splint",
+      "Infraorbital",
+      "non rigid splint and pulpectomy after 1 week"
+    ],
+    "answer": 3,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #229. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_230",
+    "topic": "ethics",
+    "difficulty": "medium",
+    "q": "case of lesion with swelling in the lower of mandible with Orange peel appearance",
+    "options": [
+      "periapical osseous dysplasia",
+      "florid osseous dysplasia",
+      "fibrous dysplasia",
+      "ossifying fibroma"
+    ],
+    "answer": 2,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #230. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_232",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "y old child came with open bite and unilateral crossbite and thumbsucking habit what is the management",
+    "options": [
+      "A-tell her to come when she is 8",
+      "B- tell her not to worry",
+      "C-tell her to use pacifier to stop the thumb sucking",
+      "D-use palatal crib"
+    ],
+    "answer": 0,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #232. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_233",
+    "topic": "ethics",
+    "difficulty": "medium",
+    "q": "pt with decreased keratinized gingiva in lower anterior area referd to the decreased keratinized gingiva , what he will do",
+    "options": [
+      "Lateral pedicle flap",
+      "Connective tissue graft ‫مهم‬",
+      "Connective tissue graft with frenectomy",
+      "Free gingival graft with frenectomy"
+    ],
+    "answer": 3,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #233. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_234",
+    "topic": "oms",
+    "difficulty": "medium",
+    "q": "anterior diastema that created after the used of maxillary expander, what should they do",
+    "options": [
+      "·Reverse turn of the screw",
+      "Discontinue the activation for a while",
+      "They should continue with the activation",
+      "·Come to the clinic ASAP to remove appliances"
+    ],
+    "answer": 2,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #234. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_235",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "y\\o boy with posterior crossbite and anterior open bite with thumb sucking habit, which appliances is useful",
+    "options": [
+      "Hass appliances",
+      "·Quad helix",
+      "·W arch",
+      "Palatal crib"
+    ],
+    "answer": 1,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #235. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_236",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "Master file is 55 what is the master cone",
+    "options": [
+      "gp55 iso standard taper",
+      "Gp 55 0.04 taper",
+      "ZOE",
+      "Sebaceous gland"
+    ],
+    "answer": 0,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #236. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_237",
+    "topic": "endo",
+    "difficulty": "medium",
+    "q": "mm pocket was found in tooth #12 in the palatal side with slight plaque and the pulp diagnosis was necrotic What caused the necrosis of the tooth",
+    "options": [
+      "crack",
+      "Infraorbital",
+      "Tricalcium Phosphate (g-TCP)",
+      "dens invaginatus"
+    ],
+    "answer": 3,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #237. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_238",
+    "topic": "perio",
+    "difficulty": "medium",
+    "q": "Gingival inflammation that reaches the vestibular fold : -Papillary gingival enlargement",
+    "options": [
+      "Marquis probe",
+      "reduce pocket depth",
+      "Diffuse gingival enlargement",
+      "Marginal gingival enlargement"
+    ],
+    "answer": 2,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #238. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_239",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "Internal resorption: Radiopacity around the root RL around the root",
+    "options": [
+      "contact on anterior and posterior",
+      "RL of the pulp cavity",
+      "Investigate gi problems and diet",
+      "Etched porcelain"
+    ],
+    "answer": 1,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #239. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "subtopics": [
+      "operative"
+    ],
+    "usable": true
+  },
+  {
+    "id": "saud_delta_241",
+    "topic": "ethics",
+    "difficulty": "medium",
+    "q": "pt was referred to you by his physician for emergency treatment. He had MI 9 days ago and he mentioned that you should monitor his BP during the pro cedure and the pt taking Plavix (clodpergil) . What's the management",
+    "options": [
+      "A-Take INR before the procedure",
+      "B-Give antibiotic prophylactic",
+      "C-Defer treatment",
+      "D-Nothing just do the procedure"
+    ],
+    "answer": 3,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #241. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_242",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "what's the most common consequence of under occlusion preparation for PFM crown",
+    "options": [
+      "B-something during the firing",
+      "Investigate gi problems and diet",
+      "C- occlusal dysfunction",
+      "A-Fracture of the functional cusp"
+    ],
+    "answer": 2,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #242. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "subtopics": [
+      "fixed"
+    ],
+    "usable": true
+  },
+  {
+    "id": "saud_delta_243",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "Class V, use which matrix",
+    "options": [
+      "C- Clear matrix",
+      "D- no need",
+      "A- tofflemire matrix",
+      "B- sectional matrix"
+    ],
+    "answer": 1,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #243. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_244",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "Axial cbct type of bone defect",
+    "options": [
+      "wall 3",
+      "wall",
+      "ZOE",
+      "Sebaceous gland"
+    ],
+    "answer": 0,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #244. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_245",
+    "topic": "oms",
+    "difficulty": "medium",
+    "q": "Splitting nail, smooth red tongue, pale, jaundice Lab finding show: RBC low MCV low",
+    "options": [
+      "pernicious anemia",
+      "max sinusitis",
+      "Syphilis",
+      "iron deficiency"
+    ],
+    "answer": 3,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #245. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "subtopics": [
+      "pathology"
+    ],
+    "usable": true
+  },
+  {
+    "id": "saud_delta_248",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "y/o pt. , came to the clinic seeking to replace lower Right , 1st and 2nd premolars Patient has minor salivary gland disease associated with xerostomia What is the best prosthetic tx. Can be given",
+    "options": [
+      "Implant supported partial FPD",
+      "RPD",
+      "Resin bonded FPD",
+      "Conventional FPD"
+    ],
+    "answer": 0,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #248. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "subtopics": [
+      "implant",
+      "rpd"
+    ],
+    "usable": true
+  },
+  {
+    "id": "saud_delta_249",
+    "topic": "oms",
+    "difficulty": "medium",
+    "q": "What is the clear Pic of minor salivary gland biopsy with sarcoidosis",
+    "options": [
+      "fibrosis",
+      "acnthosis",
+      "acinar hypertrop",
+      "granulation inflammation"
+    ],
+    "answer": 3,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #249. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_251",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "How many time need for rest tissue from RPD to take impressions to do new RPD",
+    "options": [
+      "Etched porcelain",
+      "A-24 hour",
+      "B-1 week",
+      "Investigate gi problems and diet"
+    ],
+    "answer": 1,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #251. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "subtopics": [
+      "rpd",
+      "materials"
+    ],
+    "usable": true
+  },
+  {
+    "id": "saud_delta_252",
+    "topic": "ethics",
+    "difficulty": "medium",
+    "q": "How long space between major connector and gigval margin in upper",
+    "options": [
+      "b- 6",
+      "a- 3",
+      "Soak them in non ionizing solution",
+      "Pt preferences"
+    ],
+    "answer": 0,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #252. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_255",
+    "topic": "oms",
+    "difficulty": "medium",
+    "q": "What’s the first sign of myxedema coma of pt with hypothyroidism",
+    "options": [
+      "Bradycardia",
+      "Hypothermia",
+      "Hyperthermia",
+      "Syncope"
+    ],
+    "answer": 1,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #255. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_257",
+    "topic": "ethics",
+    "difficulty": "medium",
+    "q": "Case of deep pockets, after scaling and root planning, what do u think will happen to the connective tissue: Increase- Decrease",
+    "options": [
+      "Soak them in non ionizing solution",
+      "Pt preferences",
+      "Dental tape with prophy paste",
+      "Regress then increase"
+    ],
+    "answer": 3,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #257. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_259",
+    "topic": "oms",
+    "difficulty": "medium",
+    "q": "female pt, brought her inhaler, didn’t mention anything about her MHx, she suddenly became aggressive, other symptoms",
+    "options": [
+      "max sinusitis",
+      "Hyperventilation syndrome",
+      "Hypoglycemia",
+      "Hypothyroidism"
+    ],
+    "answer": 1,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #259. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_261",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "Restoration not used as final restoration: CAVIT",
+    "options": [
+      "Investigate gi problems and diet",
+      "Etched porcelain",
+      "contact on anterior and posterior",
+      "Restoration not used as final restoration: CAVIT"
+    ],
+    "answer": 3,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #261. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_262",
+    "topic": "ethics",
+    "difficulty": "medium",
+    "q": "Case of pediatric pt, had history in upper anterior tooth, which is discolored, the mother said it was dark after trauma, became lighter with time what is ur management",
+    "options": [
+      "Pt preferences",
+      "Dental tape with prophy paste",
+      "follow up",
+      "Soak them in non ionizing solution"
+    ],
+    "answer": 2,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #262. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_263",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "pt needs prophylactic antibiotic, no allergies, pt not able to take her medications orally",
+    "options": [
+      "mg azithromycin",
+      "IM ampicillin",
+      "g amoxicillin",
+      "mg clindamycin"
+    ],
+    "answer": 1,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #263. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_264",
+    "topic": "ethics",
+    "difficulty": "medium",
+    "q": "case about implant and tooth with connected crowns, what will happen periimplantitis",
+    "options": [
+      "cement failure in tooth",
+      "Soak them in non ionizing solution",
+      "Pt preferences",
+      "Dental tape with prophy paste"
+    ],
+    "answer": 0,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #264. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_265",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "child with multiple caries and abscess and ask what is the diagnosis be carful the question ask about diagnosis not type of neglect A-Child neglect",
+    "options": [
+      "C-physical abuse",
+      "Investigate gi problems and diet",
+      "Etched porcelain",
+      "B-Sever early childhood caries"
+    ],
+    "answer": 3,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #265. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "subtopics": [
+      "operative"
+    ],
+    "usable": true
+  },
+  {
+    "id": "saud_delta_266",
+    "topic": "oms",
+    "difficulty": "medium",
+    "q": "Energy required to stress the material to point of fracture",
+    "options": [
+      "max sinusitis",
+      "Syphilis",
+      "A-Toughness",
+      "B-Modulus of Elasticity"
+    ],
+    "answer": 2,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #266. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_267",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "Patient with 40% plaque index and 20% bop how you describe the patient",
+    "options": [
+      "D- know how to brush and brush",
+      "B-don’t know how to brush but try",
+      "A-know how to brush but don’t brush",
+      "C-don’t know how to brush and don’t try"
+    ],
+    "answer": 1,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #267. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_268",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "Mouth breather tx? Expansion",
+    "options": [
+      "Mouth breather tx? Expansion",
+      "apert syndrome",
+      "mg/day",
+      "gingival swelling buccal to the tooth -2"
+    ],
+    "answer": 0,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #268. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_269",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "Droplet infection HBV",
+    "options": [
+      "ZOE",
+      "Sebaceous gland",
+      "👍🏻 Mucoepidermoid carcinoma",
+      "Droplet infection?HBV"
+    ],
+    "answer": 3,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #269. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_270",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "What causes bleaching of denture: Carbohydrates and white lesions",
+    "options": [
+      "Etched porcelain",
+      "contact on anterior and posterior",
+      "Caries",
+      "Investigate gi problems and diet"
+    ],
+    "answer": 2,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #270. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "subtopics": [
+      "rpd",
+      "operative"
+    ],
+    "usable": true
+  },
+  {
+    "id": "saud_delta_271",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "type force of porcelain and metal in PFM",
+    "options": [
+      "Investigate gi problems and diet",
+      "compressive",
+      "tensile",
+      "shearing"
+    ],
+    "answer": 1,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #271. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "subtopics": [
+      "fixed"
+    ],
+    "usable": true
+  },
+  {
+    "id": "saud_delta_272",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "athletic had trauma and lost #21 what implant to choose",
+    "options": [
+      "bone level implant",
+      "helix implant",
+      "tissue mm implant",
+      "tissue level mm"
+    ],
+    "answer": 0,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #272. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "subtopics": [
+      "implant"
+    ],
+    "usable": true
+  },
+  {
+    "id": "saud_delta_273",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "brown discolouration in all of the teeth and under the ultraviolet light it becomes yellow discolouration",
+    "options": [
+      "ZOE",
+      "Sebaceous gland",
+      "👍🏻 Mucoepidermoid carcinoma",
+      "tetracycline"
+    ],
+    "answer": 3,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #273. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_274",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "years with smooth and intact restoration with tight contact came with felling pain in gingiva and stick food , normal PD , cause",
+    "options": [
+      "Investigate gi problems and diet",
+      "Etched porcelain",
+      "decrease embrasure",
+      "Non plaque induced gingivitis"
+    ],
+    "answer": 2,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #274. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_275",
+    "topic": "perio",
+    "difficulty": "medium",
+    "q": "menstrual cycle related to the gingiva",
+    "options": [
+      "VZV",
+      "increase GCF",
+      "Marquis probe",
+      "reduce pocket depth"
+    ],
+    "answer": 1,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #275. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_276",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "Hypoplasia only on the tip of the incisor, premolar and posterior occlusion. What is the cause",
+    "options": [
+      "Parenteral maldeficency",
+      "Fluorosis",
+      "Amelogenesis",
+      "Dentinogenesis"
+    ],
+    "answer": 0,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #276. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_277",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "What is the instremnet that sharpening line angles and creating retentive features in dentin in preparation for gold restorations. It also may be used in placing a bevel on enamel margins",
+    "options": [
+      "Investigate gi problems and diet",
+      "Etched porcelain",
+      "contact on anterior and posterior",
+      "angle former"
+    ],
+    "answer": 3,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #277. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_278",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "case scenario histology revealed perineural invasion. Dx",
+    "options": [
+      "Sebaceous gland",
+      "👍🏻 Mucoepidermoid carcinoma",
+      "Adenoid cystic carcinoma",
+      "ZOE"
+    ],
+    "answer": 2,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #278. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_279",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "Pt complaining of hypocalcified teeth tx",
+    "options": [
+      "Investigate gi problems and diet",
+      "composite veneers",
+      "micro abrasion",
+      "bleaching"
+    ],
+    "answer": 1,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #279. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "subtopics": [
+      "operative",
+      "fixed"
+    ],
+    "usable": true
+  },
+  {
+    "id": "saud_delta_280",
+    "topic": "ethics",
+    "difficulty": "medium",
+    "q": "most important thing in the dental notes he means documentation of the cases",
+    "options": [
+      "complete",
+      "objective",
+      "specific",
+      "Soak them in non ionizing solution"
+    ],
+    "answer": 0,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #280. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_281",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "Case with radiograph and the tooth is lengring with abscess what is the diagnosis",
+    "options": [
+      "Primary perio",
+      "Primary endo secondary perio",
+      "true combined",
+      "Primary endo"
+    ],
+    "answer": 3,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #281. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_283",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "what is the cause of cast bridge distortion",
+    "options": [
+      "Investigate gi problems and diet",
+      "Elastic limit has been exceeded",
+      "Resorption of alveolar bone",
+      "Discrepancy in the occlusion or during function"
+    ],
+    "answer": 1,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #283. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_284",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "you have amalgam and it has ditch with more 0.5 what is your management",
+    "options": [
+      "A- replace the whole amalgam",
+      "B- place composite in the ditched area",
+      "Investigate gi problems and diet",
+      "Etched porcelain"
+    ],
+    "answer": 0,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #284. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "subtopics": [
+      "operative"
+    ],
+    "usable": true
+  },
+  {
+    "id": "saud_delta_286",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "you patient patient with multiple divergent implants, what type of coping are you gonna use",
+    "options": [
+      "Two pieces closed",
+      "Two pieces transfer",
+      "Two pieces open",
+      "One piece"
+    ],
+    "answer": 2,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #286. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "subtopics": [
+      "implant"
+    ],
+    "usable": true
+  },
+  {
+    "id": "saud_delta_287",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "What is the worst thing in lateral movement in the posterior teeth",
+    "options": [
+      "D- edge to edge occlusion",
+      "A- Group function",
+      "B-shallow cuspal inclines",
+      "C-canine guidance"
+    ],
+    "answer": 1,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #287. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_288",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "YO with an Endo treated molar and u want to do amalgam build up what type of pin to use",
+    "options": [
+      "B-Self-thread",
+      "A- Friction lock",
+      "C-Self-shear",
+      "D- Cemented pin"
+    ],
+    "answer": 0,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #288. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "subtopics": [
+      "operative",
+      "materials"
+    ],
+    "usable": true
+  },
+  {
+    "id": "saud_delta_289",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "patient with symptoms related to decreased free way space how would you manage",
+    "options": [
+      "relive internal surface of the denture",
+      "make a new denture",
+      "Investigate gi problems and diet",
+      "‫االصح‬- send to the lab to selectively grind teeth"
+    ],
+    "answer": 3,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #289. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "subtopics": [
+      "rpd"
+    ],
+    "usable": true
+  },
+  {
+    "id": "saud_delta_291",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "Which not present in saliva",
+    "options": [
+      "antibodies",
+      "Proteolytic enzymes",
+      "Lysosome",
+      "potassium"
+    ],
+    "answer": 1,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #291. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_292",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "broken shallow amalgam what’s the best material to replace it",
+    "options": [
+      "composite",
+      "amalgam",
+      "GIC",
+      "RMGI"
+    ],
+    "answer": 0,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #292. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "subtopics": [
+      "operative"
+    ],
+    "usable": true
+  },
+  {
+    "id": "saud_delta_293",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "Pedo patient with high Caries index and needs to seal permenant molars",
+    "options": [
+      "B-unfilled resin",
+      "C-gic",
+      "Investigate gi problems and diet",
+      "A-filled resin= flowable composite"
+    ],
+    "answer": 3,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #293. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "subtopics": [
+      "operative"
+    ],
+    "usable": true
+  },
+  {
+    "id": "saud_delta_294",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "Teenager that has deep bite how will you fix it A- fixed B-removable",
+    "options": [
+      "Sebaceous gland",
+      "👍🏻 Mucoepidermoid carcinoma",
+      "C-removable with anterior bite plane",
+      "ZOE"
+    ],
+    "answer": 2,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #294. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_295",
+    "topic": "oms",
+    "difficulty": "medium",
+    "q": "patient with uncontrolled diabetes with acute apical abscess needs to extract now You took hba1c = 10 A- Prophylaxis antibiotic 1h before amox",
+    "options": [
+      "Osteomyelitis",
+      "B- post operative antibiotic",
+      "max sinusitis",
+      "Syphilis"
+    ],
+    "answer": 1,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #295. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_296",
+    "topic": "ethics",
+    "difficulty": "medium",
+    "q": "Patient has a temp Crown on #43 has been referred for Perio for crown lengthening , patient has no enough keratinized gingiva",
+    "options": [
+      "B-apical reposition flap",
+      "A-gingivectomy",
+      "C-coronal reposition flap",
+      "Soak them in non ionizing solution"
+    ],
+    "answer": 0,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #296. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_297",
+    "topic": "ethics",
+    "difficulty": "medium",
+    "q": "Question about the use or effect of radial land in rotary instruments",
+    "options": [
+      "B- enhance cutting of dentin",
+      "C- reduce risk of fracture",
+      "Soak them in non ionizing solution",
+      "A- Increases safety"
+    ],
+    "answer": 3,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #297. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_299",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "patient with MOD caries in #16 and after caries removal the cavity extends from the primary groove to mesiobuccal cusp tip",
+    "options": [
+      "Investigate gi problems and diet",
+      "B- ceramic onlay",
+      "Restore with",
+      "A- ceramic inlay"
+    ],
+    "answer": 1,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #299. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "subtopics": [
+      "operative"
+    ],
+    "usable": true
+  },
+  {
+    "id": "saud_delta_301",
+    "topic": "oms",
+    "difficulty": "medium",
+    "q": "ASA of pt has hx of MI 1 years ago which classification? A)I",
+    "options": [
+      "II",
+      "IV",
+      "max sinusitis",
+      "III"
+    ],
+    "answer": 3,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #301. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  },
+  {
+    "id": "saud_delta_302",
+    "topic": "endo",
+    "difficulty": "medium",
+    "q": "What is the most thing that determines the success of the treatment",
+    "options": [
+      "type of Endo sealer",
+      "Infraorbital",
+      "Marginal integrity of the temporary",
+      "Obturation technique"
+    ],
+    "answer": 2,
+    "explanation": "From تلخيص سعود (new vs رفيع 16/19) — d. Mohamed Elgamil. Source block #302. Verify ✅ if high-stakes.",
+    "source": "saud_delta",
+    "usable": true
+  }
+]

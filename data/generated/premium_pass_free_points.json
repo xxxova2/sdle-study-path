@@ -1,0 +1,948 @@
+[
+  {
+    "id": "pass_fp_001",
+    "topic": "ethics",
+    "difficulty": "easy",
+    "q": "What is the correct order of instrument reprocessing before instruments are considered ready for reuse?",
+    "options": [
+      "Cleaning → Disinfection → Sterilization",
+      "Disinfection → Sterilization → Cleaning",
+      "Cleaning → Sterilization only (skip disinfection)",
+      "Sterilization → Cleaning → Disinfection"
+    ],
+    "answer": 0,
+    "explanation": "Soil blocks sterilant. Clean first, then disinfect, then sterilize. Free-point infection-control item.",
+    "source": "always"
+  },
+  {
+    "id": "pass_fp_002",
+    "topic": "ethics",
+    "difficulty": "easy",
+    "q": "A patient had a solid-organ transplant 3 weeks ago and presents for elective crown preparation. What is the most appropriate management?",
+    "options": [
+      "Defer elective care and coordinate with the physician",
+      "Proceed with local anesthesia and crown prep as usual",
+      "Extract the tooth immediately under antibiotic cover only",
+      "Place implants today because healing is enhanced by steroids"
+    ],
+    "answer": 0,
+    "explanation": "Recent transplant / unstable systemic disease → defer elective; medical clearance first.",
+    "source": "always"
+  },
+  {
+    "id": "pass_fp_003",
+    "topic": "ethics",
+    "difficulty": "easy",
+    "q": "An asthmatic adult needs analgesia after extraction. Which choice is classically preferred in bank stems?",
+    "options": [
+      "Paracetamol (acetaminophen), with NSAID caution if sensitive",
+      "Codeine as first-line for everyone",
+      "High-dose aspirin",
+      "Ibuprofen without caution"
+    ],
+    "answer": 0,
+    "explanation": "Asthma: prefer paracetamol; NSAIDs can trigger AERD/bronchospasm in sensitive patients.",
+    "source": "always"
+  },
+  {
+    "id": "pass_fp_004",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "Which medication group is most classically associated with drug-induced gingival enlargement?",
+    "options": [
+      "Nifedipine, phenytoin, and cyclosporine",
+      "Metformin and glipizide",
+      "Amoxicillin and metronidazole",
+      "Levothyroxine only"
+    ],
+    "answer": 0,
+    "explanation": "CCBs (nifedipine), phenytoin, cyclosporine = classic triad.",
+    "source": "always"
+  },
+  {
+    "id": "pass_fp_005",
+    "topic": "restorative",
+    "difficulty": "easy",
+    "q": "When placing an implant near the inferior alveolar nerve, what minimum safety distance is most commonly tested?",
+    "options": [
+      "0 mm",
+      "≈2 mm",
+      "5 mm",
+      "0.5 mm"
+    ],
+    "answer": 1,
+    "explanation": "≈2 mm implant–IAN safety distance is a top free-point implant item.",
+    "source": "always",
+    "subtopics": [
+      "implant"
+    ]
+  },
+  {
+    "id": "pass_fp_006",
+    "topic": "restorative",
+    "difficulty": "easy",
+    "q": "A patient returns one week after crown cementation complaining of food packing between the crown and the adjacent tooth. What is the most likely cause?",
+    "options": [
+      "Open or light proximal contact (or poor contour/emergence)",
+      "Ideal occlusion high on non-working side only",
+      "Excess cement always felt as food packing",
+      "Perfect contact with plunger cusp only"
+    ],
+    "answer": 0,
+    "explanation": "New crown + food packing → open/light contact until proven otherwise.",
+    "source": "always",
+    "subtopics": [
+      "fixed"
+    ]
+  },
+  {
+    "id": "pass_fp_007",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "A rotary NiTi file separates. The tip was locked in the canal while the shank continued to rotate. What fatigue mechanism is this?",
+    "options": [
+      "Torsional fatigue (tip lock)",
+      "Flexural fatigue only in a straight canal",
+      "Thermal expansion of gutta-percha",
+      "Galvanic corrosion from amalgam"
+    ],
+    "answer": 0,
+    "explanation": "Tip locks + shank rotates = torsional fatigue. Flexural is cyclic bending in curves.",
+    "source": "always"
+  },
+  {
+    "id": "pass_fp_008",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "Where is the canal diameter typically narrowest?",
+    "options": [
+      "Mid-root",
+      "Pulp chamber floor only",
+      "Orifice",
+      "Apical constriction"
+    ],
+    "answer": 3,
+    "explanation": "Narrowest = apical constriction (anatomy free point).",
+    "source": "always"
+  },
+  {
+    "id": "pass_fp_009",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "What is the preferred modern material for direct pulp capping and apexification/apical barrier techniques in many current banks?",
+    "options": [
+      "Unlined amalgam over pulp",
+      "MTA / bioceramic materials",
+      "Formocresol for all adult vital teeth",
+      "Zinc oxide eugenol only"
+    ],
+    "answer": 1,
+    "explanation": "MTA/bioceramic era for pulp cap, apexification, many perforation repairs.",
+    "source": "always"
+  },
+  {
+    "id": "pass_fp_010",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "For a replanted avulsed permanent tooth (typical IADT-style teaching item), flexible splinting is often about how long?",
+    "options": [
+      "No splint ever",
+      "6 months rigid",
+      "≈2 weeks",
+      "1 day only"
+    ],
+    "answer": 2,
+    "explanation": "Often ~2 weeks flexible/functional for uncomplicated avulsion teaching (verify current IADT table for nuances).",
+    "source": "always"
+  },
+  {
+    "id": "pass_fp_011",
+    "topic": "restorative",
+    "difficulty": "easy",
+    "q": "Kennedy Class I edentulous pattern is best described as:",
+    "options": [
+      "Unilateral distal extension",
+      "Anterior edentulous area only with posterior teeth present both sides",
+      "Bilateral distal extension",
+      "Single tooth bounded space only"
+    ],
+    "answer": 2,
+    "explanation": "Kennedy I = bilateral distal extension.",
+    "source": "always",
+    "subtopics": [
+      "rpd"
+    ]
+  },
+  {
+    "id": "pass_fp_012",
+    "topic": "restorative",
+    "difficulty": "easy",
+    "q": "Which force is most destructive to abutment teeth supporting a distal-extension RPD?",
+    "options": [
+      "Zero force if clasps are flexible",
+      "Horizontal / lateral forces",
+      "Occlusal force perfectly axial only",
+      "Vertical force only toward the ridge"
+    ],
+    "answer": 1,
+    "explanation": "Lateral/horizontal forces are worst for RPD abutments — classic free point.",
+    "source": "always",
+    "subtopics": [
+      "rpd"
+    ]
+  },
+  {
+    "id": "pass_fp_013",
+    "topic": "oms",
+    "difficulty": "easy",
+    "q": "A white patch on the oral mucosa cannot be scraped off. What is the most likely clinical diagnosis among the options?",
+    "options": [
+      "Leukoplakia (clinical term)",
+      "Thermal burn that always wipes clean",
+      "Materia alba only",
+      "Pseudomembranous candidiasis"
+    ],
+    "answer": 0,
+    "explanation": "Cannot wipe → leukoplakia (clinical). Thrush membrane typically wipes off.",
+    "source": "always"
+  },
+  {
+    "id": "pass_fp_014",
+    "topic": "oms",
+    "difficulty": "easy",
+    "q": "A newborn has micrognathia, glossoptosis, and cleft palate. What is the most likely diagnosis?",
+    "options": [
+      "Crouzon syndrome",
+      "Cleidocranial dysplasia",
+      "Pierre Robin sequence",
+      "Apert syndrome only"
+    ],
+    "answer": 2,
+    "explanation": "Pierre Robin triad: micrognathia + glossoptosis + cleft.",
+    "source": "always"
+  },
+  {
+    "id": "pass_fp_015",
+    "topic": "ortho_pedo",
+    "difficulty": "easy",
+    "q": "A tooth present at birth is called a:",
+    "options": [
+      "Supernumerary always",
+      "Neonatal tooth",
+      "Mesiodens only",
+      "Natal tooth"
+    ],
+    "answer": 3,
+    "explanation": "Natal = at birth; neonatal = erupts within first ~30 days.",
+    "source": "always"
+  },
+  {
+    "id": "pass_fp_016",
+    "topic": "ortho_pedo",
+    "difficulty": "easy",
+    "q": "A midline diastema is associated with a high labial frenum. Which sequence is most often preferred?",
+    "options": [
+      "Extract both centrals",
+      "Orthodontic space closure then frenectomy (often)",
+      "No treatment ever if diastema is 0.5 mm",
+      "Frenectomy first, then always wait years without ortho"
+    ],
+    "answer": 1,
+    "explanation": "Often ortho first → then frenectomy so scar does not reopen space.",
+    "source": "always"
+  },
+  {
+    "id": "pass_fp_017",
+    "topic": "oms",
+    "difficulty": "easy",
+    "q": "Which ocular symptom is classically associated with zygomatic complex fracture in MCQs?",
+    "options": [
+      "Anosmia only",
+      "Tinnitus only",
+      "Ptosis of the uvula",
+      "Diplopia"
+    ],
+    "answer": 3,
+    "explanation": "Diplopia (and malar flattening, infraorbital signs) — classic zygoma item.",
+    "source": "always"
+  },
+  {
+    "id": "pass_fp_018",
+    "topic": "oms",
+    "difficulty": "easy",
+    "q": "Odontogenic infections are typically caused by which flora pattern?",
+    "options": [
+      "Mycobacteria only",
+      "Fungi only",
+      "Mixed aerobic and anaerobic organisms",
+      "Pure aerobic streptococci only always"
+    ],
+    "answer": 2,
+    "explanation": "Mixed flora = free point.",
+    "source": "always"
+  },
+  {
+    "id": "pass_fp_019",
+    "topic": "oms",
+    "difficulty": "easy",
+    "q": "Exposed necrotic jaw bone for >8 weeks in a patient on antiresorptive therapy without radiation history is best labeled:",
+    "options": [
+      "Dry socket only",
+      "Medication-related osteonecrosis of the jaw (MRONJ)",
+      "Simple pericoronitis",
+      "Osteoradionecrosis"
+    ],
+    "answer": 1,
+    "explanation": "MRONJ: antiresorptives (bisphosphonates/denosumab), no radiation requirement (ORN is radiation).",
+    "source": "always"
+  },
+  {
+    "id": "pass_fp_020",
+    "topic": "ethics",
+    "difficulty": "easy",
+    "q": "A patient with COPD needs routine dental treatment and is anxious. Which chair/position management is most appropriate among common options?",
+    "options": [
+      "Fully flat supine with heavy IV sedation always",
+      "Standing treatment only",
+      "Trendelenburg with N2O high flow always",
+      "Semi-supine position; careful low-dose anxiolysis if needed"
+    ],
+    "answer": 3,
+    "explanation": "COPD → semi-supine; avoid heavy respiratory depression.",
+    "source": "always"
+  },
+  {
+    "id": "pass_fp_021",
+    "topic": "restorative",
+    "difficulty": "easy",
+    "q": "During rubber dam isolation of two adjacent teeth, the dam wrinkles and does not lie flat between the teeth. What is the most likely cause?",
+    "options": [
+      "Clamp always too large for every tooth",
+      "Holes punched too far apart",
+      "Holes punched too close together",
+      "Dam always too thin to use"
+    ],
+    "answer": 1,
+    "explanation": "Holes too far apart → wrinkling between teeth.",
+    "source": "always",
+    "subtopics": [
+      "operative"
+    ]
+  },
+  {
+    "id": "pass_fp_022",
+    "topic": "restorative",
+    "difficulty": "easy",
+    "q": "A microfilled composite restoration has fractured under load. Which replacement class is most appropriate?",
+    "options": [
+      "ZOE permanent restoration",
+      "Another microfill only",
+      "Hybrid / nanohybrid composite (stronger)",
+      "Unfilled resin only"
+    ],
+    "answer": 2,
+    "explanation": "Microfill = polish/weak; hybrid/nanohybrid for strength when fracture occurs.",
+    "source": "always",
+    "subtopics": [
+      "operative",
+      "materials"
+    ]
+  },
+  {
+    "id": "pass_fp_023",
+    "topic": "restorative",
+    "difficulty": "easy",
+    "q": "What is the approximate critical pH for enamel demineralization taught in classic cariology?",
+    "options": [
+      "7.0",
+      "0 only",
+      "≈5.5",
+      "9.0"
+    ],
+    "answer": 2,
+    "explanation": "Enamel critical pH ≈ 5.5 (dentin higher).",
+    "source": "always",
+    "subtopics": [
+      "operative"
+    ]
+  },
+  {
+    "id": "pass_fp_024",
+    "topic": "restorative",
+    "difficulty": "easy",
+    "q": "Why is eugenol-containing temporary cement a problem under a future composite restoration?",
+    "options": [
+      "Eugenol can inhibit resin polymerization",
+      "It always strengthens resin bond",
+      "It only affects amalgam",
+      "It has no effect ever"
+    ],
+    "answer": 0,
+    "explanation": "Eugenol inhibits resin set — clean/replace before composite bonding.",
+    "source": "always",
+    "subtopics": [
+      "materials"
+    ]
+  },
+  {
+    "id": "pass_fp_025",
+    "topic": "restorative",
+    "difficulty": "easy",
+    "q": "Immediately after placing a new composite, the patient reports a high bite. First action?",
+    "options": [
+      "Adjust occlusion first",
+      "Prescribe antibiotics only",
+      "Extract the tooth",
+      "Remake the restoration immediately without checking occlusion"
+    ],
+    "answer": 0,
+    "explanation": "High fill → adjust occlusion first. Free point.",
+    "source": "always",
+    "subtopics": [
+      "operative"
+    ]
+  },
+  {
+    "id": "pass_fp_026",
+    "topic": "oms",
+    "difficulty": "easy",
+    "q": "Typical timing for alveolar osteitis (dry socket) after extraction is:",
+    "options": [
+      "Immediately in the chair only",
+      "6 months later only",
+      "Only if sutures were used",
+      "2–4 days post-extraction"
+    ],
+    "answer": 3,
+    "explanation": "Dry socket classically 2–4 days later with severe pain and empty socket.",
+    "source": "always"
+  },
+  {
+    "id": "pass_fp_027",
+    "topic": "ethics",
+    "difficulty": "easy",
+    "q": "How should the dental operating light handle be managed between patients?",
+    "options": [
+      "No infection control needed for lights",
+      "Wipe only if visibly dirty once a week",
+      "Barrier and/or disinfect after each patient",
+      "Autoclave the light head every patient"
+    ],
+    "answer": 2,
+    "explanation": "Light handles: barrier or disinfect every patient.",
+    "source": "always"
+  },
+  {
+    "id": "pass_fp_028",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "A maxillary first molar was obturated with three canals; a lesion persists next to the mesiobuccal root. Most likely cause?",
+    "options": [
+      "Normal healing radiolucency forever",
+      "Missed MB2 canal",
+      "Hyperocclusion only",
+      "Perfect fill always"
+    ],
+    "answer": 1,
+    "explanation": "Missed MB2 is the classic upper molar persistence item.",
+    "source": "always"
+  },
+  {
+    "id": "pass_fp_029",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "An RCT tooth has an isolated deep narrow pocket and a J-shaped radiolucency. Most likely diagnosis?",
+    "options": [
+      "Vertical root fracture",
+      "Healthy periodontium",
+      "Simple gingivitis",
+      "Reversible pulpitis only"
+    ],
+    "answer": 0,
+    "explanation": "Isolated deep pocket + J-shaped lucency post-endo → think VRF.",
+    "source": "always"
+  },
+  {
+    "id": "pass_fp_030",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "Best material among common options to repair a subcrestal root perforation?",
+    "options": [
+      "MTA",
+      "Amalgam always first",
+      "Zinc phosphate only",
+      "Unfilled resin only"
+    ],
+    "answer": 0,
+    "explanation": "MTA for many perforation repairs.",
+    "source": "always"
+  },
+  {
+    "id": "pass_fp_031",
+    "topic": "restorative",
+    "difficulty": "easy",
+    "q": "Glass ionomer cement Type I is primarily used for:",
+    "options": [
+      "Restorative filling only",
+      "Root canal sealer only",
+      "Luting crowns and bridges",
+      "Pit and fissure sealant only"
+    ],
+    "answer": 2,
+    "explanation": "GIC Type I = luting.",
+    "source": "always",
+    "subtopics": [
+      "materials"
+    ]
+  },
+  {
+    "id": "pass_fp_032",
+    "topic": "restorative",
+    "difficulty": "easy",
+    "q": "Which elastomeric impression material is commonly preferred for high-accuracy fixed prosthodontics?",
+    "options": [
+      "Impression compound alone",
+      "Alginate alone for final FPD",
+      "Polyvinyl siloxane (PVS/addition silicone)",
+      "Plaster of Paris"
+    ],
+    "answer": 2,
+    "explanation": "PVS = excellent accuracy for fixed work.",
+    "source": "always",
+    "subtopics": [
+      "materials"
+    ]
+  },
+  {
+    "id": "pass_fp_033",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "One abutment is significantly tilted; the other is upright for a fixed bridge. Which design is most appropriate?",
+    "options": [
+      "Rigid fixed-fixed only always",
+      "No prosthesis ever",
+      "Fixed-movable (non-rigid connector) bridge",
+      "Maryland bridge always"
+    ],
+    "answer": 2,
+    "explanation": "Path-of-insertion conflict → non-rigid / fixed-movable often preferred.",
+    "source": "always",
+    "subtopics": [
+      "fixed"
+    ]
+  },
+  {
+    "id": "pass_fp_034",
+    "topic": "restorative",
+    "difficulty": "easy",
+    "q": "Mesiodistal space for implants is 14 mm. Ideal placement among common teaching options?",
+    "options": [
+      "No implants if space >10 mm",
+      "One 8 mm implant only always",
+      "Three 5 mm implants squeezed",
+      "Two implants of ~4 mm diameter (with spacing rules)"
+    ],
+    "answer": 3,
+    "explanation": "≈14 mm often accommodates two implants with proper inter-implant/tooth distances (teaching item).",
+    "source": "always",
+    "subtopics": [
+      "implant"
+    ]
+  },
+  {
+    "id": "pass_fp_035",
+    "topic": "restorative",
+    "difficulty": "easy",
+    "q": "Recommended minimum distance between a dental implant and an adjacent natural tooth (commonly tested)?",
+    "options": [
+      "≈1.5 mm",
+      "0 mm",
+      "0.5 mm",
+      "5 mm"
+    ],
+    "answer": 0,
+    "explanation": "≈1.5 mm implant–tooth is a common bank figure (with 3 mm implant–implant often).",
+    "source": "always",
+    "subtopics": [
+      "implant"
+    ]
+  },
+  {
+    "id": "pass_fp_036",
+    "topic": "ortho_pedo",
+    "difficulty": "easy",
+    "q": "Preferred professional topical fluoride for a cooperative 5-year-old among common options?",
+    "options": [
+      "High-dose APF gel forced for 4 min always",
+      "No fluoride ever under age 12",
+      "Daily high-dose rinse unsupervised",
+      "Fluoride varnish"
+    ],
+    "answer": 3,
+    "explanation": "Fluoride varnish preferred in young children (swallow risk with gels).",
+    "source": "always"
+  },
+  {
+    "id": "pass_fp_037",
+    "topic": "ortho_pedo",
+    "difficulty": "easy",
+    "q": "A cooperative 5-year-old has multi-surface caries on a primary molar. Most appropriate restoration often is:",
+    "options": [
+      "Stainless steel crown",
+      "Immediate extraction always",
+      "Observation only forever",
+      "Sealant only"
+    ],
+    "answer": 0,
+    "explanation": "Extensive multi-surface primary molar → SSC is classic.",
+    "source": "always"
+  },
+  {
+    "id": "pass_fp_038",
+    "topic": "ortho_pedo",
+    "difficulty": "easy",
+    "q": "A 3-year-old swallows an entire tube of fluoridated toothpaste. Immediate first-line home advice often includes:",
+    "options": [
+      "Induce vomiting with salt water always",
+      "Gastric lavage at home",
+      "Ignore completely always",
+      "Give milk/calcium-containing drink and seek advice/observe as directed"
+    ],
+    "answer": 3,
+    "explanation": "Milk/calcium binds fluoride; medical advice based on amount/weight — bank-style first step.",
+    "source": "always"
+  },
+  {
+    "id": "pass_fp_039",
+    "topic": "ortho_pedo",
+    "difficulty": "easy",
+    "q": "Reverse overjet is most commonly associated with which malocclusion class?",
+    "options": [
+      "Class I only",
+      "Class II division 1",
+      "Class II division 2 only",
+      "Class III"
+    ],
+    "answer": 3,
+    "explanation": "Reverse OJ → Class III pattern free point.",
+    "source": "always"
+  },
+  {
+    "id": "pass_fp_040",
+    "topic": "ortho_pedo",
+    "difficulty": "easy",
+    "q": "Growing patient with skeletal Class III — which early orthopedic option is commonly tested?",
+    "options": [
+      "Facemask / reverse-pull therapy",
+      "No growth modification ever",
+      "Herbst only for Class III",
+      "High-pull headgear only"
+    ],
+    "answer": 0,
+    "explanation": "Facemask for growing Class III (maxillary deficiency pattern).",
+    "source": "always"
+  },
+  {
+    "id": "pass_fp_041",
+    "topic": "oms",
+    "difficulty": "easy",
+    "q": "A child falls on the chin. Which fracture is most commonly associated?",
+    "options": [
+      "Le Fort III only",
+      "Condylar fracture",
+      "Nasal bone only always",
+      "Zygoma only"
+    ],
+    "answer": 1,
+    "explanation": "Chin trauma → condylar fracture association.",
+    "source": "always"
+  },
+  {
+    "id": "pass_fp_042",
+    "topic": "oms",
+    "difficulty": "easy",
+    "q": "Most characteristic sign of orbital blowout fracture among options:",
+    "options": [
+      "Isolated tooth pain only",
+      "Tinnitus only",
+      "Diplopia on upward gaze",
+      "Anosmia only"
+    ],
+    "answer": 2,
+    "explanation": "Diplopia on upward gaze (inferior rectus/orbital floor).",
+    "source": "always"
+  },
+  {
+    "id": "pass_fp_043",
+    "topic": "oms",
+    "difficulty": "easy",
+    "q": "Ludwig angina classically involves which spaces?",
+    "options": [
+      "Temporal space only",
+      "Maxillary sinus only",
+      "Bilateral submandibular, sublingual, and submental",
+      "Canine space only unilateral"
+    ],
+    "answer": 2,
+    "explanation": "Bilateral floor-of-mouth spaces — airway emergency mindset.",
+    "source": "always"
+  },
+  {
+    "id": "pass_fp_044",
+    "topic": "oms",
+    "difficulty": "easy",
+    "q": "Positive Nikolsky sign with oral blisters suggests which diagnosis most among options?",
+    "options": [
+      "Simple aphthous ulcer only",
+      "Traumatic fibroma",
+      "Geographic tongue",
+      "Pemphigus vulgaris"
+    ],
+    "answer": 3,
+    "explanation": "Nikolsky + blisters → pemphigus vulgaris classic.",
+    "source": "always"
+  },
+  {
+    "id": "pass_fp_045",
+    "topic": "oms",
+    "difficulty": "easy",
+    "q": "Butterfly facial rash and positive ANA are most associated with:",
+    "options": [
+      "Angular cheilitis only",
+      "Systemic lupus erythematosus",
+      "Candidiasis only",
+      "Simple herpes labialis only"
+    ],
+    "answer": 1,
+    "explanation": "SLE free-point cluster.",
+    "source": "always"
+  },
+  {
+    "id": "pass_fp_046",
+    "topic": "ethics",
+    "difficulty": "easy",
+    "q": "Which ethical principle means “do no harm”?",
+    "options": [
+      "Veracity only",
+      "Autonomy",
+      "Non-maleficence",
+      "Justice only"
+    ],
+    "answer": 2,
+    "explanation": "Non-maleficence = do no harm.",
+    "source": "always"
+  },
+  {
+    "id": "pass_fp_047",
+    "topic": "ethics",
+    "difficulty": "easy",
+    "q": "A minor patient with Down syndrome needs consent for treatment. Who provides consent?",
+    "options": [
+      "Parent or legal guardian",
+      "Dental assistant only",
+      "The child alone always",
+      "No consent needed"
+    ],
+    "answer": 0,
+    "explanation": "Minor → parent/legal guardian consent.",
+    "source": "always"
+  },
+  {
+    "id": "pass_fp_048",
+    "topic": "ethics",
+    "difficulty": "easy",
+    "q": "Patient requests veneers; a more conservative option would achieve the same result. Best response?",
+    "options": [
+      "Delay forever without discussion",
+      "Explain conservative alternative and recommend the most appropriate treatment",
+      "Do veneers because the patient asked",
+      "Refuse without any explanation"
+    ],
+    "answer": 1,
+    "explanation": "Beneficence + non-maleficence + informed consent — recommend appropriate care.",
+    "source": "always"
+  },
+  {
+    "id": "pass_fp_049",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "Complete interdental papilla fill is most likely when contact-point to crest distance is:",
+    "options": [
+      "Independent of distance",
+      "Always 7 mm",
+      "Always >8 mm",
+      "Less than about 5 mm"
+    ],
+    "answer": 3,
+    "explanation": "Tarnow: ≤5 mm contact-to-crest → high chance of papilla fill.",
+    "source": "always"
+  },
+  {
+    "id": "pass_fp_050",
+    "topic": "perio",
+    "difficulty": "easy",
+    "q": "A partial-thickness flap includes:",
+    "options": [
+      "Bone only",
+      "Full periosteum and bone elevation always",
+      "Enamel only",
+      "Epithelium and connective tissue only (periosteum left)"
+    ],
+    "answer": 3,
+    "explanation": "Partial-thickness = epi + CT; periosteum remains.",
+    "source": "always"
+  },
+  {
+    "id": "pass_fp_051",
+    "topic": "ethics",
+    "difficulty": "easy",
+    "q": "Closed-mouth mandibular nerve block technique is:",
+    "options": [
+      "Infiltration of 11 only",
+      "Gow-Gates only",
+      "Vazirani-Akinosi",
+      "Mental block only"
+    ],
+    "answer": 2,
+    "explanation": "Vazirani-Akinosi = closed-mouth mandibular block.",
+    "source": "always"
+  },
+  {
+    "id": "pass_fp_052",
+    "topic": "ethics",
+    "difficulty": "easy",
+    "q": "A headache relieved by 100% oxygen is characteristic of:",
+    "options": [
+      "Sinus only",
+      "Cluster headache",
+      "Migraine always",
+      "Tension only"
+    ],
+    "answer": 1,
+    "explanation": "Cluster headache — oxygen response is classic.",
+    "source": "always"
+  },
+  {
+    "id": "pass_fp_053",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "Best material commonly used to trace a sinus tract origin?",
+    "options": [
+      "Gutta-percha point (#25–30)",
+      "Paper point only",
+      "Composite",
+      "Lentulo only"
+    ],
+    "answer": 0,
+    "explanation": "GP point in tract + radiograph = classic.",
+    "source": "always"
+  },
+  {
+    "id": "pass_fp_054",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "Internal bleaching of a non-vital tooth is most associated with which resorption risk?",
+    "options": [
+      "No risk ever",
+      "Internal root hyperplasia",
+      "Condylar resorption only",
+      "External cervical resorption"
+    ],
+    "answer": 3,
+    "explanation": "Internal bleaching → external cervical resorption risk (esp. classic walking bleach concerns).",
+    "source": "always"
+  },
+  {
+    "id": "pass_fp_055",
+    "topic": "restorative",
+    "difficulty": "easy",
+    "q": "Main purpose of recording centric relation for complete dentures?",
+    "options": [
+      "Establish a reproducible jaw relation independent of tooth contact",
+      "Choose implant diameter",
+      "Determine tooth shade only",
+      "Measure pocket depths"
+    ],
+    "answer": 0,
+    "explanation": "CR = reproducible maxillomandibular relation independent of teeth.",
+    "source": "always",
+    "subtopics": [
+      "complete_denture"
+    ]
+  },
+  {
+    "id": "pass_fp_056",
+    "topic": "restorative",
+    "difficulty": "easy",
+    "q": "An interference occurring during protrusive movement is called:",
+    "options": [
+      "Centric only always",
+      "Non-working interference",
+      "Protrusive interference",
+      "Working interference"
+    ],
+    "answer": 2,
+    "explanation": "Protrusive interference = during protrusion.",
+    "source": "always"
+  },
+  {
+    "id": "pass_fp_057",
+    "topic": "oms",
+    "difficulty": "easy",
+    "q": "HIV patient with asymptomatic white lesion on lateral tongue that does not scrape off (hairy leukoplakia). Best initial management if asymptomatic?",
+    "options": [
+      "Extract all teeth",
+      "Reassure; treat only if symptomatic / manage HIV context",
+      "Systemic antifungal always mandatory",
+      "Immediate radical resection always"
+    ],
+    "answer": 1,
+    "explanation": "OHL often managed by observation if asymptomatic; address underlying immune status.",
+    "source": "always"
+  },
+  {
+    "id": "pass_fp_058",
+    "topic": "oms",
+    "difficulty": "easy",
+    "q": "Virus most associated with Kaposi sarcoma in HIV?",
+    "options": [
+      "HPV only",
+      "HCV only",
+      "HHV-8",
+      "HSV-1 only"
+    ],
+    "answer": 2,
+    "explanation": "HHV-8 / KSHV.",
+    "source": "always"
+  },
+  {
+    "id": "pass_fp_059",
+    "topic": "ethics",
+    "difficulty": "easy",
+    "q": "SDLE (KSA) official-style pass score on the 200–800 scale is approximately:",
+    "options": [
+      "542",
+      "700 always",
+      "400",
+      "800 only"
+    ],
+    "answer": 0,
+    "explanation": "Pass ≈542/800. Practice target ≥80% for margin.",
+    "source": "always"
+  },
+  {
+    "id": "pass_fp_060",
+    "topic": "ethics",
+    "difficulty": "easy",
+    "q": "SDLE format (2025 guide style): how many scored-style MCQs and how is time commonly structured?",
+    "options": [
+      "Oral exam only",
+      "200 MCQs, ~4 hours, often 2×100 in ~120 min with a break",
+      "50 Q in 1 hour, one sitting only",
+      "500 Q untimed"
+    ],
+    "answer": 1,
+    "explanation": "200 MCQs · ~4h · 2 sections · ~30 min break · no negative marking — answer everything.",
+    "source": "always"
+  }
+]

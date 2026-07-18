@@ -1,0 +1,1922 @@
+[
+  {
+    "id": "oped_boost_001",
+    "topic": "ortho_pedo",
+    "difficulty": "easy",
+    "q": "Angle Class II molar relationship is defined by which molar position?",
+    "options": [
+      "Mandibular first molar mesial to maxillary first molar",
+      "Edge-to-edge first molars only",
+      "Only canine Class II with Class I molars always",
+      "Mandibular first molar distal to maxillary first molar (mesiobuccal cusp of U6 ahead of buccal groove of L6)"
+    ],
+    "answer": 3,
+    "explanation": "Class II: mandibular molar is distal relative to maxillary molar (Angle).",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_002",
+    "topic": "ortho_pedo",
+    "difficulty": "easy",
+    "q": "Angle Class III molar relationship means:",
+    "options": [
+      "Only increased overjet",
+      "Only deep bite with Class I molars",
+      "Mandibular first molar mesial to maxillary first molar",
+      "Mandibular molar distal to maxillary molar"
+    ],
+    "answer": 2,
+    "explanation": "Class III: mandibular molar is mesial (prognathic tendency / mesial step extreme).",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_003",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "Angle Class II division 2 typically shows which incisor pattern?",
+    "options": [
+      "Proclined upper incisors with large overjet only",
+      "Edge-to-edge anterior only with Class III molars",
+      "Anterior open bite always",
+      "Retroclined maxillary central incisors with deep bite and often reduced overjet"
+    ],
+    "answer": 3,
+    "explanation": "II/2: retroclined U1s, deep overbite, often crowded laterals; overjet reduced vs II/1.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_004",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "Angle Class II division 1 classic feature?",
+    "options": [
+      "Retroclined centrals with deep bite only",
+      "Class III molars",
+      "Proclined maxillary incisors with increased overjet",
+      "No overjet change"
+    ],
+    "answer": 2,
+    "explanation": "II/1: proclined uppers, increased OJ, often incompetent lips.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_005",
+    "topic": "ortho_pedo",
+    "difficulty": "easy",
+    "q": "In Angle Class I, the mesiobuccal cusp of the maxillary first molar:",
+    "options": [
+      "Occludes distal to the mandibular second molar always",
+      "Is completely out of occlusion always",
+      "Contacts only the mandibular canine",
+      "Occludes in the buccal groove of the mandibular first molar"
+    ],
+    "answer": 3,
+    "explanation": "Classic Angle Class I molar key.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_006",
+    "topic": "ortho_pedo",
+    "difficulty": "hard",
+    "q": "A photo shows Class II molars, retroclined upper centrals, and deep bite. Best Angle label?",
+    "options": [
+      "Class II division 1",
+      "Class I open bite",
+      "Class III division 1",
+      "Class II division 2"
+    ],
+    "answer": 3,
+    "explanation": "Molars Class II + retroclined centrals + deep bite = II/2.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_007",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "Pseudo-Class III is most often due to:",
+    "options": [
+      "Only missing lower incisors",
+      "True skeletal maxillary excess only",
+      "Functional anterior shift / premature contacts guiding mandible forward",
+      "Only tongue thrust without occlusion role"
+    ],
+    "answer": 2,
+    "explanation": "Pseudo-Class III: CO–CR discrepancy from occlusal interferences; not true skeletal III.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_008",
+    "topic": "ortho_pedo",
+    "difficulty": "hard",
+    "q": "Adult severe skeletal Class III with completed growth — common definitive pathway?",
+    "options": [
+      "Only removable expansion always",
+      "Only extraction of lower first molars always",
+      "Combined orthodontics and orthognathic surgery when discrepancy is skeletal and large",
+      "Only Class II elastics forever"
+    ],
+    "answer": 2,
+    "explanation": "Large skeletal III in adults often needs ortho + surgery (e.g., BSSO / maxillary advancement).",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_009",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "Overjet measures the horizontal relationship of:",
+    "options": [
+      "Maxillary to mandibular incisors in the anteroposterior direction",
+      "Molar transverse width only",
+      "Vertical overlap of incisors only",
+      "Canine cusp tip to midline only"
+    ],
+    "answer": 0,
+    "explanation": "Overjet = horizontal; overbite = vertical.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_010",
+    "topic": "ortho_pedo",
+    "difficulty": "easy",
+    "q": "Overbite refers to:",
+    "options": [
+      "Transverse molar crossbite only",
+      "Curve of Spee only",
+      "Vertical overlap of maxillary over mandibular incisors",
+      "Horizontal protrusion only"
+    ],
+    "answer": 2,
+    "explanation": "Overbite is vertical overlap.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_011",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "11-year-old with maxillary constriction needing skeletal expansion — appliance often chosen?",
+    "options": [
+      "Only chin cup",
+      "Only lower lingual arch",
+      "Only Hawley without expansion screw",
+      "Haas or Hyrax-type rapid palatal expander (age-dependent)"
+    ],
+    "answer": 3,
+    "explanation": "Maxillary constriction → RPE (Haas/Hyrax) while midpalatal suture still responsive.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_012",
+    "topic": "ortho_pedo",
+    "difficulty": "easy",
+    "q": "Haas expander differs from Hyrax mainly by:",
+    "options": [
+      "Haas is a fixed retainer only",
+      "Hyrax never expands",
+      "Haas is only for adults after SARPE always",
+      "Acrylic palatal coverage contacting mucosa (Haas) vs metal framework only (Hyrax)"
+    ],
+    "answer": 3,
+    "explanation": "Haas has acrylic pads; Hyrax is all-metal screw framework.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_013",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "Quad helix is typically used for:",
+    "options": [
+      "Only fixed retention after braces",
+      "Only mandibular advancement surgery",
+      "Slow maxillary expansion / molar derotation in mixed dentition",
+      "Only Class III reverse pull without expansion"
+    ],
+    "answer": 2,
+    "explanation": "Quad helix: slow expansion, arch development, molar rotation.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_014",
+    "topic": "ortho_pedo",
+    "difficulty": "hard",
+    "q": "Adult with fused midpalatal suture needing significant transverse expansion — often requires:",
+    "options": [
+      "Only chin cup",
+      "Only lower expansion with quad helix",
+      "Only removable spring aligner always",
+      "Surgically assisted RPE (SARPE) or segmental surgery pathways"
+    ],
+    "answer": 3,
+    "explanation": "After suture fusion, pure tooth-borne RPE risks dental tipping; SARPE often indicated.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_015",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "Headgear in Class II growing patients is primarily used to:",
+    "options": [
+      "Restrict maxillary forward growth / distalize upper molars (type-dependent)",
+      "Advance the mandible surgically",
+      "Only extrude lower molars always",
+      "Only expand the palate"
+    ],
+    "answer": 0,
+    "explanation": "Extraoral force to maxilla/molars modifies Class II growth pattern.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_016",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "Facemask / reverse-pull headgear is classically for:",
+    "options": [
+      "Only open bite tongue crib alone",
+      "Growing Class III with maxillary deficiency",
+      "Only adult skeletal Class III without growth",
+      "Only Class II division 2 deep bite"
+    ],
+    "answer": 1,
+    "explanation": "Protracts maxilla in growing maxillary-deficient Class III.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_017",
+    "topic": "ortho_pedo",
+    "difficulty": "easy",
+    "q": "Functional appliances (e.g., Twin Block, Activator) aim mainly to:",
+    "options": [
+      "Replace all fixed appliances in adults always",
+      "Only treat ankylosed teeth",
+      "Only close diastema without growth",
+      "Redirect growth / posture mandible forward in growing Class II"
+    ],
+    "answer": 3,
+    "explanation": "Growth modification for Class II with favorable remaining growth.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_018",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "Chin cup therapy historically targets:",
+    "options": [
+      "Only maxillary constriction",
+      "Only space maintenance",
+      "Growing mandibular prognathism (Class III) — limited/controversial results",
+      "Only open bite without Class III"
+    ],
+    "answer": 2,
+    "explanation": "Chin cup attempts to restrain mandibular growth; evidence mixed.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_019",
+    "topic": "ortho_pedo",
+    "difficulty": "hard",
+    "q": "Transverse discrepancy with unilateral posterior crossbite and functional shift — first priority often:",
+    "options": [
+      "Only anterior veneers",
+      "Extract all first premolars first always",
+      "Wait until all permanent teeth erupt always",
+      "Eliminate shift by expanding / correcting crossbite early"
+    ],
+    "answer": 3,
+    "explanation": "Functional shifts risk asymmetric growth; early crossbite correction preferred.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_020",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "Lingual arch space maintainer primarily preserves:",
+    "options": [
+      "Mandibular arch length / leeway space when primary molars lost",
+      "Maxillary transverse expansion only",
+      "Only Class II elastic wear",
+      "Only vertical dimension of occlusion in complete denture"
+    ],
+    "answer": 0,
+    "explanation": "Lower lingual arch holds molars and preserves E-space.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_021",
+    "topic": "ortho_pedo",
+    "difficulty": "easy",
+    "q": "Band and loop space maintainer is indicated when:",
+    "options": [
+      "A single primary molar is lost early and permanent successor not ready",
+      "Only for missing permanent central always",
+      "Only after full fixed ortho completion",
+      "All four first permanent molars are missing bilaterally always"
+    ],
+    "answer": 0,
+    "explanation": "Unilateral single-tooth primary molar loss → band & loop classic.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_022",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "Distal shoe space maintainer is specifically considered when:",
+    "options": [
+      "Primary second molar lost before eruption of first permanent molar",
+      "Only for maxillary midline diastema",
+      "Only after third molar extraction",
+      "Only primary canine lost with adequate space"
+    ],
+    "answer": 0,
+    "explanation": "Distal shoe guides unerupted 6 into position when E lost early.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_023",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "Nance appliance is used mainly to:",
+    "options": [
+      "Advance mandible in Class III",
+      "Replace SSC on primary molars",
+      "Only expand mandible",
+      "Maintain maxillary arch length / prevent molar mesial drift"
+    ],
+    "answer": 3,
+    "explanation": "Nance: acrylic button + bands on U6s — maxillary space maintainer.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_024",
+    "topic": "ortho_pedo",
+    "difficulty": "hard",
+    "q": "Leeway space (E-space) is clinically important because:",
+    "options": [
+      "There is no MD difference primary vs permanent",
+      "Only affects third molars",
+      "Primary molars are wider MD than premolars — can be used to resolve mild crowding",
+      "Permanent molars are always smaller than primary canines"
+    ],
+    "answer": 2,
+    "explanation": "E-space management can relieve mild crowding without extractions.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_025",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "Premature loss of primary canine often results in:",
+    "options": [
+      "Spontaneous Class III always",
+      "Midline shift toward the loss side and crowding of permanent successor",
+      "Only increased overjet without midline change",
+      "No space or midline consequences"
+    ],
+    "answer": 1,
+    "explanation": "Early C loss → midline deviation + space loss common.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_026",
+    "topic": "ortho_pedo",
+    "difficulty": "easy",
+    "q": "Space maintainer is NOT needed if:",
+    "options": [
+      "Primary second molar lost at age 4 with unerupted 6 always skip maintainer",
+      "Never indicated in primary dentition",
+      "Successor is about to erupt / space is already closed by design and no drift risk",
+      "Always skip if parent prefers no appliance"
+    ],
+    "answer": 2,
+    "explanation": "Indication depends on timing of successor eruption and drift risk.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_027",
+    "topic": "ortho_pedo",
+    "difficulty": "hard",
+    "q": "Serial extraction concept is mainly for:",
+    "options": [
+      "Only Class III surgical cases",
+      "Only trauma avulsion management",
+      "Only adult cosmetic alignment without crowding",
+      "Severe tooth-size/arch-length discrepancy guided extraction sequence in mixed dentition"
+    ],
+    "answer": 3,
+    "explanation": "Planned C → D → 4 sequence in carefully selected crowded mixed dentition.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_028",
+    "topic": "ortho_pedo",
+    "difficulty": "easy",
+    "q": "Stainless steel crown (SSC) on a primary molar is classically indicated for:",
+    "options": [
+      "Only white-spot lesions without cavitation",
+      "Only after complete root resorption",
+      "Multi-surface caries or after pulp therapy",
+      "Only permanent first molars always"
+    ],
+    "answer": 2,
+    "explanation": "SSC restores multi-surface primary molars and post-pulpotomy/pulpectomy teeth.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_029",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "Hall technique SSC differs because it typically:",
+    "options": [
+      "Uses gold casting always",
+      "Requires full pulpectomy first always",
+      "Seals caries with SSC without traditional tooth preparation / LA in selected cases",
+      "Is only for permanent molars"
+    ],
+    "answer": 2,
+    "explanation": "Hall: cement SSC over carious primary molar without local prep in suitable cases.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_030",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "Formocresol pulpotomy in primary molars is being replaced/supplemented by materials such as:",
+    "options": [
+      "MTA or other bioceramic/ferric sulfate protocols (evidence-based alternatives)",
+      "Only pure eugenol forever as gold standard only",
+      "Only composite without pulp treatment",
+      "Only extraction always"
+    ],
+    "answer": 0,
+    "explanation": "Modern pedo pulp therapy favors MTA/bioceramics over classic formocresol where available.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_031",
+    "topic": "ortho_pedo",
+    "difficulty": "hard",
+    "q": "Primary molar with irreversible pulpitis and restorable crown — often:",
+    "options": [
+      "Only fluoride varnish",
+      "Pulpectomy (or extraction if unrestorable / abscess pathway case-based) then SSC",
+      "Only sealant",
+      "Only observation without treatment"
+    ],
+    "answer": 1,
+    "explanation": "Irreversible pulpitis/necrosis in restorable primary → pulpectomy + SSC often.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_032",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "Indirect pulp treatment in deep primary caries aims to:",
+    "options": [
+      "Leave deepest affected dentin, seal with biocompatible liner/restoration to avoid pulp exposure",
+      "Only use without any seal",
+      "Always extract first",
+      "Always expose pulp intentionally"
+    ],
+    "answer": 0,
+    "explanation": "IPT preserves vitality by sealing residual caries away from oral environment.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_033",
+    "topic": "ortho_pedo",
+    "difficulty": "easy",
+    "q": "Most appropriate restoration after primary molar pulpotomy if multi-surface involvement?",
+    "options": [
+      "Stainless steel crown",
+      "Class I amalgam only without coverage",
+      "Sealant only",
+      "No restoration needed"
+    ],
+    "answer": 0,
+    "explanation": "Full coverage SSC protects after pulp therapy.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_034",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "Early childhood caries (ECC) is strongly associated with:",
+    "options": [
+      "Only genetic enamel defects without diet role",
+      "Only delayed eruption",
+      "Frequent sugar/bottle exposure especially night feeding with sweetened liquids",
+      "Only orthodontic Class I"
+    ],
+    "answer": 2,
+    "explanation": "ECC: dietary sugars + bottle habits + plaque; maxillary anteriors classic.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_035",
+    "topic": "ortho_pedo",
+    "difficulty": "easy",
+    "q": "Fluoride varnish is used in children primarily for:",
+    "options": [
+      "Only bleaching teeth",
+      "Only treating irreversible pulpitis",
+      "Caries prevention / remineralization of early lesions",
+      "Only expanding the palate"
+    ],
+    "answer": 2,
+    "explanation": "Professional fluoride varnish reduces caries risk.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_036",
+    "topic": "ortho_pedo",
+    "difficulty": "easy",
+    "q": "If community water is optimally fluoridated and child is low caries risk, systemic fluoride supplements are:",
+    "options": [
+      "Always 1 mg daily regardless",
+      "Always 0.5 mg from birth",
+      "Mandatory until age 18",
+      "Not indicated"
+    ],
+    "answer": 3,
+    "explanation": "Supplements only if water fluoride deficient AND risk warrants — avoid fluorosis.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_037",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "Recommended amount of toothpaste for a toddler (smear/rice-size concept) aims to:",
+    "options": [
+      "Maximize systemic dose intentionally",
+      "Provide topical fluoride benefit while limiting swallow/fluorosis risk",
+      "Avoid all fluoride until age 12",
+      "Use adult strip full length always"
+    ],
+    "answer": 1,
+    "explanation": "Age-appropriate pea/smear amounts reduce ingestion fluorosis risk.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_038",
+    "topic": "ortho_pedo",
+    "difficulty": "hard",
+    "q": "APF gel ~1.23% fluoride professional application — key precaution?",
+    "options": [
+      "Protect soft tissues / suction; avoid in patients who cannot control swallow well",
+      "Apply only on tongue",
+      "Have child swallow fully for systemic benefit",
+      "Never use suction"
+    ],
+    "answer": 0,
+    "explanation": "High-concentration professional fluoride: minimize ingestion.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_039",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "Pit and fissure sealants are most indicated for:",
+    "options": [
+      "Only smooth-surface interproximal lesions",
+      "Deep pits/fissures in caries-risk permanent molars shortly after eruption",
+      "Only after full caries destruction of cusp",
+      "Only primary incisors always"
+    ],
+    "answer": 1,
+    "explanation": "Sealants protect susceptible occlusal anatomy in at-risk teeth.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_040",
+    "topic": "ortho_pedo",
+    "difficulty": "easy",
+    "q": "Tell-Show-Do is primarily a:",
+    "options": [
+      "Antibiotic regimen",
+      "IV deep sedation protocol",
+      "Only general anesthesia indication",
+      "Non-pharmacologic behavior guidance technique"
+    ],
+    "answer": 3,
+    "explanation": "Tell-Show-Do: explain → demonstrate → perform; first-line behavior tool.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_041",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "VOICE control in pedo behavior management means:",
+    "options": [
+      "Pharmacologic sedation",
+      "Always shouting at the child",
+      "Controlled change in tone/volume to gain attention — not yelling abuse",
+      "Only whispering forever"
+    ],
+    "answer": 2,
+    "explanation": "Voice control is assertive communication, ethically applied with parent awareness.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_042",
+    "topic": "ortho_pedo",
+    "difficulty": "hard",
+    "q": "Protective stabilization in pediatric dentistry requires:",
+    "options": [
+      "Always without parent knowledge",
+      "No consent if procedure is short",
+      "Informed consent, indication documentation, and least restrictive approach",
+      "Only for adult patients"
+    ],
+    "answer": 2,
+    "explanation": "Protective stabilization is regulated ethically — consent + necessity.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_043",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "Nitrous oxide in children is typically used for:",
+    "options": [
+      "Only complete general anesthesia equivalent",
+      "Replacing all local anesthesia always",
+      "Treating irreversible pulpitis alone",
+      "Mild–moderate anxiety with rapid onset/recovery when indicated and consented"
+    ],
+    "answer": 3,
+    "explanation": "N2O/O2 anxiolysis adjunct — not a substitute for LA or proper diagnosis.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_044",
+    "topic": "ortho_pedo",
+    "difficulty": "easy",
+    "q": "Frankl behavior rating scale is used to:",
+    "options": [
+      "Stage periodontitis",
+      "Classify child cooperative behavior in dental setting",
+      "Classify Angle malocclusion only",
+      "Measure fluoride ppm in water"
+    ],
+    "answer": 1,
+    "explanation": "Frankl 1–4: definitely negative → definitely positive.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_045",
+    "topic": "ortho_pedo",
+    "difficulty": "easy",
+    "q": "Pierre Robin sequence classic triad includes:",
+    "options": [
+      "Hypertelorism, syndactyly, and Class II only",
+      "Micrognathia, glossoptosis, and cleft palate (airway concern)",
+      "Macroglossia alone without micrognathia",
+      "Only natal teeth without jaw findings"
+    ],
+    "answer": 1,
+    "explanation": "PRS: small mandible → tongue back → cleft/airway issues.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_046",
+    "topic": "ortho_pedo",
+    "difficulty": "easy",
+    "q": "Natal tooth vs neonatal tooth:",
+    "options": [
+      "Neonatal always means supernumerary only",
+      "Natal present at birth; neonatal erupts within first 30 days",
+      "Natal always extracted day 1 without exam",
+      "Both terms mean permanent first molar"
+    ],
+    "answer": 1,
+    "explanation": "Timing defines natal vs neonatal; manage case-based (Riga-Fede, mobility, feeding).",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_047",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "Indication to extract a highly mobile natal tooth often includes:",
+    "options": [
+      "Only extract if Class III molars",
+      "Always extract every natal tooth without assessment",
+      "Never extract even if aspirating risk",
+      "Aspiration risk / severe mobility / traumatic ulceration (Riga-Fede) interfering with feeding"
+    ],
+    "answer": 3,
+    "explanation": "Risk–benefit: mobility/ulceration/feeding issues drive extraction.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_048",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "Ectopic eruption of permanent first molar commonly affects:",
+    "options": [
+      "Only mandibular centrals always",
+      "Only third molars",
+      "Maxillary first permanent molar resorbing distal of primary second molar",
+      "Only canines without molar involvement"
+    ],
+    "answer": 2,
+    "explanation": "Ectopic U6 may resorb E distal; monitor/intercept.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_049",
+    "topic": "ortho_pedo",
+    "difficulty": "hard",
+    "q": "Mesiodens most commonly located:",
+    "options": [
+      "Only in primary molars roots",
+      "Maxillary midline supernumerary (often between centrals)",
+      "Mandibular buccal to first molar always",
+      "Only distal to third molars"
+    ],
+    "answer": 1,
+    "explanation": "Mesiodens = most common supernumerary; midline maxilla.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_050",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "Diastema with thick low frenum — sequence often taught:",
+    "options": [
+      "Frenectomy first always before any ortho",
+      "Only composite without addressing frenum/space",
+      "Extract both centrals",
+      "Close space orthodontically first, then frenectomy if still indicated"
+    ],
+    "answer": 3,
+    "explanation": "Often align/close then revise frenum to reduce reopening risk (case-based).",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_051",
+    "topic": "ortho_pedo",
+    "difficulty": "easy",
+    "q": "Thumb sucking beyond early childhood may cause:",
+    "options": [
+      "No occlusal effects ever",
+      "Only Class III molar always",
+      "Only enamel hypoplasia of all teeth",
+      "Anterior open bite, increased overjet, and narrow maxilla patterns"
+    ],
+    "answer": 3,
+    "explanation": "Non-nutritive sucking habits reshape developing occlusion.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_052",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "Tongue thrust / forward tongue posture is associated with:",
+    "options": [
+      "Only deep bite Class II/2 always",
+      "Only natal teeth",
+      "Only missing premolars",
+      "Anterior open bite tendencies and speech/occlusion interactions"
+    ],
+    "answer": 3,
+    "explanation": "Habit/soft tissue patterns can maintain open bite.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_053",
+    "topic": "ortho_pedo",
+    "difficulty": "hard",
+    "q": "Ankylosed primary molar radiographic/clinical clue?",
+    "options": [
+      "Submerged below occlusal plane / infraocclusion and lack of mobility with metallic sound sometimes",
+      "Always mesiodens formation",
+      "Always increased overjet only",
+      "Always hypermobile grade 3"
+    ],
+    "answer": 0,
+    "explanation": "Ankylosis → infraocclusion; may need extraction/space management.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_054",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "Avulsed permanent tooth best immediate storage medium among common options?",
+    "options": [
+      "Milk (or HBSS if available); keep moist — not dry",
+      "Tap water for days as best",
+      "Alcohol wipe",
+      "Dry gauze only for hours"
+    ],
+    "answer": 0,
+    "explanation": "Extraoral dry time critical; milk/HBSS preferred common media.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_055",
+    "topic": "ortho_pedo",
+    "difficulty": "hard",
+    "q": "Intrusive luxation of immature permanent incisor — concern includes:",
+    "options": [
+      "Only fluoride varnish treatment",
+      "Pulp necrosis / obliteration risk and periodontal damage; monitor vitality closely",
+      "Always immediate root canal same day always for open apex",
+      "No follow-up needed ever"
+    ],
+    "answer": 1,
+    "explanation": "Intrusion is severe; open apex may re-erupt/monitor; closed apex different pathway.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_056",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "Primary tooth intrusion — important rule:",
+    "options": [
+      "Avoid damaging permanent successor; careful monitoring / do not aggressively replant primary usually",
+      "Ignore always",
+      "Always RCT primary same day always",
+      "Always extract permanent bud"
+    ],
+    "answer": 0,
+    "explanation": "Primary trauma: protect permanent tooth germ.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_057",
+    "topic": "ortho_pedo",
+    "difficulty": "easy",
+    "q": "Most common site for supernumerary teeth?",
+    "options": [
+      "Maxillary anterior region (mesiodens)",
+      "Only mandibular premolar region always",
+      "Only third molar area never anterior",
+      "Only primary canines"
+    ],
+    "answer": 0,
+    "explanation": "Maxillary midline most common.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_058",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "Hypodontia most frequently involves which permanent teeth (excluding third molars)?",
+    "options": [
+      "Permanent first molars always",
+      "Only mandibular centrals always",
+      "All canines bilaterally always",
+      "Mandibular second premolars and maxillary lateral incisors"
+    ],
+    "answer": 3,
+    "explanation": "Common missing: lower 5s, upper 2s (and third molars).",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_059",
+    "topic": "ortho_pedo",
+    "difficulty": "hard",
+    "q": "Taurodontism is:",
+    "options": [
+      "Extra cusp on premolar only",
+      "Complete root absence only",
+      "Fusion of two tooth buds only",
+      "Elongated pulp chamber with apically displaced furcation"
+    ],
+    "answer": 3,
+    "explanation": "Bull-like tooth: large chamber, short roots relative.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_060",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "Dens invaginatus (dens in dente) risk:",
+    "options": [
+      "No clinical significance",
+      "Early pulp involvement / caries in invagination — often maxillary laterals",
+      "Only Class II malocclusion",
+      "Only periodontal abscess without pulp risk"
+    ],
+    "answer": 1,
+    "explanation": "Invagination can communicate with pulp; seal/prevent early.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_061",
+    "topic": "ortho_pedo",
+    "difficulty": "easy",
+    "q": "Cervical vertebral maturation (CVM) or hand-wrist films are used to:",
+    "options": [
+      "Diagnose caries",
+      "Measure fluoride levels",
+      "Classify Kennedy edentulism",
+      "Assess skeletal growth stage for timing of growth modification"
+    ],
+    "answer": 3,
+    "explanation": "Growth staging guides functional appliance / facemask timing.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_062",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "Bolton analysis evaluates:",
+    "options": [
+      "Only soft tissue profile",
+      "Only transverse expansion amount",
+      "Tooth size discrepancy between maxillary and mandibular arches",
+      "Only skeletal Class from ANB"
+    ],
+    "answer": 2,
+    "explanation": "Bolton: MD tooth widths upper vs lower for ideal occlusion.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_063",
+    "topic": "ortho_pedo",
+    "difficulty": "hard",
+    "q": "ANB angle approximately indicates:",
+    "options": [
+      "Only vertical open bite amount",
+      "Only transverse molar width",
+      "Sagittal relationship of maxilla to mandible (jaw discrepancy)",
+      "Only soft tissue lip competence"
+    ],
+    "answer": 2,
+    "explanation": "ANB from SNA–SNB reflects AP jaw relationship (with caveats).",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_064",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "Curve of Spee leveling in ortho typically:",
+    "options": [
+      "Requires space (proclination/expansion/extraction tradeoffs)",
+      "Never requires any arch space",
+      "Only treated with SSC",
+      "Only affects third molars"
+    ],
+    "answer": 0,
+    "explanation": "Deep curve of Spee correction consumes arch perimeter.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_065",
+    "topic": "ortho_pedo",
+    "difficulty": "easy",
+    "q": "Retention after orthodontics is needed because:",
+    "options": [
+      "Retention is never indicated",
+      "Periodontal fibers and soft tissues tend to relapse toward original positions",
+      "Only third molars cause all relapse always",
+      "Teeth never move after braces"
+    ],
+    "answer": 1,
+    "explanation": "Relapse risk → retainers.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_066",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "Hawley retainer advantages include:",
+    "options": [
+      "Only bonded permanently to every tooth always",
+      "Never allows settling",
+      "Adjustability and durability; allows some settling",
+      "Expands suture in adults reliably"
+    ],
+    "answer": 2,
+    "explanation": "Hawley: acrylic + wire; adjustable; classic removable retainer.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_067",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "Fixed bonded retainer is often used for:",
+    "options": [
+      "Only maxillary expansion activation weekly",
+      "Only Class III reverse pull",
+      "Lower anterior irregularity prevention after alignment",
+      "Only space maintenance for unerupted 6 with distal shoe role"
+    ],
+    "answer": 2,
+    "explanation": "3–3 bonded wire common for mandibular anterior relapse control.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_068",
+    "topic": "ortho_pedo",
+    "difficulty": "hard",
+    "q": "Root resorption risk during ortho increases with:",
+    "options": [
+      "Only sealants",
+      "Only light forces for 2 weeks always",
+      "Only fluoride toothpaste use",
+      "Heavy forces, prolonged treatment, pre-existing root anomalies, trauma history"
+    ],
+    "answer": 3,
+    "explanation": "Iatrogenic root resorption multifactorial — force magnitude/duration matter.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_069",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "Ideal orthodontic force is generally:",
+    "options": [
+      "Light continuous force producing efficient movement with less damage",
+      "Only impact trauma force",
+      "Maximum intermittent force always best",
+      "No force ever works"
+    ],
+    "answer": 0,
+    "explanation": "Light continuous forces preferred biologically.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_070",
+    "topic": "ortho_pedo",
+    "difficulty": "easy",
+    "q": "Center of resistance of a single-rooted tooth is approximately:",
+    "options": [
+      "At the incisal edge only",
+      "Along the root (roughly mid-root region conceptually)",
+      "In the pulp chamber crown only",
+      "At the adjacent contact point only"
+    ],
+    "answer": 1,
+    "explanation": "Force through center of resistance → translation concepts.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_071",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "Tipping vs bodily movement:",
+    "options": [
+      "Tipping never occurs with braces",
+      "Bodily movement always easier than tipping",
+      "Both identical mechanically",
+      "Tipping needs less force/moment control; bodily movement requires controlled couple"
+    ],
+    "answer": 3,
+    "explanation": "Mechanics: moments and forces determine movement type.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_072",
+    "topic": "ortho_pedo",
+    "difficulty": "hard",
+    "q": "Corticotomy-assisted ortho claims aim to:",
+    "options": [
+      "Replace all retainers",
+      "Eliminate need for diagnosis",
+      "Accelerate tooth movement via regional acceleratory phenomena (case-selected)",
+      "Only treat caries"
+    ],
+    "answer": 2,
+    "explanation": "PAOO/corticotomy: selective surgery + ortho; not routine for all.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_073",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "Interceptive ortho for anterior crossbite in mixed dentition often uses:",
+    "options": [
+      "Only full dentures",
+      "Only SSC on laterals",
+      "Removable appliance with Z-spring / inclined plane / limited fixed 2×4",
+      "Only wait until age 30"
+    ],
+    "answer": 2,
+    "explanation": "Early correct dental anterior crossbite to avoid wear/shift.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_074",
+    "topic": "ortho_pedo",
+    "difficulty": "easy",
+    "q": "Posterior crossbite in primary/mixed dentition with shift should be:",
+    "options": [
+      "Treated only with antibiotics",
+      "Corrected early when indicated to remove functional shift",
+      "Treated only with bleaching",
+      "Ignored until implants"
+    ],
+    "answer": 1,
+    "explanation": "Early transverse correction when functional shift present.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_075",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "Primate spaces are normally found:",
+    "options": [
+      "Never in primary teeth",
+      "Mesial to maxillary canines and distal to mandibular canines in primary dentition",
+      "Only between permanent first molars",
+      "Only after orthodontic extraction"
+    ],
+    "answer": 1,
+    "explanation": "Primate spaces facilitate permanent incisor eruption alignment.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_076",
+    "topic": "ortho_pedo",
+    "difficulty": "hard",
+    "q": "Ugly duckling stage refers to:",
+    "options": [
+      "Only natal teeth phase",
+      "Only complete denture try-in",
+      "Permanent Class III skeletal only",
+      "Transient maxillary midline diastema and flared laterals during mixed dentition before canine eruption"
+    ],
+    "answer": 3,
+    "explanation": "Physiologic diastema often closes as canines erupt — don't rush unnecessary treatment.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_077",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "Early loss of primary second molar without maintainer often causes:",
+    "options": [
+      "Distal drift of centrals only always",
+      "No effect on permanent occlusion",
+      "Spontaneous expansion",
+      "Mesial drift of first permanent molar and space loss for premolar"
+    ],
+    "answer": 3,
+    "explanation": "E loss → 6 drifts mesially → blocked-out premolar.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_078",
+    "topic": "ortho_pedo",
+    "difficulty": "easy",
+    "q": "Primary teeth compared with permanent: enamel and dentin are generally:",
+    "options": [
+      "Thicker enamel always with tiny pulps",
+      "Identical dimensions",
+      "No pulp in primary teeth",
+      "Thinner enamel/dentin with larger pulp chambers relatively"
+    ],
+    "answer": 3,
+    "explanation": "Primary: thinner hard tissues, larger pulps → faster pulp involvement.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_079",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "Strip crown technique is typically for:",
+    "options": [
+      "Esthetic restoration of carious primary incisors",
+      "Only implant temporization",
+      "Only permanent molar SSC equivalent",
+      "Only RPD flange"
+    ],
+    "answer": 0,
+    "explanation": "Celluloid strip crowns for primary anterior caries.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_080",
+    "topic": "ortho_pedo",
+    "difficulty": "hard",
+    "q": "Mineral trioxide aggregate (MTA) advantage in pedo pulp therapy includes:",
+    "options": [
+      "Only as temporary cement for SSC always",
+      "Biocompatibility and sealing with high success in pulpotomy/apexification contexts",
+      "Antibiotic properties equal to systemic amoxicillin",
+      "High tooth discoloration never an issue for all formulations"
+    ],
+    "answer": 1,
+    "explanation": "MTA/bioceramics favored for pulp and apex barriers; gray MTA can discolor.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_081",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "Apexogenesis is performed when:",
+    "options": [
+      "Only primary teeth with abscess",
+      "Vital pulp in immature permanent tooth — allow continued root development",
+      "Only complete root adult teeth",
+      "Necrotic immature tooth only as first term"
+    ],
+    "answer": 1,
+    "explanation": "Apexogenesis = vital pulp therapy immature; apexification = necrotic immature barrier.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_082",
+    "topic": "ortho_pedo",
+    "difficulty": "easy",
+    "q": "Most cariogenic sugar among dietary sugars commonly cited?",
+    "options": [
+      "Sucrose",
+      "Water",
+      "Xylitol",
+      "Casein only"
+    ],
+    "answer": 0,
+    "explanation": "Sucrose strongly linked to caries; xylitol non-cariogenic polyol.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_083",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "Xylitol chewing gum benefit mechanism mainly:",
+    "options": [
+      "Non-fermentable sweetener reducing S. mutans / stimulating saliva",
+      "Expands maxilla",
+      "Replaces toothbrushing completely",
+      "Systemic antibiotic effect"
+    ],
+    "answer": 0,
+    "explanation": "Xylitol: anti-caries adjunct, not sole hygiene.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_084",
+    "topic": "ortho_pedo",
+    "difficulty": "hard",
+    "q": "Critical pH below which enamel demineralization accelerates is approximately:",
+    "options": [
+      "9.0",
+      "2.0 only for dentin never enamel",
+      "Around 5.5 (hydroxyapatite)",
+      "7.5 always"
+    ],
+    "answer": 2,
+    "explanation": "Enamel critical pH ~5.5; dentin higher (~6.2) — know concept.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_085",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "CAMBRA / caries risk assessment influences:",
+    "options": [
+      "Only Kennedy class",
+      "Only implant brand choice",
+      "Frequency of recall, fluoride intensity, and sealant decisions",
+      "Only shade selection for crowns"
+    ],
+    "answer": 2,
+    "explanation": "Risk-based prevention is modern pedo/operative standard.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_086",
+    "topic": "ortho_pedo",
+    "difficulty": "easy",
+    "q": "First permanent tooth to erupt usually:",
+    "options": [
+      "Maxillary canine at age 6 always first",
+      "Upper lateral at age 4 always",
+      "Mandibular first permanent molar (around 6 years) — often with lower central",
+      "Third molar at age 6"
+    ],
+    "answer": 2,
+    "explanation": "6-year molar commonly first permanent (with lower centrals timing).",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_087",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "Mixed dentition period roughly spans:",
+    "options": [
+      "Only ages 1–3",
+      "From eruption of first permanent teeth to exfoliation of last primary (~6–12 years)",
+      "Only after age 20",
+      "Only prenatal"
+    ],
+    "answer": 1,
+    "explanation": "Mixed dentition = primary + permanent together.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_088",
+    "topic": "ortho_pedo",
+    "difficulty": "hard",
+    "q": "Incisor liability refers to:",
+    "options": [
+      "Only molar leeway space identical concept without incisors",
+      "Only overjet measurement",
+      "Liability insurance for dentists only",
+      "MD width difference: permanent incisors larger than primary incisors — space challenge"
+    ],
+    "answer": 3,
+    "explanation": "Incisor liability: permanent incisors need more space than primary predecessors.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_089",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "Flush terminal plane in primary molars often leads to:",
+    "options": [
+      "Always need orthognathic surgery",
+      "Always open bite only",
+      "End-on permanent molars initially; may convert to Class I with leeway space",
+      "Always severe Class III only"
+    ],
+    "answer": 2,
+    "explanation": "Primary molar terminal plane predicts permanent molar relationship.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_090",
+    "topic": "ortho_pedo",
+    "difficulty": "easy",
+    "q": "Mesial step primary molar terminal plane often predicts:",
+    "options": [
+      "Always Class III only",
+      "Class I permanent molars",
+      "Always open bite",
+      "Always Class II only"
+    ],
+    "answer": 1,
+    "explanation": "Mesial step → favorable Class I tendency.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_091",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "Distal step primary terminal plane often predicts:",
+    "options": [
+      "No relation to permanent molars",
+      "Class II permanent molar relationship tendency",
+      "Always ideal Class I without exception",
+      "Always Class III"
+    ],
+    "answer": 1,
+    "explanation": "Distal step → Class II risk.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_092",
+    "topic": "ortho_pedo",
+    "difficulty": "hard",
+    "q": "Growth modification for Class II is most effective:",
+    "options": [
+      "Never related to growth stage",
+      "Only in edentulous patients",
+      "Only after age 40",
+      "During circumpubertal growth spurt"
+    ],
+    "answer": 3,
+    "explanation": "Time functional appliances to peak growth.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_093",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "Skeletal open bite tendencies may involve:",
+    "options": [
+      "Only natal teeth",
+      "Only deep bite always",
+      "Increased lower face height / steep mandibular plane patterns",
+      "Only missing all molars"
+    ],
+    "answer": 2,
+    "explanation": "Vertical growth patterns contribute to skeletal open bite.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_094",
+    "topic": "ortho_pedo",
+    "difficulty": "easy",
+    "q": "Anterior open bite dental habit-related first approach often:",
+    "options": [
+      "Habit cessation counseling / habit-breaking appliance as indicated",
+      "Only full mouth extraction",
+      "Only antibiotics",
+      "Immediate orthognathic surgery always"
+    ],
+    "answer": 0,
+    "explanation": "Eliminate habit before or with orthodontic correction.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_095",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "Goshgarian transpalatal arch can:",
+    "options": [
+      "Stabilize molars, control rotation, minor expansion/constriction",
+      "Replace lower lingual arch for mandibular E-space only",
+      "Only treat irreversible pulpitis",
+      "Only advance mandible"
+    ],
+    "answer": 0,
+    "explanation": "TPA: maxillary molar control.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_096",
+    "topic": "ortho_pedo",
+    "difficulty": "hard",
+    "q": "Rapid palatal expansion midpalatal suture opening clinical sign?",
+    "options": [
+      "Only root resorption of all teeth same day",
+      "Appearance of midline diastema between central incisors",
+      "Immediate Class III molar only",
+      "Only darkening of molars"
+    ],
+    "answer": 1,
+    "explanation": "Midline diastema often appears during active RPE — suture opening sign.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_097",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "Retention of RPE result often uses:",
+    "options": [
+      "Only nightguard without holding expansion",
+      "Only bleaching trays",
+      "Immediate removal day after expansion complete always",
+      "Holding expansion months with appliance passive / retainer phase"
+    ],
+    "answer": 3,
+    "explanation": "Allow bony fill; relapse high if not retained.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_098",
+    "topic": "ortho_pedo",
+    "difficulty": "easy",
+    "q": "Crossbite elastics are used for:",
+    "options": [
+      "Only bleaching",
+      "Only fluoride delivery",
+      "Only implant torque",
+      "Correcting individual tooth crossbites with vertical/transverse vectors"
+    ],
+    "answer": 3,
+    "explanation": "Cross elastics move opposing teeth toward correction.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_099",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "Extraction of premolars in ortho is considered when:",
+    "options": [
+      "Only for primary teeth crowding",
+      "Always for every Class I mild 1 mm crowding",
+      "Moderate–severe crowding / protrusion needs space and non-extraction plan insufficient",
+      "Never in any crowded case"
+    ],
+    "answer": 2,
+    "explanation": "Extraction decision: crowding, profile, anchorage, Bolton.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_100",
+    "topic": "ortho_pedo",
+    "difficulty": "hard",
+    "q": "Maximum anchorage means:",
+    "options": [
+      "No orthodontic force used",
+      "Allowing all molars to drift freely mesially always",
+      "Only removable appliances",
+      "Minimal unwanted movement of anchor units during space closure"
+    ],
+    "answer": 3,
+    "explanation": "Anchorage grades: maximum/moderate/minimum — how much anchor loss allowed.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_101",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "Temporary anchorage devices (TADs/miniscrews) provide:",
+    "options": [
+      "Only fluoride reservoirs",
+      "Only temporary crowns on implants for dentures",
+      "Skeletal anchorage for difficult movements (intrusion, distalization)",
+      "Only space maintainers for primary molars"
+    ],
+    "answer": 2,
+    "explanation": "TADs: absolute anchorage adjuncts.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_102",
+    "topic": "ortho_pedo",
+    "difficulty": "easy",
+    "q": "Orthodontic separators are placed to:",
+    "options": [
+      "Etch enamel for sealants",
+      "Create space for band seating",
+      "Deliver local anesthesia",
+      "Measure overjet"
+    ],
+    "answer": 1,
+    "explanation": "Elastomeric/spring separators open contacts for bands.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_103",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "White spot lesions after braces — prevention includes:",
+    "options": [
+      "Avoiding all fluoride",
+      "Excellent hygiene, fluoride, possible sealants/MI paste protocols",
+      "Never cleaning around brackets",
+      "Only increasing sugar snacks"
+    ],
+    "answer": 1,
+    "explanation": "WSLs = demineralization around plaque-retentive brackets.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_104",
+    "topic": "ortho_pedo",
+    "difficulty": "hard",
+    "q": "Debonding residual adhesive ideally removed with:",
+    "options": [
+      "Hydrochloric acid etch only",
+      "Careful finishing burs/polish protocols minimizing enamel loss",
+      "Only ultrasonic scaler on root surface aggressively",
+      "Coarse diamond until dentin always"
+    ],
+    "answer": 1,
+    "explanation": "Protect enamel during adhesive cleanup.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_105",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "Phase I (interceptive) ortho goals include:",
+    "options": [
+      "Finish all detailing like full adult braces always in phase I",
+      "Only place implants",
+      "Only extract all permanent first molars",
+      "Correct harmful habits/crossbites/space issues early; reduce Phase II complexity"
+    ],
+    "answer": 3,
+    "explanation": "Interceptive: limited early goals, not full comprehensive always.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_106",
+    "topic": "ortho_pedo",
+    "difficulty": "easy",
+    "q": "Oral habits appliance (crib) is for:",
+    "options": [
+      "Only implant impression",
+      "Thumb/digit sucking or tongue thrust habit interruption",
+      "Only Class II headgear force",
+      "Only SSC cementation"
+    ],
+    "answer": 1,
+    "explanation": "Habit-breaking cribs/rakes when counseling insufficient.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_107",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "Supernumerary tooth interfering with eruption — management often:",
+    "options": [
+      "Only antibiotics long-term",
+      "Always ignore until age 40",
+      "Surgical removal and space/eruption guidance as needed",
+      "Only fluoride varnish"
+    ],
+    "answer": 2,
+    "explanation": "Remove obstruction; monitor/align successors.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_108",
+    "topic": "ortho_pedo",
+    "difficulty": "hard",
+    "q": "Impacted maxillary canine localization uses:",
+    "options": [
+      "Only periodontal probing of molars",
+      "Parallax radiographs / CBCT when indicated for position and pathology",
+      "Only vitality test",
+      "Only saliva tests"
+    ],
+    "answer": 1,
+    "explanation": "Locate canine bucco-palatally before surgical-ortho exposure.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_109",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "Open exposure vs closed eruption technique for impacted canine depends on:",
+    "options": [
+      "Only patient shoe size",
+      "Always only closed for all cases without exception",
+      "Always only open without ortho",
+      "Position of tooth, keratinized tissue needs, and ortho plan"
+    ],
+    "answer": 3,
+    "explanation": "Surgical exposure technique individualized.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_110",
+    "topic": "ortho_pedo",
+    "difficulty": "easy",
+    "q": "Space regainer differs from space maintainer because it:",
+    "options": [
+      "Only holds space passively always",
+      "Is only a fluoride tray",
+      "Actively reopens lost space rather than only holding existing space",
+      "Is only for complete dentures"
+    ],
+    "answer": 2,
+    "explanation": "Regainer = active; maintainer = passive.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_111",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "Lip bumper is used mainly to:",
+    "options": [
+      "Treat irreversible pulpitis",
+      "Expand midpalatal suture rapidly in adults",
+      "Reduce lower lip pressure on incisors / upright molars distal slightly / preserve E-space",
+      "Replace SSC"
+    ],
+    "answer": 2,
+    "explanation": "Lip bumper: soft tissue shield + molar uprighting effects.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_112",
+    "topic": "ortho_pedo",
+    "difficulty": "hard",
+    "q": "Class II elastics typically run:",
+    "options": [
+      "From upper anterior/canine region to lower molar region",
+      "Only on retainers at night without brackets ever",
+      "Only across midline diastema without AP vector",
+      "From lower molar to upper molar only vertical box always"
+    ],
+    "answer": 0,
+    "explanation": "Class II elastics: anterior maxilla → posterior mandible vector.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_113",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "Class III elastics run:",
+    "options": [
+      "From upper canine to lower molar only (that's Class II)",
+      "From lower anterior to upper molar region",
+      "Only vertical triangular on one tooth",
+      "Never used in orthodontics"
+    ],
+    "answer": 1,
+    "explanation": "Class III elastics opposite vector to Class II.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_114",
+    "topic": "ortho_pedo",
+    "difficulty": "easy",
+    "q": "Over-retained primary tooth with permanent successor present and path clear — often:",
+    "options": [
+      "Always root canal primary and keep forever",
+      "Always extract the permanent",
+      "Apply sealant only",
+      "Extract primary to allow permanent eruption"
+    ],
+    "answer": 3,
+    "explanation": "Remove over-retained primary when successor ready.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_115",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "Congenitally missing maxillary lateral — treatment options include:",
+    "options": [
+      "Always extract all centrals",
+      "Only RPE without addressing laterals",
+      "Only observation without any plan ever",
+      "Canine substitution or space opening for prosthetic replacement (implant/bridge) — case planned"
+    ],
+    "answer": 3,
+    "explanation": "Interdisciplinary: ortho space open vs substitute.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_116",
+    "topic": "ortho_pedo",
+    "difficulty": "hard",
+    "q": "Root canal treated primary molar that is restorable still often receives:",
+    "options": [
+      "Only temporary zinc oxide without coverage long term",
+      "No restoration",
+      "SSC for structural protection",
+      "Only orthodontic band without occlusal coverage always"
+    ],
+    "answer": 2,
+    "explanation": "After pulpectomy, full coverage preferred.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_117",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "Glass ionomer in pedo is valued for:",
+    "options": [
+      "No fluoride release",
+      "Chemical adhesion and fluoride release in cervical/ART contexts",
+      "Highest polish like microfill always",
+      "Best for high-stress permanent cusp replacement only always"
+    ],
+    "answer": 1,
+    "explanation": "GI: adhesion + F release; useful in pedo/ART.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_118",
+    "topic": "ortho_pedo",
+    "difficulty": "hard",
+    "q": "Midazolam oral sedation overdose signs include:",
+    "options": [
+      "Only hypertension without CNS effect",
+      "No antidote exists conceptually",
+      "Excessive CNS/respiratory depression — reverse with flumazenil and support airway",
+      "Immediate hyperthermia only like MH always"
+    ],
+    "answer": 2,
+    "explanation": "Benzodiazepine OD: airway + flumazenil (with seizure caution in chronic benzo users).",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_119",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "Uncooperative child needing extensive dental work with failed behavior guidance — may require:",
+    "options": [
+      "Discharge without any plan or referral",
+      "Only homeopathy",
+      "Forced treatment without consent",
+      "Deep sedation / GA in appropriate facility with informed consent"
+    ],
+    "answer": 3,
+    "explanation": "Stepwise: basic guidance → N2O → sedation/GA referral when indicated.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  },
+  {
+    "id": "oped_boost_120",
+    "topic": "ortho_pedo",
+    "difficulty": "easy",
+    "q": "Primary herpetic gingivostomatitis in a child — dental elective care?",
+    "options": [
+      "Start orthodontic brackets immediately",
+      "Extract all anterior teeth",
+      "Defer elective care until resolved; supportive management",
+      "Scale and polish aggressively same day always"
+    ],
+    "answer": 2,
+    "explanation": "Acute viral infection: postpone elective dentistry.",
+    "source": "premium_ortho_pedo",
+    "subtopics": []
+  }
+]

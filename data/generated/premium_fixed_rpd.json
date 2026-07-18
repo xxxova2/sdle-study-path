@@ -1,0 +1,1802 @@
+[
+  {
+    "id": "fr_boost_001",
+    "topic": "restorative",
+    "difficulty": "easy",
+    "q": "New crown with food packing at the cervical embrasure — most common cause among options?",
+    "options": [
+      "Too much occlusal stain characterization only",
+      "Perfect tight contact with ideal contour always",
+      "Shade mismatch alone",
+      "Open proximal contact"
+    ],
+    "answer": 3,
+    "explanation": "Open contacts are the classic cause of food impaction after crowns.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "fixed"
+    ]
+  },
+  {
+    "id": "fr_boost_002",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "Preparation type associated with greatest pulp injury risk among listed?",
+    "options": [
+      "Full coverage crown preparation",
+      "No-prep veneer conceptual",
+      "Pit and fissure sealant",
+      "Minimal preventive resin restoration"
+    ],
+    "answer": 0,
+    "explanation": "Full coverage removes the most tooth structure → highest thermal/mechanical pulp risk.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "fixed"
+    ]
+  },
+  {
+    "id": "fr_boost_003",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "Ferrule effect for a crowned endodontically treated tooth refers to:",
+    "options": [
+      "Only the post length inside the canal without coronal tooth",
+      "Circumferential sound tooth structure height engaging the crown for fracture resistance",
+      "Cement brand only",
+      "Shade of ceramic only"
+    ],
+    "answer": 1,
+    "explanation": "≈2 mm ferrule of sound dentin improves resistance form.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "fixed"
+    ]
+  },
+  {
+    "id": "fr_boost_004",
+    "topic": "restorative",
+    "difficulty": "hard",
+    "q": "Inadequate ferrule and short clinical crown — strategies include:",
+    "options": [
+      "Only bleach the tooth",
+      "Ignore and cement temporary forever",
+      "Crown lengthening / orthodontic extrusion / consider differently (onlay/RPD) case-based",
+      "Always place longer post only without ferrule concern"
+    ],
+    "answer": 2,
+    "explanation": "Need biologic width respect + ferrule; lengthen or rethink plan.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "fixed"
+    ]
+  },
+  {
+    "id": "fr_boost_005",
+    "topic": "restorative",
+    "difficulty": "easy",
+    "q": "Chamfer finish line is classically used for:",
+    "options": [
+      "Only all porcelain shoulder always without exception",
+      "Cast metal and many zirconia/metal-ceramic margin designs (material-dependent)",
+      "Only field occlusal rest seat on RPD",
+      "Only implant cover screw groove"
+    ],
+    "answer": 1,
+    "explanation": "Chamfer common for metal and many monolithic zirconia margins.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "fixed"
+    ]
+  },
+  {
+    "id": "fr_boost_006",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "Rounded shoulder finish line often preferred for:",
+    "options": [
+      "Only Class V GI without crown",
+      "Only complete denture post dam",
+      "All-ceramic crowns needing bulk of ceramic at margin",
+      "Only gold foil restorations"
+    ],
+    "answer": 2,
+    "explanation": "Ceramics need rounded shoulder / deep chamfer for strength at margin.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "fixed"
+    ]
+  },
+  {
+    "id": "fr_boost_007",
+    "topic": "restorative",
+    "difficulty": "hard",
+    "q": "Biological width violation by crown margin commonly results in:",
+    "options": [
+      "Chronic gingival inflammation / discomfort / possible bone loss",
+      "Only better esthetics forever",
+      "Improved attachment always",
+      "No soft tissue response"
+    ],
+    "answer": 0,
+    "explanation": "Invading supracrestal tissue attachment → persistent inflammation.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "fixed"
+    ]
+  },
+  {
+    "id": "fr_boost_008",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "Supragingival margins advantages include:",
+    "options": [
+      "Always worse hygiene than subgingival",
+      "Impossible to impress",
+      "Easier hygiene, impression accuracy, and less tissue trauma",
+      "Only for temporary crowns"
+    ],
+    "answer": 2,
+    "explanation": "When esthetics allow, supragingival is periodontally friendlier.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "fixed"
+    ]
+  },
+  {
+    "id": "fr_boost_009",
+    "topic": "restorative",
+    "difficulty": "easy",
+    "q": "Open margin on a crown clinically may show:",
+    "options": [
+      "Only improved cement washout never",
+      "Catch with explorer, plaque trap, sensitivity, recurrent caries risk",
+      "Perfect seal always if shade is good",
+      "No clinical significance"
+    ],
+    "answer": 1,
+    "explanation": "Open margins fail — remake often needed.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "fixed"
+    ]
+  },
+  {
+    "id": "fr_boost_010",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "Retention of a crown is primarily increased by:",
+    "options": [
+      "Only relying on temporary cement long-term",
+      "Taller preparation walls and limiting taper (reasonable total occlusal convergence)",
+      "Making walls as short and overly tapered as possible",
+      "Eliminating all axial walls"
+    ],
+    "answer": 1,
+    "explanation": "Height + opposing walls + taper control = retention/resistance.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "fixed"
+    ]
+  },
+  {
+    "id": "fr_boost_011",
+    "topic": "restorative",
+    "difficulty": "hard",
+    "q": "Total occlusal convergence ideally approximates:",
+    "options": [
+      "A modest taper (often cited ~6–12° total, clinically often higher) — avoid over-taper",
+      "No axial walls",
+      "Parallel 0° always achievable and required",
+      "45° per wall always ideal"
+    ],
+    "answer": 0,
+    "explanation": "Over-taper kills retention; undercut prevents seating.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "fixed"
+    ]
+  },
+  {
+    "id": "fr_boost_012",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "Resistance form resists:",
+    "options": [
+      "Only color change",
+      "Dislodgment by apical/oblique forces (tipping/twisting)",
+      "Only shade selection",
+      "Only fluoride release"
+    ],
+    "answer": 1,
+    "explanation": "Resistance ≠ retention; grooves/boxes help short preps.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "fixed"
+    ]
+  },
+  {
+    "id": "fr_boost_013",
+    "topic": "restorative",
+    "difficulty": "easy",
+    "q": "Die spacer in lab work is used to:",
+    "options": [
+      "Replace articulating paper",
+      "Increase occlusal vertical dimension of denture",
+      "Provide cement space for complete seating of casting/crown",
+      "Etch ceramic only"
+    ],
+    "answer": 2,
+    "explanation": "Die spacer ≈ cement film thickness allowance.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "fixed"
+    ]
+  },
+  {
+    "id": "fr_boost_014",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "PVS (addition silicone) impression advantage:",
+    "options": [
+      "Hydrophilic as water itself without technique",
+      "Excellent dimensional stability and accuracy for definitive impressions",
+      "Must pour within 30 seconds always or worthless",
+      "Cannot be used with stock trays ever"
+    ],
+    "answer": 1,
+    "explanation": "PVS: stable, accurate; still need dry field/technique.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "fixed"
+    ]
+  },
+  {
+    "id": "fr_boost_015",
+    "topic": "restorative",
+    "difficulty": "hard",
+    "q": "Polyether impression material is noted for:",
+    "options": [
+      "Good hydrophilicity / wettability but can be stiff and absorb water if stored wet",
+      "Identical to alginate in stability",
+      "Never accurate for crowns",
+      "Only used for complete denture preliminary always"
+    ],
+    "answer": 0,
+    "explanation": "Polyether: hydrophilic, rigid; store dry.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "fixed"
+    ]
+  },
+  {
+    "id": "fr_boost_016",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "Alginate is most appropriate for:",
+    "options": [
+      "Final ceramic veneer margin always",
+      "Preliminary impressions / study casts / opposing casts — not definitive crown margins usually",
+      "Border molded complete denture final only always",
+      "Definitive implant open-tray multiunit final always first choice"
+    ],
+    "answer": 1,
+    "explanation": "Irreversible hydrocolloid: prelim, not precision finals.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "fixed"
+    ]
+  },
+  {
+    "id": "fr_boost_017",
+    "topic": "restorative",
+    "difficulty": "easy",
+    "q": "Retraction cord main purpose before impression:",
+    "options": [
+      "Anesthetize pulp",
+      "Expand palate",
+      "Etch enamel",
+      "Displace gingiva to capture finish line"
+    ],
+    "answer": 3,
+    "explanation": "Tissue management for margin capture.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "fixed"
+    ]
+  },
+  {
+    "id": "fr_boost_018",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "Provisional crown important functions include:",
+    "options": [
+      "Only marketing",
+      "Only shade practice without other roles",
+      "Replace need for final forever",
+      "Pulp protection, positional stability, gingival health, and occlusal function"
+    ],
+    "answer": 3,
+    "explanation": "Temps are therapeutic, not just placeholders.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "fixed"
+    ]
+  },
+  {
+    "id": "fr_boost_019",
+    "topic": "restorative",
+    "difficulty": "hard",
+    "q": "Post retention is less critical than:",
+    "options": [
+      "Removing all remaining tooth",
+      "Preserving radicular dentin and achieving ferrule/coronal retention of core/crown",
+      "Ignoring apical seal",
+      "Making the widest longest post possible always"
+    ],
+    "answer": 1,
+    "explanation": "Posts retain cores — they don't strengthen roots; ferrule matters more.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "fixed"
+    ]
+  },
+  {
+    "id": "fr_boost_020",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "Easiest post type to retrieve among common options?",
+    "options": [
+      "Silver point endo fill used as post",
+      "Threaded metal active post always safest and easiest",
+      "Cast gold post always easiest",
+      "Fiber post (more than cast metal often)"
+    ],
+    "answer": 3,
+    "explanation": "Fiber posts more retrievable; cast posts harder.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "fixed"
+    ]
+  },
+  {
+    "id": "fr_boost_021",
+    "topic": "restorative",
+    "difficulty": "easy",
+    "q": "Resin cement is often chosen for:",
+    "options": [
+      "Only complete denture soft liner",
+      "Only zinc oxide temporary always",
+      "Silica-based ceramics / bonding protocols when isolation allows",
+      "Only amalgam bonding never ceramics"
+    ],
+    "answer": 2,
+    "explanation": "Adhesive resin cements for etchable ceramics (with proper priming).",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "fixed"
+    ]
+  },
+  {
+    "id": "fr_boost_022",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "RMGI cement commonly used for:",
+    "options": [
+      "Metal and zirconia crowns when adhesive ceramic protocol not required",
+      "Only orthodontic separators",
+      "Only temporary 1-day temps exclusively",
+      "Only direct pulp cap as MTA replacement always"
+    ],
+    "answer": 0,
+    "explanation": "RMGI: fluoride, easier handling; popular for many crowns.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "fixed"
+    ]
+  },
+  {
+    "id": "fr_boost_023",
+    "topic": "restorative",
+    "difficulty": "hard",
+    "q": "Zirconia bonding challenge is mainly due to:",
+    "options": [
+      "Lack of silica glass phase — needs special primers (MDP) / retention form rather than classic HF etch",
+      "Being pure polymer",
+      "Being identical to lithium disilicate HF etch protocol without change",
+      "Dissolving in water in minutes"
+    ],
+    "answer": 0,
+    "explanation": "Zirconia ≠ glass ceramic; MDP primers + mechanical retention.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "fixed"
+    ]
+  },
+  {
+    "id": "fr_boost_024",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "Lithium disilicate (e.max-type) cementation often involves:",
+    "options": [
+      "Only glass ionomer without any etch/silane consideration always",
+      "Spot weld to abutment",
+      "No surface treatment ever",
+      "HF etch + silane + resin cement (protocol-dependent)"
+    ],
+    "answer": 3,
+    "explanation": "Glass ceramics: etch + silane adhesive pathway.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "fixed"
+    ]
+  },
+  {
+    "id": "fr_boost_025",
+    "topic": "restorative",
+    "difficulty": "easy",
+    "q": "Cantilever FPD major risk is:",
+    "options": [
+      "No occlusal force issues",
+      "Only shade mismatch",
+      "Always stronger than fixed-fixed long span",
+      "Leverage forces unseating/ torquing abutment"
+    ],
+    "answer": 3,
+    "explanation": "Cantilevers need strict case selection; forces unfavorable.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "fixed"
+    ]
+  },
+  {
+    "id": "fr_boost_026",
+    "topic": "restorative",
+    "difficulty": "easy",
+    "q": "Minimum safety distance commonly taught between implant and inferior alveolar nerve?",
+    "options": [
+      "0 mm — implant may touch nerve",
+      "No radiographic planning needed",
+      "10 cm mandatory always",
+      "Approximately 2 mm"
+    ],
+    "answer": 3,
+    "explanation": "≈2 mm safety zone to IAN is a high-yield exam figure.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "implant"
+    ]
+  },
+  {
+    "id": "fr_boost_027",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "Osseointegration means:",
+    "options": [
+      "Soft tissue fibrous encapsulation only as success",
+      "Only cement seal to crown",
+      "Only screw tightness without bone contact",
+      "Direct structural/functional connection between ordered living bone and implant surface"
+    ],
+    "answer": 3,
+    "explanation": "Brånemark concept: bone–implant interface without intervening soft tissue.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "implant"
+    ]
+  },
+  {
+    "id": "fr_boost_028",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "Peri-implant mucositis is characterized by:",
+    "options": [
+      "Always advanced crater bone loss and mobility",
+      "Complete osseointegration failure only",
+      "Only shade mismatch of crown",
+      "Inflammation of soft tissues around implant without progressive crestal bone loss (beyond initial remodeling)"
+    ],
+    "answer": 3,
+    "explanation": "Mucositis = soft tissue; peri-implantitis includes bone loss.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "implant"
+    ]
+  },
+  {
+    "id": "fr_boost_029",
+    "topic": "restorative",
+    "difficulty": "hard",
+    "q": "Peri-implantitis includes:",
+    "options": [
+      "Only cement excess without any bone change ever",
+      "Only loose cover screw day 1",
+      "Inflammation with progressive loss of supporting bone around a functioning implant",
+      "Only reversible gingivitis on natural teeth"
+    ],
+    "answer": 2,
+    "explanation": "Peri-implantitis: plaque-related bone loss around implants.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "implant"
+    ]
+  },
+  {
+    "id": "fr_boost_030",
+    "topic": "restorative",
+    "difficulty": "easy",
+    "q": "Uncontrolled diabetes patient needing tooth replacement — often preferred initially?",
+    "options": [
+      "Immediate full-arch implants same day without control",
+      "No dental treatment ever",
+      "Long-span FPD always first regardless",
+      "Removable prosthesis options until systemic control improves"
+    ],
+    "answer": 3,
+    "explanation": "Poorly controlled DM → higher implant failure; reversible RPD often safer interim.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "implant"
+    ]
+  },
+  {
+    "id": "fr_boost_031",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "Smoking effect on implants?",
+    "options": [
+      "Increased failure / peri-implant disease risk",
+      "Improves osseointegration always",
+      "No effect ever documented",
+      "Only improves soft tissue"
+    ],
+    "answer": 0,
+    "explanation": "Smoking is a major risk factor for implant complications.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "implant"
+    ]
+  },
+  {
+    "id": "fr_boost_032",
+    "topic": "restorative",
+    "difficulty": "hard",
+    "q": "Minimum inter-implant distance often cited for standard implants to preserve bone?",
+    "options": [
+      "0.1 mm always ideal",
+      "Implants should always touch",
+      "About 3 mm between adjacent implants (platform/concept dependent)",
+      "20 mm mandatory minimum always"
+    ],
+    "answer": 2,
+    "explanation": "≈3 mm inter-implant helps maintain interproximal bone (classic teaching).",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "implant"
+    ]
+  },
+  {
+    "id": "fr_boost_033",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "Distance from implant to adjacent natural tooth often taught ≈:",
+    "options": [
+      "15 mm always",
+      "1.5 mm minimum",
+      "Touch the root intentionally",
+      "0 mm"
+    ],
+    "answer": 1,
+    "explanation": "≈1.5 mm to adjacent tooth to protect periodontal bone.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "implant"
+    ]
+  },
+  {
+    "id": "fr_boost_034",
+    "topic": "restorative",
+    "difficulty": "easy",
+    "q": "Primary stability of an implant refers to:",
+    "options": [
+      "Only screw access hole position",
+      "Only crown shade",
+      "Only soft tissue color at 1 year",
+      "Mechanical stability at placement from bone engagement"
+    ],
+    "answer": 3,
+    "explanation": "Primary = mechanical at surgery; secondary = biologic osseointegration.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "implant"
+    ]
+  },
+  {
+    "id": "fr_boost_035",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "Immediate loading requires primarily:",
+    "options": [
+      "Always loading mobile implants in poor bone without splinting plan",
+      "High primary stability and appropriate occlusal scheme/case selection",
+      "No stability needed if cement is strong",
+      "Only anterior esthetics without stability"
+    ],
+    "answer": 1,
+    "explanation": "ISQ/torque thresholds and prosthetic control matter for immediate load.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "implant"
+    ]
+  },
+  {
+    "id": "fr_boost_036",
+    "topic": "restorative",
+    "difficulty": "hard",
+    "q": "Cement-retained implant crown excess cement is associated with:",
+    "options": [
+      "Improved osseointegration always",
+      "Only better hygiene always",
+      "No soft tissue effect",
+      "Peri-implant inflammation / bone loss risk"
+    ],
+    "answer": 3,
+    "explanation": "Residual cement is a classic peri-implantitis contributor.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "implant"
+    ]
+  },
+  {
+    "id": "fr_boost_037",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "Screw-retained implant crown advantage:",
+    "options": [
+      "Cannot be used on multiunit",
+      "Always better esthetics in every anterior case without exception",
+      "Never needs precise angulation planning",
+      "Retrievability and avoidance of residual cement"
+    ],
+    "answer": 3,
+    "explanation": "Screw-retained: retrievable, no cement; access hole/esthetics tradeoffs.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "implant"
+    ]
+  },
+  {
+    "id": "fr_boost_038",
+    "topic": "restorative",
+    "difficulty": "easy",
+    "q": "Cover screw purpose during submerged healing:",
+    "options": [
+      "Provide immediate occlusion",
+      "Measure IAN distance",
+      "Act as final abutment for crown",
+      "Seal implant platform during osseointegration submerged protocol"
+    ],
+    "answer": 3,
+    "explanation": "Cover screw protects internals in two-stage submerged approach.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "implant"
+    ]
+  },
+  {
+    "id": "fr_boost_039",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "Healing abutment is used to:",
+    "options": [
+      "Shape soft tissue emergence during transmucosal healing",
+      "Cut the IAN",
+      "Deliver final torque only without soft tissue role",
+      "Replace need for surgical guide always"
+    ],
+    "answer": 0,
+    "explanation": "Healing collar guides gingival architecture.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "implant"
+    ]
+  },
+  {
+    "id": "fr_boost_040",
+    "topic": "restorative",
+    "difficulty": "hard",
+    "q": "Platform switching concept aims to:",
+    "options": [
+      "Only change screw color",
+      "Widen every abutment to bone edge always",
+      "Medialize implant–abutment junction to reduce crestal bone remodeling stress/inflammation horizontally",
+      "Eliminate need for hygiene"
+    ],
+    "answer": 2,
+    "explanation": "Platform switch: narrower abutment on wider platform — biologic width horizontal component.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "implant"
+    ]
+  },
+  {
+    "id": "fr_boost_041",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "CBCT in implant planning is valuable for:",
+    "options": [
+      "Only caries diagnosis on smooth surfaces",
+      "Replacing all clinical exams",
+      "Only measuring shade",
+      "3D bone volume, nerve canal, sinus anatomy assessment"
+    ],
+    "answer": 3,
+    "explanation": "Cross-sectional imaging for safe implant placement.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "implant"
+    ]
+  },
+  {
+    "id": "fr_boost_042",
+    "topic": "restorative",
+    "difficulty": "easy",
+    "q": "Sinus lift is considered when:",
+    "options": [
+      "Always for every single tooth implant",
+      "Only for mandibular anteriors always",
+      "Mandibular IAN is too close only",
+      "Posterior maxilla residual bone height insufficient for desired implant length"
+    ],
+    "answer": 3,
+    "explanation": "Augment sinus floor when RBH inadequate.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "implant"
+    ]
+  },
+  {
+    "id": "fr_boost_043",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "Implant mobility after supposed integration period suggests:",
+    "options": [
+      "Normal healthy implant always mobile like tooth PDL",
+      "Failure of osseointegration / mechanical failure until proven otherwise",
+      "Only shade problem",
+      "Success pathognomonic"
+    ],
+    "answer": 1,
+    "explanation": "Integrated implants should not be mobile.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "implant"
+    ]
+  },
+  {
+    "id": "fr_boost_044",
+    "topic": "restorative",
+    "difficulty": "hard",
+    "q": "Keratinized mucosa around implants — clinical relevance often taught:",
+    "options": [
+      "Only mobile mucosa always ideal for hygiene",
+      "Soft tissue type never matters around implants",
+      "Adequate keratinized tissue may facilitate hygiene and comfort (debated quantity)",
+      "Keratinized tissue causes peri-implantitis always"
+    ],
+    "answer": 2,
+    "explanation": "Many clinicians prefer ≥2 mm KT for maintainability.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "implant"
+    ]
+  },
+  {
+    "id": "fr_boost_045",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "Antibiotic prophylaxis for routine implant placement in healthy patient?",
+    "options": [
+      "Practice varies; not a substitute for sterile technique — follow current evidence/protocol",
+      "Antibiotics replace sterile draping",
+      "Megadose forever without indication always mandatory identical to IE high-risk always",
+      "Never consider infection risk at all"
+    ],
+    "answer": 0,
+    "explanation": "Evidence mixed for routine Abx; asepsis primary; high-risk patients individualized.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "implant"
+    ]
+  },
+  {
+    "id": "fr_boost_046",
+    "topic": "restorative",
+    "difficulty": "easy",
+    "q": "Kennedy Class I is:",
+    "options": [
+      "Unilateral edentulous area with natural teeth both sides",
+      "Bilateral distal extension edentulous areas",
+      "Single posterior edentulous area unilateral",
+      "Anterior edentulous area crossing midline only"
+    ],
+    "answer": 1,
+    "explanation": "Class I = bilateral free-end saddles.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "rpd"
+    ]
+  },
+  {
+    "id": "fr_boost_047",
+    "topic": "restorative",
+    "difficulty": "easy",
+    "q": "Kennedy Class II is:",
+    "options": [
+      "Tooth-bounded posterior only bilateral",
+      "Anterior only crossing midline",
+      "Bilateral distal extension",
+      "Unilateral distal extension edentulous area"
+    ],
+    "answer": 3,
+    "explanation": "Class II = one side free-end.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "rpd"
+    ]
+  },
+  {
+    "id": "fr_boost_048",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "Kennedy Class III is:",
+    "options": [
+      "Unilateral edentulous area with natural teeth remaining both anterior and posterior to it",
+      "Only full edentulism",
+      "Anterior crossing midline only",
+      "Bilateral distal extension"
+    ],
+    "answer": 0,
+    "explanation": "Class III = tooth-bounded unilateral space.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "rpd"
+    ]
+  },
+  {
+    "id": "fr_boost_049",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "Kennedy Class IV is:",
+    "options": [
+      "Posterior tooth-bounded only",
+      "Bilateral distal extension",
+      "Single anterior edentulous area that crosses the midline",
+      "Unilateral distal extension"
+    ],
+    "answer": 2,
+    "explanation": "Class IV = anterior crossing midline; no modifications by definition.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "rpd"
+    ]
+  },
+  {
+    "id": "fr_boost_050",
+    "topic": "restorative",
+    "difficulty": "hard",
+    "q": "Applegate rule: classification should be done:",
+    "options": [
+      "Randomly",
+      "Before any exam",
+      "After extractions planned are done and with most posterior edentulous area determining class",
+      "Only by number of missing anteriors always ignoring posteriors"
+    ],
+    "answer": 2,
+    "explanation": "Applegate rules refine Kennedy application.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "rpd"
+    ]
+  },
+  {
+    "id": "fr_boost_051",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "Most destructive force direction on RPD abutments?",
+    "options": [
+      "Horizontal / lateral forces",
+      "Forces only toward residual ridge mucosa always harmless",
+      "No force direction matters",
+      "Light vertical along long axis of abutment"
+    ],
+    "answer": 0,
+    "explanation": "Lateral torquing forces damage abutments most.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "rpd"
+    ]
+  },
+  {
+    "id": "fr_boost_052",
+    "topic": "restorative",
+    "difficulty": "easy",
+    "q": "Distal extension RPD support is derived from:",
+    "options": [
+      "Combination of residual ridge mucosa and abutment teeth",
+      "Only implants always",
+      "Teeth only with zero ridge contact ideal",
+      "Only soft liner without rests"
+    ],
+    "answer": 0,
+    "explanation": "Tooth-tissue borne for Class I/II.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "rpd"
+    ]
+  },
+  {
+    "id": "fr_boost_053",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "Occlusal rest seat preparation should ideally direct forces:",
+    "options": [
+      "Horizontally off-axis always",
+      "Occlusally away without positive seat",
+      "Only onto soft tissue papilla",
+      "Along the long axis of the abutment tooth"
+    ],
+    "answer": 3,
+    "explanation": "Rests transmit vertical forces axially.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "rpd"
+    ]
+  },
+  {
+    "id": "fr_boost_054",
+    "topic": "restorative",
+    "difficulty": "hard",
+    "q": "Lingual bar major connector requires approximately:",
+    "options": [
+      "Only 1 mm total height always enough",
+      "Zero clearance from gingiva always touching",
+      "Placement on sloping unattached tissue without depth",
+      "Adequate depth from free gingival margin to floor of mouth (often ≥7–8 mm functional depth concept)"
+    ],
+    "answer": 3,
+    "explanation": "Insufficient depth → use lingual plate instead.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "rpd"
+    ]
+  },
+  {
+    "id": "fr_boost_055",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "Lingual plate is preferred when:",
+    "options": [
+      "Always when depth is huge and teeth perfect only reason",
+      "Insufficient lingual vestibular depth for a bar / need for indirect retention / future tooth loss anticipated",
+      "Never in mandibular arch",
+      "Only maxillary arch"
+    ],
+    "answer": 1,
+    "explanation": "Plate when bar won't fit or added functions needed.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "rpd"
+    ]
+  },
+  {
+    "id": "fr_boost_056",
+    "topic": "restorative",
+    "difficulty": "easy",
+    "q": "Circumferential (Akers) clasp assembly needs:",
+    "options": [
+      "Rest, retentive arm, reciprocal arm, and proper encirclement (≥180°)",
+      "Only a retentive tip without rest",
+      "Only acrylic without metal",
+      "No reciprocal element ever"
+    ],
+    "answer": 0,
+    "explanation": "Clasp components: support, retention, reciprocation, encirclement, passivity.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "rpd"
+    ]
+  },
+  {
+    "id": "fr_boost_057",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "RPI clasp system components are:",
+    "options": [
+      "Ring clasp only",
+      "Only wrought wire on all teeth without rests",
+      "Mesial rest, distal proximal plate, I-bar retentive arm",
+      "Only embrasure clasps on centrals"
+    ],
+    "answer": 2,
+    "explanation": "RPI: stress-releasing design for distal extensions.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "rpd"
+    ]
+  },
+  {
+    "id": "fr_boost_058",
+    "topic": "restorative",
+    "difficulty": "hard",
+    "q": "I-bar tip engages undercut:",
+    "options": [
+      "Inside the pulp chamber",
+      "From occlusal approach only like cast circumferential always",
+      "In the gingival third from midfacial approaching from gingiva",
+      "On the lingual above height of contour only always"
+    ],
+    "answer": 2,
+    "explanation": "Infrabulge I-bar approaches from below height of contour.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "rpd"
+    ]
+  },
+  {
+    "id": "fr_boost_059",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "Indirect retainer purpose on distal extension RPD:",
+    "options": [
+      "Resist rotational displacement of extension base away from tissues (sticky foods)",
+      "Replace need for rests",
+      "Only esthetics",
+      "Provide primary retention instead of clasps always"
+    ],
+    "answer": 0,
+    "explanation": "Indirect retainers (rests far from fulcrum) oppose lifting of distal base.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "rpd"
+    ]
+  },
+  {
+    "id": "fr_boost_060",
+    "topic": "restorative",
+    "difficulty": "easy",
+    "q": "Surveying an RPD cast is done to:",
+    "options": [
+      "Determine path of insertion, undercuts, and guide planes",
+      "Measure fluoride ppm",
+      "Only pick tooth shade",
+      "Diagnose irreversible pulpitis"
+    ],
+    "answer": 0,
+    "explanation": "Surveyor is essential for framework design.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "rpd"
+    ]
+  },
+  {
+    "id": "fr_boost_061",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "Guide planes on abutments help:",
+    "options": [
+      "Define path of insertion and enhance stability/reciprocation",
+      "Only increase food impaction intentionally",
+      "Eliminate all undercuts for retention forever",
+      "Replace major connector"
+    ],
+    "answer": 0,
+    "explanation": "Parallel guide planes improve path control.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "rpd"
+    ]
+  },
+  {
+    "id": "fr_boost_062",
+    "topic": "restorative",
+    "difficulty": "hard",
+    "q": "Combination syndrome classic features associated with:",
+    "options": [
+      "Maxillary complete denture opposing mandibular anterior teeth only (with missing posteriors) — flabby anterior maxilla, etc.",
+      "Only implant overdenture success pathognomonic",
+      "Only fluoride overdose",
+      "Only Class III RPD without denture"
+    ],
+    "answer": 0,
+    "explanation": "Kelly combination syndrome: CD vs lower anteriors.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "rpd"
+    ]
+  },
+  {
+    "id": "fr_boost_063",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "Altered cast technique is used mainly for:",
+    "options": [
+      "Improving support of distal extension bases by capturing ridge under controlled impression",
+      "Only bleaching trays",
+      "Only anterior esthetic veneers",
+      "Only implant surgical guide"
+    ],
+    "answer": 0,
+    "explanation": "Altered cast: correct tissue detail for free-end saddles.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "rpd"
+    ]
+  },
+  {
+    "id": "fr_boost_064",
+    "topic": "restorative",
+    "difficulty": "easy",
+    "q": "Rest seat in enamel should be:",
+    "options": [
+      "Knife-edge that wedges open contact",
+      "Placed only on soft tissue",
+      "Saucerized rounded floor with positive seat — not sharp stress points",
+      "Perforating into pulp intentionally"
+    ],
+    "answer": 2,
+    "explanation": "Proper rest geometry protects tooth and framework.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "rpd"
+    ]
+  },
+  {
+    "id": "fr_boost_065",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "Wrought wire clasp advantage:",
+    "options": [
+      "Completely rigid never flexes",
+      "Only for complete dentures",
+      "Greater flexibility / adjustability; kinder to periodontium in some cases",
+      "Cannot be used on abutments"
+    ],
+    "answer": 2,
+    "explanation": "WW clasps more flexible than cast half-round often.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "rpd"
+    ]
+  },
+  {
+    "id": "fr_boost_066",
+    "topic": "restorative",
+    "difficulty": "easy",
+    "q": "Centric relation in complete dentures is used as:",
+    "options": [
+      "Only vertical dimension of rest identical always",
+      "Path of implant insertion",
+      "A repeatable reference jaw relation for setting occlusion when ICP not available",
+      "The shade of artificial teeth only"
+    ],
+    "answer": 2,
+    "explanation": "CR is a bone-to-bone relation independent of teeth.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "complete_denture"
+    ]
+  },
+  {
+    "id": "fr_boost_067",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "Vertical dimension of occlusion (VDO) if excessively increased causes:",
+    "options": [
+      "Clicking teeth, facial strain, sore ridges, difficulty speaking/closing",
+      "Always improved comfort only",
+      "No clinical symptoms",
+      "Only better retention always"
+    ],
+    "answer": 0,
+    "explanation": "Over-opened VDO → fatigue, sore spots, phonetics issues.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "complete_denture"
+    ]
+  },
+  {
+    "id": "fr_boost_068",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "Excessively decreased VDO may cause:",
+    "options": [
+      "Only increased freeway space never a problem",
+      "Always TMJ perfection only",
+      "Only better esthetics always",
+      "Overclosure appearance, angular cheilitis risk, reduced chewing efficiency"
+    ],
+    "answer": 3,
+    "explanation": "Collapsed VDO: aged look, possible cheilitis, poor function.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "complete_denture"
+    ]
+  },
+  {
+    "id": "fr_boost_069",
+    "topic": "restorative",
+    "difficulty": "hard",
+    "q": "Freeway space (interocclusal rest space) is approximately often cited:",
+    "options": [
+      "0 mm always ideal",
+      "About 2–4 mm between rest position and VDO (individual variation)",
+      "Negative space preferred",
+      "20 mm always fixed"
+    ],
+    "answer": 1,
+    "explanation": "VDR − VDO ≈ freeway space.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "complete_denture"
+    ]
+  },
+  {
+    "id": "fr_boost_070",
+    "topic": "restorative",
+    "difficulty": "easy",
+    "q": "Primary stress-bearing area in mandibular complete denture often includes:",
+    "options": [
+      "Retromolar pad only without shelf role",
+      "Only sharp mylohyoid ridge without relief",
+      "Buccal shelf",
+      "Incisive papilla"
+    ],
+    "answer": 2,
+    "explanation": "Buccal shelf is cortical and good support zone.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "complete_denture"
+    ]
+  },
+  {
+    "id": "fr_boost_071",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "Maxillary primary stress-bearing areas include:",
+    "options": [
+      "Only the uvula",
+      "Soft palate vibrating line only as sole support",
+      "Hard palate residual ridge (horizontal portions) — with relief of incisive papilla/raphe as needed",
+      "Only buccal frena"
+    ],
+    "answer": 2,
+    "explanation": "Support from firm palate and ridges; relieve midline raphe/torus as needed.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "complete_denture"
+    ]
+  },
+  {
+    "id": "fr_boost_072",
+    "topic": "restorative",
+    "difficulty": "hard",
+    "q": "Posterior palatal seal (post dam) purpose:",
+    "options": [
+      "Increase VDO only",
+      "Compensate acrylic shrinkage and maintain peripheral seal at junction of hard/soft palate",
+      "Only hold posterior teeth",
+      "Replace need for border molding"
+    ],
+    "answer": 1,
+    "explanation": "PPS enhances retention via seal.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "complete_denture"
+    ]
+  },
+  {
+    "id": "fr_boost_073",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "Vibrating line helps locate:",
+    "options": [
+      "Anterior tooth midline only",
+      "IAN position",
+      "Posterior limit of maxillary denture / PPS area",
+      "Occlusal plane of natural Class I only"
+    ],
+    "answer": 2,
+    "explanation": "Ah line / vibrating line for posterior extension.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "complete_denture"
+    ]
+  },
+  {
+    "id": "fr_boost_074",
+    "topic": "restorative",
+    "difficulty": "easy",
+    "q": "Border molding captures:",
+    "options": [
+      "Functional depth and width of vestibules for peripheral seal",
+      "Only implant torque",
+      "Only tooth shade",
+      "Only pulp vitality"
+    ],
+    "answer": 0,
+    "explanation": "Custom tray borders molded to muscle function.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "complete_denture"
+    ]
+  },
+  {
+    "id": "fr_boost_075",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "Common cause of generalized sore mouth under new denture?",
+    "options": [
+      "Always malignancy first without exam",
+      "Occlusal errors / excessive VDO / poor adaptation — diagnose systematically",
+      "Always only vitamin deficiency without mechanical check",
+      "Ignore and reline with household glue"
+    ],
+    "answer": 1,
+    "explanation": "Rule out occlusion, extension, adaptation before systemic-only thinking.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "complete_denture"
+    ]
+  },
+  {
+    "id": "fr_boost_076",
+    "topic": "restorative",
+    "difficulty": "hard",
+    "q": "Sore spot on sharp mylohyoid ridge — management often:",
+    "options": [
+      "Extract the ridge with elevator without planning",
+      "Ignore",
+      "Add more acrylic bulk always on sharp ridge",
+      "Selective relief of denture base over ridge + ensure occlusion correct"
+    ],
+    "answer": 3,
+    "explanation": "Relief over undercut/sharp anatomy; surgery only if needed.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "complete_denture"
+    ]
+  },
+  {
+    "id": "fr_boost_077",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "Balanced occlusion in complete dentures aims to:",
+    "options": [
+      "Eliminate all posterior contact in centric",
+      "Contact only on one side always in all excursions",
+      "Only anterior contact in all movements",
+      "Provide multi-tooth contacts in eccentric excursions to stabilize bases"
+    ],
+    "answer": 3,
+    "explanation": "Balance helps stability of mucosa-borne bases.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "complete_denture"
+    ]
+  },
+  {
+    "id": "fr_boost_078",
+    "topic": "restorative",
+    "difficulty": "easy",
+    "q": "Immediate denture advantage:",
+    "options": [
+      "Perfect fit forever without reline ever",
+      "No need for surgery planning",
+      "Patient never without teeth; soft tissue support/esthetics after extractions",
+      "Always better than conventional without tradeoffs"
+    ],
+    "answer": 2,
+    "explanation": "Immediate CD: esthetics/psychologic benefit; needs relines.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "complete_denture"
+    ]
+  },
+  {
+    "id": "fr_boost_079",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "Tissue conditioner is used to:",
+    "options": [
+      "Cement crowns",
+      "Etch zirconia",
+      "Temporarily improve abused tissue health under ill-fitting denture before final impressions",
+      "Permanently replace hard reline forever always"
+    ],
+    "answer": 2,
+    "explanation": "Soft tissue conditioners for abused mucosa — short-term.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "complete_denture"
+    ]
+  },
+  {
+    "id": "fr_boost_080",
+    "topic": "restorative",
+    "difficulty": "hard",
+    "q": "Neutral zone technique records:",
+    "options": [
+      "Only CR without soft tissue",
+      "Only shade guide",
+      "Only IAN CBCT",
+      "Potential denture space where soft tissue forces are balanced for tooth positioning"
+    ],
+    "answer": 3,
+    "explanation": "Neutral zone helps stability especially in resorbed mandibles.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "complete_denture"
+    ]
+  },
+  {
+    "id": "fr_boost_081",
+    "topic": "restorative",
+    "difficulty": "easy",
+    "q": "Microfilled composites are known for:",
+    "options": [
+      "Highest strength for all posterior stress always",
+      "High polishability but relatively lower strength/fracture resistance vs hybrids",
+      "No filler particles",
+      "Only used as amalgam substitute in high load without limits"
+    ],
+    "answer": 1,
+    "explanation": "Microfill: esthetic polish; weaker — hybrid/nanohybrid for stress.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "materials"
+    ]
+  },
+  {
+    "id": "fr_boost_082",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "Fractured microfilled anterior restoration needing strength — better replacement?",
+    "options": [
+      "Hybrid or nanohybrid composite",
+      "Only unfilled resin",
+      "Another pure microfill only for max strength",
+      "Only temporary cement buildup"
+    ],
+    "answer": 0,
+    "explanation": "Upgrade to hybrid/nanohybrid for mechanical properties.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "materials"
+    ]
+  },
+  {
+    "id": "fr_boost_083",
+    "topic": "restorative",
+    "difficulty": "easy",
+    "q": "Amalgam advantage includes:",
+    "options": [
+      "Durability, wear resistance, and technique tolerance in wet fields relatively",
+      "Tooth-colored always",
+      "Zero mercury content historically always",
+      "Bonds micromechanically to enamel like etched composite without any prep retention"
+    ],
+    "answer": 0,
+    "explanation": "Amalgam: tough, but esthetics/prep retention form needed.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "materials"
+    ]
+  },
+  {
+    "id": "fr_boost_084",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "Gamma-2 phase in low-copper amalgam is associated with:",
+    "options": [
+      "Improved esthetics only",
+      "Corrosion and weakened properties — reduced in high-copper amalgams",
+      "Only bonding to zirconia",
+      "Only fluoride release"
+    ],
+    "answer": 1,
+    "explanation": "High-copper amalgams eliminate much γ2 (Sn-Hg).",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "materials"
+    ]
+  },
+  {
+    "id": "fr_boost_085",
+    "topic": "restorative",
+    "difficulty": "hard",
+    "q": "Creep in amalgam refers to:",
+    "options": [
+      "Only setting expansion in first 3 seconds",
+      "Only color change",
+      "Only thermal conductivity",
+      "Time-dependent plastic deformation under load — less in high-copper alloys"
+    ],
+    "answer": 3,
+    "explanation": "Creep related to marginal breakdown historically.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "materials"
+    ]
+  },
+  {
+    "id": "fr_boost_086",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "Glass ionomer cement bonds by:",
+    "options": [
+      "Only micromechanical etch-and-rinse identical to all composites without ion exchange",
+      "Chemical adhesion (ionic) to tooth structure and releases fluoride",
+      "No adhesion at all",
+      "Only screw retention"
+    ],
+    "answer": 1,
+    "explanation": "GI: polyacid-hydroxyapatite interaction + F release.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "materials"
+    ]
+  },
+  {
+    "id": "fr_boost_087",
+    "topic": "restorative",
+    "difficulty": "easy",
+    "q": "ZOE cement common use:",
+    "options": [
+      "Implant final torque fluid",
+      "Direct permanent pulp capping gold standard over MTA always",
+      "Temporary cementation / provisional sedative restorations (eugenol caveats with resin)",
+      "Definitive cement for all silica ceramics always first choice"
+    ],
+    "answer": 2,
+    "explanation": "ZOE: temporaries; eugenol can inhibit some resin polymerization.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "materials"
+    ]
+  },
+  {
+    "id": "fr_boost_088",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "Calcium hydroxide traditional role:",
+    "options": [
+      "Definitive core buildup under high stress alone always",
+      "Impression material",
+      "Major connector alloy",
+      "Pulp capping liner with high pH antibacterial effect (modern MTA often preferred)"
+    ],
+    "answer": 3,
+    "explanation": "Ca(OH)2: classic pulp liner; solubility issues under restorations.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "materials"
+    ]
+  },
+  {
+    "id": "fr_boost_089",
+    "topic": "restorative",
+    "difficulty": "hard",
+    "q": "MTA / bioceramic advantages for pulp and perforation repair include:",
+    "options": [
+      "Sealing ability, biocompatibility, moisture tolerance relative to older materials",
+      "Tooth color perfect always for all formulations",
+      "Fast 5-second set always for all products without exception",
+      "Cheaper than Ca(OH)2 always only advantage"
+    ],
+    "answer": 0,
+    "explanation": "MTA: excellent seal; long set (classic); possible discoloration.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "materials"
+    ]
+  },
+  {
+    "id": "fr_boost_090",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "EDTA in endodontics primarily:",
+    "options": [
+      "Dissolves organic pulp tissue better than NaOCl",
+      "Cements crowns",
+      "Chelates and removes inorganic smear layer",
+      "Fixes tissues like formalin"
+    ],
+    "answer": 2,
+    "explanation": "NaOCl = organic; EDTA = inorganic smear.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "materials"
+    ]
+  },
+  {
+    "id": "fr_boost_091",
+    "topic": "restorative",
+    "difficulty": "easy",
+    "q": "Sodium hypochlorite endodontic role:",
+    "options": [
+      "Dissolve organic tissue and disinfect canal system",
+      "Remove only smear inorganic exclusively better than EDTA",
+      "Expand palate",
+      "Bond composite to dentin"
+    ],
+    "answer": 0,
+    "explanation": "NaOCl is primary irrigant for organic dissolution/disinfection.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "materials"
+    ]
+  },
+  {
+    "id": "fr_boost_092",
+    "topic": "restorative",
+    "difficulty": "hard",
+    "q": "Mixing CHX and NaOCl can produce:",
+    "options": [
+      "A more effective clear solution always desirable",
+      "Only oxygen beneficial foam without precipitate risk",
+      "Precipitate (PCA-related brown/orange) — avoid mixing in canal",
+      "No interaction"
+    ],
+    "answer": 2,
+    "explanation": "Don't mix CHX + NaOCl; intermediate rinse.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "materials"
+    ]
+  },
+  {
+    "id": "fr_boost_093",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "Hybrid layer in adhesive dentistry is:",
+    "options": [
+      "Only smear layer left intact without resin",
+      "Resin-infiltrated demineralized dentin collagen network",
+      "Metal oxide on zirconia only",
+      "Only enamel prism without dentin"
+    ],
+    "answer": 1,
+    "explanation": "Hybrid layer = micromechanical adhesion basis on dentin.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "materials"
+    ]
+  },
+  {
+    "id": "fr_boost_094",
+    "topic": "restorative",
+    "difficulty": "easy",
+    "q": "Total-etch (etch-and-rinse) on enamel aims to:",
+    "options": [
+      "Smear intact bonding without etch always",
+      "Only desiccate without rinsing acids ever",
+      "Create microporosities for resin micromechanical retention",
+      "Polish without phosphoric acid role"
+    ],
+    "answer": 2,
+    "explanation": "Phosphoric acid etch enamel classic pattern.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "materials"
+    ]
+  },
+  {
+    "id": "fr_boost_095",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "Over-drying dentin after etch in etch-and-rinse systems can cause:",
+    "options": [
+      "Only better hybrid layer always",
+      "Collapse of collagen network and reduced bond quality",
+      "No effect",
+      "Always stronger bonds without exception"
+    ],
+    "answer": 1,
+    "explanation": "Moist bonding concept — don't desiccate etched dentin.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "materials"
+    ]
+  },
+  {
+    "id": "fr_boost_096",
+    "topic": "restorative",
+    "difficulty": "hard",
+    "q": "C-factor (configuration factor) is:",
+    "options": [
+      "Only shade guide number",
+      "Only filler weight %",
+      "Only film thickness of cement in mm always 1:1",
+      "Ratio of bonded to unbonded surfaces — high C-factor increases shrinkage stress"
+    ],
+    "answer": 3,
+    "explanation": "Class I box has high C-factor → incremental fill strategies.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "materials"
+    ]
+  },
+  {
+    "id": "fr_boost_097",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "Polymerization shrinkage of composite clinically may cause:",
+    "options": [
+      "Gap formation, sensitivity, white line margins, cuspal deflection",
+      "Only improved seal always",
+      "No stress ever",
+      "Expansion that always closes gaps beneficially only"
+    ],
+    "answer": 0,
+    "explanation": "Manage with increments, low-shrink materials, soft-start concepts.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "materials"
+    ]
+  },
+  {
+    "id": "fr_boost_098",
+    "topic": "restorative",
+    "difficulty": "easy",
+    "q": "Radiopacity of restorative materials is important to:",
+    "options": [
+      "Only reduce fluoride",
+      "Only improve shade match",
+      "Detect excess material, voids, and recurrent caries on radiographs",
+      "Only increase C-factor"
+    ],
+    "answer": 2,
+    "explanation": "ISO radiopacity requirements aid diagnosis.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "materials"
+    ]
+  },
+  {
+    "id": "fr_boost_099",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "Addition silicone (PVS) inhibition of set can occur with:",
+    "options": [
+      "Sulfur from latex gloves contaminating the putty/wash",
+      "Only water making it set faster always beneficial",
+      "Titanium instruments only",
+      "Only eugenol making set perfect always"
+    ],
+    "answer": 0,
+    "explanation": "Latex sulfur poisons PVS platinum catalyst — use vinyl gloves.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "materials"
+    ]
+  },
+  {
+    "id": "fr_boost_100",
+    "topic": "restorative",
+    "difficulty": "hard",
+    "q": "Coefficient of thermal expansion mismatch between material and tooth can lead to:",
+    "options": [
+      "Marginal percolation / gap stress with temperature cycling",
+      "Perfect eternal seal always if CTE differs a lot",
+      "No clinical relevance ever",
+      "Only better adhesion"
+    ],
+    "answer": 0,
+    "explanation": "CTE compatibility reduces microleakage risk.",
+    "source": "premium_fixed_rpd",
+    "subtopics": [
+      "materials"
+    ]
+  }
+]

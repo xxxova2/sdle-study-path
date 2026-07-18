@@ -1,0 +1,1206 @@
+[
+  {
+    "id": "stream_j26_001",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "A composite restoration shown in the image is identified as a microfilled composite. The restoration has fractured. Which of the following is the most appropriate replacement material?",
+    "options": [
+      "Nano-filled composite",
+      "Hybrid composite",
+      "Macrofilled composite",
+      "(stream listed only 3 options — pad 1)"
+    ],
+    "answer": 1,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #1.",
+    "source": "stream_july2026",
+    "subtopics": [
+      "operative",
+      "materials"
+    ]
+  },
+  {
+    "id": "stream_j26_003",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "A patient with chronic obstructive pulmonary disease (COPD) requires routine dental treatment, has stress. Which of the following is the most appropriate management?",
+    "options": [
+      "Semi-supine position with a low dose of diazepam if needed for anxiety",
+      "Trendelenburg position with nitrous oxide sedation",
+      "Supine position with intravenous sedation",
+      "Supine position with high-dose diazepam"
+    ],
+    "answer": 0,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #3.",
+    "source": "stream_july2026"
+  },
+  {
+    "id": "stream_j26_004",
+    "topic": "ethics",
+    "difficulty": "medium",
+    "q": "During rubber dam isolation of two adjacent teeth, the rubber dam sheet appears wrinkled and does not lie flat around the teeth. What is the most likely cause?",
+    "options": [
+      "The holes are punched too far apart.",
+      "The holes are punched too close together.",
+      "The holes are too small.",
+      "The clamp is too large."
+    ],
+    "answer": 0,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #4.",
+    "source": "stream_july2026"
+  },
+  {
+    "id": "stream_j26_005",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "A newborn presents with cleft palate, mandibular micrognathia, and glossoptosis. What is the most likely diagnosis?",
+    "options": [
+      "Pierre Robin sequence",
+      "Apert syndrome",
+      "Treacher Collins syndrome",
+      "Crouzon syndrome"
+    ],
+    "answer": 0,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #5.",
+    "source": "stream_july2026"
+  },
+  {
+    "id": "stream_j26_006",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "A tooth erupts in a 1-day-old infant. What is this tooth called?",
+    "options": [
+      "Neonatal tooth",
+      "Supernumerary tooth",
+      "Natal tooth",
+      "Primary tooth"
+    ],
+    "answer": 0,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #6.",
+    "source": "stream_july2026"
+  },
+  {
+    "id": "stream_j26_007",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "Which medication may be prescribed for symptomatic relief of burning mouth syndrome?",
+    "options": [
+      "Amoxicillin",
+      "Prednisolone",
+      "Topical benzodiazepine",
+      "Ibuprofen"
+    ],
+    "answer": 2,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #7.",
+    "source": "stream_july2026"
+  },
+  {
+    "id": "stream_j26_008",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "A white lesion cannot be removed by scraping. What is the most likely diagnosis?",
+    "options": [
+      "Leukoplakia",
+      "Pseudomembranous candidiasis",
+      "Burn",
+      "Materia alba"
+    ],
+    "answer": 0,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #8.",
+    "source": "stream_july2026"
+  },
+  {
+    "id": "stream_j26_009",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "A panoramic radiograph shows a large dentigerous cyst surrounding the crown of an impacted tooth. What is the preferred treatment?",
+    "options": [
+      "Extraction only",
+      "Observation",
+      "Marsupialization",
+      "Incision and drainage"
+    ],
+    "answer": 2,
+    "explanation": "Large dentigerous cysts may be marsupialized to decompress and protect adjacent structures; enucleation is also common when feasible. Bank key kept (marsupialization) with clarified explanation. Image not required if stem states large cyst around impacted crown.",
+    "source": "stream_july2026",
+    "subtopics": [
+      "fixed"
+    ]
+  },
+  {
+    "id": "stream_j26_010",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "A pregnant patient presents with a pyogenic granuloma that is asymptomatic and does not interfere with function. What is the best management?",
+    "options": [
+      "Immediate excision",
+      "Radiation therapy",
+      "Root canal treatment",
+      "Observation only"
+    ],
+    "answer": 3,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #10.",
+    "source": "stream_july2026"
+  },
+  {
+    "id": "stream_j26_011",
+    "topic": "oms",
+    "difficulty": "medium",
+    "q": "Swelling localized to the canine fossa / canine region from an odontogenic source. Which primary fascial space is typically involved?",
+    "options": [
+      "Canine (infraorbital) space",
+      "Infratemporal space",
+      "Parapharyngeal space",
+      "Pterygomandibular space"
+    ],
+    "answer": 0,
+    "explanation": "Canine-region odontogenic swelling involves the canine (infraorbital) space, not the infratemporal space (deeper posterior). Fixed wrong stream key; stem no longer depends on a missing image.",
+    "source": "stream_july2026",
+    "usable": true
+  },
+  {
+    "id": "stream_j26_014",
+    "topic": "perio",
+    "difficulty": "medium",
+    "q": "Which medication is most commonly associated with gingival enlargement?",
+    "options": [
+      "Omeprazole",
+      "Nifedipine",
+      "Aspirin",
+      "Metformin"
+    ],
+    "answer": 1,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #14.",
+    "source": "stream_july2026"
+  },
+  {
+    "id": "stream_j26_015",
+    "topic": "ethics",
+    "difficulty": "medium",
+    "q": "How should the dental operating light handle be managed between patients?",
+    "options": [
+      "Wipe only if visibly contaminated",
+      "No infection control is required",
+      "Sterilize in an autoclave",
+      "Cover with a barrier or disinfect after each patient"
+    ],
+    "answer": 3,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #15.",
+    "source": "stream_july2026"
+  },
+  {
+    "id": "stream_j26_016",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "A patient has a midline diastema associated with a high labial frenum. Which treatment sequence is most appropriate?",
+    "options": [
+      "Composite restoration",
+      "Frenectomy only",
+      "Orthodontics → Frenectomy",
+      "Frenectomy → Orthodontics"
+    ],
+    "answer": 2,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #16.",
+    "source": "stream_july2026"
+  },
+  {
+    "id": "stream_j26_017",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "Which diagnostic technique is used to obtain superficial cells from a lesion on the dorsum of the tongue?",
+    "options": [
+      "Excisional biopsy",
+      "Exfoliative cytology",
+      "FNAC",
+      "Incisional biopsy"
+    ],
+    "answer": 1,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #17.",
+    "source": "stream_july2026"
+  },
+  {
+    "id": "stream_j26_018",
+    "topic": "endo",
+    "difficulty": "medium",
+    "q": "A maxillary first molar was treated with obturation of three canals. A radiolucency persists adjacent to the mesiobuccal root. What is the most likely cause?",
+    "options": [
+      "Overfilling",
+      "Vertical root fracture",
+      "Missed MB2 canal",
+      "Root perforation"
+    ],
+    "answer": 2,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #18.",
+    "source": "stream_july2026"
+  },
+  {
+    "id": "stream_j26_019",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "What is the preferred professional fluoride application for a 5-year-old child?",
+    "options": [
+      "Silver diamine fluoride",
+      "Sodium fluoride mouthrinse",
+      "Acidulated phosphate fluoride gel",
+      "Fluoride varnish"
+    ],
+    "answer": 3,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #19.",
+    "source": "stream_july2026"
+  },
+  {
+    "id": "stream_j26_021",
+    "topic": "endo",
+    "difficulty": "medium",
+    "q": "A root canal-treated tooth presents with an isolated deep periodontal pocket and a J-shaped radiolucency. What is the most likely diagnosis?",
+    "options": [
+      "Chronic apical abscess",
+      "Vertical root fracture",
+      "External resorption",
+      "Root perforation"
+    ],
+    "answer": 1,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #21.",
+    "source": "stream_july2026"
+  },
+  {
+    "id": "stream_j26_023",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "A 2-year-old child has extensive caries affecting multiple teeth and is unable to cooperate. What is the best treatment approach?",
+    "options": [
+      "No treatment",
+      "Protective stabilization only",
+      "Nitrous oxide sedation",
+      "General anesthesia"
+    ],
+    "answer": 3,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #23.",
+    "source": "stream_july2026"
+  },
+  {
+    "id": "stream_j26_024",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "A fixed dental bridge is planned to replace a missing tooth. One abutment tooth is significantly tilted, while the other abutment is upright. Which type of bridge is the most appropriate?",
+    "options": [
+      "Fixed-movable (non-rigid connector) bridge",
+      "Cantilever bridge",
+      "Conventional fixed-fixed bridge",
+      "Maryland bridge"
+    ],
+    "answer": 0,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #24.",
+    "source": "stream_july2026",
+    "subtopics": [
+      "fixed"
+    ]
+  },
+  {
+    "id": "stream_j26_025",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "An HIV-positive patient presents with an asymptomatic white lesion on the lateral border of the tongue that cannot be scraped off. What is the most appropriate management?",
+    "options": [
+      "Perform an excisional biopsy",
+      "Prescribe systemic antibiotics",
+      "Reassure the patient; no treatment is required unless symptomatic",
+      "Prescribe antifungal medication"
+    ],
+    "answer": 2,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #25.",
+    "source": "stream_july2026"
+  },
+  {
+    "id": "stream_j26_026",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "A 3-year-old child accidentally swallowed an entire tube of fluoridated toothpaste. What is the most appropriate immediate management?",
+    "options": [
+      "Reassure the parents and discharge the child",
+      "Give milk or another calcium-containing drink and observe the child",
+      "Perform gastric lavage",
+      "Induce vomiting"
+    ],
+    "answer": 1,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #26.",
+    "source": "stream_july2026"
+  },
+  {
+    "id": "stream_j26_027",
+    "topic": "oms",
+    "difficulty": "medium",
+    "q": "A patient with a history of bisphosphonate therapy presents with exposed necrotic bone in the mandible that has persisted for more than 8 weeks. The patient has no history of radiation therapy to the jaws. What is the most likely diagnosis?",
+    "options": [
+      "Osteomyelitis",
+      "Osteosarcoma",
+      "Alveolar osteitis",
+      "Medication-related osteonecrosis of the jaw (MRONJ)"
+    ],
+    "answer": 3,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #27.",
+    "source": "stream_july2026"
+  },
+  {
+    "id": "stream_j26_029",
+    "topic": "ethics",
+    "difficulty": "medium",
+    "q": "A tooth appears enlarged with a bifid crown and a single root canal. What is the most likely diagnosis?",
+    "options": [
+      "Fusion",
+      "Dens invaginatus",
+      "Gemination",
+      "Concrescence"
+    ],
+    "answer": 2,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #29.",
+    "source": "stream_july2026"
+  },
+  {
+    "id": "stream_j26_030",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "Which type of Glass Ionomer Cement is primarily used for luting crowns and bridges?",
+    "options": [
+      "Type II",
+      "Type IV",
+      "Type III",
+      "Type I"
+    ],
+    "answer": 3,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #30.",
+    "source": "stream_july2026",
+    "subtopics": [
+      "fixed",
+      "materials"
+    ]
+  },
+  {
+    "id": "stream_j26_031",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "A patient taking long-term corticosteroids is scheduled for a minor dental procedure. What is the appropriate steroid management?",
+    "options": [
+      "Avoid dental treatment",
+      "Continue the usual dose",
+      "Double the dose in all cases",
+      "Stop steroid medication"
+    ],
+    "answer": 1,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #31.",
+    "source": "stream_july2026"
+  },
+  {
+    "id": "stream_j26_032",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "A tooth has spontaneous pain, lingering pain to cold testing, and periapical radiolucency. What is the diagnosis?",
+    "options": [
+      "Reversible pulpitis",
+      "Normal pulp",
+      "Symptomatic irreversible pulpitis with apical periodontitis",
+      "Necrotic pulp only"
+    ],
+    "answer": 2,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #32.",
+    "source": "stream_july2026"
+  },
+  {
+    "id": "stream_j26_035",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "For maximum esthetics, the finish line of a crown preparation should be placed:",
+    "options": [
+      "Subgingival",
+      "At the gingival margin",
+      "Above the CEJ",
+      "Supragingival"
+    ],
+    "answer": 0,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #35.",
+    "source": "stream_july2026",
+    "subtopics": [
+      "fixed"
+    ]
+  },
+  {
+    "id": "stream_j26_036",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "A patient presents with bulbous crowns, cervical constriction, and abnormal dentin formation. What is the diagnosis?",
+    "options": [
+      "Dentinogenesis imperfecta",
+      "Fluorosis",
+      "Dentin dysplasia",
+      "Amelogenesis imperfecta"
+    ],
+    "answer": 0,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #36.",
+    "source": "stream_july2026",
+    "subtopics": [
+      "fixed"
+    ]
+  },
+  {
+    "id": "stream_j26_037",
+    "topic": "oms",
+    "difficulty": "medium",
+    "q": "Which virus is associated with Kaposi sarcoma in HIV patients?",
+    "options": [
+      "HSV-1",
+      "HPV",
+      "HHV-8",
+      "EBV"
+    ],
+    "answer": 2,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #37.",
+    "source": "stream_july2026",
+    "subtopics": [
+      "pathology"
+    ]
+  },
+  {
+    "id": "stream_j26_038",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "The mesiodistal space available for an implant is 14 mm. What is the ideal implant placement?",
+    "options": [
+      "One 8 mm implant",
+      "Three implants of 3 mm diameter",
+      "One 4 mm implant",
+      "Two implants of 4 mm diameter"
+    ],
+    "answer": 3,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #38.",
+    "source": "stream_july2026",
+    "subtopics": [
+      "implant",
+      "materials"
+    ]
+  },
+  {
+    "id": "stream_j26_039",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "A 30-year-old patient wants a rapid correction instead of lengthy orthodontic treatment. What alternative may be considered?",
+    "options": [
+      "Camouflage treatment",
+      "Growth modification",
+      "Observation",
+      "Orthognathic surgery only"
+    ],
+    "answer": 0,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #39.",
+    "source": "stream_july2026"
+  },
+  {
+    "id": "stream_j26_040",
+    "topic": "ethics",
+    "difficulty": "medium",
+    "q": "Why should a dental assistant remove rings before clinical procedures?",
+    "options": [
+      "They damage instruments",
+      "They tear gloves and interfere with hand hygiene",
+      "They increase radiation exposure",
+      "They cause allergies"
+    ],
+    "answer": 1,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #40.",
+    "source": "stream_july2026"
+  },
+  {
+    "id": "stream_j26_041",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "A child falls directly on the chin. Which fracture is most commonly associated?",
+    "options": [
+      "Condylar fracture",
+      "Le Fort fracture",
+      "Nasal fracture",
+      "Zygomatic fracture"
+    ],
+    "answer": 0,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #41.",
+    "source": "stream_july2026"
+  },
+  {
+    "id": "stream_j26_042",
+    "topic": "oms",
+    "difficulty": "medium",
+    "q": "A sudden blood-filled blister on the oral mucosa in an otherwise healthy patient is most likely:",
+    "options": [
+      "Aphthous ulcer",
+      "Herpes infection",
+      "Pemphigus vulgaris",
+      "Angina bullosa hemorrhagica"
+    ],
+    "answer": 3,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #42.",
+    "source": "stream_july2026",
+    "subtopics": [
+      "pathology"
+    ]
+  },
+  {
+    "id": "stream_j26_043",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "An interference occurring during protrusive movement is called:",
+    "options": [
+      "Centric interference",
+      "Protrusive interference",
+      "Non-working interference",
+      "Working interference"
+    ],
+    "answer": 1,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #43.",
+    "source": "stream_july2026"
+  },
+  {
+    "id": "stream_j26_045",
+    "topic": "endo",
+    "difficulty": "medium",
+    "q": "Which material is commonly used to repair a subcrestal root perforation?",
+    "options": [
+      "Amalgam",
+      "MTA",
+      "Zinc phosphate",
+      "Composite resin"
+    ],
+    "answer": 1,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #45.",
+    "source": "stream_july2026"
+  },
+  {
+    "id": "stream_j26_046",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "A crown fracture involving enamel, dentin, and pulp exposure is classified as:",
+    "options": [
+      "Concussion",
+      "Complicated crown fracture",
+      "Root fracture",
+      "Uncomplicated crown fracture"
+    ],
+    "answer": 1,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #46.",
+    "source": "stream_july2026",
+    "subtopics": [
+      "fixed"
+    ]
+  },
+  {
+    "id": "stream_j26_047",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "Which elastomeric impression material provides excellent accuracy for fixed prosthodontics?",
+    "options": [
+      "Impression compound",
+      "Polyvinyl siloxane (PVS)",
+      "Zinc oxide eugenol",
+      "Alginate"
+    ],
+    "answer": 1,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #47.",
+    "source": "stream_july2026",
+    "subtopics": [
+      "materials"
+    ]
+  },
+  {
+    "id": "stream_j26_048",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "The treatment of a growing patient with skeletal Class III malocclusion is:",
+    "options": [
+      ". Headgear",
+      "Herbst appliance",
+      "Twin block",
+      "Facemask therapy"
+    ],
+    "answer": 3,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #48.",
+    "source": "stream_july2026"
+  },
+  {
+    "id": "stream_j26_049",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "The main purpose of recording centric relation is to:",
+    "options": [
+      "Measure periodontal pocket depth",
+      "Determine tooth color",
+      "Establish a reproducible jaw relationship independent of tooth contact",
+      "Determine implant size"
+    ],
+    "answer": 2,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #49.",
+    "source": "stream_july2026"
+  },
+  {
+    "id": "stream_j26_050",
+    "topic": "endo",
+    "difficulty": "medium",
+    "q": "Internal bleaching may cause:",
+    "options": [
+      "Ankylosis",
+      "Internal resorption",
+      "External cervical resorption",
+      "External surface resorption"
+    ],
+    "answer": 2,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #50.",
+    "source": "stream_july2026"
+  },
+  {
+    "id": "stream_j26_052",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "A dentist should possess:",
+    "options": [
+      "Morals, ethics, and professionalism",
+      "Skills only",
+      "Morals, professionalism, and laws",
+      "Professionalism, laws, and ethics"
+    ],
+    "answer": 3,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #52.",
+    "source": "stream_july2026"
+  },
+  {
+    "id": "stream_j26_053",
+    "topic": "oms",
+    "difficulty": "medium",
+    "q": "A trauma patient has multiple facial fractures. Which structure should be managed first?",
+    "options": [
+      "Maxilla",
+      "Mandible",
+      "Zygoma",
+      "Nasal bone"
+    ],
+    "answer": 1,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #53.",
+    "source": "stream_july2026"
+  },
+  {
+    "id": "stream_j26_054",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "A headache relieved by 100% oxygen therapy is characteristic of:",
+    "options": [
+      "Migraine",
+      "Sinus headache",
+      "Cluster headache",
+      "Tension headache"
+    ],
+    "answer": 2,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #54.",
+    "source": "stream_july2026_inferred"
+  },
+  {
+    "id": "stream_j26_055",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "The closed-mouth mandibular nerve block technique is:",
+    "options": [
+      "Infiltration",
+      "Mental block",
+      "Vazirani-Akinosi",
+      "Gow-Gates"
+    ],
+    "answer": 2,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #55.",
+    "source": "stream_july2026_inferred"
+  },
+  {
+    "id": "stream_j26_056",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "A patient has asymptomatic dens evaginatus. What is the management?",
+    "options": [
+      "No treatment/periodic monitoring",
+      "Crown placement",
+      "Root canal treatment",
+      "Immediate extraction"
+    ],
+    "answer": 0,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #56.",
+    "source": "stream_july2026_inferred"
+  },
+  {
+    "id": "stream_j26_057",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "A child with extensive multisurface caries is best treated with:",
+    "options": [
+      "Composite restorations",
+      "Extraction only",
+      "Stainless steel crowns",
+      "Sealants"
+    ],
+    "answer": 2,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #57.",
+    "source": "stream_july2026_inferred"
+  },
+  {
+    "id": "stream_j26_058",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "The preferred appliance for a Class II patient with long face and hyperdivergent growth pattern is:",
+    "options": [
+      "Low pull headgear",
+      "Facemask",
+      "High pull headgear",
+      "Chin cup"
+    ],
+    "answer": 2,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #58.",
+    "source": "stream_july2026_inferred"
+  },
+  {
+    "id": "stream_j26_059",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "A dental assistant wearing a gown leaves for a break. What should be done?",
+    "options": [
+      "Remove PPE before leaving the clinical area",
+      "Keep PPE on",
+      "Only remove gloves",
+      "Cover with another gown"
+    ],
+    "answer": 0,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #59.",
+    "source": "stream_july2026_inferred"
+  },
+  {
+    "id": "stream_j26_060",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "In a one-stage implant procedure, which component is placed at surgery?",
+    "options": [
+      "Impression coping",
+      "Cast post",
+      "Temporary crown only",
+      "Healing abutment"
+    ],
+    "answer": 3,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #60.",
+    "source": "stream_july2026_inferred",
+    "subtopics": [
+      "implant"
+    ]
+  },
+  {
+    "id": "stream_j26_061",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "The best material to trace the origin of a sinus tract is:",
+    "options": [
+      "Lentulo spiral",
+      "K-file",
+      "Gutta-percha point (#25–30)",
+      "Paper point"
+    ],
+    "answer": 2,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #61.",
+    "source": "stream_july2026"
+  },
+  {
+    "id": "stream_j26_063",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "The procedure shown in the image is:",
+    "options": [
+      "Genioplasty",
+      "Le Fort I osteotomy",
+      "Bilateral Sagittal Split Osteotomy (BSSO)",
+      "Vertical Ramus Osteotomy"
+    ],
+    "answer": 2,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #63.",
+    "source": "stream_july2026"
+  },
+  {
+    "id": "stream_j26_065",
+    "topic": "oms",
+    "difficulty": "medium",
+    "q": "A patient presents after facial trauma. Which of the following is the most characteristic sign of an orbital blowout fracture?",
+    "options": [
+      "Diplopia on upward gaze",
+      "Deviated nasal septum",
+      "Trismus",
+      "Malocclusion"
+    ],
+    "answer": 0,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #65.",
+    "source": "stream_july2026"
+  },
+  {
+    "id": "stream_j26_066",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "A cooperative 5-year-old child has multiple surface caries affecting a primary molar. What is the most appropriate restoration?",
+    "options": [
+      "Amalgam",
+      "Stainless steel crown",
+      "Glass ionomer cement",
+      "Composite resin"
+    ],
+    "answer": 1,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #66.",
+    "source": "stream_july2026"
+  },
+  {
+    "id": "stream_j26_067",
+    "topic": "oms",
+    "difficulty": "medium",
+    "q": "A patient presents with oral blisters and a positive Nikolsky sign. What is the most likely diagnosis?",
+    "options": [
+      "Lichen planus",
+      "Erythema multiforme",
+      "Pemphigus vulgaris",
+      "Mucous membrane pemphigoid"
+    ],
+    "answer": 2,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #67.",
+    "source": "stream_july2026",
+    "subtopics": [
+      "pathology"
+    ]
+  },
+  {
+    "id": "stream_j26_068",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "A positive antinuclear antibody (ANA) test is most strongly associated with:",
+    "options": [
+      "Pemphigoid",
+      "Systemic lupus erythematosus",
+      "Behçet disease",
+      "Pemphigus vulgaris"
+    ],
+    "answer": 1,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #68.",
+    "source": "stream_july2026"
+  },
+  {
+    "id": "stream_j26_069",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "A butterfly-shaped facial rash is characteristic of:",
+    "options": [
+      "Systemic lupus erythematosus",
+      "Rosacea",
+      "Seborrheic dermatitis",
+      "Psoriasis"
+    ],
+    "answer": 0,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #69.",
+    "source": "stream_july2026"
+  },
+  {
+    "id": "stream_j26_070",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "The malar prominence of the face is formed by which bone?",
+    "options": [
+      "Maxilla",
+      "Zygomatic bone",
+      "Nasal bone",
+      "Frontal bone"
+    ],
+    "answer": 1,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #70.",
+    "source": "stream_july2026"
+  },
+  {
+    "id": "stream_j26_071",
+    "topic": "perio",
+    "difficulty": "medium",
+    "q": "The likelihood of complete interdental papilla fill is highest when the distance from the contact point to the alveolar crest is:",
+    "options": [
+      "Less than 5 mm",
+      "More than 8 mm",
+      "7 mm",
+      "6 mm"
+    ],
+    "answer": 0,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #71.",
+    "source": "stream_july2026"
+  },
+  {
+    "id": "stream_j26_072",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "What is the prognosis of a tooth with a vertical root fracture?",
+    "options": [
+      "Fair",
+      "Excellent",
+      "Good",
+      "Hopeless"
+    ],
+    "answer": 3,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #72.",
+    "source": "stream_july2026"
+  },
+  {
+    "id": "stream_j26_073",
+    "topic": "perio",
+    "difficulty": "medium",
+    "q": "Stage I Grade A periodontitis is characterized by:",
+    "options": [
+      "Severe attachment loss",
+      "Rapid progression",
+      "Generalized tooth mobility",
+      "Slow progression with mild attachment loss"
+    ],
+    "answer": 3,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #73.",
+    "source": "stream_july2026"
+  },
+  {
+    "id": "stream_j26_074",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "Which appliance is commonly used to correct a skeletal Class II malocclusion due to maxillary protrusion?",
+    "options": [
+      "Twin block",
+      "Chin cup",
+      "Reverse pull headgear",
+      "Headgear"
+    ],
+    "answer": 3,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #74.",
+    "source": "stream_july2026"
+  },
+  {
+    "id": "stream_j26_075",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "Reverse overjet is most commonly associated with:",
+    "options": [
+      "Class II Division 1",
+      "Class I malocclusion",
+      "Class III malocclusion",
+      "Class II Division 2"
+    ],
+    "answer": 2,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #75.",
+    "source": "stream_july2026"
+  },
+  {
+    "id": "stream_j26_076",
+    "topic": "ethics",
+    "difficulty": "medium",
+    "q": "Which ethical principle means \"do no harm\"?",
+    "options": [
+      "Non-maleficence",
+      "Beneficence",
+      "Autonomy",
+      "Justice"
+    ],
+    "answer": 0,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #76.",
+    "source": "stream_july2026"
+  },
+  {
+    "id": "stream_j26_077",
+    "topic": "ethics",
+    "difficulty": "medium",
+    "q": "A patient with Down syndrome who is a minor requires consent from:",
+    "options": [
+      "Dental assistant",
+      "The child only",
+      "Dentist only",
+      "Parent or legal guardian"
+    ],
+    "answer": 3,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #77.",
+    "source": "stream_july2026"
+  },
+  {
+    "id": "stream_j26_078",
+    "topic": "perio",
+    "difficulty": "medium",
+    "q": "The offset angle is a design feature of which periodontal instrument?",
+    "options": [
+      "Chisel scaler",
+      "Sickle scaler",
+      "Gracey curette",
+      "Hoe scaler"
+    ],
+    "answer": 2,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #78.",
+    "source": "stream_july2026"
+  },
+  {
+    "id": "stream_j26_079",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "Which test is commonly used to diagnose cracked tooth syndrome?",
+    "options": [
+      "Tooth Slooth bite test",
+      "Percussion test",
+      "Thermal test",
+      "Electric pulp test"
+    ],
+    "answer": 0,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #79.",
+    "source": "stream_july2026"
+  },
+  {
+    "id": "stream_j26_080",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "A flap extending from tooth 11 to tooth 13 with one vertical releasing incision is best described as:",
+    "options": [
+      "Triangular flap",
+      "Trapezoidal flap",
+      "Semilunar flap",
+      "Envelope flap"
+    ],
+    "answer": 0,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #80.",
+    "source": "stream_july2026"
+  },
+  {
+    "id": "stream_j26_081",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "A partial-thickness flap includes:",
+    "options": [
+      "Bone and periosteum",
+      "Epithelium, connective tissue, and periosteum",
+      "Epithelium and connective tissue only",
+      "Periosteum only"
+    ],
+    "answer": 2,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #81.",
+    "source": "stream_july2026"
+  },
+  {
+    "id": "stream_j26_082",
+    "topic": "oms",
+    "difficulty": "medium",
+    "q": "Pernicious anemia results from deficiency of:",
+    "options": [
+      "Vitamin B12",
+      "Folic acid",
+      "Iron",
+      "Vitamin C"
+    ],
+    "answer": 0,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #82.",
+    "source": "stream_july2026",
+    "subtopics": [
+      "pathology"
+    ]
+  },
+  {
+    "id": "stream_j26_083",
+    "topic": "oms",
+    "difficulty": "medium",
+    "q": "Ludwig angina commonly involves which fascial spaces?",
+    "options": [
+      "Buccal and canine spaces",
+      "Infratemporal and temporal spaces",
+      "Bilateral submandibular, sublingual, and submental spaces",
+      "Masseteric space only"
+    ],
+    "answer": 2,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #83.",
+    "source": "stream_july2026"
+  },
+  {
+    "id": "stream_j26_084",
+    "topic": "endo",
+    "difficulty": "medium",
+    "q": "Following root canal treatment, a radiograph shows extruded gutta-percha beyond the apex. The patient has no pain and no signs of infection. What is the best management?",
+    "options": [
+      "Follow-up only",
+      "Extraction",
+      "Retreatment",
+      "Immediate apical surgery"
+    ],
+    "answer": 0,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #84.",
+    "source": "stream_july2026"
+  },
+  {
+    "id": "stream_j26_085",
+    "topic": "endo",
+    "difficulty": "medium",
+    "q": "Dens evaginatus is detected in an asymptomatic tooth with a vital pulp. The best initial management is:",
+    "options": [
+      "Extraction",
+      "Follow-up and monitor",
+      "Root canal treatment",
+      "Apicoectomy"
+    ],
+    "answer": 1,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #85.",
+    "source": "stream_july2026"
+  },
+  {
+    "id": "stream_j26_086",
+    "topic": "restorative",
+    "difficulty": "medium",
+    "q": "A patient requests veneers, but a more conservative treatment would achieve the same result. What is the most appropriate response?",
+    "options": [
+      "Delay treatment indefinitely",
+      "Perform veneers because the patient requested them",
+      "Refuse treatment without explanation",
+      "Explain the conservative alternative and recommend the most appropriate treatment"
+    ],
+    "answer": 3,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #86.",
+    "source": "stream_july2026",
+    "subtopics": [
+      "fixed"
+    ]
+  },
+  {
+    "id": "stream_j26_087",
+    "topic": "oms",
+    "difficulty": "medium",
+    "q": "Ramsay Hunt syndrome differs from Bell's palsy by the presence of:",
+    "options": [
+      "Bilateral facial paralysis",
+      "Herpes zoster infection affecting the ear (Herpes zoster oticus)",
+      "Loss of smell only",
+      "Trigeminal nerve paralysis"
+    ],
+    "answer": 1,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #87.",
+    "source": "stream_july2026"
+  },
+  {
+    "id": "stream_j26_088",
+    "topic": "mixed",
+    "difficulty": "medium",
+    "q": "In advanced oral submucous fibrosis with severe trismus, the preferred treatment is:",
+    "options": [
+      "Antibiotics alone",
+      "Observation only",
+      "Surgical release of fibrous bands",
+      "Tooth extraction"
+    ],
+    "answer": 2,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #88.",
+    "source": "stream_july2026"
+  },
+  {
+    "id": "stream_j26_089",
+    "topic": "ortho_pedo",
+    "difficulty": "medium",
+    "q": "A 12-year-old patient has a 1.5 mm midline diastema with unerupted permanent canines. The most appropriate management is:",
+    "options": [
+      "Composite build-up",
+      "Observe, as eruption of the canines may close the space",
+      "Fixed orthodontic treatment immediately",
+      "Immediate frenectomy"
+    ],
+    "answer": 1,
+    "explanation": "From أبطال Google Doc stream (July 2026 window). Stem #89.",
+    "source": "stream_july2026"
+  }
+]

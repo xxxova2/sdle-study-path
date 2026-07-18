@@ -1,0 +1,22 @@
+# Dependencies & tooling (not needed for the live SPA)
+node_modules/
+package-lock.json
+
+# Local archive — textbooks/PDFs are NOT part of the web app
+data/raw/
+
+# Generated review artifacts
+data/generated/playwright_review/
+data/generated/_charcount.json
+data/generated/_run_count.sh
+
+# Optional local deploy copy (repo root already is the app)
+dist/
+
+# OS / editor
+.DS_Store
+*.swp
+.idea/
+.vscode/
+*.log
+/tmp/

@@ -1,0 +1,29 @@
+{
+  "total": 2533,
+  "usable": 2507,
+  "quarantined": 26,
+  "byTopic": {
+    "restorative": 913,
+    "oms": 448,
+    "endo": 305,
+    "perio": 288,
+    "ortho_pedo": 234,
+    "mixed": 175,
+    "ethics": 170
+  },
+  "bySource": {
+    "abtal": 1181,
+    "premium_operative": 375,
+    "saud_delta": 226,
+    "premium_perio": 150,
+    "premium_endo": 150,
+    "premium_ortho_pedo": 120,
+    "always": 100,
+    "premium_fixed_rpd": 100,
+    "stream_july2026": 70,
+    "premium_ethics": 50,
+    "stream_july2026_inferred": 7,
+    "gdoc": 4
+  },
+  "note": "Includes saud_delta import"
+}

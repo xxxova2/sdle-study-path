@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SDLE Study Path — KSA</title>
+    <!-- Substack-like longform: Spectral (falls back offline to Charter/Georgia) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body class="path-app">
+    <header class="topbar simple" id="topbar">
+      <div class="chrome-row">
+        <div class="logo" title="SDLE Study Path">
+          <div class="logo-badge">🦷</div>
+          <span class="logo-text">SDLE</span>
+        </div>
+        <div class="top-stats" id="top-stats"></div>
+        <div id="pomo-bar" class="pomo-bar" aria-label="Focus timer"></div>
+      </div>
+      <nav class="nav simple-nav" id="main-nav" aria-label="Main plan tabs">
+        <button type="button" data-view="today" class="active" title="Today">Today</button>
+        <button type="button" data-view="days" title="All days">Days</button>
+        <button type="button" data-view="pass" title="Pass plan">Pass</button>
+        <button type="button" data-view="always" title="Always-comes free points">Always</button>
+        <button type="button" data-view="practice" title="Extra practice">Extra</button>
+        <button type="button" data-view="mcqs" title="MCQs hub">MCQs</button>
+        <button type="button" data-view="progress" title="Progress">Progress</button>
+      </nav>
+    </header>
+
+    <main class="path-main" id="app"></main>
+
+    <footer class="foot">
+      All reading is inside this app · Videos: local + Drive · Plans 14 / 30 / 45 / 2 mo / 3 mo · Target ≥80% · Pass 542/800
+    </footer>
+
+    <script src="data/highyield.js"></script>
+    <script src="data/scfhs_refs.js"></script>
+    <script src="data/plan_tracks.js"></script>
+    <script src="data/video_links.js"></script>
+    <script src="data/book_index.js"></script>
+    <script src="data/lessons.js"></script>
+    <script src="data/questions.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

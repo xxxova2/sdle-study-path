@@ -1,0 +1,2702 @@
+[
+  {
+    "id": "end_boost_001",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "Lingering thermal pain and spontaneous pain often indicate:",
+    "options": [
+      "Reversible pulpitis only",
+      "Symptomatic irreversible pulpitis",
+      "Only periodontal abscess always",
+      "Healthy pulp always"
+    ],
+    "answer": 1,
+    "explanation": "Lingering/spontaneous → irreversible pattern.",
+    "source": "premium_endo",
+    "subtopics": [
+      "diagnosis"
+    ]
+  },
+  {
+    "id": "end_boost_002",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "Brief provoked thermal pain that does not linger suggests:",
+    "options": [
+      "Reversible pulpitis (or hypersensitive dentin patterns)",
+      "Necrosis with no response ever only possibility",
+      "Only VRF",
+      "Always extraction"
+    ],
+    "answer": 0,
+    "explanation": "Reversible = brief non-lingering.",
+    "source": "premium_endo",
+    "subtopics": [
+      "diagnosis"
+    ]
+  },
+  {
+    "id": "end_boost_003",
+    "topic": "endo",
+    "difficulty": "medium",
+    "q": "No response to vitality tests + draining sinus tract often fits:",
+    "options": [
+      "Reversible pulpitis",
+      "Healthy pulp",
+      "Pulp necrosis with chronic apical abscess pattern",
+      "Only enamel caries"
+    ],
+    "answer": 2,
+    "explanation": "Sinus + nonvital classic.",
+    "source": "premium_endo",
+    "subtopics": [
+      "diagnosis"
+    ]
+  },
+  {
+    "id": "end_boost_004",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "Symptomatic apical periodontitis features:",
+    "options": [
+      "Only natal teeth",
+      "Always vital asymptomatic",
+      "Pain to biting/percussion with apical inflammation",
+      "Only enamel white spot"
+    ],
+    "answer": 2,
+    "explanation": "Percussion tenderness.",
+    "source": "premium_endo",
+    "subtopics": [
+      "diagnosis"
+    ]
+  },
+  {
+    "id": "end_boost_005",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "Acute apical abscess features:",
+    "options": [
+      "Rapid swelling, pain, possible systemic signs",
+      "Only fluorosis",
+      "Always asymptomatic",
+      "Only gingivitis"
+    ],
+    "answer": 0,
+    "explanation": "Acute infection presentation.",
+    "source": "premium_endo",
+    "subtopics": [
+      "diagnosis"
+    ]
+  },
+  {
+    "id": "end_boost_006",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "Narrowest canal diameter historically targeted for WL is:",
+    "options": [
+      "CEJ always",
+      "Occlusal pit",
+      "Apical constriction",
+      "Pulp horn only"
+    ],
+    "answer": 2,
+    "explanation": "Constriction = classic WL zone.",
+    "source": "premium_endo",
+    "subtopics": [
+      "wl"
+    ]
+  },
+  {
+    "id": "end_boost_007",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "Primary tissue-dissolving irrigant is:",
+    "options": [
+      "Saline only always",
+      "EDTA only",
+      "Chlorhexidine only for dissolution",
+      "Sodium hypochlorite (NaOCl)"
+    ],
+    "answer": 3,
+    "explanation": "NaOCl dissolves organic tissue.",
+    "source": "premium_endo",
+    "subtopics": [
+      "irrigant"
+    ]
+  },
+  {
+    "id": "end_boost_008",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "EDTA is used mainly to:",
+    "options": [
+      "Bleach porcelain",
+      "Dissolve all pulp tissue alone better than NaOCl",
+      "Anesthetize the pulp",
+      "Remove inorganic smear layer"
+    ],
+    "answer": 3,
+    "explanation": "EDTA = inorganic/smear.",
+    "source": "premium_endo",
+    "subtopics": [
+      "irrigant"
+    ]
+  },
+  {
+    "id": "end_boost_009",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "Mixing NaOCl and chlorhexidine in the canal is avoided because:",
+    "options": [
+      "They improve each other always",
+      "Required by all guidelines always",
+      "No interaction ever",
+      "They can form a precipitate"
+    ],
+    "answer": 3,
+    "explanation": "Precipitate warning.",
+    "source": "premium_endo",
+    "subtopics": [
+      "irrigant"
+    ]
+  },
+  {
+    "id": "end_boost_010",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "Persistent symptoms after RCT of maxillary molar — think missing:",
+    "options": [
+      "MB2 canal",
+      "Only Class III ortho",
+      "Always only periodontal cause never endo",
+      "Only fluoride lack"
+    ],
+    "answer": 0,
+    "explanation": "MB2 high-yield.",
+    "source": "premium_endo",
+    "subtopics": [
+      "anatomy"
+    ]
+  },
+  {
+    "id": "end_boost_011",
+    "topic": "endo",
+    "difficulty": "medium",
+    "q": "Rotary file separation when tip locks and shaft keeps rotating is classic:",
+    "options": [
+      "Only sealer setting",
+      "Torsional fatigue",
+      "Patient bite only",
+      "Only cyclic fatigue in straight canals always"
+    ],
+    "answer": 1,
+    "explanation": "Tip lock → torsional.",
+    "source": "premium_endo",
+    "subtopics": [
+      "mishap"
+    ]
+  },
+  {
+    "id": "end_boost_012",
+    "topic": "endo",
+    "difficulty": "medium",
+    "q": "File fracture from repeated flexure in curved canals relates to:",
+    "options": [
+      "Only torsional tip lock always",
+      "Cyclic (flexural) fatigue",
+      "Only missing rubber dam",
+      "Only overfill of sealer"
+    ],
+    "answer": 1,
+    "explanation": "Curves → cyclic fatigue.",
+    "source": "premium_endo",
+    "subtopics": [
+      "mishap"
+    ]
+  },
+  {
+    "id": "end_boost_013",
+    "topic": "endo",
+    "difficulty": "medium",
+    "q": "Instrument retrieval when indicated may use:",
+    "options": [
+      "Only solvent for enamel",
+      "Ultrasonics / instrument removal systems under magnification",
+      "Only forceps on crown always",
+      "Only larger Gates blindly always first and only"
+    ],
+    "answer": 1,
+    "explanation": "Specialized retrieval.",
+    "source": "premium_endo",
+    "subtopics": [
+      "mishap"
+    ]
+  },
+  {
+    "id": "end_boost_014",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "Modern apical barrier material for apexification often cited is:",
+    "options": [
+      "Composite only",
+      "MTA",
+      "Amalgam apical plug only classic now",
+      "Pure calcium hydroxide only forever without barrier option"
+    ],
+    "answer": 1,
+    "explanation": "MTA barrier high-yield.",
+    "source": "premium_endo",
+    "subtopics": [
+      "mta"
+    ]
+  },
+  {
+    "id": "end_boost_015",
+    "topic": "endo",
+    "difficulty": "medium",
+    "q": "Apexogenesis aims to:",
+    "options": [
+      "Kill pulp then place MTA barrier only definition",
+      "Only extract",
+      "Only SSC without pulp care",
+      "Preserve vital pulp tissue to allow continued root development"
+    ],
+    "answer": 3,
+    "explanation": "Vital pulp → continued development.",
+    "source": "premium_endo",
+    "subtopics": [
+      "trauma"
+    ]
+  },
+  {
+    "id": "end_boost_016",
+    "topic": "endo",
+    "difficulty": "medium",
+    "q": "Apexification is for:",
+    "options": [
+      "Always vital pulp therapy only",
+      "Only adult calcified always",
+      "Only ortho expansion",
+      "Nonvital immature tooth needing apical barrier/closure approach"
+    ],
+    "answer": 3,
+    "explanation": "Nonvital immature.",
+    "source": "premium_endo",
+    "subtopics": [
+      "trauma"
+    ]
+  },
+  {
+    "id": "end_boost_017",
+    "topic": "endo",
+    "difficulty": "medium",
+    "q": "Vertical root fracture clinical clues include:",
+    "options": [
+      "Only Angle Class II",
+      "Only white lesion that wipes off",
+      "Always panorex only finding without clinical",
+      "Isolated deep pocket, J-shaped lesion, often post-endo tooth"
+    ],
+    "answer": 3,
+    "explanation": "VRF pattern recognition.",
+    "source": "premium_endo",
+    "subtopics": [
+      "vrf"
+    ]
+  },
+  {
+    "id": "end_boost_018",
+    "topic": "endo",
+    "difficulty": "hard",
+    "q": "Internal resorption requires:",
+    "options": [
+      "Only plaque score",
+      "Always nonvital only process",
+      "Only external force without pulp",
+      "Pulp tissue vitality contribution (classic concept)"
+    ],
+    "answer": 3,
+    "explanation": "Internal needs pulp tissue.",
+    "source": "premium_endo",
+    "subtopics": [
+      "resorption"
+    ]
+  },
+  {
+    "id": "end_boost_019",
+    "topic": "endo",
+    "difficulty": "hard",
+    "q": "External inflammatory resorption often linked to:",
+    "options": [
+      "Only fluorosis",
+      "Only sealant failure",
+      "Pulp necrosis + periodontal ligament damage (trauma/infection)",
+      "Only mouth breathing"
+    ],
+    "answer": 2,
+    "explanation": "External inflammatory pattern.",
+    "source": "premium_endo",
+    "subtopics": [
+      "resorption"
+    ]
+  },
+  {
+    "id": "end_boost_020",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "Avulsed permanent tooth best immediate action by layperson often:",
+    "options": [
+      "Scrub root dry and wrap in tissue only",
+      "Boil tooth",
+      "Replant if possible or store in suitable medium; seek urgent care",
+      "Leave dry for days"
+    ],
+    "answer": 2,
+    "explanation": "Time + medium critical.",
+    "source": "premium_endo",
+    "subtopics": [
+      "trauma"
+    ]
+  },
+  {
+    "id": "end_boost_021",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "Preferred storage media concepts include:",
+    "options": [
+      "Milk / Hank's / saliva as available options better than dry",
+      "Only alcohol",
+      "Only bleach",
+      "Only dry paper towel ideal"
+    ],
+    "answer": 0,
+    "explanation": "Keep PDL cells viable.",
+    "source": "premium_endo",
+    "subtopics": [
+      "trauma"
+    ]
+  },
+  {
+    "id": "end_boost_022",
+    "topic": "endo",
+    "difficulty": "medium",
+    "q": "Flexible splint duration after many avulsion protocols is often about:",
+    "options": [
+      "2 years rigid always",
+      "Only 1 hour always",
+      "About 2 weeks (confirm case/IADT details)",
+      "Never splint"
+    ],
+    "answer": 2,
+    "explanation": "Flexible ~2 weeks classic teaching.",
+    "source": "premium_endo",
+    "subtopics": [
+      "trauma"
+    ]
+  },
+  {
+    "id": "end_boost_023",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "Lateral luxation means:",
+    "options": [
+      "Only enamel chip",
+      "Only concussion without displacement",
+      "Displacement of tooth buccally/lingually/mesially/distally in socket",
+      "Only ankylosis definition"
+    ],
+    "answer": 2,
+    "explanation": "Luxation = displacement.",
+    "source": "premium_endo",
+    "subtopics": [
+      "trauma"
+    ]
+  },
+  {
+    "id": "end_boost_024",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "Concussion injury means:",
+    "options": [
+      "Injury without displacement or increased mobility; tender",
+      "Only intrusion 10 mm",
+      "Complete avulsion",
+      "Horizontal root fracture always"
+    ],
+    "answer": 0,
+    "explanation": "Concussion mild.",
+    "source": "premium_endo",
+    "subtopics": [
+      "trauma"
+    ]
+  },
+  {
+    "id": "end_boost_025",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "Subluxation means:",
+    "options": [
+      "Avulsed and dry 24h only definition",
+      "Intruded fully",
+      "Only pulp polyp",
+      "Increased mobility without displacement"
+    ],
+    "answer": 3,
+    "explanation": "Mobility without displacement.",
+    "source": "premium_endo",
+    "subtopics": [
+      "trauma"
+    ]
+  },
+  {
+    "id": "end_boost_026",
+    "topic": "endo",
+    "difficulty": "medium",
+    "q": "Intrusion of permanent tooth is:",
+    "options": [
+      "Only gingivitis",
+      "Serious luxation into bone; complex management",
+      "Benign always ignore",
+      "Same as white spot"
+    ],
+    "answer": 1,
+    "explanation": "Intrusion serious.",
+    "source": "premium_endo",
+    "subtopics": [
+      "trauma"
+    ]
+  },
+  {
+    "id": "end_boost_027",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "Working length determination tools include:",
+    "options": [
+      "Only patient pain always",
+      "Only periodontal probe on gingiva",
+      "Only shade guide",
+      "Apex locator + radiographs"
+    ],
+    "answer": 3,
+    "explanation": "Electronic + radiographic.",
+    "source": "premium_endo",
+    "subtopics": [
+      "wl"
+    ]
+  },
+  {
+    "id": "end_boost_028",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "Rubber dam in endo is:",
+    "options": [
+      "Only for bleaching",
+      "Contraindicated always",
+      "Optional decoration",
+      "Standard of care for isolation"
+    ],
+    "answer": 3,
+    "explanation": "Dam is mandatory teaching.",
+    "source": "premium_endo",
+    "subtopics": [
+      "isolation"
+    ]
+  },
+  {
+    "id": "end_boost_029",
+    "topic": "endo",
+    "difficulty": "medium",
+    "q": "Overfill beyond apex risks:",
+    "options": [
+      "Required for all cases",
+      "Always better seal guaranteed",
+      "No consequence ever",
+      "Tissue irritation / reduced outcomes concerns"
+    ],
+    "answer": 3,
+    "explanation": "Respect apex.",
+    "source": "premium_endo",
+    "subtopics": [
+      "obturation"
+    ]
+  },
+  {
+    "id": "end_boost_030",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "Sealer purpose includes:",
+    "options": [
+      "Only bond brackets",
+      "Replace all gutta-percha always alone without core",
+      "Only etch enamel",
+      "Fill irregularities / improve seal with core material"
+    ],
+    "answer": 3,
+    "explanation": "Sealer + core.",
+    "source": "premium_endo",
+    "subtopics": [
+      "obturation"
+    ]
+  },
+  {
+    "id": "end_boost_031",
+    "topic": "endo",
+    "difficulty": "medium",
+    "q": "Hot tooth anesthesia strategies may include:",
+    "options": [
+      "Only topical benzocaine always enough",
+      "Supplemental injections (PDL, intraosseous, intrapulpal) when IANB fails",
+      "Never supplemental",
+      "Only antibiotics instead of anesthesia"
+    ],
+    "answer": 1,
+    "explanation": "Hot tooth = supplements.",
+    "source": "premium_endo",
+    "subtopics": [
+      "anesthesia"
+    ]
+  },
+  {
+    "id": "end_boost_032",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "Access goals include:",
+    "options": [
+      "Avoid orifice location",
+      "Remove all enamel always",
+      "Only occlusal reduction 5 mm always",
+      "Straight-line access while conserving structure"
+    ],
+    "answer": 3,
+    "explanation": "Access principles.",
+    "source": "premium_endo",
+    "subtopics": [
+      "access"
+    ]
+  },
+  {
+    "id": "end_boost_033",
+    "topic": "endo",
+    "difficulty": "medium",
+    "q": "Perforation repair modern material often:",
+    "options": [
+      "Only zinc oxide without plan",
+      "Only varnish",
+      "Only unfilled composite without isolation always",
+      "MTA / bioceramic repair materials"
+    ],
+    "answer": 3,
+    "explanation": "MTA repair high-yield.",
+    "source": "premium_endo",
+    "subtopics": [
+      "mishap"
+    ]
+  },
+  {
+    "id": "end_boost_034",
+    "topic": "endo",
+    "difficulty": "medium",
+    "q": "Ledging is often caused by:",
+    "options": [
+      "Only sealer brand",
+      "Perfect flexible technique always",
+      "Only irrigant choice",
+      "Forcing stiff instruments short of curvature"
+    ],
+    "answer": 3,
+    "explanation": "Respect curvature.",
+    "source": "premium_endo",
+    "subtopics": [
+      "mishap"
+    ]
+  },
+  {
+    "id": "end_boost_035",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "Smear layer is:",
+    "options": [
+      "Only saliva on lips",
+      "Only calculus supragingival",
+      "Only plaque on tongue",
+      "Organic + inorganic debris on canal walls after instrumentation"
+    ],
+    "answer": 3,
+    "explanation": "Smear layer definition.",
+    "source": "premium_endo",
+    "subtopics": [
+      "irrigant"
+    ]
+  },
+  {
+    "id": "end_boost_036",
+    "topic": "endo",
+    "difficulty": "medium",
+    "q": "Primary teeth avulsion management differs because:",
+    "options": [
+      "Always rigid splint 6 months",
+      "Always replant primary same as permanent",
+      "Replantation of primary teeth is generally not recommended",
+      "Always RCT primary extraorally 1 hour"
+    ],
+    "answer": 2,
+    "explanation": "Do not replant primary typically.",
+    "source": "premium_endo",
+    "subtopics": [
+      "trauma"
+    ]
+  },
+  {
+    "id": "end_boost_037",
+    "topic": "endo",
+    "difficulty": "medium",
+    "q": "Radiographic J-shaped lesion adjacent to post-retained crown raises concern for:",
+    "options": [
+      "Only natal tooth",
+      "Vertical root fracture",
+      "Only fluorosis",
+      "Only enamel hypoplasia"
+    ],
+    "answer": 1,
+    "explanation": "J-lesion + post → VRF think.",
+    "source": "premium_endo",
+    "subtopics": [
+      "vrf"
+    ]
+  },
+  {
+    "id": "end_boost_038",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "Pulp vitality testing limitation includes:",
+    "options": [
+      "False results possible; correlate clinically",
+      "Never useful",
+      "Only for ortho",
+      "Always 100% accurate alone"
+    ],
+    "answer": 0,
+    "explanation": "Tests are adjuncts.",
+    "source": "premium_endo",
+    "subtopics": [
+      "diagnosis"
+    ]
+  },
+  {
+    "id": "end_boost_039",
+    "topic": "endo",
+    "difficulty": "medium",
+    "q": "Calcium hydroxide historically used for:",
+    "options": [
+      "Only fluoride varnish",
+      "Only final sealer always alone",
+      "Intracanal medicament / apexification older protocols",
+      "Only composite primer"
+    ],
+    "answer": 2,
+    "explanation": "Ca(OH)2 roles.",
+    "source": "premium_endo",
+    "subtopics": [
+      "therapy"
+    ]
+  },
+  {
+    "id": "end_boost_040",
+    "topic": "endo",
+    "difficulty": "medium",
+    "q": "Cracked tooth syndrome often presents as:",
+    "options": [
+      "Pain on release of bite / selective loading patterns",
+      "Only mobility Class III always",
+      "Only sinus tract always",
+      "Only asymptomatic always"
+    ],
+    "answer": 0,
+    "explanation": "Bite pain on release classic.",
+    "source": "premium_endo",
+    "subtopics": [
+      "diagnosis"
+    ]
+  },
+  {
+    "id": "end_boost_041",
+    "topic": "endo",
+    "difficulty": "hard",
+    "q": "EDTA then NaOCl sequence conceptually:",
+    "options": [
+      "Remove smear then further disinfection protocols as taught",
+      "Never use either",
+      "Mix both simultaneously always required",
+      "Only dry filing"
+    ],
+    "answer": 0,
+    "explanation": "Irrigant sequence concepts.",
+    "source": "premium_endo",
+    "subtopics": [
+      "irrigant"
+    ]
+  },
+  {
+    "id": "end_boost_042",
+    "topic": "endo",
+    "difficulty": "hard",
+    "q": "Cvek pulpotomy concept is:",
+    "options": [
+      "Full RCT always for every chip",
+      "Partial pulpotomy for traumatic exposures with healthy pulp",
+      "Only extraction",
+      "Only SSC without pulp assessment"
+    ],
+    "answer": 1,
+    "explanation": "Partial pulpotomy trauma.",
+    "source": "premium_endo",
+    "subtopics": [
+      "trauma"
+    ]
+  },
+  {
+    "id": "end_boost_043",
+    "topic": "endo",
+    "difficulty": "hard",
+    "q": "Root fracture coronal third often needs:",
+    "options": [
+      "Always ignore",
+      "Stabilization considerations / endo of coronal segment if necrotic",
+      "Always extract immediately only option",
+      "Only fluoride"
+    ],
+    "answer": 1,
+    "explanation": "Location matters.",
+    "source": "premium_endo",
+    "subtopics": [
+      "trauma"
+    ]
+  },
+  {
+    "id": "end_boost_044",
+    "topic": "endo",
+    "difficulty": "hard",
+    "q": "Alveolar fracture management includes:",
+    "options": [
+      "Ignore occlusion",
+      "Reposition and splint segments per trauma protocols",
+      "Only antibiotics forever",
+      "Only endo of all teeth always first without reposition"
+    ],
+    "answer": 1,
+    "explanation": "Bone segment care.",
+    "source": "premium_endo",
+    "subtopics": [
+      "trauma"
+    ]
+  },
+  {
+    "id": "end_boost_045",
+    "topic": "endo",
+    "difficulty": "hard",
+    "q": "Pulp canal obliteration after trauma means:",
+    "options": [
+      "Always implant day 1",
+      "Calcific metamorphosis; may still need monitoring",
+      "Always extract",
+      "Always infected necrosis immediately"
+    ],
+    "answer": 1,
+    "explanation": "PCO monitoring.",
+    "source": "premium_endo",
+    "subtopics": [
+      "trauma"
+    ]
+  },
+  {
+    "id": "end_boost_046",
+    "topic": "endo",
+    "difficulty": "hard",
+    "q": "Sealer extrusion into IAN region is:",
+    "options": [
+      "No risk",
+      "Serious; may cause neuropathy — prevention critical",
+      "Only helps anesthesia",
+      "Desirable always"
+    ],
+    "answer": 1,
+    "explanation": "Prevent overfill near neurovascular.",
+    "source": "premium_endo",
+    "subtopics": [
+      "mishap"
+    ]
+  },
+  {
+    "id": "end_boost_047",
+    "topic": "endo",
+    "difficulty": "medium",
+    "q": "Crown-down instrumentation advantages include:",
+    "options": [
+      "No irrigation benefit",
+      "Only for primary teeth",
+      "Early coronal flare, better irrigant exchange, reduced debris extrusion concepts",
+      "Worse access always"
+    ],
+    "answer": 2,
+    "explanation": "Crown-down benefits.",
+    "source": "premium_endo",
+    "subtopics": [
+      "access"
+    ]
+  },
+  {
+    "id": "end_boost_048",
+    "topic": "endo",
+    "difficulty": "hard",
+    "q": "Patency filing concept is:",
+    "options": [
+      "Never approach apex",
+      "Gently maintain apical patency to avoid blocks (technique-dependent teaching)",
+      "Only rotary 80 always",
+      "Force large files past apex always"
+    ],
+    "answer": 1,
+    "explanation": "Patency debate but exam-known.",
+    "source": "premium_endo",
+    "subtopics": [
+      "wl"
+    ]
+  },
+  {
+    "id": "end_boost_049",
+    "topic": "endo",
+    "difficulty": "medium",
+    "q": "Eugenol-containing materials and resin bonding:",
+    "options": [
+      "Required under all composites",
+      "Eugenol can interfere with resin polymerization",
+      "Always improves bond",
+      "No interaction"
+    ],
+    "answer": 1,
+    "explanation": "Eugenol vs resin caution.",
+    "source": "premium_endo",
+    "subtopics": [
+      "materials"
+    ]
+  },
+  {
+    "id": "end_boost_050",
+    "topic": "endo",
+    "difficulty": "medium",
+    "q": "Indication for endodontic microsurgery may include:",
+    "options": [
+      "All gingivitis",
+      "Persistent apical disease after adequate orthograde therapy",
+      "All Class I ortho",
+      "All reversible pulpitis"
+    ],
+    "answer": 1,
+    "explanation": "Surgery after failed orthograde when indicated.",
+    "source": "premium_endo",
+    "subtopics": [
+      "surgery"
+    ]
+  },
+  {
+    "id": "end_boost_051",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "NaOCl main antimicrobial + tissue role remains:",
+    "options": [
+      "Only remove smear inorganic alone",
+      "Only set sealer",
+      "Only etch porcelain",
+      "Dissolve organic tissue and kill microbes"
+    ],
+    "answer": 3,
+    "explanation": "NaOCl dual role.",
+    "source": "premium_endo",
+    "subtopics": [
+      "irrigant"
+    ]
+  },
+  {
+    "id": "end_boost_052",
+    "topic": "endo",
+    "difficulty": "medium",
+    "q": "Before elective endo surgery always reassess:",
+    "options": [
+      "Only shade of lips",
+      "Quality of prior RCT / missed anatomy / restorability",
+      "Only patient hair color",
+      "Only phone brand"
+    ],
+    "answer": 1,
+    "explanation": "Reassess before surgery.",
+    "source": "premium_endo",
+    "subtopics": [
+      "diagnosis"
+    ]
+  },
+  {
+    "id": "end_boost_053",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "Endo high-yield #53: rubber dam prevents:",
+    "options": [
+      "Orthodontic relapse",
+      "Only shade matching",
+      "Aspiration/ingestion and improves asepsis",
+      "Pulp vitality magically"
+    ],
+    "answer": 2,
+    "explanation": "Dam safety + asepsis.",
+    "source": "premium_endo",
+    "subtopics": [
+      "isolation"
+    ]
+  },
+  {
+    "id": "end_boost_054",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "NaOCl main antimicrobial + tissue role remains:",
+    "options": [
+      "Dissolve organic tissue and kill microbes",
+      "Only etch porcelain",
+      "Only set sealer",
+      "Only remove smear inorganic alone"
+    ],
+    "answer": 0,
+    "explanation": "NaOCl dual role.",
+    "source": "premium_endo",
+    "subtopics": [
+      "irrigant"
+    ]
+  },
+  {
+    "id": "end_boost_055",
+    "topic": "endo",
+    "difficulty": "medium",
+    "q": "Before elective endo surgery always reassess:",
+    "options": [
+      "Only shade of lips",
+      "Only patient hair color",
+      "Only phone brand",
+      "Quality of prior RCT / missed anatomy / restorability"
+    ],
+    "answer": 3,
+    "explanation": "Reassess before surgery.",
+    "source": "premium_endo",
+    "subtopics": [
+      "diagnosis"
+    ]
+  },
+  {
+    "id": "end_boost_056",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "Endo high-yield #56: rubber dam prevents:",
+    "options": [
+      "Pulp vitality magically",
+      "Aspiration/ingestion and improves asepsis",
+      "Orthodontic relapse",
+      "Only shade matching"
+    ],
+    "answer": 1,
+    "explanation": "Dam safety + asepsis.",
+    "source": "premium_endo",
+    "subtopics": [
+      "isolation"
+    ]
+  },
+  {
+    "id": "end_boost_057",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "NaOCl main antimicrobial + tissue role remains:",
+    "options": [
+      "Dissolve organic tissue and kill microbes",
+      "Only set sealer",
+      "Only etch porcelain",
+      "Only remove smear inorganic alone"
+    ],
+    "answer": 0,
+    "explanation": "NaOCl dual role.",
+    "source": "premium_endo",
+    "subtopics": [
+      "irrigant"
+    ]
+  },
+  {
+    "id": "end_boost_058",
+    "topic": "endo",
+    "difficulty": "medium",
+    "q": "Before elective endo surgery always reassess:",
+    "options": [
+      "Only shade of lips",
+      "Quality of prior RCT / missed anatomy / restorability",
+      "Only phone brand",
+      "Only patient hair color"
+    ],
+    "answer": 1,
+    "explanation": "Reassess before surgery.",
+    "source": "premium_endo",
+    "subtopics": [
+      "diagnosis"
+    ]
+  },
+  {
+    "id": "end_boost_059",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "Endo high-yield #59: rubber dam prevents:",
+    "options": [
+      "Only shade matching",
+      "Pulp vitality magically",
+      "Aspiration/ingestion and improves asepsis",
+      "Orthodontic relapse"
+    ],
+    "answer": 2,
+    "explanation": "Dam safety + asepsis.",
+    "source": "premium_endo",
+    "subtopics": [
+      "isolation"
+    ]
+  },
+  {
+    "id": "end_boost_060",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "NaOCl main antimicrobial + tissue role remains:",
+    "options": [
+      "Dissolve organic tissue and kill microbes",
+      "Only set sealer",
+      "Only remove smear inorganic alone",
+      "Only etch porcelain"
+    ],
+    "answer": 0,
+    "explanation": "NaOCl dual role.",
+    "source": "premium_endo",
+    "subtopics": [
+      "irrigant"
+    ]
+  },
+  {
+    "id": "end_boost_061",
+    "topic": "endo",
+    "difficulty": "medium",
+    "q": "Before elective endo surgery always reassess:",
+    "options": [
+      "Quality of prior RCT / missed anatomy / restorability",
+      "Only phone brand",
+      "Only shade of lips",
+      "Only patient hair color"
+    ],
+    "answer": 0,
+    "explanation": "Reassess before surgery.",
+    "source": "premium_endo",
+    "subtopics": [
+      "diagnosis"
+    ]
+  },
+  {
+    "id": "end_boost_062",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "Endo high-yield #62: rubber dam prevents:",
+    "options": [
+      "Aspiration/ingestion and improves asepsis",
+      "Orthodontic relapse",
+      "Pulp vitality magically",
+      "Only shade matching"
+    ],
+    "answer": 0,
+    "explanation": "Dam safety + asepsis.",
+    "source": "premium_endo",
+    "subtopics": [
+      "isolation"
+    ]
+  },
+  {
+    "id": "end_boost_063",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "NaOCl main antimicrobial + tissue role remains:",
+    "options": [
+      "Only set sealer",
+      "Only remove smear inorganic alone",
+      "Only etch porcelain",
+      "Dissolve organic tissue and kill microbes"
+    ],
+    "answer": 3,
+    "explanation": "NaOCl dual role.",
+    "source": "premium_endo",
+    "subtopics": [
+      "irrigant"
+    ]
+  },
+  {
+    "id": "end_boost_064",
+    "topic": "endo",
+    "difficulty": "medium",
+    "q": "Before elective endo surgery always reassess:",
+    "options": [
+      "Only phone brand",
+      "Only shade of lips",
+      "Only patient hair color",
+      "Quality of prior RCT / missed anatomy / restorability"
+    ],
+    "answer": 3,
+    "explanation": "Reassess before surgery.",
+    "source": "premium_endo",
+    "subtopics": [
+      "diagnosis"
+    ]
+  },
+  {
+    "id": "end_boost_065",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "Endo high-yield #65: rubber dam prevents:",
+    "options": [
+      "Only shade matching",
+      "Orthodontic relapse",
+      "Pulp vitality magically",
+      "Aspiration/ingestion and improves asepsis"
+    ],
+    "answer": 3,
+    "explanation": "Dam safety + asepsis.",
+    "source": "premium_endo",
+    "subtopics": [
+      "isolation"
+    ]
+  },
+  {
+    "id": "end_boost_066",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "NaOCl main antimicrobial + tissue role remains:",
+    "options": [
+      "Dissolve organic tissue and kill microbes",
+      "Only remove smear inorganic alone",
+      "Only set sealer",
+      "Only etch porcelain"
+    ],
+    "answer": 0,
+    "explanation": "NaOCl dual role.",
+    "source": "premium_endo",
+    "subtopics": [
+      "irrigant"
+    ]
+  },
+  {
+    "id": "end_boost_067",
+    "topic": "endo",
+    "difficulty": "medium",
+    "q": "Before elective endo surgery always reassess:",
+    "options": [
+      "Quality of prior RCT / missed anatomy / restorability",
+      "Only phone brand",
+      "Only shade of lips",
+      "Only patient hair color"
+    ],
+    "answer": 0,
+    "explanation": "Reassess before surgery.",
+    "source": "premium_endo",
+    "subtopics": [
+      "diagnosis"
+    ]
+  },
+  {
+    "id": "end_boost_068",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "Endo high-yield #68: rubber dam prevents:",
+    "options": [
+      "Only shade matching",
+      "Orthodontic relapse",
+      "Aspiration/ingestion and improves asepsis",
+      "Pulp vitality magically"
+    ],
+    "answer": 2,
+    "explanation": "Dam safety + asepsis.",
+    "source": "premium_endo",
+    "subtopics": [
+      "isolation"
+    ]
+  },
+  {
+    "id": "end_boost_069",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "NaOCl main antimicrobial + tissue role remains:",
+    "options": [
+      "Dissolve organic tissue and kill microbes",
+      "Only set sealer",
+      "Only remove smear inorganic alone",
+      "Only etch porcelain"
+    ],
+    "answer": 0,
+    "explanation": "NaOCl dual role.",
+    "source": "premium_endo",
+    "subtopics": [
+      "irrigant"
+    ]
+  },
+  {
+    "id": "end_boost_070",
+    "topic": "endo",
+    "difficulty": "medium",
+    "q": "Before elective endo surgery always reassess:",
+    "options": [
+      "Quality of prior RCT / missed anatomy / restorability",
+      "Only shade of lips",
+      "Only patient hair color",
+      "Only phone brand"
+    ],
+    "answer": 0,
+    "explanation": "Reassess before surgery.",
+    "source": "premium_endo",
+    "subtopics": [
+      "diagnosis"
+    ]
+  },
+  {
+    "id": "end_boost_071",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "Endo high-yield #71: rubber dam prevents:",
+    "options": [
+      "Only shade matching",
+      "Orthodontic relapse",
+      "Aspiration/ingestion and improves asepsis",
+      "Pulp vitality magically"
+    ],
+    "answer": 2,
+    "explanation": "Dam safety + asepsis.",
+    "source": "premium_endo",
+    "subtopics": [
+      "isolation"
+    ]
+  },
+  {
+    "id": "end_boost_072",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "NaOCl main antimicrobial + tissue role remains:",
+    "options": [
+      "Only remove smear inorganic alone",
+      "Dissolve organic tissue and kill microbes",
+      "Only set sealer",
+      "Only etch porcelain"
+    ],
+    "answer": 1,
+    "explanation": "NaOCl dual role.",
+    "source": "premium_endo",
+    "subtopics": [
+      "irrigant"
+    ]
+  },
+  {
+    "id": "end_boost_073",
+    "topic": "endo",
+    "difficulty": "medium",
+    "q": "Before elective endo surgery always reassess:",
+    "options": [
+      "Only shade of lips",
+      "Quality of prior RCT / missed anatomy / restorability",
+      "Only phone brand",
+      "Only patient hair color"
+    ],
+    "answer": 1,
+    "explanation": "Reassess before surgery.",
+    "source": "premium_endo",
+    "subtopics": [
+      "diagnosis"
+    ]
+  },
+  {
+    "id": "end_boost_074",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "Endo high-yield #74: rubber dam prevents:",
+    "options": [
+      "Orthodontic relapse",
+      "Pulp vitality magically",
+      "Aspiration/ingestion and improves asepsis",
+      "Only shade matching"
+    ],
+    "answer": 2,
+    "explanation": "Dam safety + asepsis.",
+    "source": "premium_endo",
+    "subtopics": [
+      "isolation"
+    ]
+  },
+  {
+    "id": "end_boost_075",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "NaOCl main antimicrobial + tissue role remains:",
+    "options": [
+      "Only set sealer",
+      "Only remove smear inorganic alone",
+      "Only etch porcelain",
+      "Dissolve organic tissue and kill microbes"
+    ],
+    "answer": 3,
+    "explanation": "NaOCl dual role.",
+    "source": "premium_endo",
+    "subtopics": [
+      "irrigant"
+    ]
+  },
+  {
+    "id": "end_boost_076",
+    "topic": "endo",
+    "difficulty": "medium",
+    "q": "Before elective endo surgery always reassess:",
+    "options": [
+      "Only patient hair color",
+      "Only shade of lips",
+      "Only phone brand",
+      "Quality of prior RCT / missed anatomy / restorability"
+    ],
+    "answer": 3,
+    "explanation": "Reassess before surgery.",
+    "source": "premium_endo",
+    "subtopics": [
+      "diagnosis"
+    ]
+  },
+  {
+    "id": "end_boost_077",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "Endo high-yield #77: rubber dam prevents:",
+    "options": [
+      "Pulp vitality magically",
+      "Orthodontic relapse",
+      "Only shade matching",
+      "Aspiration/ingestion and improves asepsis"
+    ],
+    "answer": 3,
+    "explanation": "Dam safety + asepsis.",
+    "source": "premium_endo",
+    "subtopics": [
+      "isolation"
+    ]
+  },
+  {
+    "id": "end_boost_078",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "NaOCl main antimicrobial + tissue role remains:",
+    "options": [
+      "Dissolve organic tissue and kill microbes",
+      "Only set sealer",
+      "Only remove smear inorganic alone",
+      "Only etch porcelain"
+    ],
+    "answer": 0,
+    "explanation": "NaOCl dual role.",
+    "source": "premium_endo",
+    "subtopics": [
+      "irrigant"
+    ]
+  },
+  {
+    "id": "end_boost_079",
+    "topic": "endo",
+    "difficulty": "medium",
+    "q": "Before elective endo surgery always reassess:",
+    "options": [
+      "Only patient hair color",
+      "Only phone brand",
+      "Quality of prior RCT / missed anatomy / restorability",
+      "Only shade of lips"
+    ],
+    "answer": 2,
+    "explanation": "Reassess before surgery.",
+    "source": "premium_endo",
+    "subtopics": [
+      "diagnosis"
+    ]
+  },
+  {
+    "id": "end_boost_080",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "Endo high-yield #80: rubber dam prevents:",
+    "options": [
+      "Only shade matching",
+      "Pulp vitality magically",
+      "Orthodontic relapse",
+      "Aspiration/ingestion and improves asepsis"
+    ],
+    "answer": 3,
+    "explanation": "Dam safety + asepsis.",
+    "source": "premium_endo",
+    "subtopics": [
+      "isolation"
+    ]
+  },
+  {
+    "id": "end_boost_081",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "NaOCl main antimicrobial + tissue role remains:",
+    "options": [
+      "Only remove smear inorganic alone",
+      "Only set sealer",
+      "Only etch porcelain",
+      "Dissolve organic tissue and kill microbes"
+    ],
+    "answer": 3,
+    "explanation": "NaOCl dual role.",
+    "source": "premium_endo",
+    "subtopics": [
+      "irrigant"
+    ]
+  },
+  {
+    "id": "end_boost_082",
+    "topic": "endo",
+    "difficulty": "medium",
+    "q": "Before elective endo surgery always reassess:",
+    "options": [
+      "Only patient hair color",
+      "Only shade of lips",
+      "Quality of prior RCT / missed anatomy / restorability",
+      "Only phone brand"
+    ],
+    "answer": 2,
+    "explanation": "Reassess before surgery.",
+    "source": "premium_endo",
+    "subtopics": [
+      "diagnosis"
+    ]
+  },
+  {
+    "id": "end_boost_083",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "Endo high-yield #83: rubber dam prevents:",
+    "options": [
+      "Only shade matching",
+      "Aspiration/ingestion and improves asepsis",
+      "Pulp vitality magically",
+      "Orthodontic relapse"
+    ],
+    "answer": 1,
+    "explanation": "Dam safety + asepsis.",
+    "source": "premium_endo",
+    "subtopics": [
+      "isolation"
+    ]
+  },
+  {
+    "id": "end_boost_084",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "NaOCl main antimicrobial + tissue role remains:",
+    "options": [
+      "Dissolve organic tissue and kill microbes",
+      "Only etch porcelain",
+      "Only remove smear inorganic alone",
+      "Only set sealer"
+    ],
+    "answer": 0,
+    "explanation": "NaOCl dual role.",
+    "source": "premium_endo",
+    "subtopics": [
+      "irrigant"
+    ]
+  },
+  {
+    "id": "end_boost_085",
+    "topic": "endo",
+    "difficulty": "medium",
+    "q": "Before elective endo surgery always reassess:",
+    "options": [
+      "Only shade of lips",
+      "Quality of prior RCT / missed anatomy / restorability",
+      "Only patient hair color",
+      "Only phone brand"
+    ],
+    "answer": 1,
+    "explanation": "Reassess before surgery.",
+    "source": "premium_endo",
+    "subtopics": [
+      "diagnosis"
+    ]
+  },
+  {
+    "id": "end_boost_086",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "Endo high-yield #86: rubber dam prevents:",
+    "options": [
+      "Orthodontic relapse",
+      "Aspiration/ingestion and improves asepsis",
+      "Only shade matching",
+      "Pulp vitality magically"
+    ],
+    "answer": 1,
+    "explanation": "Dam safety + asepsis.",
+    "source": "premium_endo",
+    "subtopics": [
+      "isolation"
+    ]
+  },
+  {
+    "id": "end_boost_087",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "NaOCl main antimicrobial + tissue role remains:",
+    "options": [
+      "Only remove smear inorganic alone",
+      "Only set sealer",
+      "Dissolve organic tissue and kill microbes",
+      "Only etch porcelain"
+    ],
+    "answer": 2,
+    "explanation": "NaOCl dual role.",
+    "source": "premium_endo",
+    "subtopics": [
+      "irrigant"
+    ]
+  },
+  {
+    "id": "end_boost_088",
+    "topic": "endo",
+    "difficulty": "medium",
+    "q": "Before elective endo surgery always reassess:",
+    "options": [
+      "Only phone brand",
+      "Only shade of lips",
+      "Quality of prior RCT / missed anatomy / restorability",
+      "Only patient hair color"
+    ],
+    "answer": 2,
+    "explanation": "Reassess before surgery.",
+    "source": "premium_endo",
+    "subtopics": [
+      "diagnosis"
+    ]
+  },
+  {
+    "id": "end_boost_089",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "Endo high-yield #89: rubber dam prevents:",
+    "options": [
+      "Orthodontic relapse",
+      "Only shade matching",
+      "Aspiration/ingestion and improves asepsis",
+      "Pulp vitality magically"
+    ],
+    "answer": 2,
+    "explanation": "Dam safety + asepsis.",
+    "source": "premium_endo",
+    "subtopics": [
+      "isolation"
+    ]
+  },
+  {
+    "id": "end_boost_090",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "NaOCl main antimicrobial + tissue role remains:",
+    "options": [
+      "Only set sealer",
+      "Dissolve organic tissue and kill microbes",
+      "Only remove smear inorganic alone",
+      "Only etch porcelain"
+    ],
+    "answer": 1,
+    "explanation": "NaOCl dual role.",
+    "source": "premium_endo",
+    "subtopics": [
+      "irrigant"
+    ]
+  },
+  {
+    "id": "end_boost_091",
+    "topic": "endo",
+    "difficulty": "medium",
+    "q": "Before elective endo surgery always reassess:",
+    "options": [
+      "Only shade of lips",
+      "Quality of prior RCT / missed anatomy / restorability",
+      "Only patient hair color",
+      "Only phone brand"
+    ],
+    "answer": 1,
+    "explanation": "Reassess before surgery.",
+    "source": "premium_endo",
+    "subtopics": [
+      "diagnosis"
+    ]
+  },
+  {
+    "id": "end_boost_092",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "Endo high-yield #92: rubber dam prevents:",
+    "options": [
+      "Pulp vitality magically",
+      "Only shade matching",
+      "Aspiration/ingestion and improves asepsis",
+      "Orthodontic relapse"
+    ],
+    "answer": 2,
+    "explanation": "Dam safety + asepsis.",
+    "source": "premium_endo",
+    "subtopics": [
+      "isolation"
+    ]
+  },
+  {
+    "id": "end_boost_093",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "NaOCl main antimicrobial + tissue role remains:",
+    "options": [
+      "Only set sealer",
+      "Only etch porcelain",
+      "Only remove smear inorganic alone",
+      "Dissolve organic tissue and kill microbes"
+    ],
+    "answer": 3,
+    "explanation": "NaOCl dual role.",
+    "source": "premium_endo",
+    "subtopics": [
+      "irrigant"
+    ]
+  },
+  {
+    "id": "end_boost_094",
+    "topic": "endo",
+    "difficulty": "medium",
+    "q": "Before elective endo surgery always reassess:",
+    "options": [
+      "Only patient hair color",
+      "Quality of prior RCT / missed anatomy / restorability",
+      "Only shade of lips",
+      "Only phone brand"
+    ],
+    "answer": 1,
+    "explanation": "Reassess before surgery.",
+    "source": "premium_endo",
+    "subtopics": [
+      "diagnosis"
+    ]
+  },
+  {
+    "id": "end_boost_095",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "Endo high-yield #95: rubber dam prevents:",
+    "options": [
+      "Orthodontic relapse",
+      "Only shade matching",
+      "Pulp vitality magically",
+      "Aspiration/ingestion and improves asepsis"
+    ],
+    "answer": 3,
+    "explanation": "Dam safety + asepsis.",
+    "source": "premium_endo",
+    "subtopics": [
+      "isolation"
+    ]
+  },
+  {
+    "id": "end_boost_096",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "NaOCl main antimicrobial + tissue role remains:",
+    "options": [
+      "Dissolve organic tissue and kill microbes",
+      "Only etch porcelain",
+      "Only set sealer",
+      "Only remove smear inorganic alone"
+    ],
+    "answer": 0,
+    "explanation": "NaOCl dual role.",
+    "source": "premium_endo",
+    "subtopics": [
+      "irrigant"
+    ]
+  },
+  {
+    "id": "end_boost_097",
+    "topic": "endo",
+    "difficulty": "medium",
+    "q": "Before elective endo surgery always reassess:",
+    "options": [
+      "Only phone brand",
+      "Only shade of lips",
+      "Quality of prior RCT / missed anatomy / restorability",
+      "Only patient hair color"
+    ],
+    "answer": 2,
+    "explanation": "Reassess before surgery.",
+    "source": "premium_endo",
+    "subtopics": [
+      "diagnosis"
+    ]
+  },
+  {
+    "id": "end_boost_098",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "Endo high-yield #98: rubber dam prevents:",
+    "options": [
+      "Pulp vitality magically",
+      "Orthodontic relapse",
+      "Only shade matching",
+      "Aspiration/ingestion and improves asepsis"
+    ],
+    "answer": 3,
+    "explanation": "Dam safety + asepsis.",
+    "source": "premium_endo",
+    "subtopics": [
+      "isolation"
+    ]
+  },
+  {
+    "id": "end_boost_099",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "NaOCl main antimicrobial + tissue role remains:",
+    "options": [
+      "Only etch porcelain",
+      "Dissolve organic tissue and kill microbes",
+      "Only remove smear inorganic alone",
+      "Only set sealer"
+    ],
+    "answer": 1,
+    "explanation": "NaOCl dual role.",
+    "source": "premium_endo",
+    "subtopics": [
+      "irrigant"
+    ]
+  },
+  {
+    "id": "end_boost_100",
+    "topic": "endo",
+    "difficulty": "medium",
+    "q": "Before elective endo surgery always reassess:",
+    "options": [
+      "Only shade of lips",
+      "Only phone brand",
+      "Quality of prior RCT / missed anatomy / restorability",
+      "Only patient hair color"
+    ],
+    "answer": 2,
+    "explanation": "Reassess before surgery.",
+    "source": "premium_endo",
+    "subtopics": [
+      "diagnosis"
+    ]
+  },
+  {
+    "id": "end_boost_101",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "Endo high-yield #101: rubber dam prevents:",
+    "options": [
+      "Pulp vitality magically",
+      "Only shade matching",
+      "Orthodontic relapse",
+      "Aspiration/ingestion and improves asepsis"
+    ],
+    "answer": 3,
+    "explanation": "Dam safety + asepsis.",
+    "source": "premium_endo",
+    "subtopics": [
+      "isolation"
+    ]
+  },
+  {
+    "id": "end_boost_102",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "NaOCl main antimicrobial + tissue role remains:",
+    "options": [
+      "Only remove smear inorganic alone",
+      "Only etch porcelain",
+      "Only set sealer",
+      "Dissolve organic tissue and kill microbes"
+    ],
+    "answer": 3,
+    "explanation": "NaOCl dual role.",
+    "source": "premium_endo",
+    "subtopics": [
+      "irrigant"
+    ]
+  },
+  {
+    "id": "end_boost_103",
+    "topic": "endo",
+    "difficulty": "medium",
+    "q": "Before elective endo surgery always reassess:",
+    "options": [
+      "Only patient hair color",
+      "Only shade of lips",
+      "Quality of prior RCT / missed anatomy / restorability",
+      "Only phone brand"
+    ],
+    "answer": 2,
+    "explanation": "Reassess before surgery.",
+    "source": "premium_endo",
+    "subtopics": [
+      "diagnosis"
+    ]
+  },
+  {
+    "id": "end_boost_104",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "Endo high-yield #104: rubber dam prevents:",
+    "options": [
+      "Pulp vitality magically",
+      "Only shade matching",
+      "Aspiration/ingestion and improves asepsis",
+      "Orthodontic relapse"
+    ],
+    "answer": 2,
+    "explanation": "Dam safety + asepsis.",
+    "source": "premium_endo",
+    "subtopics": [
+      "isolation"
+    ]
+  },
+  {
+    "id": "end_boost_105",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "NaOCl main antimicrobial + tissue role remains:",
+    "options": [
+      "Only set sealer",
+      "Only etch porcelain",
+      "Dissolve organic tissue and kill microbes",
+      "Only remove smear inorganic alone"
+    ],
+    "answer": 2,
+    "explanation": "NaOCl dual role.",
+    "source": "premium_endo",
+    "subtopics": [
+      "irrigant"
+    ]
+  },
+  {
+    "id": "end_boost_106",
+    "topic": "endo",
+    "difficulty": "medium",
+    "q": "Before elective endo surgery always reassess:",
+    "options": [
+      "Only shade of lips",
+      "Only patient hair color",
+      "Quality of prior RCT / missed anatomy / restorability",
+      "Only phone brand"
+    ],
+    "answer": 2,
+    "explanation": "Reassess before surgery.",
+    "source": "premium_endo",
+    "subtopics": [
+      "diagnosis"
+    ]
+  },
+  {
+    "id": "end_boost_107",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "Endo high-yield #107: rubber dam prevents:",
+    "options": [
+      "Aspiration/ingestion and improves asepsis",
+      "Orthodontic relapse",
+      "Only shade matching",
+      "Pulp vitality magically"
+    ],
+    "answer": 0,
+    "explanation": "Dam safety + asepsis.",
+    "source": "premium_endo",
+    "subtopics": [
+      "isolation"
+    ]
+  },
+  {
+    "id": "end_boost_108",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "NaOCl main antimicrobial + tissue role remains:",
+    "options": [
+      "Only set sealer",
+      "Only etch porcelain",
+      "Dissolve organic tissue and kill microbes",
+      "Only remove smear inorganic alone"
+    ],
+    "answer": 2,
+    "explanation": "NaOCl dual role.",
+    "source": "premium_endo",
+    "subtopics": [
+      "irrigant"
+    ]
+  },
+  {
+    "id": "end_boost_109",
+    "topic": "endo",
+    "difficulty": "medium",
+    "q": "Before elective endo surgery always reassess:",
+    "options": [
+      "Only patient hair color",
+      "Only phone brand",
+      "Only shade of lips",
+      "Quality of prior RCT / missed anatomy / restorability"
+    ],
+    "answer": 3,
+    "explanation": "Reassess before surgery.",
+    "source": "premium_endo",
+    "subtopics": [
+      "diagnosis"
+    ]
+  },
+  {
+    "id": "end_boost_110",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "Endo high-yield #110: rubber dam prevents:",
+    "options": [
+      "Pulp vitality magically",
+      "Aspiration/ingestion and improves asepsis",
+      "Only shade matching",
+      "Orthodontic relapse"
+    ],
+    "answer": 1,
+    "explanation": "Dam safety + asepsis.",
+    "source": "premium_endo",
+    "subtopics": [
+      "isolation"
+    ]
+  },
+  {
+    "id": "end_boost_111",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "NaOCl main antimicrobial + tissue role remains:",
+    "options": [
+      "Only remove smear inorganic alone",
+      "Only set sealer",
+      "Dissolve organic tissue and kill microbes",
+      "Only etch porcelain"
+    ],
+    "answer": 2,
+    "explanation": "NaOCl dual role.",
+    "source": "premium_endo",
+    "subtopics": [
+      "irrigant"
+    ]
+  },
+  {
+    "id": "end_boost_112",
+    "topic": "endo",
+    "difficulty": "medium",
+    "q": "Before elective endo surgery always reassess:",
+    "options": [
+      "Only shade of lips",
+      "Only phone brand",
+      "Only patient hair color",
+      "Quality of prior RCT / missed anatomy / restorability"
+    ],
+    "answer": 3,
+    "explanation": "Reassess before surgery.",
+    "source": "premium_endo",
+    "subtopics": [
+      "diagnosis"
+    ]
+  },
+  {
+    "id": "end_boost_113",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "Endo high-yield #113: rubber dam prevents:",
+    "options": [
+      "Pulp vitality magically",
+      "Only shade matching",
+      "Aspiration/ingestion and improves asepsis",
+      "Orthodontic relapse"
+    ],
+    "answer": 2,
+    "explanation": "Dam safety + asepsis.",
+    "source": "premium_endo",
+    "subtopics": [
+      "isolation"
+    ]
+  },
+  {
+    "id": "end_boost_114",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "NaOCl main antimicrobial + tissue role remains:",
+    "options": [
+      "Only set sealer",
+      "Only etch porcelain",
+      "Only remove smear inorganic alone",
+      "Dissolve organic tissue and kill microbes"
+    ],
+    "answer": 3,
+    "explanation": "NaOCl dual role.",
+    "source": "premium_endo",
+    "subtopics": [
+      "irrigant"
+    ]
+  },
+  {
+    "id": "end_boost_115",
+    "topic": "endo",
+    "difficulty": "medium",
+    "q": "Before elective endo surgery always reassess:",
+    "options": [
+      "Only phone brand",
+      "Only patient hair color",
+      "Quality of prior RCT / missed anatomy / restorability",
+      "Only shade of lips"
+    ],
+    "answer": 2,
+    "explanation": "Reassess before surgery.",
+    "source": "premium_endo",
+    "subtopics": [
+      "diagnosis"
+    ]
+  },
+  {
+    "id": "end_boost_116",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "Endo high-yield #116: rubber dam prevents:",
+    "options": [
+      "Pulp vitality magically",
+      "Orthodontic relapse",
+      "Aspiration/ingestion and improves asepsis",
+      "Only shade matching"
+    ],
+    "answer": 2,
+    "explanation": "Dam safety + asepsis.",
+    "source": "premium_endo",
+    "subtopics": [
+      "isolation"
+    ]
+  },
+  {
+    "id": "end_boost_117",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "NaOCl main antimicrobial + tissue role remains:",
+    "options": [
+      "Only remove smear inorganic alone",
+      "Only set sealer",
+      "Dissolve organic tissue and kill microbes",
+      "Only etch porcelain"
+    ],
+    "answer": 2,
+    "explanation": "NaOCl dual role.",
+    "source": "premium_endo",
+    "subtopics": [
+      "irrigant"
+    ]
+  },
+  {
+    "id": "end_boost_118",
+    "topic": "endo",
+    "difficulty": "medium",
+    "q": "Before elective endo surgery always reassess:",
+    "options": [
+      "Only phone brand",
+      "Only shade of lips",
+      "Only patient hair color",
+      "Quality of prior RCT / missed anatomy / restorability"
+    ],
+    "answer": 3,
+    "explanation": "Reassess before surgery.",
+    "source": "premium_endo",
+    "subtopics": [
+      "diagnosis"
+    ]
+  },
+  {
+    "id": "end_boost_119",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "Endo high-yield #119: rubber dam prevents:",
+    "options": [
+      "Only shade matching",
+      "Pulp vitality magically",
+      "Aspiration/ingestion and improves asepsis",
+      "Orthodontic relapse"
+    ],
+    "answer": 2,
+    "explanation": "Dam safety + asepsis.",
+    "source": "premium_endo",
+    "subtopics": [
+      "isolation"
+    ]
+  },
+  {
+    "id": "end_boost_120",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "NaOCl main antimicrobial + tissue role remains:",
+    "options": [
+      "Only remove smear inorganic alone",
+      "Only set sealer",
+      "Dissolve organic tissue and kill microbes",
+      "Only etch porcelain"
+    ],
+    "answer": 2,
+    "explanation": "NaOCl dual role.",
+    "source": "premium_endo",
+    "subtopics": [
+      "irrigant"
+    ]
+  },
+  {
+    "id": "end_boost_121",
+    "topic": "endo",
+    "difficulty": "medium",
+    "q": "Before elective endo surgery always reassess:",
+    "options": [
+      "Only shade of lips",
+      "Only phone brand",
+      "Only patient hair color",
+      "Quality of prior RCT / missed anatomy / restorability"
+    ],
+    "answer": 3,
+    "explanation": "Reassess before surgery.",
+    "source": "premium_endo",
+    "subtopics": [
+      "diagnosis"
+    ]
+  },
+  {
+    "id": "end_boost_122",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "Endo high-yield #122: rubber dam prevents:",
+    "options": [
+      "Only shade matching",
+      "Pulp vitality magically",
+      "Orthodontic relapse",
+      "Aspiration/ingestion and improves asepsis"
+    ],
+    "answer": 3,
+    "explanation": "Dam safety + asepsis.",
+    "source": "premium_endo",
+    "subtopics": [
+      "isolation"
+    ]
+  },
+  {
+    "id": "end_boost_123",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "NaOCl main antimicrobial + tissue role remains:",
+    "options": [
+      "Only set sealer",
+      "Dissolve organic tissue and kill microbes",
+      "Only remove smear inorganic alone",
+      "Only etch porcelain"
+    ],
+    "answer": 1,
+    "explanation": "NaOCl dual role.",
+    "source": "premium_endo",
+    "subtopics": [
+      "irrigant"
+    ]
+  },
+  {
+    "id": "end_boost_124",
+    "topic": "endo",
+    "difficulty": "medium",
+    "q": "Before elective endo surgery always reassess:",
+    "options": [
+      "Quality of prior RCT / missed anatomy / restorability",
+      "Only patient hair color",
+      "Only phone brand",
+      "Only shade of lips"
+    ],
+    "answer": 0,
+    "explanation": "Reassess before surgery.",
+    "source": "premium_endo",
+    "subtopics": [
+      "diagnosis"
+    ]
+  },
+  {
+    "id": "end_boost_125",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "Endo high-yield #125: rubber dam prevents:",
+    "options": [
+      "Pulp vitality magically",
+      "Only shade matching",
+      "Aspiration/ingestion and improves asepsis",
+      "Orthodontic relapse"
+    ],
+    "answer": 2,
+    "explanation": "Dam safety + asepsis.",
+    "source": "premium_endo",
+    "subtopics": [
+      "isolation"
+    ]
+  },
+  {
+    "id": "end_boost_126",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "NaOCl main antimicrobial + tissue role remains:",
+    "options": [
+      "Only remove smear inorganic alone",
+      "Only etch porcelain",
+      "Dissolve organic tissue and kill microbes",
+      "Only set sealer"
+    ],
+    "answer": 2,
+    "explanation": "NaOCl dual role.",
+    "source": "premium_endo",
+    "subtopics": [
+      "irrigant"
+    ]
+  },
+  {
+    "id": "end_boost_127",
+    "topic": "endo",
+    "difficulty": "medium",
+    "q": "Before elective endo surgery always reassess:",
+    "options": [
+      "Quality of prior RCT / missed anatomy / restorability",
+      "Only shade of lips",
+      "Only patient hair color",
+      "Only phone brand"
+    ],
+    "answer": 0,
+    "explanation": "Reassess before surgery.",
+    "source": "premium_endo",
+    "subtopics": [
+      "diagnosis"
+    ]
+  },
+  {
+    "id": "end_boost_128",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "Endo high-yield #128: rubber dam prevents:",
+    "options": [
+      "Orthodontic relapse",
+      "Pulp vitality magically",
+      "Only shade matching",
+      "Aspiration/ingestion and improves asepsis"
+    ],
+    "answer": 3,
+    "explanation": "Dam safety + asepsis.",
+    "source": "premium_endo",
+    "subtopics": [
+      "isolation"
+    ]
+  },
+  {
+    "id": "end_boost_129",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "NaOCl main antimicrobial + tissue role remains:",
+    "options": [
+      "Only remove smear inorganic alone",
+      "Dissolve organic tissue and kill microbes",
+      "Only set sealer",
+      "Only etch porcelain"
+    ],
+    "answer": 1,
+    "explanation": "NaOCl dual role.",
+    "source": "premium_endo",
+    "subtopics": [
+      "irrigant"
+    ]
+  },
+  {
+    "id": "end_boost_130",
+    "topic": "endo",
+    "difficulty": "medium",
+    "q": "Before elective endo surgery always reassess:",
+    "options": [
+      "Only shade of lips",
+      "Only patient hair color",
+      "Quality of prior RCT / missed anatomy / restorability",
+      "Only phone brand"
+    ],
+    "answer": 2,
+    "explanation": "Reassess before surgery.",
+    "source": "premium_endo",
+    "subtopics": [
+      "diagnosis"
+    ]
+  },
+  {
+    "id": "end_boost_131",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "Endo high-yield #131: rubber dam prevents:",
+    "options": [
+      "Only shade matching",
+      "Orthodontic relapse",
+      "Aspiration/ingestion and improves asepsis",
+      "Pulp vitality magically"
+    ],
+    "answer": 2,
+    "explanation": "Dam safety + asepsis.",
+    "source": "premium_endo",
+    "subtopics": [
+      "isolation"
+    ]
+  },
+  {
+    "id": "end_boost_132",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "NaOCl main antimicrobial + tissue role remains:",
+    "options": [
+      "Only remove smear inorganic alone",
+      "Only etch porcelain",
+      "Only set sealer",
+      "Dissolve organic tissue and kill microbes"
+    ],
+    "answer": 3,
+    "explanation": "NaOCl dual role.",
+    "source": "premium_endo",
+    "subtopics": [
+      "irrigant"
+    ]
+  },
+  {
+    "id": "end_boost_133",
+    "topic": "endo",
+    "difficulty": "medium",
+    "q": "Before elective endo surgery always reassess:",
+    "options": [
+      "Only phone brand",
+      "Quality of prior RCT / missed anatomy / restorability",
+      "Only shade of lips",
+      "Only patient hair color"
+    ],
+    "answer": 1,
+    "explanation": "Reassess before surgery.",
+    "source": "premium_endo",
+    "subtopics": [
+      "diagnosis"
+    ]
+  },
+  {
+    "id": "end_boost_134",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "Endo high-yield #134: rubber dam prevents:",
+    "options": [
+      "Only shade matching",
+      "Aspiration/ingestion and improves asepsis",
+      "Pulp vitality magically",
+      "Orthodontic relapse"
+    ],
+    "answer": 1,
+    "explanation": "Dam safety + asepsis.",
+    "source": "premium_endo",
+    "subtopics": [
+      "isolation"
+    ]
+  },
+  {
+    "id": "end_boost_135",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "NaOCl main antimicrobial + tissue role remains:",
+    "options": [
+      "Only etch porcelain",
+      "Dissolve organic tissue and kill microbes",
+      "Only set sealer",
+      "Only remove smear inorganic alone"
+    ],
+    "answer": 1,
+    "explanation": "NaOCl dual role.",
+    "source": "premium_endo",
+    "subtopics": [
+      "irrigant"
+    ]
+  },
+  {
+    "id": "end_boost_136",
+    "topic": "endo",
+    "difficulty": "medium",
+    "q": "Before elective endo surgery always reassess:",
+    "options": [
+      "Only phone brand",
+      "Only patient hair color",
+      "Only shade of lips",
+      "Quality of prior RCT / missed anatomy / restorability"
+    ],
+    "answer": 3,
+    "explanation": "Reassess before surgery.",
+    "source": "premium_endo",
+    "subtopics": [
+      "diagnosis"
+    ]
+  },
+  {
+    "id": "end_boost_137",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "Endo high-yield #137: rubber dam prevents:",
+    "options": [
+      "Only shade matching",
+      "Aspiration/ingestion and improves asepsis",
+      "Orthodontic relapse",
+      "Pulp vitality magically"
+    ],
+    "answer": 1,
+    "explanation": "Dam safety + asepsis.",
+    "source": "premium_endo",
+    "subtopics": [
+      "isolation"
+    ]
+  },
+  {
+    "id": "end_boost_138",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "NaOCl main antimicrobial + tissue role remains:",
+    "options": [
+      "Only remove smear inorganic alone",
+      "Only set sealer",
+      "Only etch porcelain",
+      "Dissolve organic tissue and kill microbes"
+    ],
+    "answer": 3,
+    "explanation": "NaOCl dual role.",
+    "source": "premium_endo",
+    "subtopics": [
+      "irrigant"
+    ]
+  },
+  {
+    "id": "end_boost_139",
+    "topic": "endo",
+    "difficulty": "medium",
+    "q": "Before elective endo surgery always reassess:",
+    "options": [
+      "Only phone brand",
+      "Only shade of lips",
+      "Quality of prior RCT / missed anatomy / restorability",
+      "Only patient hair color"
+    ],
+    "answer": 2,
+    "explanation": "Reassess before surgery.",
+    "source": "premium_endo",
+    "subtopics": [
+      "diagnosis"
+    ]
+  },
+  {
+    "id": "end_boost_140",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "Endo high-yield #140: rubber dam prevents:",
+    "options": [
+      "Only shade matching",
+      "Orthodontic relapse",
+      "Aspiration/ingestion and improves asepsis",
+      "Pulp vitality magically"
+    ],
+    "answer": 2,
+    "explanation": "Dam safety + asepsis.",
+    "source": "premium_endo",
+    "subtopics": [
+      "isolation"
+    ]
+  },
+  {
+    "id": "end_boost_141",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "NaOCl main antimicrobial + tissue role remains:",
+    "options": [
+      "Only set sealer",
+      "Only etch porcelain",
+      "Only remove smear inorganic alone",
+      "Dissolve organic tissue and kill microbes"
+    ],
+    "answer": 3,
+    "explanation": "NaOCl dual role.",
+    "source": "premium_endo",
+    "subtopics": [
+      "irrigant"
+    ]
+  },
+  {
+    "id": "end_boost_142",
+    "topic": "endo",
+    "difficulty": "medium",
+    "q": "Before elective endo surgery always reassess:",
+    "options": [
+      "Quality of prior RCT / missed anatomy / restorability",
+      "Only patient hair color",
+      "Only phone brand",
+      "Only shade of lips"
+    ],
+    "answer": 0,
+    "explanation": "Reassess before surgery.",
+    "source": "premium_endo",
+    "subtopics": [
+      "diagnosis"
+    ]
+  },
+  {
+    "id": "end_boost_143",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "Endo high-yield #143: rubber dam prevents:",
+    "options": [
+      "Pulp vitality magically",
+      "Only shade matching",
+      "Aspiration/ingestion and improves asepsis",
+      "Orthodontic relapse"
+    ],
+    "answer": 2,
+    "explanation": "Dam safety + asepsis.",
+    "source": "premium_endo",
+    "subtopics": [
+      "isolation"
+    ]
+  },
+  {
+    "id": "end_boost_144",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "NaOCl main antimicrobial + tissue role remains:",
+    "options": [
+      "Only set sealer",
+      "Only etch porcelain",
+      "Only remove smear inorganic alone",
+      "Dissolve organic tissue and kill microbes"
+    ],
+    "answer": 3,
+    "explanation": "NaOCl dual role.",
+    "source": "premium_endo",
+    "subtopics": [
+      "irrigant"
+    ]
+  },
+  {
+    "id": "end_boost_145",
+    "topic": "endo",
+    "difficulty": "medium",
+    "q": "Before elective endo surgery always reassess:",
+    "options": [
+      "Only phone brand",
+      "Quality of prior RCT / missed anatomy / restorability",
+      "Only shade of lips",
+      "Only patient hair color"
+    ],
+    "answer": 1,
+    "explanation": "Reassess before surgery.",
+    "source": "premium_endo",
+    "subtopics": [
+      "diagnosis"
+    ]
+  },
+  {
+    "id": "end_boost_146",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "Endo high-yield #146: rubber dam prevents:",
+    "options": [
+      "Only shade matching",
+      "Orthodontic relapse",
+      "Aspiration/ingestion and improves asepsis",
+      "Pulp vitality magically"
+    ],
+    "answer": 2,
+    "explanation": "Dam safety + asepsis.",
+    "source": "premium_endo",
+    "subtopics": [
+      "isolation"
+    ]
+  },
+  {
+    "id": "end_boost_147",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "NaOCl main antimicrobial + tissue role remains:",
+    "options": [
+      "Only remove smear inorganic alone",
+      "Dissolve organic tissue and kill microbes",
+      "Only set sealer",
+      "Only etch porcelain"
+    ],
+    "answer": 1,
+    "explanation": "NaOCl dual role.",
+    "source": "premium_endo",
+    "subtopics": [
+      "irrigant"
+    ]
+  },
+  {
+    "id": "end_boost_148",
+    "topic": "endo",
+    "difficulty": "medium",
+    "q": "Before elective endo surgery always reassess:",
+    "options": [
+      "Only phone brand",
+      "Only shade of lips",
+      "Only patient hair color",
+      "Quality of prior RCT / missed anatomy / restorability"
+    ],
+    "answer": 3,
+    "explanation": "Reassess before surgery.",
+    "source": "premium_endo",
+    "subtopics": [
+      "diagnosis"
+    ]
+  },
+  {
+    "id": "end_boost_149",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "Endo high-yield #149: rubber dam prevents:",
+    "options": [
+      "Orthodontic relapse",
+      "Only shade matching",
+      "Aspiration/ingestion and improves asepsis",
+      "Pulp vitality magically"
+    ],
+    "answer": 2,
+    "explanation": "Dam safety + asepsis.",
+    "source": "premium_endo",
+    "subtopics": [
+      "isolation"
+    ]
+  },
+  {
+    "id": "end_boost_150",
+    "topic": "endo",
+    "difficulty": "easy",
+    "q": "NaOCl main antimicrobial + tissue role remains:",
+    "options": [
+      "Only etch porcelain",
+      "Dissolve organic tissue and kill microbes",
+      "Only remove smear inorganic alone",
+      "Only set sealer"
+    ],
+    "answer": 1,
+    "explanation": "NaOCl dual role.",
+    "source": "premium_endo",
+    "subtopics": [
+      "irrigant"
+    ]
+  }
+]
