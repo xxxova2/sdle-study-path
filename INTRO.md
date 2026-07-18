@@ -36,15 +36,13 @@ In **Extra practice** or **MCQs**, tap the **Endo** buttons (separate pool).
 
 ## Feedback — help us fix it
 
-There is a top tab called **Feedback**. Anyone can write:
+There is a top tab called **Feedback**. Anyone can write (bug, wrong MCQ, mobile issue, idea).
 
-- a bug  
-- a wrong MCQ or thin lesson  
-- a mobile layout problem  
-- an idea  
+**No GitHub account. No login.** Tap Send — it is delivered to the maintainer automatically.
 
-When you send it, a **GitHub Issue** opens so the maintainer can **read every note and fix the app**.  
-Maintainer inbox: https://github.com/xxxova2/sdle-study-path/issues?q=is%3Aissue+label%3Afeedback  
+Maintainer inbox (bookmark on your phone):  
+https://ntfy.sh/sdle-study-path-feedback-xxxova2-k7m9  
+
 
 ## Open source
 
