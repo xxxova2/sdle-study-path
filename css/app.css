@@ -2030,3 +2030,237 @@ body.focus-mode .plan-chooser:not(.plan-chooser-gate) {
   margin-top: 10px;
   font-size: 0.85rem;
 }
+
+/* ——— Feedback tab ——— */
+.feedback-card {
+  max-width: 40rem;
+}
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.fb-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+.fb-field span em {
+  font-style: normal;
+  opacity: 0.75;
+  font-size: 0.85em;
+}
+.fb-field input,
+.fb-field select,
+.fb-field textarea {
+  font: inherit;
+  font-size: 1rem;
+  color: var(--text);
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px 14px;
+  min-height: 44px;
+  width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.fb-field textarea {
+  min-height: 160px;
+  resize: vertical;
+  line-height: 1.5;
+}
+.fb-field input:focus,
+.fb-field select:focus,
+.fb-field textarea:focus {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 1px;
+  border-color: var(--accent);
+}
+.feedback-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+.fb-status {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--accent2);
+  line-height: 1.45;
+}
+.fb-status a {
+  color: var(--accent);
+}
+
+/* ——— Mobile / phone browser ——— */
+@media (max-width: 720px) {
+  .topbar.simple {
+    padding: 6px 8px 4px;
+    /* keep under iOS notch */
+    padding-left: max(8px, env(safe-area-inset-left));
+    padding-right: max(8px, env(safe-area-inset-right));
+  }
+
+  .chrome-row {
+    gap: 6px;
+    min-height: 0;
+  }
+
+  .logo-text {
+    font-size: 0.8rem;
+  }
+
+  .top-stats {
+    font-size: 0.68rem;
+    gap: 4px 8px;
+    order: 3;
+    width: 100%;
+  }
+
+  .pomo-bar {
+    margin-left: 0;
+    flex: 1 1 auto;
+    max-width: 100%;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    padding: 4px 8px;
+  }
+
+  .pomo-bar .pomo-goal {
+    white-space: normal;
+    font-size: 0.65rem;
+  }
+
+  /* Horizontal scroll tabs — easy thumb reach, never hide */
+  .simple-nav,
+  #main-nav {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    gap: 4px;
+    padding-bottom: 4px;
+    margin-top: 4px;
+  }
+
+  .simple-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .simple-nav button {
+    flex: 0 0 auto;
+    padding: 10px 14px;
+    min-height: 42px;
+    font-size: 0.82rem;
+  }
+
+  .path-main {
+    padding: 10px 12px 64px;
+    padding-left: max(12px, env(safe-area-inset-left));
+    padding-right: max(12px, env(safe-area-inset-right));
+    padding-bottom: max(64px, env(safe-area-inset-bottom));
+  }
+
+  h1 {
+    font-size: 1.25rem;
+  }
+
+  .day-header h1 {
+    font-size: 1.15rem;
+  }
+
+  .step-body {
+    padding: 0.65rem 0.75rem 1.1rem;
+  }
+
+  .step.open .step-body:has(.reading) {
+    padding: 0.75rem 0.85rem 1.4rem;
+  }
+
+  .step-body .reading {
+    font-size: 1.08rem;
+    line-height: 1.65;
+    max-width: none;
+  }
+
+  body.focus-mode .step-body .reading {
+    font-size: 1.14rem;
+    line-height: 1.7;
+    max-width: none;
+  }
+
+  .btn,
+  .volume-grid .btn,
+  .volume-grid button.btn {
+    min-height: 44px;
+    padding: 10px 12px;
+    font-size: 0.9rem;
+  }
+
+  .btn.sm {
+    min-height: 36px;
+    padding: 6px 10px;
+  }
+
+  .volume-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+
+  .stat-row {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .day-plan-step {
+    grid-template-columns: 28px 1fr;
+    gap: 8px;
+  }
+
+  .day-plan-time {
+    grid-column: 2;
+    padding-top: 0;
+  }
+
+  .video-list li {
+    flex-direction: column;
+  }
+
+  .vid-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .vid-actions .btn {
+    flex: 1 1 auto;
+  }
+
+  footer.foot {
+    font-size: 0.65rem;
+    padding: 8px 10px max(8px, env(safe-area-inset-bottom));
+  }
+
+  .options button,
+  .opt,
+  .choice,
+  .quiz-opt {
+    min-height: 48px;
+  }
+
+  .feedback-actions .btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 380px) {
+  .volume-grid {
+    grid-template-columns: 1fr;
+  }
+  .logo-text {
+    display: none;
+  }
+}

@@ -47,10 +47,10 @@ fi
 
 if grep -q 'id="main-nav"' index.html && grep -q 'data-view="today"' index.html; then
   TAB_N=$(grep -o 'data-view="' index.html | wc -l)
-  if [[ "$TAB_N" -eq 7 ]]; then
-    ok "index.html has 7 data-view tabs"
+  if [[ "$TAB_N" -eq 8 ]]; then
+    ok "index.html has 8 data-view tabs (incl. feedback)"
   else
-    fail "index.html data-view count = $TAB_N (want 7)"
+    fail "index.html data-view count = $TAB_N (want 8)"
   fi
 else
   fail "index.html missing #main-nav or today tab"

@@ -884,7 +884,11 @@
   }
 
   /* ——— NAV ——— */
-  const TAB_VIEWS = ["today", "days", "pass", "always", "practice", "mcqs", "progress"];
+  const TAB_VIEWS = ["today", "days", "pass", "always", "practice", "mcqs", "progress", "feedback"];
+  /** Public GitHub — feedback opens Issues so the maintainer can read & fix. */
+  const REPO_URL = "https://github.com/xxxova2/sdle-study-path";
+  const FEEDBACK_ISSUES_URL = REPO_URL + "/issues?q=is%3Aissue+label%3Afeedback";
+  const FEEDBACK_NEW_ISSUE = REPO_URL + "/issues/new";
 
   /** MCQs hub categories → pool() keys (full bank, no thinning). */
   const MCQ_CATEGORIES = [
@@ -1023,6 +1027,7 @@
     else if (state.view === "practice") renderPractice();
     else if (state.view === "mcqs") renderMcqs();
     else if (state.view === "progress") renderProgress();
+    else if (state.view === "feedback") renderFeedback();
     else if (state.view === "quiz") renderQuizUI();
     else if (state.view === "cards") renderCardsUI();
   }
@@ -2505,6 +2510,129 @@
     a.download = `sdle-wrong-book-${items.length}.txt`;
     a.click();
     URL.revokeObjectURL(a.href);
+  }
+
+  function renderFeedback() {
+    const draft = store.get("feedbackDraft", {
+      name: "",
+      kind: "bug",
+      message: "",
+    });
+    app.innerHTML = `
+      ${backBarHtml("← Back")}
+      <h1>Feedback</h1>
+      <p class="lead">Found a bug, wrong MCQ, thin lesson, or have an idea? Write it here.
+        Your note opens a <strong>GitHub Issue</strong> so the maintainer can read it and fix the app.
+        Free GitHub account is enough to submit (or paste the text into a new issue).</p>
+
+      <section class="feedback-card simple-panel">
+        <form id="feedback-form" class="feedback-form" novalidate>
+          <label class="fb-field">
+            <span>Your name or nickname <em>(optional)</em></span>
+            <input type="text" id="fb-name" name="name" maxlength="80" autocomplete="nickname"
+              placeholder="e.g. Ahmed" value="${escapeHtml(draft.name || "")}" />
+          </label>
+          <label class="fb-field">
+            <span>Type</span>
+            <select id="fb-kind" name="kind">
+              <option value="bug" ${draft.kind === "bug" ? "selected" : ""}>Bug / broken thing</option>
+              <option value="content" ${draft.kind === "content" ? "selected" : ""}>Wrong content / MCQ / lesson</option>
+              <option value="mobile" ${draft.kind === "mobile" ? "selected" : ""}>Mobile / phone layout</option>
+              <option value="idea" ${draft.kind === "idea" ? "selected" : ""}>Idea / feature</option>
+              <option value="other" ${draft.kind === "other" ? "selected" : ""}>Other</option>
+            </select>
+          </label>
+          <label class="fb-field">
+            <span>Your feedback <em>(required)</em></span>
+            <textarea id="fb-message" name="message" rows="8" required maxlength="8000"
+              placeholder="What happened? Which day/tab/MCQ? What did you expect?">${escapeHtml(draft.message || "")}</textarea>
+          </label>
+          <p class="muted-hint">Tip: include Day number, tab name, or question text if something is wrong.</p>
+          <div class="feedback-actions">
+            <button type="submit" class="btn success" id="fb-submit">Send feedback</button>
+            <button type="button" class="btn ghost" id="fb-save-draft">Save draft on this device</button>
+          </div>
+          <p id="fb-status" class="fb-status" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <section class="simple-panel" style="margin-top:16px">
+        <h3 class="section-label">For the maintainer</h3>
+        <p class="lead">All public feedback lives on GitHub Issues (label <code>feedback</code>). Open this on phone or PC:</p>
+        <div class="volume-grid">
+          <a class="btn" href="${FEEDBACK_ISSUES_URL}" target="_blank" rel="noopener">Read all feedback</a>
+          <a class="btn ghost" href="${REPO_URL}" target="_blank" rel="noopener">Open source repo</a>
+          <a class="btn ghost" href="${REPO_URL}/blob/main/INTRO.md" target="_blank" rel="noopener">Intro letter</a>
+        </div>
+      </section>`;
+
+    bindBackBar();
+
+    const saveDraft = () => {
+      store.set("feedbackDraft", {
+        name: ($("#fb-name") && $("#fb-name").value) || "",
+        kind: ($("#fb-kind") && $("#fb-kind").value) || "bug",
+        message: ($("#fb-message") && $("#fb-message").value) || "",
+      });
+    };
+
+    $("#fb-save-draft") &&
+      ($("#fb-save-draft").onclick = () => {
+        saveDraft();
+        const st = $("#fb-status");
+        if (st) st.textContent = "Draft saved on this phone/computer only.";
+      });
+
+    $("#feedback-form") &&
+      ($("#feedback-form").onsubmit = (e) => {
+        e.preventDefault();
+        const name = (($("#fb-name") && $("#fb-name").value) || "").trim();
+        const kind = (($("#fb-kind") && $("#fb-kind").value) || "other").trim();
+        const message = (($("#fb-message") && $("#fb-message").value) || "").trim();
+        const st = $("#fb-status");
+        if (!message || message.length < 8) {
+          if (st) st.textContent = "Please write a bit more detail (at least a short sentence).";
+          return;
+        }
+        saveDraft();
+        const kindLabel = {
+          bug: "Bug",
+          content: "Content",
+          mobile: "Mobile",
+          idea: "Idea",
+          other: "Feedback",
+        }[kind] || "Feedback";
+        const title = `[${kindLabel}] ${(message.slice(0, 60) + (message.length > 60 ? "…" : "")).replace(/\s+/g, " ")}`;
+        const body = [
+          "## Feedback from the app",
+          "",
+          `**Type:** ${kindLabel}`,
+          `**From:** ${name || "(not given)"}`,
+          `**When:** ${new Date().toISOString()}`,
+          `**App URL:** ${typeof location !== "undefined" ? location.href : ""}`,
+          `**Device:** ${typeof navigator !== "undefined" ? navigator.userAgent : ""}`,
+          "",
+          "### Message",
+          "",
+          message,
+          "",
+          "---",
+          "_Sent from the Feedback tab in SDLE Study Path._",
+        ].join("\n");
+        const url =
+          FEEDBACK_NEW_ISSUE +
+          "?labels=feedback&title=" +
+          encodeURIComponent(title) +
+          "&body=" +
+          encodeURIComponent(body);
+        if (st) {
+          st.innerHTML =
+            'Opening GitHub… If nothing opens, <a href="' +
+            escapeHtml(url) +
+            '" target="_blank" rel="noopener">tap here to submit</a>.';
+        }
+        window.open(url, "_blank", "noopener");
+      });
   }
 
   function renderProgress() {
