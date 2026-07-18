@@ -885,10 +885,8 @@
 
   /* ——— NAV ——— */
   const TAB_VIEWS = ["today", "days", "pass", "always", "practice", "mcqs", "progress", "feedback"];
-  /** Public GitHub — feedback opens Issues so the maintainer can read & fix. */
+  /** Public source repo (docs only — feedback does NOT open GitHub). */
   const REPO_URL = "https://github.com/xxxova2/sdle-study-path";
-  const FEEDBACK_ISSUES_URL = REPO_URL + "/issues?q=is%3Aissue+label%3Afeedback";
-  const FEEDBACK_NEW_ISSUE = REPO_URL + "/issues/new";
 
   /** MCQs hub categories → pool() keys (full bank, no thinning). */
   const MCQ_CATEGORIES = [
