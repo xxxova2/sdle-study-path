@@ -3091,9 +3091,19 @@
     return false;
   }
 
+  /** Strip old coaching boilerplate that was once baked into bank explanations. */
+  function scrubExplanation(text) {
+    let t = String(text || "").trim();
+    t = t.replace(/\s*Eliminate contradicting distractors;\s*re-drill wrongs same day\.?\s*$/i, "");
+    t = t.replace(/\s*Re-drill this hinge if you missed it\.?\s*$/i, "");
+    /* Stored pads like: "Hinge. Correct: D) option text." — keep hinge only. */
+    t = t.replace(/\s*Correct:\s*[A-D]\).*$/i, "");
+    return t.replace(/\s+/g, " ").trim();
+  }
+
   /** Pad thin bank hinges with correct option (never invent official keys). */
   function enrichExplanation(item) {
-    let body = (item.explanation || "").trim();
+    let body = scrubExplanation(item.explanation || "");
     const letter = "ABCD"[item.answer];
     const opt =
       item.options && letter != null && item.options[item.answer] != null
@@ -3110,20 +3120,17 @@
       }
       return body;
     }
-    const parts = [body];
+    /* Thin clinical tag only: append correct option once (UI already shows Correct/Incorrect). */
     if (body.length < 55 && opt && letter) {
       const already = body.toLowerCase().includes(opt.slice(0, 18).toLowerCase());
-      if (!already) parts.push(`Correct: ${letter}) ${opt}`);
+      if (!already) body = `${body} Correct: ${letter}) ${opt}`;
     }
-    if (body.length < 40) {
-      parts.push("Re-drill this hinge if you missed it.");
-    }
-    return parts.join(" ");
+    return body;
   }
 
   function formatWhy(item) {
     const body = enrichExplanation(item);
-    const placeholder = isPlaceholderExplanation(item.explanation);
+    const placeholder = isPlaceholderExplanation(scrubExplanation(item.explanation));
     const scfhs =
       typeof window.scfhsRefsForTopic === "function"
         ? window.scfhsRefsForTopic(item.topic || item.pool)
@@ -3142,7 +3149,7 @@
         : "";
     const footer = placeholder
       ? `<div class="src-line why-footer">Community bank item — treat letter as provisional until you verify.</div>`
-      : `<div class="src-line why-footer">Write the hinge in your notebook if you missed it.</div>`;
+      : "";
     return `<div class="explain"><strong>Why:</strong> ${escapeHtml(body)}</div>
       ${footer}
       ${scfhsShort}${bookHtml}`;
@@ -4659,9 +4666,18 @@
     });
     const fb = $("#feedback");
     if (fb) {
-      fb.innerHTML = `<div class="explain"><strong>${ok ? "Correct." : "Incorrect."}</strong> ${escapeHtml(
-        item.explanation || ""
-      )}</div>${formatWhy(item)}${sdleGptButtonHtml("row")}`;
+      /* Status line only — do not paste explanation here; formatWhy owns the hinge once. */
+      const letter = "ABCD"[item.answer];
+      const opt =
+        item.options && item.options[item.answer] != null
+          ? String(item.options[item.answer])
+          : "";
+      const status = ok
+        ? `<div class="explain"><strong>Correct.</strong></div>`
+        : `<div class="explain"><strong>Incorrect.</strong> Answer: ${escapeHtml(
+            letter || "?"
+          )}) ${escapeHtml(opt)}</div>`;
+      fb.innerHTML = `${status}${formatWhy(item)}${sdleGptButtonHtml("row")}`;
       bindSdleGptButtons(fb, () => contextFromQuizItem(item, idx));
     }
     const next = $("#btn-next");

@@ -19,13 +19,52 @@
     return INDEX.books.filter((b) => titles.includes(b.title) || b.topic === key).slice(0, 4);
   }
 
-  function keywordHitsForText(text, limit) {
+  function topicBucket(topic) {
+    const t = String(topic || "").toLowerCase();
+    if (t.includes("perio")) return "perio";
+    if (t.includes("endo")) return "endo";
+    if (t.includes("ethic") || t.includes("infect") || t.includes("anesth") || t.includes("med")) return "ethics";
+    if (t.includes("ortho") || t.includes("pedo")) return "ortho_pedo";
+    if (t.includes("oms") || t.includes("surg") || t.includes("path")) return "oms";
+    if (
+      t.includes("resto") ||
+      t.includes("oper") ||
+      t.includes("fixed") ||
+      t.includes("rpd") ||
+      t.includes("denture") ||
+      t.includes("implant") ||
+      t.includes("material")
+    )
+      return "restorative";
+    return "";
+  }
+
+  function keywordHitsForText(text, limit, preferTopic) {
     limit = limit || 3;
     const s = String(text || "").toLowerCase();
     if (!s) return [];
+    const bucket = topicBucket(preferTopic);
     const hits = [];
     for (const [kw, list] of Object.entries(INDEX.keywords || {})) {
-      if (s.includes(kw.toLowerCase())) {
+      if (!s.includes(kw.toLowerCase())) continue;
+      /* Prefer hits whose book topic matches the MCQ topic (composite ≠ infection control). */
+      const ordered = bucket
+        ? list.slice().sort((a, b) => {
+            const am = a.topic === bucket ? 0 : 1;
+            const bm = b.topic === bucket ? 0 : 1;
+            return am - bm;
+          })
+        : list;
+      for (const h of ordered) {
+        if (bucket && h.topic && h.topic !== bucket) continue;
+        hits.push(Object.assign({ keyword: kw }, h));
+        if (hits.length >= limit) return hits;
+      }
+    }
+    /* Fallback: any hit if topic filter emptied the list */
+    if (!hits.length) {
+      for (const [kw, list] of Object.entries(INDEX.keywords || {})) {
+        if (!s.includes(kw.toLowerCase())) continue;
         for (const h of list) {
           hits.push(Object.assign({ keyword: kw }, h));
           if (hits.length >= limit) return hits;
@@ -40,7 +79,7 @@
     const topic = (item && (item.topic || item.pool)) || "";
     const stem = (item && item.q) || "";
     const exp = (item && item.explanation) || "";
-    const hits = keywordHitsForText(stem + " " + exp, opts.limit || 3);
+    const hits = keywordHitsForText(stem + " " + exp, opts.limit || 3, topic);
     const books = booksForTopic(topic);
     if (!hits.length && !books.length) return "";
     let html = '<div class="book-refs">';
