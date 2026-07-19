@@ -1,0 +1,452 @@
+[
+  {
+    "id": "saud_delta_111",
+    "topic": "restorative",
+    "w": 0.4,
+    "explLen": 135,
+    "answer": 1,
+    "q": "importance the use of acid etch before restoration",
+    "options": [
+      "D- decrease the temperature",
+      "C- decrease the microleakage",
+      "A- Improve shade matching",
+      "B- decrease the staining of dentin"
+    ],
+    "explanation": "Acid etching creates micromechanical retention and improves the enamel–resin seal, which decreases microleakage at restoration margins."
+  },
+  {
+    "id": "saud_delta_145",
+    "topic": "restorative",
+    "w": 0.4,
+    "explLen": 154,
+    "answer": 3,
+    "q": "MRSA virus infection by",
+    "options": [
+      "Airborne",
+      "Investigate gi problems and diet",
+      "Etched porcelain",
+      "Direct contact"
+    ],
+    "explanation": "MRSA transmits primarily by direct contact with colonized skin/wounds or contaminated hands and fomites, not classic airborne droplet nuclei like measles."
+  },
+  {
+    "id": "saud_delta_127",
+    "topic": "restorative",
+    "w": 0.4,
+    "explLen": 160,
+    "answer": 1,
+    "q": "gram negative bacteria Associated with",
+    "options": [
+      "Investigate gi problems and diet",
+      "A-subgingival margin with overhang",
+      "B-smooth subgingival margin",
+      "C-supragingival margin with overhang"
+    ],
+    "explanation": "Subgingival overhanging margins trap plaque and favor anaerobic gram-negative periodontal pathogens; smooth or supragingival contours are less plaque-retentive."
+  },
+  {
+    "id": "saud_delta_110",
+    "topic": "restorative",
+    "w": 0.4,
+    "explLen": 164,
+    "answer": 3,
+    "q": "years pedo came to the clinc with thumb sucking and her parnts tray with negative reinforcement but didn't help , what is your? manegment",
+    "options": [
+      "Investigate gi problems and diet",
+      "Etched porcelain",
+      "ortho pacifier",
+      "Palatal crib"
+    ],
+    "explanation": "When parental behavior modification fails for persistent thumb-sucking, a fixed habit-breaking appliance such as a palatal crib is the standard dental intervention."
+  },
+  {
+    "id": "saud_delta_028",
+    "topic": "restorative",
+    "w": 0.4,
+    "explLen": 166,
+    "answer": 0,
+    "q": "Bruxer pt with mouth guard",
+    "options": [
+      "contact on anterior and posterior",
+      "Contact on anterior only",
+      "Investigate gi problems and diet",
+      "Etched porcelain"
+    ],
+    "explanation": "A full-coverage hard nightguard for bruxism should provide even occlusal contacts on both anterior and posterior teeth to distribute load and stabilize the appliance."
+  },
+  {
+    "id": "saud_delta_089",
+    "topic": "restorative",
+    "w": 0.4,
+    "explLen": 169,
+    "answer": 3,
+    "q": "the other name for organic occlusion",
+    "options": [
+      "centric",
+      "eccentric",
+      "group function",
+      "mutually protected"
+    ],
+    "explanation": "‘Organic occlusion’ in classic occlusion teaching is mutually protected occlusion: posterior teeth protect anteriors in MIP, anteriors disclude posteriors in excursions."
+  },
+  {
+    "id": "saud_delta_104",
+    "topic": "restorative",
+    "w": 0.4,
+    "explLen": 174,
+    "answer": 0,
+    "q": "Lower premolar with class I amalgam came to the clinic with broken distal cusp. What is the cause",
+    "options": [
+      "Undermined tooth structure",
+      "High occlusal contact",
+      "Investigate gi problems and diet",
+      "Etched porcelain"
+    ],
+    "explanation": "Fracture of a cusp adjacent to a Class I amalgam typically follows undermined enamel/dentin left without adequate support after cavity preparation, not solely high occlusion."
+  },
+  {
+    "id": "saud_delta_112",
+    "topic": "restorative",
+    "w": 0.4,
+    "explLen": 178,
+    "answer": 0,
+    "q": "you do caries risk assessment before perio treatment why",
+    "options": [
+      "A- Root sensitivity",
+      "B- loss coronal part",
+      "C- reduce pocket depth",
+      "Investigate gi problems and diet"
+    ],
+    "explanation": "Caries risk assessment before periodontal therapy anticipates root exposure after scaling/surgery; exposed roots in high-risk patients drive sensitivity and root caries planning."
+  },
+  {
+    "id": "saud_delta_067",
+    "topic": "restorative",
+    "w": 0.4,
+    "explLen": 180,
+    "answer": 1,
+    "q": "in lower premolar with pain while releasing from occlusion",
+    "options": [
+      "Etched porcelain",
+      "crack",
+      "VRF",
+      "Investigate gi problems and diet"
+    ],
+    "explanation": "Pain on release of occlusal pressure (rebound) is classic for a cracked tooth; vertical root fracture usually presents with deep isolated pockets and J-shaped bone loss after endo."
+  },
+  {
+    "id": "saud_delta_065",
+    "topic": "restorative",
+    "w": 0.4,
+    "explLen": 182,
+    "answer": 3,
+    "q": "Patient to do implant of 11 , what is essential",
+    "options": [
+      "Closed tray impression",
+      "Non-engaging abutment",
+      "Investigate gi problems and diet",
+      "Diagnostic cast and surgical template"
+    ],
+    "explanation": "Planning a single anterior implant (#11) requires prosthetically driven workup: diagnostic casts/wax-up and a surgical template/guide—more essential than closed-tray technique alone."
+  },
+  {
+    "id": "saud_delta_047",
+    "topic": "restorative",
+    "w": 0.4,
+    "explLen": 187,
+    "answer": 1,
+    "q": "What is the cause of gross (ismuth )amalgam fracture",
+    "options": [
+      "Etched porcelain",
+      "inadequate preparatiot .",
+      "high occlusal force",
+      "Investigate gi problems and diet"
+    ],
+    "explanation": "Bulk or isthmus fracture of amalgam is most often from inadequate preparation (insufficient depth/width, sharp internal angles, or weak isthmus), not diet investigation or veneer choices."
+  },
+  {
+    "id": "saud_delta_088",
+    "topic": "restorative",
+    "w": 0.4,
+    "explLen": 187,
+    "answer": 0,
+    "q": "pt 5 years old with negative behavior and multiple occlusal caries",
+    "options": [
+      "wip with fluoride varnish",
+      "professionally applied fluoride varnish",
+      "professionally applied fluoride gel",
+      "wip with fluoride gel"
+    ],
+    "explanation": "In a young uncooperative child, fluoride varnish painted/wiped on is preferred over tray gels (less gag, less ingestion risk, better behavior tolerance) for professional topical fluoride."
+  },
+  {
+    "id": "saud_delta_099",
+    "topic": "restorative",
+    "w": 0.4,
+    "explLen": 188,
+    "answer": 1,
+    "q": "best impression material for final crown",
+    "options": [
+      "Investigate gi problems and diet",
+      "PVS",
+      "Alginate",
+      "Agar"
+    ],
+    "explanation": "Addition silicone (PVS) is preferred for final crown impressions: high accuracy, dimensional stability, and detail. Alginate lacks precision; agar is less practical for routine fixed work."
+  },
+  {
+    "id": "saud_delta_126",
+    "topic": "restorative",
+    "w": 0.4,
+    "explLen": 194,
+    "answer": 2,
+    "q": "obturation material for patient allergic to resin",
+    "options": [
+      "Etched porcelain",
+      "contact on anterior and posterior",
+      "resilon",
+      "Investigate gi problems and diet"
+    ],
+    "explanation": "Among listed obturation-related options, resilon-type systems are the only root-filling choice present; clinically, true resin allergy favors gutta-percha with a non-resin sealer when available."
+  },
+  {
+    "id": "saud_delta_129",
+    "topic": "restorative",
+    "w": 0.4,
+    "explLen": 200,
+    "answer": 3,
+    "q": "during RPD framework everything was perfect except the rest was smaller than the rest seats intra orally, you return it to the cast and it was perfect on the cast, what is your management A-soldering rest",
+    "options": [
+      "C-redo the framework on the same cast",
+      "Investigate gi problems and diet",
+      "Etched porcelain",
+      "B- redo final impression and the framework"
+    ],
+    "explanation": "If the RPD rest fits the cast but not the mouth, the cast does not represent the patient (impression/cast error). Remake the final impression and framework; redoing on the same cast repeats the error."
+  },
+  {
+    "id": "saud_delta_008",
+    "topic": "restorative",
+    "w": 0.4,
+    "explLen": 201,
+    "answer": 0,
+    "q": "pt has dark intrinsic staining, best type of veneers",
+    "options": [
+      "Etched porcelain",
+      "zirconia",
+      "Composite",
+      "Investigate gi problems and diet"
+    ],
+    "explanation": "Dark intrinsic stains need opaque, thin, durable bonded ceramic; etched porcelain veneers mask discoloration better than translucent composite and better than thick zirconia veneers in many board keys."
+  },
+  {
+    "id": "saud_delta_069",
+    "topic": "restorative",
+    "w": 0.4,
+    "explLen": 201,
+    "answer": 3,
+    "q": "tooth #21 with substandard RCT with cast post and core well crowned ( it was written like this in the )exam",
+    "options": [
+      "re-treatment with surgical retrofilling -2",
+      "re-treatment with surgical without retrofilling -3",
+      "Investigate gi problems and diet",
+      "surgical with retrofilling"
+    ],
+    "explanation": "When a substandard RCT is sealed under a well-fitting cast post–core and crown, orthograde retreatment is difficult; apical surgery with root-end preparation and retrofill is the usual definitive path."
+  },
+  {
+    "id": "saud_delta_093",
+    "topic": "restorative",
+    "w": 0.4,
+    "explLen": 201,
+    "answer": 3,
+    "q": "Why does large restoration complicate ortho tx",
+    "options": [
+      "Slow movement",
+      "Fast movement",
+      "Investigate gi problems and diet",
+      "Break when removing"
+    ],
+    "explanation": "Large or poorly retained restorations complicate orthodontics mainly because brackets/bonds and restorations can fracture or fail during debonding and appliance removal, not by speeding tooth movement."
+  },
+  {
+    "id": "saud_delta_077",
+    "topic": "restorative",
+    "w": 0.4,
+    "explLen": 204,
+    "answer": 3,
+    "q": "years old female Pt came to replace non restorable tooth with implant after radiographic examination there was multiple punched out radiolucency that are different in size what is your diagnosis",
+    "options": [
+      "A: gorlin syndrome",
+      "C: normal with age",
+      "Investigate gi problems and diet",
+      "B: multiple myeloma"
+    ],
+    "explanation": "Multiple punched-out radiolucencies of varying size in an adult skull/jaws are classic for multiple myeloma (or metastatic disease); Gorlin is typically fewer odontogenic keratocysts in a younger patient."
+  },
+  {
+    "id": "saud_delta_001",
+    "topic": "restorative",
+    "w": 0.4,
+    "explLen": 208,
+    "answer": 3,
+    "q": "Pt has amalgam restorations done 3 years ago, came with flat shiny surfaces and elevated amalgam restorations, whats your management",
+    "options": [
+      "replace with composite",
+      "Elevate the vertical dimension",
+      "Etched porcelain",
+      "Investigate gi problems and diet"
+    ],
+    "explanation": "Proud, flat, shiny amalgams usually mean surrounding enamel/dentin was lost to acid erosion, so the restoration stands high; investigate GI reflux and dietary acids rather than replacing or raising VDO first."
+  },
+  {
+    "id": "saud_delta_146",
+    "topic": "restorative",
+    "w": 0.4,
+    "explLen": 208,
+    "answer": 2,
+    "q": "Influenza virus infection by: Airborne- Droplets is a better answer",
+    "options": [
+      "Etched porcelain",
+      "contact on anterior and posterior",
+      "Direct contact",
+      "Investigate gi problems and diet"
+    ],
+    "explanation": "Among usable options, influenza transmission involves close respiratory exposure; droplet/contact precautions apply. (True primary mode is respiratory droplets/aerosols rather than blood-borne contact alone.)"
+  },
+  {
+    "id": "saud_delta_039",
+    "topic": "restorative",
+    "w": 0.4,
+    "explLen": 209,
+    "answer": 1,
+    "q": "Pt came to the clinic with all teeth missing except #17 , #33, #43 , #44 what’s : the best approach for Tx A-Extraction for #17 and Complete for U and Transitional for L B-Extraction for #17, #33,#43#44 and Complete UL C-Extraction for #17 , #14 and complete for U and L",
+    "options": [
+      "contact on anterior and posterior",
+      "over denture",
+      "Investigate gi problems and diet",
+      "Etched porcelain"
+    ],
+    "explanation": "With few remaining strategic teeth (#17, 33, 43, 44), preserving roots/abutments for an overdenture improves retention, proprioception, and ridge preservation versus extracting everything for conventional CDs."
+  },
+  {
+    "id": "saud_delta_271",
+    "topic": "restorative",
+    "w": 0.4,
+    "explLen": 211,
+    "answer": 1,
+    "q": "type force of porcelain and metal in PFM",
+    "options": [
+      "Investigate gi problems and diet",
+      "compressive",
+      "tensile",
+      "shearing"
+    ],
+    "explanation": "In PFM design, porcelain is brittle in tension but strong in compression; the metal substructure is shaped so porcelain is kept under compressive loading during function, reducing tensile fracture of the veneer."
+  },
+  {
+    "id": "saud_delta_284",
+    "topic": "restorative",
+    "w": 0.4,
+    "explLen": 211,
+    "answer": 0,
+    "q": "you have amalgam and it has ditch with more 0.5 what is your management",
+    "options": [
+      "A- replace the whole amalgam",
+      "B- place composite in the ditched area",
+      "Investigate gi problems and diet",
+      "Etched porcelain"
+    ],
+    "explanation": "Amalgam ditching deeper than about 0.5 mm indicates marginal breakdown and leakage risk; patching with composite over old amalgam is unreliable. Full replacement of the restoration is the appropriate management."
+  },
+  {
+    "id": "saud_delta_133",
+    "topic": "restorative",
+    "w": 0.4,
+    "explLen": 214,
+    "answer": 3,
+    "q": "omposite restoration with undecontoure and open contact, margins are sealed and perfect, what is your management",
+    "options": [
+      "B-replace the entire restoration",
+      "Investigate gi problems and diet",
+      "Etched porcelain",
+      "A-repair it by removing part of the proximal box"
+    ],
+    "explanation": "When margins are sealed but the composite is undercontoured with open contact, conservative proximal repair (refresh/repair the box and rebuild contact) is preferred over full replacement if the remainder is sound."
+  },
+  {
+    "id": "saud_delta_261",
+    "topic": "restorative",
+    "w": 0.4,
+    "explLen": 216,
+    "answer": 3,
+    "q": "Restoration not used as final restoration: CAVIT",
+    "options": [
+      "Investigate gi problems and diet",
+      "Etched porcelain",
+      "contact on anterior and posterior",
+      "Restoration not used as final restoration: CAVIT"
+    ],
+    "explanation": "Cavit is a temporary zinc oxide–based endodontic provisional only. It lacks strength, seal longevity, and wear resistance for definitive restoration and must be replaced with a proper temporary or permanent material."
+  },
+  {
+    "id": "saud_delta_122",
+    "topic": "restorative",
+    "w": 0.4,
+    "explLen": 217,
+    "answer": 2,
+    "q": "fractured cusp , vital tooth",
+    "options": [
+      "Composite",
+      "Investigate gi problems and diet",
+      "Ceramic onlay",
+      "Full ceramic"
+    ],
+    "explanation": "A fractured cusp on a vital tooth is ideally restored with cuspal coverage such as an onlay (ceramic/onlay coverage) to protect remaining structure; full crown is more aggressive, simple composite often underprotects."
+  },
+  {
+    "id": "saud_delta_195",
+    "topic": "restorative",
+    "w": 0.4,
+    "explLen": 221,
+    "answer": 1,
+    "q": "Most common hypersensitivity with recession",
+    "options": [
+      "Investigate gi problems and diet",
+      "Cervical root",
+      "Mid root",
+      "Cervical crown"
+    ],
+    "explanation": "Dentin hypersensitivity with gingival recession localizes to exposed cervical root dentin (open tubules near the CEJ), not mid-root bulk or crown enamel. Cervical root is the classic site of recession-related sensitivity."
+  },
+  {
+    "id": "saud_delta_078",
+    "topic": "restorative",
+    "w": 0.4,
+    "explLen": 222,
+    "answer": 2,
+    "q": "Pt came with very deep caries you suspect that it is going to need crown lengthening what is the appropriate sequence",
+    "options": [
+      "caries excavation,RCT,bitewing, crown lengthening",
+      "Investigate gi problems and diet",
+      "Caries excavation,bitewings,RCT,crown lengthening",
+      "Bitewing, caries excavation, RCT,crown lengthening"
+    ],
+    "explanation": "Sequence for deep caries possibly needing crown lengthening: excavate to assess restorability, take bitewings to evaluate remaining tooth structure/ferrule needs, complete RCT if indicated, then surgical crown lengthening."
+  },
+  {
+    "id": "saud_delta_198",
+    "topic": "restorative",
+    "w": 0.4,
+    "explLen": 223,
+    "answer": 2,
+    "q": "chemo-mechanical caries removal",
+    "options": [
+      "Etched porcelain",
+      "contact on anterior and posterior",
+      "carisolv",
+      "Investigate gi problems and diet"
+    ],
+    "explanation": "Carisolv is a chemomechanical caries-removal system (sodium hypochlorite-based gel with amino acids) used with hand instruments to soften and excavate carious dentin selectively without rotary cutting as the primary method."
+  }
+]

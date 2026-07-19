@@ -1,0 +1,176 @@
+{
+  "url": "https://xxxova2.github.io/sdle-study-path/?p=1784496664276",
+  "planLength": "14",
+  "snaps": [
+    {
+      "label": "BEFORE",
+      "stats": null,
+      "history": null,
+      "planLength": "14",
+      "simpleMode": "true",
+      "seenIds": null,
+      "wrongBook": null,
+      "sessionAnswered": "0"
+    },
+    {
+      "label": "SIMPLE_after_restorative",
+      "answers": [
+        {
+          "ok": true,
+          "text": "Flashcards",
+          "nCand": 2,
+          "nOpt": 0
+        },
+        {
+          "ok": true,
+          "text": "Free points",
+          "nCand": 3,
+          "nOpt": 0
+        }
+      ],
+      "stats": null,
+      "history": null,
+      "planLength": "14",
+      "simpleMode": "true",
+      "seenIds": null,
+      "wrongBook": null,
+      "sessionAnswered": "0"
+    },
+    {
+      "label": "SIMPLE_after_endo",
+      "answers": [
+        {
+          "ok": true,
+          "text": "Free points",
+          "nCand": 3,
+          "nOpt": 0
+        },
+        {
+          "ok": true,
+          "text": "restorative (169)",
+          "nCand": 10,
+          "nOpt": 0
+        }
+      ],
+      "stats": null,
+      "history": null,
+      "planLength": "14",
+      "simpleMode": "true",
+      "seenIds": null,
+      "wrongBook": null,
+      "sessionAnswered": "0"
+    },
+    {
+      "label": "SIMPLE_after_perio",
+      "answers": [
+        {
+          "ok": true,
+          "text": "Free points",
+          "nCand": 3,
+          "nOpt": 0
+        },
+        {
+          "ok": true,
+          "text": "restorative (169)",
+          "nCand": 10,
+          "nOpt": 0
+        }
+      ],
+      "stats": null,
+      "history": null,
+      "planLength": "14",
+      "simpleMode": "true",
+      "seenIds": null,
+      "wrongBook": null,
+      "sessionAnswered": "0"
+    },
+    {
+      "label": "SIMPLE_before_reload",
+      "stats": null,
+      "history": null,
+      "planLength": "14",
+      "simpleMode": "true",
+      "seenIds": null,
+      "wrongBook": null,
+      "sessionAnswered": "0"
+    },
+    {
+      "label": "SIMPLE_after_reload",
+      "stats": null,
+      "history": null,
+      "planLength": "14",
+      "simpleMode": "true",
+      "seenIds": null,
+      "wrongBook": null,
+      "sessionAnswered": "0"
+    },
+    {
+      "label": "COACH_after_endo",
+      "answers": [
+        {
+          "ok": true,
+          "text": "A. Only set sealer",
+          "nCand": 4,
+          "nOpt": 4
+        },
+        {
+          "ok": true,
+          "text": "A. Avoid orifice location",
+          "nCand": 2,
+          "nOpt": 2
+        }
+      ],
+      "stats": "{\"answered\":2,\"correct\":0,\"byTopic\":{\"endo\":{\"a\":2,\"c\":0}},\"bySubtopic\":{\"irrigant\":{\"a\":1,\"c\":0},\"access\":{\"a\":1,\"c\":0}}}",
+      "history": "[]",
+      "planLength": "14",
+      "simpleMode": "false",
+      "seenIds": "{\"end_boost_063\":true,\"end_boost_032\":true}",
+      "wrongBook": "[\"end_boost_063\",\"end_boost_032\"]",
+      "sessionAnswered": "2"
+    },
+    {
+      "label": "COACH_after_ethics",
+      "answers": [
+        {
+          "ok": true,
+          "text": "A. Soak them in non ionizing solution",
+          "nCand": 4,
+          "nOpt": 4
+        },
+        {
+          "ok": true,
+          "text": "A. Cleaning → Disinfection → Sterilization",
+          "nCand": 3,
+          "nOpt": 3
+        }
+      ],
+      "stats": "{\"answered\":4,\"correct\":1,\"byTopic\":{\"endo\":{\"a\":2,\"c\":0},\"ethics\":{\"a\":2,\"c\":1}},\"bySubtopic\":{\"irrigant\":{\"a\":1,\"c\":0},\"access\":{\"a\":1,\"c\":0}}}",
+      "history": "[{\"ts\":1784496694809,\"mode\":\"test\",\"label\":\"Test · Endo · 50Q (partial)\",\"topic\":\"endo\",\"total\":50,\"answered\":2,\"correct\":0,\"pct\":0,\"sec\":4}]",
+      "planLength": "14",
+      "simpleMode": "false",
+      "seenIds": "{\"end_boost_063\":true,\"end_boost_032\":true,\"saud_delta_074\":true,\"pass_fp_001\":true}",
+      "wrongBook": "[\"end_boost_063\",\"end_boost_032\",\"saud_delta_074\"]",
+      "sessionAnswered": "4"
+    },
+    {
+      "label": "COACH_before_reload",
+      "stats": "{\"answered\":4,\"correct\":1,\"byTopic\":{\"endo\":{\"a\":2,\"c\":0},\"ethics\":{\"a\":2,\"c\":1}},\"bySubtopic\":{\"irrigant\":{\"a\":1,\"c\":0},\"access\":{\"a\":1,\"c\":0}}}",
+      "history": "[{\"ts\":1784496694809,\"mode\":\"test\",\"label\":\"Test · Endo · 50Q (partial)\",\"topic\":\"endo\",\"total\":50,\"answered\":2,\"correct\":0,\"pct\":0,\"sec\":4}]",
+      "planLength": "14",
+      "simpleMode": "false",
+      "seenIds": "{\"end_boost_063\":true,\"end_boost_032\":true,\"saud_delta_074\":true,\"pass_fp_001\":true}",
+      "wrongBook": "[\"end_boost_063\",\"end_boost_032\",\"saud_delta_074\"]",
+      "sessionAnswered": "4"
+    },
+    {
+      "label": "COACH_after_reload",
+      "stats": "{\"answered\":4,\"correct\":1,\"byTopic\":{\"endo\":{\"a\":2,\"c\":0},\"ethics\":{\"a\":2,\"c\":1}},\"bySubtopic\":{\"irrigant\":{\"a\":1,\"c\":0},\"access\":{\"a\":1,\"c\":0}}}",
+      "history": "[{\"ts\":1784496694809,\"mode\":\"test\",\"label\":\"Test · Endo · 50Q (partial)\",\"topic\":\"endo\",\"total\":50,\"answered\":2,\"correct\":0,\"pct\":0,\"sec\":4}]",
+      "planLength": "14",
+      "simpleMode": "false",
+      "seenIds": "{\"end_boost_063\":true,\"end_boost_032\":true,\"saud_delta_074\":true,\"pass_fp_001\":true}",
+      "wrongBook": "[\"end_boost_063\",\"end_boost_032\",\"saud_delta_074\"]",
+      "sessionAnswered": "4"
+    }
+  ]
+}

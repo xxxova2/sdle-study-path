@@ -1,0 +1,182 @@
+[
+  {
+    "id": "saud_delta_111",
+    "answer": 1,
+    "explanation": "Acid etching demineralizes enamel and opens a microporous surface so resin tags form micromechanical retention and a continuous enamel–composite seal. That seal is what reduces microleakage at margins. Temperature of the tooth is irrelevant to etch; shade matching is driven by opacity/layering, not etch alone; dentin stain is not primarily reduced by etch without proper bonding and isolation.",
+    "force": true
+  },
+  {
+    "id": "saud_delta_145",
+    "answer": 3,
+    "explanation": "MRSA (methicillin-resistant S. aureus) spreads mainly by direct contact with colonized skin, wounds, or hands and by contaminated fomites—classic contact precautions, not measles-style airborne droplet nuclei. Airborne is wrong for MRSA’s dominant mode. GI/diet workup and etched porcelain are distractors unrelated to transmission route.",
+    "force": true
+  },
+  {
+    "id": "saud_delta_127",
+    "answer": 1,
+    "explanation": "Subgingival overhanging margins create plaque traps in a low-oxygen niche that favors anaerobic gram-negative periodontal pathogens and inflammation. Smooth subgingival margins are less retentive; supragingival overhangs still trap plaque but sit above the sulcus and are less associated with subgingival gram-negative blooms. GI/diet investigation does not explain the microbial association with restorative contour errors.",
+    "force": true
+  },
+  {
+    "id": "saud_delta_110",
+    "answer": 3,
+    "explanation": "When negative reinforcement and parental behavior methods fail for persistent thumb-sucking, a fixed habit-breaking appliance (palatal crib) physically interrupts digit placement and is the standard dental next step. An “ortho pacifier” does not stop an entrenched non-nutritive habit. Etched porcelain and GI/diet workup are irrelevant to digital sucking management.",
+    "force": true
+  },
+  {
+    "id": "saud_delta_028",
+    "answer": 0,
+    "explanation": "A full-coverage hard nightguard for bruxism should seat with even contacts on both anterior and posterior teeth so occlusal load is shared, the appliance stays stable, and no single segment takes all force. Anterior-only contact can overload incisors and rock the guard. Porcelain etch and GI/diet investigation do not define occlusal scheme for a bruxism splint.",
+    "force": true
+  },
+  {
+    "id": "saud_delta_089",
+    "answer": 3,
+    "explanation": "In classic occlusion teaching, “organic occlusion” means mutually protected occlusion: posteriors take load in MIP and protect anteriors, while anterior guidance discludes posteriors in excursion. Centric and eccentric describe jaw positions/movements, not the protective scheme. Group function is an alternative lateral scheme (shared posterior contact in working excursion), not the synonym for organic/mutually protected occlusion.",
+    "force": true
+  },
+  {
+    "id": "saud_delta_104",
+    "answer": 0,
+    "explanation": "A broken distal cusp beside a Class I amalgam usually means cavity prep undermined enamel/dentin (wide isthmus, deep flaring, unsupported cuspal enamel) so the cusp flexed and fractured under normal function. High occlusion can contribute to trauma but is not the most classic primary cause of cusp fracture adjacent to a conservative Class I. GI diet and etched porcelain are unrelated distractors.",
+    "force": true
+  },
+  {
+    "id": "saud_delta_112",
+    "answer": 0,
+    "explanation": "Caries risk is assessed before periodontal therapy because scaling and surgery often expose root surfaces; high-risk patients then develop root caries and marked dentin hypersensitivity on newly uncovered cervical root. Loss of coronal structure and pocket-depth reduction are treatment outcomes or separate restorative issues, not the main reason to stage caries-risk planning first. GI/diet alone does not replace caries-risk assessment before perio.",
+    "force": true
+  },
+  {
+    "id": "saud_delta_067",
+    "answer": 1,
+    "explanation": "Pain on release of biting force (rebound pain) is the classic clinical hinge for a cracked tooth: dentinal flexure closes on load and opens on release, stimulating pulp. Vertical root fracture more often shows deep isolated probing and J-shaped bone loss, typically after endo/post placement—not isolated pain on release. Etched porcelain and GI/diet workup do not explain this bite-release pattern.",
+    "force": true
+  },
+  {
+    "id": "saud_delta_065",
+    "answer": 3,
+    "explanation": "For a single anterior implant (#11), essential planning is prosthetically driven: diagnostic casts/wax-up and a surgical template so 3D position matches the final crown. Closed-tray impression is a transfer technique after placement, not the planning essential. Non-engaging abutments relate to multi-unit passivity, not single-tooth esthetic planning. GI/diet investigation is not required for implant site prosthetics.",
+    "force": true
+  },
+  {
+    "id": "saud_delta_047",
+    "answer": 1,
+    "explanation": "Gross or isthmus fracture of amalgam is most often from inadequate preparation: insufficient depth/width, sharp internal line angles, or a thin weak isthmus that concentrates stress under load. High occlusal force can precipitate failure but usually acts on an already underprepared or overextended restoration. Etched porcelain and GI/diet options are not causes of amalgam bulk fracture.",
+    "force": true
+  },
+  {
+    "id": "saud_delta_088",
+    "answer": 0,
+    "explanation": "In a 5-year-old with negative behavior and multiple occlusal lesions, professionally applied fluoride as a varnish wiped/painted on is preferred: short chair time, no trays, low gag risk, and lower systemic ingestion risk than gel. Tray-delivered fluoride gel needs longer retention and cooperation and raises ingestion risk in uncooperative kids. “Wipe with gel” still uses a less sticky, higher-ingestion-risk vehicle than varnish.",
+    "force": true
+  },
+  {
+    "id": "saud_delta_099",
+    "answer": 1,
+    "explanation": "Addition silicone (PVS) is the preferred final crown impression material: high accuracy, excellent dimensional stability, and fine surface detail for dies and margins. Alginate lacks the precision and stability for definitive fixed prosthodontics. Agar can capture detail but is technique-sensitive and less practical for routine crown work. GI/diet investigation is not an impression material.",
+    "force": true
+  },
+  {
+    "id": "saud_delta_126",
+    "answer": 2,
+    "explanation": "Among the listed choices, only Resilon is an obturation-related root-filling system; the other options (etched porcelain, occlusal contact scheme, GI workup) are not obturation materials. Clinically, true resin allergy argues against resin-based root fillers/sealers and favors gutta-percha with a non-resin sealer when available—so Resilon is the only on-list obturation answer, not the ideal biocompatible choice.",
+    "force": true
+  },
+  {
+    "id": "saud_delta_129",
+    "answer": 3,
+    "explanation": "If the RPD rest seats perfectly on the cast but is short/ill-fitting in the mouth, the cast does not accurately represent oral anatomy (impression distortion, cast pour error, or die inaccuracy). Remaking the final impression and framework corrects the master cast. Redoing the framework on the same faulty cast repeats the error; soldering a small rest does not fix a cast that does not match the mouth.",
+    "force": true
+  },
+  {
+    "id": "saud_delta_008",
+    "answer": 0,
+    "explanation": "Dark intrinsic stains need a bonded ceramic veneer with enough opacity and controllable thickness; etched/bonded porcelain veneers reliably mask discoloration while remaining relatively conservative. Composite is more translucent and stains/wears over time. Zirconia veneers are often thicker and less routinely indicated for esthetic masking in classic veneer teaching. GI/diet investigation does not treat established intrinsic stain.",
+    "force": true
+  },
+  {
+    "id": "saud_delta_069",
+    "answer": 3,
+    "explanation": "Substandard RCT under a well-fitting cast post–core and crown makes orthograde retreatment highly destructive or impractical (post removal risks root fracture). Apical surgery with root-end resection, preparation, and retrofill is the usual definitive path to seal the apex. Surgery without retrofill leaves an inadequate seal; vague numbered retreatment options that omit a proper retrofill miss the critical apical seal step.",
+    "force": true
+  },
+  {
+    "id": "saud_delta_093",
+    "answer": 3,
+    "explanation": "Large restorations complicate orthodontics mainly because bond strength to restorative surfaces is less predictable and restorations or brackets often fracture or fail during debonding and appliance removal. Orthodontic forces do not systematically “speed” or “slow” biologic tooth movement solely because a filling is large. GI/diet investigation is unrelated to appliance mechanics on heavily restored teeth.",
+    "force": true
+  },
+  {
+    "id": "saud_delta_077",
+    "answer": 3,
+    "explanation": "Multiple punched-out radiolucencies of varying size in an adult (often skull/jaws) are classic for multiple myeloma (or sometimes metastases). Gorlin (nevoid basal cell carcinoma) syndrome features multiple odontogenic keratocysts, usually in younger patients, not innumerable punched-out skull lesions. These findings are not normal aging. GI/diet workup does not explain multifocal punched-out bone lesions before implant planning.",
+    "force": true
+  },
+  {
+    "id": "saud_delta_001",
+    "answer": 3,
+    "explanation": "Amalgams that appear elevated, flat, and shiny years later usually mean surrounding enamel/dentin was lost to acid erosion (GERD, frequent acidic diet/drinks), so restorations stand proud. First management is to investigate GI reflux and dietary acids and control etiology before wholesale replacement or raising vertical dimension. Replacing with composite or elevating VDO without addressing acid source will fail again.",
+    "force": true
+  },
+  {
+    "id": "saud_delta_146",
+    "answer": 2,
+    "explanation": "Among the usable listed options, influenza is transmitted via close person-to-person respiratory exposure; contact with contaminated secretions and surfaces contributes, so “direct contact” is the keyed choice here. True primary clinical mode is respiratory droplets/aerosols rather than blood-borne or purely fomite spread alone. Etched porcelain, occlusal contacts, and GI/diet workup are unrelated to viral transmission.",
+    "force": true
+  },
+  {
+    "id": "saud_delta_039",
+    "answer": 1,
+    "explanation": "With only a few remaining strategic teeth (#17, 33, 43, 44), preserving suitable abutments/roots for an overdenture improves retention, support, proprioception, and ridge preservation versus extracting all remaining teeth for conventional complete dentures. Etched porcelain and anterior–posterior contact schemes do not define the best removable approach when few teeth remain. GI/diet investigation is not the prosthetic treatment plan.",
+    "force": true
+  },
+  {
+    "id": "saud_delta_271",
+    "answer": 1,
+    "explanation": "Porcelain is brittle under tension but relatively strong under compression. PFM design (metal substructure support, coping geometry) keeps porcelain under compressive loading in function to reduce tensile cracking of the veneer. Tensile and shear stresses are the modes that more readily initiate ceramic fracture; GI/diet has no role in porcelain–metal force design.",
+    "force": true
+  },
+  {
+    "id": "saud_delta_284",
+    "answer": 0,
+    "explanation": "Amalgam marginal ditching deeper than about 0.5 mm indicates breakdown and leakage risk with possible recurrent caries under the margin. Patching the ditch with composite over old amalgam is unreliable (interface failure, continued leakage). Full replacement of the defective amalgam is the appropriate management when ditch depth exceeds that threshold and the restoration is clinically unsatisfactory.",
+    "force": true
+  },
+  {
+    "id": "saud_delta_133",
+    "answer": 3,
+    "explanation": "When proximal margins are sealed and sound but the composite is undercontoured with an open contact, conservative repair—remove/refresh the defective proximal portion and rebuild contour and contact—is preferred over full replacement. Total replacement is unnecessary when the remainder is intact and sealed. Porcelain veneers and GI/diet workup do not correct an open contact on an otherwise sound composite.",
+    "force": true
+  },
+  {
+    "id": "saud_delta_261",
+    "answer": 3,
+    "explanation": "Cavit is a temporary zinc oxide–based endodontic provisional only. It lacks strength, long-term seal, and wear resistance for definitive restoration and must be replaced with a proper temporary or permanent material after treatment. It is not a final restorative option; the other listed distractors (GI workup, etched porcelain, occlusal contact scheme) are not provisional materials at all.",
+    "force": true
+  },
+  {
+    "id": "saud_delta_122",
+    "answer": 2,
+    "explanation": "A fractured cusp on a vital tooth needs cuspal coverage to protect remaining structure; a ceramic onlay restores the missing cusp while conserving more tooth than a full-coverage crown. Direct composite alone often underprotects a missing cusp under load. Full ceramic crown is more aggressive when an onlay can provide coverage. GI/diet investigation does not restore the fractured cusp.",
+    "force": true
+  },
+  {
+    "id": "saud_delta_195",
+    "answer": 1,
+    "explanation": "Recession-related dentin hypersensitivity localizes to exposed cervical root dentin near the CEJ, where open tubules face thermal/tactile stimuli. Mid-root bulk is usually covered by gingiva or cementum and is not the classic sensitive site. Cervical crown enamel lacks patent dentinal tubules. GI/diet may contribute to erosion but the anatomic site of recession hypersensitivity is cervical root.",
+    "force": true
+  },
+  {
+    "id": "saud_delta_078",
+    "answer": 2,
+    "explanation": "For deep caries possibly needing crown lengthening: excavate first to judge restorability and pulp status; obtain bitewings to assess remaining tooth structure, biologic width, and ferrule needs; complete RCT if indicated; then perform surgical crown lengthening before definitive buildup/crown. Doing RCT before radiographic assessment of remaining structure, or lengthening before knowing restorability, can lead to non-restorable roots or unnecessary surgery.",
+    "force": true
+  },
+  {
+    "id": "saud_delta_198",
+    "answer": 2,
+    "explanation": "Carisolv is a chemomechanical caries-removal system (NaOCl-based gel with amino acids) that softens infected dentin for selective hand excavation without rotary cutting as the primary method. Etched porcelain and occlusal contact schemes are restorative/occlusal concepts, not chemo-mechanical excavation agents. GI/diet investigation does not remove carious dentin.",
+    "force": true
+  }
+]

@@ -1,0 +1,317 @@
+{
+  "url": "https://xxxova2.github.io/sdle-study-path/?proof=1784496455213",
+  "chrome": "/home/kalde/.cache/ms-playwright/chromium-1148/chrome-linux/chrome",
+  "storageSnapshots": [
+    {
+      "label": "BEFORE_any_mcq",
+      "keys": [
+        "sdle3_day",
+        "sdle3_focusMode",
+        "sdle3_focusModeCssSafe",
+        "sdle3_planChosen",
+        "sdle3_planLength",
+        "sdle3_planPickedExplicit",
+        "sdle3_pomoMode",
+        "sdle3_pomoRemaining",
+        "sdle3_sessionAnswered",
+        "sdle3_sessionDate",
+        "sdle3_simpleMode"
+      ],
+      "stats": null,
+      "history": null,
+      "planLength": "14",
+      "simpleMode": "true",
+      "seenIds": null,
+      "wrongBook": null
+    },
+    {
+      "label": "AFTER_simple_mcqs",
+      "keys": [
+        "sdle3_cardKnown",
+        "sdle3_dailyGoal",
+        "sdle3_day",
+        "sdle3_dayDone",
+        "sdle3_examQa",
+        "sdle3_focusMode",
+        "sdle3_focusModeCssSafe",
+        "sdle3_history",
+        "sdle3_planChosen",
+        "sdle3_planDayAnswered",
+        "sdle3_planDayVolumeKey",
+        "sdle3_planLength",
+        "sdle3_planPickedExplicit",
+        "sdle3_pomoMode",
+        "sdle3_pomoRemaining",
+        "sdle3_seenIds",
+        "sdle3_sessionAnswered",
+        "sdle3_sessionDate",
+        "sdle3_simpleMode",
+        "sdle3_stats",
+        "sdle3_stepsDone",
+        "sdle3_viewStack",
+        "sdle3_wrongBook"
+      ],
+      "stats": "{\"answered\":2,\"correct\":0,\"byTopic\":{\"restorative\":{\"a\":2,\"c\":0}},\"bySubtopic\":{\"rpd\":{\"a\":1,\"c\":0},\"operative\":{\"a\":1,\"c\":0}}}",
+      "history": "[{\"ts\":1784496537443,\"mode\":\"learn\",\"label\":\"Learn · Full bank · 100Q (partial)\",\"topic\":\"all\",\"total\":100,\"answered\":2,\"correct\":0,\"pct\":0,\"sec\":3}]",
+      "planLength": "14",
+      "simpleMode": "true",
+      "seenIds": "{\"fr_boost_046\":true,\"op_boost_089\":true}",
+      "wrongBook": "[\"fr_boost_046\",\"op_boost_089\"]"
+    },
+    {
+      "label": "AFTER_coach_mcqs_before_reload",
+      "keys": [
+        "sdle3_cardKnown",
+        "sdle3_dailyGoal",
+        "sdle3_day",
+        "sdle3_dayDone",
+        "sdle3_examQa",
+        "sdle3_focusMode",
+        "sdle3_focusModeCssSafe",
+        "sdle3_history",
+        "sdle3_planChosen",
+        "sdle3_planDayAnswered",
+        "sdle3_planDayVolumeKey",
+        "sdle3_planLength",
+        "sdle3_planPickedExplicit",
+        "sdle3_pomoMode",
+        "sdle3_pomoRemaining",
+        "sdle3_seenIds",
+        "sdle3_sessionAnswered",
+        "sdle3_sessionDate",
+        "sdle3_simpleMode",
+        "sdle3_stats",
+        "sdle3_stepsDone",
+        "sdle3_viewStack",
+        "sdle3_wrongBook"
+      ],
+      "stats": "{\"answered\":2,\"correct\":0,\"byTopic\":{\"restorative\":{\"a\":2,\"c\":0}},\"bySubtopic\":{\"rpd\":{\"a\":1,\"c\":0},\"operative\":{\"a\":1,\"c\":0}}}",
+      "history": "[{\"ts\":1784496537443,\"mode\":\"learn\",\"label\":\"Learn · Full bank · 100Q (partial)\",\"topic\":\"all\",\"total\":100,\"answered\":2,\"correct\":0,\"pct\":0,\"sec\":3}]",
+      "planLength": "14",
+      "simpleMode": "false",
+      "seenIds": "{\"fr_boost_046\":true,\"op_boost_089\":true}",
+      "wrongBook": "[\"fr_boost_046\",\"op_boost_089\"]"
+    },
+    {
+      "label": "AFTER_reload",
+      "keys": [
+        "sdle3_cardKnown",
+        "sdle3_dailyGoal",
+        "sdle3_day",
+        "sdle3_dayDone",
+        "sdle3_examQa",
+        "sdle3_focusMode",
+        "sdle3_focusModeCssSafe",
+        "sdle3_history",
+        "sdle3_planChosen",
+        "sdle3_planDayAnswered",
+        "sdle3_planDayVolumeKey",
+        "sdle3_planLength",
+        "sdle3_planPickedExplicit",
+        "sdle3_pomoMode",
+        "sdle3_pomoRemaining",
+        "sdle3_seenIds",
+        "sdle3_sessionAnswered",
+        "sdle3_sessionDate",
+        "sdle3_simpleMode",
+        "sdle3_stats",
+        "sdle3_stepsDone",
+        "sdle3_viewStack",
+        "sdle3_wrongBook"
+      ],
+      "stats": "{\"answered\":2,\"correct\":0,\"byTopic\":{\"restorative\":{\"a\":2,\"c\":0}},\"bySubtopic\":{\"rpd\":{\"a\":1,\"c\":0},\"operative\":{\"a\":1,\"c\":0}}}",
+      "history": "[{\"ts\":1784496537443,\"mode\":\"learn\",\"label\":\"Learn · Full bank · 100Q (partial)\",\"topic\":\"all\",\"total\":100,\"answered\":2,\"correct\":0,\"pct\":0,\"sec\":3}]",
+      "planLength": "14",
+      "simpleMode": "false",
+      "seenIds": "{\"fr_boost_046\":true,\"op_boost_089\":true}",
+      "wrongBook": "[\"fr_boost_046\",\"op_boost_089\"]"
+    }
+  ],
+  "answerLog": [
+    {
+      "mode": "simple",
+      "topic": "restorative",
+      "i": 0,
+      "a": {
+        "ok": true,
+        "sel": "fallback-buttons",
+        "n": 4,
+        "text": "MCQs"
+      }
+    },
+    {
+      "mode": "simple",
+      "topic": "restorative",
+      "i": 1,
+      "a": {
+        "ok": true,
+        "sel": "fallback-buttons",
+        "n": 14,
+        "text": "Full bank · 2501"
+      }
+    },
+    {
+      "mode": "simple",
+      "topic": "endo",
+      "i": 0,
+      "a": {
+        "ok": false,
+        "htmlSnippet": "\n        <div class=\"practice-builder\">\n          <h1>Practice</h1>\n          <p class=\"hub-sub\">Today: <b>Operative dentistry</b> · 579 in Operative · 2501 in bank</p>\n          <h2 class=\"practice-step-title\">Mode · 100 × Full bank</h2>\n          \n          <div class=\"practice-choices\" role=\"group\">\n            <button type=\"button\" class=\"btn practice-choice success\" data-pb=\"mode\" data-v=\"learn\">Learn — answer after each Q</button>\n            <button type=\"button\" class=\"btn practice-choic"
+      }
+    },
+    {
+      "mode": "simple",
+      "topic": "endo",
+      "i": 1,
+      "a": {
+        "ok": false,
+        "htmlSnippet": "\n        <div class=\"practice-builder\">\n          <h1>Practice</h1>\n          <p class=\"hub-sub\">Today: <b>Operative dentistry</b> · 579 in Operative · 2501 in bank</p>\n          <h2 class=\"practice-step-title\">Mode · 100 × Full bank</h2>\n          \n          <div class=\"practice-choices\" role=\"group\">\n            <button type=\"button\" class=\"btn practice-choice success\" data-pb=\"mode\" data-v=\"learn\">Learn — answer after each Q</button>\n            <button type=\"button\" class=\"btn practice-choic"
+      }
+    },
+    {
+      "mode": "simple",
+      "topic": "perio",
+      "i": 0,
+      "a": {
+        "ok": true,
+        "sel": "fallback-buttons",
+        "n": 4,
+        "text": "A. Unilateral edentulous area with natural teeth both sides"
+      }
+    },
+    {
+      "mode": "simple",
+      "topic": "perio",
+      "i": 1,
+      "a": {
+        "ok": true,
+        "sel": "fallback-buttons",
+        "n": 4,
+        "text": "A. Only mechanical toothbrush"
+      }
+    },
+    {
+      "mode": "coach",
+      "topic": "endo",
+      "i": 0,
+      "a": {
+        "ok": true,
+        "sel": "fallback-buttons",
+        "n": 51,
+        "text": "Start full test"
+      }
+    },
+    {
+      "mode": "coach",
+      "topic": "endo",
+      "i": 1,
+      "a": {
+        "ok": true,
+        "sel": "fallback-buttons",
+        "n": 51,
+        "text": "Start full test"
+      }
+    }
+  ],
+  "planLengthAfterSession": "14",
+  "planCheck": {
+    "stored": "14"
+  },
+  "warnResult": {
+    "bannerBefore": false,
+    "bannerAfter": true,
+    "bannerText": "Could not save progress (storage full or private mode). Free space or leave private browsing.",
+    "bannerHtml": "<div id=\"sdle-storage-warn\" role=\"alert\" style=\"position: fixed; bottom: 12px; left: 12px; right: 12px; z-index: 9999; background: rgb(127, 29, 29); color: rgb(255, 255, 255); padding: 10px 14px; border-radius: 8px; font: 14px / 1.4 system-ui, sans-serif; box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 20px;\">Could not save progress (storage full or private mode). Free space or leave private browsing.</div>",
+    "logs": [
+      "setItem called: sdle3_viewStack"
+    ],
+    "consoleHint": "see page console for sdle store.set failed"
+  },
+  "warn2": {
+    "setItemCalls": [
+      "sdle3_viewStack",
+      "sdle3_day",
+      "sdle3_planLength",
+      "sdle3_stepsDone",
+      "sdle3_dayDone",
+      "sdle3_stats",
+      "sdle3_wrongBook",
+      "sdle3_seenIds",
+      "sdle3_cardKnown",
+      "sdle3_sessionDate",
+      "sdle3_sessionAnswered",
+      "sdle3_planDayVolumeKey",
+      "sdle3_planDayAnswered",
+      "sdle3_dailyGoal",
+      "sdle3_focusMode",
+      "sdle3_examQa",
+      "sdle3_history"
+    ],
+    "bannerPresent": true,
+    "bannerText": "Could not save progress (storage full or private mode). Free space or leave private browsing.",
+    "bannerOuter": "<div id=\"sdle-storage-warn\" role=\"alert\" style=\"position: fixed; bottom: 12px; left: 12px; right: 12px; z-index: 9999; background: rgb(127, 29, 29); color: rgb(255, 255, 255); padding: 10px 14px; border-radius: 8px; font: 14px / 1.4 system-ui, sans-serif; box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 20px;\">Could not save progress (storage full or private mode). Free space or leave private browsing.</div>"
+  },
+  "finalWarn": {
+    "present": true,
+    "text": "Could not save progress (storage full or private mode). Free space or leave private browsing.",
+    "outer": "<div id=\"sdle-storage-warn\" role=\"alert\" style=\"position: fixed; bottom: 12px; left: 12px; right: 12px; z-index: 9999; background: rgb(127, 29, 29); color: rgb(255, 255, 255); padding: 10px 14px; border-radius: 8px; font: 14px / 1.4 system-ui, sans-serif; box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 20px;\">Could not save progress (storage full or private mode). Free space or leave private browsing.</div>"
+  },
+  "warnFinal": {
+    "present": true,
+    "text": "Could not save progress (storage full or private mode). Free space or leave private browsing.",
+    "outer": "<div id=\"sdle-storage-warn\" role=\"alert\" style=\"position: fixed; bottom: 12px; left: 12px; right: 12px; z-index: 9999; background: rgb(127, 29, 29); color: rgb(255, 255, 255); padding: 10px 14px; border-radius: 8px; font: 14px / 1.4 system-ui, sans-serif; box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 20px;\">Could not save progress (storage full or private mode). Free space or leave private browsing.</div>"
+  },
+  "screenshot": "/tmp/sdle-browser-proof/storage_warn.png",
+  "consoleLogs": [
+    "[warning] sdle store.set failed: viewStack QuotaExceededError",
+    "[warning] sdle: localStorage write failed (quota or private mode)",
+    "[warning] sdle store.set failed: viewStack QuotaExceededError",
+    "[warning] sdle: localStorage write failed (quota or private mode)",
+    "[warning] sdle store.set failed: day QuotaExceededError",
+    "[warning] sdle store.set failed: planLength QuotaExceededError",
+    "[warning] sdle store.set failed: stepsDone QuotaExceededError",
+    "[warning] sdle store.set failed: dayDone QuotaExceededError",
+    "[warning] sdle store.set failed: stats QuotaExceededError",
+    "[warning] sdle store.set failed: wrongBook QuotaExceededError",
+    "[warning] sdle store.set failed: seenIds QuotaExceededError",
+    "[warning] sdle store.set failed: cardKnown QuotaExceededError",
+    "[warning] sdle store.set failed: sessionDate QuotaExceededError",
+    "[warning] sdle store.set failed: sessionAnswered QuotaExceededError",
+    "[warning] sdle store.set failed: planDayVolumeKey QuotaExceededError",
+    "[warning] sdle store.set failed: planDayAnswered QuotaExceededError",
+    "[warning] sdle store.set failed: dailyGoal QuotaExceededError",
+    "[warning] sdle store.set failed: focusMode QuotaExceededError",
+    "[warning] sdle store.set failed: examQa QuotaExceededError",
+    "[warning] sdle store.set failed: history QuotaExceededError",
+    "[warning] sdle store.set failed: viewStack QuotaExceededError",
+    "[warning] sdle: localStorage write failed (quota or private mode)",
+    "[warning] sdle store.set failed: viewStack QuotaExceededError",
+    "[warning] sdle store.set failed: viewStack QuotaExceededError"
+  ],
+  "consoleAllSample": [
+    "[warning] sdle store.set failed: viewStack QuotaExceededError",
+    "[warning] sdle: localStorage write failed (quota or private mode)",
+    "[warning] sdle store.set failed: viewStack QuotaExceededError",
+    "[warning] sdle: localStorage write failed (quota or private mode)",
+    "[warning] sdle store.set failed: day QuotaExceededError",
+    "[warning] sdle store.set failed: planLength QuotaExceededError",
+    "[warning] sdle store.set failed: stepsDone QuotaExceededError",
+    "[warning] sdle store.set failed: dayDone QuotaExceededError",
+    "[warning] sdle store.set failed: stats QuotaExceededError",
+    "[warning] sdle store.set failed: wrongBook QuotaExceededError",
+    "[warning] sdle store.set failed: seenIds QuotaExceededError",
+    "[warning] sdle store.set failed: cardKnown QuotaExceededError",
+    "[warning] sdle store.set failed: sessionDate QuotaExceededError",
+    "[warning] sdle store.set failed: sessionAnswered QuotaExceededError",
+    "[warning] sdle store.set failed: planDayVolumeKey QuotaExceededError",
+    "[warning] sdle store.set failed: planDayAnswered QuotaExceededError",
+    "[warning] sdle store.set failed: dailyGoal QuotaExceededError",
+    "[warning] sdle store.set failed: focusMode QuotaExceededError",
+    "[warning] sdle store.set failed: examQa QuotaExceededError",
+    "[warning] sdle store.set failed: history QuotaExceededError",
+    "[warning] sdle store.set failed: viewStack QuotaExceededError",
+    "[warning] sdle: localStorage write failed (quota or private mode)",
+    "[warning] sdle store.set failed: viewStack QuotaExceededError",
+    "[warning] sdle store.set failed: viewStack QuotaExceededError"
+  ]
+}

@@ -8,7 +8,7 @@
 | **Live** | https://xxxova2.github.io/sdle-study-path/ |
 | **GitHub** | https://github.com/xxxova2/sdle-study-path |
 | **Working tree (this machine)** | `/data/prometric/sdle-prep` (canonical for recent work) |
-| **Sibling folder** | `/data/prometric/sdle-study-path` may lag — **edit and push from `sdle-prep`** unless told otherwise |
+| **Sibling folder** | Renamed to `/data/prometric/sdle-study-path.ARCHIVED-DO-NOT-PUSH` (2026-07-20). **Only** edit/push from `sdle-prep`. |
 | **Stack** | Static HTML/CSS/JS only — **no build step, no framework, no backend** |
 | **Not** | Official SCFHS software; not a paid Qbank API |
 
@@ -366,7 +366,7 @@ bash scripts/check_plan_tracks.sh
 2. **Apply-script wrapper** must end with  
    `})(typeof window !== 'undefined' ? window : globalThis);`  
    not bare `})(window);`.
-3. **Two folders** (`sdle-prep` vs `sdle-study-path`) — **push only from `sdle-prep`**. Sibling can lag with thousands of junk explanations and the **same** GitHub remote (would clobber Pages).
+3. **Sibling archive** — `sdle-study-path.ARCHIVED-DO-NOT-PUSH` only. Active tree is **`sdle-prep`**. Never push the archive.
 4. **Service worker** can show stale bank after deploy — bump cache + hard reload.
 5. **Answer index vs letter** — always 0-based; shuffling history means “answer B” in a PDF may not be index 1 in app.
 6. **Placeholder Why** used to look identical on hundreds of items — if user reports “all MCQs the same,” check explanations for abtal boilerplate and `?v=` bust.

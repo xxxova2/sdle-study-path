@@ -1,0 +1,1379 @@
+{
+  "note": "No multi-user exposure stats; ranked by blueprint weight then shorter hinge",
+  "total": 226,
+  "topTier": 30,
+  "rest": [
+    {
+      "id": "saud_delta_274",
+      "topic": "restorative",
+      "w": 0.4,
+      "explLen": 225,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_160",
+      "topic": "restorative",
+      "w": 0.4,
+      "explLen": 227,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_095",
+      "topic": "restorative",
+      "w": 0.4,
+      "explLen": 228,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_277",
+      "topic": "restorative",
+      "w": 0.4,
+      "explLen": 230,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_059",
+      "topic": "restorative",
+      "w": 0.4,
+      "explLen": 231,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_299",
+      "topic": "restorative",
+      "w": 0.4,
+      "explLen": 232,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_265",
+      "topic": "restorative",
+      "w": 0.4,
+      "explLen": 233,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_279",
+      "topic": "restorative",
+      "w": 0.4,
+      "explLen": 233,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_272",
+      "topic": "restorative",
+      "w": 0.4,
+      "explLen": 238,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_286",
+      "topic": "restorative",
+      "w": 0.4,
+      "explLen": 238,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_239",
+      "topic": "restorative",
+      "w": 0.4,
+      "explLen": 239,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_172",
+      "topic": "restorative",
+      "w": 0.4,
+      "explLen": 241,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_251",
+      "topic": "restorative",
+      "w": 0.4,
+      "explLen": 242,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_191",
+      "topic": "restorative",
+      "w": 0.4,
+      "explLen": 245,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_194",
+      "topic": "restorative",
+      "w": 0.4,
+      "explLen": 247,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_217",
+      "topic": "restorative",
+      "w": 0.4,
+      "explLen": 251,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_270",
+      "topic": "restorative",
+      "w": 0.4,
+      "explLen": 251,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_224",
+      "topic": "restorative",
+      "w": 0.4,
+      "explLen": 253,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_193",
+      "topic": "restorative",
+      "w": 0.4,
+      "explLen": 254,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_205",
+      "topic": "restorative",
+      "w": 0.4,
+      "explLen": 256,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_211",
+      "topic": "restorative",
+      "w": 0.4,
+      "explLen": 260,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_289",
+      "topic": "restorative",
+      "w": 0.4,
+      "explLen": 262,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_248",
+      "topic": "restorative",
+      "w": 0.4,
+      "explLen": 270,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_287",
+      "topic": "restorative",
+      "w": 0.4,
+      "explLen": 272,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_276",
+      "topic": "restorative",
+      "w": 0.4,
+      "explLen": 273,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_227",
+      "topic": "restorative",
+      "w": 0.4,
+      "explLen": 274,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_283",
+      "topic": "restorative",
+      "w": 0.4,
+      "explLen": 276,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_209",
+      "topic": "restorative",
+      "w": 0.4,
+      "explLen": 277,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_292",
+      "topic": "restorative",
+      "w": 0.4,
+      "explLen": 279,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_288",
+      "topic": "restorative",
+      "w": 0.4,
+      "explLen": 284,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_242",
+      "topic": "restorative",
+      "w": 0.4,
+      "explLen": 288,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_225",
+      "topic": "restorative",
+      "w": 0.4,
+      "explLen": 293,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_214",
+      "topic": "restorative",
+      "w": 0.4,
+      "explLen": 294,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_293",
+      "topic": "restorative",
+      "w": 0.4,
+      "explLen": 299,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_125",
+      "topic": "perio",
+      "w": 0.12,
+      "explLen": 133,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_015",
+      "topic": "oms",
+      "w": 0.12,
+      "explLen": 150,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_134",
+      "topic": "oms",
+      "w": 0.12,
+      "explLen": 152,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_091",
+      "topic": "perio",
+      "w": 0.12,
+      "explLen": 157,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_042",
+      "topic": "oms",
+      "w": 0.12,
+      "explLen": 164,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_101",
+      "topic": "perio",
+      "w": 0.12,
+      "explLen": 165,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_025",
+      "topic": "oms",
+      "w": 0.12,
+      "explLen": 167,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_051",
+      "topic": "oms",
+      "w": 0.12,
+      "explLen": 167,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_121",
+      "topic": "perio",
+      "w": 0.12,
+      "explLen": 167,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_152",
+      "topic": "perio",
+      "w": 0.12,
+      "explLen": 167,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_026",
+      "topic": "oms",
+      "w": 0.12,
+      "explLen": 172,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_006",
+      "topic": "oms",
+      "w": 0.12,
+      "explLen": 174,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_016",
+      "topic": "oms",
+      "w": 0.12,
+      "explLen": 174,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_003",
+      "topic": "perio",
+      "w": 0.12,
+      "explLen": 175,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_149",
+      "topic": "oms",
+      "w": 0.12,
+      "explLen": 175,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_144",
+      "topic": "oms",
+      "w": 0.12,
+      "explLen": 181,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_007",
+      "topic": "oms",
+      "w": 0.12,
+      "explLen": 182,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_019",
+      "topic": "oms",
+      "w": 0.12,
+      "explLen": 184,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_044",
+      "topic": "oms",
+      "w": 0.12,
+      "explLen": 186,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_061",
+      "topic": "oms",
+      "w": 0.12,
+      "explLen": 188,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_156",
+      "topic": "oms",
+      "w": 0.12,
+      "explLen": 191,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_012",
+      "topic": "perio",
+      "w": 0.12,
+      "explLen": 192,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_113",
+      "topic": "perio",
+      "w": 0.12,
+      "explLen": 195,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_266",
+      "topic": "oms",
+      "w": 0.12,
+      "explLen": 195,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_037",
+      "topic": "oms",
+      "w": 0.12,
+      "explLen": 196,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_075",
+      "topic": "perio",
+      "w": 0.12,
+      "explLen": 203,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_014",
+      "topic": "oms",
+      "w": 0.12,
+      "explLen": 204,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_018",
+      "topic": "oms",
+      "w": 0.12,
+      "explLen": 208,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_132",
+      "topic": "oms",
+      "w": 0.12,
+      "explLen": 208,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_249",
+      "topic": "oms",
+      "w": 0.12,
+      "explLen": 210,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_143",
+      "topic": "oms",
+      "w": 0.12,
+      "explLen": 213,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_245",
+      "topic": "oms",
+      "w": 0.12,
+      "explLen": 213,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_081",
+      "topic": "perio",
+      "w": 0.12,
+      "explLen": 215,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_275",
+      "topic": "perio",
+      "w": 0.12,
+      "explLen": 216,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_138",
+      "topic": "oms",
+      "w": 0.12,
+      "explLen": 219,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_123",
+      "topic": "oms",
+      "w": 0.12,
+      "explLen": 220,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_017",
+      "topic": "perio",
+      "w": 0.12,
+      "explLen": 221,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_255",
+      "topic": "oms",
+      "w": 0.12,
+      "explLen": 235,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_234",
+      "topic": "oms",
+      "w": 0.12,
+      "explLen": 238,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_301",
+      "topic": "oms",
+      "w": 0.12,
+      "explLen": 245,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_192",
+      "topic": "oms",
+      "w": 0.12,
+      "explLen": 248,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_238",
+      "topic": "perio",
+      "w": 0.12,
+      "explLen": 249,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_221",
+      "topic": "oms",
+      "w": 0.12,
+      "explLen": 253,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_259",
+      "topic": "oms",
+      "w": 0.12,
+      "explLen": 255,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_295",
+      "topic": "oms",
+      "w": 0.12,
+      "explLen": 255,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_165",
+      "topic": "oms",
+      "w": 0.12,
+      "explLen": 299,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_162",
+      "topic": "oms",
+      "w": 0.12,
+      "explLen": 319,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_117",
+      "topic": "ortho_pedo",
+      "w": 0.1,
+      "explLen": 167,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_048",
+      "topic": "ortho_pedo",
+      "w": 0.1,
+      "explLen": 170,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_068",
+      "topic": "ortho_pedo",
+      "w": 0.1,
+      "explLen": 171,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_102",
+      "topic": "endo",
+      "w": 0.1,
+      "explLen": 172,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_005",
+      "topic": "endo",
+      "w": 0.1,
+      "explLen": 175,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_100",
+      "topic": "ortho_pedo",
+      "w": 0.1,
+      "explLen": 177,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_004",
+      "topic": "ortho_pedo",
+      "w": 0.1,
+      "explLen": 180,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_092",
+      "topic": "ortho_pedo",
+      "w": 0.1,
+      "explLen": 184,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_027",
+      "topic": "endo",
+      "w": 0.1,
+      "explLen": 185,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_130",
+      "topic": "ortho_pedo",
+      "w": 0.1,
+      "explLen": 188,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_109",
+      "topic": "ortho_pedo",
+      "w": 0.1,
+      "explLen": 189,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_154",
+      "topic": "endo",
+      "w": 0.1,
+      "explLen": 189,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_049",
+      "topic": "endo",
+      "w": 0.1,
+      "explLen": 196,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_189",
+      "topic": "endo",
+      "w": 0.1,
+      "explLen": 198,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_020",
+      "topic": "endo",
+      "w": 0.1,
+      "explLen": 208,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_180",
+      "topic": "endo",
+      "w": 0.1,
+      "explLen": 210,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_268",
+      "topic": "ortho_pedo",
+      "w": 0.1,
+      "explLen": 222,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_302",
+      "topic": "endo",
+      "w": 0.1,
+      "explLen": 230,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_186",
+      "topic": "ortho_pedo",
+      "w": 0.1,
+      "explLen": 238,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_237",
+      "topic": "endo",
+      "w": 0.1,
+      "explLen": 249,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_281",
+      "topic": "ortho_pedo",
+      "w": 0.1,
+      "explLen": 252,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_229",
+      "topic": "endo",
+      "w": 0.1,
+      "explLen": 269,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_235",
+      "topic": "ortho_pedo",
+      "w": 0.1,
+      "explLen": 297,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_232",
+      "topic": "ortho_pedo",
+      "w": 0.1,
+      "explLen": 333,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_084",
+      "topic": "mixed",
+      "w": 0.08,
+      "explLen": 112,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_148",
+      "topic": "mixed",
+      "w": 0.08,
+      "explLen": 118,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_114",
+      "topic": "mixed",
+      "w": 0.08,
+      "explLen": 122,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_116",
+      "topic": "mixed",
+      "w": 0.08,
+      "explLen": 129,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_023",
+      "topic": "mixed",
+      "w": 0.08,
+      "explLen": 137,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_090",
+      "topic": "mixed",
+      "w": 0.08,
+      "explLen": 140,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_155",
+      "topic": "mixed",
+      "w": 0.08,
+      "explLen": 141,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_080",
+      "topic": "mixed",
+      "w": 0.08,
+      "explLen": 146,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_106",
+      "topic": "mixed",
+      "w": 0.08,
+      "explLen": 146,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_115",
+      "topic": "mixed",
+      "w": 0.08,
+      "explLen": 149,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_079",
+      "topic": "mixed",
+      "w": 0.08,
+      "explLen": 152,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_119",
+      "topic": "mixed",
+      "w": 0.08,
+      "explLen": 152,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_159",
+      "topic": "mixed",
+      "w": 0.08,
+      "explLen": 157,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_041",
+      "topic": "ethics",
+      "w": 0.08,
+      "explLen": 161,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_105",
+      "topic": "mixed",
+      "w": 0.08,
+      "explLen": 164,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_022",
+      "topic": "mixed",
+      "w": 0.08,
+      "explLen": 166,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_157",
+      "topic": "mixed",
+      "w": 0.08,
+      "explLen": 167,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_103",
+      "topic": "mixed",
+      "w": 0.08,
+      "explLen": 168,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_087",
+      "topic": "mixed",
+      "w": 0.08,
+      "explLen": 169,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_136",
+      "topic": "ethics",
+      "w": 0.08,
+      "explLen": 169,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_064",
+      "topic": "mixed",
+      "w": 0.08,
+      "explLen": 171,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_158",
+      "topic": "mixed",
+      "w": 0.08,
+      "explLen": 171,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_058",
+      "topic": "mixed",
+      "w": 0.08,
+      "explLen": 179,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_124",
+      "topic": "mixed",
+      "w": 0.08,
+      "explLen": 179,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_024",
+      "topic": "mixed",
+      "w": 0.08,
+      "explLen": 181,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_060",
+      "topic": "ethics",
+      "w": 0.08,
+      "explLen": 182,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_074",
+      "topic": "ethics",
+      "w": 0.08,
+      "explLen": 182,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_097",
+      "topic": "ethics",
+      "w": 0.08,
+      "explLen": 182,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_040",
+      "topic": "mixed",
+      "w": 0.08,
+      "explLen": 184,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_013",
+      "topic": "ethics",
+      "w": 0.08,
+      "explLen": 185,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_128",
+      "topic": "ethics",
+      "w": 0.08,
+      "explLen": 185,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_150",
+      "topic": "mixed",
+      "w": 0.08,
+      "explLen": 185,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_222",
+      "topic": "mixed",
+      "w": 0.08,
+      "explLen": 188,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_147",
+      "topic": "ethics",
+      "w": 0.08,
+      "explLen": 190,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_252",
+      "topic": "ethics",
+      "w": 0.08,
+      "explLen": 195,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_073",
+      "topic": "ethics",
+      "w": 0.08,
+      "explLen": 199,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_139",
+      "topic": "mixed",
+      "w": 0.08,
+      "explLen": 199,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_053",
+      "topic": "ethics",
+      "w": 0.08,
+      "explLen": 200,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_135",
+      "topic": "mixed",
+      "w": 0.08,
+      "explLen": 200,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_161",
+      "topic": "mixed",
+      "w": 0.08,
+      "explLen": 203,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_223",
+      "topic": "mixed",
+      "w": 0.08,
+      "explLen": 203,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_141",
+      "topic": "ethics",
+      "w": 0.08,
+      "explLen": 204,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_010",
+      "topic": "ethics",
+      "w": 0.08,
+      "explLen": 207,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_118",
+      "topic": "mixed",
+      "w": 0.08,
+      "explLen": 207,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_184",
+      "topic": "mixed",
+      "w": 0.08,
+      "explLen": 207,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_062",
+      "topic": "ethics",
+      "w": 0.08,
+      "explLen": 208,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_050",
+      "topic": "mixed",
+      "w": 0.08,
+      "explLen": 209,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_137",
+      "topic": "mixed",
+      "w": 0.08,
+      "explLen": 210,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_218",
+      "topic": "mixed",
+      "w": 0.08,
+      "explLen": 211,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_071",
+      "topic": "ethics",
+      "w": 0.08,
+      "explLen": 212,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_183",
+      "topic": "mixed",
+      "w": 0.08,
+      "explLen": 216,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_244",
+      "topic": "mixed",
+      "w": 0.08,
+      "explLen": 216,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_178",
+      "topic": "mixed",
+      "w": 0.08,
+      "explLen": 218,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_201",
+      "topic": "mixed",
+      "w": 0.08,
+      "explLen": 221,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_257",
+      "topic": "ethics",
+      "w": 0.08,
+      "explLen": 229,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_263",
+      "topic": "mixed",
+      "w": 0.08,
+      "explLen": 230,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_185",
+      "topic": "mixed",
+      "w": 0.08,
+      "explLen": 231,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_187",
+      "topic": "mixed",
+      "w": 0.08,
+      "explLen": 231,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_167",
+      "topic": "mixed",
+      "w": 0.08,
+      "explLen": 233,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_220",
+      "topic": "mixed",
+      "w": 0.08,
+      "explLen": 233,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_236",
+      "topic": "mixed",
+      "w": 0.08,
+      "explLen": 233,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_273",
+      "topic": "mixed",
+      "w": 0.08,
+      "explLen": 234,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_188",
+      "topic": "mixed",
+      "w": 0.08,
+      "explLen": 236,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_170",
+      "topic": "mixed",
+      "w": 0.08,
+      "explLen": 237,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_200",
+      "topic": "ethics",
+      "w": 0.08,
+      "explLen": 237,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_297",
+      "topic": "ethics",
+      "w": 0.08,
+      "explLen": 240,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_226",
+      "topic": "mixed",
+      "w": 0.08,
+      "explLen": 241,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_168",
+      "topic": "mixed",
+      "w": 0.08,
+      "explLen": 242,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_212",
+      "topic": "mixed",
+      "w": 0.08,
+      "explLen": 244,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_206",
+      "topic": "mixed",
+      "w": 0.08,
+      "explLen": 245,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_166",
+      "topic": "mixed",
+      "w": 0.08,
+      "explLen": 246,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_215",
+      "topic": "mixed",
+      "w": 0.08,
+      "explLen": 249,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_262",
+      "topic": "ethics",
+      "w": 0.08,
+      "explLen": 251,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_269",
+      "topic": "mixed",
+      "w": 0.08,
+      "explLen": 254,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_264",
+      "topic": "ethics",
+      "w": 0.08,
+      "explLen": 255,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_267",
+      "topic": "mixed",
+      "w": 0.08,
+      "explLen": 256,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_280",
+      "topic": "ethics",
+      "w": 0.08,
+      "explLen": 258,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_208",
+      "topic": "mixed",
+      "w": 0.08,
+      "explLen": 259,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_203",
+      "topic": "mixed",
+      "w": 0.08,
+      "explLen": 264,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_213",
+      "topic": "ethics",
+      "w": 0.08,
+      "explLen": 264,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_278",
+      "topic": "mixed",
+      "w": 0.08,
+      "explLen": 269,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_230",
+      "topic": "ethics",
+      "w": 0.08,
+      "explLen": 271,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_199",
+      "topic": "mixed",
+      "w": 0.08,
+      "explLen": 273,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_243",
+      "topic": "mixed",
+      "w": 0.08,
+      "explLen": 273,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_179",
+      "topic": "mixed",
+      "w": 0.08,
+      "explLen": 275,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_233",
+      "topic": "ethics",
+      "w": 0.08,
+      "explLen": 275,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_296",
+      "topic": "ethics",
+      "w": 0.08,
+      "explLen": 282,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_294",
+      "topic": "mixed",
+      "w": 0.08,
+      "explLen": 294,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_164",
+      "topic": "ethics",
+      "w": 0.08,
+      "explLen": 299,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_241",
+      "topic": "ethics",
+      "w": 0.08,
+      "explLen": 303,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    },
+    {
+      "id": "saud_delta_291",
+      "topic": "mixed",
+      "w": 0.08,
+      "explLen": 304,
+      "flag": "under-explained residual; hinge present but not top-tier rewrite this pass"
+    }
+  ]
+}
