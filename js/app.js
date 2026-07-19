@@ -1227,6 +1227,122 @@
   const SIMPLE_PRIMARY = ["today", "practice", "progress"];
   /** Public source repo (docs only — feedback does NOT open GitHub). */
   const REPO_URL = "https://github.com/xxxova2/sdle-study-path";
+  /** External ChatGPT custom GPT — academic tutor only (not SCFHS, not clinical care). */
+  const SDLEGPT_URL = "https://chatgpt.com/g/g-ytJW9hxum-sdlegpt";
+
+  /**
+   * Build a paste-ready prompt for SDLEGPT from current study context.
+   * opts: { topic, question, options, picked, correct, explanation, subject }
+   */
+  function buildSdleGptContext(opts) {
+    const o = opts || {};
+    const lines = [
+      "I am studying for the KSA SDLE (Prometric) dental exam.",
+      "Please give an academic explanation with textbook-style reasoning.",
+      "Not medical advice for a real patient. Not official SCFHS content.",
+      "",
+    ];
+    if (o.subject) lines.push("Today's topic / subject: " + o.subject);
+    if (o.topic) lines.push("Bank topic tag: " + o.topic);
+    if (o.question) {
+      lines.push("", "MCQ:", o.question);
+      if (Array.isArray(o.options) && o.options.length) {
+        o.options.forEach((opt, i) => {
+          lines.push(String.fromCharCode(65 + i) + ". " + opt);
+        });
+      }
+      if (o.picked != null && o.picked >= 0)
+        lines.push("My answer: " + String.fromCharCode(65 + o.picked));
+      if (o.correct != null && o.correct >= 0)
+        lines.push("Correct answer (bank): " + String.fromCharCode(65 + o.correct));
+      if (o.explanation) lines.push("Bank explanation: " + o.explanation);
+      lines.push("", "Explain why the correct choice is right and why the others are wrong.");
+    } else {
+      lines.push("", "Quiz me / explain high-yield points for this topic in exam style.");
+    }
+    return lines.filter((x) => x != null).join("\n");
+  }
+
+  function sdleGptButtonHtml(kind) {
+    /* kind: "row" | "link" | "compact" */
+    if (kind === "link") {
+      return `<button type="button" class="btn-link" data-sdlegpt data-sdlegpt-kind="topic">Ask SDLEGPT…</button>`;
+    }
+    if (kind === "compact") {
+      return `<button type="button" class="btn ghost sm" data-sdlegpt data-sdlegpt-kind="mcq">Ask SDLEGPT</button>`;
+    }
+    return `<div class="sdlegpt-row">
+      <button type="button" class="btn ghost sm" data-sdlegpt data-sdlegpt-kind="mcq">Ask SDLEGPT</button>
+      <span class="muted sdlegpt-hint">Copies context → opens ChatGPT tutor (external)</span>
+    </div>`;
+  }
+
+  async function openSdleGptWithContext(text) {
+    const payload = (text || "").trim();
+    let copied = false;
+    if (payload && navigator.clipboard && navigator.clipboard.writeText) {
+      try {
+        await navigator.clipboard.writeText(payload);
+        copied = true;
+      } catch (_) {}
+    }
+    if (!copied && payload) {
+      try {
+        const ta = document.createElement("textarea");
+        ta.value = payload;
+        ta.setAttribute("readonly", "");
+        ta.style.cssText = "position:fixed;left:-9999px;top:0";
+        document.body.appendChild(ta);
+        ta.select();
+        copied = document.execCommand("copy");
+        document.body.removeChild(ta);
+      } catch (_) {}
+    }
+    window.open(SDLEGPT_URL, "_blank", "noopener,noreferrer");
+    if (copied) {
+      try {
+        const tip = document.createElement("div");
+        tip.className = "sdlegpt-toast";
+        tip.setAttribute("role", "status");
+        tip.textContent = "Context copied — paste in SDLEGPT (Ctrl/Cmd+V)";
+        document.body.appendChild(tip);
+        setTimeout(() => tip.remove(), 3200);
+      } catch (_) {}
+    }
+  }
+
+  function defaultSdleGptTopicContext() {
+    const L = typeof lesson === "function" ? lesson() : null;
+    const subject = L ? humanLessonTitle(L) : "SDLE";
+    const topic = (L && (L.quizTopic || L.topic)) || "";
+    return buildSdleGptContext({ subject, topic });
+  }
+
+  function contextFromQuizItem(item, picked) {
+    if (!item) return defaultSdleGptTopicContext();
+    const L = typeof lesson === "function" ? lesson() : null;
+    return buildSdleGptContext({
+      subject: L ? humanLessonTitle(L) : "",
+      topic: item.topic || "",
+      question: item.q || "",
+      options: item.options || [],
+      picked: picked != null ? picked : -1,
+      correct: item.answer,
+      explanation: item.explanation || "",
+    });
+  }
+
+  function bindSdleGptButtons(root, getContext) {
+    const el = root || app;
+    if (!el) return;
+    el.querySelectorAll("[data-sdlegpt]").forEach((btn) => {
+      btn.onclick = (e) => {
+        e.preventDefault();
+        const text = typeof getContext === "function" ? getContext(btn) : defaultSdleGptTopicContext();
+        openSdleGptWithContext(text);
+      };
+    });
+  }
 
   function paintMainNav() {
     const nav = $("#main-nav");
@@ -1470,9 +1586,11 @@
             </button>
           </div>
         </details>
-        <details class="more-branch">
+        <details class="more-branch" open>
           <summary>Help</summary>
           <div class="more-branch-body">
+            <button type="button" class="btn ghost more-link" data-sdlegpt data-sdlegpt-kind="topic">Ask SDLEGPT (tutor)</button>
+            <p class="muted more-hint">Opens ChatGPT SDLEGPT with today’s topic copied. Academic study aid only — not clinical advice.</p>
             <button type="button" class="btn ghost more-link" data-go="feedback">Send feedback</button>
           </div>
         </details>
@@ -1481,6 +1599,7 @@
     app.querySelectorAll("[data-go]").forEach((b) => {
       b.onclick = () => navigateTo(b.dataset.go, { push: true });
     });
+    bindSdleGptButtons(app, () => defaultSdleGptTopicContext());
     const t = $("#toggle-simple");
     if (t) t.onclick = () => setSimpleMode(!isSimpleMode());
     $("#more-export") && ($("#more-export").onclick = exportFullProgress);
@@ -1875,6 +1994,8 @@
 
         <p class="hub-foot-links">
           <button type="button" class="btn-link" id="hub-change-pace">Change study pace…</button>
+          ·
+          ${sdleGptButtonHtml("link")}
         </p>
       </div>`;
 
@@ -1886,6 +2007,12 @@
       });
     $("#hub-practice") &&
       ($("#hub-practice").onclick = () => goPracticeBuilder());
+    bindSdleGptButtons(app, () =>
+      buildSdleGptContext({
+        subject: humanLessonTitle(L),
+        topic: L.quizTopic || L.topic || "",
+      })
+    );
     $("#hub-videos") &&
       ($("#hub-videos").onclick = () => {
         state.todaySurface = "path";
@@ -3226,7 +3353,15 @@
           } · ${inv.all} in bank</p>
           <h2 class="practice-step-title">${stepTitle}</h2>
           ${body}
+          <p class="hub-foot-links practice-tutor-link">${sdleGptButtonHtml("link")}</p>
         </div>`;
+
+      bindSdleGptButtons(app, () =>
+        buildSdleGptContext({
+          subject,
+          topic: focusTopic !== "all" ? focusTopic : "",
+        })
+      );
 
       app.querySelectorAll("[data-pb]").forEach((el) => {
         el.onclick = () => {
@@ -4424,7 +4559,7 @@
             revealed
               ? `<div class="explain"><strong>Correct:</strong> ${String.fromCharCode(65 + item.answer)}. ${escapeHtml(
                   item.options[item.answer] || ""
-                )}</div>${formatWhy(item)}`
+                )}</div>${formatWhy(item)}${sdleGptButtonHtml("row")}`
               : locked
                 ? `<p class="muted q-feedback-hint">Answer locked. Tap <b>Show answer</b> or <b>Next</b> (bottom bar stays in view).</p>`
                 : ""
@@ -4439,6 +4574,9 @@
       app.querySelectorAll(".option").forEach((btn) => {
         btn.onclick = () => pick(+btn.dataset.idx);
       });
+    }
+    if (revealed) {
+      bindSdleGptButtons(app, () => contextFromQuizItem(item, picked));
     }
     const goNext = () => {
       qz.i++;
@@ -4494,7 +4632,8 @@
     if (fb) {
       fb.innerHTML = `<div class="explain"><strong>${ok ? "Correct." : "Incorrect."}</strong> ${escapeHtml(
         item.explanation || ""
-      )}</div>${formatWhy(item)}`;
+      )}</div>${formatWhy(item)}${sdleGptButtonHtml("row")}`;
+      bindSdleGptButtons(fb, () => contextFromQuizItem(item, idx));
     }
     const next = $("#btn-next");
     if (next) {
