@@ -4855,6 +4855,15 @@
       return /iPad|iPhone|iPod/.test(ua) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
     }
 
+    function isMobileUa() {
+      return /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent || "");
+    }
+
+    /** Don’t cover “Choose your plan” — wait until user picked a pace. */
+    function planReady() {
+      return !!store.get("planPickedExplicit", false) || !!store.get("planChosen", false);
+    }
+
     function removeBanner() {
       const el = document.getElementById("sdle-install-banner");
       if (el) el.remove();
@@ -4863,42 +4872,49 @@
     function showBanner(opts) {
       if (isStandalone() || store.get(INSTALLED_KEY, false) || dismissed()) return;
       if (document.getElementById("sdle-install-banner")) return;
+      if (!planReady()) return;
       const ios = !!(opts && opts.ios);
       const canNative = !!(opts && opts.canNative);
+      const manual = !!(opts && opts.manual);
       const el = document.createElement("div");
       el.id = "sdle-install-banner";
       el.className = "install-banner";
       el.setAttribute("role", "dialog");
       el.setAttribute("aria-label", "Install app");
-      el.innerHTML = ios
-        ? `<div class="install-banner-inner">
-            <p class="install-banner-title">Install SDLE on your phone</p>
-            <p class="install-banner-text">Full screen study — hide the browser bar. Tap <b>Share</b> → <b>Add to Home Screen</b>.</p>
-            <div class="install-banner-actions">
-              <button type="button" class="btn ghost sm" data-install-dismiss>Not now</button>
-              <button type="button" class="btn success sm" data-install-ios-ok>Got it</button>
-            </div>
-          </div>`
-        : `<div class="install-banner-inner">
-            <p class="install-banner-title">Install this app?</p>
-            <p class="install-banner-text">Add to your home screen or desktop — full screen, less chrome, more study space.</p>
-            <div class="install-banner-actions">
-              <button type="button" class="btn ghost sm" data-install-dismiss>Not now</button>
-              ${canNative ? `<button type="button" class="btn success sm" data-install-go>Install</button>` : `<button type="button" class="btn success sm" data-install-dismiss>OK</button>`}
-            </div>
-          </div>`;
+      let title = "Install this app?";
+      let text =
+        "Add to home screen or desktop — full screen, hide browser bars, more study space.";
+      if (ios) {
+        title = "Install SDLE on your phone";
+        text = "Full screen study — hide the browser bar. Tap <b>Share</b> → <b>Add to Home Screen</b>.";
+      } else if (manual) {
+        title = isMobileUa() ? "Install SDLE?" : "Install on this computer?";
+        text = isMobileUa()
+          ? "Browser menu → <b>Install app</b> / <b>Add to Home screen</b> — full screen, no address bar."
+          : "Chrome/Edge: address bar <b>Install</b> icon, or menu → <b>Install SDLE…</b> — opens like an app (no tabs/URL bar).";
+      }
+      el.innerHTML = `
+        <div class="install-banner-inner">
+          <p class="install-banner-title">${title}</p>
+          <p class="install-banner-text">${text}</p>
+          <div class="install-banner-actions">
+            <button type="button" class="btn ghost sm" data-install-dismiss>Not now</button>
+            ${
+              canNative
+                ? `<button type="button" class="btn success sm" data-install-go>Install</button>`
+                : `<button type="button" class="btn success sm" data-install-ok>Got it</button>`
+            }
+          </div>
+        </div>`;
       document.body.appendChild(el);
+      const dismiss = () => {
+        store.set(DISMISS_KEY, Date.now() + 14 * 24 * 60 * 60 * 1000);
+        removeBanner();
+      };
       el.querySelector("[data-install-dismiss]") &&
-        (el.querySelector("[data-install-dismiss]").onclick = () => {
-          store.set(DISMISS_KEY, Date.now() + 14 * 24 * 60 * 60 * 1000);
-          removeBanner();
-        });
-      const iosOk = el.querySelector("[data-install-ios-ok]");
-      if (iosOk)
-        iosOk.onclick = () => {
-          store.set(DISMISS_KEY, Date.now() + 14 * 24 * 60 * 60 * 1000);
-          removeBanner();
-        };
+        (el.querySelector("[data-install-dismiss]").onclick = dismiss);
+      const ok = el.querySelector("[data-install-ok]");
+      if (ok) ok.onclick = dismiss;
       const go = el.querySelector("[data-install-go]");
       if (go && opts && opts.deferred) {
         go.onclick = async () => {
@@ -4913,6 +4929,17 @@
           removeBanner();
         };
       }
+    }
+
+    /** Retry until plan is picked, then show (max ~2 min). */
+    function whenPlanReady(fn, tries) {
+      const left = tries == null ? 60 : tries;
+      if (planReady()) {
+        fn();
+        return;
+      }
+      if (left <= 0) return;
+      setTimeout(() => whenPlanReady(fn, left - 1), 2000);
     }
 
     if (isStandalone()) {
@@ -4931,8 +4958,8 @@
     window.addEventListener("beforeinstallprompt", (e) => {
       e.preventDefault();
       deferred = e;
-      /* After plan pick / a few seconds so it does not block first paint */
-      setTimeout(() => showBanner({ canNative: true, deferred }), 2500);
+      /* After plan pick so it does not cover first-page chooser */
+      whenPlanReady(() => setTimeout(() => showBanner({ canNative: true, deferred }), 800));
     });
 
     window.addEventListener("appinstalled", () => {
@@ -4940,19 +4967,21 @@
       removeBanner();
     });
 
-    /* iOS Safari has no beforeinstallprompt — guide manually */
+    /* iOS Safari: no BIP — guide Share → Add to Home Screen */
     if (isIos() && !isStandalone() && !dismissed()) {
-      setTimeout(() => showBanner({ ios: true }), 3500);
+      whenPlanReady(() => setTimeout(() => showBanner({ ios: true }), 1200));
     }
 
-    /* Desktop Chrome/Edge that never fires BIP still get a soft tip once (optional).
-       Only if never dismissed and not iOS — avoid double banners. */
+    /* Phone/PC browser without BIP (or BIP late): still ask once after plan pick */
     if (!isIos() && !dismissed() && !store.get(INSTALLED_KEY, false)) {
-      setTimeout(() => {
-        if (!deferred && !document.getElementById("sdle-install-banner")) {
-          /* Quiet: no banner without real install API — iOS already handled */
-        }
-      }, 4000);
+      whenPlanReady(() =>
+        setTimeout(() => {
+          if (!document.getElementById("sdle-install-banner")) {
+            if (deferred) showBanner({ canNative: true, deferred });
+            else showBanner({ manual: true });
+          }
+        }, 4500)
+      );
     }
   })();
 })();
