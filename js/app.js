@@ -3194,18 +3194,50 @@
 
     if (open) {
       const nBank = poolN(open.bankPool || "all");
-      const items = open.items || [];
+      const allItems = open.items || [];
+      const noteN = open.noteCount != null
+        ? open.noteCount
+        : allItems.filter((x) => (x.notes || []).length).length;
+      const months = Array.from(
+        new Set(allItems.map((x) => x.month || "—").filter(Boolean))
+      );
+      const filt = state.recallFilter || { month: "all", q: "", notesOnly: false };
+      let items = allItems;
+      if (filt.month && filt.month !== "all") {
+        items = items.filter((x) => (x.month || "—") === filt.month);
+      }
+      if (filt.notesOnly) {
+        items = items.filter((x) => (x.notes || []).length > 0);
+      }
+      if (filt.q) {
+        const qq = String(filt.q).toLowerCase();
+        items = items.filter((x) => {
+          const blob = [x.stem, ...(x.options || []), ...(x.notes || [])]
+            .join(" ")
+            .toLowerCase();
+          return blob.includes(qq);
+        });
+      }
       const themes = (open.themes || [])
         .map((t) => `<span class="badge blue">${escapeHtml(t)}</span>`)
         .join(" ");
+      const monthBtns = [
+        `<button type="button" class="btn sm ${filt.month === "all" ? "" : "ghost"}" data-month="all">All months</button>`,
+        ...months.map(
+          (m) =>
+            `<button type="button" class="btn sm ${
+              filt.month === m ? "" : "ghost"
+            }" data-month="${escapeHtml(m)}">${escapeHtml(m)}</button>`
+        ),
+      ].join("");
       app.innerHTML = `
         ${backBarHtml("← All recall packs")}
         <h1>${escapeHtml(open.title)}</h1>
         <p class="lead">${escapeHtml(open.period || "")}${
           open.pages ? ` · ${open.pages} PDF pages` : ""
-        } · ${items.length} stems shown · bank pool <strong>${escapeHtml(
-          open.bankPool || "—"
-        )}</strong> (${nBank} Q)</p>
+        } · <strong>${allItems.length}</strong> items extracted ·
+        <strong>${noteN}</strong> with notes ·
+        bank pool <strong>${escapeHtml(open.bankPool || "—")}</strong> (${nBank} Q)</p>
         ${
           open.noteAr
             ? `<p class="muted" dir="rtl" style="text-align:right">${escapeHtml(open.noteAr)}</p>`
@@ -3220,6 +3252,16 @@
           <button type="button" class="btn ghost" id="pack-back">All packs</button>
         </div>
         <div class="pack-themes">${themes || ""}</div>
+        <div class="pack-filter-bar">
+          <input type="search" id="pack-search" class="pack-search" placeholder="Search stems / notes…" value="${escapeHtml(
+            filt.q || ""
+          )}" />
+          <label class="pack-notes-toggle"><input type="checkbox" id="pack-notes-only" ${
+            filt.notesOnly ? "checked" : ""
+          } /> Notes only</label>
+        </div>
+        <div class="pack-month-row">${monthBtns}</div>
+        <p class="muted">Showing <strong>${items.length}</strong> of ${allItems.length}</p>
         <div class="pack-items">
           ${items
             .map((it, idx) => {
@@ -3229,38 +3271,48 @@
                     `<li><span class="muted">${"ABCD"[i] || "?"}.</span> ${escapeHtml(o)}</li>`
                 )
                 .join("");
-              return `<article class="pack-item">
+              const notes = (it.notes || [])
+                .map((n) => `<li>${escapeHtml(n)}</li>`)
+                .join("");
+              return `<article class="pack-item${notes ? " has-notes" : ""}">
                 <header>
                   <strong>#${escapeHtml(String(it.n != null ? it.n : idx + 1))}</strong>
                   <span class="muted">${escapeHtml(it.month || "")}${
                     it.topic ? " · " + escapeHtml(it.topic) : ""
                   }</span>
                   ${it.communityMarked ? '<span class="badge" title="Community mark in PDF">PDF ✅</span>' : ""}
+                  ${notes ? '<span class="badge blue">note</span>' : ""}
                 </header>
                 <p class="pack-stem">${escapeHtml(it.stem || "")}</p>
                 ${opts ? `<ul class="pack-opts">${opts}</ul>` : ""}
+                ${
+                  notes
+                    ? `<div class="pack-notes"><strong>Notes</strong><ul>${notes}</ul></div>`
+                    : ""
+                }
               </article>`;
             })
             .join("")}
         </div>
         ${
           !items.length
-            ? `<p class="muted">No stem list for this pack — use Practice linked bank.</p>`
+            ? `<p class="muted">No items match this filter — clear search or month.</p>`
             : ""
         }
       `;
       bindBackBar();
       const back = () => {
         state.recallPack = null;
+        state.recallFilter = null;
         renderRecalls();
       };
       $("#pack-back") && ($("#pack-back").onclick = back);
-      // back bar uses history — also clear pack when leaving
       const bb = $("#back-bar-btn");
       if (bb) {
         const prev = bb.onclick;
         bb.onclick = () => {
           state.recallPack = null;
+          state.recallFilter = null;
           if (typeof prev === "function") prev();
           else renderRecalls();
         };
@@ -3270,6 +3322,25 @@
           startQuiz(open.bankPool, QUIZ_ALL, "learn", false));
       $("#pack-drill-25") &&
         ($("#pack-drill-25").onclick = () => startQuiz(open.bankPool, 25, "learn", false));
+      const applyFilter = (patch) => {
+        state.recallFilter = Object.assign({}, state.recallFilter || {}, patch);
+        renderRecalls();
+      };
+      app.querySelectorAll("[data-month]").forEach((b) => {
+        b.onclick = () => applyFilter({ month: b.getAttribute("data-month") });
+      });
+      const notesOnly = $("#pack-notes-only");
+      if (notesOnly) {
+        notesOnly.onchange = () => applyFilter({ notesOnly: !!notesOnly.checked });
+      }
+      const search = $("#pack-search");
+      if (search) {
+        let t = null;
+        search.oninput = () => {
+          clearTimeout(t);
+          t = setTimeout(() => applyFilter({ q: search.value.trim() }), 200);
+        };
+      }
       return;
     }
 
@@ -3300,7 +3371,8 @@
               </div>
               <p class="muted mcq-cat-sub">${escapeHtml(p.period || "")}${
                 p.pages ? ` · ${p.pages}p` : ""
-              } · ${p.itemCountExtracted || (p.items || []).length} signals · practice ${n}</p>
+              } · <b>${p.itemCountExtracted || (p.items || []).length}</b> items ·
+              ${(p.noteCount != null ? p.noteCount : 0)} with notes · practice ${n}</p>
               <div class="pack-themes">${themes}</div>
               <div class="volume-grid mcq-cat-actions">
                 <button type="button" class="btn" data-open-pack="${escapeHtml(p.id)}">Browse stems</button>
