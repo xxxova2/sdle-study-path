@@ -10,9 +10,9 @@ fail() { echo " FAIL $*"; FAIL=1; }
 echo ""
 echo "=== MCQs hub gates ==="
 
-# Tab present
-if grep -q 'data-view="mcqs"' index.html; then
-  ok "MCQs tab in index.html"
+# Tab present (Simple mode: More → hub; Coach paints data-view=mcqs in app.js)
+if grep -q 'data-view="mcqs"' index.html || grep -q 'data-view="mcqs"' js/app.js; then
+  ok "MCQs hub entry (index.html or app.js coach nav)"
 else
   fail "missing data-view=mcqs"
 fi

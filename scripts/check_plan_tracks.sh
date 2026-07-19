@@ -46,7 +46,8 @@ for (const n of [14,30,45,60,90]) {
     if(d.lessonDay<1||d.lessonDay>14) throw new Error("bad lessonDay "+n+" d"+d.day);
   }
 }
-if(typeof g.normalizePlanLength==="function" && g.normalizePlanLength(99)!==14) throw new Error("norm");
+// Unknown lengths fall back to default track 30 (not 14 blitz) — see plan_tracks.js normalizeLength
+if(typeof g.normalizePlanLength==="function" && g.normalizePlanLength(99)!==30) throw new Error("norm");
 if(typeof g.daySchedule!=="function") throw new Error("daySchedule");
 const s14=g.daySchedule(14,"learn",150,"");
 const s90=g.daySchedule(90,"learn",70,"");

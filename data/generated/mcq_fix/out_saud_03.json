@@ -1,0 +1,182 @@
+[
+  {
+    "id": "saud_delta_127",
+    "answer": 1,
+    "explanation": "Subgingival overhanging margins trap plaque and favor anaerobic gram-negative periodontal pathogens; smooth or supragingival contours are less plaque-retentive.",
+    "force": true
+  },
+  {
+    "id": "saud_delta_128",
+    "answer": 0,
+    "explanation": "Influenza spreads by respiratory droplets/aerosols; engineering controls such as HEPA filtration reduce airborne infectious particles when source control is needed in clinical settings.",
+    "force": true
+  },
+  {
+    "id": "saud_delta_129",
+    "answer": 3,
+    "explanation": "If the RPD rest fits the cast but not the mouth, the cast does not represent the patient (impression/cast error). Remake the final impression and framework; redoing on the same cast repeats the error.",
+    "force": true
+  },
+  {
+    "id": "saud_delta_130",
+    "answer": 2,
+    "explanation": "Bonding near a recent surgical site fails mainly because of blood, saliva, and poor isolation—moisture contamination prevents reliable adhesive polymerisation more than “wrong wire” alone.",
+    "force": true
+  },
+  {
+    "id": "saud_delta_132",
+    "answer": 0,
+    "explanation": "Oral bilateral white striae with atrophy plus genital ulcers and wrist lesions is lichen planus; topical corticosteroid (triamcinolone acetonide) is first-line local therapy, not antivirals or nystatin alone.",
+    "force": true
+  },
+  {
+    "id": "saud_delta_133",
+    "answer": 3,
+    "explanation": "When margins are sealed but the composite is undercontoured with open contact, conservative proximal repair (refresh/repair the box and rebuild contact) is preferred over full replacement if the remainder is sound.",
+    "force": true
+  },
+  {
+    "id": "saud_delta_134",
+    "answer": 2,
+    "explanation": "Syphilis (positive venereal serology with oral ulcer) is treated with penicillin as the drug of choice; acyclovir treats herpes, not Treponema pallidum.",
+    "force": true
+  },
+  {
+    "id": "saud_delta_135",
+    "answer": 1,
+    "explanation": "About 25% bone loss with imperfect glycemic control (HbA1c ~8%) typically maps to a fair periodontal prognosis—worse than good but not automatically hopeless/questionable without other severe factors.",
+    "force": true
+  },
+  {
+    "id": "saud_delta_136",
+    "answer": 0,
+    "explanation": "Maxillary first premolar furcation has a short root trunk and deep mesial developmental concavity, giving the worst furcation access/prognosis among common teeth listed.",
+    "force": true
+  },
+  {
+    "id": "saud_delta_137",
+    "answer": 3,
+    "explanation": "Paroxysmal hemicrania (and related indomethacin-responsive trigeminal autonomic cephalalgias) is diagnosed/treated by dramatic response to indomethacin; oxygen is the classic acute therapy for cluster headache.",
+    "force": true
+  },
+  {
+    "id": "saud_delta_138",
+    "answer": 3,
+    "explanation": "If an asthmatic’s own bronchodilator fails and breathing remains difficult, activate EMS while giving oxygen and further rescue bronchodilator/epinephrine per emergency protocol—do not only repeat ineffective self-care.",
+    "force": true
+  },
+  {
+    "id": "saud_delta_139",
+    "answer": 1,
+    "explanation": "Radiating left arm and jaw pain in an obese diabetic suggests acute coronary syndrome; glyceryl trinitrate (nitroglycerin) is the classic anti-anginal given (with aspirin) when blood pressure allows.",
+    "force": true
+  },
+  {
+    "id": "saud_delta_141",
+    "answer": 3,
+    "explanation": "Severe pain within ~24 hours after instrumentation of a necrotic tooth with apical pathology is a classic endodontic flare-up from extruded debris/inflammation, not necessarily a new crack or wrong tooth.",
+    "force": true
+  },
+  {
+    "id": "saud_delta_143",
+    "answer": 1,
+    "explanation": "For apical surgery on a molar with a large lesion, a sulcular (intrasulcular) flap with vertical releasing incision gives wide access and visibility; semilunar flaps are limited and risk scarring/limited exposure.",
+    "force": true
+  },
+  {
+    "id": "saud_delta_144",
+    "answer": 0,
+    "explanation": "An asymptomatic dome-shaped antral soft-tissue dome over a tooth (antral pseudocyst/mucous retention phenomenon) usually needs no treatment beyond observation if the tooth is sound.",
+    "force": true
+  },
+  {
+    "id": "saud_delta_145",
+    "answer": 3,
+    "explanation": "MRSA transmits primarily by direct contact with colonized skin/wounds or contaminated hands and fomites, not classic airborne droplet nuclei like measles.",
+    "force": true
+  },
+  {
+    "id": "saud_delta_146",
+    "answer": 2,
+    "explanation": "Among usable options, influenza transmission involves close respiratory exposure; droplet/contact precautions apply. (True primary mode is respiratory droplets/aerosols rather than blood-borne contact alone.)",
+    "force": true
+  },
+  {
+    "id": "saud_delta_147",
+    "answer": 1,
+    "explanation": "A 16-year-old seeking abortion-related care is outside routine dental scope and often legally/ethically complex; appropriate action is timely referral to a suitable medical facility/service.",
+    "force": true
+  },
+  {
+    "id": "saud_delta_148",
+    "answer": 0,
+    "explanation": "Prophy cups are single-use disposable devices; after use they are discarded, not cleaned for reuse on another patient.",
+    "force": true
+  },
+  {
+    "id": "saud_delta_149",
+    "answer": 3,
+    "explanation": "Burning tongue with a dry-mouth complaint but clinically moist mucosa is classic burning mouth syndrome (dysesthesia), not primary xerostomia from salivary hypofunction alone.",
+    "force": true
+  },
+  {
+    "id": "saud_delta_150",
+    "answer": 2,
+    "explanation": "Cervical enamel projections into the furcation promote plaque retention and attachment loss; management includes removing/ODontoplasty of the enamel projection with periodontal therapy.",
+    "force": true
+  },
+  {
+    "id": "saud_delta_152",
+    "answer": 0,
+    "explanation": "Bleeding on probing reflects the severity of gingival inflammation (ulcerated pocket epithelium and vascularity), not merely the anatomic location of the inflammation.",
+    "force": true
+  },
+  {
+    "id": "saud_delta_154",
+    "answer": 2,
+    "explanation": "Third-trimester irreversible pulpitis still needs definitive pulp therapy; perform RCT with essential diagnostic/working radiographs and shielding rather than delaying until after delivery.",
+    "force": true
+  },
+  {
+    "id": "saud_delta_155",
+    "answer": 1,
+    "explanation": "Piezoelectric scalers vibrate in a primarily linear back-and-forth pattern; magnetostrictive units have a more elliptical/orbital tip motion.",
+    "force": true
+  },
+  {
+    "id": "saud_delta_156",
+    "answer": 0,
+    "explanation": "Digoxin toxicity and adverse effects include gastrointestinal symptoms and can increase gagging/nausea; among listed cardiac drugs it is the agent classically linked to gag/nausea complaints.",
+    "force": true
+  },
+  {
+    "id": "saud_delta_157",
+    "answer": 3,
+    "explanation": "Primate spaces (mesial to upper canines, distal to lower canines) help accommodate permanent incisors and resolve mild crowding during the transition of the dentition.",
+    "force": true
+  },
+  {
+    "id": "saud_delta_158",
+    "answer": 2,
+    "explanation": "With aging, recession, or progressive periodontitis, interdental papillae may flatten and disappear, creating black triangles rather than retaining pointed papillary form.",
+    "force": true
+  },
+  {
+    "id": "saud_delta_159",
+    "answer": 1,
+    "explanation": "Shallow superficial tongue lacerations often heal well by secondary intention without layered suturing; deep through-and-through wounds need layered closure.",
+    "force": true
+  },
+  {
+    "id": "saud_delta_160",
+    "answer": 0,
+    "explanation": "Conventional GIC remains moisture-sensitive early; finishing is limited after initial set, with definitive polishing delayed (commonly next visit/~24 h). Among timed options, early minimal finish after set is the listed choice.",
+    "force": true
+  },
+  {
+    "id": "saud_delta_161",
+    "answer": 3,
+    "explanation": "Uncontrolled diabetes predisposes to severe soft-tissue infection and rapid fascial spread; necrotizing fasciitis is a life-threatening polymicrobial process that can present with limb necrosis/gangrene.",
+    "force": true
+  }
+]

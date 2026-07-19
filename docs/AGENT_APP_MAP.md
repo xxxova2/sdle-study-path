@@ -38,7 +38,7 @@ index.html
 
 | File | Global | Role |
 |------|--------|------|
-| `data/questions.js` | `window.QUESTION_BANK` | Full MCQ array (~2533) |
+| `data/questions.js` | `window.QUESTION_BANK` | Full MCQ array (**2533** verified 2026-07-20; **2501** usable) |
 | `data/lessons.js` | `window.LESSONS` | Day lessons (readings, quizzes, cards, video ids) |
 | `data/plan_tracks.js` | `window.PLAN_TRACKS`, helpers | Schedules for plan lengths 14/30/45/60/90 |
 | `data/highyield.js` | high-yield meta / bank mining notes | Blueprint emphasis, source notes |
@@ -141,9 +141,11 @@ Main chrome: `#main-nav` filled by `paintMainNav()`. Content: `#app`.
 
 - أبطال PDFs use ✅ marks; **OCR and community answers are often wrong**.
 - App explanations must be **clinical/board-standard hinges**, not “Extracted from أبطال…”.
-- July 2026 pass: bulk rewrite of ~**1305** placeholder explanations; **~457** answer indices flipped vs old community keys; **0** junk placeholders remaining at that pass.
-- ~**32** items may be `usable: false` (image-dependent).
-- The other ~**1200** items already had unique explanations (premium/saud/hy) and were **not** all re-audited in that pass.
+- July 2026 pass: bulk rewrite of ~**1305** placeholder explanations; **~457** answer indices flipped vs old community keys; **0** junk placeholders remaining (re-verified **2026-07-20** full audit).
+- **32** items `usable: false` (image-dependent) — all have `exclude_reason`.
+- **0** explanations under 50 chars; **226** `saud_delta` Why texts rewritten to clinical hinges (**2026-07-20**); **0** remaining provenance-style saud blocks.
+- The other ~**1200** premium/always items already had unique explanations and were **not** all re-audited for answer correctness in that pass.
+- Full integrity write-up: `AUDIT_REPORT_2026-07-20.md` (repo root).
 
 ### Explanation UI helpers (`js/app.js`)
 
@@ -364,7 +366,7 @@ bash scripts/check_plan_tracks.sh
 2. **Apply-script wrapper** must end with  
    `})(typeof window !== 'undefined' ? window : globalThis);`  
    not bare `})(window);`.
-3. **Two folders** (`sdle-prep` vs `sdle-study-path`) — confirm which remote `git push` updates Pages.
+3. **Two folders** (`sdle-prep` vs `sdle-study-path`) — **push only from `sdle-prep`**. Sibling can lag with thousands of junk explanations and the **same** GitHub remote (would clobber Pages).
 4. **Service worker** can show stale bank after deploy — bump cache + hard reload.
 5. **Answer index vs letter** — always 0-based; shuffling history means “answer B” in a PDF may not be index 1 in app.
 6. **Placeholder Why** used to look identical on hundreds of items — if user reports “all MCQs the same,” check explanations for abtal boilerplate and `?v=` bust.

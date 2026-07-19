@@ -620,7 +620,7 @@
     }
     const wrongByTopic = {};
     (state.wrongBook || []).forEach((id) => {
-      const q = (window.QUESTION_BANK || []).find((x) => x && x.id === id);
+      const q = allQ().find((x) => x && x.id === id);
       if (q && q.topic) wrongByTopic[q.topic] = (wrongByTopic[q.topic] || 0) + 1;
     });
     let best = null;
