@@ -3079,15 +3079,37 @@
     startQuiz(poolKey, count || QUIZ_ALL, "test", false);
   }
 
+  /** True when bank stored import noise instead of a real teaching hinge. */
+  function isPlaceholderExplanation(text) {
+    const t = String(text || "").trim();
+    if (!t) return true;
+    if (/community bank/i.test(t)) return true;
+    if (/extracted from/i.test(t)) return true;
+    if (/أبطال/.test(t)) return true;
+    if (/verify if no textbook/i.test(t)) return true;
+    if (t.length < 12) return true;
+    return false;
+  }
+
   /** Pad thin bank hinges with correct option (never invent official keys). */
   function enrichExplanation(item) {
     let body = (item.explanation || "").trim();
-    if (!body) body = "No hinge text stored for this item.";
     const letter = "ABCD"[item.answer];
     const opt =
       item.options && letter != null && item.options[item.answer] != null
         ? String(item.options[item.answer])
         : "";
+    const placeholder = isPlaceholderExplanation(body);
+    if (placeholder) {
+      if (opt && letter) {
+        body =
+          `Correct bank letter: ${letter}) ${opt}. ` +
+          `This item came from a community dump without a real hinge — use the options + Ask SDLEGPT, then verify in a textbook.`;
+      } else {
+        body = "No real hinge stored for this item (community import). Use options + Ask SDLEGPT and verify in a textbook.";
+      }
+      return body;
+    }
     const parts = [body];
     if (body.length < 55 && opt && letter) {
       const already = body.toLowerCase().includes(opt.slice(0, 18).toLowerCase());
@@ -3101,21 +3123,28 @@
 
   function formatWhy(item) {
     const body = enrichExplanation(item);
+    const placeholder = isPlaceholderExplanation(item.explanation);
     const scfhs =
       typeof window.scfhsRefsForTopic === "function"
         ? window.scfhsRefsForTopic(item.topic || item.pool)
         : [];
+    /* Skip generic book dump when hinge was empty — wrong books confuse more than they help. */
     const scfhsShort =
-      scfhs.length > 0
+      !placeholder && scfhs.length > 0
         ? `<div class="src-line muted">Study books: ${scfhs
             .slice(0, 2)
             .map((r) => escapeHtml(r.split(",")[0] || r))
             .join(" · ")}</div>`
         : "";
     const bookHtml =
-      typeof window.bookRefsHtml === "function" ? window.bookRefsHtml(item, { limit: 2 }) : "";
+      !placeholder && typeof window.bookRefsHtml === "function"
+        ? window.bookRefsHtml(item, { limit: 2 })
+        : "";
+    const footer = placeholder
+      ? `<div class="src-line why-footer">Community bank item — treat letter as provisional until you verify.</div>`
+      : `<div class="src-line why-footer">Write the hinge in your notebook if you missed it.</div>`;
     return `<div class="explain"><strong>Why:</strong> ${escapeHtml(body)}</div>
-      <div class="src-line why-footer">Review from official study data / bank letter. Write the hinge in your notebook if you missed it.</div>
+      ${footer}
       ${scfhsShort}${bookHtml}`;
   }
 
