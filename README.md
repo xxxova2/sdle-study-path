@@ -8,6 +8,7 @@ Free, open-source browser coach for the **Saudi Dental Licensure Examination (SD
 | **Live app** | https://xxxova2.github.io/sdle-study-path/ |
 | **Source code** | https://github.com/xxxova2/sdle-study-path |
 | **Intro letter** | [INTRO.md](./INTRO.md) · [EN + AR post](./docs/INTRO_POST_EN_AR.md) |
+| **AI / agent map** | [AGENTS.md](./AGENTS.md) · [docs/AGENT_APP_MAP.md](./docs/AGENT_APP_MAP.md) |
 | **Owner feedback inbox** | [ntfy topic](https://ntfy.sh/sdle-study-path-feedback-xxxova2-k7m9) (no login for students) |
 
 Works on **desktop and mobile browsers**. Same content as local study: readings, MCQs, quizzes, plans. Videos open on **Google Drive**.
