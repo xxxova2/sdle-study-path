@@ -1223,7 +1223,18 @@
   }
 
   /* ——— NAV ——— */
-  const TAB_VIEWS = ["today", "days", "pass", "always", "practice", "mcqs", "progress", "feedback", "more"];
+  const TAB_VIEWS = [
+    "today",
+    "days",
+    "pass",
+    "always",
+    "practice",
+    "mcqs",
+    "recalls",
+    "progress",
+    "feedback",
+    "more",
+  ];
   const SIMPLE_PRIMARY = ["today", "practice", "progress"];
   /** Public source repo (docs only — feedback does NOT open GitHub). */
   const REPO_URL = "https://github.com/xxxova2/sdle-study-path";
@@ -1362,6 +1373,7 @@
         <button type="button" data-view="always" title="Always-comes free points">Always</button>
         <button type="button" data-view="practice" title="Extra practice">Extra</button>
         <button type="button" data-view="mcqs" title="MCQs hub">MCQs</button>
+        <button type="button" data-view="recalls" title="Exam recall packs">Recalls</button>
         <button type="button" data-view="progress" title="Progress">Progress</button>
         <button type="button" data-view="feedback" title="Send feedback — no login">Feedback</button>
         <button type="button" data-view="more" title="Simple mode">Simple</button>`;
@@ -1535,6 +1547,7 @@
     else if (state.view === "always") renderAlways();
     else if (state.view === "practice") renderPractice();
     else if (state.view === "mcqs") renderMcqs();
+    else if (state.view === "recalls") renderRecalls();
     else if (state.view === "progress") renderProgress();
     else if (state.view === "feedback") renderFeedback();
     else if (state.view === "more") renderMore();
@@ -1554,6 +1567,7 @@
             <button type="button" class="btn ghost more-link" data-go="days">All days</button>
             <button type="button" class="btn ghost more-link" data-go="pass">Pass plan</button>
             <button type="button" class="btn ghost more-link" data-go="always">Free points list</button>
+            <button type="button" class="btn ghost more-link" data-go="recalls">Recalls (أبطال + رفيع/سعود)</button>
           </div>
         </details>
         <details class="more-branch" open>
@@ -3167,6 +3181,156 @@
       ${scfhsShort}${bookHtml}`;
   }
 
+  function examPacksMeta() {
+    return (window.EXAM_PACKS && window.EXAM_PACKS.packs) || [];
+  }
+
+  function renderRecalls() {
+    const packs = examPacksMeta()
+      .slice()
+      .sort((a, b) => (a.priority || 9) - (b.priority || 9));
+    const openId = state.recallPack || null;
+    const open = packs.find((p) => p.id === openId) || null;
+
+    if (open) {
+      const nBank = poolN(open.bankPool || "all");
+      const items = open.items || [];
+      const themes = (open.themes || [])
+        .map((t) => `<span class="badge blue">${escapeHtml(t)}</span>`)
+        .join(" ");
+      app.innerHTML = `
+        ${backBarHtml("← All recall packs")}
+        <h1>${escapeHtml(open.title)}</h1>
+        <p class="lead">${escapeHtml(open.period || "")}${
+          open.pages ? ` · ${open.pages} PDF pages` : ""
+        } · ${items.length} stems shown · bank pool <strong>${escapeHtml(
+          open.bankPool || "—"
+        )}</strong> (${nBank} Q)</p>
+        ${
+          open.noteAr
+            ? `<p class="muted" dir="rtl" style="text-align:right">${escapeHtml(open.noteAr)}</p>`
+            : ""
+        }
+        <p class="muted pack-disclaimer">${escapeHtml(open.disclaimer || "")}</p>
+        <div class="volume-grid" style="margin-bottom:12px">
+          <button type="button" class="btn success" id="pack-drill" ${nBank < 1 ? "disabled" : ""}>
+            Practice linked bank (${nBank})
+          </button>
+          <button type="button" class="btn ghost" id="pack-drill-25" ${nBank < 1 ? "disabled" : ""}>25 Q</button>
+          <button type="button" class="btn ghost" id="pack-back">All packs</button>
+        </div>
+        <div class="pack-themes">${themes || ""}</div>
+        <div class="pack-items">
+          ${items
+            .map((it, idx) => {
+              const opts = (it.options || [])
+                .map(
+                  (o, i) =>
+                    `<li><span class="muted">${"ABCD"[i] || "?"}.</span> ${escapeHtml(o)}</li>`
+                )
+                .join("");
+              return `<article class="pack-item">
+                <header>
+                  <strong>#${escapeHtml(String(it.n != null ? it.n : idx + 1))}</strong>
+                  <span class="muted">${escapeHtml(it.month || "")}${
+                    it.topic ? " · " + escapeHtml(it.topic) : ""
+                  }</span>
+                  ${it.communityMarked ? '<span class="badge" title="Community mark in PDF">PDF ✅</span>' : ""}
+                </header>
+                <p class="pack-stem">${escapeHtml(it.stem || "")}</p>
+                ${opts ? `<ul class="pack-opts">${opts}</ul>` : ""}
+              </article>`;
+            })
+            .join("")}
+        </div>
+        ${
+          !items.length
+            ? `<p class="muted">No stem list for this pack — use Practice linked bank.</p>`
+            : ""
+        }
+      `;
+      bindBackBar();
+      const back = () => {
+        state.recallPack = null;
+        renderRecalls();
+      };
+      $("#pack-back") && ($("#pack-back").onclick = back);
+      // back bar uses history — also clear pack when leaving
+      const bb = $("#back-bar-btn");
+      if (bb) {
+        const prev = bb.onclick;
+        bb.onclick = () => {
+          state.recallPack = null;
+          if (typeof prev === "function") prev();
+          else renderRecalls();
+        };
+      }
+      $("#pack-drill") &&
+        ($("#pack-drill").onclick = () =>
+          startQuiz(open.bankPool, QUIZ_ALL, "learn", false));
+      $("#pack-drill-25") &&
+        ($("#pack-drill-25").onclick = () => startQuiz(open.bankPool, 25, "learn", false));
+      return;
+    }
+
+    const invAbtal = poolN("abtal");
+    const invSaud = poolN("saud_delta");
+    const invStream = poolN("stream");
+    app.innerHTML = `
+      <h1>Recalls · exam packs</h1>
+      <p class="lead">Recent أبطال windows + <strong>سعود vs رفيع المقام 16/19</strong> turned into browseable stems and one-tap practice.
+        <b>Not official SCFHS keys</b> — community marks can be wrong.</p>
+      <div class="volume-grid pack-quick">
+        <button type="button" class="btn success" data-pack-pool="abtal" data-n="${QUIZ_ALL}">أبطال bank ALL (${invAbtal})</button>
+        <button type="button" class="btn" data-pack-pool="saud_delta" data-n="${QUIZ_ALL}">سعود delta ALL (${invSaud})</button>
+        <button type="button" class="btn ghost" data-pack-pool="stream" data-n="${QUIZ_ALL}">Stream (${invStream})</button>
+      </div>
+      <div class="pack-grid">
+        ${packs
+          .map((p) => {
+            const n = poolN(p.bankPool || "all");
+            const themes = (p.themes || [])
+              .slice(0, 4)
+              .map((t) => `<span class="badge blue">${escapeHtml(t)}</span>`)
+              .join(" ");
+            return `<div class="pack-card" data-open-pack="${escapeHtml(p.id)}">
+              <div class="mcq-cat-head">
+                <strong>${escapeHtml(p.title)}</strong>
+                <span class="badge">${escapeHtml(p.kind || "")}</span>
+              </div>
+              <p class="muted mcq-cat-sub">${escapeHtml(p.period || "")}${
+                p.pages ? ` · ${p.pages}p` : ""
+              } · ${p.itemCountExtracted || (p.items || []).length} signals · practice ${n}</p>
+              <div class="pack-themes">${themes}</div>
+              <div class="volume-grid mcq-cat-actions">
+                <button type="button" class="btn" data-open-pack="${escapeHtml(p.id)}">Browse stems</button>
+                <button type="button" class="btn ghost" data-pack-pool="${escapeHtml(
+                  p.bankPool || "all"
+                )}" data-n="25" ${n < 1 ? "disabled" : ""}>Drill 25</button>
+              </div>
+            </div>`;
+          })
+          .join("")}
+      </div>
+      <p class="muted" style="margin-top:16px">Source: local أبطال PDFs (Sep/Oct/Dec–Feb/Mar–June) + تلخيص سعود (new vs رفيع 16/19). Full رفيع 16/19 books are not mirrored in-app — only the Saud delta is.</p>
+    `;
+    app.querySelectorAll("[data-open-pack]").forEach((el) => {
+      el.onclick = (e) => {
+        e.stopPropagation();
+        state.recallPack = el.getAttribute("data-open-pack");
+        renderRecalls();
+      };
+    });
+    app.querySelectorAll("[data-pack-pool]").forEach((btn) => {
+      btn.onclick = (e) => {
+        e.stopPropagation();
+        const poolKey = btn.getAttribute("data-pack-pool");
+        const n = +btn.getAttribute("data-n") || 25;
+        startQuiz(poolKey, n, "learn", false);
+      };
+    });
+  }
+
   function renderMcqs() {
     const inv = bankInventory();
     const rawTotal = (window.QUESTION_BANK || []).length;
@@ -4242,6 +4406,9 @@
     if (base === "wrong") p = state.wrongBook.map((id) => p.find((q) => q.id === id)).filter(Boolean);
     else if (base === "always_src") p = p.filter((q) => q.source === "always");
     else if (base === "saud_delta") p = p.filter((q) => q.source === "saud_delta");
+    else if (base === "abtal") p = p.filter((q) => q.source === "abtal");
+    else if (base === "stream")
+      p = p.filter((q) => String(q.source || "").startsWith("stream"));
     else if (base === "weak") {
       const keys = new Set(weakTopicKeys(3));
       p = p.filter((q) => keys.has(q.topic));
@@ -4301,6 +4468,8 @@
       all: poolN("all"),
       always: poolN("always_src"),
       saud_delta: poolN("saud_delta"),
+      abtal: poolN("abtal"),
+      stream: poolN("stream"),
       restorative: poolN("restorative"),
       operative: poolN("operative"),
       fixed: poolN("fixed"),
@@ -4437,6 +4606,8 @@
   function topicLabelOf(topic) {
     if (topic === "always_src") return "Free points";
     if (topic === "saud_delta") return "Saud delta";
+    if (topic === "abtal") return "أبطال bank";
+    if (topic === "stream") return "Stream recalls";
     if (topic === "wrong") return "Wrong book";
     if (topic === "all") return "Full bank";
     if (topic === "unseen") return "Unseen";
