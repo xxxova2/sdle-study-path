@@ -20,7 +20,7 @@ grep -q 'formatWhy' js/app.js && grep -q 'scfhsRefs' js/app.js && ok "formatWhy 
 grep -q 'readingWithRefs' js/app.js && ok "readingWithRefs" || fail "readingWithRefs"
 grep -q 'setPlanLength' js/app.js && ok "setPlanLength" || fail "setPlanLength"
 grep -q 'modeCoachHtml' js/app.js && grep -q 'passReadiness' js/app.js && ok "mode coach + pass readiness" || fail "student coach"
-grep -q 'enrichExplanation' js/app.js && ok "enrichExplanation" || fail "enrichExplanation"
+grep -q 'formatAnswerFeedback' js/app.js && grep -q 'hingeOnly' js/app.js && ok "formatAnswerFeedback + hingeOnly" || fail "answer feedback path"
 grep -q 'Calendar Day' js/app.js && ok "calendar day header" || fail "calendar day"
 grep -q 'video_links.js' index.html && ok "index loads video_links" || fail "video_links script"
 grep -q 'book_index.js' index.html && ok "index loads book_index" || fail "book_index script"
