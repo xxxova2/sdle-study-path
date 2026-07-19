@@ -3091,46 +3091,55 @@
     return false;
   }
 
-  /** Strip old coaching boilerplate that was once baked into bank explanations. */
+  /** Strip old coaching / "Correct: X) …" pads — hinge text only, never the letter. */
   function scrubExplanation(text) {
     let t = String(text || "").trim();
     t = t.replace(/\s*Eliminate contradicting distractors;\s*re-drill wrongs same day\.?\s*$/i, "");
     t = t.replace(/\s*Re-drill this hinge if you missed it\.?\s*$/i, "");
-    /* Stored pads like: "Hinge. Correct: D) option text." — keep hinge only. */
     t = t.replace(/\s*Correct:\s*[A-D]\).*$/i, "");
+    t = t.replace(/\s*Correct bank letter:\s*[A-D]\).*$/i, "");
     return t.replace(/\s+/g, " ").trim();
   }
 
-  /** Pad thin bank hinges with correct option (never invent official keys). */
-  function enrichExplanation(item) {
-    let body = scrubExplanation(item.explanation || "");
+  function correctLetterOption(item) {
     const letter = "ABCD"[item.answer];
     const opt =
       item.options && letter != null && item.options[item.answer] != null
         ? String(item.options[item.answer])
         : "";
-    const placeholder = isPlaceholderExplanation(body);
-    if (placeholder) {
-      if (opt && letter) {
-        body =
-          `Correct bank letter: ${letter}) ${opt}. ` +
-          `This item came from a community dump without a real hinge — use the options + Ask SDLEGPT, then verify in a textbook.`;
-      } else {
-        body = "No real hinge stored for this item (community import). Use options + Ask SDLEGPT and verify in a textbook.";
-      }
-      return body;
+    if (!letter) return "";
+    return opt ? `${letter}) ${opt}` : `${letter})`;
+  }
+
+  /** Hinge only — never restate letter/option (that lives in the answer line). */
+  function hingeOnly(item) {
+    return scrubExplanation(item.explanation || "");
+  }
+
+  /**
+   * One feedback block for all 2500 MCQs (learn / test reveal / review):
+   * 1) Correct. / Incorrect. + which answer is right (once)
+   * 2) Why: clinical hinge only (no second copy of the answer)
+   * opts.ok: true | false | null (null = show answer without right/wrong label)
+   */
+  function formatAnswerFeedback(item, opts) {
+    opts = opts || {};
+    const ok = opts.ok;
+    const ans = correctLetterOption(item);
+    let head;
+    if (ok === true) {
+      head = `<div class="explain"><strong>Correct.</strong> ${escapeHtml(ans)}</div>`;
+    } else if (ok === false) {
+      head = `<div class="explain"><strong>Incorrect.</strong> Correct answer: ${escapeHtml(ans)}</div>`;
+    } else {
+      head = `<div class="explain"><strong>Correct answer:</strong> ${escapeHtml(ans)}</div>`;
     }
-    /* Thin clinical tag only: append correct option once (UI already shows Correct/Incorrect). */
-    if (body.length < 55 && opt && letter) {
-      const already = body.toLowerCase().includes(opt.slice(0, 18).toLowerCase());
-      if (!already) body = `${body} Correct: ${letter}) ${opt}`;
-    }
-    return body;
+    return head + formatWhy(item);
   }
 
   function formatWhy(item) {
-    const body = enrichExplanation(item);
-    const placeholder = isPlaceholderExplanation(scrubExplanation(item.explanation));
+    const body = hingeOnly(item);
+    const placeholder = isPlaceholderExplanation(body);
     const scfhs =
       typeof window.scfhsRefsForTopic === "function"
         ? window.scfhsRefsForTopic(item.topic || item.pool)
@@ -3147,10 +3156,13 @@
       !placeholder && typeof window.bookRefsHtml === "function"
         ? window.bookRefsHtml(item, { limit: 2 })
         : "";
+    const whyBody = placeholder
+      ? "No short hinge stored — use the options + Ask SDLEGPT, then verify in a textbook."
+      : body;
     const footer = placeholder
       ? `<div class="src-line why-footer">Community bank item — treat letter as provisional until you verify.</div>`
       : "";
-    return `<div class="explain"><strong>Why:</strong> ${escapeHtml(body)}</div>
+    return `<div class="explain"><strong>Why:</strong> ${escapeHtml(whyBody)}</div>
       ${footer}
       ${scfhsShort}${bookHtml}`;
   }
@@ -4593,9 +4605,9 @@
           </div>
           <div id="feedback" class="q-feedback">${
             revealed
-              ? `<div class="explain"><strong>Correct:</strong> ${String.fromCharCode(65 + item.answer)}. ${escapeHtml(
-                  item.options[item.answer] || ""
-                )}</div>${formatWhy(item)}${sdleGptButtonHtml("row")}`
+              ? `${formatAnswerFeedback(item, {
+                  ok: picked == null ? null : picked === item.answer,
+                })}${sdleGptButtonHtml("row")}`
               : locked
                 ? `<p class="muted q-feedback-hint">Answer locked. Tap <b>Show answer</b> or <b>Next</b> (bottom bar stays in view).</p>`
                 : ""
@@ -4666,18 +4678,7 @@
     });
     const fb = $("#feedback");
     if (fb) {
-      /* Status line only — do not paste explanation here; formatWhy owns the hinge once. */
-      const letter = "ABCD"[item.answer];
-      const opt =
-        item.options && item.options[item.answer] != null
-          ? String(item.options[item.answer])
-          : "";
-      const status = ok
-        ? `<div class="explain"><strong>Correct.</strong></div>`
-        : `<div class="explain"><strong>Incorrect.</strong> Answer: ${escapeHtml(
-            letter || "?"
-          )}) ${escapeHtml(opt)}</div>`;
-      fb.innerHTML = `${status}${formatWhy(item)}${sdleGptButtonHtml("row")}`;
+      fb.innerHTML = `${formatAnswerFeedback(item, { ok })}${sdleGptButtonHtml("row")}`;
       bindSdleGptButtons(fb, () => contextFromQuizItem(item, idx));
     }
     const next = $("#btn-next");
@@ -4834,8 +4835,10 @@
                   <span>${escapeHtml(item.q)}</span>
                   <div class="explain">Your pick: ${
                     skipped ? "—" : escapeHtml(item.options[ans] || "")
-                  }<br>Answer: ${escapeHtml(item.options[item.answer] || "")}</div>
-                  ${formatWhy(item)}
+                  }</div>
+                  ${formatAnswerFeedback(item, {
+                    ok: skipped ? null : ok,
+                  })}
                 </div>`;
               })
               .join("")}</div>`
