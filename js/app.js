@@ -99,10 +99,41 @@
     "examQa",
     "history",
     "planChosen",
+    "simpleMode",
     "viewStack",
     "pomoMode",
     "pomoRemaining",
   ];
+
+  /** Default ON: fewer tabs + one practice path. Coach mode = full chrome. */
+  function isSimpleMode() {
+    return store.get("simpleMode", true) !== false;
+  }
+  function setSimpleMode(on) {
+    store.set("simpleMode", !!on);
+    applyChromeMode();
+    paintMainNav();
+    render();
+  }
+
+  /** Simple = calm chrome (no cockpit). Coach = full timer + stats. */
+  function applyChromeMode() {
+    const simple = isSimpleMode();
+    try {
+      document.body.classList.toggle("simple-ui", simple);
+    } catch (_) {}
+    const stats = $("#top-stats");
+    const pomo = $("#pomo-bar");
+    if (stats) stats.hidden = !!simple;
+    if (pomo) pomo.hidden = !!simple;
+  }
+
+  /** Short subject line for UI (drop internal codenames after em dash). */
+  function humanLessonTitle(L) {
+    const raw = (L && L.title) || "Today";
+    const cut = raw.split(/\s*[—–]\s*/)[0].trim();
+    return cut || raw;
+  }
 
   /** Local calendar day key (YYYY-MM-DD) for "Today Q" rollover. */
   function todayKey() {
@@ -113,12 +144,13 @@
     return y + "-" + m + "-" + day;
   }
 
+  /* New installs default 30d (research: good default). Existing localStorage keeps prior length. */
   const rawPlan =
     typeof window.normalizePlanLength === "function"
-      ? window.normalizePlanLength(store.get("planLength", 14))
-      : [14, 30, 45, 60, 90].indexOf(+store.get("planLength", 14)) >= 0
-        ? +store.get("planLength", 14)
-        : 14;
+      ? window.normalizePlanLength(store.get("planLength", 30))
+      : [14, 30, 45, 60, 90].indexOf(+store.get("planLength", 30)) >= 0
+        ? +store.get("planLength", 30)
+        : 30;
   const rawDay = +store.get("day", 1);
   const rawGoal = +store.get("dailyGoal", 150);
 
@@ -201,6 +233,7 @@
     "mcqs",
     "progress",
     "feedback",
+    "more",
   ]);
   let viewStack = asArray(store.get("viewStack", []), []).filter(
     (v) => typeof v === "string" && (TAB_VIEW_SET.has(v) || v === "quiz" || v === "cards")
@@ -252,7 +285,7 @@
   function maxDay() {
     if (typeof window.maxPlanDay === "function") return window.maxPlanDay(state.planLength);
     const n = +state.planLength;
-    return [14, 30, 45, 60, 90].indexOf(n) >= 0 ? n : 14;
+    return [14, 30, 45, 60, 90].indexOf(n) >= 0 ? n : 30;
   }
 
   function clampDay() {
@@ -276,8 +309,11 @@
         ? window.normalizePlanLength(n)
         : [14, 30, 45, 60, 90].indexOf(+n) >= 0
           ? +n
-          : 14;
-    if (confirmPick) store.set("planChosen", true);
+          : 30;
+    if (confirmPick) {
+      store.set("planChosen", true);
+      store.set("planPickedExplicit", true);
+    }
     // Same track, no force: nothing to do (except confirm already saved above)
     if (state.planLength === len && !force) {
       if (confirmPick) {
@@ -895,6 +931,12 @@
   function paintPomoBar() {
     const bar = $("#pomo-bar");
     if (!bar) return;
+    if (isSimpleMode()) {
+      bar.hidden = true;
+      bar.innerHTML = "";
+      return;
+    }
+    bar.hidden = false;
     const workMin = Math.round(pomo.workSec / 60);
     const sch = (() => {
       try {
@@ -977,11 +1019,26 @@
 
   function updateTop() {
     ensureSessionDay();
+    applyChromeMode();
+    const el = $("#top-stats");
+    if (!el) return;
+    if (isSimpleMode()) {
+      el.innerHTML = "";
+      el.hidden = true;
+      // Timer stays hidden in simple — no cockpit.
+      const bar = $("#pomo-bar");
+      if (bar) {
+        bar.hidden = true;
+        bar.innerHTML = "";
+      }
+      return;
+    }
+    el.hidden = false;
     const s = state.stats;
     const pct = s.answered ? Math.round((100 * s.correct) / s.answered) : 0;
     const goalPct = Math.min(100, Math.round((100 * state.sessionAnswered) / (state.dailyGoal || 150)));
     const m = maxDay();
-    $("#top-stats").innerHTML = `
+    el.innerHTML = `
       <span title="Calendar day on ${state.planLength}-day track"><strong>D${state.day}/${m}</strong></span>
       <span class="track-pill" title="Plan length">${state.planLength}d</span>
       <span title="All-time accuracy"><strong style="color:${pct >= 80 ? "var(--accent2)" : "var(--warn)"}">${pct}%</strong></span>
@@ -1013,14 +1070,32 @@
       </div>`;
   }
 
-  /** Big first step: choose plan before any Day content (synced hours, not hard-coded copy). */
-  function planChooserHtml({ gate = false } = {}) {
+  /**
+   * Plan picker. gate=true only in Coach mode (blocks day until pick).
+   * Simple mode uses compact strip so day content is never blocked (TTV).
+   */
+  function planChooserHtml({ gate = false, compact = false } = {}) {
     const opts = planOptionsMeta();
+    if (compact) {
+      return `
+      <section class="plan-chooser plan-chooser-compact" aria-label="Study plan">
+        <p class="plan-model-line"><b>Same 14 lessons</b> · plan only changes calendar speed, hours, and Q goal.</p>
+        <div class="plan-compact-row">
+          <span class="muted">Plan:</span>
+          ${opts
+            .map(
+              (t) =>
+                `<button type="button" class="btn sm ${state.planLength === t.n ? "" : "ghost"}" data-pick-plan="${t.n}" title="${escapeHtml(t.sub)}">${escapeHtml(t.short)}</button>`
+            )
+            .join("")}
+        </div>
+      </section>`;
+    }
     return `
       <section class="plan-chooser ${gate ? "plan-chooser-gate" : ""}" aria-label="Choose study plan">
         <h2 class="plan-chooser-title">${gate ? "1 · Choose your plan first" : "Your plan"}</h2>
         <p class="lead plan-chooser-lead">
-          Pick length <b>before</b> Day work. Same 14 lessons — <b>hours, focus timer, MCQ goal, and step order</b> all change with the plan.
+          Same 14 lessons — <b>hours, focus timer, MCQ goal, and step order</b> change with plan length.
         </p>
         <div class="plan-template-grid plan-chooser-grid">
           ${opts
@@ -1036,8 +1111,8 @@
         </div>
         ${
           gate
-            ? `<p class="muted plan-chooser-hint">Tap a card → Today opens with that plan’s hours and timer. You can change plan later from the bar under the day title.</p>`
-            : `<p class="muted plan-chooser-hint">Active: <b>${state.planLength}-day</b> · timer and Q goal follow this plan. <button type="button" class="btn sm ghost" id="repick-plan">Change plan…</button></p>`
+            ? `<p class="muted plan-chooser-hint">Tap a card → Today opens. Change later anytime.</p>`
+            : `<p class="muted plan-chooser-hint">Active: <b>${state.planLength}-day</b>. <button type="button" class="btn sm ghost" id="repick-plan">Change plan…</button></p>`
         }
       </section>`;
   }
@@ -1050,6 +1125,7 @@
     if (repick)
       repick.onclick = () => {
         store.set("planChosen", false);
+        store.set("planPickedExplicit", false);
         save();
         render();
       };
@@ -1090,6 +1166,10 @@
       typeof window.bookRefsHtml === "function"
         ? window.bookRefsHtml({ topic: bookTopic, q: L.title || "", explanation: focus }, { limit: 2 })
         : "";
+    // Simple path: lesson text only. Coach gets calendar banner + notebook callouts.
+    if (isSimpleMode()) {
+      return (L.reading || "") + (refs || "") + (bookRefs || "");
+    }
     const meta = trackMeta();
     const banner = `
       <div class="track-day-banner alert">
@@ -1143,9 +1223,36 @@
   }
 
   /* ——— NAV ——— */
-  const TAB_VIEWS = ["today", "days", "pass", "always", "practice", "mcqs", "progress", "feedback"];
+  const TAB_VIEWS = ["today", "days", "pass", "always", "practice", "mcqs", "progress", "feedback", "more"];
+  const SIMPLE_PRIMARY = ["today", "practice", "progress"];
   /** Public source repo (docs only — feedback does NOT open GitHub). */
   const REPO_URL = "https://github.com/xxxova2/sdle-study-path";
+
+  function paintMainNav() {
+    const nav = $("#main-nav");
+    if (!nav) return;
+    applyChromeMode();
+    if (isSimpleMode()) {
+      nav.innerHTML = `
+        <button type="button" data-view="today" title="Today">Today</button>
+        <button type="button" data-view="practice" title="Practice MCQs">Practice</button>
+        <button type="button" data-view="progress" title="Progress">Progress</button>
+        <button type="button" data-view="more" title="More">More</button>`;
+    } else {
+      nav.innerHTML = `
+        <button type="button" data-view="today" title="Today">Today</button>
+        <button type="button" data-view="days" title="All days">Days</button>
+        <button type="button" data-view="pass" title="Pass plan">Pass</button>
+        <button type="button" data-view="always" title="Always-comes free points">Always</button>
+        <button type="button" data-view="practice" title="Extra practice">Extra</button>
+        <button type="button" data-view="mcqs" title="MCQs hub">MCQs</button>
+        <button type="button" data-view="progress" title="Progress">Progress</button>
+        <button type="button" data-view="feedback" title="Send feedback — no login">Feedback</button>
+        <button type="button" data-view="more" title="Simple mode">Simple</button>`;
+    }
+    bindNav();
+    setActiveNav(TAB_VIEWS.includes(state.view) ? state.view : "today");
+  }
 
   /** MCQs hub categories → pool() keys (full bank, no thinning). */
   const MCQ_CATEGORIES = [
@@ -1169,7 +1276,10 @@
   ];
 
   function setActiveNav(view) {
-    const navView = TAB_VIEWS.includes(view) ? view : "today";
+    let navView = TAB_VIEWS.includes(view) ? view : "today";
+    if (isSimpleMode() && !SIMPLE_PRIMARY.includes(navView) && navView !== "more") {
+      navView = "more";
+    }
     document.querySelectorAll(".simple-nav button").forEach((x) => {
       const on = x.dataset.view === navView;
       x.classList.toggle("active", on);
@@ -1311,12 +1421,83 @@
     else if (state.view === "mcqs") renderMcqs();
     else if (state.view === "progress") renderProgress();
     else if (state.view === "feedback") renderFeedback();
+    else if (state.view === "more") renderMore();
     else if (state.view === "quiz") renderQuizUI();
     else if (state.view === "cards") renderCardsUI();
   }
 
+  /** Secondary destinations — tree of only what you need (not a button dump). */
+  function renderMore() {
+    const simple = isSimpleMode();
+    app.innerHTML = `
+      <div class="more-tree">
+        <h1>More</h1>
+        <details class="more-branch" open>
+          <summary>Study</summary>
+          <div class="more-branch-body">
+            <button type="button" class="btn ghost more-link" data-go="days">All days</button>
+            <button type="button" class="btn ghost more-link" data-go="pass">Pass plan</button>
+            <button type="button" class="btn ghost more-link" data-go="always">Free points list</button>
+          </div>
+        </details>
+        <details class="more-branch" open>
+          <summary>Plan length</summary>
+          <div class="more-branch-body plan-compact-row">
+            ${planOptionsMeta()
+              .map(
+                (t) =>
+                  `<button type="button" class="btn sm ${state.planLength === t.n ? "" : "ghost"}" data-pick-plan="${t.n}">${escapeHtml(t.title)}</button>`
+              )
+              .join("")}
+          </div>
+        </details>
+        <details class="more-branch">
+          <summary>Backup</summary>
+          <div class="more-branch-body">
+            <button type="button" class="btn ghost more-link" id="more-export">Export progress</button>
+            <label class="btn ghost more-link" style="cursor:pointer">
+              Import progress…
+              <input type="file" id="more-import" accept="application/json,.json" hidden />
+            </label>
+          </div>
+        </details>
+        <details class="more-branch">
+          <summary>App mode</summary>
+          <div class="more-branch-body">
+            <p class="muted more-hint">${simple ? "Simple is on (clean tabs)." : "Coach is on (full tools)."}</p>
+            <button type="button" class="btn ${simple ? "ghost" : "success"}" id="toggle-simple">
+              ${simple ? "Switch to Coach mode" : "Switch to Simple mode"}
+            </button>
+          </div>
+        </details>
+        <details class="more-branch">
+          <summary>Help</summary>
+          <div class="more-branch-body">
+            <button type="button" class="btn ghost more-link" data-go="feedback">Send feedback</button>
+          </div>
+        </details>
+      </div>`;
+    bindPlanChooser();
+    app.querySelectorAll("[data-go]").forEach((b) => {
+      b.onclick = () => navigateTo(b.dataset.go, { push: true });
+    });
+    const t = $("#toggle-simple");
+    if (t) t.onclick = () => setSimpleMode(!isSimpleMode());
+    $("#more-export") && ($("#more-export").onclick = exportFullProgress);
+    bindImportProgress($("#more-import"));
+  }
+
   function dayPickerBar() {
     const m = maxDay();
+    // Simple: Prev / Day N / Next only — no 30-row syllabus dump.
+    if (isSimpleMode()) {
+      return `
+      <div class="nav-day simple-day-nav" role="group" aria-label="Day">
+        <button type="button" class="btn ghost" id="prev-day" ${state.day <= 1 ? "disabled" : ""}>←</button>
+        <span class="simple-day-label">Day <strong>${state.day}</strong> / ${m}</span>
+        <button type="button" class="btn ghost" id="next-day" ${state.day >= m ? "disabled" : ""}>→</button>
+      </div>`;
+    }
     const track = typeof window.getPlanTrack === "function" ? window.getPlanTrack(state.planLength) : null;
     let options = "";
     if (track && track.length) {
@@ -1459,6 +1640,18 @@
   /** Never leave Today with zero open steps (all done → always or last). Mode biases first open step. */
   function resolveOpenKey(L) {
     const order = stepOrder(L);
+    if (isSimpleMode()) {
+      // Hub → path handoff (Read / Videos / Quiz taps)
+      if (state._forceOpenKey && order.includes(state._forceOpenKey)) {
+        const forced = state._forceOpenKey;
+        state._forceOpenKey = null;
+        return forced;
+      }
+      const firstS = firstIncompleteKey(L);
+      if (firstS) return firstS;
+      if (order.includes("always")) return "always";
+      return order[order.length - 1] || "read";
+    }
     const mode = (trackMeta().mode || "learn").toLowerCase();
     const prefer =
       mode === "volume" || mode === "review"
@@ -1501,6 +1694,7 @@
 
   function openStepKey(key) {
     if (!key) return;
+    // Toggle visibility only — never drop educational HTML from the page.
     app.querySelectorAll(".step[data-step]").forEach((s) => {
       s.classList.toggle("open", s.dataset.step === key);
     });
@@ -1517,18 +1711,27 @@
   function stepHtml(num, key, title, bodyHtml, openKey) {
     const done = isDone(key);
     const open = key === openKey;
+    const simple = isSimpleMode();
+    // Keep full titles for Read/Video (education). Short labels only for chrome-like steps.
+    const headTitle =
+      simple && (key === "quiz" || key === "cards" || key === "mock" || key === "always")
+        ? STEP_CHIP_LABELS[key] || title
+        : title;
+    const markLabel = simple ? "Mark done" : "Mark this step done → next step opens";
+    // ALWAYS keep bodyHtml (lessons, videos, free points). CSS hides closed bodies.
+    // Never strip educational content for "fewer characters".
     return `
       <div class="step ${done ? "done" : ""} ${open ? "open" : ""}" data-step="${key}">
         <div class="step-head">
           <div class="step-num">${done ? "✓" : num}</div>
-          <div class="step-title">${title}</div>
-          <span class="badge ${done ? "green" : open ? "yellow" : ""}">${done ? "Done" : open ? "Do now" : "To do"}</span>
+          <div class="step-title">${headTitle}</div>
+          <span class="badge ${done ? "green" : open ? "yellow" : ""}">${done ? "Done" : open ? "Now" : ""}</span>
         </div>
         <div class="step-body">
           ${bodyHtml}
           <label class="check-row">
             <input type="checkbox" class="step-check" data-key="${key}" ${done ? "checked" : ""}>
-            Mark this step done → next step opens
+            ${markLabel}
           </label>
         </div>
       </div>`;
@@ -1573,23 +1776,157 @@
     return "";
   }
 
+  /**
+   * Simple home:
+   * 1) First page = pick plan (user must tap — never auto-force 14).
+   * 2) Then today’s topic → learn → practice.
+   */
+  function renderTodayHub(L) {
+    const subject = humanLessonTitle(L);
+    const order = stepOrder(L);
+    const doneCount = order.filter((k) => isDone(k)).length;
+    const vidN = (L.videos && L.videos.length) || 0;
+    const m = maxDay();
+    /* Old builds set planChosen without a real tap — require one explicit pick. */
+    if (store.get("planChosen", false) && !store.get("planPickedExplicit", false)) {
+      store.set("planChosen", false);
+    }
+    const planChosen = !!store.get("planChosen", false);
+    const repick = !!state._hubRepickPlan;
+
+    /* ——— Page 1: choose plan only (not Day 1 / not 14 forced) ——— */
+    if (!planChosen || repick) {
+      const opts = planOptionsMeta();
+      const row = opts
+        .map((t) => {
+          /* First visit: nothing pre-selected as “yours”. 30 only labeled recommended. */
+          const rec = t.n === 30 ? " rec" : "";
+          const cur = repick && state.planLength === t.n ? " active" : "";
+          return `<button type="button" class="btn hub-plan-pick${rec}${cur}" data-pick-plan="${t.n}">${escapeHtml(t.title)}${t.n === 30 ? " ★" : ""}</button>`;
+        })
+        .join("");
+
+      app.innerHTML = `
+        <div class="today-hub hub-setup">
+          <h1 class="hub-title">${repick ? "Change plan" : "Choose your plan"}</h1>
+          <p class="hub-sub">Same 14 topics either way. Pick how many days to study.</p>
+          <div class="hub-plan-picks" role="group" aria-label="Plan length">${row}</div>
+          ${repick ? `<button type="button" class="btn ghost" id="hub-pace-cancel">Cancel</button>` : ""}
+        </div>`;
+
+      app.querySelectorAll("[data-pick-plan]").forEach((b) => {
+        b.onclick = () => {
+          state._hubRepickPlan = false;
+          store.set("planPickedExplicit", true);
+          setPlanLength(+b.dataset.pickPlan, { confirm: true, force: true });
+        };
+      });
+      const cancel = $("#hub-pace-cancel");
+      if (cancel) {
+        cancel.onclick = () => {
+          state._hubRepickPlan = false;
+          renderTodayHub(L);
+        };
+      }
+      return;
+    }
+
+    /* ——— Daily hub: subject first, learn first, practice second ——— */
+    const stepRows = order
+      .map((k) => {
+        const done = isDone(k);
+        const label = STEP_CHIP_LABELS[k] || k;
+        return `<li class="hub-step ${done ? "done" : ""}"><span class="hub-dot">${done ? "✓" : "○"}</span> ${escapeHtml(label)}</li>`;
+      })
+      .join("");
+
+    const goalLine = (L.goal && String(L.goal).trim()) || "High-yield points for this topic.";
+    const qLine =
+      state.sessionAnswered > 0
+        ? ` · ${state.sessionAnswered} Q practiced today`
+        : "";
+
+    app.innerHTML = `
+      <div class="today-hub">
+        <p class="hub-kicker">Today’s topic</p>
+        <h1 class="hub-title">${escapeHtml(subject)}</h1>
+        <p class="hub-sub">${escapeHtml(goalLine)}${qLine}</p>
+
+        <div class="hub-actions" role="group" aria-label="Start studying">
+          <button type="button" class="btn success path-primary hub-primary" id="hub-read">Start today’s lesson</button>
+          <button type="button" class="btn ghost hub-secondary" id="hub-practice">Practice questions</button>
+          ${vidN ? `<button type="button" class="btn ghost hub-secondary" id="hub-videos">Watch videos (${vidN})</button>` : ""}
+          <button type="button" class="btn ghost hub-secondary" id="hub-cards">Flashcards</button>
+        </div>
+
+        <div class="hub-progress">
+          <div class="step-progress" aria-label="Day progress">
+            <div class="step-progress-bar" style="width:${Math.round((100 * doneCount) / Math.max(1, order.length))}%"></div>
+            <span class="step-progress-label">${doneCount} of ${order.length} steps</span>
+          </div>
+          <ul class="hub-step-list">${stepRows}</ul>
+        </div>
+
+        <div class="hub-day-nav">
+          <button type="button" class="btn ghost sm" id="prev-day" ${state.day <= 1 ? "disabled" : ""}>← Prev</button>
+          <span class="hub-day-meta muted">Topic ${Math.min(L.day || state.day, 14)} of 14</span>
+          <button type="button" class="btn ghost sm" id="next-day" ${state.day >= m ? "disabled" : ""}>Next →</button>
+        </div>
+
+        <p class="hub-foot-links">
+          <button type="button" class="btn-link" id="hub-change-pace">Change study pace…</button>
+        </p>
+      </div>`;
+
+    $("#hub-read") &&
+      ($("#hub-read").onclick = () => {
+        state.todaySurface = "path";
+        state._forceOpenKey = "read";
+        renderToday();
+      });
+    $("#hub-practice") &&
+      ($("#hub-practice").onclick = () => goPracticeBuilder());
+    $("#hub-videos") &&
+      ($("#hub-videos").onclick = () => {
+        state.todaySurface = "path";
+        state._forceOpenKey = "video";
+        renderToday();
+      });
+    $("#hub-cards") &&
+      ($("#hub-cards").onclick = () => openCards(L.cardDeck || "always"));
+    $("#hub-change-pace") &&
+      ($("#hub-change-pace").onclick = () => {
+        state._hubRepickPlan = true;
+        renderTodayHub(L);
+      });
+    bindDayPicker();
+  }
+
   function renderToday() {
     const L = lesson();
     const root = window.VIDEO_ROOT || "/data/prometric/prometric/";
-    const openKey = resolveOpenKey(L);
     const order = stepOrder(L);
     const doneCount = order.filter((k) => isDone(k)).length;
+    const simple = isSimpleMode();
+
+    // New-user home: one screen, three jobs. Content loads after a tap.
+    if (simple && state.todaySurface !== "path") {
+      renderTodayHub(L);
+      return;
+    }
+
+    const openKey = resolveOpenKey(L);
 
     let n = 1;
     const steps = [];
 
-    // 1 Read
-    steps.push(
-      stepHtml(
-        n++,
-        "read",
-        "Step 1 — Read today’s lesson (here in the app)",
-        `<div class="read-source">
+    // 1 Read — full educational HTML preserved; coach meta optional
+    const readBody = simple
+      ? `<div class="reading">
+           ${readingWithRefs(L)}
+           ${deepChecklistHtml(L)}
+         </div>`
+      : `<div class="read-source">
            <div><b>Read from:</b> this page only (scroll inside Step 1)</div>
            <div><b>Do not open:</b> PDFs / other folders for core study today</div>
            <div><b>Time:</b> ${escapeHtml(L.hours)} total day · reading block first</div>
@@ -1598,7 +1935,13 @@
          <div class="reading">
            ${readingWithRefs(L)}
            ${deepChecklistHtml(L)}
-         </div>`,
+         </div>`;
+    steps.push(
+      stepHtml(
+        n++,
+        "read",
+        simple ? "Read today’s lesson" : "Step 1 — Read today’s lesson (here in the app)",
+        readBody,
         openKey
       )
     );
@@ -1719,16 +2062,8 @@
             : focusTopic;
     const focusSizes = sizeLadder(poolSize, [50, 100, 150, 200, 300, 500]);
     const focusVol = focusSizes.map((n) => volBtn(focusTopic, n, focusShort, "")).join("") + volBtn(focusTopic, QUIZ_ALL, focusShort, "success");
-    steps.push(
-      stepHtml(
-        n++,
-        "quiz",
-        `Step 4 — Practice quizzes · ${allQ().length} usable · ${poolSize} focus (${topicLabel}) · aim ≥${state.dailyGoal || 150}Q`,
-        `<p class="lead"><strong>${allQ().length}</strong> usable MCQs in bank · <strong>${poolSize}</strong> for today’s focus (<code>${escapeHtml(
-          String(focusTopic)
-        )}</code>). Learn mode: answer → explanation → next. <b>ALL = entire pool</b>.</p>
-         <div class="alert"><strong>ADHD rule:</strong> Block 1 → break → Block 2 → break → Block 3. Do <em>not</em> stop after one small set. Target ≥${state.dailyGoal || 150}Q.</div>
-         <div class="quiz-sets volume-grid" style="margin:12px 0">${setBtns}</div>
+    const quizSimple = isSimpleMode();
+    const quizAdvanced = `
          <h4 class="vol-sub">More volume — same focus pool (${poolSize})</h4>
          <div class="volume-grid">${focusVol}
            ${volBtn("always_src", 50, "Free points", "")}
@@ -1759,13 +2094,43 @@
            ${volBtn(unseenTopic(focusTopic), 100, "Unseen focus", "")}
            ${volBtn(unseenTopic(focusTopic), QUIZ_ALL, "Unseen focus", "success")}
          </div>
-         <p class="muted vol-hint">${smartPackHint()}</p>
+         <p class="muted vol-hint">${smartPackHint()}</p>`;
+    const quizBody = quizSimple
+      ? `<p class="lead">Answer → see why → next. Focus pool: <strong>${poolSize}</strong> (${escapeHtml(String(topicLabel))}).</p>
+         <div class="volume-grid primary-actions" style="margin:12px 0">
+           <button class="btn success" id="go-quiz">▶ Start 20</button>
+           <button class="btn" id="go-wrong">Wrong book 50</button>
+           <button class="btn ghost" id="go-quiz-full">Start ${L.quizCount || 50}Q</button>
+         </div>
+         <div class="quiz-sets volume-grid" style="margin:8px 0">${setBtns}</div>
+         <details class="adv-details">
+           <summary>More volume packs (all still here)</summary>
+           ${quizAdvanced}
+           <div class="volume-grid" style="margin-top:8px">
+             <button class="btn ghost" id="go-wrong-all">Wrong book ALL</button>
+             <button class="btn ghost" id="go-practice-vol">→ Extra practice (every set)</button>
+           </div>
+         </details>`
+      : `<p class="lead"><strong>${allQ().length}</strong> usable MCQs · <strong>${poolSize}</strong> for today’s focus (<code>${escapeHtml(
+          String(focusTopic)
+        )}</code>). Learn mode: answer → explanation → next. <b>ALL = entire pool</b>.</p>
+         <div class="alert"><strong>ADHD rule:</strong> Block 1 → break → Block 2 → break → Block 3. Target ≥${state.dailyGoal || 150}Q.</div>
+         <div class="quiz-sets volume-grid" style="margin:12px 0">${setBtns}</div>
+         ${quizAdvanced}
          <div class="volume-grid" style="margin-top:8px">
            <button class="btn" id="go-quiz">Quick start ${L.quizCount || 50}Q</button>
            <button class="btn ghost" id="go-wrong">Wrong book 50</button>
            <button class="btn ghost" id="go-wrong-all">Wrong book ALL</button>
            <button class="btn ghost" id="go-practice-vol">→ Extra practice (every set)</button>
-         </div>`,
+         </div>`;
+    steps.push(
+      stepHtml(
+        n++,
+        "quiz",
+        quizSimple
+          ? `Step 4 — Practice · ${poolSize} focus`
+          : `Step 4 — Practice quizzes · ${allQ().length} usable · ${poolSize} focus (${topicLabel}) · aim ≥${state.dailyGoal || 150}Q`,
+        quizBody,
         openKey
       )
     );
@@ -1822,25 +2187,35 @@
     const schNow = currentSchedule();
     const planChosen = !!store.get("planChosen", false);
 
-    // Gate: must pick plan before day content (fixes "hard-coded 14d day first")
-    if (!planChosen) {
+    // Coach gate only. Simple mode gates plan on the hub (renderTodayHub), not here.
+    if (!planChosen && !simple) {
       app.innerHTML = `
         ${planChooserHtml({ gate: true })}
-        <p class="muted" style="margin-top:12px">No day lesson until you pick a plan. Memory, wrong book, and packs stay intact.</p>
+        <p class="muted" style="margin-top:12px">Pick a plan to open the day path.</p>
       `;
       bindPlanChooser();
       return;
     }
 
-    app.innerHTML = `
-      ${planChooserHtml({ gate: false })}
-      <div class="day-header">
-        <h1>Day ${calDay}/${mDays}: ${escapeHtml(L.title)}</h1>
-        <p class="lead">Lesson <b>L${L.day}/14</b>
+    const subject = humanLessonTitle(L);
+
+    const dayLead = simple
+      ? ""
+      : `<p class="lead">Lesson <b>L${L.day}/14</b>
           · <b>${state.planLength}-day</b> · <b>${escapeHtml((metaToday.mode || "learn").toUpperCase())}</b>
           · ${escapeHtml(schNow.hoursLabel || "")} today · focus <b>${schNow.focusMinutes || 45} min</b>
-          · Stay in-app except listed videos.</p>
-        ${dayPickerBar()}
+          · Stay in-app except listed videos.</p>`;
+
+    const pathCtas = simple
+      ? `<div class="path-ctas path-toolbar" role="group" aria-label="Study">
+          <button type="button" class="btn ghost" id="hub-back">← Home</button>
+          <button type="button" class="btn ghost" id="path-practice">Practice…</button>
+        </div>`
+      : "";
+
+    const coachChrome = simple
+      ? ""
+      : `${dayPickerBar()}
         ${dayPlanCardHtml(L)}
         ${modeCoachHtml(L)}
         <div class="meta">
@@ -1861,11 +2236,19 @@
           <div class="step-progress-bar" style="width:${Math.round((100 * doneCount) / Math.max(1, order.length))}%"></div>
           <span class="step-progress-label">${doneCount} / ${order.length} steps · now: ${openKey}</span>
         </div>
-        <div class="mcq-goal-bar" aria-label="MCQ goal"><div class="mcq-goal-fill" style="width:${Math.min(100, Math.round((100 * state.sessionAnswered) / (state.dailyGoal || 150)))}%"></div></div>
-      </div>
-      ${metaToday.mode === "review" ? reviewWeakPanelHtml() : ""}
-      ${steps.join("")}
-      <div class="step ${dayComplete ? "done" : ""} finish-day">
+        <div class="mcq-goal-bar" aria-label="MCQ goal"><div class="mcq-goal-fill" style="width:${Math.min(100, Math.round((100 * state.sessionAnswered) / (state.dailyGoal || 150)))}%"></div></div>`;
+
+    const finishBlock = simple
+      ? `<div class="step ${dayComplete ? "done" : ""} finish-day simple-finish">
+        <div class="step-body" style="display:block;border:none">
+          <button class="btn success" id="to-next" ${state.day >= maxDay() ? "disabled" : ""}>Next day →</button>
+          <label class="check-row" style="margin-top:10px">
+            <input type="checkbox" id="day-complete" ${dayComplete ? "checked" : ""}>
+            Mark day done
+          </label>
+        </div>
+      </div>`
+      : `<div class="step ${dayComplete ? "done" : ""} finish-day">
         <div class="step-body" style="display:block;border:none">
           <label class="check-row">
             <input type="checkbox" id="day-complete" ${dayComplete ? "checked" : ""}>
@@ -1876,7 +2259,19 @@
             <button class="btn ghost" id="to-days">All ${maxDay()} days</button>
           </div>
         </div>
+      </div>`;
+
+    app.innerHTML = `
+      ${simple ? "" : planChooserHtml({ gate: false, compact: false })}
+      <div class="day-header ${simple ? "day-header-path" : ""}">
+        ${pathCtas}
+        <h1>${simple ? `Day ${calDay} · ${escapeHtml(subject)}` : `Day ${calDay}/${mDays}: ${escapeHtml(L.title)}`}</h1>
+        ${dayLead}
+        ${coachChrome}
       </div>
+      ${!simple && metaToday.mode === "review" ? reviewWeakPanelHtml() : ""}
+      ${steps.join("")}
+      ${finishBlock}
     `;
 
     bindDayPicker();
@@ -1989,7 +2384,13 @@
     $("#go-cards-all") && ($("#go-cards-all").onclick = () => openCards("all"));
     $("#go-cards-unknown") && ($("#go-cards-unknown").onclick = () => openCards("unknown"));
     $("#go-quiz") &&
-      ($("#go-quiz").onclick = () => startQuiz(L.quizTopic, L.quizCount, "learn", false));
+      ($("#go-quiz").onclick = () =>
+        isSimpleMode()
+          ? goPracticeBuilder()
+          : startQuiz(L.quizTopic, L.quizCount, "learn", false)
+      );
+    $("#go-quiz-full") &&
+      ($("#go-quiz-full").onclick = () => startQuiz(L.quizTopic, L.quizCount, "learn", false));
     app.querySelectorAll(".quiz-set-btn").forEach((b) => {
       b.onclick = () => startQuiz(b.dataset.topic, +b.dataset.n, b.dataset.mode || "learn", false);
     });
@@ -2014,6 +2415,16 @@
       ($("#go-mock2").onclick = () => runMock($("#go-mock2").dataset.m));
     $("#go-mock3") &&
       ($("#go-mock3").onclick = () => runMock($("#go-mock3").dataset.m));
+
+    const pathP = $("#path-practice");
+    if (pathP) pathP.onclick = () => goPracticeBuilder();
+    const hubBack = $("#hub-back");
+    if (hubBack)
+      hubBack.onclick = () => {
+        state.todaySurface = "hub";
+        state._forceOpenKey = null;
+        renderToday();
+      };
 
     enhanceExamQa(app);
   }
@@ -2649,14 +3060,242 @@
       });
   }
 
+  /**
+   * Practice = choose, don’t force (Qbank-style create test):
+   * 1) MCQs or flashcards  2) which pool  3) how many  4) learn vs timed  5) start
+   */
+  function practiceTopicLabel(topic) {
+    const map = {
+      all: "Full bank",
+      wrong: "Wrong book",
+      always_src: "Free points",
+      unseen: "Unseen",
+      weak: "Weak topics",
+      operative: "Operative",
+      restorative: "Restorative",
+      perio: "Perio",
+      endo: "Endo",
+      oms: "OMS",
+      ortho_pedo: "Ortho / Pedo",
+      ethics: "Ethics",
+      fixed: "Fixed prosth",
+      rpd: "RPD",
+      implant: "Implant",
+      materials: "Materials",
+      complete_denture: "Complete denture",
+      mixed: "Mixed",
+    };
+    if (map[topic]) return map[topic];
+    if (String(topic).indexOf("unseen:") === 0) return "Unseen " + (map[topic.slice(7)] || topic.slice(7));
+    return topic || "Pool";
+  }
+
+  function ensurePracticeBuild() {
+    if (!state.practiceBuild || typeof state.practiceBuild !== "object") {
+      state.practiceBuild = { step: "kind" };
+    }
+    return state.practiceBuild;
+  }
+
+  function resetPracticeBuild() {
+    state.practiceBuild = { step: "kind" };
+  }
+
+  function goPracticeBuilder() {
+    resetPracticeBuild();
+    navigateTo("practice", { push: true });
+  }
+
   function renderPractice() {
     const inv = bankInventory();
     const rawTotal = (window.QUESTION_BANK || []).length;
+    const L = lesson();
+    const focusTopic = L.quizTopic || "all";
+    const subject = humanLessonTitle(L);
+
+    if (isSimpleMode()) {
+      const b = ensurePracticeBuild();
+      const focusN = poolN(focusTopic);
+      const focusName = practiceTopicLabel(focusTopic);
+
+      const chip = (label, attrs, cls) =>
+        `<button type="button" class="btn practice-choice ${cls || "ghost"}" ${attrs}>${label}</button>`;
+
+      let body = "";
+      let stepTitle = "";
+
+      if (b.step === "kind" || !b.step) {
+        stepTitle = "What do you want?";
+        body = `
+          <div class="practice-choices" role="group">
+            ${chip("MCQs", 'data-pb="kind" data-v="mcq"', "success")}
+            ${chip("Flashcards", 'data-pb="kind" data-v="cards"', "")}
+            ${chip(`Wrong book${inv.wrong ? " (" + inv.wrong + ")" : ""}`, 'data-pb="kind" data-v="wrong"', inv.wrong ? "" : "ghost")}
+          </div>`;
+      } else if (b.step === "cards") {
+        stepTitle = "Which flashcards?";
+        body = `
+          <div class="practice-choices" role="group">
+            ${chip("Today’s deck", 'data-pb="cards" data-v="today"', "success")}
+            ${chip("Free points", 'data-pb="cards" data-v="always"', "")}
+            ${chip("All cards", 'data-pb="cards" data-v="all"', "")}
+            ${chip("Unknown only", 'data-pb="cards" data-v="unknown"', "")}
+          </div>
+          <button type="button" class="btn ghost sm" data-pb="back">← Back</button>`;
+      } else if (b.step === "pool") {
+        stepTitle = "Which questions?";
+        const pools = [
+          { t: focusTopic, label: `Today: ${subject}`, n: focusN, primary: true },
+          { t: "all", label: "Full bank", n: inv.all },
+          { t: "always_src", label: "Free points", n: inv.always },
+          { t: "unseen", label: "Unseen only", n: inv.unseen },
+          { t: "weak", label: "Weak topics", n: inv.weak },
+          { t: "wrong", label: "Wrong book", n: inv.wrong },
+        ];
+        const main = pools
+          .filter((p) => p.n > 0 || p.primary)
+          .map(
+            (p) =>
+              chip(
+                `${escapeHtml(p.label)} · ${p.n}`,
+                `data-pb="pool" data-t="${escapeHtml(p.t)}"`,
+                p.primary ? "success" : ""
+              )
+          )
+          .join("");
+        const extras = [
+          ["operative", inv.operative],
+          ["restorative", inv.restorative],
+          ["perio", inv.perio],
+          ["endo", inv.endo],
+          ["oms", inv.oms],
+          ["ortho_pedo", inv.ortho_pedo],
+          ["ethics", inv.ethics],
+          ["fixed", inv.fixed],
+          ["rpd", inv.rpd],
+          ["implant", inv.implant],
+        ]
+          .filter(([t, n]) => n > 0 && t !== focusTopic)
+          .map(([t, n]) => chip(`${practiceTopicLabel(t)} · ${n}`, `data-pb="pool" data-t="${t}"`, "ghost"));
+        body = `
+          <div class="practice-choices" role="group">${main}</div>
+          ${
+            extras.length
+              ? `<details class="practice-more-pools"><summary>Other subjects</summary>
+                  <div class="practice-choices" style="margin-top:8px">${extras.join("")}</div>
+                </details>`
+              : ""
+          }
+          <button type="button" class="btn ghost sm" data-pb="back">← Back</button>`;
+      } else if (b.step === "count") {
+        const topic = b.topic || focusTopic;
+        const nPool = poolN(topic);
+        stepTitle = `How many? · ${escapeHtml(practiceTopicLabel(topic))} (${nPool})`;
+        /* Offer every rung that fits the pool; All always last if pool > 0 */
+        const sizes = [20, 50, 100, 150, 200, 500].filter((n) => n <= nPool);
+        const opts = sizes
+          .map((n) => chip(String(n), `data-pb="count" data-n="${n}"`, ""))
+          .join("");
+        const allBtn =
+          nPool > 0
+            ? chip(`All (${nPool})`, `data-pb="count" data-n="${QUIZ_ALL}"`, "success")
+            : `<p class="muted">No questions in this pool.</p>`;
+        body = `
+          <div class="practice-choices practice-counts" role="group">
+            ${opts}${allBtn}
+          </div>
+          <button type="button" class="btn ghost sm" data-pb="back">← Back</button>`;
+      } else if (b.step === "mode") {
+        const topic = b.topic || focusTopic;
+        const n = b.count != null ? b.count : 50;
+        const nShow = n >= QUIZ_ALL ? poolN(topic) : Math.min(n, poolN(topic));
+        stepTitle = `Mode · ${nShow} × ${escapeHtml(practiceTopicLabel(topic))}`;
+        body = `
+          <div class="practice-choices" role="group">
+            ${chip("Learn — answer after each Q", 'data-pb="mode" data-v="learn"', "success")}
+            ${chip("Timed — exam pace (~72s/Q)", 'data-pb="mode" data-v="timed"', "warn")}
+          </div>
+          <button type="button" class="btn ghost sm" data-pb="back">← Back</button>`;
+      }
+
+      app.innerHTML = `
+        <div class="practice-builder">
+          <h1>Practice</h1>
+          <p class="hub-sub">Today: <b>${escapeHtml(subject)}</b>${
+            focusTopic !== "all" ? ` · ${focusN} in ${escapeHtml(focusName)}` : ""
+          } · ${inv.all} in bank</p>
+          <h2 class="practice-step-title">${stepTitle}</h2>
+          ${body}
+        </div>`;
+
+      app.querySelectorAll("[data-pb]").forEach((el) => {
+        el.onclick = () => {
+          const act = el.dataset.pb;
+          if (act === "back") {
+            if (b.step === "cards" || b.step === "pool") b.step = "kind";
+            else if (b.step === "count") b.step = "pool";
+            else if (b.step === "mode") b.step = "count";
+            else b.step = "kind";
+            renderPractice();
+            return;
+          }
+          if (act === "kind") {
+            const v = el.dataset.v;
+            if (v === "cards") {
+              b.step = "cards";
+              renderPractice();
+              return;
+            }
+            if (v === "wrong") {
+              b.kind = "mcq";
+              b.topic = "wrong";
+              b.step = "count";
+              renderPractice();
+              return;
+            }
+            b.kind = "mcq";
+            b.step = "pool";
+            renderPractice();
+            return;
+          }
+          if (act === "cards") {
+            const deck = el.dataset.v;
+            if (deck === "today") openCards(L.cardDeck || "always");
+            else openCards(deck);
+            return;
+          }
+          if (act === "pool") {
+            b.topic = el.dataset.t;
+            b.step = "count";
+            renderPractice();
+            return;
+          }
+          if (act === "count") {
+            b.count = +el.dataset.n;
+            b.step = "mode";
+            renderPractice();
+            return;
+          }
+          if (act === "mode") {
+            const topic = b.topic || focusTopic;
+            const count = b.count || 50;
+            if (el.dataset.v === "timed") {
+              startQuiz(topic, count, "exam", true, 72);
+            } else {
+              startQuiz(topic, count, "learn", false);
+            }
+            resetPracticeBuild();
+          }
+        };
+      });
+      return;
+    }
+
     app.innerHTML = `
       ${backBarHtml("← Back")}
       <h1>Extra practice</h1>
-      <p class="lead simple-lead">Simple path: <b>1) wrong book</b> → <b>2) score-makers</b> → <b>3) timed mock</b>.
-        Everything else is optional and still here under “More”. Exam = 200 MCQs. Bank = <b>${inv.all}</b> usable.</p>
+      <p class="lead simple-lead">Path: <b>1) wrong book</b> → <b>2) score-makers</b> → <b>3) timed mock</b>.
+        Exam = 200 MCQs. Bank = <b>${inv.all}</b> usable.</p>
       ${examFocusBannerHtml()}
       <div class="alert practice-summary"><strong>${inv.all} usable</strong> / ${rawTotal} loaded
         · Free ${inv.always} · Op ${inv.operative} · Resto ${inv.restorative}
@@ -3232,156 +3871,84 @@
   function renderProgress() {
     const s = state.stats;
     const pct = s.answered ? Math.round((100 * s.correct) / s.answered) : 0;
-    const topics = ["restorative", "perio", "endo", "oms", "ortho_pedo", "ethics", "mixed", "exam_qa"];
+    const topics = ["restorative", "perio", "endo", "oms", "ortho_pedo", "ethics", "mixed"];
     const m = maxDay();
     const daysDone = Object.keys(state.dayDone || {}).filter((k) => {
       const d = +k;
       return state.dayDone[k] && d >= 1 && d <= m;
     }).length;
-    const eqIds = Object.keys(state.examQa || {});
-    const eqOk = eqIds.filter((id) => state.examQa[id] && state.examQa[id].ok).length;
-    const eqPct = eqIds.length ? Math.round((100 * eqOk) / eqIds.length) : null;
-    const inv = bankInventory();
-    const goalHit = state.sessionAnswered >= (state.dailyGoal || 150);
-    const sch = currentSchedule();
-    app.innerHTML = `
-      ${backBarHtml("← Back")}
-      <h1>Progress</h1>
-      <p class="lead simple-lead">${state.planLength}-day plan · today <b>${escapeHtml(sch.hoursLabel || "—")}</b> · focus timer <b>${sch.focusMinutes || 45} min</b> · Q goal <b>${state.sessionAnswered}/${state.dailyGoal}</b></p>
-      ${trackSwitcherHtml()}
-      ${nextBestActionHtml()}
-      ${passReadinessHtml({ compact: false })}
-      <div class="stat-row">
-        <div class="stat-box"><div class="num">${daysDone}/${m}</div><div class="lbl">Days done</div></div>
-        <div class="stat-box"><div class="num" style="color:${pct >= 80 ? "var(--accent2)" : "var(--warn)"}">${pct}%</div><div class="lbl">Accuracy</div></div>
-        <div class="stat-box"><div class="num">${state.wrongBook.length}</div><div class="lbl">Wrong book</div></div>
-        <div class="stat-box"><div class="num" style="color:${goalHit ? "var(--accent2)" : "var(--warn)"}">${state.sessionAnswered}/${state.dailyGoal}</div><div class="lbl">Today MCQ goal</div></div>
-      </div>
-      <div class="alert">Target practice <strong>≥80%</strong>. Official pass ~542/800. Timer on top bar follows your plan day.</div>
-      <div class="alert" style="font-size:0.92rem">
-        <strong>System check (synced):</strong>
-        ${inv.all} usable MCQs · ${Array.isArray(window.LESSONS) ? window.LESSONS.length : 0}/14 lessons ·
-        plan ${state.planLength}d · free points ${inv.always} · endo ${inv.endo} · perio ${inv.perio} ·
-        op ${inv.operative} · Drive links ${typeof window.videoDriveLink === "function" ? "on" : "off"} ·
-        feedback ${window.SDLE_FEEDBACK && window.SDLE_FEEDBACK.ntfyTopic ? "ntfy" : "off"}
-      </div>
 
-      <section class="simple-panel">
-        <h3 class="section-label">Fix weak spots</h3>
-        <div class="volume-grid" style="margin:12px 0">
-          ${volBtn("wrong", 50, "Wrong book", "ghost")}
-          ${volBtn("wrong", QUIZ_ALL, "Wrong ALL", "ghost")}
-          ${volBtn("weak", 100, "Weak pack", "")}
-          ${volBtn("unseen", 100, "Unseen", "")}
-          ${volBtn("always_src", 50, "Free points", "")}
-          <button type="button" class="btn ghost" id="export-wrong">Export wrong book</button>
-        </div>
-      </section>
-
-      <section class="simple-panel">
-        <h3 class="section-label">Backup progress (device transfer)</h3>
-        <p class="muted">Export JSON to move stats/wrong book/days to another browser. <b>Never deletes lessons or MCQ bank</b> — only your local progress keys.</p>
-        <div class="volume-grid" style="margin:12px 0">
-          <button type="button" class="btn success" id="export-full">Export full progress</button>
-          <label class="btn ghost" style="cursor:pointer;display:inline-flex;align-items:center">
-            Import progress…
-            <input type="file" id="import-full" accept="application/json,.json" hidden />
-          </label>
-        </div>
-      </section>
-
-      <details class="study-fold" open>
-        <summary>Session history (${(state.history || []).length})</summary>
-      ${
-        !(state.history || []).length
-          ? `<p class="lead">No sessions yet. Finish a quiz — each run is logged here.</p>`
-          : `<table class="hist-table inv-table">
-        <thead><tr><th>When</th><th>Mode</th><th>Pool</th><th>Score</th><th>Time</th></tr></thead>
+    const histRows = !(state.history || []).length
+      ? `<p class="muted">No sessions yet.</p>`
+      : `<table class="hist-table inv-table">
+        <thead><tr><th>When</th><th>Pool</th><th>Score</th></tr></thead>
         <tbody>
           ${(state.history || [])
-            .slice(0, 40)
+            .slice(0, 20)
             .map((h) => {
               const score =
-                h.pct != null ? `${h.pct}% (${h.correct}/${h.total})` : h.total != null ? `${h.correct ?? "—"}/${h.total}` : "—";
+                h.pct != null
+                  ? `${h.pct}% (${h.correct}/${h.total})`
+                  : h.total != null
+                    ? `${h.correct ?? "—"}/${h.total}`
+                    : "—";
               const col = h.pct == null ? "" : h.pct >= 80 ? "color:var(--accent2)" : "color:var(--warn)";
               return `<tr>
                 <td>${escapeHtml(formatWhen(h.ts))}</td>
-                <td>${escapeHtml(h.mode || "—")}</td>
-                <td title="${escapeHtml(h.label || "")}">${escapeHtml((h.label || h.topic || "—").slice(0, 48))}</td>
+                <td>${escapeHtml((h.label || h.topic || "—").slice(0, 40))}</td>
                 <td style="${col}"><b>${escapeHtml(score)}</b></td>
-                <td>${escapeHtml(formatDur(h.sec))}</td>
               </tr>`;
             })
             .join("")}
         </tbody>
-      </table>
-      <button type="button" class="btn ghost sm" id="clear-hist" style="margin:8px 0">Clear session history only</button>`
-      }
-      </details>
+      </table>`;
 
-      <details class="study-fold">
-        <summary>Topic accuracy · lesson Exam Q&A · bank</summary>
-        <p class="muted">Lesson Exam Q&A: ${eqOk}/${eqIds.length || 125}${eqPct != null ? ` (${eqPct}%)` : ""}</p>
-      <table>
-        <thead><tr><th>Topic</th><th>Correct</th><th>%</th><th>Focus</th></tr></thead>
-        <tbody>
-          ${topics
-            .map((t) => {
-              const x = s.byTopic[t] || { a: 0, c: 0 };
-              const p = x.a ? Math.round((100 * x.c) / x.a) : "—";
-              const label = t === "exam_qa" ? "exam_qa (in-lesson)" : t;
-              const weak = weakTopicKeys(3).includes(t);
-              return `<tr><td>${label}</td><td>${x.c}/${x.a}</td><td>${p}${x.a ? "%" : ""}</td><td>${weak ? "<b>WEAK pack</b>" : ""}</td></tr>`;
-            })
-            .join("")}
-        </tbody>
-      </table>
-      ${(() => {
-        const st = s.bySubtopic || {};
-        const keys = Object.keys(st).filter((k) => st[k] && st[k].a > 0).sort();
-        if (!keys.length) return `<p class="muted">Subtopic accuracy: answer tagged restorative items to fill operative/fixed/RPD…</p>`;
-        return `<h4 class="vol-sub">Subtopic accuracy</h4>
-          <table>
-            <thead><tr><th>Subtopic</th><th>Correct</th><th>%</th></tr></thead>
-            <tbody>
-              ${keys
-                .map((k) => {
-                  const x = st[k] || { a: 0, c: 0 };
-                  const p = x.a ? Math.round((100 * x.c) / x.a) : "—";
-                  return `<tr><td>${escapeHtml(k)}</td><td>${x.c}/${x.a}</td><td>${p}${x.a ? "%" : ""}</td></tr>`;
-                })
-                .join("")}
-            </tbody>
-          </table>`;
-      })()}
-      ${inventoryTableHtml(inv)}
-      <div class="volume-grid" style="margin:12px 0">
-        ${volBtn("unseen", QUIZ_ALL, "Unseen ALL", "success")}
-        ${volBtn("unseen:operative", 50, "Unseen Op", "")}
-        ${volBtn("unseen:restorative", 50, "Unseen Resto", "")}
-        ${volBtn("weak", QUIZ_ALL, "Weak ALL", "success")}
-        ${volBtn("all", 200, "Full bank", "")}
-      </div>
-      </details>
+    const topicRows = topics
+      .map((t) => {
+        const x = s.byTopic[t] || { a: 0, c: 0 };
+        if (!x.a) return "";
+        const p = Math.round((100 * x.c) / x.a);
+        return `<tr><td>${escapeHtml(t)}</td><td>${x.c}/${x.a}</td><td>${p}%</td></tr>`;
+      })
+      .filter(Boolean)
+      .join("");
 
-      <button class="btn ghost" id="reset" style="margin-top:16px">Reset all progress</button>
-    `;
-    bindBackBar();
-    bindTrackSwitcher();
-    bindVolButtons(app);
-    $("#export-wrong") && ($("#export-wrong").onclick = exportWrongBook);
-    $("#export-full") && ($("#export-full").onclick = exportFullProgress);
-    bindImportProgress($("#import-full"));
-    $("#clear-hist") &&
-      ($("#clear-hist").onclick = () => {
-        if (confirm("Clear session history log only? (stats/wrong book kept)")) {
-          state.history = [];
-          save();
-          render();
-        }
-      });
+    app.innerHTML = `
+      <div class="progress-clean">
+        <h1>Progress</h1>
+        <div class="stat-row">
+          <div class="stat-box"><div class="num">${s.answered || 0}</div><div class="lbl">Answered</div></div>
+          <div class="stat-box"><div class="num" style="color:${pct >= 80 ? "var(--accent2)" : "var(--warn)"}">${pct}%</div><div class="lbl">Accuracy</div></div>
+          <div class="stat-box"><div class="num">${daysDone}/${m}</div><div class="lbl">Days done</div></div>
+          <div class="stat-box"><div class="num">${state.wrongBook.length}</div><div class="lbl">Wrong book</div></div>
+        </div>
+        <p class="muted progress-meta">Today ${state.sessionAnswered} Q · ${state.planLength}-day plan · aim ≥80%</p>
+
+        <section class="simple-panel">
+          <h3 class="section-label">By topic</h3>
+          ${
+            topicRows
+              ? `<table><thead><tr><th>Topic</th><th>Correct</th><th>%</th></tr></thead><tbody>${topicRows}</tbody></table>`
+              : `<p class="muted">Answer MCQs to fill this.</p>`
+          }
+        </section>
+
+        <section class="simple-panel">
+          <h3 class="section-label">Recent sessions</h3>
+          ${histRows}
+        </section>
+
+        <p class="hub-foot-links">
+          <button type="button" class="btn-link" id="reset">Reset all progress…</button>
+        </p>
+      </div>`;
+
     $("#reset").onclick = () => {
-      if (confirm("Reset progress, stats, wrong book, seen history, session log, and lesson Exam Q&A scores?")) {
+      if (
+        confirm(
+          "Reset progress, stats, wrong book, seen history, session log, and lesson Exam Q&A scores?"
+        )
+      ) {
         state.stats = { answered: 0, correct: 0, byTopic: {}, bySubtopic: {} };
         state.wrongBook = [];
         state.seenIds = {};
@@ -4100,7 +4667,11 @@
       if (viewStack.length) goBack();
       else navigateTo(backView, { push: false });
     };
-    $("#wb").onclick = () => startQuiz("wrong", 20, "learn", false);
+    $("#wb").onclick = () => {
+      /* Don’t force 20 — open builder on wrong book count step */
+      state.practiceBuild = { step: "count", kind: "mcq", topic: "wrong" };
+      navigateTo("practice", { push: true });
+    };
     $("#to-hist") &&
       ($("#to-hist").onclick = () => {
         state.view = "progress";
@@ -4241,7 +4812,7 @@
     }
   } catch (_) {}
   ensureFlashcards();
-  bindNav();
+  paintMainNav();
   setActiveNav(TAB_VIEWS.includes(state.view) ? state.view : "today");
   // First paint: timer must match plan (not a hard-coded 45:00 for every template)
   try {
@@ -4260,4 +4831,128 @@
   paintPomoBar();
   window.addEventListener("resize", syncPomoStickyTop);
   requestAnimationFrame(syncPomoStickyTop);
+
+  /* ——— Install app (PWA) — full screen, no browser chrome ——— */
+  (function setupInstallPrompt() {
+    const DISMISS_KEY = "installDismissUntil";
+    const INSTALLED_KEY = "installDone";
+
+    function isStandalone() {
+      try {
+        if (window.matchMedia && window.matchMedia("(display-mode: standalone)").matches) return true;
+        if (window.navigator.standalone === true) return true;
+      } catch (_) {}
+      return false;
+    }
+
+    function dismissed() {
+      const until = +store.get(DISMISS_KEY, 0) || 0;
+      return until > Date.now();
+    }
+
+    function isIos() {
+      const ua = navigator.userAgent || "";
+      return /iPad|iPhone|iPod/.test(ua) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+    }
+
+    function removeBanner() {
+      const el = document.getElementById("sdle-install-banner");
+      if (el) el.remove();
+    }
+
+    function showBanner(opts) {
+      if (isStandalone() || store.get(INSTALLED_KEY, false) || dismissed()) return;
+      if (document.getElementById("sdle-install-banner")) return;
+      const ios = !!(opts && opts.ios);
+      const canNative = !!(opts && opts.canNative);
+      const el = document.createElement("div");
+      el.id = "sdle-install-banner";
+      el.className = "install-banner";
+      el.setAttribute("role", "dialog");
+      el.setAttribute("aria-label", "Install app");
+      el.innerHTML = ios
+        ? `<div class="install-banner-inner">
+            <p class="install-banner-title">Install SDLE on your phone</p>
+            <p class="install-banner-text">Full screen study — hide the browser bar. Tap <b>Share</b> → <b>Add to Home Screen</b>.</p>
+            <div class="install-banner-actions">
+              <button type="button" class="btn ghost sm" data-install-dismiss>Not now</button>
+              <button type="button" class="btn success sm" data-install-ios-ok>Got it</button>
+            </div>
+          </div>`
+        : `<div class="install-banner-inner">
+            <p class="install-banner-title">Install this app?</p>
+            <p class="install-banner-text">Add to your home screen or desktop — full screen, less chrome, more study space.</p>
+            <div class="install-banner-actions">
+              <button type="button" class="btn ghost sm" data-install-dismiss>Not now</button>
+              ${canNative ? `<button type="button" class="btn success sm" data-install-go>Install</button>` : `<button type="button" class="btn success sm" data-install-dismiss>OK</button>`}
+            </div>
+          </div>`;
+      document.body.appendChild(el);
+      el.querySelector("[data-install-dismiss]") &&
+        (el.querySelector("[data-install-dismiss]").onclick = () => {
+          store.set(DISMISS_KEY, Date.now() + 14 * 24 * 60 * 60 * 1000);
+          removeBanner();
+        });
+      const iosOk = el.querySelector("[data-install-ios-ok]");
+      if (iosOk)
+        iosOk.onclick = () => {
+          store.set(DISMISS_KEY, Date.now() + 14 * 24 * 60 * 60 * 1000);
+          removeBanner();
+        };
+      const go = el.querySelector("[data-install-go]");
+      if (go && opts && opts.deferred) {
+        go.onclick = async () => {
+          try {
+            opts.deferred.prompt();
+            const choice = await opts.deferred.userChoice;
+            if (choice && choice.outcome === "accepted") store.set(INSTALLED_KEY, true);
+            else store.set(DISMISS_KEY, Date.now() + 7 * 24 * 60 * 60 * 1000);
+          } catch (_) {
+            store.set(DISMISS_KEY, Date.now() + 3 * 24 * 60 * 60 * 1000);
+          }
+          removeBanner();
+        };
+      }
+    }
+
+    if (isStandalone()) {
+      document.documentElement.classList.add("sdle-standalone");
+      document.body.classList.add("sdle-standalone");
+      return;
+    }
+
+    /* Register service worker (needed for install criteria on many browsers) */
+    if ("serviceWorker" in navigator) {
+      const swUrl = new URL("sw.js", window.location.href).href;
+      navigator.serviceWorker.register(swUrl, { scope: new URL("./", window.location.href).pathname }).catch(() => {});
+    }
+
+    let deferred = null;
+    window.addEventListener("beforeinstallprompt", (e) => {
+      e.preventDefault();
+      deferred = e;
+      /* After plan pick / a few seconds so it does not block first paint */
+      setTimeout(() => showBanner({ canNative: true, deferred }), 2500);
+    });
+
+    window.addEventListener("appinstalled", () => {
+      store.set(INSTALLED_KEY, true);
+      removeBanner();
+    });
+
+    /* iOS Safari has no beforeinstallprompt — guide manually */
+    if (isIos() && !isStandalone() && !dismissed()) {
+      setTimeout(() => showBanner({ ios: true }), 3500);
+    }
+
+    /* Desktop Chrome/Edge that never fires BIP still get a soft tip once (optional).
+       Only if never dismissed and not iOS — avoid double banners. */
+    if (!isIos() && !dismissed() && !store.get(INSTALLED_KEY, false)) {
+      setTimeout(() => {
+        if (!deferred && !document.getElementById("sdle-install-banner")) {
+          /* Quiet: no banner without real install API — iOS already handled */
+        }
+      }, 4000);
+    }
+  })();
 })();

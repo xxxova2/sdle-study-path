@@ -30,16 +30,17 @@ Full welcome letter: **[INTRO.md](./INTRO.md)**
 
 ## Tabs
 
+**Simple mode (default):** **Today · Practice · Progress · More**  
+Same content. Fewer choices so first-time students are not lost.
+
 | Tab | Purpose |
 |-----|---------|
-| **Today** | Your day path (read → video → cards → quiz) |
-| **Days** | Jump calendar days |
-| **Pass** | How to pass (free points, volume, mocks) |
-| **Always** | Always-comes free-point rules |
-| **Extra** | Volume practice by subject |
-| **MCQs** | Full-pool tests by subject |
+| **Today** | Day path (read → video → cards → quiz) |
+| **Practice** | Extra volume by subject |
 | **Progress** | Score, wrong book, history |
-| **Feedback** | Anyone can send notes — **no login**; delivers via ntfy (optional email) |
+| **More** | Days, Pass, Always, MCQs hub, Feedback, switch to **Coach mode** |
+
+**Coach mode** (More → “full Coach”): all original tabs (Days, Pass, Always, Extra, MCQs, Feedback) plus volume packs expanded.
 
 ---
 

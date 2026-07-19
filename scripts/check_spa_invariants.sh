@@ -46,11 +46,17 @@ else
 fi
 
 if grep -q 'id="main-nav"' index.html && grep -q 'data-view="today"' index.html; then
-  TAB_N=$(grep -o 'data-view="' index.html | wc -l)
-  if [[ "$TAB_N" -eq 8 ]]; then
-    ok "index.html has 8 data-view tabs (incl. feedback)"
+  TAB_N=$(grep -o 'data-view="' index.html | wc -l | tr -d ' ')
+  # Simple mode ships 4 primary tabs; Coach rebuilds to 9 (8 + Simple). paintMainNav owns runtime chrome.
+  if [[ "$TAB_N" -eq 4 || "$TAB_N" -eq 8 || "$TAB_N" -eq 9 ]]; then
+    ok "index.html has $TAB_N data-view tabs (4=simple default, 8–9=coach)"
   else
-    fail "index.html data-view count = $TAB_N (want 8)"
+    fail "index.html data-view count = $TAB_N (want 4, 8, or 9)"
+  fi
+  if ! grep -q 'data-view="more"' index.html && [[ "$TAB_N" -eq 4 ]]; then
+    fail "simple default nav missing data-view=more"
+  else
+    ok "simple overflow (more) or full coach nav present"
   fi
 else
   fail "index.html missing #main-nav or today tab"

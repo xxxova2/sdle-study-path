@@ -203,7 +203,8 @@
 
   function normalizeLength(length) {
     const n = +length;
-    return ALLOWED.indexOf(n) >= 0 ? n : 14;
+    // Unknown / missing → 30 (default track), not 14 blitz
+    return ALLOWED.indexOf(n) >= 0 ? n : 30;
   }
 
   function getTrack(length) {

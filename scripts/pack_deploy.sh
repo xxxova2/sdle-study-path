@@ -10,11 +10,17 @@ OUT="${ROOT}/dist"
 STAMP="$(date -u +%Y-%m-%dT%H:%MZ)"
 
 rm -rf "$OUT"
-mkdir -p "$OUT/css" "$OUT/js" "$OUT/data"
+mkdir -p "$OUT/css" "$OUT/js" "$OUT/data" "$OUT/icons"
 
 cp -a "$ROOT/index.html" "$OUT/index.html"
 cp -a "$ROOT/css/app.css" "$OUT/css/app.css"
 cp -a "$ROOT/js/app.js" "$OUT/js/app.js"
+cp -a "$ROOT/manifest.webmanifest" "$OUT/manifest.webmanifest"
+cp -a "$ROOT/sw.js" "$OUT/sw.js"
+cp -a "$ROOT/icons/." "$OUT/icons/"
+if [[ -f "$ROOT/robots.txt" ]]; then
+  cp -a "$ROOT/robots.txt" "$OUT/robots.txt"
+fi
 
 # Runtime data only (same scripts as index.html)
 for f in \

@@ -3,9 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <meta name="theme-color" content="#0f1117" />
+    <meta name="theme-color" content="#141820" />
     <meta name="description" content="Free KSA SDLE study path — readings, MCQs, plans. Open source." />
     <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="SDLE" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png" />
     <title>SDLE Study Path — KSA</title>
     <!-- Substack-like longform: Spectral (falls back offline to Charter/Georgia) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,49 +21,43 @@
       rel="stylesheet"
     />
     <!-- ?v= busts CDN/browser cache after feedback fix -->
-    <link rel="stylesheet" href="css/app.css?v=20260718g" />
+    <link rel="stylesheet" href="css/app.css?v=20260719m" />
   </head>
-  <body class="path-app">
+  <body class="path-app simple-ui">
     <header class="topbar simple" id="topbar">
       <div class="chrome-row">
         <div class="logo" title="SDLE Study Path">
-          <div class="logo-badge">🦷</div>
           <span class="logo-text">SDLE</span>
         </div>
-        <div class="top-stats" id="top-stats"></div>
-        <div id="pomo-bar" class="pomo-bar" aria-label="Focus timer"></div>
+        <div class="top-stats" id="top-stats" hidden></div>
+        <div id="pomo-bar" class="pomo-bar" aria-label="Focus timer" hidden></div>
       </div>
+      <!-- paintMainNav() fills this: Simple = 4 tabs; Coach = full set -->
       <nav class="nav simple-nav" id="main-nav" aria-label="Main plan tabs">
         <button type="button" data-view="today" class="active" title="Today">Today</button>
-        <button type="button" data-view="days" title="All days">Days</button>
-        <button type="button" data-view="pass" title="Pass plan">Pass</button>
-        <button type="button" data-view="always" title="Always-comes free points">Always</button>
-        <button type="button" data-view="practice" title="Extra practice">Extra</button>
-        <button type="button" data-view="mcqs" title="MCQs hub">MCQs</button>
+        <button type="button" data-view="practice" title="Practice MCQs">Practice</button>
         <button type="button" data-view="progress" title="Progress">Progress</button>
-        <button type="button" data-view="feedback" title="Send feedback — no login">Feedback</button>
+        <button type="button" data-view="more" title="More">More</button>
       </nav>
     </header>
 
     <main class="path-main" id="app"></main>
 
     <footer class="foot">
-      Free open-source SDLE coach · Videos on Drive · Plans 14–90d · Target ≥80% · Endo = Day 6 ·
+      Free SDLE ·
       <a href="https://github.com/xxxova2/sdle-study-path" target="_blank" rel="noopener">Source</a>
       ·
-      <a href="https://github.com/xxxova2/sdle-study-path/blob/main/docs/INTRO_POST_EN_AR.md" target="_blank" rel="noopener">Intro EN/AR</a>
-      ·
-      <a href="https://ntfy.sh/sdle-study-path-feedback-xxxova2-k7m9" target="_blank" rel="noopener">Owner feedback inbox</a>
+      <a href="https://github.com/xxxova2/sdle-study-path/blob/main/docs/INTRO_POST_EN_AR.md" target="_blank" rel="noopener">Intro</a>
     </footer>
 
-    <script src="data/highyield.js?v=20260718g"></script>
-    <script src="data/scfhs_refs.js?v=20260718g"></script>
-    <script src="data/plan_tracks.js?v=20260718g"></script>
-    <script src="data/video_links.js?v=20260718g"></script>
-    <script src="data/book_index.js?v=20260718g"></script>
-    <script src="data/lessons.js?v=20260718g"></script>
-    <script src="data/questions.js?v=20260718g"></script>
-    <script src="data/feedback_config.js?v=20260718g"></script>
-    <script src="js/app.js?v=20260718g"></script>
+    <script src="data/highyield.js?v=20260719m"></script>
+    <script src="data/scfhs_refs.js?v=20260719m"></script>
+    <script src="data/plan_tracks.js?v=20260719m"></script>
+    <script src="data/video_links.js?v=20260719m"></script>
+    <script src="data/book_index.js?v=20260719m"></script>
+    <script src="data/lessons.js?v=20260719m"></script>
+    <script src="data/questions.js?v=20260719m"></script>
+    <script src="data/feedback_config.js?v=20260719m"></script>
+    <script src="js/app.js?v=20260719m"></script>
   </body>
 </html>
