@@ -1,0 +1,637 @@
+[
+  {
+    "id": "hy14",
+    "answer": 2,
+    "explanation": "Pus draining from the pulp chamber means the pulp tissue is nonvital and infected; living pulp does not produce purulent drainage through the chamber. Reversible pulpitis and hyperemia lack necrosis and suppuration. Thus the clinical finding indicates necrotic pulp with infection."
+  },
+  {
+    "id": "ab2_1b1c3615ac",
+    "answer": 1,
+    "explanation": "When a mandibular or maxillary canine has two canals, the second canal is almost always lingual to the main canal. Buccal and distal second canals are not the typical pattern for canines. Knowing this guides access and second-orifice search."
+  },
+  {
+    "id": "ab2_3c957e0bb8",
+    "answer": 2,
+    "explanation": "A pediatric patient with a recent (within hours) complicated crown fracture and small exposure is managed with vital pulp therapy (direct pulp cap or partial/Cvek pulpotomy) to preserve vitality and allow continued root development when indicated. Full conventional RCT or apexification is reserved for nonvital or more advanced cases, not acute small exposures with timely presentation."
+  },
+  {
+    "id": "ab2_dd99c923b3",
+    "answer": 1,
+    "explanation": "Among the listed instruments, the barbed broach is a classic hand-operated endodontic instrument used for pulp extirpation. Gates-Glidden drills and Peeso reamers are engine-driven orifice openers/enlargers; Lentulo spirals are for placing sealer/paste and are rotary. Hand operator in this context points to the broach."
+  },
+  {
+    "id": "ab2_81b6d8a69a",
+    "answer": 2,
+    "explanation": "In partial (Cvek) pulpotomy after trauma, persistent bleeding after removing contaminated pulp means inflamed tissue remains. Management is to remove additional coronal pulp until healthy tissue is reached and hemostasis can be achieved with a moist pellet. Injecting LA into the pulp or relying only on a medicated pellet without further excision is not the primary corrective step."
+  },
+  {
+    "id": "ab2_0b6e1e85ff",
+    "answer": 1,
+    "explanation": "When the patient cannot afford the planned crown after indicated RCT, the ethical next step is to discuss alternatives and/or refer for second opinion/financial options rather than dismiss, leave incomplete instrumentation, or fraudulently rebill insurance. Informed consent and care planning must remain honest and patient-centered."
+  },
+  {
+    "id": "ab2_1390b89e2c",
+    "answer": 2,
+    "explanation": "A rotary file that separated in the coronal portion after hypochlorite soak is most often related to inadequate straight-line access causing binding and fracture, not primarily the irrigant itself. Coronal separation with binding is a classic access/torsional setup problem; the question’s image-based options favor inadequate access as the cause when the fragment is coronal."
+  },
+  {
+    "id": "ab2_7e5f675fa8",
+    "answer": 0,
+    "explanation": "ISO endodontic file color coding: size 15 white, 20 yellow, 25 red, 30 blue, 35 green, 40 black, then the cycle repeats—so size 90 is white (same as 15/45/90 series). Blue is 30/70; black is 40/80; yellow is 20/60."
+  },
+  {
+    "id": "ab2_665a97a8d5",
+    "answer": 0,
+    "explanation": "A separated instrument that can be bypassed with subsequent cleaning, shaping, and obturation around it generally carries a good prognosis if the canal is adequately disinfected. Poor prognosis applies more when the fragment blocks an unclean infected canal and cannot be bypassed or retrieved."
+  },
+  {
+    "id": "ab2_f243b31788",
+    "answer": 0,
+    "explanation": "Asymptomatic extruded gutta-percha without percussion pain or infection is managed by observation and periodic radiographic follow-up. Immediate retreatment or surgery is not indicated solely for overextension in the absence of symptoms or progressive pathosis."
+  },
+  {
+    "id": "ab2_a100c783c2",
+    "answer": 2,
+    "explanation": "Intermittent pain provoked by sweets lasting only seconds is the classic history of reversible pulpitis. Irreversible pulpitis features lingering thermal pain and spontaneous pain; necrosis lacks vital thermal sensitivity of that pattern; pulp polyp is chronic hyperplastic pulpitis with granulation tissue."
+  },
+  {
+    "id": "ab2_ba7ca093fd",
+    "answer": 3,
+    "explanation": "Commercial gutta-percha cones are only about 20% gutta-percha by weight; the bulk is zinc oxide (~60–75%) with waxes, resins, and metal sulfates. They are not pure GP or majority GP formulations."
+  },
+  {
+    "id": "ab2_3da5e02d04",
+    "answer": 1,
+    "explanation": "Tooth #33 responds normally to cold, so the pulp is vital; a unilocular radiolucency distal to mid-root is unlikely a classic endodontic lesion of that tooth. Management targets the lesion itself (e.g., surgical curettage/exploration after diagnosis) rather than RCT or extraction of a vital asymptomatic tooth."
+  },
+  {
+    "id": "ab2_c2a408199f",
+    "answer": 0,
+    "explanation": "Without the image, the listed flap types match standard endodontic surgical designs; a classic short curved incision for limited apical access is the semilunar flap (historically described, though less favored than triangular/rectangular today). Envelope lacks releasing incisions; triangular has one vertical release; trapezoidal has two."
+  },
+  {
+    "id": "ab2_ced3f6ee71",
+    "answer": 2,
+    "explanation": "During crown preparation of a heavily restored vital tooth, a clearly evident pulp shadow after anesthesia indicates imminent or inevitable pulp exposure/compromised pulp under deep restoration. Elective RCT (or definitive pulp management) is appropriate rather than delaying vitality testing to another visit after already committing to aggressive prep."
+  },
+  {
+    "id": "ab2_386d802a0b",
+    "answer": 2,
+    "explanation": "The most common canal configuration in mandibular molars is two mesial canals (MB and ML) and one distal canal. Two distal canals occur but less often; single mesial and single distal is not the usual pattern for first molars."
+  },
+  {
+    "id": "ab2_b660c2105a",
+    "answer": 3,
+    "explanation": "Pain/swelling related to chewing with occlusal interference patterns is taught via occlusal rules of thumb: LUBL describes mediotrusive (non-working) interferences. BULL is working side, DUML protrusive, MUDL centric. Non-working interferences often produce significant lateral stresses and symptoms."
+  },
+  {
+    "id": "ab2_a194571c69",
+    "answer": 0,
+    "explanation": "A separated file present for 20 years without percussion tenderness or clinical disease implies successful long-term function; prognosis is good with continued observation. Intervention is not required based on radiographic fragment alone when the tooth is asymptomatic and stable."
+  },
+  {
+    "id": "ab2_a3fe8681c9",
+    "answer": 1,
+    "explanation": "Orthodontic force-related pain is usually inflammatory and self-limited; appropriate management includes analgesics (and force adjustment by the orthodontist if needed). Soft diet may help secondarily, but prescribing pain control is the standard immediate management among the options."
+  },
+  {
+    "id": "ab2_2e7ce65781",
+    "answer": 1,
+    "explanation": "To reduce risk of irrigant extrusion during endodontic treatment (e.g., for a necrotic tooth after old trauma with throbbing pain), use a side-vented needle placed short of working length and never bind it in the canal. Open-ended needles increase apical extrusion risk; CHX does not substitute for safe delivery technique with NaOCl."
+  },
+  {
+    "id": "ab2_ced6dfa874",
+    "answer": 2,
+    "explanation": "Mixing zinc phosphate on a cool glass slab dissipates the exothermic reaction, slows setting, and increases working time. It does not increase solubility as the goal, nor reduce working time."
+  },
+  {
+    "id": "ab2_a30054c045",
+    "answer": 3,
+    "explanation": "The tooth is asymptomatic with adequate periapical status four years after RCT; a crack limited to the amalgam does not by itself mandate retreatment. Remove the defective amalgam and place a definitive restoration (composite or preferably cuspal coverage later). Retreatment is reserved for persistent/pathologic disease or if the tooth will be a critical abutment with clearly inadequate fill and planned complex prosthetics."
+  },
+  {
+    "id": "ab2_e8bf9cd73f",
+    "answer": 1,
+    "explanation": "After pulpotomy (often emergency), definitive care may require specialist-level RCT depending on case complexity; referring to an endodontist for definitive treatment is appropriate when the question frames incomplete management. Simply dismissing without a definitive plan is incorrect."
+  },
+  {
+    "id": "ab2_3e972d2fb7",
+    "answer": 1,
+    "explanation": "If insurance does not cover the crown but the patient wants to save the tooth, discuss alternative restorative options and staged plans within ethical billing—not dismiss the patient, fraudulently limit care only to covered codes without proper plan, or leave incomplete pulpectomy as a ‘solution.’ Offer options the patient can afford."
+  },
+  {
+    "id": "ab2_6e8641c3ce",
+    "answer": 2,
+    "explanation": "Birth trauma with progressive mandibular asymmetry limited to the TMJ (no other joints) is classic for TMJ ankylosis. Rheumatoid arthritis is systemic and multi-joint; osteoarthritis is degenerative later in life, not birth-trauma driven in a child."
+  },
+  {
+    "id": "ab2_3f192cc2de",
+    "answer": 1,
+    "explanation": "When the master apical file no longer reaches full working length due to ledge or packed debris, use a smaller precurved file to renegotiate/bypass and re-establish patency rather than forcing larger instruments. Larger files worsen ledges; medicaments do not restore length."
+  },
+  {
+    "id": "ab2_040bf27dc7",
+    "answer": 2,
+    "explanation": "A dentist who treated a COVID patient but remains asymptomatic continues work with appropriate PPE and infection-control measures per usual occupational guidance of that era, not automatic sick leave solely for asymptomatic contact in all protocols. Reporting requirements vary; clinical practice emphasizes PPE continuity."
+  },
+  {
+    "id": "ab2_4672f10740",
+    "answer": 3,
+    "explanation": "If the master cone fit at the apex is loose or obturation length/fit is inadequate, remove the fill and redo obturation with a properly fitted master apical cone at correct length. Completing a poor apical seal or relying on chloroform condensation alone is inferior to redoing with correct MAC fit."
+  },
+  {
+    "id": "ab2_978ce6223b",
+    "answer": 1,
+    "explanation": "Loss of working length with an intact last file suggests blockage or ledge; management is careful negotiation with a precurved small hand file and irrigation, not forcing the master file or jumping to rotary. Small precurved stainless files are the standard recovery approach."
+  },
+  {
+    "id": "ab2_c27d8c0ab1",
+    "answer": 1,
+    "explanation": "Asymptomatic tooth with open-margin restoration, furcation/periapical radiolucency after prior RCT is managed primarily by non-surgical retreatment to address missed infection, leakage, or possible perforation after assessment. Extraction or surgery is not first-line when retreatment is feasible."
+  },
+  {
+    "id": "ab2_7a371dba4b",
+    "answer": 2,
+    "explanation": "After treating a COVID patient, an asymptomatic dentist continues working with proper PPE rather than mandatory day-off solely for exposure if local policy allows and no symptoms develop. PPE and standard precautions remain essential."
+  },
+  {
+    "id": "ab2_98a83001d6",
+    "answer": 3,
+    "explanation": "When extraoral swelling makes the inferior border of the mandible impalpable, infection has typically spread into the submandibular space; the mylohyoid muscle forms the key floor/relationship of that space relative to the mandibular border. Platysma is superficial; digastric/hyoid are not the primary ‘under the lower border’ structure in this classic space question."
+  },
+  {
+    "id": "ab2_72cc5c3381",
+    "answer": 1,
+    "explanation": "Carrier-based gutta-percha systems (e.g., Thermafil) use a rigid carrier coated with GP. Obtura is a thermoplastic injectable GP system without a carrier; Resilon is a resin-based obturation material, not the classic carrier product."
+  },
+  {
+    "id": "ab2_6e5dc641ea",
+    "answer": 1,
+    "explanation": "Hedström (H) files cut aggressively on the pull stroke and are commonly used to engage and remove gutta-percha during retreatment. K-files and reamers are less efficient for GP removal; barbed broaches are for soft tissue, not solid GP."
+  },
+  {
+    "id": "ab2_6d54e9756e",
+    "answer": 0,
+    "explanation": "Periorbital trauma with bleeding/ecchymosis requires CT (preferably facial bones/orbits protocol) to evaluate orbital walls and midface fractures. OPG and submentovertex are insufficient for orbital detail."
+  },
+  {
+    "id": "ab2_33a5d7589d",
+    "answer": 2,
+    "explanation": "Ellis/IADT classification: crown fracture involving enamel and dentin without pulp exposure is an uncomplicated crown fracture. Complicated crown fracture implies pulp exposure; infarction is a crack without loss of tooth structure."
+  },
+  {
+    "id": "ab2_27810ed70a",
+    "answer": 0,
+    "explanation": "Iodine potassium iodide (IKI) contains iodine and must be avoided in iodine allergy. Hydrogen peroxide, NaOCl, and chlorhexidine are not iodine-based intracanal agents in the same sense."
+  },
+  {
+    "id": "ab2_5c37377cd9",
+    "answer": 0,
+    "explanation": "Gutta-percha is the most widely used core obturation material in conventional RCT. Silver points are obsolete; MTA is used for repairs, apexification, and barriers; Ca(OH)2 is a medicament, not the primary obturant."
+  },
+  {
+    "id": "ab2_02cb3a4020",
+    "answer": 0,
+    "explanation": "Severe pain near end of day needing urgent relief with limited time is classically managed by emergency pulpotomy (or pulpectomy) for symptomatic irreversible pulpitis to reduce intrapulpal pressure. Full multi-visit RCT may not be completable in 30 minutes; extraction is not first choice if the tooth is restorable."
+  },
+  {
+    "id": "ab2_10da0f1dc3",
+    "answer": 0,
+    "explanation": "Lack of tug-back means the master cone is loose at the apex and may be pushed beyond or fail to seal, associated with extrusion/poor fit. Cone larger than the master file would typically bind short; root length alone is not the mechanism described."
+  },
+  {
+    "id": "ab2_619f470a47",
+    "answer": 3,
+    "explanation": "A second canal in a mandibular canine, when present, is located lingually. Labial, mesial, and distal second canals are not the standard anatomic pattern."
+  },
+  {
+    "id": "ab2_b7b052e223",
+    "answer": 3,
+    "explanation": "Sinus tract tracing is performed with a gutta-percha cone inserted into the tract and a radiograph taken to identify the source. Files and paper points are not the standard tracing materials for extraoral/intraoral sinus tracts."
+  },
+  {
+    "id": "ab2_46270919a8",
+    "answer": 3,
+    "explanation": "After a percutaneous injury, induce bleeding, wash thoroughly, and cover with a waterproof bandage before continuing care; glove number alone does not replace barrier protection of the wound. Double-gloving is preventive, not the specific next step for an already cut finger."
+  },
+  {
+    "id": "ab2_623c62e322",
+    "answer": 1,
+    "explanation": "Gutta-percha cones contain approximately 20% gutta-percha, with zinc oxide as the major component. Values of 30–40% overstate the GP fraction in standard formulations."
+  },
+  {
+    "id": "ab2_a6d3a57444",
+    "answer": 1,
+    "explanation": "Mandibular first molars most commonly have two mesial canals and one distal canal. Two distal canals are less frequent; three distal canals are rare."
+  },
+  {
+    "id": "ab2_9cfb563c04",
+    "answer": 1,
+    "explanation": "A 7-year-old with a small pulp exposure only 20 minutes after fracture is ideal for direct pulp capping (or Cvek if preferred) on an immature/vital tooth. Pulpectomy/apexification are for nonvital or more compromised cases."
+  },
+  {
+    "id": "ab2_20dade055d",
+    "answer": 2,
+    "explanation": "Uncontrolled diabetes with swelling, a 7 mm isolated deep pocket, and normal pulp response indicates a primarily periodontal/abscess process with vital pulp—manage acute swelling (I&D/drainage and periodontal care), not RCT. Extraction is not automatic if the tooth can be maintained after infection control."
+  },
+  {
+    "id": "ab2_95b617a497",
+    "answer": 0,
+    "explanation": "Heavily restored tooth 36, nonresponsive to cold and EPT, with bone loss to the apex is necrotic pulp with endodontic pathosis; primary management is RCT (then reassess perio). Pure perio treatment alone will not resolve pulp necrosis–driven apical disease."
+  },
+  {
+    "id": "ab2_46fa55d82c",
+    "answer": 2,
+    "explanation": "Sound crown, extensive bone loss, nonvital pulp, and bite tenderness fit primary endodontic disease with secondary periodontal involvement (necrotic pulp driving the pocket/bone loss). True combined lesions have independent endo and perio components of comparable significance."
+  },
+  {
+    "id": "ab2_7cd5662c15",
+    "answer": 0,
+    "explanation": "Prosthodontist referral back to endo before crowning with a clear radiographic void indicates inadequate obturation/void needing correction before definitive restoration. Failed RCT is broader; void is the specific radiographic reason given."
+  },
+  {
+    "id": "ab2_b93548f7aa",
+    "answer": 3,
+    "explanation": "ER pain on a molar with difficult anatomy: perform emergency vital pulp therapy/pulpotomy for pain relief and refer to an endodontist for definitive complex RCT. Extraction is not first-line if restorable; NSAIDs alone do not treat the source."
+  },
+  {
+    "id": "ab2_78cfa85c97",
+    "answer": 1,
+    "explanation": "Deep caries near pulp with no response to thermal/percussion testing: remove caries to evaluate remaining tooth structure and restorability (and confirm diagnosis), then reassess radiographically as needed. Visual assessment without caries removal underestimates structural loss."
+  },
+  {
+    "id": "ab2_7d8491cd0c",
+    "answer": 0,
+    "explanation": "Two adjacent heavily restored teeth with severe pain and percussion/palpation tenderness require pulp vitality testing next to identify which tooth is endodontically involved before starting RCT. Cavity test is last resort; jumping into RCT without vitality data risks treating the wrong tooth."
+  },
+  {
+    "id": "ab2_7857b7c7b3",
+    "answer": 1,
+    "explanation": "Most intracanal medicament extrusions (e.g., Ca(OH)2) are managed supportively: irrigation of tissues when accessible, analgesics, and close follow-up; surgery is reserved for severe tissue injury or persistent problems. Antibiotics are not routinely indicated without systemic infection."
+  },
+  {
+    "id": "ab2_c359397a21",
+    "answer": 0,
+    "explanation": "Finger spreaders (or pluggers in some systems) are used to verify/achieve canal taper and space for accessory cones after preparation—spreaders should fit passively to near working length if flaring is adequate. Master cone checks apical fit more than mid-root flare alone."
+  },
+  {
+    "id": "ab2_da02937f11",
+    "answer": 0,
+    "explanation": "Obturation should terminate at the minor apical constriction (cementodentinal junction area), short of the radiographic apex. The major diameter is the foramen opening beyond the constriction; filling to radiographic apex often means overextension."
+  },
+  {
+    "id": "ab2_3e5b6d0a71",
+    "answer": 0,
+    "explanation": "An 8-year-old three days after trauma to an upper central with no mobility or alveolar fracture is typically managed with Cvek (partial) pulpotomy when pulp is exposed, because delayed exposure favors removing inflamed superficial pulp rather than simple DPC. Full RCT is overly aggressive if the pulp can be preserved for continued root development."
+  },
+  {
+    "id": "ab2_e2519e701a",
+    "answer": 2,
+    "explanation": "A mature permanent central with fracture to gingival level and large pulp exposure one week later requires conventional RCT (or extraction if unrestorable). Apexification/apexogenesis apply to immature roots; direct pulp cap is only for pinpoint fresh exposures."
+  },
+  {
+    "id": "ab2_2b40491069",
+    "answer": 1,
+    "explanation": "Unilateral buccal mucosal redness and pain 6 weeks after orthodontic appliance placement is commonly trauma from an extended or protruding archwire, not NiTi allergy (which would be more diffuse/systemic). Adjusting the wire is definitive."
+  },
+  {
+    "id": "ab2_6aa802378b",
+    "answer": 1,
+    "explanation": "Immunocompromised patient with normal neutrophils, low WBC, and recurrent ulcers under the tongue most fits recurrent aphthous stomatitis among common oral ulcer diagnoses when neutropenia is excluded. Neutropenic ulcers require low neutrophils; traumatic ulcers have a clear local cause."
+  },
+  {
+    "id": "ab2_b84319b5ce",
+    "answer": 2,
+    "explanation": "Severe post-trauma pain with nonspecific hepatitis history: provide emergency care with standard infection-control precautions and refer for medical evaluation of hepatitis status. Do not assume hepatitis A or treat without precautions when status is unclear."
+  },
+  {
+    "id": "ab2_f59700a9b7",
+    "answer": 1,
+    "explanation": "When a mesial root has two orifices joining to one apical terminus (Type II), instrument the main canal to full working length and the joining canal only to the confluence, or carefully manage both to avoid stripping the common apical portion. Treating both full length independently can over-prepare the junction."
+  },
+  {
+    "id": "ab2_7cb5dbab79",
+    "answer": 1,
+    "explanation": "Elongated pulp chamber with short roots (taurodontism) complicates RCT; for a routine carious 37 found on checkup, refer to an endodontist rather than emergency extraction. Extraction is not first-line for a restorable taurodont needing careful endo."
+  },
+  {
+    "id": "ab2_2ee4510e2d",
+    "answer": 2,
+    "explanation": "If the patient refuses care unless ‘severe,’ counsel that timely RCT is needed to prevent acute infection and tooth loss—perform RCT as soon as possible rather than pure observation when disease is already present. Extraction is alternative only if patient declines endo and tooth is hopeless."
+  },
+  {
+    "id": "ab2_4812eb2588",
+    "answer": 1,
+    "explanation": "A 61-year-old with findings indicating need for endodontic treatment requires pulpectomy/full RCT, not vital pulp therapy procedures used mainly for immature teeth or small exposures. Apexification is for open apices; DPC is for small vital exposures."
+  },
+  {
+    "id": "ab2_780b8b3903",
+    "answer": 2,
+    "explanation": "Chest pain radiating to the left arm unrelieved by medication (e.g., nitroglycerin) is most consistent with myocardial infarction until proven otherwise. Stable angina typically responds to rest/nitrates; unstable angina is new/worsening but MI is favored when meds fail and symptoms persist."
+  },
+  {
+    "id": "ab2_dc7d18dd98",
+    "answer": 1,
+    "explanation": "Regenerative endodontics/revascularization is indicated for necrotic immature permanent teeth with open apices to promote continued root development. Mature necrotic teeth need conventional RCT; reversible pulpitis is treated with vital pulp therapy, not revasc."
+  },
+  {
+    "id": "ab2_b1f779bfa6",
+    "answer": 2,
+    "explanation": "A bluish, soft, fluctuant lower-lip swelling is the classic presentation of a mucocele (extravasation phenomenon from minor salivary gland trauma). Hemangioma is vascular but not typically the common fluctuant labial mass described; lipoma is yellowish/soft solid."
+  },
+  {
+    "id": "ab2_2ab387d6e4",
+    "answer": 2,
+    "explanation": "Bluish discoloration, enamel wear with underlying dentin, short roots, and obliterated pulp chambers describe dentinogenesis imperfecta. Amelogenesis imperfecta primarily affects enamel without pulp obliteration pattern; fluorosis is mottled enamel without short roots/obliteration."
+  },
+  {
+    "id": "ab2_a468148ad3",
+    "answer": 3,
+    "explanation": "Necrotic pulp, intact crown, >12 mm probing, and large periapical lesion indicate primary endodontic disease with secondary perio involvement—perform RCT first, then periodontal therapy as needed. Periodontal treatment alone will not resolve necrotic pulp pathosis."
+  },
+  {
+    "id": "ab2_b3331993d9",
+    "answer": 2,
+    "explanation": "Files in distal canals that are long, curved, and off the normal path with bleeding on the paper point tip indicate perforation (false path) rather than physiologic open-apex bleeding alone. Internal resorption has a different ballooned canal radiographic pattern."
+  },
+  {
+    "id": "ab2_a87dbc7677",
+    "answer": 2,
+    "explanation": "Gates-Glidden drills are the classic instruments for coronal flaring and achieving straight-line access. K-files shape canals; Lentulos place sealer; barbed broaches remove pulp tissue."
+  },
+  {
+    "id": "ab2_9ab09f84dc",
+    "answer": 2,
+    "explanation": "A high metallic (ankylotic-like) percussion sound after trauma is most associated with lateral luxation (and intrusion) due to alveolar socket engagement. Subluxation usually has a duller sound with mobility; among listed options, lateral luxation is the best answer."
+  },
+  {
+    "id": "ab2_adcdfa7486",
+    "answer": 0,
+    "explanation": "Controlled DM and uncontrolled hypertension with chest pain and sweating after anesthetic can represent angina precipitated by stress/epinephrine; differentiate from MI if pain persists. Immediate medical evaluation is required; allergy presents with urticaria/bronchospasm, not classic cardiac pain."
+  },
+  {
+    "id": "ab2_b34602608e",
+    "answer": 0,
+    "explanation": "Enamel that chips easily, blue-brown translucency, pulp obliteration, and involvement of primary and permanent dentitions are hallmarks of dentinogenesis imperfecta. Dentin dysplasia has different root/pulp patterns; amelogenesis imperfecta is an enamel defect without that pulp obliteration picture."
+  },
+  {
+    "id": "ab2_cd65df7120",
+    "answer": 0,
+    "explanation": "BP 160/100 mmHg is stage 2 hypertension; elective RCT should be deferred until BP is better controlled and/or medical consultation obtained. Avoiding epinephrine alone is not adequate management of uncontrolled BP for elective care."
+  },
+  {
+    "id": "ab2_7f999bb079",
+    "answer": 0,
+    "explanation": "Sudden severe pain and heavy bleeding during NaOCl irrigation is the classic sodium hypochlorite accident (extrusion into periapical tissues). Stop irrigation, aspirate, irrigate with saline, cold compresses, analgesics, and follow closely."
+  },
+  {
+    "id": "ab2_0b0f7b27c6",
+    "answer": 0,
+    "explanation": "A 12-year-old needing RCT who (with mother) requests extraction: after explaining risks/benefits, valid parental consent allows extraction if that is the informed choice. Both parents are not always legally required depending on jurisdiction; coercion into RCT against valid refusal is inappropriate."
+  },
+  {
+    "id": "ab2_c6f4162da7",
+    "answer": 0,
+    "explanation": "Primary maxillary incisors with complete horizontal root fractures are typically extracted (entire tooth or coronal fragment as indicated) to avoid damage to permanent successors; pulpectomy of fractured primary roots is not preferred management for complete fractures."
+  },
+  {
+    "id": "ab2_304c4aaf5c",
+    "answer": 0,
+    "explanation": "An apical radiopaque/white lesion without history often represents condensing osteitis or a nonpathologic radiopacity requiring no treatment if the tooth is vital/asymptomatic—management depends on vitality, but among options ‘no treatment’ is correct for many idiopathic osteosclerosis/condensing lesions. Surgery/chemotherapy are for neoplasms/malignancy, not routine."
+  },
+  {
+    "id": "ab2_bf989879b1",
+    "answer": 2,
+    "explanation": "Asymptomatic tooth 3 months after RCT of a previously vital tooth with only ~1 mm short obturation and planned crown: proceed with crown and observe rather than mandatory immediate retreatment. Short fill without symptoms/pathosis can be monitored; retreatment if pathology develops."
+  },
+  {
+    "id": "ab2_c04a8b1c60",
+    "answer": 0,
+    "explanation": "With multiple pins in the coronal third, horizontal-angle periapical radiographs (parallax) help separate superimpositions and locate canals relative to pins during RCT. CBCT may help complex cases but the classic exam answer for working films is angled/horizontal PA technique."
+  },
+  {
+    "id": "ab2_54b1d40e8a",
+    "answer": 0,
+    "explanation": "Silver points were abandoned due to corrosion, leakage, and cytotoxicity/toxicity of corrosion products, plus difficulty of retreatment—not because they were too flexible. Staining is secondary to the corrosion/biocompatibility problem."
+  },
+  {
+    "id": "ab2_5ceb34214a",
+    "answer": 2,
+    "explanation": "External inflammatory root resorption after trauma is managed by pulp extirpation and long-term intracanal calcium hydroxide (or appropriate medicament) to control inflammation, not immediate extraction if the tooth is retainable. Surgery is not first-line for inflammatory external resorption."
+  },
+  {
+    "id": "ab2_55c99b19d1",
+    "answer": 1,
+    "explanation": "Avulsed permanent 21 replanted and splinted: at ~7–10 days initiate RCT and place intracanal medicament (especially if extraoral dry time risk or mature apex) because pulp will necrose and inflammatory resorption risk is high. Negative cold early is expected; do not wait indefinitely."
+  },
+  {
+    "id": "ab2_684e4e8e39",
+    "answer": 1,
+    "explanation": "Unilateral diffuse erythema and pain after 6 weeks of orthodontics is usually mucosal trauma from an extended wire end. NiTi allergy is uncommon and not typically unilateral wire-site trauma."
+  },
+  {
+    "id": "ab2_1199e077db",
+    "answer": 1,
+    "explanation": "When insurance does not cover the full RCT-plus-crown plan but the patient wants to keep the tooth, revise the treatment plan to affordable ethical options rather than dismiss, incomplete pulpectomy abandonment, or ignoring the restorative need. Discuss staged care and alternatives."
+  },
+  {
+    "id": "ab2_965e8b953d",
+    "answer": 0,
+    "explanation": "Pinpoint pulp exposure managed within 30 minutes is treated with direct pulp capping when the pulp is vital and uninflamed. Pulpotomy/pulpectomy are for larger exposures, delayed cases, or irreversible pulpitis."
+  },
+  {
+    "id": "ab2_0f0af3ef30",
+    "answer": 3,
+    "explanation": "Gray discoloration of a primary tooth two weeks after trauma, without stated swelling, sinus tract, or mobility, is often managed by observation and follow-up because transient discoloration can occur with pulp hemorrhage. Extraction or pulpectomy is indicated if infection, abscess, or risk to the permanent successor develops; splinting alone does not treat color change."
+  },
+  {
+    "id": "ab2_69a42994a5",
+    "answer": 0,
+    "explanation": "Metallic percussion sound after trauma is classically linked to lateral luxation (tooth locked in bone) and intrusion. Concussion has a normal sound with tenderness only."
+  },
+  {
+    "id": "ab2_a41b729fe4",
+    "answer": 3,
+    "explanation": "When insurance coverage is incomplete, provide the covered indicated care and plan alternatives for uncovered portions with informed consent—do not dismiss, leave canals unfinished, or abandon the patient. Ethical staged treatment within means is appropriate."
+  },
+  {
+    "id": "ab2_b2140fd8bf",
+    "answer": 0,
+    "explanation": "Formocresol has well-documented systemic and local toxicity concerns (mutagenicity/cytotoxicity), which is why its use has declined. Calcium hydroxide, ferric sulfate, and MTA are considered safer modern alternatives for vital pulp therapy."
+  },
+  {
+    "id": "ab2_a542d4aa88",
+    "answer": 2,
+    "explanation": "Isolated 7 mm pocket on one surface of #27 with a sound crown and no percussion/palpation pain can be primary endo with secondary perio (or combined); non-surgical RCT is the first-line if pulp is necrotic or RCT indicated. Extraction/amputation are for hopeless multi-rooted situations after diagnosis."
+  },
+  {
+    "id": "ab2_dd63515ea5",
+    "answer": 0,
+    "explanation": "Replanted tooth with progressive resorption and scooped-out (inflammatory external) appearance is treated with long-term intracanal Ca(OH)2 medicament after access. Extraction if severe/hopeless; apical surgery alone does not address inflammatory resorption physiology."
+  },
+  {
+    "id": "ab2_ab63740ea0",
+    "answer": 0,
+    "explanation": "Asymptomatic extruded GP without percussion pain is observed with radiographic follow-up. Surgery or retreatment is reserved for symptomatic cases or progressive apical disease."
+  },
+  {
+    "id": "ab2_830a3a5158",
+    "answer": 0,
+    "explanation": "Internal root resorption discovered radiographically requires prompt RCT to remove the resorptive pulp tissue even if asymptomatic. Observation allows progression and possible perforation; occlusal reduction does not treat resorption."
+  },
+  {
+    "id": "ab2_d6129b215c",
+    "answer": 1,
+    "explanation": "Severe pain months after RCT with large sealer extrusion and otherwise adequate fill: if non-surgical retreatment will not address extra-radicular material/foreign body reaction, apical surgery (retrograde management) may be indicated. Trephination is temporary drainage; intentional replantation is last resort."
+  },
+  {
+    "id": "ab2_4335b300e3",
+    "answer": 0,
+    "explanation": "Gray discoloration, rapid wear, sensitivity, bulbous crowns, cervical constriction, and large pulp chambers (especially in primary teeth) describe dentinogenesis imperfecta. Amelogenesis imperfecta affects enamel quality/quantity without that classic cervical constriction profile; dentin dysplasia type I has short roots and obliterated pulp."
+  },
+  {
+    "id": "ab2_8b52a48651",
+    "answer": 1,
+    "explanation": "Pediatric trauma one day ago with small exposure and severe pain: vital pulp therapy via pulpotomy (Cvek/partial) is preferred over DPC when pain suggests deeper inflammation or after delay. Pulpectomy if pulp is nonvital/irreversible beyond salvage."
+  },
+  {
+    "id": "ab2_9380e2be16",
+    "answer": 3,
+    "explanation": "During access, if perforation or open apex/communication is found, repair with MTA (or similar bioceramic) and continue appropriate treatment rather than immediate extraction when the tooth is restorable. Hemisection is for selected multi-rooted hopeless root situations."
+  },
+  {
+    "id": "ab2_5613ec0738",
+    "answer": 1,
+    "explanation": "Emergency treatment for symptomatic irreversible pulpitis is pulpotomy (or full pulpectomy if time allows) to relieve pain. I&D is for swelling/abscess; DPC is for small exposures without irreversible pulpitis; restoration alone does not treat inflamed pulp."
+  },
+  {
+    "id": "ab2_94a318ceb4",
+    "answer": 2,
+    "explanation": "Among the listed hand instruments, the barbed broach is the most flexible (and fragile) and is used for pulp extirpation, not aggressive canal enlargement. Reamers are relatively rigid; K-files are intermediate. Do not confuse flexibility with appropriate use in curved canals—broaches are not for shaping."
+  },
+  {
+    "id": "ab2_2b6d04a4a1",
+    "answer": 1,
+    "explanation": "IADT guidelines: lateral luxation in permanent teeth is typically splinted for about 4 weeks in many protocols, but among given choices 2–3 weeks is the closest common flexible-splint duration used for luxation injuries (subluxation 2 weeks; some lateral luxation 4 weeks). Extraction is not standard for salvageable lateral luxation."
+  },
+  {
+    "id": "ab2_e2b27171bd",
+    "answer": 3,
+    "explanation": "The standard canal filling core material is gutta-percha with sealer. Paper points dry canals; silver points are obsolete; MTA is used for barriers/repairs/apexification, not routine full obturation of curved canals."
+  },
+  {
+    "id": "ab2_fb5f2f3ae4",
+    "answer": 0,
+    "explanation": "No cold response (necrotic pulp) plus severe bite pain and high percussion/palpation tenderness with apical radiolucency equals necrotic pulp with symptomatic apical periodontitis. Acute abscess implies swelling/purulence; asymptomatic AP lacks severe percussion pain."
+  },
+  {
+    "id": "ab2_771490b666",
+    "answer": 1,
+    "explanation": "Pinpoint exposure three days earlier is no longer ideal for DPC because of bacterial contamination and inflammation; partial pulpotomy (Cvek) is preferred to reach healthy pulp. Full RCT if pulp is nonvital or unrestorable for vital therapy."
+  },
+  {
+    "id": "ab2_48fb005e1e",
+    "answer": 3,
+    "explanation": "C-files (stiff stainless files designed for calcified canals) are best among listed for negotiating calcifications. H-files are aggressive and break easily if used to force calcified canals; standard K-files help but C-files are purpose-designed."
+  },
+  {
+    "id": "ab2_174904dea5",
+    "answer": 2,
+    "explanation": "Sudden bleeding and acute pain during irrigation are hallmark of sodium hypochlorite extrusion into periapical tissues. Sealer or Ca(OH)2 extrusion can irritate but the classic sudden bleeding scream scenario is NaOCl accident."
+  },
+  {
+    "id": "ab2_04ca92c702",
+    "answer": 2,
+    "explanation": "After soft caries removal in a tooth with normal pulp testing, an accidental large exposure can still be managed with direct pulp capping or preferably partial pulpotomy depending on size/bleeding; among options DPC is acceptable for vital asymptomatic pulp with clean exposure. Immediate RCT is not mandatory if vital pulp therapy criteria are met."
+  },
+  {
+    "id": "ab2_1632352ca5",
+    "answer": 0,
+    "explanation": "Asymptomatic dens evaginatus with vital pulp: prophylactic reduction of the tubercle and sealed restoration (or reinforcement) prevents fracture and pulp exposure. Pure leave-alone risks fracture of the tubercle; RCT is unnecessary if vital and intact."
+  },
+  {
+    "id": "ab2_70a615b150",
+    "answer": 1,
+    "explanation": "Cracked tooth with pain on release of bite and vital pulp is treated with a full-coverage crown (cuspal coverage) to bind the segments. RCT only if pulp becomes irreversible or necrotic; observation alone risks crack propagation."
+  },
+  {
+    "id": "ab2_15729cd388",
+    "answer": 0,
+    "explanation": "Pulp exposed for 3 days is managed with Cvek (partial) pulpotomy to remove inflamed superficial pulp and preserve radicular vitality, especially in young teeth. Direct pulp cap success falls after prolonged contamination; full RCT if pulp is nonvital."
+  },
+  {
+    "id": "ab2_6ba3880288",
+    "answer": 2,
+    "explanation": "If a matrix band (contaminated metal) contacts skin, wash with soap and water then use alcohol-based antiseptic as appropriate for percutaneous/mucosal contamination protocols. Alcohol gel alone without soap-water cleaning is inferior for visible/soiled contamination."
+  },
+  {
+    "id": "ab2_5b86200bb4",
+    "answer": 1,
+    "explanation": "Diameter at D9 = tip size + 9 × taper. For size 30 (0.30 mm) and 0.04 taper: 0.30 + 9(0.04) = 0.30 + 0.36 = 0.66 mm."
+  },
+  {
+    "id": "ab2_9f174be3c6",
+    "answer": 2,
+    "explanation": "The majority of lateral canals are found in the apical third of the root. Coronal and middle thirds have fewer; furcation canals exist in molars but are not where ~70–75% of all lateral canals occur."
+  },
+  {
+    "id": "ab2_2cb9fb5810",
+    "answer": 3,
+    "explanation": "The push-off technique is a prosthodontic method related to evaluating cement retention/removal of restorations (push-off tests), not a standard named endodontic irrigation or surgical technique among the distractors."
+  },
+  {
+    "id": "ab2_a27ee51557",
+    "answer": 2,
+    "explanation": "Instrumenting ~2 mm beyond the apex is clinically significant over-instrumentation, risking extrusion of debris/irrigant, transportation, and postoperative pain—not acceptable or ideal working length."
+  },
+  {
+    "id": "ab2_42eb9af42f",
+    "answer": 1,
+    "explanation": "Two tooth buds, two pulp chambers, and two roots united as one clinical crown/mass is fusion. Gemination is attempted division of one bud (usually one root); concrescence is cementum union of roots only."
+  },
+  {
+    "id": "end_boost_001",
+    "answer": 1,
+    "explanation": "Lingering thermal pain and spontaneous pain define symptomatic irreversible pulpitis. Reversible pulpitis has brief provoked pain only; healthy pulp does not produce spontaneous lingering pain."
+  },
+  {
+    "id": "end_boost_050",
+    "answer": 1,
+    "explanation": "Endodontic microsurgery is indicated for persistent apical periodontitis after adequate orthograde RCT (or when orthograde retreatment is unfeasible). It is not indicated for gingivitis, orthodontics, or reversible pulpitis."
+  },
+  {
+    "id": "stream_j26_018",
+    "answer": 2,
+    "explanation": "Maxillary first molars commonly have an MB2 canal; persistent radiolucency on the mesiobuccal root after three-canal obturation is most often a missed MB2. Overfill, VRF, and perforation are less specific to MB-root failure after three-canal treatment."
+  },
+  {
+    "id": "stream_j26_021",
+    "answer": 1,
+    "explanation": "Isolated deep periodontal pocket with J-shaped radiolucency on a root canal–treated tooth is the classic pattern of vertical root fracture. Chronic apical abscess more often has a sinus tract; resorption and perforation have different radiographic features."
+  },
+  {
+    "id": "stream_j26_045",
+    "answer": 1,
+    "explanation": "MTA (or similar bioceramics) is the material of choice for repairing subcrestal root perforations due to biocompatibility and sealing ability. Amalgam, zinc phosphate, and composite are inferior for subcrestal perforation repair."
+  },
+  {
+    "id": "stream_j26_050",
+    "answer": 2,
+    "explanation": "Internal bleaching (especially with residual peroxide and heat historically) is associated with external cervical resorption. Ankylosis and surface resorption are trauma-related; internal resorption is pulp-driven, not a bleaching sequela."
+  },
+  {
+    "id": "stream_j26_084",
+    "answer": 0,
+    "explanation": "Asymptomatic extruded gutta-percha without infection is managed by clinical and radiographic follow-up only. Surgery, retreatment, or extraction is not indicated solely for overextension without symptoms or pathology."
+  },
+  {
+    "id": "stream_j26_085",
+    "answer": 1,
+    "explanation": "Asymptomatic dens evaginatus with vital pulp may be monitored carefully, though prophylactic tubercle protection is also common; among listed options, follow-up/monitor is correct versus extraction or RCT of a vital asymptomatic tooth. RCT is reserved if pulp becomes necrotic after fracture."
+  },
+  {
+    "id": "pass_fp_030",
+    "answer": 0,
+    "explanation": "MTA is the preferred material for subcrestal perforation repair among common options because of superior seal and biocompatibility. Amalgam, zinc phosphate, and unfilled resin are not first-choice repair materials in modern endodontics."
+  }
+]

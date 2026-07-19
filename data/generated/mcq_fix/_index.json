@@ -1,0 +1,35 @@
+{
+  "total_bank": 2533,
+  "placeholders": 1305,
+  "by_topic": {
+    "oms": 386,
+    "endo": 129,
+    "restorative": 376,
+    "mixed": 110,
+    "ethics": 82,
+    "ortho_pedo": 96,
+    "perio": 126
+  },
+  "files": [
+    "ph_endo_00.json",
+    "ph_endo_01.json",
+    "ph_ethics_00.json",
+    "ph_ethics_01.json",
+    "ph_mixed_00.json",
+    "ph_mixed_01.json",
+    "ph_oms_00.json",
+    "ph_oms_01.json",
+    "ph_oms_02.json",
+    "ph_oms_03.json",
+    "ph_oms_04.json",
+    "ph_ortho_pedo_00.json",
+    "ph_ortho_pedo_01.json",
+    "ph_perio_00.json",
+    "ph_perio_01.json",
+    "ph_restorative_00.json",
+    "ph_restorative_01.json",
+    "ph_restorative_02.json",
+    "ph_restorative_03.json",
+    "ph_restorative_04.json"
+  ]
+}

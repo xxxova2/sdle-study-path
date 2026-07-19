@@ -1,0 +1,614 @@
+[
+  {
+    "id": "ab2_feeb2769a4",
+    "answer": 2,
+    "explanation": "Adult fluoride supplementation/topical-systemic dosing discussions commonly cite about 5 mg fluoride ion as a reference adult-scale figure in bank stems (not the pediatric drop doses of 0.25–1 mg). Options 0.5 and 0.15 mg are pediatric-range values, not the adult safe-dose figure asked."
+  },
+  {
+    "id": "ab2_aed0eb16e6",
+    "answer": 0,
+    "explanation": "A complete-denture patient with movement/noise at rest after full seating most often has occlusal disharmony (premature contacts rocking the base). Border seal or flange extension problems mainly affect retention during function or speech, not movement of a fully seated denture at rest."
+  },
+  {
+    "id": "ab2_76b8af2309",
+    "answer": 1,
+    "explanation": "Point-of-use precleaning should be limited to wiping gross debris; clinic staff should not deep-clean instruments before CSSD. The error is the assistant cleaning instruments in the operatory instead of sending them for proper decontamination workflow. CSSD technicians do manual cleaning before sterilization as standard practice."
+  },
+  {
+    "id": "ab2_1564c3529b",
+    "answer": 1,
+    "explanation": "Among blood-borne viruses after needlestick, HBV has the highest average transmission risk (~6–30% if HBeAg-positive source), far higher than HCV (~1.8%) or HIV (~0.3%). The classic single best answer for needlestick risk is HBV."
+  },
+  {
+    "id": "ab2_7495f9fa38",
+    "answer": 0,
+    "explanation": "Burning tongue with bald/atrophic dorsum and angular cheilitis suggests nutritional deficiency (iron, B12, folate) or candidiasis secondary to anemia. First-line investigation is CBC (and related bloods); culture or biopsy is not first without failing basic workup."
+  },
+  {
+    "id": "ab2_d782202183",
+    "answer": 0,
+    "explanation": "Without an image this lower-lip mass stem is weak, but among listed tumors a common benign minor salivary presentation is pleomorphic adenoma; mucoepidermoid is more typical of palate/major glands. 'Macule' is flat pigmentation, not a mass, and extraction is irrelevant."
+  },
+  {
+    "id": "ab2_b1f97f4e76",
+    "answer": 0,
+    "explanation": "Dental glass-ceramics are silica-based (feldspathic, leucite, lithium disilicate systems built on SiO2 glass matrix). Zirconia is a polycrystalline oxide ceramic, not a glass-ceramic glass phase; lithium alone is not the bulk glass network former."
+  },
+  {
+    "id": "ab2_182ef0b308",
+    "answer": 2,
+    "explanation": "A dentist with confirmed COVID-19 should isolate per public-health rules (classically 10–14 days isolation from positive test/symptom onset, updated by local policy) and not work until cleared. Reporting alone or a 2-day sick leave is inadequate infection control."
+  },
+  {
+    "id": "ab2_4edcae1d87",
+    "answer": 0,
+    "explanation": "Mycobacterium tuberculosis droplet nuclei can remain airborne in an unventilated room for hours; infection-control teaching often cites up to about 4 hours of residual risk before re-entry after an infectious TB patient. Longer fixed times are not standard dental-clinic teaching."
+  },
+  {
+    "id": "ab2_982526d96d",
+    "answer": 0,
+    "explanation": "An 8×6 cm jaw lesion with tooth displacement and root resorption is large; diagnosis must precede definitive surgery. Incisional biopsy (or representative sampling) is required for large aggressive-appearing lesions before choosing resection versus enucleation."
+  },
+  {
+    "id": "ab2_75b31f4879",
+    "answer": 1,
+    "usable": false,
+    "exclude_reason": "Stem depends on a missing envelope-flap photo and states the picture was not the same; disadvantage cannot be verified without the image.",
+    "explanation": "Envelope flaps can limit vertical access compared with releasing incisions; abscess and bleeding are not classic primary 'disadvantages of envelope design' without context. Best guess among options is inadequate access."
+  },
+  {
+    "id": "ab2_aa685a463e",
+    "answer": 1,
+    "explanation": "Postural (orthostatic) hypotension after prolonged supine dental treatment occurs when the chair is raised too quickly, especially in antihypertensives users. Raising slowly is preventive; hypertension itself does not cause immediate standing dizziness after treatment."
+  },
+  {
+    "id": "ab2_82d4d57b06",
+    "answer": 2,
+    "explanation": "Third-trimester pregnancy epulis/pyogenic granuloma-type lesion with drainage is managed by treating local irritants (plaque, calculus) and deferring elective soft-tissue excision until after delivery unless severe bleeding or function demands earlier care."
+  },
+  {
+    "id": "ab2_70add67a9a",
+    "answer": 2,
+    "explanation": "A remote or treated history of TB (not active infectious disease) is managed with standard precautions after confirming the patient is noninfectious; elective care proceeds normally. N95 and isolation apply to active pulmonary TB, not routine historical TB alone."
+  },
+  {
+    "id": "ab2_b4d7f5908b",
+    "answer": 2,
+    "explanation": "Dentoalveolar fracture segments are typically stabilized with flexible splinting for about 4 weeks (contemporary OMFS/trauma guidelines). Two weeks is shorter than standard dentoalveolar fixation; months of rigid fixation is excessive for alveolus alone."
+  },
+  {
+    "id": "ab2_caafba6219",
+    "answer": 2,
+    "explanation": "Smooth-surface chronic ulceration of the lip (e.g., erosive lichen planus–type presentation in bank stems) is managed with topical corticosteroids, not antivirals (HSV is vesicular/crusted) or laser as first line."
+  },
+  {
+    "id": "ab2_84e13bcb1d",
+    "answer": 2,
+    "explanation": "When IE prophylaxis is indicated and the patient cannot take oral medication, AHA recommends ampicillin 2 g IM/IV (or cefazolin/ceftriaxone). Clindamycin 600 mg is an oral alternative for penicillin-allergic patients who can swallow pills; amoxicillin is not given IM for this indication."
+  },
+  {
+    "id": "ab2_de22fa3bb9",
+    "answer": 2,
+    "explanation": "A fixed lingual retainer with one side debonded/binding can be cleaned and rebonded at the fracture/debond site to prevent tooth movement and trauma. Full wire change is not always needed; delaying solely for the orthodontist risks relapse if rebonding is feasible."
+  },
+  {
+    "id": "ab2_1537b688b4",
+    "answer": 1,
+    "explanation": "A slowly growing, nontender cervical mass in adults more often fits non-Hodgkin lymphoma presentation among listed lymphoid malignancies. Burkitt is aggressive/rapid; classical Hodgkin also grows but bank stems often key 'slow nontender neck mass' to NHL. Reed-Sternberg defines Hodgkin, not the growth tempo alone."
+  },
+  {
+    "id": "ab2_da190c78a8",
+    "answer": 2,
+    "explanation": "Major or persistent aphthous-type ulcers in HIV that fail topical steroids are commonly treated with intralesional corticosteroid injections. Topical antifungal addresses candidiasis only; systemic steroids are reserved for severe multifocal disease under medical supervision."
+  },
+  {
+    "id": "ab2_9f99d874a8",
+    "answer": 0,
+    "explanation": "Mandibular setback for prognathism is classically performed with bilateral sagittal split osteotomy (BSSO). Inverted-L and vertical ramus osteotomies are alternatives in selected cases but BSSO is the standard setback procedure taught for this indication."
+  },
+  {
+    "id": "ab2_ecd04fb425",
+    "answer": 2,
+    "explanation": "Multiple untreated caries, abscesses, and fractured teeth indicate dental neglect (failure to seek necessary care), not specifically physical or sexual abuse patterns (though abuse screening remains important)."
+  },
+  {
+    "id": "ab2_67bb982b9c",
+    "answer": 1,
+    "explanation": "Anterior open bite with constant forward tongue posture is driven mainly by the habitual tongue-forward rest position. Occasional thumb sucking and rare swallow thrust are less continuous forces than always-protruded tongue posture."
+  },
+  {
+    "id": "ab2_8b4423dc5c",
+    "answer": 0,
+    "usable": false,
+    "exclude_reason": "CBCT location of impacted canine is image-dependent; stem notes buccal impaction only by recall of the missing CBCT.",
+    "explanation": "If the CBCT showed buccal position as stated in the stem note, the answer is buccal. Without the scan, localization among buccal/palatal/midridge cannot be verified."
+  },
+  {
+    "id": "ab2_0076594114",
+    "answer": 0,
+    "explanation": "Altered lower-lip sensation after mandibular trauma implies injury to the inferior alveolar/mental nerve pathway. Parasymphysis fractures commonly involve the mental foramen region and cause lip numbness more characteristically than pure condylar or midline symphysis patterns."
+  },
+  {
+    "id": "ab2_920ffb801b",
+    "answer": 0,
+    "explanation": "Unilateral mandibular body trauma classically produces a direct fracture at the impact site plus a contralateral condylar/subcondylar fracture. Thus left-body trauma → left body + right condyle."
+  },
+  {
+    "id": "ab2_9b446026e1",
+    "answer": 2,
+    "explanation": "Widespread tooth discomfort 1–2 days after orthodontic activation is expected pressure/pain from PDL remodeling. Reassure and advise analgesics; antibiotics or removing all brackets are inappropriate."
+  },
+  {
+    "id": "ab2_7b869e1e2a",
+    "answer": 0,
+    "explanation": "SLE is a classic systemic autoimmune disease with circulating autoantibodies (ANA, anti-dsDNA, anti-Sm). Behçet and erythema multiforme lack the same diagnostic serum autoantibody profile; oral lichen planus is primarily a T-cell–mediated mucocutaneous disease without routine serum autoantibodies."
+  },
+  {
+    "id": "ab2_fe6c4b12cb",
+    "answer": 0,
+    "explanation": "With HAART, classic opportunistic oral candidiasis declines while oral warts (HPV-related papillomas) become relatively more common. Xerostomia may occur but oral warts are the classic HAART-era oral manifestation taught in this comparison."
+  },
+  {
+    "id": "ab2_3167929d97",
+    "answer": 1,
+    "explanation": "Class I furcation with bleeding and 4 mm probing on an otherwise shallow-pocket dentition is managed first with nonsurgical scaling and root planing and hygiene. Odontoplasty is adjunctive for enamel pearls/ledges; GTR/extraction are for advanced furcation disease."
+  },
+  {
+    "id": "ab2_fc37a68d23",
+    "answer": 0,
+    "explanation": "2% lidocaine with epi: maximum ~4.4 mg/kg in children. For 20 kg → ~88 mg. One 1.8 mL carpule has 36 mg lidocaine → max about 2 carpules (72 mg), not 3–4. Four carpules would exceed safe pediatric dose."
+  },
+  {
+    "id": "ab2_6cab7f864c",
+    "answer": 2,
+    "explanation": "If sterilization is delayed, instruments should be kept moist in a holding/enzymatic or approved non-fixing detergent solution to prevent debris drying. Dry storage hardens bioburden; plain water alone is inferior to proper holding solution practice."
+  },
+  {
+    "id": "ab2_08ccaa0d53",
+    "answer": 0,
+    "explanation": "The comatose patient cannot consent; adult children refusing life-saving amputation against medical advice may require court/legal determination when no valid proxy decision aligns with best interests/law. Family wishes do not automatically override urgent life-saving care frameworks."
+  },
+  {
+    "id": "ab2_e649b2c302",
+    "answer": 0,
+    "explanation": "Backflow/contamination when the patient seals on the HVE tip occurs if oral cavity pressure exceeds suction system pressure (or suction fails), forcing contents back. Higher continuous suction pressure relative to the mouth is the design goal to prevent reverse flow."
+  },
+  {
+    "id": "ab2_00c5238835",
+    "answer": 1,
+    "explanation": "Midline fracture of a long-used complete upper denture is classically related to thin acrylic in the midline over the midpalatal suture/raphe, especially with poor support and flexure. Overextension palatally causes gagging/ulcers more than midline snap."
+  },
+  {
+    "id": "ab2_3f47ad7db9",
+    "answer": 1,
+    "explanation": "Elective dental care for active TB is deferred until the patient has been on effective multi-drug therapy (commonly taught as ≥2 weeks) and is clinically improving/noninfectious per public health criteria. Waiting only 1 week from diagnosis or absolute culture conversion is not the usual practical threshold taught."
+  },
+  {
+    "id": "ab2_f61f2ba829",
+    "answer": 0,
+    "explanation": "Protecting patients from foreseeable harm such as falls is nonmaleficence (do no harm). Beneficence is promoting positive good; veracity is honesty. Safety measures that prevent injury map primarily to nonmaleficence in dental ethics teaching."
+  },
+  {
+    "id": "ab2_ceebed6a79",
+    "answer": 1,
+    "explanation": "Consent is procedure- and time-context specific. After a long delay (6 months) with a rescheduled surgery, consent must be obtained again with updated risks/benefits and current status, not merely verbal reuse or date-edit of an old form."
+  },
+  {
+    "id": "ab2_73d087f104",
+    "answer": 0,
+    "explanation": "The maxillary first molar's fourth canal is the MB2 canal in the mesiobuccal root. Distobuccal and palatal roots rarely account for the classic 'fourth canal' finding."
+  },
+  {
+    "id": "ab2_fca9801404",
+    "answer": 3,
+    "explanation": "Hypomineralized/hypoplastic defects limited to permanent incisor tips and molar occlusal surfaces with poor esthetics describe molar-incisor hypomineralization (MIH). Fluorosis is more diffuse/symmetric; tetracycline stains after calcification; metallic stains are extrinsic."
+  },
+  {
+    "id": "ab2_c494f4f7d5",
+    "answer": 0,
+    "explanation": "Deep caries treatment on primary mandibular molars (84/85) in a fit 5-year-old requires pulpally profound anesthesia of those teeth—IANB (or well-executed infiltration where appropriate) is the technique of choice. Mental block alone misses distal molar innervation; long buccal is soft tissue only."
+  },
+  {
+    "id": "ab2_8e7ebb54ef",
+    "answer": 0,
+    "explanation": "Topical/systemic corticosteroids for oral lichen planus predispose to secondary candidiasis, which causes burning as the inflammatory lesion improves. Viral infection is less likely as the steroid-associated burning cause."
+  },
+  {
+    "id": "ab2_31cdefa133",
+    "answer": 0,
+    "usable": false,
+    "exclude_reason": "Open-bite habit etiology depends on the missing clinical photo and incomplete habit history.",
+    "explanation": "A 9-year-old with open bite from a 3-year habit is most often digit/thumb sucking in exam stems. Tongue thrust may maintain open bite but the stem emphasizes a long-standing habit, typically thumb sucking."
+  },
+  {
+    "id": "ab2_d90a6e8418",
+    "answer": 3,
+    "explanation": "When third molars are symptomatic and OPG shows intimate IAN contact, coronectomy (or specialist nerve-sparing approach) reduces IAN injury risk versus full extraction. Extracting the second molar or refusing all care is not preferred if wisdom teeth are the source."
+  },
+  {
+    "id": "ab2_8934340240",
+    "answer": 2,
+    "explanation": "Bilateral adrenalectomy patients are cortisol-dependent; loss of consciousness under stress suggests acute adrenal crisis. Give parenteral hydrocortisone (and fluids/support) immediately. Epinephrine treats anaphylaxis/asthma crisis, not primary adrenal failure."
+  },
+  {
+    "id": "ab2_12a15651a2",
+    "answer": 2,
+    "explanation": "Aspirin impairs platelet function; the relevant chairside/pre-op test historically emphasized is bleeding time (or platelet function assay), not INR/PT/PTT which assess coagulation cascade more relevant to warfarin. INR is not the aspirin-effect test."
+  },
+  {
+    "id": "ab2_4046a08cc5",
+    "answer": 2,
+    "explanation": "Atrophic, blotchy pale vermilion with blurred vermilion-skin border describes actinic cheilitis. Management includes sun protection and ablative therapy (laser, vermilionectomy) for high-risk/actinic change—not antiviral or antifungal first-line."
+  },
+  {
+    "id": "ab2_c3cf68e3cc",
+    "answer": 3,
+    "usable": false,
+    "exclude_reason": "Tooth of origin for the described infection depends entirely on the missing radiograph/photo.",
+    "explanation": "Without the image, the causative tooth cannot be known. Bank keys often pick first molar for buccal space/vestibular swelling patterns; this is a best guess only."
+  },
+  {
+    "id": "ab2_2921372ffc",
+    "answer": 0,
+    "explanation": "Necrotizing ulcerative gingivitis classically features fetor oris (foul odor), punched-out papillae, and pain. Desquamative gingivitis (lichen planus, mucous membrane pemphigoid, etc.) causes inflammation and bleeding tendency but not the characteristic necrotic fetor of NUG."
+  },
+  {
+    "id": "ab2_7a6992ef6a",
+    "answer": 2,
+    "usable": false,
+    "exclude_reason": "Interference type depends on a missing articulation diagram referenced as 'mentioned before'.",
+    "explanation": "Without the image, classification among functional cusp, centric, or protrusive interference is impossible. Protrusive interference is a common tested pattern when anterior guidance is disrupted."
+  },
+  {
+    "id": "ab2_5e8514e413",
+    "answer": 1,
+    "explanation": "Broken ortho tube/irritating wire with appointment in 2 weeks needs immediate relief: trim/cut the excess wire and/or place wax to protect soft tissue until the orthodontist visit. Pure delay without protection is inappropriate if mucosa is injured."
+  },
+  {
+    "id": "ab2_7eeb3eed12",
+    "answer": 0,
+    "explanation": "The most commonly congenitally missing permanent teeth (excluding third molars) include maxillary lateral incisors. A mother with missing teeth raises concern for hereditary hypodontia affecting upper laterals most often among the listed choices."
+  },
+  {
+    "id": "ab2_8770366bc9",
+    "answer": 2,
+    "explanation": "Tooth-size to arch-length discrepancy (including Bolton interarch tooth-size analysis) is diagnosed from study casts/digital models with tooth measurements. Panoramic images and photos do not quantify mesiodistal tooth-size discrepancy."
+  },
+  {
+    "id": "ab2_760a102b30",
+    "answer": 1,
+    "explanation": "Growing Class III with maxillary hypoplasia is treated with reverse-pull facemask (protraction) therapy, often with expansion—not conventional high-pull headgear (which restrains maxilla). Mouthguard is not orthopedic Class III correction."
+  },
+  {
+    "id": "ab2_f45d5ba004",
+    "answer": 0,
+    "explanation": "Palatal petechiae/ulcers plus neck bruising raise concern for sexual abuse (forced oral contact) in child-protection teaching, though physical abuse can also cause neck marks. Pattern of oral trauma with neck injury is classically flagged for sexual/physical assault workup; stem pairing points to sexual abuse in many banks."
+  },
+  {
+    "id": "ab2_b4d1c9945b",
+    "answer": 1,
+    "explanation": "Dental autoclaves use moist heat under pressure (steam sterilization). Dry heat and ethylene oxide are used for special items, not routine chairside instrument autoclaving."
+  },
+  {
+    "id": "ab2_51e30c5a69",
+    "answer": 1,
+    "explanation": "A protruding archwire causing ulcers is managed by clipping the excess wire (and optional wax). Pushing with a pencil eraser may seat a short poke temporarily but cutting the protruding end is definitive interim care; medication alone does not remove the cause."
+  },
+  {
+    "id": "ab2_1e771fcf32",
+    "answer": 1,
+    "explanation": "A chronic small labial ulcerative lesion unresponsive to topical steroids (e.g., major aphthous/traumatic) is often treated with intralesional corticosteroid injection. Jumping first to systemic steroids is more systemic risk; antifungal/antiviral only if infection is confirmed."
+  },
+  {
+    "id": "ab2_c2253ab705",
+    "answer": 0,
+    "explanation": "For a well patient on unknown-dose aspirin needing extraction, do not routinely stop antiplatelet therapy; extract with local hemostasis. Stopping aspirin after recent vascular disease risks thrombosis; antibiotics are not required solely for aspirin use."
+  },
+  {
+    "id": "ab2_08d20881e5",
+    "answer": 0,
+    "explanation": "A centimeter-scale lateral tongue lesion in a smoker is high-risk for dysplasia/SCC and requires representative incisional biopsy (or urgent specialist referral). Excision of large suspicious tongue lesions without diagnosis/planning is unsafe; enucleation is for cysts."
+  },
+  {
+    "id": "ab2_dbe975e368",
+    "answer": 2,
+    "explanation": "To prevent needlestick during anesthesia, used sharps should be handled with one-handed scoop or immediate sharps-container disposal and a neutral zone/no-pass technique—not holding while retracting. PPE reduces splash but does not replace safe needle handling; testing the patient is post-exposure management."
+  },
+  {
+    "id": "ab2_59769166e9",
+    "answer": 0,
+    "explanation": "In a 3-year-old for upper procedures, cotton-roll isolation (with saliva ejector) is common when rubber dam is not feasible. Bite block aids opening but is not isolation; removing PPE is never appropriate."
+  },
+  {
+    "id": "ab2_caacb46dda",
+    "answer": 0,
+    "explanation": "For mixed dentition ~9 years, Tanaka-Johnston (or Moyers) mixed-dentition analysis estimates unerupted canine/premolar width from erupted mandibular incisors. Pure proportions alone are less specific; radiographs supplement but Tanaka-Johnston is the named space-analysis method."
+  },
+  {
+    "id": "ab2_7f9eee8d74",
+    "answer": 1,
+    "explanation": "A cystic lesion related to the anterior maxillary midline neurovascular bundle (incisive canal) is the nasopalatine duct (incisive canal) cyst. Nasolabial cyst is soft-tissue extraosseous; CGCG is not specifically neurovascular-canal associated."
+  },
+  {
+    "id": "ab2_533f4f50f8",
+    "answer": 2,
+    "explanation": "Under procedural sedation, new dizziness with respiratory difficulty indicates oversedation/respiratory depression, not a normal mild/moderate sedation endpoint. Airway support and reversal protocols apply."
+  },
+  {
+    "id": "ab2_c56a006668",
+    "answer": 1,
+    "explanation": "Before extraction in hepatitis C with possible liver disease, assess bleeding risk—coagulation tests (INR/PT) and platelet count matter more than 'antigen C' labeling. AST indicates liver injury but does not replace coagulation assessment for extraction safety."
+  },
+  {
+    "id": "ab2_ac41edc1e7",
+    "answer": 0,
+    "usable": false,
+    "exclude_reason": "Leukoplakia morphologic subtype requires the missing clinical photograph.",
+    "explanation": "Without the image, verruciform/corrugated/nodular/spicular form cannot be classified. Verruciform/verrucous surface is a common tested leukoplakia variant."
+  },
+  {
+    "id": "ab2_c3592d8929",
+    "answer": 1,
+    "explanation": "Persistent post-extraction bleeding after sutures is managed with local hemostatic agents such as oxidized regenerated cellulose (Surgicel). Oxycel is related oxidized cellulose branding; Gelfoam is gelatin sponge—Surgicel is a standard next local pack when bleeding continues."
+  },
+  {
+    "id": "ab2_9f7f834311",
+    "answer": 2,
+    "explanation": "Lower lip numbness after mandibular fracture implicates IAN injury. Parasymphyseal fractures near the mental foramen frequently cause lip paresthesia. Condyle fractures more often affect occlusion/opening; pure angle may involve IAN but parasymphysis is the classic mental-nerve site among options."
+  },
+  {
+    "id": "ab2_506cae4682",
+    "answer": 2,
+    "explanation": "Pain with exposed bone socket after third-molar extraction is alveolar osteitis (dry socket): irrigate with saline and place sedative dressing; routine antibiotics or aggressive curettage are not first-line for uncomplicated dry socket."
+  },
+  {
+    "id": "ab2_1de3b087a6",
+    "answer": 2,
+    "explanation": "Acetaminophen 1 g and amoxicillin 500 mg do not meaningfully increase INR like metronidazole, azoles, or high-dose salicylates can with warfarin. Expect no significant INR change from this combination at usual short dental dosing."
+  },
+  {
+    "id": "ab2_27c60f77cf",
+    "answer": 1,
+    "explanation": "HBV on a wound touching a door handle then another person contacts that surface is indirect (fomite) transmission. Direct is person-to-person contact; airborne is not the primary HBV route."
+  },
+  {
+    "id": "ab2_432225e9a5",
+    "answer": 2,
+    "explanation": "Unexplained prolonged bleeding after extraction warrants hematologic workup before the next procedure (CBC, coagulation panel, bleeding time/INR as indicated), not empiric vitamin K or calcium without diagnosis."
+  },
+  {
+    "id": "ab2_6954d0dba4",
+    "answer": 0,
+    "explanation": "A lower third molar close to the IAN and fused/attached to the second molar is high-risk; refer to an oral surgeon for imaging, consent, and possible coronectomy/sectioning. Extracting without proper explanation or casual next-floor consult is inadequate risk management."
+  },
+  {
+    "id": "ab2_d5cb592894",
+    "answer": 0,
+    "explanation": "The retentive clasp arm provides resistance to vertical dislodgment—retention. Reciprocal arms and rests aid stability and bracing; anti-rotation is more a rest/minor connector function."
+  },
+  {
+    "id": "ab2_c1a9b71a21",
+    "answer": 0,
+    "explanation": "An unerupted permanent canine with incomplete root formation and retained primary canine is often managed by extracting the primary canine to open the path and facilitate spontaneous eruption/interceptive guidance. Extracting the permanent canine or first premolar is not first-line for assistable eruption."
+  },
+  {
+    "id": "ab2_05cc310618",
+    "answer": 2,
+    "explanation": "In orthodontic tooth movement, bone resorbs on the pressure side and deposits on the tension side. Mesial movement produces mesial resorption and distal deposition—the physiologic pattern of a tooth migrating/moving mesially."
+  },
+  {
+    "id": "ab2_b8c2c7c684",
+    "answer": 1,
+    "explanation": "Patients on long-term systemic corticosteroids may need stress-dose coverage (commonly doubling the usual dose on the morning of significant surgery/stress) rather than stopping steroids (risk of adrenal crisis). Minor procedures sometimes need only usual dose—but among options, double dose is the classic teaching answer."
+  },
+  {
+    "id": "ab2_1179065ae5",
+    "answer": 2,
+    "explanation": "Uncontrolled hyperglycemia impairs neutrophil function and collagen synthesis, so delayed wound healing and infection risk are the most common extraction complications—not primary hemorrhage. Osteomyelitis is less common than delayed healing."
+  },
+  {
+    "id": "ab2_d8b4788c2c",
+    "answer": 2,
+    "explanation": "The vignette states periorbital cellulitis secondary to a tooth abscess treated with extraction—so the source is odontogenic infection spreading to orbital/periorbital tissues. Sinusitis/skin trauma are alternatives only if dental source is absent."
+  },
+  {
+    "id": "ab2_b57823ab6a",
+    "answer": 1,
+    "explanation": "Procaine is an ester local anesthetic with higher allergic/sensitivity potential (PABA metabolite) than amide lidocaine. Sweating and dyspnea after injection suggest anaphylactoid/allergic reaction more associated with esters like procaine than with lidocaine/xylocaine (same amide drug)."
+  },
+  {
+    "id": "ab2_acf8956ae9",
+    "answer": 2,
+    "explanation": "Prescribing driven by industry gifts is unprofessional conduct and a conflict of interest. Bribery implies a clearer illegal quid pro quo; the ethical label for gift-influenced prescribing is unprofessional behavior."
+  },
+  {
+    "id": "ab2_d230888333",
+    "answer": 0,
+    "explanation": "Body bruises on a pediatric dental patient indicate physical abuse until proven otherwise. Emotional abuse lacks such marks; sexual abuse has different oral/genital patterns."
+  },
+  {
+    "id": "ab2_c06847eae0",
+    "answer": 0,
+    "explanation": "Intrusion requires the lightest orthodontic forces (~10–25 g per tooth), much less than tipping (~50–75 g). If tipping uses 75 g, intrusion of the same tooth is about 25 g, not equal or higher force."
+  },
+  {
+    "id": "ab2_e9350c4d2e",
+    "answer": 3,
+    "explanation": "A large mandibular cystic lesion on panoramic imaging is often first decompressed/marsupialized (or staged) when enucleation risks fracture or nerve injury, especially large cysts. Observation alone is inadequate; resection is for aggressive neoplasms after diagnosis."
+  },
+  {
+    "id": "ab2_02b0283444",
+    "answer": 3,
+    "explanation": "Deep neck infections that track to the mediastinum typically involve submandibular, sublingual, and lateral pharyngeal/retropharyngeal pathways (Ludwig angina continuum). Canine and submental spaces are more limited; submandibular space is the listed space most associated with descending spread risk."
+  },
+  {
+    "id": "ab2_d62f11e3a3",
+    "answer": 2,
+    "explanation": "After IANB plus long buccal, pulp testing a molar confounds long buccal soft-tissue anesthesia. Objective IAN success is lip numbness and/or testing teeth anesthetized solely by IAN (e.g., canine/premolar pulp tests), not molars that also receive buccal infiltration."
+  },
+  {
+    "id": "ab2_d9c90f35be",
+    "answer": 2,
+    "explanation": "Caliber-persistent labial artery is a vascular anomaly—a large-diameter artery superficial in the lip mucosa. Source is vascular, not neural or glandular."
+  },
+  {
+    "id": "ab2_94e77a6cdb",
+    "answer": 0,
+    "explanation": "Morning jaw pain with tooth wear despite denied habits still points to nocturnal bruxism (often unreported). Clenching is a form of parafunction; myofascial pain may result but wear + morning pain specifically implicates bruxism."
+  },
+  {
+    "id": "ab2_1333cd4276",
+    "answer": 3,
+    "explanation": "White/creamy opacities with hypoplastic-looking enamel on molars and incisors describe molar-incisor hypomineralization. Fluorosis is more generalized; dentinal dysplasia and DI primarily affect dentin with different clinical/radiographic signs."
+  },
+  {
+    "id": "ab2_3bdfe3ee11",
+    "answer": 2,
+    "explanation": "Very limited interocclusal space for an RPD favors a thin metal major connector/base rather than bulky acrylic. Meshwork still needs acrylic bulk; metal bases maximize strength in minimal thickness."
+  },
+  {
+    "id": "ab2_3d986090d4",
+    "answer": 2,
+    "explanation": "Primary incisors with crown fracture and mobility are generally not rigidly splinted (IADT: avoid splinting primary teeth except alveolar fracture). Manage the coronal fragment, assess pulp, follow the permanent successor, and extract the primary tooth if non-restorable or a risk to the successor—never extract the permanent tooth."
+  },
+  {
+    "id": "ab2_15da14192a",
+    "answer": 2,
+    "explanation": "Same primary trauma scenario: avoid routine splinting of primary teeth; remove/manage the fractured coronal portion as indicated, follow clinically/radiographically, and protect the permanent successor. Extracting permanent teeth is never indicated here."
+  },
+  {
+    "id": "ab2_cccf864264",
+    "answer": 2,
+    "explanation": "A late patient who yells and threatens staff may be refused care because of abusive/aggressive behavior that endangers staff and disrupts care—not merely lateness. Safety and non-acceptance of workplace abuse justify refusal."
+  },
+  {
+    "id": "ab2_cd38aa89f4",
+    "answer": 1,
+    "explanation": "Progressive mobility of an implant restoration with pus and bleeding indicates peri-implantitis and implant failure, not simple screw loosening alone. Screw loosening causes mobility without progressive infection signs."
+  },
+  {
+    "id": "ab2_9453f876c6",
+    "answer": 0,
+    "explanation": "Rheumatoid arthritis commonly involves the TMJ with pain, stiffness, and degenerative changes. Bifid condyle and condylar hyperplasia are developmental, not RA hallmarks."
+  },
+  {
+    "id": "ab2_950ba0e65d",
+    "answer": 1,
+    "explanation": "When a lower third molar is intimate with the IAN, obtain informed consent discussing nerve risk and offer referral to OMFS; shared decision-making is required. Blind extraction without discussion is inappropriate; automatic referral without counseling is incomplete communication."
+  },
+  {
+    "id": "ab2_534551edc8",
+    "answer": 2,
+    "explanation": "Delayed sterilization: keep instruments moist in an approved holding solution/enzymatic detergent to prevent drying of blood/debris. Dry storage worsens cleaning; plain water is suboptimal versus proper non-fixing holding solutions."
+  },
+  {
+    "id": "ab2_9921554451",
+    "answer": 0,
+    "explanation": "Nonmaleficence is the duty of the clinician to do no harm. It is a professional ethical principle applied to the doctor's actions, not a patient duty."
+  },
+  {
+    "id": "ab2_09686413cd",
+    "answer": 2,
+    "explanation": "Oral ulcers plus genital/perianal ulcers suggest Behçet disease; acute severe mucocutaneous disease is managed with systemic corticosteroids (e.g., prednisone) under medical care. Syphilis is considered but penicillin is not the automatic first choice without diagnosis."
+  },
+  {
+    "id": "ab2_840a6890ff",
+    "answer": 0,
+    "explanation": "Unilateral posterior crossbite with functional mandibular shift in a child is usually a bilateral maxillary constriction problem and is treated with bilateral maxillary expansion, not one-sided tipping alone."
+  },
+  {
+    "id": "ab2_238aecc73c",
+    "answer": 2,
+    "explanation": "Fluctuant buccal vestibular swelling with apical radiolucency next needs pulp vitality testing to confirm odontogenic source and plan endodontic treatment/incision. MRI/biopsy are not first for presumed dental abscess; OPG may help but vitality is key next step."
+  },
+  {
+    "id": "ab2_f96729c0a2",
+    "answer": 0,
+    "explanation": "Pemphigus vulgaris shows suprabasal acantholysis of prickle (spinous) cells; immunofluorescence shows IgG/C3 in intercellular spaces. Bud/cap are tooth-development stages, not blistering disease histology."
+  },
+  {
+    "id": "ab2_484e7c4726",
+    "answer": 1,
+    "explanation": "Adolescent with bruxism signs (attrition, linea alba, rough facets) needs education and a protective night guard, not mere reassurance or only enameloplasty without habit protection."
+  },
+  {
+    "id": "ab2_dd9876dbda",
+    "answer": 1,
+    "explanation": "Clindamycin-associated diarrhea after a few days suggests Clostridioides difficile pseudomembranous colitis until proven otherwise. Ulcerative colitis is idiopathic IBD; bacteremia does not explain antibiotic-associated diarrhea."
+  },
+  {
+    "id": "ab2_d6dcf82ffa",
+    "answer": 2,
+    "explanation": "Maxillary canines have long roots and dense labial bone; extraction carries high risk of alveolar/labial plate fracture. Mandibular incisors and maxillary laterals are lower risk for plate fracture than maxillary canines."
+  },
+  {
+    "id": "ab2_56a4f0511d",
+    "answer": 0,
+    "explanation": "Most orofacial injuries from child abuse are due to physical abuse (bruises, fractures, burns). Sexual and psychological abuse are important but less often the category for orofacial trauma statistics."
+  },
+  {
+    "id": "ab2_0f13917561",
+    "answer": 0,
+    "explanation": "Ankylosed primary second molar without a permanent successor risks infraocclusion and vertical defect; extraction (often with space management/plan for future prosthetic or ortho) is indicated rather than waiting to age 18. Specialist referral may help planning but definitive need is removal of the ankylosed tooth."
+  },
+  {
+    "id": "ab2_69d30765f9",
+    "answer": 2,
+    "explanation": "Adding a bonding adhesive layer under sealant improves retention in many studies. Prophy-jet before etch can leave residues if not rinsed well; enameloplasty is not routinely required for retention."
+  },
+  {
+    "id": "ab2_58d382d85a",
+    "answer": 0,
+    "explanation": "Caseating (necrotizing) granulomas of the lung are classic for tuberculosis. Sarcoidosis produces non-caseating granulomas; ordinary pneumonia is not granulomatous caseation."
+  },
+  {
+    "id": "ab2_d540a3920d",
+    "answer": 2,
+    "explanation": "Asthmatic patients are treated in a more upright or semi-upright position to ease breathing—not fully supine, which can worsen dyspnea. Among options emphasizing position of comfort/airway, upright is preferred over flat supine."
+  },
+  {
+    "id": "ab2_176c898d1b",
+    "answer": 0,
+    "explanation": "When 11 is erupted and 21 is not, a common cause is a midline supernumerary (mesiodens) blocking eruption. Congenital absence of a single central is less common than obstruction; slow eruption is diagnosis of exclusion without radiograph—but mesiodens is the classic first suspicion."
+  },
+  {
+    "id": "ab2_bfd66080b8",
+    "answer": 0,
+    "explanation": "For hypertensive patients, avoid epinephrine-impregnated retraction cords. Aluminum chloride is a preferred astringent cord medicament without significant systemic catecholamine effects."
+  },
+  {
+    "id": "ab2_02258a491b",
+    "answer": 0,
+    "explanation": "Burning tongue is often candidiasis or deficiency-related; empiric antifungal is a common first therapeutic trial when exam suggests erythema/candida. Steroids can worsen candida; antibiotics do not treat fissured tongue burning."
+  },
+  {
+    "id": "ab2_dd63e8e2a8",
+    "answer": 1,
+    "explanation": "With prior expressed wishes preferring death over disability, the spouse as typical surrogate who requests withdrawal consistent with known preferences is followed over a parent when law recognizes spouse priority—unless court intervenes. Court is used when surrogates conflict unresolved."
+  },
+  {
+    "id": "ab2_0496f41349",
+    "answer": 0,
+    "explanation": "Pleomorphic adenoma is the most common parotid and overall salivary gland tumor. Warthin tumor is second in the parotid; mucoepidermoid is the most common malignant salivary tumor."
+  },
+  {
+    "id": "ab2_b0626a96b8",
+    "answer": 2,
+    "explanation": "Crowding planned for extraction needs orthodontic diagnosis and sequencing; refer to an orthodontist before extracting for alignment. Random extraction by a general dentist without ortho plan can worsen occlusion."
+  },
+  {
+    "id": "ab2_ff1f86216b",
+    "answer": 0,
+    "explanation": "Finding root resorption of the second molar when referred for third-molar removal requires communication back to the referring dentist and full disclosure—do not simply extract without addressing the new finding and shared plan."
+  },
+  {
+    "id": "ab2_c6bbc9bb9f",
+    "answer": 2,
+    "explanation": "HIV with white corrugated lateral tongue is oral hairy leukoplakia (EBV); it is not treated with antifungals or steroids and often monitored, with systemic HIV care optimization. Biopsy is not always mandatory when classic."
+  },
+  {
+    "id": "ab2_54e43129d0",
+    "answer": 3,
+    "explanation": "A slowly growing, mobile, asymptomatic preauricular mass for 13 years in an adult is classic for pleomorphic adenoma of the parotid. Warthin is more in older male smokers and often multicentric; adenoid cystic is malignant/infiltrative; lymphoma is not typically a 13-year freely mobile nodule."
+  }
+]

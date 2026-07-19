@@ -1,0 +1,72 @@
+[
+  {
+    "id": "ab2_143a307110",
+    "answer": 1,
+    "explanation": "Most accessory canals are in the apical third. Common board figures cite ~17% teeth with apical accessory canals (texts also emphasize apical location prevalence).",
+    "auto": true,
+    "old_answer": 1
+  },
+  {
+    "id": "ab2_7ce8753487",
+    "answer": 0,
+    "explanation": "Narrowest canal diameter is usually the apical constriction (minor foramen / near CDJ region).",
+    "auto": true,
+    "old_answer": 0
+  },
+  {
+    "id": "ab2_a99da6833e",
+    "answer": 1,
+    "explanation": "TST induration cutoffs depend on risk (≥5/10/15 mm). Low-risk often ≥15 mm; higher-risk lower thresholds.",
+    "auto": true,
+    "old_answer": 2
+  },
+  {
+    "id": "ab2_e63229d38b",
+    "answer": 0,
+    "explanation": "Recent transplant: immunocompromised — coordinate care; often defer elective care, manage infection risk, treat disease thoughtfully.",
+    "auto": true,
+    "old_answer": 1
+  },
+  {
+    "id": "ab2_9aae0e514a",
+    "answer": 1,
+    "explanation": "Odontogenic infections are typically mixed aerobic/anaerobic oral flora.",
+    "auto": true,
+    "old_answer": 1
+  },
+  {
+    "id": "ab2_cb5871671f",
+    "answer": 1,
+    "explanation": "Normal SNA with decreased SNB → mandibular retrognathia (skeletal Class II pattern).",
+    "auto": true,
+    "old_answer": 0
+  },
+  {
+    "id": "ab2_b37be2e775",
+    "answer": 1,
+    "explanation": "Food impaction after crown often from open/light proximal contact or poor contour/emergence.",
+    "auto": true,
+    "old_answer": 0
+  },
+  {
+    "id": "gd_7265381eaa",
+    "answer": 2,
+    "explanation": "Classic biologic width / supracrestal attachment ≈ 2 mm (JE + CT). ~3 mm if sulcus included in some teachings.",
+    "auto": true,
+    "old_answer": 1
+  },
+  {
+    "id": "eth_boost_014",
+    "answer": 1,
+    "explanation": "Informed consent: diagnosis, proposed treatment, risks/benefits, alternatives, and opportunity for questions.",
+    "auto": true,
+    "old_answer": 3
+  },
+  {
+    "id": "stream_j26_083",
+    "answer": 2,
+    "explanation": "Ludwig angina: bilateral submandibular/sublingual/submental floor-of-mouth infection — airway emergency.",
+    "auto": true,
+    "old_answer": 2
+  }
+]
