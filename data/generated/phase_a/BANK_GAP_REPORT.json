@@ -1,145 +1,335 @@
 {
-  "bank_total": 2533,
-  "by_source": {
-    "always": 100,
-    "abtal": 1181,
-    "gdoc": 4,
-    "premium_operative": 375,
-    "premium_perio": 150,
-    "premium_endo": 150,
-    "premium_ortho_pedo": 120,
-    "premium_ethics": 50,
-    "premium_fixed_rpd": 100,
-    "stream_july2026": 70,
-    "stream_july2026_inferred": 7,
-    "saud_delta": 226
+  "generatedAt": "2026-07-20T12:00:00+00:00",
+  "methodNotes": [
+    "QUESTION_BANK counts from live bank (2533) cross-checked with analysis/bank_stats.json and source_inventory.json.",
+    "EXAM_PACKS itemCountExtracted from data/exam_packs.js meta + source_inventory exam_pack_counts (items[] length matches meta per check_no_caps).",
+    "Raw numbered counts: ZWSP-aware regex (^|\\n)\\s*(\\d{1,4})\\s*\\.\\s*[\\u200b\\u200c\\u200d\\ufeff\\u00a0]* ; Sep uses N) form; Oct mostly plain N.",
+    "Mar–June vs bank abtal: normalize lower+collapse spaces+strip ZWSP; match first 80 chars (prefix) against source=abtal stems.",
+    "questions.js was not modified."
+  ],
+  "bank": {
+    "total": 2533,
+    "expected": 2533,
+    "matchExpected": true,
+    "usable": 2507,
+    "quarantined_or_unusable": 26,
+    "bySource": {
+      "abtal": 1181,
+      "premium_operative": 375,
+      "saud_delta": 226,
+      "premium_perio": 150,
+      "premium_endo": 150,
+      "premium_ortho_pedo": 120,
+      "always": 100,
+      "premium_fixed_rpd": 100,
+      "stream_july2026": 70,
+      "premium_ethics": 50,
+      "stream_july2026_inferred": 7,
+      "gdoc": 4
+    },
+    "byTopic": {
+      "restorative": 913,
+      "oms": 448,
+      "endo": 305,
+      "perio": 288,
+      "ortho_pedo": 234,
+      "mixed": 175,
+      "ethics": 170
+    },
+    "byTopic_audit_alt_note": "AUDIT_REPORT_2026-07-20 had restorative 912 / oms 449 (±1 drift); bank_stats.json is the reference used here (sums to 2533)."
   },
-  "packs": {
+  "examPacks": {
+    "built": "2026-07-20",
+    "purpose": "Full PDF stems + notes. Not SCFHS keys.",
+    "packCount": 6,
+    "sumItemCountExtracted": 6064,
+    "packs": [
+      {
+        "id": "abtal_mar_june_2026",
+        "title": "Mar–June 2026 · أبطال الديجيتال",
+        "kind": "abtal",
+        "period": "2026-03 → 2026-06",
+        "pages": 142,
+        "priority": 1,
+        "bankPool": "abtal",
+        "itemCountExtracted": 1236,
+        "noteCount": 302,
+        "monthCounts": {
+          "March 2026": 162,
+          "April 2026": 350,
+          "May 2026": 355,
+          "June 2026": 369
+        },
+        "disclaimer": "Full PDF stem extract + inline notes/bullets. Community ✅ often wrong — not SCFHS keys.",
+        "themes": [
+          "diabetes/implant",
+          "crown/prep necrosis",
+          "ortho",
+          "asthma/analgesia",
+          "thyroid/epinephrine",
+          "paget/cotton",
+          "LA",
+          "perio",
+          "materials",
+          "prostho",
+          "endo",
+          "trauma",
+          "infection control",
+          "med/systemic"
+        ],
+        "sampleStems": [
+          {
+            "n": 1,
+            "month": "March 2026",
+            "stem": "Treatment of choice for un-controlled diabetic patients with class 3 ?¿"
+          },
+          {
+            "n": 2,
+            "month": "March 2026",
+            "stem": "most necrosis with ?"
+          },
+          {
+            "n": 3,
+            "month": "March 2026",
+            "stem": "cotton appearance"
+          },
+          {
+            "n": 4,
+            "month": "March 2026",
+            "stem": "Hemosidrin in ?"
+          },
+          {
+            "n": 5,
+            "month": "March 2026",
+            "stem": "ibuprofen"
+          }
+        ]
+      },
+      {
+        "id": "abtal_dec_feb_2026",
+        "title": "Dec 2025 – Feb 2026 · أبطال الديجيتال",
+        "kind": "abtal",
+        "period": "2025-12 → 2026-02",
+        "bankPool": "abtal",
+        "itemCountExtracted": 2662,
+        "noteCount": 379,
+        "sampleStems": [
+          {
+            "n": 1,
+            "stem": "After you finished restoration procedure for the patient the assistant collect the instruments and some of them were"
+          },
+          {
+            "n": 2,
+            "stem": "Patient done renal transplant before 3 months and he came want to do restoration (not emergency)"
+          },
+          {
+            "n": 3,
+            "stem": "GP while doing RCT he break down the file inside the canal"
+          }
+        ]
+      },
+      {
+        "id": "abtal_oct_2025",
+        "title": "Oct 2025 · أبطال الديجيتال",
+        "kind": "abtal",
+        "period": "2025-10",
+        "bankPool": "abtal",
+        "itemCountExtracted": 988,
+        "noteCount": 105,
+        "sampleStems": [
+          {
+            "n": 1,
+            "stem": "How to check crown & root fracture?"
+          },
+          {
+            "n": 2,
+            "stem": "Mishap with file fracture in rotary:"
+          },
+          {
+            "n": 3,
+            "stem": "Pus from pulp:"
+          }
+        ]
+      },
+      {
+        "id": "abtal_sep_2025",
+        "title": "Sep 2025 · أبطال الديجيتال",
+        "kind": "abtal",
+        "period": "2025-09",
+        "bankPool": "abtal",
+        "itemCountExtracted": 875,
+        "noteCount": 160,
+        "sampleStems": [
+          {
+            "n": 1,
+            "stem": "Case scenario about Patient have fluctuant swelling in the buccal vestibule and after PA x-ray you found the radiolucency"
+          },
+          {
+            "n": 2,
+            "stem": "What is the consequences of starting orthodontic ttt in heavy restored tooth"
+          },
+          {
+            "n": 3,
+            "stem": "Material for direct pulp capping"
+          }
+        ]
+      },
+      {
+        "id": "saud_vs_rafi_16_19",
+        "title": "سعود delta vs رفيع 16/19",
+        "kind": "saud_delta",
+        "bankPool": "saud_delta",
+        "itemCountExtracted": 226,
+        "noteCount": 226,
+        "sampleStems": [
+          {
+            "n": 1,
+            "stem": "Pt has amalgam restorations done 3 years ago, came with flat shiny surfaces and elevated amalgam restorations"
+          }
+        ]
+      },
+      {
+        "id": "stream_july2026",
+        "title": "July 2026 live stream (أبطال)",
+        "kind": "stream",
+        "bankPool": "stream_july2026",
+        "itemCountExtracted": 77,
+        "noteCount": 77,
+        "sampleStems": []
+      }
+    ]
+  },
+  "rawExtracts": {
     "mar_june": {
-      "numbered_lines": 1233,
+      "file": "Mar-June_2026_Questions_________________.txt",
+      "label": "Mar–June 2026 (أبطال)",
+      "numberedMatchCount_ZWSP": 1237,
+      "numberedMatchCount_phaseA_script": 1233,
+      "packItemCountExtracted": 1236,
       "unique_prefix80": 1209,
-      "in_bank_abtal_approx": 229,
-      "in_any_bank_approx": 229,
-      "approx_missing_any_bank": 980,
-      "missing_samples": [
-        "treatment of choice for un-controlled diabetic patients with class 3 ?¿",
-        "cotton appearance",
-        "hemosidrin in ?",
-        "swelling after scaling ?",
-        "class 2 div 2 ?",
-        "ortho classification pic",
-        "questions about pain killer for asthmatic patient",
-        "hyperthyroidism with epinephrine?",
-        "x-ray with an implant ?(depend on pic)",
-        "protrusive interfere",
-        "herpes labialis case",
-        "indicates the presence of intercellular autoantibodies of igg, c3 . what is the ",
-        "smoker patient case",
-        "midbuccal undercut :",
-        "class 3 rpd",
-        "retentive arm fracture?",
-        "bisphosphonate",
-        "pain after ortho",
-        "ankylosis pedo",
-        "3 molar in ian"
+      "renumberEvents": "yes — restarts at 1 each month (March→April→May→June); monthCounts sum 162+350+355+369=1236",
+      "sampleStems": [
+        "Treatment of choice for un-controlled diabetic patients with class 3 ?¿",
+        "most necrosis with ?",
+        "cotton appearance"
       ]
     },
     "dec_feb": {
-      "numbered_lines": 2654,
+      "file": "DEC_2025_-FEB_2026_Questions____________.txt",
+      "label": "Dec 2025 – Feb 2026",
+      "numberedMatchCount_ZWSP": 2654,
+      "packItemCountExtracted": 2662,
       "unique_prefix80": 2527,
-      "in_bank_abtal_approx": 318,
-      "in_any_bank_approx": 319,
-      "approx_missing_any_bank": 2208,
-      "missing_samples": [
-        "gp while doing rct he break down the file inside the canal , he referred the cas",
-        "picture of zygomatic fracture and ask about what the patient will suffer from?",
-        "11 years patient with maxillary constriction which appliance will use ?",
-        "3 years old boy caries free, good oral hygiene how much fluoride supplements he ",
-        "tb how to indicate its infected in mm?",
-        "case scenario patient just received her crown and she complains about food accum",
-        "cej of implant in upper anterior comp natural tooth?",
-        "sna normal decrease snb?",
-        "internal bleaching causing which type of resorption?",
-        "extracted tooth without amalgam, considered ?",
-        "when do we treat a patient with a history of stroke 1 month ago?",
-        "make the tooth extraction in child difficult ?",
-        "pharmaceutical company offered the dentist a deal whenever his pt buy their anti",
-        "case about space analysis space available 26 space required 25 ?",
-        "extraction of healthy tooth consider?",
-        "orange peel appearance?",
-        "case about stafen bone cyst?",
-        "deep bite what will happen in upper anterior",
-        "bacteria in bleeding gingiva:",
-        "labial bar cross section"
-      ]
+      "renumberEvents": "yes — multi-month renumber"
     },
     "oct": {
-      "numbered_lines": 983,
+      "file": "Oct_-_2025_Questions________________.pdf.txt",
+      "label": "Oct 2025",
+      "numberedMatchCount_plain": 1067,
+      "numberedMatchCount_phaseA_script": 983,
+      "packItemCountExtracted": 988,
       "unique_prefix80": 966,
-      "in_bank_abtal_approx": 285,
-      "in_any_bank_approx": 285,
-      "approx_missing_any_bank": 681,
-      "missing_samples": [
-        "how to check crown & root fracture?",
-        "mishap with file fracture in rotary:",
-        "pus from pulp:",
-        "pinpoint pulp exposure while removing caries with instrument:",
-        "tooth displacement buccally, lingually, mesially, or distally:",
-        "avulsion with open apex after 2 hours?",
-        "apexification with ?",
-        "picture amount of keratinized tissue around tooth #43.",
-        "bridge replacing missing teeth #44, #45, and #47.",
-        "why does the patient have emotional stress and bruxism?",
-        "orthodontic patient – generalized pain 3 days after treatment, especially while ",
-        "orthodontic wire is extended:",
-        "orthodontic patient with a retruded mandible:",
-        "large radiolucent between 21and 22 teeth is vital",
-        "liner in cervical",
-        "picure with cellulitis pt",
-        "after taking a biopsy what to do ?",
-        "pink tooth",
-        "external root resorption?",
-        "pedo pt have a moon face why ?"
-      ]
+      "note": "Plain N. stems (little/no ZWSP); some false-positive numbered list lines possible in plain regex"
     },
     "sep": {
-      "numbered_lines": 872,
+      "file": "Sep_2025_Questions_________________.pdf.txt",
+      "label": "Sep 2025 (أبطال)",
+      "numberedMatchCount_paren": 875,
+      "packItemCountExtracted": 875,
       "unique_prefix80": 816,
-      "in_bank_abtal_approx": 303,
-      "in_any_bank_approx": 303,
-      "approx_missing_any_bank": 513,
-      "missing_samples": [
-        "material for direct pulp capping",
-        "pic of class 2 subdivision right",
-        "pic of di ?",
-        "pic of semilunar?",
-        "pic of plunger cusp",
-        "pic of fordyce granules",
-        "patient with painful yellowish-white lesions. he has renal failure?",
-        "which part of the r.pd framework transmits stress to the abutment tooth?",
-        "doctor will use midazolam for 25 anxious patients. why",
-        "important test for a patient taking aspirin?",
-        "patient anxious with history of stage 3 copd and severe dental pain, started amo",
-        "minimum hiv post-injection prophylaxis in weeks (mentioned before)",
-        "hiv patient with white spongy lesion on the palate that shows erythema after scr",
-        "space superior to mylohyoid muscle and platysma inferiorly",
-        "patient with peg lateral tooth on the right side and localized gingivitis, docto",
-        "according to the american society of anesthesiologists (asa), a patient with a h",
-        "patient has bleeding when brushing and gingiva bleeds easily on probing, which s",
-        "case scenario about a patient with vwd and diastema due to frenum, surgery choic",
-        "unilateral headache 2-3 times in 3-8 hours with dizziness and vomitin",
-        "patient with bilateral crossbite due to functional mandibular shift"
-      ]
+      "format": "N) not N."
     },
-    "saud": {
-      "n": 226,
-      "expl_ge40": 226,
-      "expl_lt40": 0
+    "saud_delta_txt": {
+      "file": "saud_delta.txt",
+      "label": "saud_delta raw",
+      "format": "🚨-separated blocks, not classic N. numbering",
+      "bankImport": 226
+    },
+    "google_doc_stream": {
+      "file": "google_doc_stream_abtal.txt",
+      "label": "stream July 2026 export",
+      "packItemCountExtracted": 77
     }
   },
-  "saud": {
-    "n": 226,
+  "marJuneVsBankAbtal": {
+    "extract_n_raw_numbered_ZWSP": 1237,
+    "extract_n_pack_items": 1236,
+    "extract_n": 1209,
+    "extract_n_unique_norm": 1209,
+    "bank_abtal_n": 1181,
+    "approx_already_in_bank": 229,
+    "approx_missing_from_bank": 980,
+    "matchMethod": "normalize: lower + collapse spaces + strip ZWSP; rough presence = first 80 chars prefix match against bank source=abtal (also checked any-bank: same 229)",
+    "pct_missing": 81.1,
+    "pct_in_bank": 18.9,
+    "sample_missing_15": [
+      "treatment of choice for un-controlled diabetic patients with class 3 ?¿",
+      "cotton appearance",
+      "hemosidrin in ?",
+      "swelling after scaling ?",
+      "class 2 div 2 ?",
+      "ortho classification pic",
+      "questions about pain killer for asthmatic patient",
+      "hyperthyroidism with epinephrine?",
+      "x-ray with an implant ?(depend on pic)",
+      "protrusive interfere",
+      "herpes labialis case",
+      "indicates the presence of intercellular autoantibodies of igg, c3 . what is the",
+      "smoker patient case",
+      "midbuccal undercut :",
+      "class 3 rpd"
+    ],
+    "interpretation": "Bank abtal (1181) is a deduped multi-window merge, not a full import of every Mar–June OCR line. ~81% of unique Mar–June extract stems lack a rough 80-char match in bank abtal — large real gap and/or heavy rephrasing during import. Soft prefix can both miss paraphrases and false-positive short stems."
+  },
+  "otherPacksVsBank": {
+    "dec_feb": {
+      "extract_n": 2527,
+      "approx_already_in_bank": 318,
+      "approx_missing_from_bank": 2208
+    },
+    "oct": {
+      "extract_n": 966,
+      "approx_already_in_bank": 285,
+      "approx_missing_from_bank": 681
+    },
+    "sep": {
+      "extract_n": 816,
+      "approx_already_in_bank": 303,
+      "approx_missing_from_bank": 513
+    }
+  },
+  "saud_delta": {
+    "count": 226,
+    "withExplanation": 226,
+    "missingExplanationIds": [],
     "expl_ge40": 226,
-    "expl_lt40": 0
-  }
+    "expl_lt40": 0,
+    "confirmed": true,
+    "note": "All 226 have non-empty explanations (≥40 chars). FOLLOWUP_AUDIT_2026-07-20: clinical hinges rewritten 2026-07-20; 0 provenance-style blocks remaining."
+  },
+  "notesSeed": {
+    "totalNotes": 1529,
+    "byDepartment": {
+      "mixed": 808,
+      "perio": 170,
+      "ortho_pedo": 124,
+      "oms": 124,
+      "endo": 91,
+      "fixed": 76,
+      "operative": 64,
+      "ethics": 52,
+      "rpd": 20
+    }
+  },
+  "risks": [
+    "OCR junk: PDF→txt has mojibake, broken words, ¿ symbols, duplicated lines, Arabic shaping issues",
+    "Renumbering per month: Mar–June and Dec–Feb restart at 1 each section → numberedMatchCount is sum of sections, not global max",
+    "Image-only questions: 'ortho classification pic', 'X-ray with an implant', figure-only stems → empty/weak options; ~32 bank items usable:false for image dependency",
+    "Community ✅ in packs are not SCFHS keys",
+    "ZWSP (U+200B) after question numbers in أبطال extracts breaks naive /^\\d+\\./ parsers",
+    "Near-duplicates across months inflate extract vs unique bank",
+    "Soft 80-char prefix match underestimates paraphrase hits and can false-positive short generic stems",
+    "Sep uses N) numbering; Oct mostly plain N. — single regex does not fit all packs",
+    "Bank abtal explanations often still community-style; do not treat as verified clinical keys"
+  ]
 }
