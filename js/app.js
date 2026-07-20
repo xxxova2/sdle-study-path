@@ -4001,22 +4001,32 @@
         <button type="button" class="tad-tab${pane === "always" ? " active" : ""}" data-pane="always">اسئلة مكررة</button>
         <button type="button" class="tad-tab${pane === "cards" ? " active" : ""}" data-pane="cards">Flashcards</button>
         <button type="button" class="tad-tab${pane === "mock" ? " active" : ""}" data-pane="mock">Mock</button>
-      </div>
-      <p class="simple-day-sync muted">Today · ${escapeHtml(subjectTitle)} · D${state.day}/${maxDay()}</p>`;
-
-    function bankStrip(banks) {
-      return `<div class="hz-strip" role="listbox">
-        ${banks
-          .map((b) =>
-            bankChip({
-              pool: b.pool,
-              label: b.label,
-              today: b.today,
-              selected: b.pool === selectedPool,
-            })
-          )
-          .join("")}
       </div>`;
+
+    const sizeMode = pane === "mock" ? "exam" : "learn";
+
+    /** Bank grid: sizes render right under the selected tile (not page bottom). */
+    function bankStrip(banks) {
+      const parts = [];
+      banks.forEach((b) => {
+        const on = b.pool === selectedPool;
+        parts.push(
+          bankChip({
+            pool: b.pool,
+            label: b.label,
+            today: b.today,
+            selected: on,
+          })
+        );
+        if (on) {
+          const n = poolN(b.pool);
+          parts.push(`<div class="hz-under-sizes" role="group" aria-label="How many">
+            <span class="hz-under-label">${escapeHtml(b.label)} · ${n} Q</span>
+            <div class="hz-size-chips">${sizeChips(b.pool, n, sizeMode)}</div>
+          </div>`);
+        }
+      });
+      return `<div class="hz-strip" role="listbox">${parts.join("")}</div>`;
     }
 
     function bankSection(title, titleAr, banks) {
@@ -4027,24 +4037,10 @@
       </section>`;
     }
 
-    function sizeBar(mode) {
-      const found = allBanksFlat.find((b) => b.pool === selectedPool);
-      const nice =
-        pane === "always" || selectedPool === "always_src"
-          ? "اسئلة مكررة"
-          : (found && found.label) || selectedPool;
-      return `<div class="hz-main">
-        <div class="hz-size-bar">
-          <span class="hz-size-label">${escapeHtml(String(nice))} · ${selectedN} Q</span>
-          <div class="hz-size-chips">${sizeChips(selectedPool, selectedN, mode)}</div>
-        </div>
-      </div>`;
-    }
-
     function sortToggle() {
       return `<div class="hz-sort" role="group" aria-label="Sort banks">
-        <button type="button" class="btn sm ${sortMode === "provider" ? "success" : "ghost"}" data-sort="provider">By provider · المصادر</button>
-        <button type="button" class="btn sm ${sortMode === "department" ? "success" : "ghost"}" data-sort="department">By department · التخصص</button>
+        <button type="button" class="btn sm ${sortMode === "provider" ? "success" : "ghost"}" data-sort="provider">By provider</button>
+        <button type="button" class="btn sm ${sortMode === "department" ? "success" : "ghost"}" data-sort="department">By department</button>
       </div>`;
     }
 
@@ -4067,78 +4063,77 @@
       );
     }
 
-    let body = "";
-
-    if (pane === "always") {
-      body = `
-        <p class="hz-hint" dir="rtl">اسئلة مكررة · ${nAlways} MCQs · ${acRules.length} rules</p>
-        <div class="hz-layout">
-          ${bankSection("اسئلة مكررة", "", [{ pool: "always_src", label: "اسئلة مكررة", today: true }])}
-          <div class="hz-main">
-            <div class="hz-size-bar">
-              <span class="hz-size-label">اسئلة مكررة · ${nAlways} Q</span>
-              <div class="hz-size-chips">${sizeChips("always_src", nAlways, "learn")}</div>
-            </div>
-            <div class="hz-actions">
-              <button type="button" class="btn sm" id="ac-open-cards">Cards</button>
-              <button type="button" class="btn sm ghost" id="ac-full-page">All rules</button>
-            </div>
-            <div class="hz-rules-scroll">
-              ${acRules
-                .slice(0, 24)
-                .map((r, i) => {
-                  const front = Array.isArray(r) ? r[0] : r && r.front;
-                  const back = Array.isArray(r) ? r[1] : r && r.back;
-                  if (!front) return "";
-                  return `<div class="hz-rule"><b>${i + 1}.</b> ${escapeHtml(String(front).replace(/^\d+\.\s*/, ""))}${
-                    back ? ` — <span class="muted">${escapeHtml(String(back))}</span>` : ""
-                  }</div>`;
-                })
-                .join("")}
-            </div>
-          </div>
-        </div>`;
-    } else if (pane === "mcqs") {
-      const sq = state.practiceSearch || "";
-      const searchHits = state.searchHitResults || [];
-      const searchHtml = `
-        <section class="hz-section bank-search-sec">
-          <h3 class="hz-sec-title"><span dir="rtl">بحث في البنك</span> Search all MCQs</h3>
-          <p class="hz-hint">Paste a question stem or keywords — searches ~${allQ().length} items (أبطال · رفيع · all).</p>
-          <textarea id="bank-search-q" class="bank-search-input" rows="3" placeholder="Paste MCQ text here…">${escapeHtml(sq)}</textarea>
+    /* Corner search (collapsed by default — not mid-page block) */
+    const sq = state.practiceSearch || "";
+    const searchHits = state.searchHitResults || [];
+    const searchOpen = !!state.practiceSearchOpen;
+    const searchCorner = `
+      <div class="search-corner ${searchOpen ? "is-open" : ""}">
+        <button type="button" class="search-corner-btn" id="bank-search-toggle" title="Search bank" aria-expanded="${searchOpen}">
+          ${searchOpen ? "✕" : "⌕"} Search
+          ${searchHits.length ? `<span class="badge">${searchHits.length}</span>` : ""}
+        </button>
+        <div class="search-corner-panel" ${searchOpen ? "" : "hidden"}>
+          <p class="hz-hint">Paste stem · ~${allQ().length} MCQs</p>
+          <textarea id="bank-search-q" class="bank-search-input" rows="3" placeholder="Paste MCQ…">${escapeHtml(sq)}</textarea>
           <div class="hz-actions bank-search-actions">
-            <button type="button" class="btn success" id="bank-search-go">Search</button>
-            <button type="button" class="btn ghost" id="bank-search-clear">Clear</button>
+            <button type="button" class="btn success sm" id="bank-search-go">Search</button>
+            <button type="button" class="btn ghost sm" id="bank-search-clear">Clear</button>
             ${
               searchHits.length
-                ? `<button type="button" class="btn" id="bank-search-drill">Practice hits (${searchHits.length})</button>`
+                ? `<button type="button" class="btn sm" id="bank-search-drill">Practice ${searchHits.length}</button>`
                 : ""
             }
           </div>
-          <div id="bank-search-results" class="bank-search-results">
+          <div class="bank-search-results">
             ${
               state.searchHitRan && !searchHits.length && sq.trim().length >= 3
-                ? `<p class="muted">No match. Try fewer words or a distinctive phrase from the stem.</p>`
+                ? `<p class="muted">No match.</p>`
                 : searchHits
                     .map((h, i) => {
                       const item = h.q;
                       const src = item.source || item.topic || "";
-                      const preview = String(item.q || "").slice(0, 160);
+                      const preview = String(item.q || "").slice(0, 140);
                       return `<button type="button" class="bank-hit" data-hit-ix="${i}">
-                        <span class="bank-hit-meta">${i + 1}. ${escapeHtml(String(src))} · ${escapeHtml(String(item.topic || ""))}</span>
-                        <span class="bank-hit-q">${escapeHtml(preview)}${preview.length >= 160 ? "…" : ""}</span>
+                        <span class="bank-hit-meta">${i + 1}. ${escapeHtml(String(src))}</span>
+                        <span class="bank-hit-q">${escapeHtml(preview)}${preview.length >= 140 ? "…" : ""}</span>
                       </button>`;
                     })
                     .join("")
             }
           </div>
-        </section>`;
+        </div>
+      </div>`;
+
+    let body = "";
+
+    if (pane === "always") {
       body = `
         <div class="hz-layout">
-          ${searchHtml}
+          ${bankSection("اسئلة مكررة", "", [{ pool: "always_src", label: "اسئلة مكررة", today: true }])}
+          <div class="hz-actions">
+            <button type="button" class="btn sm" id="ac-open-cards">Cards</button>
+            <button type="button" class="btn sm ghost" id="ac-full-page">All rules</button>
+          </div>
+          <div class="hz-rules-scroll">
+            ${acRules
+              .slice(0, 24)
+              .map((r, i) => {
+                const front = Array.isArray(r) ? r[0] : r && r.front;
+                const back = Array.isArray(r) ? r[1] : r && r.back;
+                if (!front) return "";
+                return `<div class="hz-rule"><b>${i + 1}.</b> ${escapeHtml(String(front).replace(/^\d+\.\s*/, ""))}${
+                  back ? ` — <span class="muted">${escapeHtml(String(back))}</span>` : ""
+                }</div>`;
+              })
+              .join("")}
+          </div>
+        </div>`;
+    } else if (pane === "mcqs") {
+      body = `
+        <div class="hz-layout">
           ${sortToggle()}
           ${banksBySort()}
-          ${sizeBar("learn")}
         </div>`;
     } else if (pane === "cards") {
       const deck = lessonCardDeck(L);
@@ -4175,13 +4170,18 @@
         <div class="hz-layout">
           ${sortToggle()}
           ${banksBySort()}
-          ${sizeBar("exam")}
         </div>`;
     }
 
     app.innerHTML = `
-      <div class="simple-hub">
-        <h1>تدرب</h1>
+      <div class="simple-hub tadarrub-hub">
+        <div class="tad-head">
+          <div>
+            <h1>تدرب</h1>
+            <p class="simple-day-sync muted">Today · ${escapeHtml(subjectTitle)} · D${state.day}/${maxDay()}</p>
+          </div>
+          ${pane === "mcqs" || pane === "mock" ? searchCorner : ""}
+        </div>
         ${subnav}
         ${body}
       </div>`;
