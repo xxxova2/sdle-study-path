@@ -3950,9 +3950,7 @@
     const acRules = window.ALWAYS_COMES_READ || [];
 
     /* Default selected bank per pane */
-    /* Short labels — 3×3 grid (9 cells) */
-    const todayShort =
-      subjectTitle.length > 14 ? subjectTitle.slice(0, 12) + "…" : subjectTitle;
+    /* Exactly 9 banks → 3×3 grid */
     const mcqBanks = [
       { pool: todayPool, label: "Today", today: true },
       { pool: "always_src", label: "اسئلة مكررة" },
@@ -3962,10 +3960,7 @@
         label: s.label,
         today: s.id === focusDept,
       })),
-      { pool: "wrong", label: "Wrong book" },
-    ].slice(0, 9);
-    /* ensure exactly 9 for a clean 3×3 when possible */
-    void todayShort;
+    ];
     const mockBanks = [
       { pool: todayPool, label: "Today", today: true },
       { pool: "abtal", label: "أبطال الديجيتال" },
@@ -4016,8 +4011,8 @@
           ? mcqBanks.concat(mockBanks).find((b) => b.pool === selectedPool)
           : null) || { label: selectedPool };
       const nice =
-        pane === "always"
-          ? "Always"
+        pane === "always" || selectedPool === "always_src"
+          ? "اسئلة مكررة"
           : (mockBanks.find((b) => b.pool === selectedPool) ||
               mcqBanks.find((b) => b.pool === selectedPool) ||
               label).label;
@@ -4033,12 +4028,14 @@
 
     if (pane === "always") {
       body = `
-        <p class="hz-hint" dir="rtl">Always · الأسئلة المتكررة · ${nAlways} MCQs · ${acRules.length} rules</p>
+        <p class="hz-hint" dir="rtl">اسئلة مكررة · ${nAlways} MCQs · ${acRules.length} rules</p>
         <div class="hz-layout">
-          ${bankStrip([{ pool: "always_src", label: "Always MCQs", today: true }])}
+          <div class="hz-strip">
+            ${bankChip({ pool: "always_src", label: "اسئلة مكررة", today: true, selected: true })}
+          </div>
           <div class="hz-main">
             <div class="hz-size-bar">
-              <span class="hz-size-label">Always · ${nAlways} Q</span>
+              <span class="hz-size-label">اسئلة مكررة · ${nAlways} Q</span>
               <div class="hz-size-chips">${sizeChips("always_src", nAlways, "learn")}</div>
             </div>
             <div class="hz-actions">
@@ -4062,7 +4059,6 @@
         </div>`;
     } else if (pane === "mcqs") {
       body = `
-        <p class="hz-hint">Select bank (all visible) → size</p>
         <div class="hz-layout">
           ${bankStrip(mcqBanks)}
           ${sizeBar("learn")}
@@ -4072,23 +4068,23 @@
       const deckN = cardPoolForDeck(deck).length;
       const abtalN = cardPoolForDeck("abtal_notes").length;
       const wrongN = cardPoolForDeck("wrong").length;
+      const alwaysN = cardPoolForDeck("always").length;
       body = `
-        <p class="hz-hint">${cardN} cards · all decks visible</p>
         <div class="hz-layout">
-          <aside class="hz-strip">
+          <div class="hz-strip">
             <button type="button" class="hz-bank is-today" id="cards-today"><span class="hz-bank-name">Today</span><span class="hz-bank-n">${deckN}</span></button>
-            <button type="button" class="hz-bank" id="cards-abtal"><span class="hz-bank-name">أبطال notes</span><span class="hz-bank-n">${abtalN}</span></button>
+            <button type="button" class="hz-bank" id="cards-abtal"><span class="hz-bank-name">أبطال</span><span class="hz-bank-n">${abtalN}</span></button>
             <button type="button" class="hz-bank" id="cards-all"><span class="hz-bank-name">All</span><span class="hz-bank-n">${cardN}</span></button>
             <button type="button" class="hz-bank" id="cards-wrong"><span class="hz-bank-name">Wrong</span><span class="hz-bank-n">${wrongN}</span></button>
-            <button type="button" class="hz-bank" id="cards-always"><span class="hz-bank-name">Always</span><span class="hz-bank-n">${cardPoolForDeck("always").length}</span></button>
-          </aside>
-          <div class="hz-main">
-            <p class="muted">Tap a deck on the left to open.</p>
+            <button type="button" class="hz-bank" id="cards-always"><span class="hz-bank-name">اسئلة مكررة</span><span class="hz-bank-n">${alwaysN}</span></button>
+            <button type="button" class="hz-bank" id="cards-restorative" data-card-deck="restorative"><span class="hz-bank-name">Restorative</span><span class="hz-bank-n">${cardPoolForDeck("restorative").length}</span></button>
+            <button type="button" class="hz-bank" id="cards-perio" data-card-deck="perio"><span class="hz-bank-name">Perio</span><span class="hz-bank-n">${cardPoolForDeck("perio").length}</span></button>
+            <button type="button" class="hz-bank" id="cards-endo" data-card-deck="endo"><span class="hz-bank-name">Endo</span><span class="hz-bank-n">${cardPoolForDeck("endo").length}</span></button>
+            <button type="button" class="hz-bank" id="cards-oms" data-card-deck="oms"><span class="hz-bank-name">OMS</span><span class="hz-bank-n">${cardPoolForDeck("oms").length}</span></button>
           </div>
         </div>`;
     } else {
       body = `
-        <p class="hz-hint">Mock · <b>72s / question</b></p>
         <div class="hz-layout">
           ${bankStrip(mockBanks)}
           ${sizeBar("exam")}
@@ -4127,6 +4123,9 @@
     $("#cards-all") && ($("#cards-all").onclick = () => openCards("all"));
     $("#cards-wrong") && ($("#cards-wrong").onclick = () => openCards("wrong"));
     $("#cards-always") && ($("#cards-always").onclick = () => openCards("always"));
+    app.querySelectorAll("[data-card-deck]").forEach((b) => {
+      b.onclick = () => openCards(b.getAttribute("data-card-deck"));
+    });
     $("#ac-open-cards") && ($("#ac-open-cards").onclick = () => openCards("always"));
     const goAlways = () => navigateTo("always", { push: true });
     $("#ac-full-page") && ($("#ac-full-page").onclick = goAlways);
