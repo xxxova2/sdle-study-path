@@ -3943,8 +3943,6 @@
     ];
 
     const cardN = ensureFlashcards().length;
-    const todayPool = poolKey(focusDept);
-    const nAlways = poolN("always_src");
     const acRules = window.ALWAYS_COMES_READ || [];
 
     /* Grouped banks — no separate "Today" tile (same pool as focus department) */
