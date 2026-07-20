@@ -3719,7 +3719,6 @@
   function renderPractice() {
     /* Always use plan banks (preferred) — no scope maze for simple mode */
     setPracticeScope("plan");
-    const inv = bankInventory();
     const L = lesson();
     const focusTopic = L.quizTopic || "restorative";
     const focusDept = [
@@ -3734,7 +3733,38 @@
       ? focusTopic
       : "restorative";
 
-    /* 6 exam subjects only — one tap = start 50 MCQs */
+    function poolKey(dept) {
+      return dept + "@plan";
+    }
+
+    /* Each bank: pick how many — never force 50 when the pool is huge */
+    function sizeBtns(pool, n) {
+      if (n < 1) return `<span class="muted">0</span>`;
+      const opts = [50, 100, 200].filter((k) => k < n);
+      const parts = opts.map(
+        (k) =>
+          `<button type="button" class="btn ghost simple-sz" data-qz="${escapeHtml(pool)}" data-n="${k}">${k}</button>`
+      );
+      parts.push(
+        `<button type="button" class="btn success simple-sz" data-qz="${escapeHtml(pool)}" data-n="${QUIZ_ALL}">All ${n}</button>`
+      );
+      return parts.join("");
+    }
+
+    function bankRow(opts) {
+      const n = poolN(opts.pool);
+      const today = opts.today ? " is-today" : "";
+      const hint = opts.hint ? `<span class="muted">${escapeHtml(opts.hint)}</span>` : "";
+      return `<div class="simple-mcq-card${today}">
+        <div class="simple-mcq-label">
+          <strong>${escapeHtml(opts.label)}</strong>
+          ${hint}
+          <span class="simple-pool-n">${n} in bank</span>
+        </div>
+        <div class="simple-sz-row">${sizeBtns(opts.pool, n)}</div>
+      </div>`;
+    }
+
     const SUBJECTS = [
       { id: "restorative", label: "Restorative", ar: "ترميم / تعويضات" },
       { id: "perio", label: "Perio", ar: "لثة" },
@@ -3744,59 +3774,60 @@
       { id: "ethics", label: "Ethics", ar: "أخلاقيات" },
     ];
 
-    function poolKey(dept) {
-      return dept + "@plan";
-    }
-
     app.innerHTML = `
       <div class="simple-hub">
         <h1>Practice</h1>
-        <p class="simple-lead">Pick a subject. Do MCQs. That is all.</p>
+        <p class="simple-lead">Pick a subject, then how many MCQs. <b>All</b> = every question in that bank (not only 50).</p>
 
+        ${bankRow({
+          pool: "abtal",
+          label: "أبطال (high yield)",
+          hint: "Recent exam-style bank — recommended first",
+          today: false,
+        })}
+
+        <p class="simple-subhead">By subject (plan bank)</p>
         <div class="simple-mcq-list">
-          ${SUBJECTS.map((s) => {
-            const key = poolKey(s.id);
-            const n = poolN(key);
-            const today = s.id === focusDept ? " is-today" : "";
-            return `<button type="button" class="simple-mcq-row${today}" data-qz="${escapeHtml(key)}" data-n="50" ${n < 1 ? "disabled" : ""}>
-              <span class="simple-mcq-label">
-                <strong>${escapeHtml(s.label)}</strong>
-                <span class="muted">${escapeHtml(s.ar)}</span>
-              </span>
-              <span class="simple-mcq-meta">
-                <span class="badge blue">${n}</span>
-                <span class="simple-go">Start →</span>
-              </span>
-            </button>`;
-          }).join("")}
+          ${SUBJECTS.map((s) =>
+            bankRow({
+              pool: poolKey(s.id),
+              label: s.label,
+              hint: s.ar,
+              today: s.id === focusDept,
+            })
+          ).join("")}
         </div>
 
-        <p class="simple-subhead">Also</p>
-        <div class="simple-also">
-          <button type="button" class="btn success" data-qz="abtal" data-n="50" ${poolN("abtal") < 1 ? "disabled" : ""}>أبطال · 50</button>
-          <button type="button" class="btn" data-qz="wrong" data-n="25" ${poolN("wrong") < 1 ? "disabled" : ""}>Wrong book</button>
-          <button type="button" class="btn ghost" data-qz="always_src" data-n="25">Free points</button>
+        <p class="simple-subhead">Your lists</p>
+        <div class="simple-mcq-list">
+          ${bankRow({
+            pool: "wrong",
+            label: "Wrong book",
+            hint: "Questions you missed before",
+          })}
+          ${bankRow({
+            pool: "always_src",
+            label: "Free points",
+            hint: "Short high-yield / always-tested items",
+          })}
         </div>
 
-        <details class="simple-more">
-          <summary>More options</summary>
-          <div class="simple-also" style="margin-top:10px">
-            <button type="button" class="btn ghost" data-qz="${escapeHtml(poolKey(focusDept))}" data-n="100">Today subject · 100</button>
-            <button type="button" class="btn warn" id="p-timed">Timed 50</button>
-            <button type="button" class="btn ghost" data-qz="preferred" data-n="50">Mixed preferred · 50</button>
-            <button type="button" class="btn ghost" id="p-cards">Flashcards</button>
-          </div>
-        </details>
+        <div class="simple-also" style="margin-top:12px">
+          <button type="button" class="btn warn" id="p-timed">Timed mock · 50 (today subject)</button>
+          <button type="button" class="btn ghost" id="p-cards">Flashcards</button>
+        </div>
       </div>`;
 
-    bindBankQuizButtons(app);
-    /* rows are buttons with data-qz — also bind simple-mcq-row */
-    app.querySelectorAll(".simple-mcq-row[data-qz]").forEach((b) => {
+    app.querySelectorAll(".simple-sz[data-qz]").forEach((b) => {
       b.onclick = () => startQuiz(b.dataset.qz, +b.dataset.n, "learn", false);
     });
     $("#p-timed") &&
       ($("#p-timed").onclick = () => startQuiz(poolKey(focusDept), 50, "exam", true, 72));
     $("#p-cards") && ($("#p-cards").onclick = () => openCards(L.cardDeck || "all"));
+    /* silence unused if pool empty paths still render */
+    void nWrong;
+    void nFp;
+    void nAbtal;
   }
 
   function exportWrongBook() {
