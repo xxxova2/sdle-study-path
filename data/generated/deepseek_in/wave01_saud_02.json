@@ -1,0 +1,429 @@
+{
+  "wave": "01_saud_delta",
+  "chunk": 2,
+  "count": 30,
+  "instruction": "Audit each MCQ. Correct answer_index + clinical hinge. Set flip if changing answer.",
+  "system": "You are auditing KSA SDLE / Prometric-style dental MCQs for a study app.\nRules:\n- Community/PDF ✅ marks are often wrong — decide by clinical board standard, not the mark.\n- Output ONLY a valid JSON array (no markdown fences).\n- Each object MUST have:\n  id, answer_index (0-3), confidence (high|med|low),\n  hinge (clinical why, 1-3 sentences, English),\n  flip (boolean: true if answer_index differs from answer_index_in),\n  department (operative|fixed|rpd|endo|perio|oms|ortho_pedo|ethics|mixed)\n- If image-only / impossible: answer_index null, usable false, hinge explains.\n- operative = direct restorations/preps/materials technique; fixed/rpd = prostho; do not dump all into restorative.\n- Do not invent textbook page numbers.\n",
+  "items": [
+    {
+      "id": "saud_delta_091",
+      "q": "isolated enamel projection in furcation area",
+      "options": [
+        "Marquis probe",
+        "A:Enamel pearl",
+        "B-dens in dent",
+        "C- enamel hypoplasia"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "An isolated enamel mass in a furcation is an enamel pearl (ectopic enamel); it differs from dens invaginatus and from generalized enamel hypoplasia patterns.",
+      "topic_in": "perio",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_092",
+      "q": "Mother asking when the child should start brushing his teeth",
+      "options": [
+        "When primary inscisors erupted",
+        "When primary molars erupted",
+        "When permenant first molar erupted",
+        "apert syndrome"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "Oral hygiene should begin with eruption of the first primary teeth (usually primary incisors); waiting for molars or permanent first molars delays plaque control and caries prevention.",
+      "topic_in": "ortho_pedo",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_093",
+      "q": "Why does large restoration complicate ortho tx",
+      "options": [
+        "Slow movement",
+        "Fast movement",
+        "Investigate gi problems and diet",
+        "Break when removing"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "Large restorations complicate orthodontics mainly because bond strength to restorative surfaces is less predictable and restorations or brackets often fracture or fail during debonding and appliance removal. Orthodontic forces do not systematically “speed” or “slow” biologic tooth movement solely because a filling is large. GI/diet investigation is unrelated to appliance mechanics on heavily restored teeth.",
+      "topic_in": "restorative",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_095",
+      "q": "year old female received #11 implant 3 years ago. A clinical picture was provided of the #11 currently and it is displaced frontosuperiorly. What is the cause",
+      "options": [
+        "Etched porcelain",
+        "osseous growth",
+        "Placement of the implant before completion of",
+        "Investigate gi problems and diet"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "An implant placed while residual jaw growth continues becomes relatively displaced as adjacent alveolus/teeth erupt with osseous growth; #11 drifting frontosuperiorly years later reflects continued growth around a fixed implant.",
+      "topic_in": "restorative",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_097",
+      "q": "Case of patient with new gold onlay covering the mesiopalatal cusp of upper. When the patient closes, deflection occurs. The cause of this deflection is because of lack of",
+      "options": [
+        "Centric relation",
+        "Soak them in non ionizing solution",
+        "Pt preferences",
+        "Centric stop"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "Deflection on closure after a new onlay covering a cusp means the restoration lacks a stable centric stop; without a centric contact the mandible shifts until another tooth contacts.",
+      "topic_in": "ethics",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_099",
+      "q": "best impression material for final crown",
+      "options": [
+        "Investigate gi problems and diet",
+        "PVS",
+        "Alginate",
+        "Agar"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "Addition silicone (PVS) is the preferred final crown impression material: high accuracy, excellent dimensional stability, and fine surface detail for dies and margins. Alginate lacks the precision and stability for definitive fixed prosthodontics. Agar can capture detail but is technique-sensitive and less practical for routine crown work. GI/diet investigation is not an impression material.",
+      "topic_in": "restorative",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_100",
+      "q": "Angle’s classification depends on",
+      "options": [
+        "Maxillary molar",
+        "Mandibular premolar",
+        "Canines",
+        "apert syndrome"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "Angle’s molar classification is based on the mesiodistal relation of the permanent first molars (maxillary first molar mesiobuccal cusp to mandibular first molar buccal groove).",
+      "topic_in": "ortho_pedo",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_101",
+      "q": "mobility up to 1mm according to miller’s classification",
+      "options": [
+        "Grade II",
+        "Grade III",
+        "Marquis probe",
+        "Grade I"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "Miller tooth mobility Grade I is the first detectable horizontal mobility up to about 1 mm; Grade II exceeds 1 mm horizontally; Grade III includes vertical mobility.",
+      "topic_in": "perio",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_102",
+      "q": "Clinical picture of pulp stones. How to remove",
+      "options": [
+        "Tricalcium Phosphate (g-TCP)",
+        "Predentin",
+        "Ultrasonic",
+        "Infraorbital"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "Intrapulpal calcifications (pulp stones) obstruct canal access and are best refined/removed under magnification with ultrasonic tips rather than bulk chemical agents alone.",
+      "topic_in": "endo",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_103",
+      "q": "intraoral flap is considered: Clean",
+      "options": [
+        "ZOE",
+        "Clean-contaminated",
+        "Contaminated",
+        "Dirty"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "Intraoral surgical flaps enter a field that is already colonized by oral flora, so they are classified as clean-contaminated, not sterile clean or grossly dirty wounds.",
+      "topic_in": "mixed",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_104",
+      "q": "Lower premolar with class I amalgam came to the clinic with broken distal cusp. What is the cause",
+      "options": [
+        "Undermined tooth structure",
+        "High occlusal contact",
+        "Investigate gi problems and diet",
+        "Etched porcelain"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "A broken distal cusp beside a Class I amalgam usually means cavity prep undermined enamel/dentin (wide isthmus, deep flaring, unsupported cuspal enamel) so the cusp flexed and fractured under normal function. High occlusion can contribute to trauma but is not the most classic primary cause of cusp fracture adjacent to a conservative Class I. GI diet and etched porcelain are unrelated distractors.",
+      "topic_in": "restorative",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_105",
+      "q": "Why do we use calcium hydroxide",
+      "options": [
+        "ZOE",
+        "Sebaceous gland",
+        "👍🏻 Mucoepidermoid carcinoma",
+        "High alkalinity and antibacterial"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "Calcium hydroxide’s therapeutic effect rests on high pH (strong alkalinity) that kills bacteria and promotes hard-tissue responses in pulp capping and related uses.",
+      "topic_in": "mixed",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_106",
+      "q": "Influenza pt",
+      "options": [
+        "Sebaceous gland",
+        "👍🏻 Mucoepidermoid carcinoma",
+        "Defer elective tx until noninfectious",
+        "ZOE"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "Patients with active influenza are contagious; defer elective dental care until they are no longer infectious to protect staff and other patients.",
+      "topic_in": "mixed",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_109",
+      "q": "pedo patient with limited mouth opening and? mandibulr deviation what's your managment",
+      "options": [
+        "B- NSID",
+        "C- Anterior bite plane",
+        "apert syndrome",
+        "A- gap anthroplasty"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "Severe limited opening with mandibular deviation in a child suggests TMJ ankylosis; definitive management is surgical gap arthroplasty (with physiotherapy), not NSAIDs or bite planes alone.",
+      "topic_in": "ortho_pedo",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_110",
+      "q": "years pedo came to the clinc with thumb sucking and her parnts tray with negative reinforcement but didn't help , what is your? manegment",
+      "options": [
+        "Investigate gi problems and diet",
+        "Etched porcelain",
+        "ortho pacifier",
+        "Palatal crib"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "When negative reinforcement and parental behavior methods fail for persistent thumb-sucking, a fixed habit-breaking appliance (palatal crib) physically interrupts digit placement and is the standard dental next step. An “ortho pacifier” does not stop an entrenched non-nutritive habit. Etched porcelain and GI/diet workup are irrelevant to digital sucking management.",
+      "topic_in": "restorative",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_111",
+      "q": "importance the use of acid etch before restoration",
+      "options": [
+        "D- decrease the temperature",
+        "C- decrease the microleakage",
+        "A- Improve shade matching",
+        "B- decrease the staining of dentin"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "Acid etching demineralizes enamel and opens a microporous surface so resin tags form micromechanical retention and a continuous enamel–composite seal. That seal is what reduces microleakage at margins. Temperature of the tooth is irrelevant to etch; shade matching is driven by opacity/layering, not etch alone; dentin stain is not primarily reduced by etch without proper bonding and isolation.",
+      "topic_in": "restorative",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_112",
+      "q": "you do caries risk assessment before perio treatment why",
+      "options": [
+        "A- Root sensitivity",
+        "B- loss coronal part",
+        "C- reduce pocket depth",
+        "Investigate gi problems and diet"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "Caries risk is assessed before periodontal therapy because scaling and surgery often expose root surfaces; high-risk patients then develop root caries and marked dentin hypersensitivity on newly uncovered cervical root. Loss of coronal structure and pocket-depth reduction are treatment outcomes or separate restorative issues, not the main reason to stage caries-risk planning first. GI/diet alone does not replace caries-risk assessment before perio.",
+      "topic_in": "restorative",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_113",
+      "q": "years old with mouth sores low grade fever and increased drooling toothing",
+      "options": [
+        "gingival herpes stomatitis",
+        "Marquis probe",
+        "reduce pocket depth",
+        "herpangina"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "Young child with mouth sores, low-grade fever, drooling, and teething-age presentation is classic primary herpetic gingivostomatitis; herpangina is mainly posterior soft-palate/pharyngeal ulcers.",
+      "topic_in": "perio",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_114",
+      "q": "positive bence jones test",
+      "options": [
+        "Sebaceous gland",
+        "👍🏻 Mucoepidermoid carcinoma",
+        "multiple myloma",
+        "ZOE"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "Bence Jones proteins are free light chains in urine and are a classic laboratory finding associated with multiple myeloma.",
+      "topic_in": "mixed",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_115",
+      "q": "ibuprofen for patients less than 14 y/o: missing info",
+      "options": [
+        "Sebaceous gland",
+        "mg every 6hours",
+        "mg every 4hours",
+        "ZOE"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "Pediatric ibuprofen is dosed on a roughly every-6–8-hour schedule (weight-based mg/kg), not an every-4-hour adult-style interval without dose limits.",
+      "topic_in": "mixed",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_116",
+      "q": "O’leary plaque index use",
+      "options": [
+        "A- disclosing agent",
+        "ZOE",
+        "Sebaceous gland",
+        "👍🏻 Mucoepidermoid carcinoma"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "O’Leary plaque control record scores plaque presence after staining; a disclosing agent is required to visualize scored surfaces.",
+      "topic_in": "mixed",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_117",
+      "q": "Pedo have enlarged gingival lot of plaque? What bacteria",
+      "options": [
+        "Positive",
+        "Staphylococcus",
+        "Actinomycetes",
+        "Negative"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "Established plaque-associated gingival inflammation is dominated by gram-negative anaerobic shifts rather than pure staphylococcal or simple gram-positive flora alone.",
+      "topic_in": "ortho_pedo",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_118",
+      "q": "Endocarditis take course of AB , you want to give prophy? No emergency",
+      "options": [
+        "Sebaceous gland",
+        "👍🏻 Mucoepidermoid carcinoma",
+        "Wait 10 days",
+        "ZOE"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "If the patient recently completed an antibiotic course for endocarditis-related indication, delay same-class dental prophylaxis about 10 days when possible so resistant flora can recover before re-challenge.",
+      "topic_in": "mixed",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_119",
+      "q": "Case with white nodules on buccal? Sort of gland",
+      "options": [
+        "Sebaceous gland",
+        "Sebaceous",
+        "serous",
+        "ZOE"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "Small yellowish-white buccal mucosal nodules that are ectopic sebaceous glands are Fordyce spots—normal sebaceous tissue, not serous salivary pathology.",
+      "topic_in": "mixed",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_121",
+      "q": "Can not measure PD",
+      "options": [
+        "Marquis probe",
+        "reduce pocket depth",
+        "VZV",
+        "Gross scaling"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "When heavy calculus prevents accurate probing, perform gross scaling/debridement first so the probe can reach the true base and pocket depths can be measured reliably.",
+      "topic_in": "perio",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_122",
+      "q": "fractured cusp , vital tooth",
+      "options": [
+        "Composite",
+        "Investigate gi problems and diet",
+        "Ceramic onlay",
+        "Full ceramic"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "A fractured cusp on a vital tooth needs cuspal coverage to protect remaining structure; a ceramic onlay restores the missing cusp while conserving more tooth than a full-coverage crown. Direct composite alone often underprotects a missing cusp under load. Full ceramic crown is more aggressive when an onlay can provide coverage. GI/diet investigation does not restore the fractured cusp.",
+      "topic_in": "restorative",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_123",
+      "q": "pt has well controlled Diabetes and hypothyroidism and taking carbamazepine, during dental tx he lost his consciousness, what could be the reason",
+      "options": [
+        "max sinusitis",
+        "A-myxedema coma",
+        "B-syncope",
+        "C- insulin shock"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "In a well-controlled diabetic/hypothyroid patient who loses consciousness during routine dental care, vasovagal syncope is by far the most common cause; myxedema coma is rare and unlikely if hypothyroidism is controlled.",
+      "topic_in": "oms",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_124",
+      "q": "healthy patient during routine dental treatment he feels dizzy and lost his conscious",
+      "options": [
+        "Syncope",
+        "ZOE",
+        "Sebaceous gland",
+        "👍🏻 Mucoepidermoid carcinoma"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "Sudden dizziness and loss of consciousness in an otherwise healthy patient during routine dentistry is classic vasovagal syncope—the most frequent dental-office medical emergency.",
+      "topic_in": "mixed",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_125",
+      "q": "what is the perio grade for 35 years old patient with 30% bone loss",
+      "options": [
+        "Marquis probe",
+        "reduce pocket depth",
+        "VZV",
+        "A-0.857 garde B"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "Periodontitis grade uses % bone loss/age: 30% loss at 35 years ≈ 0.86, which falls in Grade B (0.25–1.0) rather than A or C extremes.",
+      "topic_in": "perio",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_126",
+      "q": "obturation material for patient allergic to resin",
+      "options": [
+        "Etched porcelain",
+        "contact on anterior and posterior",
+        "resilon",
+        "Investigate gi problems and diet"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "Among the listed choices, only Resilon is an obturation-related root-filling system; the other options (etched porcelain, occlusal contact scheme, GI workup) are not obturation materials. Clinically, true resin allergy argues against resin-based root fillers/sealers and favors gutta-percha with a non-resin sealer when available—so Resilon is the only on-list obturation answer, not the ideal biocompatible choice.",
+      "topic_in": "restorative",
+      "source": "saud_delta"
+    }
+  ]
+}

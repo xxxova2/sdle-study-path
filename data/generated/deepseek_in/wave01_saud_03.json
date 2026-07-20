@@ -1,0 +1,429 @@
+{
+  "wave": "01_saud_delta",
+  "chunk": 3,
+  "count": 30,
+  "instruction": "Audit each MCQ. Correct answer_index + clinical hinge. Set flip if changing answer.",
+  "system": "You are auditing KSA SDLE / Prometric-style dental MCQs for a study app.\nRules:\n- Community/PDF ✅ marks are often wrong — decide by clinical board standard, not the mark.\n- Output ONLY a valid JSON array (no markdown fences).\n- Each object MUST have:\n  id, answer_index (0-3), confidence (high|med|low),\n  hinge (clinical why, 1-3 sentences, English),\n  flip (boolean: true if answer_index differs from answer_index_in),\n  department (operative|fixed|rpd|endo|perio|oms|ortho_pedo|ethics|mixed)\n- If image-only / impossible: answer_index null, usable false, hinge explains.\n- operative = direct restorations/preps/materials technique; fixed/rpd = prostho; do not dump all into restorative.\n- Do not invent textbook page numbers.\n",
+  "items": [
+    {
+      "id": "saud_delta_127",
+      "q": "gram negative bacteria Associated with",
+      "options": [
+        "Investigate gi problems and diet",
+        "A-subgingival margin with overhang",
+        "B-smooth subgingival margin",
+        "C-supragingival margin with overhang"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "Subgingival overhanging margins create plaque traps in a low-oxygen niche that favors anaerobic gram-negative periodontal pathogens and inflammation. Smooth subgingival margins are less retentive; supragingival overhangs still trap plaque but sit above the sulcus and are less associated with subgingival gram-negative blooms. GI/diet investigation does not explain the microbial association with restorative contour errors.",
+      "topic_in": "restorative",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_128",
+      "q": "doctors have influenza and on sick leave, one of the patient has flue like symptoms, what should be done to stop the spread of the infection",
+      "options": [
+        "A-use HEPA filter ‫دي أصح‬",
+        "B-decrease direct and indirect contact",
+        "C-use double gloves",
+        "Soak them in non ionizing solution"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "Influenza spreads by respiratory droplets/aerosols; engineering controls such as HEPA filtration reduce airborne infectious particles when source control is needed in clinical settings.",
+      "topic_in": "ethics",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_129",
+      "q": "during RPD framework everything was perfect except the rest was smaller than the rest seats intra orally, you return it to the cast and it was perfect on the cast, what is your management A-soldering rest",
+      "options": [
+        "C-redo the framework on the same cast",
+        "Investigate gi problems and diet",
+        "Etched porcelain",
+        "B- redo final impression and the framework"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "If the RPD rest seats perfectly on the cast but is short/ill-fitting in the mouth, the cast does not accurately represent oral anatomy (impression distortion, cast pour error, or die inaccuracy). Remaking the final impression and framework corrects the master cast. Redoing the framework on the same faulty cast repeats the error; soldering a small rest does not fix a cast that does not match the mouth.",
+      "topic_in": "restorative",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_130",
+      "q": "years old Patient has ortho came with a hanging wire and button in lateral toothHe said that he had surgery for canine one week ago. What was the cause of deboning",
+      "options": [
+        "use stronger bonding",
+        "wrong decision regarding the wire",
+        "difficulty in isolation because of the surgery",
+        "faulty material"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "Bonding near a recent surgical site fails mainly because of blood, saliva, and poor isolation—moisture contamination prevents reliable adhesive polymerisation more than “wrong wire” alone.",
+      "topic_in": "ortho_pedo",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_132",
+      "q": "case scenario patient complaining from soreness in her mouth, she has genital ulcers,white lesion in the wrist, bilateral white striae in her mouth with atrophy. what is the tx A-acyclovir cream B-nystatin mouthwash C-zinc supplement",
+      "options": [
+        "D-triamcinolone acetonoide",
+        "max sinusitis",
+        "Syphilis",
+        "Osteomyelitis"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "Oral bilateral white striae with atrophy plus genital ulcers and wrist lesions is lichen planus; topical corticosteroid (triamcinolone acetonide) is first-line local therapy, not antivirals or nystatin alone.",
+      "topic_in": "oms",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_133",
+      "q": "omposite restoration with undecontoure and open contact, margins are sealed and perfect, what is your management",
+      "options": [
+        "B-replace the entire restoration",
+        "Investigate gi problems and diet",
+        "Etched porcelain",
+        "A-repair it by removing part of the proximal box"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "When proximal margins are sealed and sound but the composite is undercontoured with an open contact, conservative repair—remove/refresh the defective proximal portion and rebuild contour and contact—is preferred over full replacement. Total replacement is unnecessary when the remainder is intact and sealed. Porcelain veneers and GI/diet workup do not correct an open contact on an otherwise sound composite.",
+      "topic_in": "restorative",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_134",
+      "q": "Positive venereal test with oral ulcer, what should you prescribe: For syphilis",
+      "options": [
+        "max sinusitis",
+        "Syphilis",
+        "penicillin",
+        "acyclovir"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "Syphilis (positive venereal serology with oral ulcer) is treated with penicillin as the drug of choice; acyclovir treats herpes, not Treponema pallidum.",
+      "topic_in": "oms",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_135",
+      "q": "Case about HA1C: 8% and 25% bone loss, what is the prognosis poor",
+      "options": [
+        "ZOE",
+        "fair",
+        "good",
+        "questionable"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "About 25% bone loss with imperfect glycemic control (HbA1c ~8%) typically maps to a fair periodontal prognosis—worse than good but not automatically hopeless/questionable without other severe factors.",
+      "topic_in": "mixed",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_136",
+      "q": "tooth with worse furcation prognosis",
+      "options": [
+        "max 1st PM",
+        "distobucall root of upper 6",
+        "Soak them in non ionizing solution",
+        "Pt preferences"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "Maxillary first premolar furcation has a short root trunk and deep mesial developmental concavity, giving the worst furcation access/prognosis among common teeth listed.",
+      "topic_in": "ethics",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_137",
+      "q": "diagnosis of hemicranial proxymal headache",
+      "options": [
+        "Oxygen 100%",
+        "ZOE",
+        "Sebaceous gland",
+        "indomethacin"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "Paroxysmal hemicrania (and related indomethacin-responsive trigeminal autonomic cephalalgias) is diagnosed/treated by dramatic response to indomethacin; oxygen is the classic acute therapy for cluster headache.",
+      "topic_in": "mixed",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_138",
+      "q": "Asthmatic patient had difficulty breathing and “his” :bronchodilator did not work oxygen- fast acting inhaler",
+      "options": [
+        "max sinusitis",
+        "Syphilis",
+        "short acting inhaler",
+        "activate EMS"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "If an asthmatic’s own bronchodilator fails and breathing remains difficult, activate EMS while giving oxygen and further rescue bronchodilator/epinephrine per emergency protocol—do not only repeat ineffective self-care.",
+      "topic_in": "oms",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_139",
+      "q": "diabetic obese patient had radiating pain to left arm and jaw, what to give: (no nitroglycerin) Aspirin- propranolol",
+      "options": [
+        "analyzing rod",
+        "glyceryl trinitrate (another name for NG)",
+        "nstrument used to detect proximal planes in kennedy",
+        "class3"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "Radiating left arm and jaw pain in an obese diabetic suggests acute coronary syndrome; glyceryl trinitrate (nitroglycerin) is the classic anti-anginal given (with aspirin) when blood pressure allows.",
+      "topic_in": "mixed",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_141",
+      "q": "case about a patient who feels pain 24 hours after the doctor did instrumentation of #37 necrotic with APP, what is the cause of pain (PA shows #37 not initiated -I guess its a Pre-op with lesion, #36 previously treated with post and :)crown",
+      "options": [
+        "Missed canal",
+        "Crack",
+        "Pain from another tooth",
+        "Flare up"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "Severe pain within ~24 hours after instrumentation of a necrotic tooth with apical pathology is a classic endodontic flare-up from extruded debris/inflammation, not necessarily a new crack or wrong tooth.",
+      "topic_in": "ethics",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_143",
+      "q": "PA of molar with large lesion that will undergo endo surgery,",
+      "options": [
+        "max sinusitis",
+        "sulcular incision with vertical release",
+        "what could cause recession",
+        "Semilunar flap"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "For apical surgery on a molar with a large lesion, a sulcular (intrasulcular) flap with vertical releasing incision gives wide access and visibility; semilunar flaps are limited and risk scarring/limited exposure.",
+      "topic_in": "oms",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_144",
+      "q": "PA of swelling in sinus above #18 that is asymptomatic (looks like pseudocyst)",
+      "options": [
+        "No treatment",
+        "Biopsy",
+        "Remove with third molar",
+        "Extraction of third molar"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "An asymptomatic dome-shaped antral soft-tissue dome over a tooth (antral pseudocyst/mucous retention phenomenon) usually needs no treatment beyond observation if the tooth is sound.",
+      "topic_in": "oms",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_145",
+      "q": "MRSA virus infection by",
+      "options": [
+        "Airborne",
+        "Investigate gi problems and diet",
+        "Etched porcelain",
+        "Direct contact"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "MRSA (methicillin-resistant S. aureus) spreads mainly by direct contact with colonized skin, wounds, or hands and by contaminated fomites—classic contact precautions, not measles-style airborne droplet nuclei. Airborne is wrong for MRSA’s dominant mode. GI/diet workup and etched porcelain are distractors unrelated to transmission route.",
+      "topic_in": "restorative",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_146",
+      "q": "Influenza virus infection by: Airborne- Droplets is a better answer",
+      "options": [
+        "Etched porcelain",
+        "contact on anterior and posterior",
+        "Direct contact",
+        "Investigate gi problems and diet"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "Among the usable listed options, influenza is transmitted via close person-to-person respiratory exposure; contact with contaminated secretions and surfaces contributes, so “direct contact” is the keyed choice here. True primary clinical mode is respiratory droplets/aerosols rather than blood-borne or purely fomite spread alone. Etched porcelain, occlusal contacts, and GI/diet workup are unrelated to viral transmission.",
+      "topic_in": "restorative",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_147",
+      "q": "abortion of 16y",
+      "options": [
+        "Dental tape with prophy paste",
+        "Refer to another hospital",
+        "Soak them in non ionizing solution",
+        "Pt preferences"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "A 16-year-old seeking abortion-related care is outside routine dental scope and often legally/ethically complex; appropriate action is timely referral to a suitable medical facility/service.",
+      "topic_in": "ethics",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_148",
+      "q": "what to do with prophy cup after use",
+      "options": [
+        "Throw",
+        "ZOE",
+        "Sebaceous gland",
+        "👍🏻 Mucoepidermoid carcinoma"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "Prophy cups are single-use disposable devices; after use they are discarded, not cleaned for reuse on another patient.",
+      "topic_in": "mixed",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_149",
+      "q": "pain on tongue and dry mouth but tongue is moist",
+      "options": [
+        "max sinusitis",
+        "Syphilis",
+        "Osteomyelitis",
+        "burning mouth syndrome"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "Burning tongue with a dry-mouth complaint but clinically moist mucosa is classic burning mouth syndrome (dysesthesia), not primary xerostomia from salivary hypofunction alone.",
+      "topic_in": "oms",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_150",
+      "q": "pic of 46,47 with cervical enamel projections and recession showing furication what to do",
+      "options": [
+        "Sebaceous gland",
+        "👍🏻 Mucoepidermoid carcinoma",
+        "Remove enamel projections at Furication",
+        "ZOE"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "Cervical enamel projections into the furcation promote plaque retention and attachment loss; management includes removing/ODontoplasty of the enamel projection with periodontal therapy.",
+      "topic_in": "mixed",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_152",
+      "q": "What determine the bleeding and bleeding provoked",
+      "options": [
+        "severity of inflammation",
+        "location of inflammation",
+        "Marquis probe",
+        "reduce pocket depth"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "Bleeding on probing reflects the severity of gingival inflammation (ulcerated pocket epithelium and vascularity), not merely the anatomic location of the inflammation.",
+      "topic_in": "perio",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_154",
+      "q": "Pregnant Pt in third trimester came with pain she couldn't sleep for 2 days ( irreversible pulpits) what you will do",
+      "options": [
+        "do RCT without x ray",
+        "Infraorbital",
+        "do RCT with essintial x- Ray",
+        "told her came back after birth x"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "Third-trimester irreversible pulpitis still needs definitive pulp therapy; perform RCT with essential diagnostic/working radiographs and shielding rather than delaying until after delivery.",
+      "topic_in": "endo",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_155",
+      "q": "The motion of piezoelectric",
+      "options": [
+        "Sebaceous gland",
+        "back and forth",
+        "circular",
+        "ZOE"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "Piezoelectric scalers vibrate in a primarily linear back-and-forth pattern; magnetostrictive units have a more elliptical/orbital tip motion.",
+      "topic_in": "mixed",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_156",
+      "q": "Pt with heart problem taking ACE inhibitors, Ca Chanel block,Digoxin and fourth medication I can't remember it he asked about what will cause gag reflex from these medication",
+      "options": [
+        "Digoxin-1",
+        "max sinusitis",
+        "Syphilis",
+        "Osteomyelitis"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "Digoxin toxicity and adverse effects include gastrointestinal symptoms and can increase gagging/nausea; among listed cardiac drugs it is the agent classically linked to gag/nausea complaints.",
+      "topic_in": "oms",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_157",
+      "q": "why we need primate space",
+      "options": [
+        "resolve anterior cross bite",
+        "ZOE",
+        "Sebaceous gland",
+        "resolve mild crowding"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "Primate spaces (mesial to upper canines, distal to lower canines) help accommodate permanent incisors and resolve mild crowding during the transition of the dentition.",
+      "topic_in": "mixed",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_158",
+      "q": "the papilla ( cant remember the?) Options",
+      "options": [
+        "Sebaceous gland",
+        "👍🏻 Mucoepidermoid carcinoma",
+        "Flatten to papilla and dissapear",
+        "ZOE"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "With aging, recession, or progressive periodontitis, interdental papillae may flatten and disappear, creating black triangles rather than retaining pointed papillary form.",
+      "topic_in": "mixed",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_159",
+      "q": "picture of shallow tongue injury - one layer suturing - two layers - three layers",
+      "options": [
+        "👍🏻 Mucoepidermoid carcinoma",
+        "leave it to heal by secondary intervention",
+        "ZOE",
+        "Sebaceous gland"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "Shallow superficial tongue lacerations often heal well by secondary intention without layered suturing; deep through-and-through wounds need layered closure.",
+      "topic_in": "mixed",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_160",
+      "q": "Polishing of conventional GiC should be done -immediately the day after",
+      "options": [
+        "after 3-5 min",
+        "Investigate gi problems and diet",
+        "Etched porcelain",
+        "contact on anterior and posterior"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "Conventional GIC remains moisture-sensitive early; finishing is limited after initial set, with definitive polishing delayed (commonly next visit/~24 h). Among timed options, early minimal finish after set is the listed choice.",
+      "topic_in": "restorative",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_161",
+      "q": "Uncontrolled diabeties which result in leg gangrene, the causative factor: viral fungal",
+      "options": [
+        "ZOE",
+        "Sebaceous gland",
+        "👍🏻 Mucoepidermoid carcinoma",
+        "necrotising fasciitis"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "Uncontrolled diabetes predisposes to severe soft-tissue infection and rapid fascial spread; necrotizing fasciitis is a life-threatening polymicrobial process that can present with limb necrosis/gangrene.",
+      "topic_in": "mixed",
+      "source": "saud_delta"
+    }
+  ]
+}

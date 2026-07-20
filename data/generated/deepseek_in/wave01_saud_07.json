@@ -1,0 +1,233 @@
+{
+  "wave": "01_saud_delta",
+  "chunk": 7,
+  "count": 16,
+  "instruction": "Audit each MCQ. Correct answer_index + clinical hinge. Set flip if changing answer.",
+  "system": "You are auditing KSA SDLE / Prometric-style dental MCQs for a study app.\nRules:\n- Community/PDF ✅ marks are often wrong — decide by clinical board standard, not the mark.\n- Output ONLY a valid JSON array (no markdown fences).\n- Each object MUST have:\n  id, answer_index (0-3), confidence (high|med|low),\n  hinge (clinical why, 1-3 sentences, English),\n  flip (boolean: true if answer_index differs from answer_index_in),\n  department (operative|fixed|rpd|endo|perio|oms|ortho_pedo|ethics|mixed)\n- If image-only / impossible: answer_index null, usable false, hinge explains.\n- operative = direct restorations/preps/materials technique; fixed/rpd = prostho; do not dump all into restorative.\n- Do not invent textbook page numbers.\n",
+  "items": [
+    {
+      "id": "saud_delta_283",
+      "q": "what is the cause of cast bridge distortion",
+      "options": [
+        "Investigate gi problems and diet",
+        "Elastic limit has been exceeded",
+        "Resorption of alveolar bone",
+        "Discrepancy in the occlusion or during function"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "Cast bridge distortion occurs when seating or occlusal forces push the metal beyond its elastic limit into plastic deformation, so the framework no longer returns to the intended fit. Pure occlusal discrepancy without plastic deformation does not permanently warp the casting.",
+      "topic_in": "restorative",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_284",
+      "q": "you have amalgam and it has ditch with more 0.5 what is your management",
+      "options": [
+        "A- replace the whole amalgam",
+        "B- place composite in the ditched area",
+        "Investigate gi problems and diet",
+        "Etched porcelain"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "Amalgam marginal ditching deeper than about 0.5 mm indicates breakdown and leakage risk with possible recurrent caries under the margin. Patching the ditch with composite over old amalgam is unreliable (interface failure, continued leakage). Full replacement of the defective amalgam is the appropriate management when ditch depth exceeds that threshold and the restoration is clinically unsatisfactory.",
+      "topic_in": "restorative",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_286",
+      "q": "you patient patient with multiple divergent implants, what type of coping are you gonna use",
+      "options": [
+        "Two pieces closed",
+        "Two pieces transfer",
+        "Two pieces open",
+        "One piece"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "Divergent multi-unit implants need an open-tray (pick-up) transfer with two-piece copings so the impression captures true implant angulation without locking a closed-tray coping path. Closed-tray transfers fail when paths of draw diverge.",
+      "topic_in": "restorative",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_287",
+      "q": "What is the worst thing in lateral movement in the posterior teeth",
+      "options": [
+        "D- edge to edge occlusion",
+        "A- Group function",
+        "B-shallow cuspal inclines",
+        "C-canine guidance"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "In lateral excursion, posterior group-function contacts (especially heavy balancing/working posterior loading) are more destructive than mutually protected canine guidance with disclusion of posteriors. Shallow inclines and canine guidance reduce lateral posterior stress.",
+      "topic_in": "restorative",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_288",
+      "q": "YO with an Endo treated molar and u want to do amalgam build up what type of pin to use",
+      "options": [
+        "B-Self-thread",
+        "A- Friction lock",
+        "C-Self-shear",
+        "D- Cemented pin"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "For amalgam cores/build-ups, self-threading pins provide the greatest retention in dentin among classic pin types. Friction-lock and cemented pins retain less; self-shear describes a pin design feature, not the preferred retention class for endodontically treated molars needing pins.",
+      "topic_in": "restorative",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_289",
+      "q": "patient with symptoms related to decreased free way space how would you manage",
+      "options": [
+        "relive internal surface of the denture",
+        "make a new denture",
+        "Investigate gi problems and diet",
+        "‫االصح‬- send to the lab to selectively grind teeth"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "Decreased freeway space means occlusal vertical dimension is too high (teeth meet too soon). Selective grinding of denture teeth (lab or chairside) can restore freeway space; relieving the intaglio alone does not correct OVD, and remake is not always first step.",
+      "topic_in": "restorative",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_291",
+      "q": "Which not present in saliva",
+      "options": [
+        "antibodies",
+        "Proteolytic enzymes",
+        "Lysosome",
+        "potassium"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "Whole saliva contains electrolytes (including potassium), secretory IgA (antibodies), and antimicrobial proteins such as lysozyme. Free broad proteolytic enzyme activity is not a normal dominant salivary component in the way board keys frame this item, so proteolytic enzymes is the ‘not present’ choice.",
+      "topic_in": "mixed",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_292",
+      "q": "broken shallow amalgam what’s the best material to replace it",
+      "options": [
+        "composite",
+        "amalgam",
+        "GIC",
+        "RMGI"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "A broken shallow amalgam in a small cavity is often best replaced with bonded composite for conservative tooth-colored repair with adhesive retention. Full amalgam replacement is unnecessary if remaining structure allows a bonded approach; GIC is weaker for stress-bearing areas.",
+      "topic_in": "restorative",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_293",
+      "q": "Pedo patient with high Caries index and needs to seal permenant molars",
+      "options": [
+        "B-unfilled resin",
+        "C-gic",
+        "Investigate gi problems and diet",
+        "A-filled resin= flowable composite"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "In a high-caries pediatric patient sealing permanent molars, filled resin/flowable composite sealants offer better wear resistance than unfilled resin while still penetrating fissures when isolation is adequate. GIC is an alternative under moisture risk but the keyed choice is filled resin sealant.",
+      "topic_in": "restorative",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_294",
+      "q": "Teenager that has deep bite how will you fix it A- fixed B-removable",
+      "options": [
+        "Sebaceous gland",
+        "👍🏻 Mucoepidermoid carcinoma",
+        "C-removable with anterior bite plane",
+        "ZOE"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "Adolescent deep bite can be reduced with a removable appliance incorporating an anterior bite plane that allows posterior eruption and intrusion/retroclination of incisors. Fixed alone is not the only option named; the specific deep-bite tool among choices is the removable anterior bite plane.",
+      "topic_in": "mixed",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_295",
+      "q": "patient with uncontrolled diabetes with acute apical abscess needs to extract now You took hba1c = 10 A- Prophylaxis antibiotic 1h before amox",
+      "options": [
+        "Osteomyelitis",
+        "B- post operative antibiotic",
+        "max sinusitis",
+        "Syphilis"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "Uncontrolled diabetes (HbA1c ~10) with acute apical abscess and urgent extraction raises infection risk; postoperative antibiotics are indicated after source control. Routine 1-hour amoxicillin IE-style prophylaxis alone is not the diabetes/abscess hinge.",
+      "topic_in": "oms",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_296",
+      "q": "Patient has a temp Crown on #43 has been referred for Perio for crown lengthening , patient has no enough keratinized gingiva",
+      "options": [
+        "B-apical reposition flap",
+        "A-gingivectomy",
+        "C-coronal reposition flap",
+        "Soak them in non ionizing solution"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "Crown lengthening when keratinized gingiva is inadequate needs an apically repositioned flap (often with osseous recontouring) to expose tooth structure while preserving or relocating a band of attached gingiva. Simple gingivectomy removes keratinized tissue and is contraindicated.",
+      "topic_in": "ethics",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_297",
+      "q": "Question about the use or effect of radial land in rotary instruments",
+      "options": [
+        "B- enhance cutting of dentin",
+        "C- reduce risk of fracture",
+        "Soak them in non ionizing solution",
+        "A- Increases safety"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "A radial land on rotary endodontic instruments widens the peripheral contact, reduces aggressive engagement and taper lock, and thereby increases safety (less transportation/fracture risk). It does not primarily increase cutting efficiency.",
+      "topic_in": "ethics",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_299",
+      "q": "patient with MOD caries in #16 and after caries removal the cavity extends from the primary groove to mesiobuccal cusp tip",
+      "options": [
+        "Investigate gi problems and diet",
+        "B- ceramic onlay",
+        "Restore with",
+        "A- ceramic inlay"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "MOD preparation that extends to the mesiobuccal cusp tip means that cusp is undermined and needs coverage. A ceramic onlay covers cusps; a ceramic inlay stays within cuspal inclines and is insufficient when the cusp tip is involved.",
+      "topic_in": "restorative",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_301",
+      "q": "ASA of pt has hx of MI 1 years ago which classification? A)I",
+      "options": [
+        "II",
+        "IV",
+        "max sinusitis",
+        "III"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "History of myocardial infarction more than about 60 days ago without ongoing acute issues places the patient in ASA III (severe systemic disease). ASA II is mild disease; ASA IV is constant threat to life (e.g., very recent MI, unstable angina).",
+      "topic_in": "oms",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_302",
+      "q": "What is the most thing that determines the success of the treatment",
+      "options": [
+        "type of Endo sealer",
+        "Infraorbital",
+        "Marginal integrity of the temporary",
+        "Obturation technique"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "Coronal microleakage is a major cause of endodontic failure; the integrity of the temporary (and later permanent) coronal seal strongly determines short- and long-term success, more than sealer brand or obturation technique alone.",
+      "topic_in": "endo",
+      "source": "saud_delta"
+    }
+  ]
+}

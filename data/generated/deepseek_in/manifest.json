@@ -1,0 +1,45 @@
+{
+  "waves": [
+    {
+      "file": "wave01_saud_00.json",
+      "count": 30,
+      "wave": "01_saud"
+    },
+    {
+      "file": "wave01_saud_01.json",
+      "count": 30,
+      "wave": "01_saud"
+    },
+    {
+      "file": "wave01_saud_02.json",
+      "count": 30,
+      "wave": "01_saud"
+    },
+    {
+      "file": "wave01_saud_03.json",
+      "count": 30,
+      "wave": "01_saud"
+    },
+    {
+      "file": "wave01_saud_04.json",
+      "count": 30,
+      "wave": "01_saud"
+    },
+    {
+      "file": "wave01_saud_05.json",
+      "count": 30,
+      "wave": "01_saud"
+    },
+    {
+      "file": "wave01_saud_06.json",
+      "count": 30,
+      "wave": "01_saud"
+    },
+    {
+      "file": "wave01_saud_07.json",
+      "count": 16,
+      "wave": "01_saud"
+    }
+  ],
+  "system": "You are auditing KSA SDLE / Prometric-style dental MCQs for a study app.\nRules:\n- Community/PDF ✅ marks are often wrong — decide by clinical board standard, not the mark.\n- Output ONLY a valid JSON array (no markdown fences).\n- Each object MUST have:\n  id, answer_index (0-3), confidence (high|med|low),\n  hinge (clinical why, 1-3 sentences, English),\n  flip (boolean: true if answer_index differs from answer_index_in),\n  department (operative|fixed|rpd|endo|perio|oms|ortho_pedo|ethics|mixed)\n- If image-only / impossible: answer_index null, usable false, hinge explains.\n- operative = direct restorations/preps/materials technique; fixed/rpd = prostho; do not dump all into restorative.\n- Do not invent textbook page numbers.\n"
+}

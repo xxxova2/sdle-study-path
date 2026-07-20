@@ -1,0 +1,934 @@
+{
+  "built": "2026-07-20T00:04:31.004842+00:00",
+  "bank_total": 2533,
+  "bank_by_source": {
+    "always": 100,
+    "abtal": 1181,
+    "gdoc": 4,
+    "premium_operative": 375,
+    "premium_perio": 150,
+    "premium_endo": 150,
+    "premium_ortho_pedo": 120,
+    "premium_ethics": 50,
+    "premium_fixed_rpd": 100,
+    "stream_july2026": 70,
+    "stream_july2026_inferred": 7,
+    "saud_delta": 226
+  },
+  "local_priority_pdfs": [
+    {
+      "path": "/data/prometric/sdle-prep/data/raw/saud_delta_rafi16_19.pdf",
+      "name": "saud_delta_rafi16_19.pdf",
+      "kb": 8461,
+      "kind": "local"
+    },
+    {
+      "path": "/data/prometric/sdle-prep/data/raw/saud_delta.txt",
+      "name": "saud_delta.txt",
+      "kb": 61,
+      "kind": "local"
+    }
+  ],
+  "local_all_count": 26,
+  "drive_tagged_entries": 995,
+  "rafi_parts_1_20": [
+    {
+      "part": 1,
+      "found_on_drive": true,
+      "name": "TQ 1 + 2 الملف الذهبي.pdf",
+      "path": "ملفات رفيع المقام/References/رفيع المقام -SDLE 2022 part 1/TQ 1 + 2 الملف الذهبي.pdf",
+      "file_id": "1aqrK4G1tYZ3YxBs_qcb6K_N-YP3yqhjg",
+      "url": "https://drive.google.com/file/d/1aqrK4G1tYZ3YxBs_qcb6K_N-YP3yqhjg/view",
+      "alt_count": 40,
+      "all_urls": [
+        "https://drive.google.com/file/d/1aqrK4G1tYZ3YxBs_qcb6K_N-YP3yqhjg/view",
+        "https://drive.google.com/file/d/1aqxzkJCBxoGrayFb2bcjV-0O6XS1dX4O/view",
+        "https://drive.google.com/file/d/1arrb0nSQxKQ2-TcV8bdNs9sq2CrdxyaQ/view",
+        "https://drive.google.com/file/d/1awMJ_hgWxGy-PR6ETDORPggyAs7Zhthr/view",
+        "https://drive.google.com/file/d/1atsse3VJZ7vPLEh-shO7_YmnjRAw9jFI/view"
+      ]
+    },
+    {
+      "part": 2,
+      "found_on_drive": true,
+      "name": "Bayan's.pdf",
+      "path": "ملفات رفيع المقام/References/رفيع المقام -SDLE 2022 part 2/Bayan's.pdf",
+      "file_id": "1aqT4LApt5Hxe6maHiRkJpRKMAZBhObw0",
+      "url": "https://drive.google.com/file/d/1aqT4LApt5Hxe6maHiRkJpRKMAZBhObw0/view",
+      "alt_count": 33,
+      "all_urls": [
+        "https://drive.google.com/file/d/1aqT4LApt5Hxe6maHiRkJpRKMAZBhObw0/view",
+        "https://drive.google.com/file/d/1aqP6ZwBLmmLJAiNTy7E29Pq1aPbifQtv/view",
+        "https://drive.google.com/file/d/1oxLQlT26eWOxolAcEV1LofUKKgqGZZhz/view",
+        "https://drive.google.com/file/d/1yrN_qWhmdF8Mvpu-VTpjoYGLVR7mqBaF/view",
+        "https://drive.google.com/file/d/1xf0wbLzoWeqlJk5zKOeNmcS8ukHouTIv/view"
+      ]
+    },
+    {
+      "part": 3,
+      "found_on_drive": true,
+      "name": "Ethics (1).pdf",
+      "path": "ملفات رفيع المقام/References/رفيع المقام -SDLE 2022 part 3/Ethics (1).pdf",
+      "file_id": "1aqXEtQg9oiCHLWghuYScgYfvyR5NzjPf",
+      "url": "https://drive.google.com/file/d/1aqXEtQg9oiCHLWghuYScgYfvyR5NzjPf/view",
+      "alt_count": 23,
+      "all_urls": [
+        "https://drive.google.com/file/d/1aqXEtQg9oiCHLWghuYScgYfvyR5NzjPf/view",
+        "https://drive.google.com/file/d/1zbSboG57kQUgb6lIMJr5KNHyGa01bMXI/view",
+        "https://drive.google.com/file/d/1aohU2GVn_Hn-nTYUa_GyWPWc0qKQ3-wy/view",
+        "https://drive.google.com/file/d/1aoLKWNVALxiMGj7uTR06vBH6Mu3of4sW/view",
+        "https://drive.google.com/file/d/10QPkaO82qqvnIxUDpoL8nlIqVE_UzXtQ/view"
+      ]
+    },
+    {
+      "part": 4,
+      "found_on_drive": true,
+      "name": "رفيع المقام -SDLE 2022 part 4.pdf",
+      "path": "ملفات اخرى/رفيع المقام -SDLE 2022 part 4.pdf",
+      "file_id": "1ou3VeI8aAL2azhH4yUlqKgMKVXN_WbEq",
+      "url": "https://drive.google.com/file/d/1ou3VeI8aAL2azhH4yUlqKgMKVXN_WbEq/view",
+      "alt_count": 12,
+      "all_urls": [
+        "https://drive.google.com/file/d/1ou3VeI8aAL2azhH4yUlqKgMKVXN_WbEq/view",
+        "https://drive.google.com/file/d/1yLChtQ40PkaJNmY58AYuTFr7rpMTQLea/view",
+        "https://drive.google.com/file/d/1b74vvXDXiJAo5abtEWQayz4FlAIX5Nwx/view",
+        "https://drive.google.com/file/d/1mqZy4hCV0ZgrEltg6DpDslGDBztNRYPk/view",
+        "https://drive.google.com/file/d/1mq_wyhaGe94syJSGKPz6BZC36wCb0HIq/view"
+      ]
+    },
+    {
+      "part": 5,
+      "found_on_drive": true,
+      "name": "رفيع المقام -SDLE part 5.pdf",
+      "path": "ملفات رفيع المقام/PDF file/رفيع المقام -SDLE part 5.pdf",
+      "file_id": "1d7IzJ_tFhhALQIgwP0Emmsat01Qz3B8j",
+      "url": "https://drive.google.com/file/d/1d7IzJ_tFhhALQIgwP0Emmsat01Qz3B8j/view",
+      "alt_count": 10,
+      "all_urls": [
+        "https://drive.google.com/file/d/1d7IzJ_tFhhALQIgwP0Emmsat01Qz3B8j/view",
+        "https://drive.google.com/file/d/10CtojE0jM6WIGoP3R5JchmgwKLtZfhTc/view",
+        "https://drive.google.com/file/d/1d6PoT9cfph-0UJ8T5WH_YGDRk-4bt6J9/view",
+        "https://drive.google.com/file/d/1huQjtKaIlybWvsjAIdZId_qZbwCNRg8Q/view",
+        "https://drive.google.com/file/d/1i32_J3u8KEUqM4WJQ6VJe-IpJ9GBORey/view"
+      ]
+    },
+    {
+      "part": 6,
+      "found_on_drive": true,
+      "name": "رفيع المقام -SDLE 2022 part 6.pdf",
+      "path": "ملفات اخرى/رفيع المقام -SDLE 2022 part 6.pdf",
+      "file_id": "1omfJ0q7Kfzb77Qx6ElFxOMGLhQPj4J1Z",
+      "url": "https://drive.google.com/file/d/1omfJ0q7Kfzb77Qx6ElFxOMGLhQPj4J1Z/view",
+      "alt_count": 4,
+      "all_urls": [
+        "https://drive.google.com/file/d/1omfJ0q7Kfzb77Qx6ElFxOMGLhQPj4J1Z/view",
+        "https://drive.google.com/file/d/1yQdN9w-Z7noZMyviIbtWNxFlNsF4zvuX/view",
+        "https://drive.google.com/file/d/1egchhd6G4dwSKLmzBVfBMdLcivnb67i2/view",
+        "https://drive.google.com/file/d/1iEZXTHxjWLTnVzcrmuHCA3rsK3192oYI/view",
+        "https://drive.google.com/file/d/1TJPO2BSsT6X2ut_l56KknSXRdSnsQH6O/view"
+      ]
+    },
+    {
+      "part": 7,
+      "found_on_drive": true,
+      "name": "رفيع المقام -SDLE part 7.pdf",
+      "path": "ملفات رفيع المقام/PDF file/رفيع المقام -SDLE part 7.pdf",
+      "file_id": "1gtEr4fPUX5WFmffM8MqVUCO-m-I1-ri-",
+      "url": "https://drive.google.com/file/d/1gtEr4fPUX5WFmffM8MqVUCO-m-I1-ri-/view",
+      "alt_count": 2,
+      "all_urls": [
+        "https://drive.google.com/file/d/1gtEr4fPUX5WFmffM8MqVUCO-m-I1-ri-/view",
+        "https://drive.google.com/file/d/10UvI4X0wFab-8oDroHJhkI5RzwXX34O1/view",
+        "https://drive.google.com/file/d/1gpqGFVvc47nwW0Qh3geakVAmPY8SF6Qh/view"
+      ]
+    },
+    {
+      "part": 8,
+      "found_on_drive": true,
+      "name": "رفيع المقام -SDLE 2022 part 8.pdf",
+      "path": "ملفات اخرى/رفيع المقام -SDLE 2022 part 8.pdf",
+      "file_id": "1pI17_ZOLKLHSSuUcqy0NXVR34nUI9Dro",
+      "url": "https://drive.google.com/file/d/1pI17_ZOLKLHSSuUcqy0NXVR34nUI9Dro/view",
+      "alt_count": 2,
+      "all_urls": [
+        "https://drive.google.com/file/d/1pI17_ZOLKLHSSuUcqy0NXVR34nUI9Dro/view",
+        "https://drive.google.com/file/d/1zK4H3pq0bwJujg6B2K0GFdEwIjeaJ1de/view",
+        "https://drive.google.com/file/d/1j__VoaDLY1A_D6r9iq61O_0TVi5BvWhZ/view"
+      ]
+    },
+    {
+      "part": 9,
+      "found_on_drive": true,
+      "name": "رفيع المقام -SDLE  part 9.pdf",
+      "path": "ملفات رفيع المقام/PDF file/رفيع المقام -SDLE  part 9.pdf",
+      "file_id": "1009LjT790N5hnXSrOeM9FHVks3eASiOg",
+      "url": "https://drive.google.com/file/d/1009LjT790N5hnXSrOeM9FHVks3eASiOg/view",
+      "alt_count": 2,
+      "all_urls": [
+        "https://drive.google.com/file/d/1009LjT790N5hnXSrOeM9FHVks3eASiOg/view",
+        "https://drive.google.com/file/d/10EngD16Qlb2-ez8oTucwtNCtL0OojwRb/view",
+        "https://drive.google.com/file/d/1lXIC3pJRw68_iEGnVL3qjA_trK1k_l-x/view"
+      ]
+    },
+    {
+      "part": 10,
+      "found_on_drive": true,
+      "name": "رفيع المقام -SDLE  part 10.pdf",
+      "path": "ملفات رفيع المقام/PDF file/رفيع المقام -SDLE  part 10.pdf",
+      "file_id": "104ZQ0_wbW2revJ3aIFSpVlf38pcJqyCf",
+      "url": "https://drive.google.com/file/d/104ZQ0_wbW2revJ3aIFSpVlf38pcJqyCf/view",
+      "alt_count": 2,
+      "all_urls": [
+        "https://drive.google.com/file/d/104ZQ0_wbW2revJ3aIFSpVlf38pcJqyCf/view",
+        "https://drive.google.com/file/d/10IY75mTajSyBe7spCcfAhAnZ8zsu7pjK/view",
+        "https://drive.google.com/file/d/1m8yJeZHMkqOjVMEqLTOI_LsMRRrfR38y/view"
+      ]
+    },
+    {
+      "part": 11,
+      "found_on_drive": true,
+      "name": "رفيع المقام -SDLE 2023 part 11 .pdf",
+      "path": "تجميعات 2023/رفيع المقام -SDLE 2023 part 11 .pdf",
+      "file_id": "1iD_eqnH-k-LdIhWHcKqjG5vR34VxPKwp",
+      "url": "https://drive.google.com/file/d/1iD_eqnH-k-LdIhWHcKqjG5vR34VxPKwp/view",
+      "alt_count": 3,
+      "all_urls": [
+        "https://drive.google.com/file/d/1iD_eqnH-k-LdIhWHcKqjG5vR34VxPKwp/view",
+        "https://drive.google.com/file/d/1-9s__fXGdtcj5q7X0eBnYqQf8zehJNiD/view",
+        "https://drive.google.com/file/d/10ANL854r7Lqwm53klWmCQALdjds_lcPO/view",
+        "https://drive.google.com/file/d/1huOdWW59g7c6pKzOm6Le5PLcxeekSoqR/view"
+      ]
+    },
+    {
+      "part": 12,
+      "found_on_drive": true,
+      "name": "رفيع المقام -SDLE 2022 part 12.pdf",
+      "path": "تجميعات 2023/رفيع المقام -SDLE 2022 part 12.pdf",
+      "file_id": "1lBagwk432_dyRZY3izCajHUTA5JCLN0e",
+      "url": "https://drive.google.com/file/d/1lBagwk432_dyRZY3izCajHUTA5JCLN0e/view",
+      "alt_count": 3,
+      "all_urls": [
+        "https://drive.google.com/file/d/1lBagwk432_dyRZY3izCajHUTA5JCLN0e/view",
+        "https://drive.google.com/file/d/1lCwaV4SC5d8bTwMiIc0hxpT1zQ837VmJ/view",
+        "https://drive.google.com/file/d/10YLQ2RyBb8d7m2c4mgeOYSRGnri3doUc/view",
+        "https://drive.google.com/file/d/1lFn3xRjRVcuQM4WVR51d-aWo3YI7vhPC/view"
+      ]
+    },
+    {
+      "part": 13,
+      "found_on_drive": true,
+      "name": "رفيع المقام -SDLE 2023 part 13.pdf",
+      "path": "تجميعات 2023/رفيع المقام -SDLE 2023 part 13.pdf",
+      "file_id": "1oDYVrD4jFp6yvCFdau6SxhnCzjiTMY7n",
+      "url": "https://drive.google.com/file/d/1oDYVrD4jFp6yvCFdau6SxhnCzjiTMY7n/view",
+      "alt_count": 3,
+      "all_urls": [
+        "https://drive.google.com/file/d/1oDYVrD4jFp6yvCFdau6SxhnCzjiTMY7n/view",
+        "https://drive.google.com/file/d/1o2UT_zT8OxidrIiDEhc5MtbLAG9Qnm_S/view",
+        "https://drive.google.com/file/d/10dO-o2gtKbOfhiGq8UWuxPEuNygAdpjs/view",
+        "https://drive.google.com/file/d/1oJYsPWOPna09yV66nLFuicOo6cShy6_c/view"
+      ]
+    },
+    {
+      "part": 14,
+      "found_on_drive": true,
+      "name": "رفيع المقام -SDLE 2023 part 14.pdf",
+      "path": "تجميعات 2023/رفيع المقام -SDLE 2023 part 14.pdf",
+      "file_id": "1pYJxhZRL0B7SLri17DHNKTBsIrDWGXAO",
+      "url": "https://drive.google.com/file/d/1pYJxhZRL0B7SLri17DHNKTBsIrDWGXAO/view",
+      "alt_count": 3,
+      "all_urls": [
+        "https://drive.google.com/file/d/1pYJxhZRL0B7SLri17DHNKTBsIrDWGXAO/view",
+        "https://drive.google.com/file/d/1pXho7ub6vNTbInsRKchSzXFIo0SkE1FX/view",
+        "https://drive.google.com/file/d/10TGZwOaDBx7cQoQqKwYf6DjnB8DdVWTT/view",
+        "https://drive.google.com/file/d/1pfHos7s1gk7XmypGbEFQE5qOWIAf2yVn/view"
+      ]
+    },
+    {
+      "part": 15,
+      "found_on_drive": true,
+      "name": "رفيع المقام -SDLE part 15.pdf",
+      "path": "ملفات رفيع المقام/PDF file/رفيع المقام -SDLE part 15.pdf",
+      "file_id": "1xkzyXwxgNVajPhZWgxZS2v6th0QDHNpc",
+      "url": "https://drive.google.com/file/d/1xkzyXwxgNVajPhZWgxZS2v6th0QDHNpc/view",
+      "alt_count": 2,
+      "all_urls": [
+        "https://drive.google.com/file/d/1xkzyXwxgNVajPhZWgxZS2v6th0QDHNpc/view",
+        "https://drive.google.com/file/d/10ll94jT4EX5wbjXP23ruRSYKoaWLaM1T/view",
+        "https://drive.google.com/file/d/1z8dhJGSF2jkMnFbVRdn4CLxWDPZxxYgE/view"
+      ]
+    },
+    {
+      "part": 16,
+      "found_on_drive": true,
+      "name": "رفيع المقام -SDLE part 16.pdf",
+      "path": "ملفات رفيع المقام/PDF file/رفيع المقام -SDLE part 16.pdf",
+      "file_id": "1zJT39ak4neD3qmUJgidk4mYaZhtiFLvC",
+      "url": "https://drive.google.com/file/d/1zJT39ak4neD3qmUJgidk4mYaZhtiFLvC/view",
+      "alt_count": 2,
+      "all_urls": [
+        "https://drive.google.com/file/d/1zJT39ak4neD3qmUJgidk4mYaZhtiFLvC/view",
+        "https://drive.google.com/file/d/10mFBbuAXSUNPTsAnWE55chUeH6p91le_/view",
+        "https://drive.google.com/file/d/1zbkOVyJeG6as9garPiulgGWCxY430rxT/view"
+      ]
+    },
+    {
+      "part": 17,
+      "found_on_drive": true,
+      "name": "رفيع المقام -SDLE part 17.pdf",
+      "path": "ملفات رفيع المقام/PDF file/رفيع المقام -SDLE part 17.pdf",
+      "file_id": "1zKQwZJ7KTgDnBOuVbyly9-_cfOtqdQ3e",
+      "url": "https://drive.google.com/file/d/1zKQwZJ7KTgDnBOuVbyly9-_cfOtqdQ3e/view",
+      "alt_count": 2,
+      "all_urls": [
+        "https://drive.google.com/file/d/1zKQwZJ7KTgDnBOuVbyly9-_cfOtqdQ3e/view",
+        "https://drive.google.com/file/d/10oOHLeNmsDfxo-Zvv-I4Swfj1Vcz9-J0/view",
+        "https://drive.google.com/file/d/1zcP7SovZght4TbQ4G1a779rxIfwl7NJO/view"
+      ]
+    },
+    {
+      "part": 18,
+      "found_on_drive": true,
+      "name": "رفيع المقام -SDLE part 18 .pdf",
+      "path": "ملفات رفيع المقام/PDF file/رفيع المقام -SDLE part 18 .pdf",
+      "file_id": "108APv337pPrNeyjKpG9qcqx00xhQli_C",
+      "url": "https://drive.google.com/file/d/108APv337pPrNeyjKpG9qcqx00xhQli_C/view",
+      "alt_count": 2,
+      "all_urls": [
+        "https://drive.google.com/file/d/108APv337pPrNeyjKpG9qcqx00xhQli_C/view",
+        "https://drive.google.com/file/d/10ooxzO3rZke51LdfhCo7yV3FQhJ-pnQn/view",
+        "https://drive.google.com/file/d/1zcyXUYG4EvFs9T_HUeni9dNlMkOisZnM/view"
+      ]
+    },
+    {
+      "part": 19,
+      "found_on_drive": true,
+      "name": "رفيع المقام -SDLE part 19.pdf",
+      "path": "ملفات رفيع المقام/PDF file/رفيع المقام -SDLE part 19.pdf",
+      "file_id": "1-x8WGNzU9uzJJwBorFu8YL9cnSOXSkhO",
+      "url": "https://drive.google.com/file/d/1-x8WGNzU9uzJJwBorFu8YL9cnSOXSkhO/view",
+      "alt_count": 2,
+      "all_urls": [
+        "https://drive.google.com/file/d/1-x8WGNzU9uzJJwBorFu8YL9cnSOXSkhO/view",
+        "https://drive.google.com/file/d/10q9QrFkC8PSQczNwzt91JSB2c9GDEDYf/view",
+        "https://drive.google.com/file/d/1-PaxKDYrREG1ja8iWiWZ1kItd381DArg/view"
+      ]
+    },
+    {
+      "part": 20,
+      "found_on_drive": true,
+      "name": "‎⁨رفيع المقام -SDLE  part 20⁩.pdf",
+      "path": "ملفات رفيع المقام/PDF file/‎⁨رفيع المقام -SDLE  part 20⁩.pdf",
+      "file_id": "1lQ5kOR2fQpXEqI4LUaUsMTPewCTbQPEf",
+      "url": "https://drive.google.com/file/d/1lQ5kOR2fQpXEqI4LUaUsMTPewCTbQPEf/view",
+      "alt_count": 1,
+      "all_urls": [
+        "https://drive.google.com/file/d/1lQ5kOR2fQpXEqI4LUaUsMTPewCTbQPEf/view",
+        "https://drive.google.com/file/d/1T916TsjadvHFDAiAYjcmzgb5OLAow-Ew/view"
+      ]
+    }
+  ],
+  "rafi_parts_found": 20,
+  "rafi_parts_missing_on_drive_index": [],
+  "exam_pack_counts": [
+    {
+      "id": "abtal_mar_june_2026",
+      "items": 1236,
+      "notes": 302
+    },
+    {
+      "id": "abtal_dec_feb_2026",
+      "items": 2662,
+      "notes": 379
+    },
+    {
+      "id": "abtal_oct_2025",
+      "items": 988,
+      "notes": 105
+    },
+    {
+      "id": "abtal_sep_2025",
+      "items": 875,
+      "notes": 160
+    },
+    {
+      "id": "saud_vs_rafi_16_19",
+      "items": 226,
+      "notes": 226
+    },
+    {
+      "id": "stream_july2026",
+      "items": 77,
+      "notes": 77
+    }
+  ],
+  "gaps": {
+    "full_rafi_not_on_local_disk": true,
+    "note": "رفيع 1-20 exist on Drive index; only Saud delta PDF local. Must download for full audit.",
+    "abtal_extract_vs_bank": {
+      "mar_june_extracted": 1236,
+      "dec_feb_extracted": 2662,
+      "oct_extracted": 988,
+      "sep_extracted": 875,
+      "bank_abtal_merged": 1181,
+      "interpretation": "Extracted lines are multi-window OCR; bank abtal is deduped merge. Need per-stem gap map (Phase C)."
+    },
+    "tajmeeat_438_local": "WhatsApp inbox 680p PDF present as space-named file"
+  },
+  "key_folders": [
+    {
+      "title": "SDLE by رفيع المقام (ROOT)",
+      "id": "1Qzi9frP8Ha7kYdVmbXzUJPG7H_R6jdVN",
+      "priority": 0,
+      "url": "https://drive.google.com/drive/folders/1Qzi9frP8Ha7kYdVmbXzUJPG7H_R6jdVN"
+    },
+    {
+      "title": "خطة مذاكرة -رفيع المقام",
+      "id": "1f7NKrspy-b77CjZWFVTdob-3Zihl3ssv",
+      "priority": 0,
+      "url": "https://drive.google.com/drive/folders/1f7NKrspy-b77CjZWFVTdob-3Zihl3ssv"
+    },
+    {
+      "title": "ملفات التجميعات كاملة",
+      "id": "1VyuUhLuosZcjwJ9E6nljFPrfDMqjYt1s",
+      "priority": 0,
+      "url": "https://drive.google.com/drive/folders/1VyuUhLuosZcjwJ9E6nljFPrfDMqjYt1s"
+    },
+    {
+      "title": "Dental books by رفيع",
+      "id": "1OkWT7cwYiAH2SDlXLBxHscpSgXH8Anlp",
+      "priority": 3,
+      "url": "https://drive.google.com/drive/folders/1OkWT7cwYiAH2SDlXLBxHscpSgXH8Anlp"
+    },
+    {
+      "title": "SDLE Book curated",
+      "id": "1P0AfL3bA7B7_Uy9GmMF15ULaiEfbkqsQ",
+      "priority": 2,
+      "url": "https://drive.google.com/drive/folders/1P0AfL3bA7B7_Uy9GmMF15ULaiEfbkqsQ"
+    },
+    {
+      "title": "prometric videos كورس 46",
+      "id": "1_2pMWMnyvAnmGpcAMMO_9TfVvf58cLJb",
+      "priority": 2,
+      "url": "https://drive.google.com/drive/folders/1_2pMWMnyvAnmGpcAMMO_9TfVvf58cLJb"
+    },
+    {
+      "title": "ابطال الديجيتال",
+      "id": "1lgvyPIEbMRd8Ql3B-T-lQgSMgeSm1oZ0",
+      "path": "ابطال الديجيتال",
+      "priority": 1,
+      "url": "https://drive.google.com/drive/folders/1lgvyPIEbMRd8Ql3B-T-lQgSMgeSm1oZ0"
+    },
+    {
+      "title": "مناقشات (تجميعات ) 2026",
+      "id": "1vNNuRLKgx6C9DI3GkQpUJP2RBIJPZSE2",
+      "path": "ابطال الديجيتال/مناقشات (تجميعات ) 2026",
+      "priority": 1,
+      "url": "https://drive.google.com/drive/folders/1vNNuRLKgx6C9DI3GkQpUJP2RBIJPZSE2"
+    },
+    {
+      "title": "مناقشات (تجميعات )2023",
+      "id": "1wnYZW4V9d55QiDysQpnj7LIaERikwVlQ",
+      "path": "ابطال الديجيتال/مناقشات (تجميعات )2023",
+      "priority": 1,
+      "url": "https://drive.google.com/drive/folders/1wnYZW4V9d55QiDysQpnj7LIaERikwVlQ"
+    },
+    {
+      "title": "مناقشات اوقست 2023",
+      "id": "1sE8NJxo-MKkcdN8hy1SXKrEhh7QiClvx",
+      "path": "ابطال الديجيتال/مناقشات (تجميعات )2023/مناقشات اوقست 2023",
+      "priority": 1,
+      "url": "https://drive.google.com/drive/folders/1sE8NJxo-MKkcdN8hy1SXKrEhh7QiClvx"
+    },
+    {
+      "title": "مناقشات اوكتوبر 2023",
+      "id": "1baHjD9xBjJq3ZvMAzaDBRzoGySYb7gfn",
+      "path": "ابطال الديجيتال/مناقشات (تجميعات )2023/مناقشات اوكتوبر 2023",
+      "priority": 1,
+      "url": "https://drive.google.com/drive/folders/1baHjD9xBjJq3ZvMAzaDBRzoGySYb7gfn"
+    },
+    {
+      "title": "مناقشات جون-جولاي 2023",
+      "id": "1Asq0Gv459S2UCKeVcycR255C6vhLP9I4",
+      "path": "ابطال الديجيتال/مناقشات (تجميعات )2023/مناقشات جون-جولاي 2023",
+      "priority": 1,
+      "url": "https://drive.google.com/drive/folders/1Asq0Gv459S2UCKeVcycR255C6vhLP9I4"
+    },
+    {
+      "title": "مناقشات ديسمبر 2023",
+      "id": "1rIq05rah4iXvxcN1obTBVp--v7-kGLGG",
+      "path": "ابطال الديجيتال/مناقشات (تجميعات )2023/مناقشات ديسمبر 2023",
+      "priority": 1,
+      "url": "https://drive.google.com/drive/folders/1rIq05rah4iXvxcN1obTBVp--v7-kGLGG"
+    },
+    {
+      "title": "مناقشات سبتمبر 2023",
+      "id": "1YvOhRThSEic5Ijs4uWNCwtx7NDAVsbLH",
+      "path": "ابطال الديجيتال/مناقشات (تجميعات )2023/مناقشات سبتمبر 2023",
+      "priority": 1,
+      "url": "https://drive.google.com/drive/folders/1YvOhRThSEic5Ijs4uWNCwtx7NDAVsbLH"
+    },
+    {
+      "title": "مناقشات فبراير2023",
+      "id": "1xhF1b8lQxsC1RztqxQyUvxeNcxh7CGus",
+      "path": "ابطال الديجيتال/مناقشات (تجميعات )2023/مناقشات فبراير2023",
+      "priority": 1,
+      "url": "https://drive.google.com/drive/folders/1xhF1b8lQxsC1RztqxQyUvxeNcxh7CGus"
+    },
+    {
+      "title": "مناقشات مارش-ابريل 2023",
+      "id": "10pNPSWbw_bxkdcUCdE40RG8IpaysxCB9",
+      "path": "ابطال الديجيتال/مناقشات (تجميعات )2023/مناقشات مارش-ابريل 2023",
+      "priority": 1,
+      "url": "https://drive.google.com/drive/folders/10pNPSWbw_bxkdcUCdE40RG8IpaysxCB9"
+    },
+    {
+      "title": "مناقشات مايو 2023",
+      "id": "17br54w_FPB80X4k3tGZ17MzlpsU2ZicP",
+      "path": "ابطال الديجيتال/مناقشات (تجميعات )2023/مناقشات مايو 2023",
+      "priority": 1,
+      "url": "https://drive.google.com/drive/folders/17br54w_FPB80X4k3tGZ17MzlpsU2ZicP"
+    },
+    {
+      "title": "مناقشات نوفمبر 2023",
+      "id": "1iH1OT2HQwThPQJz4C0OyZpYneX2c9sG7",
+      "path": "ابطال الديجيتال/مناقشات (تجميعات )2023/مناقشات نوفمبر 2023",
+      "priority": 1,
+      "url": "https://drive.google.com/drive/folders/1iH1OT2HQwThPQJz4C0OyZpYneX2c9sG7"
+    },
+    {
+      "title": "مناقشات يناير 2023",
+      "id": "1ndImyHD_bLttFGzvQhpsLNq_zj2rw2wI",
+      "path": "ابطال الديجيتال/مناقشات (تجميعات )2023/مناقشات يناير 2023",
+      "priority": 1,
+      "url": "https://drive.google.com/drive/folders/1ndImyHD_bLttFGzvQhpsLNq_zj2rw2wI"
+    },
+    {
+      "title": "مناقشات (تجميعات) 2022",
+      "id": "1x-w1HF2AQ7221ZfMcek5jZQdN4HhadNi",
+      "path": "ابطال الديجيتال/مناقشات (تجميعات) 2022",
+      "priority": 1,
+      "url": "https://drive.google.com/drive/folders/1x-w1HF2AQ7221ZfMcek5jZQdN4HhadNi"
+    },
+    {
+      "title": "مناقشات اوكتوبر 2022",
+      "id": "1lq2_Q-7jGjNrDCTkkds1OCzl3YU_Pdoq",
+      "path": "ابطال الديجيتال/مناقشات (تجميعات) 2022/مناقشات اوكتوبر 2022",
+      "priority": 1,
+      "url": "https://drive.google.com/drive/folders/1lq2_Q-7jGjNrDCTkkds1OCzl3YU_Pdoq"
+    },
+    {
+      "title": "ابطال الديجيتال",
+      "id": "1lrvtKIJgJU88gLp0itrkjHg_XumGPQMj",
+      "path": "ابطال الديجيتال/مناقشات (تجميعات) 2022/مناقشات اوكتوبر 2022/ابطال الديجيتال",
+      "priority": 1,
+      "url": "https://drive.google.com/drive/folders/1lrvtKIJgJU88gLp0itrkjHg_XumGPQMj"
+    },
+    {
+      "title": "مناقشات ديسمبر 2022",
+      "id": "1lnP9pO9pi4_ol4aEg3nIdPB4rB-wUvYw",
+      "path": "ابطال الديجيتال/مناقشات (تجميعات) 2022/مناقشات ديسمبر 2022",
+      "priority": 1,
+      "url": "https://drive.google.com/drive/folders/1lnP9pO9pi4_ol4aEg3nIdPB4rB-wUvYw"
+    },
+    {
+      "title": "ابطال الديجيتال",
+      "id": "1lni549qb2Zpnk47EH2l8AxiCtzSez08k",
+      "path": "ابطال الديجيتال/مناقشات (تجميعات) 2022/مناقشات ديسمبر 2022/ابطال الديجيتال",
+      "priority": 1,
+      "url": "https://drive.google.com/drive/folders/1lni549qb2Zpnk47EH2l8AxiCtzSez08k"
+    },
+    {
+      "title": "مناقشات سبتمبر2022",
+      "id": "1lhpGirWUQdb76Uf8ETaILvIJ2R91jCqs",
+      "path": "ابطال الديجيتال/مناقشات (تجميعات) 2022/مناقشات سبتمبر2022",
+      "priority": 1,
+      "url": "https://drive.google.com/drive/folders/1lhpGirWUQdb76Uf8ETaILvIJ2R91jCqs"
+    },
+    {
+      "title": "ابطال الديجيتال",
+      "id": "1ljlPf9CikJpug7XrYXNhdmkm7pkfCCEB",
+      "path": "ابطال الديجيتال/مناقشات (تجميعات) 2022/مناقشات سبتمبر2022/ابطال الديجيتال",
+      "priority": 1,
+      "url": "https://drive.google.com/drive/folders/1ljlPf9CikJpug7XrYXNhdmkm7pkfCCEB"
+    },
+    {
+      "title": "مناقشات نوفمبر 2022",
+      "id": "1ltQFVPggkQ9aPs-6Z8UJb0Ue7i6PaoaO",
+      "path": "ابطال الديجيتال/مناقشات (تجميعات) 2022/مناقشات نوفمبر 2022",
+      "priority": 1,
+      "url": "https://drive.google.com/drive/folders/1ltQFVPggkQ9aPs-6Z8UJb0Ue7i6PaoaO"
+    },
+    {
+      "title": "ابطال الديجيتال",
+      "id": "1lu5jmWmTcCyfkklW5wc6YqJQqFApzJvu",
+      "path": "ابطال الديجيتال/مناقشات (تجميعات) 2022/مناقشات نوفمبر 2022/ابطال الديجيتال",
+      "priority": 1,
+      "url": "https://drive.google.com/drive/folders/1lu5jmWmTcCyfkklW5wc6YqJQqFApzJvu"
+    },
+    {
+      "title": "مناقشات (تجميعات) 2024",
+      "id": "1wTyOzgy6t4hLUIZUXf3EVX37DaiXUtjm",
+      "path": "ابطال الديجيتال/مناقشات (تجميعات) 2024",
+      "priority": 1,
+      "url": "https://drive.google.com/drive/folders/1wTyOzgy6t4hLUIZUXf3EVX37DaiXUtjm"
+    },
+    {
+      "title": "جولاي - اوقست 2024",
+      "id": "172u0XLf_CzTVLlXzWrJjImgtHzyhRK8Z",
+      "path": "ابطال الديجيتال/مناقشات (تجميعات) 2024/جولاي - اوقست 2024",
+      "priority": 1,
+      "url": "https://drive.google.com/drive/folders/172u0XLf_CzTVLlXzWrJjImgtHzyhRK8Z"
+    },
+    {
+      "title": "ديسمبر2024",
+      "id": "1RRfUNhWDdFgyIcrkUn_I7bl5dmyXQiCw",
+      "path": "ابطال الديجيتال/مناقشات (تجميعات) 2024/ديسمبر2024",
+      "priority": 1,
+      "url": "https://drive.google.com/drive/folders/1RRfUNhWDdFgyIcrkUn_I7bl5dmyXQiCw"
+    },
+    {
+      "title": "سبتمبر-اوكتوبر 2024",
+      "id": "1_0Z4eoVvTRF5VJmQiLZZv924AM3z1eGf",
+      "path": "ابطال الديجيتال/مناقشات (تجميعات) 2024/سبتمبر-اوكتوبر 2024",
+      "priority": 1,
+      "url": "https://drive.google.com/drive/folders/1_0Z4eoVvTRF5VJmQiLZZv924AM3z1eGf"
+    },
+    {
+      "title": "مارش-جون 2024",
+      "id": "1cVMB59_G22tPlkd0VDcPP_aHqWtDrDmE",
+      "path": "ابطال الديجيتال/مناقشات (تجميعات) 2024/مارش-جون 2024",
+      "priority": 1,
+      "url": "https://drive.google.com/drive/folders/1cVMB59_G22tPlkd0VDcPP_aHqWtDrDmE"
+    },
+    {
+      "title": "نوفمبر 2024",
+      "id": "1Ph6OQ_qoRd8g_aGIiEIcVcpnnVWfSa1m",
+      "path": "ابطال الديجيتال/مناقشات (تجميعات) 2024/نوفمبر 2024",
+      "priority": 1,
+      "url": "https://drive.google.com/drive/folders/1Ph6OQ_qoRd8g_aGIiEIcVcpnnVWfSa1m"
+    },
+    {
+      "title": "يناير -فبراير 2024",
+      "id": "1wW1Sr9JqqEkbw8p5zZjlFUPO8arpri8N",
+      "path": "ابطال الديجيتال/مناقشات (تجميعات) 2024/يناير -فبراير 2024",
+      "priority": 1,
+      "url": "https://drive.google.com/drive/folders/1wW1Sr9JqqEkbw8p5zZjlFUPO8arpri8N"
+    },
+    {
+      "title": "مناقشات (تجميعات) 2025",
+      "id": "1_aUusYkemV4qHfsy--qGjgfX1iMIksYP",
+      "path": "ابطال الديجيتال/مناقشات (تجميعات) 2025",
+      "priority": 1,
+      "url": "https://drive.google.com/drive/folders/1_aUusYkemV4qHfsy--qGjgfX1iMIksYP"
+    },
+    {
+      "title": "تجميعات  2026",
+      "id": "1V1D_aFMVYzmVz8EnD4HKAhOsVpnCejab",
+      "path": "تجميعات  2026",
+      "priority": 1,
+      "url": "https://drive.google.com/drive/folders/1V1D_aFMVYzmVz8EnD4HKAhOsVpnCejab"
+    },
+    {
+      "title": "تجميعات 2019",
+      "id": "1gvIQARrm5xwULsGMnBA_uFqmdQYBLeEJ",
+      "path": "تجميعات 2019",
+      "priority": 1,
+      "url": "https://drive.google.com/drive/folders/1gvIQARrm5xwULsGMnBA_uFqmdQYBLeEJ"
+    },
+    {
+      "title": "تجميعات 2020",
+      "id": "1guuB4mz4jzn0Z6B09uOW9Wh44j1H9oza",
+      "path": "تجميعات 2020",
+      "priority": 1,
+      "url": "https://drive.google.com/drive/folders/1guuB4mz4jzn0Z6B09uOW9Wh44j1H9oza"
+    },
+    {
+      "title": "10",
+      "id": "1hnY7NC1A0U9i0aDCY3zHjANmpnQTkl3A",
+      "path": "تجميعات 2020/10",
+      "priority": 1,
+      "url": "https://drive.google.com/drive/folders/1hnY7NC1A0U9i0aDCY3zHjANmpnQTkl3A"
+    },
+    {
+      "title": "11",
+      "id": "1hoXSW1Q48YnnkG3HzSklE7VB6vq_nlqf",
+      "path": "تجميعات 2020/11",
+      "priority": 1,
+      "url": "https://drive.google.com/drive/folders/1hoXSW1Q48YnnkG3HzSklE7VB6vq_nlqf"
+    },
+    {
+      "title": "12",
+      "id": "1i3qYzGr4JsmVcV8K-66xs7pJ2j8PnZrP",
+      "path": "تجميعات 2020/12",
+      "priority": 1,
+      "url": "https://drive.google.com/drive/folders/1i3qYzGr4JsmVcV8K-66xs7pJ2j8PnZrP"
+    },
+    {
+      "title": "2",
+      "id": "1i3mLvTNaDL20BkoPxNqnR4ABTjXDy9dH",
+      "path": "تجميعات 2020/2",
+      "priority": 1,
+      "url": "https://drive.google.com/drive/folders/1i3mLvTNaDL20BkoPxNqnR4ABTjXDy9dH"
+    },
+    {
+      "title": "3",
+      "id": "1i4iguMAXwLlErLzhy4n5cYijm4-kqLMI",
+      "path": "تجميعات 2020/3",
+      "priority": 1,
+      "url": "https://drive.google.com/drive/folders/1i4iguMAXwLlErLzhy4n5cYijm4-kqLMI"
+    },
+    {
+      "title": "6",
+      "id": "1i4UaAtVC1n-rdP6PNTwEYx3fMwYgGirS",
+      "path": "تجميعات 2020/6",
+      "priority": 1,
+      "url": "https://drive.google.com/drive/folders/1i4UaAtVC1n-rdP6PNTwEYx3fMwYgGirS"
+    },
+    {
+      "title": "7",
+      "id": "1hasLUjaVdC2f6zGecGuXkxAKx-nPUz0u",
+      "path": "تجميعات 2020/7",
+      "priority": 1,
+      "url": "https://drive.google.com/drive/folders/1hasLUjaVdC2f6zGecGuXkxAKx-nPUz0u"
+    },
+    {
+      "title": "8",
+      "id": "1hc5BVdr-rFSJ3ANUmKBk3xusMk2D-dZF",
+      "path": "تجميعات 2020/8",
+      "priority": 1,
+      "url": "https://drive.google.com/drive/folders/1hc5BVdr-rFSJ3ANUmKBk3xusMk2D-dZF"
+    },
+    {
+      "title": "9",
+      "id": "1hcOT82cxoI3S47b4BzraVNJff2ejQNjG",
+      "path": "تجميعات 2020/9",
+      "priority": 1,
+      "url": "https://drive.google.com/drive/folders/1hcOT82cxoI3S47b4BzraVNJff2ejQNjG"
+    },
+    {
+      "title": "شامل",
+      "id": "1haV_8vLMsVV1mFHuOVOxqDTQ4KtEttrT",
+      "path": "تجميعات 2020/شامل",
+      "priority": 1,
+      "url": "https://drive.google.com/drive/folders/1haV_8vLMsVV1mFHuOVOxqDTQ4KtEttrT"
+    },
+    {
+      "title": "تجميعات 2021",
+      "id": "1XvOzwF06LCn7CZm2Hav_idf4S4WOHnkr",
+      "path": "تجميعات 2021",
+      "priority": 1,
+      "url": "https://drive.google.com/drive/folders/1XvOzwF06LCn7CZm2Hav_idf4S4WOHnkr"
+    },
+    {
+      "title": "تجميعات الملك  سعود(ممنوعه من النشر)",
+      "id": "1ipRTWwn_2cwUacTEN2LqJE81MEtB6XO2",
+      "path": "تجميعات 2021/تجميعات الملك  سعود(ممنوعه من النشر)",
+      "priority": 1,
+      "url": "https://drive.google.com/drive/folders/1ipRTWwn_2cwUacTEN2LqJE81MEtB6XO2"
+    },
+    {
+      "title": "مناقشات  يناير 2021",
+      "id": "1h2Tq3ttduW8ZrbtgsUHHtiMT69pnJEj9",
+      "path": "تجميعات 2021/مناقشات  يناير 2021",
+      "priority": 1,
+      "url": "https://drive.google.com/drive/folders/1h2Tq3ttduW8ZrbtgsUHHtiMT69pnJEj9"
+    },
+    {
+      "title": "شامل",
+      "id": "1iFGZxp7kzjVCYS-qqsbttFt7YYw2f7IN",
+      "path": "تجميعات 2021/مناقشات  يناير 2021/شامل",
+      "priority": 1,
+      "url": "https://drive.google.com/drive/folders/1iFGZxp7kzjVCYS-qqsbttFt7YYw2f7IN"
+    },
+    {
+      "title": "مناقشات ابريل 2021",
+      "id": "1WTcZmpxLG8K0cg1cjNnzIYMhlhVnCXfW",
+      "path": "تجميعات 2021/مناقشات ابريل 2021",
+      "priority": 1,
+      "url": "https://drive.google.com/drive/folders/1WTcZmpxLG8K0cg1cjNnzIYMhlhVnCXfW"
+    },
+    {
+      "title": "شامل",
+      "id": "1iqpIzTzwGmTcZ4u0oya-wRs5vvN1a1om",
+      "path": "تجميعات 2021/مناقشات ابريل 2021/شامل",
+      "priority": 1,
+      "url": "https://drive.google.com/drive/folders/1iqpIzTzwGmTcZ4u0oya-wRs5vvN1a1om"
+    },
+    {
+      "title": "مناقشات اغسطس 2021",
+      "id": "1WFEkImOpKFNukkKmc_IEfzijf3QhJ9vI",
+      "path": "تجميعات 2021/مناقشات اغسطس 2021",
+      "priority": 1,
+      "url": "https://drive.google.com/drive/folders/1WFEkImOpKFNukkKmc_IEfzijf3QhJ9vI"
+    },
+    {
+      "title": "شامل",
+      "id": "1itkVFsXU67ZGQPFwOHvkJRPlYyIG7H3r",
+      "path": "تجميعات 2021/مناقشات اغسطس 2021/شامل",
+      "priority": 1,
+      "url": "https://drive.google.com/drive/folders/1itkVFsXU67ZGQPFwOHvkJRPlYyIG7H3r"
+    },
+    {
+      "title": "مناقشات اكتوبر2021",
+      "id": "15_1pAByGcGxIBeTf0LSH0e0-UD4NeYxx",
+      "path": "تجميعات 2021/مناقشات اكتوبر2021",
+      "priority": 1,
+      "url": "https://drive.google.com/drive/folders/15_1pAByGcGxIBeTf0LSH0e0-UD4NeYxx"
+    },
+    {
+      "title": "شامل",
+      "id": "1ivOYbmdcs1DvC_xmh_oxV160G85OeJmk",
+      "path": "تجميعات 2021/مناقشات اكتوبر2021/شامل",
+      "priority": 1,
+      "url": "https://drive.google.com/drive/folders/1ivOYbmdcs1DvC_xmh_oxV160G85OeJmk"
+    },
+    {
+      "title": "مناقشات ديسمبر 2021",
+      "id": "1Y5aGlcOhS6aFuVINgtaj8iu82xqboTEb",
+      "path": "تجميعات 2021/مناقشات ديسمبر 2021",
+      "priority": 1,
+      "url": "https://drive.google.com/drive/folders/1Y5aGlcOhS6aFuVINgtaj8iu82xqboTEb"
+    },
+    {
+      "title": "شامل",
+      "id": "1ivfZ-r0Kv9wkjTYmwJiqDhScJSnEIiAi",
+      "path": "تجميعات 2021/مناقشات ديسمبر 2021/شامل",
+      "priority": 1,
+      "url": "https://drive.google.com/drive/folders/1ivfZ-r0Kv9wkjTYmwJiqDhScJSnEIiAi"
+    },
+    {
+      "title": "مناقشات سبتمبر2021",
+      "id": "1Wdz8DJEkH4nuk76otqNz5lYaKMj3xoSQ",
+      "path": "تجميعات 2021/مناقشات سبتمبر2021",
+      "priority": 1,
+      "url": "https://drive.google.com/drive/folders/1Wdz8DJEkH4nuk76otqNz5lYaKMj3xoSQ"
+    },
+    {
+      "title": "شامل",
+      "id": "1iu3WEqnXxIsF513whX0O7XaL0j9MBWqX",
+      "path": "تجميعات 2021/مناقشات سبتمبر2021/شامل",
+      "priority": 1,
+      "url": "https://drive.google.com/drive/folders/1iu3WEqnXxIsF513whX0O7XaL0j9MBWqX"
+    },
+    {
+      "title": "مناقشات فبراير2021",
+      "id": "1h1cl6mCWZhELjzSgAnRoF2ElGDppYX4m",
+      "path": "تجميعات 2021/مناقشات فبراير2021",
+      "priority": 1,
+      "url": "https://drive.google.com/drive/folders/1h1cl6mCWZhELjzSgAnRoF2ElGDppYX4m"
+    },
+    {
+      "title": "مناقشات مارس 2021",
+      "id": "1h1blKj5bv5FcIgQWe8cEUbJbuIUVN7_L",
+      "path": "تجميعات 2021/مناقشات مارس 2021",
+      "priority": 1,
+      "url": "https://drive.google.com/drive/folders/1h1blKj5bv5FcIgQWe8cEUbJbuIUVN7_L"
+    },
+    {
+      "title": "شامل",
+      "id": "1irzQL8RL44vFHa9ZZu3gtMgc22tsLAM3",
+      "path": "تجميعات 2021/مناقشات مارس 2021/شامل",
+      "priority": 1,
+      "url": "https://drive.google.com/drive/folders/1irzQL8RL44vFHa9ZZu3gtMgc22tsLAM3"
+    },
+    {
+      "title": "مناقشات مايو2021",
+      "id": "1Wk3DR1wv1wXGK6dFHqh4Eso8A6Susit1",
+      "path": "تجميعات 2021/مناقشات مايو2021",
+      "priority": 1,
+      "url": "https://drive.google.com/drive/folders/1Wk3DR1wv1wXGK6dFHqh4Eso8A6Susit1"
+    },
+    {
+      "title": "شامل",
+      "id": "1it5mi0bKDVXCVRs4aibtY3CpwelQ4OrQ",
+      "path": "تجميعات 2021/مناقشات مايو2021/شامل",
+      "priority": 1,
+      "url": "https://drive.google.com/drive/folders/1it5mi0bKDVXCVRs4aibtY3CpwelQ4OrQ"
+    },
+    {
+      "title": "مناقشات نوفمبر 2021",
+      "id": "15_3zwXfOa6JfkUOYLFvD-taEiXc674E-",
+      "path": "تجميعات 2021/مناقشات نوفمبر 2021",
+      "priority": 1,
+      "url": "https://drive.google.com/drive/folders/15_3zwXfOa6JfkUOYLFvD-taEiXc674E-"
+    },
+    {
+      "title": "شامل",
+      "id": "1iva0w7OPlDJOAdcbySCi4cyF03Xblpp0",
+      "path": "تجميعات 2021/مناقشات نوفمبر 2021/شامل",
+      "priority": 1,
+      "url": "https://drive.google.com/drive/folders/1iva0w7OPlDJOAdcbySCi4cyF03Xblpp0"
+    },
+    {
+      "title": "مناقشات يوليو2021",
+      "id": "1WRuh9-Bnj9tR7QjSyrwBZEpZ23jpXV1l",
+      "path": "تجميعات 2021/مناقشات يوليو2021",
+      "priority": 1,
+      "url": "https://drive.google.com/drive/folders/1WRuh9-Bnj9tR7QjSyrwBZEpZ23jpXV1l"
+    },
+    {
+      "title": "شامل",
+      "id": "1itiXWcmS1K9J9bJOIkUvWn3mtcS54IxR",
+      "path": "تجميعات 2021/مناقشات يوليو2021/شامل",
+      "priority": 1,
+      "url": "https://drive.google.com/drive/folders/1itiXWcmS1K9J9bJOIkUvWn3mtcS54IxR"
+    },
+    {
+      "title": "مناقشات يونيو 2021",
+      "id": "1Wc_gcvdvKMRXKhoBeIGD5D1yZuKK_VOd",
+      "path": "تجميعات 2021/مناقشات يونيو 2021",
+      "priority": 1,
+      "url": "https://drive.google.com/drive/folders/1Wc_gcvdvKMRXKhoBeIGD5D1yZuKK_VOd"
+    },
+    {
+      "title": "شامل",
+      "id": "1itOsALqnCcCciQmAu0XhlftMWNG0XzRd",
+      "path": "تجميعات 2021/مناقشات يونيو 2021/شامل",
+      "priority": 1,
+      "url": "https://drive.google.com/drive/folders/1itOsALqnCcCciQmAu0XhlftMWNG0XzRd"
+    },
+    {
+      "title": "تجميعات 2022",
+      "id": "1XvkpWkQVKPEMURW6M1MOoq3NbmDzFQHy",
+      "path": "تجميعات 2022",
+      "priority": 1,
+      "url": "https://drive.google.com/drive/folders/1XvkpWkQVKPEMURW6M1MOoq3NbmDzFQHy"
+    },
+    {
+      "title": "مناقشات  يناير 2022",
+      "id": "18DthclJlhlTqmGmcmFh4i-Bm2bBe_NSQ",
+      "path": "تجميعات 2022/مناقشات  يناير 2022",
+      "priority": 1,
+      "url": "https://drive.google.com/drive/folders/18DthclJlhlTqmGmcmFh4i-Bm2bBe_NSQ"
+    },
+    {
+      "title": "شامل",
+      "id": "1aZ2InuG9fHxFbZPpNVBOvdA6BbDaog3r",
+      "path": "تجميعات 2022/مناقشات  يناير 2022/شامل",
+      "priority": 1,
+      "url": "https://drive.google.com/drive/folders/1aZ2InuG9fHxFbZPpNVBOvdA6BbDaog3r"
+    },
+    {
+      "title": "مناقشات ابريل 2022",
+      "id": "1OXTbzTlDKsZVvuAeQpJTa1LVkPzEvOlV",
+      "path": "تجميعات 2022/مناقشات ابريل 2022",
+      "priority": 1,
+      "url": "https://drive.google.com/drive/folders/1OXTbzTlDKsZVvuAeQpJTa1LVkPzEvOlV"
+    },
+    {
+      "title": "شامل",
+      "id": "1aZjqMr18LXQzBkhhEoHyt0P8emFnKnFP",
+      "path": "تجميعات 2022/مناقشات ابريل 2022/شامل",
+      "priority": 1,
+      "url": "https://drive.google.com/drive/folders/1aZjqMr18LXQzBkhhEoHyt0P8emFnKnFP"
+    },
+    {
+      "title": "مناقشات اغسطس 2022",
+      "id": "1ZnVaf2xNbssLQCJLy3TXvJJD3hdcpOqw",
+      "path": "تجميعات 2022/مناقشات اغسطس 2022",
+      "priority": 1,
+      "url": "https://drive.google.com/drive/folders/1ZnVaf2xNbssLQCJLy3TXvJJD3hdcpOqw"
+    }
+  ]
+}

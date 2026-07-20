@@ -1,0 +1,429 @@
+{
+  "wave": "01_saud_delta",
+  "chunk": 6,
+  "count": 30,
+  "instruction": "Audit each MCQ. Correct answer_index + clinical hinge. Set flip if changing answer.",
+  "system": "You are auditing KSA SDLE / Prometric-style dental MCQs for a study app.\nRules:\n- Community/PDF ✅ marks are often wrong — decide by clinical board standard, not the mark.\n- Output ONLY a valid JSON array (no markdown fences).\n- Each object MUST have:\n  id, answer_index (0-3), confidence (high|med|low),\n  hinge (clinical why, 1-3 sentences, English),\n  flip (boolean: true if answer_index differs from answer_index_in),\n  department (operative|fixed|rpd|endo|perio|oms|ortho_pedo|ethics|mixed)\n- If image-only / impossible: answer_index null, usable false, hinge explains.\n- operative = direct restorations/preps/materials technique; fixed/rpd = prostho; do not dump all into restorative.\n- Do not invent textbook page numbers.\n",
+  "items": [
+    {
+      "id": "saud_delta_244",
+      "q": "Axial cbct type of bone defect",
+      "options": [
+        "wall 3",
+        "wall",
+        "ZOE",
+        "Sebaceous gland"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "Axial CBCT sections show how many bony walls remain around an infrabony defect. A three-wall defect (three remaining walls) is the classic morphology assessed on axial imaging and has the best regenerative prognosis.",
+      "topic_in": "mixed",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_245",
+      "q": "Splitting nail, smooth red tongue, pale, jaundice Lab finding show: RBC low MCV low",
+      "options": [
+        "pernicious anemia",
+        "max sinusitis",
+        "Syphilis",
+        "iron deficiency"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "Koilonychia (spoon nails), smooth red tongue, pallor, and microcytic anemia (low RBC and low MCV) point to iron-deficiency anemia. Pernicious anemia is macrocytic (high MCV) from B12 deficiency, so it is excluded.",
+      "topic_in": "oms",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_248",
+      "q": "y/o pt. , came to the clinic seeking to replace lower Right , 1st and 2nd premolars Patient has minor salivary gland disease associated with xerostomia What is the best prosthetic tx. Can be given",
+      "options": [
+        "Implant supported partial FPD",
+        "RPD",
+        "Resin bonded FPD",
+        "Conventional FPD"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "Severe xerostomia from minor salivary disease makes mucosa-borne RPDs poorly retained and traumatic. Tooth- or implant-supported fixed options avoid reliance on saliva; implant-supported partial FPD is preferred for replacing two premolars when abutments/implants allow.",
+      "topic_in": "restorative",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_249",
+      "q": "What is the clear Pic of minor salivary gland biopsy with sarcoidosis",
+      "options": [
+        "fibrosis",
+        "acnthosis",
+        "acinar hypertrop",
+        "granulation inflammation"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "Sarcoidosis on minor salivary-gland biopsy shows noncaseating granulomatous (granulomatous/granulation-type) inflammation. Fibrosis, acanthosis, and acinar hypertrophy are not the diagnostic histologic pattern.",
+      "topic_in": "oms",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_251",
+      "q": "How many time need for rest tissue from RPD to take impressions to do new RPD",
+      "options": [
+        "Etched porcelain",
+        "A-24 hour",
+        "B-1 week",
+        "Investigate gi problems and diet"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "Before a definitive impression for a new RPD, tissues distorted by an old prosthesis need rest. Leaving the old RPD out about 24 hours (tissue rest) is the common exam interval among the listed choices so mucosa can rebound before impression.",
+      "topic_in": "restorative",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_252",
+      "q": "How long space between major connector and gigval margin in upper",
+      "options": [
+        "b- 6",
+        "a- 3",
+        "Soak them in non ionizing solution",
+        "Pt preferences"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "Maxillary major connectors should clear free gingival margins by about 6 mm to avoid plaque trapping and gingival inflammation. About 3 mm is the usual mandibular clearance figure, not maxillary.",
+      "topic_in": "ethics",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_255",
+      "q": "What’s the first sign of myxedema coma of pt with hypothyroidism",
+      "options": [
+        "Bradycardia",
+        "Hypothermia",
+        "Hyperthermia",
+        "Syncope"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "Myxedema coma is severe hypothyroidism with altered mental status; hypothermia is the hallmark early/clinical sign from failed thermoregulation. Bradycardia occurs but hypothermia is classically cited as the key first/cardinal finding.",
+      "topic_in": "oms",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_257",
+      "q": "Case of deep pockets, after scaling and root planning, what do u think will happen to the connective tissue: Increase- Decrease",
+      "options": [
+        "Soak them in non ionizing solution",
+        "Pt preferences",
+        "Dental tape with prophy paste",
+        "Regress then increase"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "After scaling and root planing, inflamed connective tissue and long junctional epithelium remodel: pocket depth and inflammatory infiltrate first regress, then collagen organization and attachment quality increase during healing.",
+      "topic_in": "ethics",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_259",
+      "q": "female pt, brought her inhaler, didn’t mention anything about her MHx, she suddenly became aggressive, other symptoms",
+      "options": [
+        "max sinusitis",
+        "Hyperventilation syndrome",
+        "Hypoglycemia",
+        "Hypothyroidism"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "Acute agitation with an unused/mentioned inhaler and no clear asthma story fits hyperventilation syndrome (anxiety-driven tachypnea, lightheadedness, aggression/panic). Hypoglycemia needs diabetes context; hypothyroidism is not an acute aggressive attack.",
+      "topic_in": "oms",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_261",
+      "q": "Restoration not used as final restoration: CAVIT",
+      "options": [
+        "Investigate gi problems and diet",
+        "Etched porcelain",
+        "contact on anterior and posterior",
+        "Restoration not used as final restoration: CAVIT"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "Cavit is a temporary zinc oxide–based endodontic provisional only. It lacks strength, long-term seal, and wear resistance for definitive restoration and must be replaced with a proper temporary or permanent material after treatment. It is not a final restorative option; the other listed distractors (GI workup, etched porcelain, occlusal contact scheme) are not provisional materials at all.",
+      "topic_in": "restorative",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_262",
+      "q": "Case of pediatric pt, had history in upper anterior tooth, which is discolored, the mother said it was dark after trauma, became lighter with time what is ur management",
+      "options": [
+        "Pt preferences",
+        "Dental tape with prophy paste",
+        "follow up",
+        "Soak them in non ionizing solution"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "Primary upper anterior that darkens after trauma then spontaneously lightens suggests transient pulp hemorrhage/resorption of pigment with recovering vitality. Observation/follow-up with vitality testing is preferred over immediate invasive treatment.",
+      "topic_in": "ethics",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_263",
+      "q": "pt needs prophylactic antibiotic, no allergies, pt not able to take her medications orally",
+      "options": [
+        "mg azithromycin",
+        "IM ampicillin",
+        "g amoxicillin",
+        "mg clindamycin"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "When IE prophylaxis is indicated and the patient cannot take oral meds, parenteral ampicillin (IM/IV, typically 2 g) is the standard substitute. Oral amoxicillin, azithromycin, or clindamycin apply only if oral dosing is possible.",
+      "topic_in": "mixed",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_264",
+      "q": "case about implant and tooth with connected crowns, what will happen periimplantitis",
+      "options": [
+        "cement failure in tooth",
+        "Soak them in non ionizing solution",
+        "Pt preferences",
+        "Dental tape with prophy paste"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "Rigidly connecting a natural tooth to an implant loads the tooth’s PDL differently from the osseointegrated implant. Relative intrusion or mobility of the tooth tends to break the cement seal on the tooth abutment rather than equally stressing both units.",
+      "topic_in": "ethics",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_265",
+      "q": "child with multiple caries and abscess and ask what is the diagnosis be carful the question ask about diagnosis not type of neglect A-Child neglect",
+      "options": [
+        "C-physical abuse",
+        "Investigate gi problems and diet",
+        "Etched porcelain",
+        "B-Sever early childhood caries"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "Multiple caries and abscesses in a young child define severe early childhood caries as the clinical dental diagnosis. Neglect may be a social risk factor, but the question asks for the disease diagnosis, not the type of maltreatment.",
+      "topic_in": "restorative",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_266",
+      "q": "Energy required to stress the material to point of fracture",
+      "options": [
+        "max sinusitis",
+        "Syphilis",
+        "A-Toughness",
+        "B-Modulus of Elasticity"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "Toughness is the energy absorbed per unit volume up to fracture (area under the stress–strain curve). Modulus of elasticity is stiffness (slope of the elastic portion), not total energy to break.",
+      "topic_in": "oms",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_267",
+      "q": "Patient with 40% plaque index and 20% bop how you describe the patient",
+      "options": [
+        "D- know how to brush and brush",
+        "B-don’t know how to brush but try",
+        "A-know how to brush but don’t brush",
+        "C-don’t know how to brush and don’t try"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "Plaque index ~40% with BOP ~20% means substantial plaque remains despite some cleaning effort and moderate inflammation. That pattern matches inadequate technique with attempted brushing rather than total non-brushing or perfect technique without brushing.",
+      "topic_in": "mixed",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_268",
+      "q": "Mouth breather tx? Expansion",
+      "options": [
+        "Mouth breather tx? Expansion",
+        "apert syndrome",
+        "mg/day",
+        "gingival swelling buccal to the tooth -2"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "Chronic mouth breathing often links to maxillary constriction and crossbite/narrow arch. Orthopedic maxillary expansion improves nasal airway space and transverse arch form as the main skeletal/orthodontic treatment hinge.",
+      "topic_in": "ortho_pedo",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_269",
+      "q": "Droplet infection HBV",
+      "options": [
+        "ZOE",
+        "Sebaceous gland",
+        "👍🏻 Mucoepidermoid carcinoma",
+        "Droplet infection?HBV"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "Among the garbled options, the item targets HBV transmission context. HBV is blood- and body-fluid–borne (percutaneous/mucosal), not a classic respiratory droplet pathogen like influenza; the keyed option is the only HBV-related choice in this bank item.",
+      "topic_in": "mixed",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_270",
+      "q": "What causes bleaching of denture: Carbohydrates and white lesions",
+      "options": [
+        "Etched porcelain",
+        "contact on anterior and posterior",
+        "Caries",
+        "Investigate gi problems and diet"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "Carbohydrate-driven demineralization under or around a prosthesis produces white-spot/caries lesions often described with denture hygiene problems. Caries is the pathologic process; diet investigation is adjunctive history, not the lesion type itself.",
+      "topic_in": "restorative",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_271",
+      "q": "type force of porcelain and metal in PFM",
+      "options": [
+        "Investigate gi problems and diet",
+        "compressive",
+        "tensile",
+        "shearing"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "Porcelain is brittle under tension but relatively strong under compression. PFM design (metal substructure support, coping geometry) keeps porcelain under compressive loading in function to reduce tensile cracking of the veneer. Tensile and shear stresses are the modes that more readily initiate ceramic fracture; GI/diet has no role in porcelain–metal force design.",
+      "topic_in": "restorative",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_272",
+      "q": "athletic had trauma and lost #21 what implant to choose",
+      "options": [
+        "bone level implant",
+        "helix implant",
+        "tissue mm implant",
+        "tissue level mm"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "After traumatic loss of an upper central (#21), a bone-level implant allows platform placement for soft-tissue thickness and esthetic emergence in the anterior maxilla. Tissue-level designs are less flexible for high-smile esthetic zones.",
+      "topic_in": "restorative",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_273",
+      "q": "brown discolouration in all of the teeth and under the ultraviolet light it becomes yellow discolouration",
+      "options": [
+        "ZOE",
+        "Sebaceous gland",
+        "👍🏻 Mucoepidermoid carcinoma",
+        "tetracycline"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "Generalized brown intrinsic discoloration that fluoresces yellow under ultraviolet light is classic for tetracycline staining during tooth formation. Extrinsic stains and most other intrinsic defects lack this UV fluorescence pattern.",
+      "topic_in": "mixed",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_274",
+      "q": "years with smooth and intact restoration with tight contact came with felling pain in gingiva and stick food , normal PD , cause",
+      "options": [
+        "Investigate gi problems and diet",
+        "Etched porcelain",
+        "decrease embrasure",
+        "Non plaque induced gingivitis"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "Intact restoration with tight contacts, normal probing depth, food impaction, and gingival pain suggests closed embrasures (decreased embrasure space) that trap food, not periodontal pocketing or plaque-induced disease alone.",
+      "topic_in": "restorative",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_275",
+      "q": "menstrual cycle related to the gingiva",
+      "options": [
+        "VZV",
+        "increase GCF",
+        "Marquis probe",
+        "reduce pocket depth"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "Hormonal changes of the menstrual cycle increase gingival vascularity and gingival crevicular fluid flow, producing transient gingivitis-like signs without necessarily changing pocket depth from true attachment loss.",
+      "topic_in": "perio",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_276",
+      "q": "Hypoplasia only on the tip of the incisor, premolar and posterior occlusion. What is the cause",
+      "options": [
+        "Parenteral maldeficency",
+        "Fluorosis",
+        "Amelogenesis",
+        "Dentinogenesis"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "Hypoplasia limited to incisal tips and cusp tips of premolars/molars marks a short systemic insult during early postnatal/perinatal crown formation (chronologic enamel hypoplasia from perinatal deficiency/illness), not generalized fluorosis or full amelogenesis imperfecta.",
+      "topic_in": "restorative",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_277",
+      "q": "What is the instremnet that sharpening line angles and creating retentive features in dentin in preparation for gold restorations. It also may be used in placing a bevel on enamel margins",
+      "options": [
+        "Investigate gi problems and diet",
+        "Etched porcelain",
+        "contact on anterior and posterior",
+        "angle former"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "The angle former is a hand instrument used to sharpen internal line angles, place retention features in dentin, and place enamel bevels—especially in cast gold cavity preparations. It is not a finishing strip or porcelain etchant.",
+      "topic_in": "restorative",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_278",
+      "q": "case scenario histology revealed perineural invasion. Dx",
+      "options": [
+        "Sebaceous gland",
+        "👍🏻 Mucoepidermoid carcinoma",
+        "Adenoid cystic carcinoma",
+        "ZOE"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "Perineural invasion on histology of a salivary neoplasm is a signature of adenoid cystic carcinoma, explaining pain and local spread along nerves. Mucoepidermoid carcinoma more often shows cystic/mucous and epidermoid cells without that classic perineural predilection.",
+      "topic_in": "mixed",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_279",
+      "q": "Pt complaining of hypocalcified teeth tx",
+      "options": [
+        "Investigate gi problems and diet",
+        "composite veneers",
+        "micro abrasion",
+        "bleaching"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "Generalized hypocalcified enamel needs masking of color and reinforcement of structure; composite veneers restore esthetics and protect weak enamel. Microabrasion/bleaching alone do not adequately treat substantial hypocalcification.",
+      "topic_in": "restorative",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_280",
+      "q": "most important thing in the dental notes he means documentation of the cases",
+      "options": [
+        "complete",
+        "objective",
+        "specific",
+        "Soak them in non ionizing solution"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "Legal and clinical quality of dental records hinges first on completeness: history, findings, diagnosis, consent, treatment, and follow-up must all be present. Objectivity and specificity matter but incomplete notes fail documentation standards even if tidy.",
+      "topic_in": "ethics",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_281",
+      "q": "Case with radiograph and the tooth is lengring with abscess what is the diagnosis",
+      "options": [
+        "Primary perio",
+        "Primary endo secondary perio",
+        "true combined",
+        "Primary endo"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "A nonvital or endodontically symptomatic tooth with an apical abscess and radiographic apical pathosis is primary endodontic disease. Primary periodontal disease would show deep pockets and crestal bone loss as the driver without a primary pulp source.",
+      "topic_in": "ortho_pedo",
+      "source": "saud_delta"
+    }
+  ]
+}

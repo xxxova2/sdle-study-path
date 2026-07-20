@@ -1,0 +1,429 @@
+{
+  "wave": "01_saud_delta",
+  "chunk": 4,
+  "count": 30,
+  "instruction": "Audit each MCQ. Correct answer_index + clinical hinge. Set flip if changing answer.",
+  "system": "You are auditing KSA SDLE / Prometric-style dental MCQs for a study app.\nRules:\n- Community/PDF ✅ marks are often wrong — decide by clinical board standard, not the mark.\n- Output ONLY a valid JSON array (no markdown fences).\n- Each object MUST have:\n  id, answer_index (0-3), confidence (high|med|low),\n  hinge (clinical why, 1-3 sentences, English),\n  flip (boolean: true if answer_index differs from answer_index_in),\n  department (operative|fixed|rpd|endo|perio|oms|ortho_pedo|ethics|mixed)\n- If image-only / impossible: answer_index null, usable false, hinge explains.\n- operative = direct restorations/preps/materials technique; fixed/rpd = prostho; do not dump all into restorative.\n- Do not invent textbook page numbers.\n",
+  "items": [
+    {
+      "id": "saud_delta_162",
+      "q": "Biopsy after parotid swelling shows:- Acinar atrophy",
+      "options": [
+        "max sinusitis",
+        "Syphilis",
+        "Acinar hypertrophy",
+        "Leukocyte infiltrate"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "Noninflammatory bilateral parotid enlargement (sialadenosis/sialadenosis-like patterns) is associated with acinar hypertrophy on histology. Inflammatory sialadenitis more often shows infiltrate and later acinar atrophy; among the listed options, acinar hypertrophy is the keyed biopsy finding for that swelling pattern.",
+      "topic_in": "oms",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_164",
+      "q": "Median rhomboid glossitis with upper CD what is the cause",
+      "options": [
+        "Candida",
+        "staphylococcus aureus",
+        "streptococcus mutans",
+        "Soak them in non ionizing solution"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "Median rhomboid glossitis is a form of chronic erythematous candidiasis of the midline posterior dorsal tongue and is strongly associated with Candida, often with kissing contact against the palate under a complete denture (chronic atrophic candidiasis). Staph/S. mutans are not the primary drivers.",
+      "topic_in": "ethics",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_165",
+      "q": "doctor has an accident needle inject from HIV patient (take his medication): -Wash your hands and send the patient to do test",
+      "options": [
+        "max sinusitis",
+        "Syphilis",
+        "Osteomyelitis",
+        "immediately go for post exposure prophylaxis"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "After a needlestick from an HIV-positive source, immediate first aid (wash) is followed by urgent occupational assessment and post-exposure prophylaxis started as soon as possible (ideally within hours), not delayed for source testing alone. PEP is the critical next clinical step among the options.",
+      "topic_in": "oms",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_166",
+      "q": "The junction of the mandibular minor connector with major connector is.",
+      "options": [
+        "ball and socket",
+        "there is no joint",
+        "butt type joint",
+        "acrylic forms the joint"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "In RPD design the mandibular minor connector joins the major connector at a rigid butt-type junction (right-angle/butt joint), not a ball-and-socket or acrylic ‘joint.’ This provides rigidity for force transmission without a movable articulation.",
+      "topic_in": "mixed",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_167",
+      "q": "Wits appraisal",
+      "options": [
+        "Sebaceous gland",
+        "Functional occlusal",
+        "Anatomical occlusal",
+        "ZOE"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "Wits appraisal measures the linear distance between projections of points A and B onto the functional occlusal plane (not the anatomic occlusal plane). It assesses sagittal jaw discrepancy independent of cranial-base angle variation.",
+      "topic_in": "mixed",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_168",
+      "q": "Waterline cleaned what is the most important to prevent biofilm accumulation",
+      "options": [
+        "stagnant",
+        "ZOE",
+        "Sebaceous gland",
+        "👍🏻 Mucoepidermoid carcinoma"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "Dental unit waterline biofilm thrives where water sits unused. Preventing stagnation (regular flushing, anti-retraction, chemical treatment, never leaving lines idle without management) is the key control measure against biofilm accumulation.",
+      "topic_in": "mixed",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_170",
+      "q": "Colleagues infecting each other (or something like that) definition of what",
+      "options": [
+        "Sebaceous gland",
+        "👍🏻 Mucoepidermoid carcinoma",
+        "cross infection",
+        "ZOE"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "Cross-infection is transmission of infectious agents between patients, staff, or environment during healthcare—including colleague-to-colleague spread via contaminated instruments, surfaces, or aerosols. That definition matches the stem.",
+      "topic_in": "mixed",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_172",
+      "q": "single stage implant dr put dome shaped to make the soft tissue open",
+      "options": [
+        "healing abutment",
+        "= emergency profile",
+        "Investigate gi problems and diet",
+        "Etched porcelain"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "In one-stage (non-submerged) implant protocols a transmucosal healing abutment (often dome-shaped) is placed at surgery so soft tissue heals around an open emergence profile. It shapes peri-implant mucosa until the definitive abutment/crown.",
+      "topic_in": "restorative",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_178",
+      "q": "Case scenario of patients with night sweating and sputum with blood what to suspect",
+      "options": [
+        "ZOE",
+        "Sebaceous gland",
+        "TB",
+        "Leukemia"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "Night sweats plus hemoptysis/blood-tinged sputum are classic red flags for pulmonary tuberculosis (or other serious lung disease). TB is the working diagnosis to suspect among the listed options until proven otherwise.",
+      "topic_in": "mixed",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_179",
+      "q": "Metal tray how you will disinfict",
+      "options": [
+        "use glutraldhyide 10% for 10 minutes",
+        "under hot water (correct)",
+        "Brush the metal tray",
+        "Manual"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "Metal impression trays are heat-stable; after cleaning, thermal processing (washer-disinfector/hot-water thermal disinfection pathway and/or autoclave as protocol allows) is preferred. Glutaraldehyde 10% for 10 minutes is not standard tray practice; brush-only is incomplete.",
+      "topic_in": "mixed",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_180",
+      "q": "Which of these added to MTA for radiopacity",
+      "options": [
+        "Bismuth oxide",
+        "NaOCl",
+        "Calcium silicate",
+        "Infraorbital"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "Conventional MTA formulations include bismuth oxide as the radiopacifier so the material is visible on radiographs. Calcium silicate is the hydraulic base; NaOCl is an irrigant, not an MTA radiopacity additive.",
+      "topic_in": "endo",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_183",
+      "q": "Pic of Apex locator in the red zone and asking about the file position",
+      "options": [
+        "ZOE",
+        "Beyond the apex",
+        "Short",
+        "At the apical constriction"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "On electronic apex locators, the red/over zone indicates the file tip has passed the apical foramen (beyond the apex). Green/zero typically marks the apical constriction; short readings stay coronal to that landmark.",
+      "topic_in": "mixed",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_184",
+      "q": "y o complaining from pain “relived when?”using aspirin",
+      "options": [
+        "cm>Osteoid Osteoma",
+        "Fibroma",
+        "ZOE",
+        "Sebaceous gland"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "Osteoid osteoma classically causes night pain that is dramatically relieved by NSAIDs/aspirin (prostaglandin-mediated). Fibroma and other listed distractors do not share that aspirin-responsive pain pattern.",
+      "topic_in": "mixed",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_185",
+      "q": "y o pt with history of cardiac problems presented with pitting edema in the last part of his leg, that’s indicate",
+      "options": [
+        "Infective endocarditis",
+        "Hypertension",
+        "ZOE",
+        "Heart failure"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "Dependent pitting edema of the lower legs in a patient with cardiac history indicates right-sided/congestive heart failure with fluid retention. Infective endocarditis and hypertension alone do not define that dependent edema sign.",
+      "topic_in": "mixed",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_186",
+      "q": "brushing technique for ortho pt",
+      "options": [
+        "mg/day",
+        "gingival swelling buccal to the tooth -2",
+        "charter Technique",
+        "apert syndrome"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "For fixed orthodontic appliances, the Charter (or modified Charter) brushing method angles bristles toward the occlusal/incisal aspect of brackets and uses vibratory strokes to clean under wires and around hardware better than Bass alone.",
+      "topic_in": "ortho_pedo",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_187",
+      "q": "Type of allergy of the rubber dam",
+      "options": [
+        "type IV",
+        "type I",
+        "type II",
+        "type III"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "Immediate latex rubber-dam allergy is type I (IgE-mediated) hypersensitivity—urticaria, bronchospasm, anaphylaxis. Delayed contact dermatitis from rubber chemicals is type IV; the acute latex protein reaction board hinge is type I.",
+      "topic_in": "mixed",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_188",
+      "q": "Patient came complaining of burning mouth with crusts on the corners (Picture showed bald red tongue with crusts on the corners of mouth looking like angular cheilitis) what should you ‫؟‬do Culture and sensitivity test",
+      "options": [
+        "Complete blood count",
+        "ZOE",
+        "Sebaceous gland",
+        "👍🏻 Mucoepidermoid carcinoma"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "Bald red (atrophic) tongue with angular cheilitis/crusting at the commissures suggests nutritional deficiency (iron, B12, folate) or anemia-related glossitis. Order CBC (and related labs) rather than assuming pure local infection alone.",
+      "topic_in": "mixed",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_189",
+      "q": "Which of these muscles depresses the mandible",
+      "options": [
+        "Medial Pterygoid",
+        "Masseter",
+        "Temporalis",
+        "Digastric"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "Primary jaw closers are masseter, temporalis, and medial pterygoid. Digastric (with lateral pterygoid and suprahyoids) depresses/opens the mandible. Among listed muscles, digastric is the depressor.",
+      "topic_in": "endo",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_191",
+      "q": "Patient extracted 43 and wanted a temporary RPD until the treatment is complete, how many rests do you place",
+      "options": [
+        "contact on anterior and posterior",
+        "No rests",
+        "Investigate gi problems and diet",
+        "Etched porcelain"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "A short-term interim/temporary RPD after a single extraction is usually acrylic-based without cast rests; rests are features of definitive cast frameworks. No rests is appropriate for a provisional flipper-style prosthesis until definitive care.",
+      "topic_in": "restorative",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_192",
+      "q": "Scenario about a patient with picture (Close up pic on the eyes having exophthalmos), with elevated blood pressure, what is the disease",
+      "options": [
+        "Graves disease",
+        "Thyroid Tumor",
+        "Hashimoto Disease",
+        "Hypothyroidism"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "Bilateral exophthalmos with systemic signs including hypertension/thyrotoxic features points to Graves disease (autoimmune hyperthyroidism with orbitopathy). Hashimoto/hypothyroidism lack this classic proptosis pattern; tumor is usually unilateral.",
+      "topic_in": "oms",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_193",
+      "q": "How to confirm VRF",
+      "options": [
+        "Cbct",
+        "Multiple PAs",
+        "Investigate gi problems and diet",
+        "Surgical exploratory"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "Vertical root fracture is confirmed definitively by direct visualization (surgical exploration/flap or extraction inspection). CBCT and multiple PAs can support suspicion but do not always prove VRF; exploratory surgery is the gold-standard confirmation.",
+      "topic_in": "restorative",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_194",
+      "q": "A large open contacts how to clean Floss",
+      "options": [
+        "Super floss",
+        "Investigate gi problems and diet",
+        "Interdental brush",
+        "Conventional brush"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "Large open interproximal contacts are cleaned most effectively with an interdental brush sized to the embrasure. Standard floss and superfloss work better in tight contacts; a conventional toothbrush alone does not clean mid-embrasure plaque well.",
+      "topic_in": "restorative",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_195",
+      "q": "Most common hypersensitivity with recession",
+      "options": [
+        "Investigate gi problems and diet",
+        "Cervical root",
+        "Mid root",
+        "Cervical crown"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "Recession-related dentin hypersensitivity localizes to exposed cervical root dentin near the CEJ, where open tubules face thermal/tactile stimuli. Mid-root bulk is usually covered by gingiva or cementum and is not the classic sensitive site. Cervical crown enamel lacks patent dentinal tubules. GI/diet may contribute to erosion but the anatomic site of recession hypersensitivity is cervical root.",
+      "topic_in": "restorative",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_198",
+      "q": "chemo-mechanical caries removal",
+      "options": [
+        "Etched porcelain",
+        "contact on anterior and posterior",
+        "carisolv",
+        "Investigate gi problems and diet"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "Carisolv is a chemomechanical caries-removal system (NaOCl-based gel with amino acids) that softens infected dentin for selective hand excavation without rotary cutting as the primary method. Etched porcelain and occlusal contact schemes are restorative/occlusal concepts, not chemo-mechanical excavation agents. GI/diet investigation does not remove carious dentin.",
+      "topic_in": "restorative",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_199",
+      "q": "not giving flouride varnish",
+      "options": [
+        "Sebaceous gland",
+        "Renal",
+        "Liver",
+        "ZOE"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "Significant renal impairment is a classic caution for fluoride exposure because reduced renal clearance raises systemic fluoride load. Among listed organ systems, renal disease is the keyed reason to avoid/limit fluoride varnish or systemic fluoride decisions per protocol.",
+      "topic_in": "mixed",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_200",
+      "q": "Doctor at beginning of the clinic he greets the patient and patient started to talk about he was traveling the south and taking about his family farm, doctor was interrupted him and ask about the specific complain. The doctor violate? what",
+      "options": [
+        "Treat pt as person",
+        "Patient privacy",
+        "Informed consent",
+        "Soak them in non ionizing solution"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "Abruptly cutting off a patient’s personal narrative solely to demand the chief complaint violates treating the patient as a person (respect, listening, person-centered care). It is not primarily a privacy, consent, or disinfection issue.",
+      "topic_in": "ethics",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_201",
+      "q": "disadvantage of silver poin",
+      "options": [
+        "ZOE",
+        "Sebaceous gland",
+        "👍🏻 Mucoepidermoid carcinoma",
+        "corroded will cause toxicity"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "Silver points corrode in tissue fluids; corrosion products are toxic and associated with inflammation and treatment failure. Corrosion-related toxicity is the classic disadvantage that led to abandonment of silver points.",
+      "topic_in": "mixed",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_203",
+      "q": "How to confirm a Crack in tooth",
+      "options": [
+        "ZOE",
+        "Transillumination",
+        "Pain with release bite",
+        "Pain on percussio"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "Transillumination (fiber-optic light) helps visualize crack lines as they block light transmission. Bite-on-release pain supports cracked-tooth syndrome clinically, but among options, transillumination is the direct confirmatory chairside optical test for a crack.",
+      "topic_in": "mixed",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_205",
+      "q": "pt has slight undercut in tuberosities and anterior maxilla surgical removal of both - surgical removal of anterior undercut - no tx because it helps in retention",
+      "options": [
+        "surgical removal of both ‫هنختار‬.. slight ‫خد بالك لو مقالش‬",
+        "Investigate gi problems and diet",
+        "Etched porcelain",
+        "relief of the tuberosities undercut"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "Mild bilateral tuberosity undercuts that aid denture retention are often managed by relieving the denture base rather than surgically removing both undercuts. Aggressive bilateral reduction is reserved when insertion path or trauma makes undercuts harmful.",
+      "topic_in": "restorative",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_206",
+      "q": "Pt with heart pacemaker did dental tx and the next day he developed arrhythmia, what tx did he receive",
+      "options": [
+        "intra oral xrays",
+        "panoramic xray",
+        "electrocautery",
+        "high speed hand piece"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "Electrosurgery/electrocautery can generate electromagnetic interference that may affect pacemakers and trigger arrhythmia. Intraoral films, panoramic imaging, and high-speed handpieces are not the classic pacemaker EMI culprits in this vignette.",
+      "topic_in": "mixed",
+      "source": "saud_delta"
+    }
+  ]
+}

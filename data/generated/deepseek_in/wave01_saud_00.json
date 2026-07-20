@@ -1,0 +1,429 @@
+{
+  "wave": "01_saud_delta",
+  "chunk": 0,
+  "count": 30,
+  "instruction": "Audit each MCQ. Correct answer_index + clinical hinge. Set flip if changing answer.",
+  "system": "You are auditing KSA SDLE / Prometric-style dental MCQs for a study app.\nRules:\n- Community/PDF ✅ marks are often wrong — decide by clinical board standard, not the mark.\n- Output ONLY a valid JSON array (no markdown fences).\n- Each object MUST have:\n  id, answer_index (0-3), confidence (high|med|low),\n  hinge (clinical why, 1-3 sentences, English),\n  flip (boolean: true if answer_index differs from answer_index_in),\n  department (operative|fixed|rpd|endo|perio|oms|ortho_pedo|ethics|mixed)\n- If image-only / impossible: answer_index null, usable false, hinge explains.\n- operative = direct restorations/preps/materials technique; fixed/rpd = prostho; do not dump all into restorative.\n- Do not invent textbook page numbers.\n",
+  "items": [
+    {
+      "id": "saud_delta_001",
+      "q": "Pt has amalgam restorations done 3 years ago, came with flat shiny surfaces and elevated amalgam restorations, whats your management",
+      "options": [
+        "replace with composite",
+        "Elevate the vertical dimension",
+        "Etched porcelain",
+        "Investigate gi problems and diet"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "Amalgams that appear elevated, flat, and shiny years later usually mean surrounding enamel/dentin was lost to acid erosion (GERD, frequent acidic diet/drinks), so restorations stand proud. First management is to investigate GI reflux and dietary acids and control etiology before wholesale replacement or raising vertical dimension. Replacing with composite or elevating VDO without addressing acid source will fail again.",
+      "topic_in": "restorative",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_003",
+      "q": "Probe with 3 color code",
+      "options": [
+        "Provide treatment only if patient agrees to pay out of pocket",
+        "Marquis probe",
+        "reduce pocket depth",
+        "VZV"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "A periodontal probe with three alternating color bands (typically 3 mm increments) is the Marquis color-coded probe; other listed items are unrelated instruments or diagnoses.",
+      "topic_in": "perio",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_004",
+      "q": "Pt with supernumerary teeth, flat mid face, and exophthalmos",
+      "options": [
+        "apert syndrome",
+        "mg/day",
+        "gingival swelling buccal to the tooth -2",
+        "When primary inscisors erupted"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "Midface hypoplasia with exophthalmos (shallow orbits) and craniofacial deformity points to a craniosynostosis syndrome; among given choices only Apert syndrome fits that phenotype.",
+      "topic_in": "ortho_pedo",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_005",
+      "q": "pt with Cavernous sinus thrombosis, they call the dentist to rule out any dental causes, what space is infected",
+      "options": [
+        "buccal",
+        "Infratemporal",
+        "Superfacial temporal",
+        "Infraorbital"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "Dental sources of cavernous sinus thrombosis classically spread from maxillary anterior/canine infections via the infraorbital/angular venous pathway into the cavernous sinus.",
+      "topic_in": "endo",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_006",
+      "q": "Pt came with pain, you did an examination and found no dental cause, what's most likely will mimic dental pain",
+      "options": [
+        "Syphilis",
+        "Osteomyelitis",
+        "max sinusitis",
+        "Utitis media"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "Maxillary sinusitis commonly refers pain to posterior maxillary teeth with a non-odontogenic exam; among listed systemic infections it is the most frequent dental-pain mimic.",
+      "topic_in": "oms",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_007",
+      "q": "irregular ulcer in mid palate that penetrate to the nose, the top deferential dx",
+      "options": [
+        "Osteomyelitis",
+        "Syphilis",
+        "Tb",
+        "max sinusitis"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "A chronic midpalatal ulcerative defect that perforates into the nose is classic for a tertiary syphilitic gumma; TB and osteomyelitis are less typical for that exact midline pattern.",
+      "topic_in": "oms",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_008",
+      "q": "pt has dark intrinsic staining, best type of veneers",
+      "options": [
+        "Etched porcelain",
+        "zirconia",
+        "Composite",
+        "Investigate gi problems and diet"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "Dark intrinsic stains need a bonded ceramic veneer with enough opacity and controllable thickness; etched/bonded porcelain veneers reliably mask discoloration while remaining relatively conservative. Composite is more translucent and stains/wears over time. Zirconia veneers are often thicker and less routinely indicated for esthetic masking in classic veneer teaching. GI/diet investigation does not treat established intrinsic stain.",
+      "topic_in": "restorative",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_010",
+      "q": "you did extraction, then the assistant start cleaning the clinic, no time available to send the instruments to be sterilized because you have second pt, how should the assistant store the instruments",
+      "options": [
+        "Dry area",
+        "Pt preferences",
+        "Soak them in non ionizing solution",
+        "soak them in plain water"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "Contaminated instruments held briefly before sterilization should be kept moist in an appropriate holding/disinfectant or enzymatic solution so debris does not dry on; plain water or dry storage is inferior.",
+      "topic_in": "ethics",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_012",
+      "q": "pt is diagnosed with persistent generalized stage II therapy there was generalized horizontal bone loss, the some areas, what is the rationale of his decision",
+      "options": [
+        "reduce pocket depth",
+        "Increase pt compliance",
+        "Reduce hypersensitivity of the teeth",
+        "Marquis probe"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "After non-surgical therapy, residual deep pockets with horizontal bone loss are treated surgically primarily to reduce pocket depth and improve cleanability, not merely to increase compliance.",
+      "topic_in": "perio",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_013",
+      "q": "pt came with destructed 46, after examination, tooth will need retx, post and core, crown lengthening, then all ceram crown as definitive tx, tooth can be extracted and replaced by implant supported crown as another treatment option. So you explained the tx options to pt with possible complications, prognosis and fees. The :tx of choice will mainly depend on",
+      "options": [
+        "dentists preferred tx option",
+        "Dentists skills",
+        "Prognosis of tx",
+        "Pt preferences"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "When multiple reasonable plans exist (save tooth vs extract/implant), after informed consent on risks, prognosis, and cost, the final choice is driven by patient preferences and values.",
+      "topic_in": "ethics",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_014",
+      "q": "Pt presented with swelling with badly decayed 46 , you take occlusal RG and you see RO lines on the B cortical bone , what is the diagnosis (they : didn’t provide any pic or RG)",
+      "options": [
+        "max sinusitis",
+        "Syphilis",
+        "Osteomyelitis",
+        "osteosarcom"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "Buccal cortical radiopaque laminated/periosteal lines with a chronically infected tooth and swelling suggest proliferative periostitis of osteomyelitis (e.g., Garre-type) rather than primary osteosarcoma.",
+      "topic_in": "oms",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_015",
+      "q": "Cell with multiple myeloma",
+      "options": [
+        "max sinusitis",
+        "Plasma cells",
+        "Lymphocytes",
+        "Macrophages"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "Multiple myeloma is a malignant clonal proliferation of plasma cells in bone marrow; lymphocytes and macrophages are not the defining neoplastic cell.",
+      "topic_in": "oms",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_016",
+      "q": "Dr try to force the pt to forcefully show her teeth , close eyes and wrinkled forehead, which : nerve dr testing Trigeminal",
+      "options": [
+        "Facial",
+        "year old pt came to the clinic with multiple skin rash",
+        "max sinusitis",
+        "Syphilis"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "Asking the patient to smile, close the eyes tightly, and wrinkle the forehead tests muscles of facial expression—cranial nerve VII (facial)—not trigeminal sensory motor only.",
+      "topic_in": "oms",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_017",
+      "q": "and sore throat and low grade : fever , which of the following cause",
+      "options": [
+        "HSV",
+        "EBV",
+        "Marquis probe",
+        "VZV"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "With a truncated stem (sore throat, low-grade fever) and VZV among herpesviruses, board keys often target varicella-zoster when vesicular/systemic viral illness is implied; HSV/EBV remain differential without more detail.",
+      "topic_in": "perio",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_018",
+      "q": "Pt with non restorable #46 need ex , pt had hyperthyroidism and dentist give lidocaine with epi , pt start get nervous and dizzy, what’s the : cause qq hypertension",
+      "options": [
+        "Syphilis",
+        "Osteomyelitis",
+        "Thyrotoxicosis",
+        "max sinusitis"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "In untreated/poorly controlled hyperthyroidism, epinephrine-containing local anesthetic can precipitate a thyrotoxic crisis (agitation, dizziness, autonomic surge); the cause is thyrotoxicosis, not infection.",
+      "topic_in": "oms",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_019",
+      "q": "years old pt with unilateral itchy painful facial rash and blisters",
+      "options": [
+        "Syphilis",
+        "herpes zoster",
+        "Herpes simplex",
+        "max sinusitis"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "Unilateral painful itchy facial rash with blisters in a dermatome is herpes zoster (reactivation of VZV), not primary HSV (usually oral-labial clusters) or non-vesicular sinus disease.",
+      "topic_in": "oms",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_020",
+      "q": "younge patient needs #11 Apexification what type of material",
+      "options": [
+        "Tricalcium Phosphate (g-TCP)",
+        "Infraorbital",
+        "Predentin",
+        "A- Naproxen for 5 days"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "Apexification of an immature nonvital tooth uses materials that induce a hard-tissue apical barrier; among the listed options, tricalcium phosphate (ceramic-type) is the only plausible apexification material.",
+      "topic_in": "endo",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_022",
+      "q": "short-term solubility",
+      "options": [
+        "Sebaceous gland",
+        "👍🏻 Mucoepidermoid carcinoma",
+        "ZOE",
+        "Calcium"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "Zinc oxide–eugenol cements show relatively high short-term solubility and disintegration in the oral environment compared with resin or glass-ionomer-based materials.",
+      "topic_in": "mixed",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_023",
+      "q": "picture of small yellowish spots in lip",
+      "options": [
+        "A- Sialadenitis",
+        "Sebaceous gland",
+        "ZOE",
+        "👍🏻 Mucoepidermoid carcinoma"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "Multiple small yellowish submucosal spots on the lip mucosa are Fordyce granules—ectopic sebaceous glands—not sialadenitis or malignancy.",
+      "topic_in": "mixed",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_024",
+      "q": "Most common malignant in the lip",
+      "options": [
+        "👍🏻 Mucoepidermoid carcinoma",
+        "Adenoid custic carcinma",
+        "ZOE",
+        "Sebaceous gland"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "Among salivary-type malignancies listed, mucoepidermoid carcinoma is the most common malignant salivary gland tumor overall (including minor glands of the lip region in exam banks).",
+      "topic_in": "mixed",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_025",
+      "q": "Safest analgesic with pt has severe asthma",
+      "options": [
+        "Naproxen",
+        "max sinusitis",
+        "Syphilis",
+        "Paracetamol"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "NSAIDs (e.g., naproxen) can trigger bronchospasm in aspirin-sensitive/severe asthma; paracetamol (acetaminophen) is the preferred first-line analgesic in that setting.",
+      "topic_in": "oms",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_026",
+      "q": "Anxious asthma and allergies-to benzodiazepine",
+      "options": [
+        "Local anesthesia",
+        "Test to confirm the allergy to benzodiazepine",
+        "Nitrous-oxide",
+        "GA"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "For an anxious patient with asthma and benzodiazepine allergy, nitrous oxide–oxygen provides titratable anxiolysis without relying on benzodiazepines or general anesthesia.",
+      "topic_in": "oms",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_027",
+      "q": "Prevent internal resorption",
+      "options": [
+        "A- Naproxen for 5 days",
+        "Predentin",
+        "Infraorbital",
+        "Tricalcium Phosphate (g-TCP)"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "Internal (inflammatory) root resorption requires vital pulp tissue at the resorptive front; an intact predentin/odontoblast barrier helps protect mineralized dentin from clastic attack.",
+      "topic_in": "endo",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_028",
+      "q": "Bruxer pt with mouth guard",
+      "options": [
+        "contact on anterior and posterior",
+        "Contact on anterior only",
+        "Investigate gi problems and diet",
+        "Etched porcelain"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "A full-coverage hard nightguard for bruxism should seat with even contacts on both anterior and posterior teeth so occlusal load is shared, the appliance stays stable, and no single segment takes all force. Anterior-only contact can overload incisors and rock the guard. Porcelain etch and GI/diet investigation do not define occlusal scheme for a bruxism splint.",
+      "topic_in": "restorative",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_037",
+      "q": "While Doing Regular Check ups of Relapsed smoker for 17 yrs. You find White Grayish structure at the palate “ Nicotinic stomatitis “what is next step",
+      "options": [
+        "Excisional Biopsy",
+        "Topical Antifungal",
+        "Topical Corticosteroids",
+        "Assure the pt"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "Classic nicotinic stomatitis (white-gray palate with red puncta in a smoker) is a reactive, usually benign change; reassure, counsel cessation, and monitor—biopsy only if atypical or nonresolving.",
+      "topic_in": "oms",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_039",
+      "q": "Pt came to the clinic with all teeth missing except #17 , #33, #43 , #44 what’s : the best approach for Tx A-Extraction for #17 and Complete for U and Transitional for L B-Extraction for #17, #33,#43#44 and Complete UL C-Extraction for #17 , #14 and complete for U and L",
+      "options": [
+        "contact on anterior and posterior",
+        "over denture",
+        "Investigate gi problems and diet",
+        "Etched porcelain"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "With only a few remaining strategic teeth (#17, 33, 43, 44), preserving suitable abutments/roots for an overdenture improves retention, support, proprioception, and ridge preservation versus extracting all remaining teeth for conventional complete dentures. Etched porcelain and anterior–posterior contact schemes do not define the best removable approach when few teeth remain. GI/diet investigation is not the prosthetic treatment plan.",
+      "topic_in": "restorative",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_040",
+      "q": "Tooth with mobility 1 mm Buccal, lingual What’s the classification in Miller A-Type 1",
+      "options": [
+        "B-Type",
+        "C-Type 3",
+        "ZOE",
+        "Sebaceous gland"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "Horizontal mobility of about 1 mm faciolingually corresponds to Miller/Grade II mobility (≈1 mm horizontal movement); Type/Grade I is the first detectable mobility short of that range.",
+      "topic_in": "mixed",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_041",
+      "q": "What do we use to polish proximal surfaces that are inaccessible to other instruments: Rubber cups Floss Bristle wheels",
+      "options": [
+        "Soak them in non ionizing solution",
+        "Pt preferences",
+        "C- Giant cell arthritis",
+        "Dental tape with prophy paste"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "Proximal surfaces not reached by cups or wheels are polished with dental tape (or floss) charged with fine prophy paste to clean and polish contact areas safely.",
+      "topic_in": "ethics",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_042",
+      "q": "shape of the cut in excisional biopsy",
+      "options": [
+        "max sinusitis",
+        "Syphilis",
+        "Elliptical",
+        "triangular"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "Standard excisional biopsy uses an elliptical (fusiform) incision with length about 3× width so the wound can be closed primarily with minimal tension and dog-ears.",
+      "topic_in": "oms",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_044",
+      "q": "Asked for what biopsy it should be used?.",
+      "options": [
+        "Lip",
+        "Cheek",
+        "Tongue",
+        "max sinusitis"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "With a truncated stem asking which site/type for biopsy, the lip is a classic accessible site for minor salivary or mucosal lesions when that is the only coherent anatomic option listed.",
+      "topic_in": "oms",
+      "source": "saud_delta"
+    }
+  ]
+}

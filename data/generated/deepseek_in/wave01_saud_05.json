@@ -1,0 +1,429 @@
+{
+  "wave": "01_saud_delta",
+  "chunk": 5,
+  "count": 30,
+  "instruction": "Audit each MCQ. Correct answer_index + clinical hinge. Set flip if changing answer.",
+  "system": "You are auditing KSA SDLE / Prometric-style dental MCQs for a study app.\nRules:\n- Community/PDF ✅ marks are often wrong — decide by clinical board standard, not the mark.\n- Output ONLY a valid JSON array (no markdown fences).\n- Each object MUST have:\n  id, answer_index (0-3), confidence (high|med|low),\n  hinge (clinical why, 1-3 sentences, English),\n  flip (boolean: true if answer_index differs from answer_index_in),\n  department (operative|fixed|rpd|endo|perio|oms|ortho_pedo|ethics|mixed)\n- If image-only / impossible: answer_index null, usable false, hinge explains.\n- operative = direct restorations/preps/materials technique; fixed/rpd = prostho; do not dump all into restorative.\n- Do not invent textbook page numbers.\n",
+  "items": [
+    {
+      "id": "saud_delta_208",
+      "q": "What is the comment early complications/ failure associated with RPP",
+      "options": [
+        "clasp",
+        "connecter",
+        "Base (in CD)",
+        "ZOE"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "Early removable partial denture failures commonly involve clasp problems (deformation, fracture, loss of retention, or tissue trauma from ill-fitting clasps). Connectors and bases fail too, but clasps are the most frequent early mechanical/clinical complaint.",
+      "topic_in": "mixed",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_209",
+      "q": "patient , did direct composite veneers with microfiler composite you will re do it what type of composite u will use",
+      "options": [
+        "Hybrid",
+        "Investigate gi problems and diet",
+        "Etched porcelain",
+        "nanao filers"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "Microfilled composites polish well but have lower strength/fracture resistance for load-bearing or large veneer redo cases. Modern nanofilled/nanohybrid composites combine polishability with improved mechanical properties and are preferred for redoing direct composite veneers.",
+      "topic_in": "restorative",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_211",
+      "q": "pt with second quadrant all buccal recession (no interproximal), dx",
+      "options": [
+        "mucogingival deformity interproximal recession",
+        "mucogingical deformity buccal recession",
+        "perio stage 2",
+        "perio stage 3"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "Recession limited to buccal surfaces of a quadrant without interproximal attachment loss is a mucogingival deformity/condition of buccal recession (Cairo RT1-type pattern), not interproximal recession deformity and not automatically periodontitis stage II/III.",
+      "topic_in": "restorative",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_212",
+      "q": "tranexemic acid used with",
+      "options": [
+        "hemophelia",
+        "stroke",
+        "dvt",
+        "atrial valve something"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "Tranexamic acid is an antifibrinolytic used to reduce bleeding in hemophilia and other bleeding disorders (systemic or topical oral rinse). It is not used to treat stroke, DVT, or valve disease—those settings may even caution antifibrinolytics.",
+      "topic_in": "mixed",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_213",
+      "q": "severly autistic 20 yo came with his father and needs extraction, who to take consent from",
+      "options": [
+        "patient",
+        "brother",
+        "doctor",
+        "father"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "A severely autistic adult who lacks decision-making capacity cannot give valid informed consent; the legally authorized surrogate (typically the father/guardian who accompanies and has authority) consents. Brother or doctor do not automatically hold consent power.",
+      "topic_in": "ethics",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_214",
+      "q": "why is chromiam chobalt better than gold in fracture resistance for denture base",
+      "options": [
+        "Etched porcelain",
+        "contact on anterior and posterior",
+        "it has high modulus of elasticity",
+        "Investigate gi problems and diet"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "Cobalt-chromium has a much higher modulus of elasticity (stiffer) than gold alloys, so thin major connectors and bases resist flexure and fracture better under functional load. High stiffness, not porcelain etching or occlusion scheme, explains superior fracture resistance of Co-Cr frameworks.",
+      "topic_in": "restorative",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_215",
+      "q": "when to reduce from cusp tip during adjustment",
+      "options": [
+        "ZOE",
+        "both centric and non centric interference",
+        "centric interference",
+        "non centric interefence"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "Cusp-tip reduction is indicated when the same cusp tip participates in both centric (CR/ICP) and eccentric interferences—selective grinding hierarchy: if a contact is heavy in both, reduce the cusp tip rather than only fossae or only incline planes.",
+      "topic_in": "mixed",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_217",
+      "q": "what to check first for denture insersion",
+      "options": [
+        "occ",
+        "border extension (2)",
+        "Investigate gi problems and diet",
+        "denture fit (١)"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "At denture insertion, first verify fit/adaptation and pressure areas (base seating), then borders, then occlusion. Checking occlusion before confirming the denture seats correctly misattributes errors. Fit is the first check among the listed sequence.",
+      "topic_in": "restorative",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_218",
+      "q": "yo pt reports having to use 3 pillows under his head to prevent shortness of breath, has swollen feet",
+      "options": [
+        "ZOE",
+        "Sebaceous gland",
+        "cingestive heart failure",
+        "diabetes"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "Orthopnea requiring multiple pillows plus dependent leg swelling is classic congestive heart failure (fluid overload and elevated filling pressures). Diabetes alone does not produce this orthopnea-edema cluster.",
+      "topic_in": "mixed",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_220",
+      "q": "pt with beefy tongue (and other things) what to do",
+      "options": [
+        "better nutrition",
+        "Could be scarlet fever",
+        "ZOE",
+        "Sebaceous gland"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "A beefy red atrophic tongue often reflects nutritional deficiency (B vitamins, iron, etc.). Management centers on improving nutrition and correcting the deficiency after appropriate workup—not antiseptics alone as the primary answer.",
+      "topic_in": "mixed",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_221",
+      "q": "pt come complaining of sweating and pain while eating",
+      "options": [
+        "max sinusitis",
+        "Syphilis",
+        "Osteomyelitis",
+        "Frey syndrome"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "Gustatory sweating and pain while eating after parotid surgery is Frey syndrome (auriculotemporal nerve misdirection: parasympathetic fibers reinnervate sweat glands). Sinusitis, syphilis, and osteomyelitis do not produce meal-triggered facial sweating.",
+      "topic_in": "oms",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_222",
+      "q": "pt with concentric rings",
+      "options": [
+        "Sebaceous gland",
+        "👍🏻 Mucoepidermoid carcinoma",
+        "EM",
+        "ZOE"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "Target/“bull’s-eye” or concentric-ring skin lesions are hallmark of erythema multiforme (EM). Sebaceous glands and mucoepidermoid carcinoma do not produce that cutaneous target morphology.",
+      "topic_in": "mixed",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_223",
+      "q": "Which type of dentifrice causes abrasion",
+      "options": [
+        "Sebaceous gland",
+        "Powder dentifrice",
+        "Gel dentifrice",
+        "ZOE"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "Powder dentifrices are typically more abrasive than gels/pastes and are associated with greater toothbrush abrasion of dentin/cementum when used aggressively. Gel dentifrices are generally less abrasive.",
+      "topic_in": "mixed",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_224",
+      "q": "whats the indication of strip crown",
+      "options": [
+        "Incisal fracture",
+        "Investigate gi problems and diet",
+        "Etched porcelain",
+        "contact on anterior and posterior"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "Celluloid/strip crowns are used in pediatric dentistry to restore primary anterior teeth after caries or trauma, including incisal fractures, when a full-coverage esthetic form is needed with composite. They are not porcelain veneers or diet counseling.",
+      "topic_in": "restorative",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_225",
+      "q": "patient with previous history of Myocardial infraction, allergic to acetaminophen. What type of analgesic",
+      "options": [
+        "declofenac",
+        "ibuprofin",
+        "Investigate gi problems and diet",
+        "naproxen"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "Acetaminophen is contraindicated by allergy. Post-MI patients need careful NSAID selection; among common NSAIDs naproxen has historically been considered relatively preferable for cardiovascular risk versus diclofenac/high-dose ibuprofen when an NSAID is unavoidable—matching the keyed choice.",
+      "topic_in": "restorative",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_226",
+      "q": "Which condition u will give pilocarpine xerostomia",
+      "options": [
+        "Sebaceous gland",
+        "👍🏻 Mucoepidermoid carcinoma",
+        "Which condition u will give pilocarpine ?xerostomia",
+        "ZOE"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "Pilocarpine is a cholinergic sialogogue indicated for xerostomia (e.g., Sjögren syndrome or post-radiation dry mouth) when residual salivary function exists. The clinical indication among options is xerostomia, not the unrelated distractors.",
+      "topic_in": "mixed",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_227",
+      "q": "A patient is having endo treatment with the use of rubber dam. He experienced whizzing and difficulty breathing after 30 min. What is the cause",
+      "options": [
+        "Etched porcelain",
+        "Asthma",
+        "Allergic reaction",
+        "Investigate gi problems and diet"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "Wheezing and dyspnea during a lengthy rubber-dam procedure most often reflect an acute asthma exacerbation (stress, posture, possible irritant triggers). True latex anaphylaxis is also possible but the keyed answer among options is asthma; manage airway and bronchodilators.",
+      "topic_in": "restorative",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_229",
+      "q": "years old patient came with avulsed #11 45 min TX",
+      "options": [
+        "non rigid splint and follow-up 3 month",
+        "rigid splint",
+        "Infraorbital",
+        "non rigid splint and pulpectomy after 1 week"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "For an avulsed permanent incisor with ~45 minutes extraoral time, replant and use a flexible (non-rigid) splint. Closed-apex teeth usually develop pulp necrosis—start root canal treatment within about 7–10 days (pulpectomy pathway), not rigid long-term splinting alone.",
+      "topic_in": "endo",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_230",
+      "q": "case of lesion with swelling in the lower of mandible with Orange peel appearance",
+      "options": [
+        "periapical osseous dysplasia",
+        "florid osseous dysplasia",
+        "fibrous dysplasia",
+        "ossifying fibroma"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "Expansion of the mandible/jaw with an ‘orange peel’ or ground-glass radiographic pattern is classic for fibrous dysplasia. Periapical/florid cemento-osseous dysplasia are typically non-expansile jaw lesions; ossifying fibroma is a defined neoplasm with different borders.",
+      "topic_in": "ethics",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_232",
+      "q": "y old child came with open bite and unilateral crossbite and thumbsucking habit what is the management",
+      "options": [
+        "A-tell her to come when she is 8",
+        "B- tell her not to worry",
+        "C-tell her to use pacifier to stop the thumb sucking",
+        "D-use palatal crib"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "For a young child, open bite and unilateral crossbite from thumb-sucking often improve if the habit stops early; many protocols delay interceptive habit appliances until later mixed dentition (~7–8+) if the habit is self-limiting. The keyed plan is observation/return around age 8 rather than immediate pacifier or crib in this stem.",
+      "topic_in": "ortho_pedo",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_233",
+      "q": "pt with decreased keratinized gingiva in lower anterior area referd to the decreased keratinized gingiva , what he will do",
+      "options": [
+        "Lateral pedicle flap",
+        "Connective tissue graft ‫مهم‬",
+        "Connective tissue graft with frenectomy",
+        "Free gingival graft with frenectomy"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "Insufficient keratinized gingiva in the mandibular anterior often coexists with a high frenum pull. Free gingival graft augments keratinized tissue width; combining with frenectomy addresses the frenal pull. CTG mainly gains root coverage/thickness rather than pure KG width.",
+      "topic_in": "ethics",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_234",
+      "q": "anterior diastema that created after the used of maxillary expander, what should they do",
+      "options": [
+        "·Reverse turn of the screw",
+        "Discontinue the activation for a while",
+        "They should continue with the activation",
+        "·Come to the clinic ASAP to remove appliances"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "A midline diastema appearing during rapid maxillary expansion is expected as the midpalatal suture opens; continue planned activations. It is not an emergency to reverse the screw or remove the appliance solely for that physiologic space.",
+      "topic_in": "oms",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_235",
+      "q": "y\\o boy with posterior crossbite and anterior open bite with thumb sucking habit, which appliances is useful",
+      "options": [
+        "Hass appliances",
+        "·Quad helix",
+        "·W arch",
+        "Palatal crib"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "Quad helix expands the maxilla to correct posterior crossbite and can be modified with a crib/habit elements; it addresses transverse discrepancy better than a pure palatal crib (habit only). Haas is a jackscrew expander; W-arch is similar but quad helix is the common keyed choice for this combo.",
+      "topic_in": "ortho_pedo",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_236",
+      "q": "Master file is 55 what is the master cone",
+      "options": [
+        "gp55 iso standard taper",
+        "Gp 55 0.04 taper",
+        "ZOE",
+        "Sebaceous gland"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "Master apical file size 55 calls for a matching ISO #55 gutta-percha master cone of standard 0.02 taper (unless a different preparation taper was used). A 0.04 cone is for correspondingly tapered preparations, not assumed by default.",
+      "topic_in": "mixed",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_237",
+      "q": "mm pocket was found in tooth #12 in the palatal side with slight plaque and the pulp diagnosis was necrotic What caused the necrosis of the tooth",
+      "options": [
+        "crack",
+        "Infraorbital",
+        "Tricalcium Phosphate (g-TCP)",
+        "dens invaginatus"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "A maxillary lateral (#12) with necrotic pulp, deep palatal probing, and only slight plaque often has dens invaginatus allowing bacterial ingress to the pulp. Cracks are possible but dens invaginatus is the classic developmental cause for that tooth.",
+      "topic_in": "endo",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_238",
+      "q": "Gingival inflammation that reaches the vestibular fold : -Papillary gingival enlargement",
+      "options": [
+        "Marquis probe",
+        "reduce pocket depth",
+        "Diffuse gingival enlargement",
+        "Marginal gingival enlargement"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "Gingival enlargement classified by extent: papillary, marginal, or diffuse. Inflammation that extends to the vestibular fold involves attached gingiva broadly and is termed diffuse gingival enlargement, not limited marginal or papillary enlargement.",
+      "topic_in": "perio",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_239",
+      "q": "Internal resorption: Radiopacity around the root RL around the root",
+      "options": [
+        "contact on anterior and posterior",
+        "RL of the pulp cavity",
+        "Investigate gi problems and diet",
+        "Etched porcelain"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "Internal (inflammatory) root resorption appears as a radiolucent expansion of the pulp chamber/canal outline. It is not peripheral radiopacity around the root; the keyed radiographic feature is radiolucency continuous with the pulp cavity.",
+      "topic_in": "restorative",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_241",
+      "q": "pt was referred to you by his physician for emergency treatment. He had MI 9 days ago and he mentioned that you should monitor his BP during the pro cedure and the pt taking Plavix (clodpergil) . What's the management",
+      "options": [
+        "A-Take INR before the procedure",
+        "B-Give antibiotic prophylactic",
+        "C-Defer treatment",
+        "D-Nothing just do the procedure"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "Emergency dental care after recent MI may proceed with medical precautions (BP monitoring as requested). Clopidogrel (Plavix) is an antiplatelet—do not order INR (that is for warfarin). Routine antibiotic prophylaxis is not indicated solely for MI/Plavix; do not automatically defer true emergency care.",
+      "topic_in": "ethics",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_242",
+      "q": "what's the most common consequence of under occlusion preparation for PFM crown",
+      "options": [
+        "B-something during the firing",
+        "Investigate gi problems and diet",
+        "C- occlusal dysfunction",
+        "A-Fracture of the functional cusp"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "Insufficient occlusal reduction for a PFM leaves the restoration overcontoured or the porcelain/metal too thin, producing occlusal dysfunction, high contacts, or porcelain fracture risk. The primary clinical consequence highlighted is occlusal dysfunction from inadequate reduction space.",
+      "topic_in": "restorative",
+      "source": "saud_delta"
+    },
+    {
+      "id": "saud_delta_243",
+      "q": "Class V, use which matrix",
+      "options": [
+        "C- Clear matrix",
+        "D- no need",
+        "A- tofflemire matrix",
+        "B- sectional matrix"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "Class V (cervical facial/lingual) restorations generally do not require a matrix; contour and isolation are managed with hand instruments, cervical matrices only if needed, but tofflemire/sectional matrices are for proximal boxes. ‘No need’ for a routine matrix is correct.",
+      "topic_in": "mixed",
+      "source": "saud_delta"
+    }
+  ]
+}
