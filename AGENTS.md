@@ -8,6 +8,19 @@ You are working on **SDLE Study Path**: a static SPA that coaches KSA dentists f
 
 That file is the source of truth for agents: stack, globals, plan tracks, MCQ schema, sources, deploy, pitfalls.
 
+## RED LINE — NO SLACKING (read first)
+
+**File:** [`docs/RED_LINE_NO_SLACK.md`](./docs/RED_LINE_NO_SLACK.md)  
+**Gate:** `python3 scripts/gate_no_slack.py` → must exit **0** before any “done / all / finished / I read them all” claim.
+
+| Ban | Rule |
+|-----|------|
+| Fake done | No “all MCQs checked” unless **G-READ + G-TRUTH + G-DUP + G-HINGE + G-LESSON** green |
+| Fake read | “Read” = every usable ID has audit artifact + hinge ≥40 + `truth_pass` (or quarantined) |
+| Quiet stop | Gate red → keep working or write `BLOCKED:` with IDs — never vibes |
+| Invented skips | User-ordered phases are not optional |
+| Fake official | Never claim SCFHS answer keys without a key file on disk |
+
 ## Non-negotiables
 
 1. **Working tree:** Prefer `/data/prometric/sdle-prep` (pushes to `xxxova2/sdle-study-path`). Sibling `sdle-study-path/` may be stale.
@@ -16,6 +29,7 @@ That file is the source of truth for agents: stack, globals, plan tracks, MCQ sc
 4. **Surgical changes:** Touch only what the task needs. Don’t reformat all of `app.js` or invent features.
 5. **Cache bust:** After shipping content/JS/CSS, bump `?v=` in `index.html` (and SW `CACHE` if shell is sticky).
 6. **Secrets:** Stay out of git; feedback endpoints live in `data/feedback_config.js` (public-ish only).
+7. **No-slack gate:** Run `scripts/gate_no_slack.py` before claiming bank/lesson work complete.
 
 ## Common tasks → files
 

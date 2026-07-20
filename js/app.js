@@ -1541,6 +1541,7 @@
    */
   const MCQ_CATEGORIES = [
     { id: "preferred", label: "Preferred (SDLE)", pool: "preferred", primary: true },
+    { id: "blueprint", label: "Exam mix (blueprint)", pool: "blueprint", primary: true },
     { id: "abtal_src", label: "أبطال ★ priority", pool: "abtal", primary: true },
     { id: "rafi_core", label: "رفيع 11–19 first", pool: "rafi_core", primary: true },
     { id: "rafi_second", label: "رفيع 7·5·10·9·1·3", pool: "rafi_second", primary: true },
@@ -4172,6 +4173,7 @@
       { pool: "saud_delta", label: "سعود delta" },
       { pool: "stream", label: "Stream" },
       { pool: "preferred", label: "Preferred" },
+      { pool: "blueprint", label: "Exam mix (blueprint)" },
       { pool: "all", label: "All MCQs" },
     ];
     const bankDepts = SUBJECTS.map((s) => ({
@@ -5373,6 +5375,10 @@
   }
 
   function poolN(topic) {
+    if (topic === "blueprint" || topic === "exam_mix") {
+      // virtual mix — stock is preferred bank size
+      return pool("preferred").length;
+    }
     return pool(topic).length;
   }
 
@@ -5547,32 +5553,90 @@
     </tbody></table>`;
   }
 
+  /**
+   * Full-exam mocks: SCFHS-ish blueprint mix from Preferred (SDLE) pool only.
+   * Restorative ~40%, perio ~18%, endo ~17%, oms ~15%, ortho/pedo ~10%, ethics free points sprinkled.
+   */
+  function blueprintMockItems(count) {
+    const n = Math.max(1, Math.min(+count || 100, 300));
+    const weights = Object.assign({}, BLUEPRINT_WEIGHTS, { ethics: 0.08 });
+    let sumW = 0;
+    for (const k of Object.keys(weights)) sumW += weights[k];
+    const keys = Object.keys(weights);
+    const targets = {};
+    const frac = [];
+    let assigned = 0;
+    keys.forEach((k) => {
+      const exact = (weights[k] / sumW) * n;
+      const floor = Math.floor(exact);
+      targets[k] = floor;
+      assigned += floor;
+      frac.push({ k, f: exact - floor });
+    });
+    frac.sort((a, b) => b.f - a.f);
+    let left = n - assigned;
+    for (let i = 0; i < frac.length && left > 0; i++, left--) {
+      targets[frac[i].k]++;
+    }
+
+    const picked = [];
+    const used = new Set();
+    function takeFrom(topic, need) {
+      let bag = pool(topic).filter((q) => isPreferredMcq(q) && !used.has(q.id));
+      if (bag.length < need) {
+        bag = pool(topic).filter((q) => !used.has(q.id));
+      }
+      bag = shuffle(bag);
+      for (let i = 0; i < bag.length && picked.length < n && need > 0; i++) {
+        picked.push(bag[i]);
+        used.add(bag[i].id);
+        need--;
+      }
+      return need;
+    }
+    for (const k of keys) {
+      takeFrom(k, targets[k] || 0);
+    }
+    // fill remainder from preferred all
+    if (picked.length < n) {
+      let rest = pool("preferred").filter((q) => !used.has(q.id));
+      if (rest.length < n - picked.length) rest = allQ().filter((q) => !used.has(q.id));
+      rest = shuffle(rest);
+      for (let i = 0; i < rest.length && picked.length < n; i++) {
+        picked.push(rest[i]);
+        used.add(rest[i].id);
+      }
+    }
+    return shuffle(picked).slice(0, n);
+  }
+
   function runMock(type) {
     const map = {
-      25: { topic: "all", count: 25, sec: 72 },
-      50: { topic: "all", count: 50, sec: 72 },
-      100: { topic: "all", count: 100, sec: 72 },
-      150: { topic: "all", count: 150, sec: 72 },
-      200: { topic: "all", count: 200, sec: 72 },
-      resto40: { topic: "restorative", count: 40, sec: 72 },
-      resto50: { topic: "restorative", count: 50, sec: 72 },
-      resto100: { topic: "restorative", count: 100, sec: 72 },
-      resto150: { topic: "restorative", count: 150, sec: 72 },
-      resto200: { topic: "restorative", count: 200, sec: 72 },
-      op50: { topic: "operative", count: 50, sec: 72 },
-      op100: { topic: "operative", count: 100, sec: 72 },
-      op150: { topic: "operative", count: 150, sec: 72 },
-      op200: { topic: "operative", count: 200, sec: 72 },
-      perio50: { topic: "perio", count: 50, sec: 72 },
-      perio100: { topic: "perio", count: 100, sec: 72 },
-      endo50: { topic: "endo", count: 50, sec: 72 },
-      endo100: { topic: "endo", count: 100, sec: 72 },
-      oms50: { topic: "oms", count: 50, sec: 72 },
-      oms100: { topic: "oms", count: 100, sec: 72 },
-      oms200: { topic: "oms", count: 200, sec: 72 },
-      ortho50: { topic: "ortho_pedo", count: 50, sec: 72 },
-      ortho100: { topic: "ortho_pedo", count: 100, sec: 72 },
-      ethics50: { topic: "ethics", count: 50, sec: 72 },
+      /* Full mocks → blueprint-weighted Preferred (not raw 15k dump) */
+      25: { topic: "blueprint", count: 25, sec: 72 },
+      50: { topic: "blueprint", count: 50, sec: 72 },
+      100: { topic: "blueprint", count: 100, sec: 72 },
+      150: { topic: "blueprint", count: 150, sec: 72 },
+      200: { topic: "blueprint", count: 200, sec: 72 },
+      resto40: { topic: "restorative@preferred", count: 40, sec: 72 },
+      resto50: { topic: "restorative@preferred", count: 50, sec: 72 },
+      resto100: { topic: "restorative@preferred", count: 100, sec: 72 },
+      resto150: { topic: "restorative@preferred", count: 150, sec: 72 },
+      resto200: { topic: "restorative@preferred", count: 200, sec: 72 },
+      op50: { topic: "operative@preferred", count: 50, sec: 72 },
+      op100: { topic: "operative@preferred", count: 100, sec: 72 },
+      op150: { topic: "operative@preferred", count: 150, sec: 72 },
+      op200: { topic: "operative@preferred", count: 200, sec: 72 },
+      perio50: { topic: "perio@preferred", count: 50, sec: 72 },
+      perio100: { topic: "perio@preferred", count: 100, sec: 72 },
+      endo50: { topic: "endo@preferred", count: 50, sec: 72 },
+      endo100: { topic: "endo@preferred", count: 100, sec: 72 },
+      oms50: { topic: "oms@preferred", count: 50, sec: 72 },
+      oms100: { topic: "oms@preferred", count: 100, sec: 72 },
+      oms200: { topic: "oms@preferred", count: 200, sec: 72 },
+      ortho50: { topic: "ortho_pedo@preferred", count: 50, sec: 72 },
+      ortho100: { topic: "ortho_pedo@preferred", count: 100, sec: 72 },
+      ethics50: { topic: "ethics@preferred", count: 50, sec: 72 },
       fp50: { topic: "always_src", count: 50, sec: 72 },
     };
     const c = map[type] || map[25];
@@ -5587,10 +5651,13 @@
     if (topic === "stream") return "Stream recalls";
     if (topic === "wrong") return "Wrong book";
     if (topic === "search_hits") return "Search results";
+    if (topic === "blueprint" || topic === "exam_mix") return "Exam mix (blueprint)";
     if (topic === "all") return "Full bank";
+    if (topic === "preferred") return "Preferred (SDLE)";
     if (topic === "unseen") return "Unseen";
     if (topic === "weak") return `Weak (${weakTopicKeys(3).join("+")})`;
     if (String(topic).startsWith("unseen:")) return "Unseen " + String(topic).slice(7);
+    if (String(topic).includes("@preferred")) return String(topic).split("@")[0] + " (Preferred)";
     const cat = MCQ_CATEGORIES.find((c) => c.pool === topic);
     if (cat) return cat.label;
     return String(topic);
@@ -5637,7 +5704,23 @@
   }
 
   function startQuiz(topic, count, mode, timed, secPer) {
-    let p = pool(topic);
+    const want = !count || count >= QUIZ_ALL ? QUIZ_ALL : +count;
+    let p;
+    const topicStr = String(topic == null ? "all" : topic);
+
+    // Blueprint full mocks — stratified Preferred bank
+    if (topicStr === "blueprint" || topicStr === "exam_mix") {
+      p = blueprintMockItems(want === QUIZ_ALL ? 100 : want);
+    } else {
+      p = pool(topic);
+      // Day/learn practice: prefer Preferred (SDLE) within the topic when enough stock
+      if (mode !== "exam" && topicStr !== "wrong" && topicStr !== "weak" && !topicStr.startsWith("unseen")) {
+        const pref = p.filter((q) => isPreferredMcq(q));
+        const need = want === QUIZ_ALL ? 40 : Math.min(want, 40);
+        if (pref.length >= need) p = pref;
+      }
+    }
+
     if (!p.length) {
       const hint = String(topic).startsWith("unseen")
         ? "Unseen pool is empty for this filter — try another subject, Weak pack, Wrong book, or Full bank."
@@ -5647,19 +5730,22 @@
       alert(hint);
       return;
     }
-    const { base } = parsePoolTopic(topic);
+    const { base } = parsePoolTopic(topicStr === "blueprint" || topicStr === "exam_mix" ? "all" : topic);
     // Weak: wrong-book items from weak topics first, then shuffle the rest
     if (base === "weak") {
       const wrongSet = new Set(state.wrongBook || []);
       const w = shuffle(p.filter((q) => wrongSet.has(q.id)));
       const rest = shuffle(p.filter((q) => !wrongSet.has(q.id)));
       p = w.concat(rest);
-    } else {
+    } else if (topicStr !== "blueprint" && topicStr !== "exam_mix") {
       p = shuffle(p);
     }
     const n = !count || count >= QUIZ_ALL ? p.length : Math.min(count, p.length);
     p = p.slice(0, n);
-    const topicLabel = topicLabelOf(topic);
+    const topicLabel =
+      topicStr === "blueprint" || topicStr === "exam_mix"
+        ? "Exam mix (blueprint)"
+        : topicLabelOf(topic);
     const modeLabel =
       mode === "exam" ? "Mock" : mode === "test" ? "Test" : "Learn";
     state.quiz = {
@@ -6005,26 +6091,9 @@
     bindBackBar();
     bindVolButtons(app);
     if (showReview && reviewItems.length) {
-      /* Unique ids for multi-dispute forms in review list */
       app.querySelectorAll(".mcq-dispute").forEach((box, i) => {
         const item = reviewItems[i];
         if (!item) return;
-        const openBtn = box.querySelector(".mcq-dispute-toggle");
-        const panel = box.querySelector(".mcq-dispute-panel");
-        const sendBtn = box.querySelector(".mcq-dispute-actions .btn.success");
-        const cancelBtn = box.querySelector(".mcq-dispute-actions .btn.ghost");
-        const status = box.querySelector(".mcq-dispute-status");
-        const ansInp = box.querySelector(".mcq-dispute-input");
-        const noteInp = box.querySelector(".mcq-dispute-note");
-        if (openBtn && panel) {
-          openBtn.id = "mcq-dispute-open-" + i;
-          panel.id = "mcq-dispute-panel-" + i;
-          if (ansInp) ansInp.id = "mcq-dispute-ans-" + i;
-          if (noteInp) noteInp.id = "mcq-dispute-note-" + i;
-          if (sendBtn) sendBtn.id = "mcq-dispute-send-" + i;
-          if (cancelBtn) cancelBtn.id = "mcq-dispute-cancel-" + i;
-          if (status) status.id = "mcq-dispute-status-" + i;
-        }
         bindMcqDispute(box, item, reviewAnswers[i]);
       });
     }

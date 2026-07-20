@@ -1,4 +1,4 @@
-// Full in-app lessons. Videos = exact files under /data/prometric/prometric/
+/** SDLE lessons — textbook days + mock wiring (2026-07-20) */
 window.LESSONS = [
   {
     day: 1,
@@ -536,32 +536,39 @@ window.LESSONS = [
 <li>Step 3 cards → Step 4 multi‑block quizzes (aim <b>150–200Q</b>). Lesson Q&amp;A is encoding; Step 4 is volume.</li>
 </ol>
 <p><em>Optional later tonight:</em> Mar–June 2026 PDF operative items if you still have energy after 150Q. Core path = this page + listed videos + in‑app MCQs.</p>
+<div class="where-read textbook-grounded">
+  <strong>From SCFHS Appendix C textbooks (local extracts)</strong>
+  <p>Source: <code>Sturdevant Operative Dentistry 5e (local extract)</code>. Study aid only — not SCFHS exam keys. Snippets below are grounded in local <code>data/raw/books/text/</code>.</p>
+</div>
+<h3>Z. Textbook anchors — operative</h3>
+<ul>
+  <li>tin altered layer is created on the surface. This smear layer is only a few micrometers thick and is composed of denatured collagen, hydroxyapatite, and other cutting Dentin Predentin</li>
+  <li>Occlusion CHAPTER 2 31 debris (Fig. 2-28). The smear layer serves as a natural the primary mechanism of attachment is mechanical bandage over the cut dentinal surface because it occludes interlocking. Most dentin-bonding systems have acids many of the dentinal tubules with deb…</li>
+  <li>many of the dentinal tubules with debris called smear that remove the smear layer and partially demineralize plugs (Fig. 2-29). Although the smear layer is a good the intertubular dentin. In most systems, these acidic protective barrier, it has a relatively weak attachment to …</li>
+  <li>resin interdiffusion zone often is termed the hybrid layer (Figs. 2-31 and 2-32). Although dentin bond strengths have improved, they vary because</li>
+  <li>remove or solubilize the smear layer, allowing resins to penetrate and form a “hybrid layer” with dentin structures. Ideally, smear plugs would not be removed. (From Pashley DH: The effects of acid etching on the root. Accessory canals may extend from the pulp canals pulpodent…</li>
+  <li>tin. Dentin-bonding agent has extensive penetration into dentin structures. The hybrid layer (H) is in the caries and various other irritating factors. In cases of middle, with resin (R) above and dentin (D) below. (From severe irritation, the pulp responds by an inflammatory …</li>
+  <li>ystems may be used, but special resistance form, but the increase in retention form is not 4-methyloxy ethyl trimellitic anhydride (4-META)–based signiﬁcant. Adhesion of amalgam to tooth structure is systems are used frequently. This monomer molecule unnecessary in clinical ci…</li>
+  <li>Inlay and onlay preparations have short enough external and retention form of the preparation. walls so that the castings do not usually require escape channels (see Chapter 20), but crowns may require Clinical Considerations. Zinc p</li>
+  <li>the basic concepts of retention form, but also the resist- adhesion have been described, as follows:7 ance form of the remaining tooth structure. Bonding 1. Mechanical adhesion—interlocking of the adhesive techniques allow more conservative too</li>
+  <li>medication but some increases in retention and resistance forms usually occur. When used, however, the bonded amal- gam tooth preparation also should employ conventional Pulp secondary retention and resistance form features (see Chapters 17 and 19). Amalgam bonding agents (see…</li>
+  <li>loy conventional Pulp secondary retention and resistance form features (see Chapters 17 and 19). Amalgam bonding agents (see the FIGURE 4-44 Schematic view of needs for pulpal section on bonding systems) also are proposed for seal- protection below metallic restoration. Varnis…</li>
+  <li>and improved Typical dentin bonding systems may be used, but special resistance form, but the increase in retention form is not 4-methyloxy ethyl trimellitic anhydride (4-META)–based signiﬁcant. Adhesion of amalgam to tooth structure is systems are used frequently. This monome…</li>
+  <li>ng stress-breaker indications, advantages, and disadvantages of the and C-factor issues, and new restorative techniques, presented procedure; and finally the tooth preparation especially the Class IV composite restoration. factors and restorative factors that relate to the pro- c</li>
+  <li>0 5.0 a signiﬁcant concern.15,88,186,191 C-Factor There is no clear relationship of clinical performance FIGURE 4-78 C-factors associated with polymer- to any single mechanical property. Most investigators ization shrinkage for different situations using dental agree, however,</li>
+</ul>
+<p class="adhd-stop"><b>STOP 30 sec:</b> Write 3 rules from the list above without looking. Department: operative.</p>
 `,
-    videos: [
-      { file: "operative/lec.19/محاضره التاسعه عشر الجزء الاول.mp4", label: "1/7 · Operative lec 19 · part 1 · VERIFIED" },
-      { file: "operative/lec.19/المحاضره التاسعه عشر الجزء الثاني.mp4", label: "2/7 · Operative lec 19 · part 2 · VERIFIED" },
-      { file: "operative/lec.20/المحاضره العشرون.mp4", label: "3/7 · Operative lec 20 · part 1 · VERIFIED" },
-      { file: "operative/lec.20/المحاضره العشرون الجزء الثاني.mp4", label: "4/7 · Operative lec 20 · part 2 · VERIFIED" },
-      { file: "operative/lec.20/المحاضره العشرون الجزظء الثالث.mp4", label: "5/7 · Operative lec 20 · part 3 (disk typo: جزظء) · VERIFIED" },
-      { file: "operative/lec.21/المحاضره الواحد والعشرون الجزء الاول.mp4", label: "6/7 · Operative lec 21 · part 1 · VERIFIED" },
-      { file: "operative/lec.21/المحاضره الواحد والعشرون الجزء الثاني.mp4", label: "7/7 · Operative lec 21 · part 2 · VERIFIED" },
-    ],
+    videos: [{"file":"operative/lec.19/محاضره التاسعه عشر الجزء الاول.mp4","label":"1/7 · Operative lec 19 · part 1 · VERIFIED"},{"file":"operative/lec.19/المحاضره التاسعه عشر الجزء الثاني.mp4","label":"2/7 · Operative lec 19 · part 2 · VERIFIED"},{"file":"operative/lec.20/المحاضره العشرون.mp4","label":"3/7 · Operative lec 20 · part 1 · VERIFIED"},{"file":"operative/lec.20/المحاضره العشرون الجزء الثاني.mp4","label":"4/7 · Operative lec 20 · part 2 · VERIFIED"},{"file":"operative/lec.20/المحاضره العشرون الجزظء الثالث.mp4","label":"5/7 · Operative lec 20 · part 3 (disk typo: جزظء) · VERIFIED"},{"file":"operative/lec.21/المحاضره الواحد والعشرون الجزء الاول.mp4","label":"6/7 · Operative lec 21 · part 1 · VERIFIED"},{"file":"operative/lec.21/المحاضره الواحد والعشرون الجزء الثاني.mp4","label":"7/7 · Operative lec 21 · part 2 · VERIFIED"}],
     videoNote: "YES — كورس 46 operative lec.19–21 only. All 7 files verified under prometric/operative/. Watch in listed order (19→20→21). Do not watch prostho/endo today.",
     quizTopic: "operative",
     quizCount: 100,
-    quizSets: [
-      { topic: "operative", count: 50, label: "Block 1 — Operative 50 (learn)", mode: "learn" },
-      { topic: "operative", count: 50, label: "Block 2 — Operative 50 more", mode: "learn" },
-      { topic: "operative", count: 50, label: "Block 3 — Operative 50 (third pass)", mode: "learn" },
-      { topic: "operative", count: 100, label: "Mega — Operative 100", mode: "learn" },
-      { topic: "restorative", count: 50, label: "Mixed restorative 50 (includes some prostho bleed)", mode: "learn" },
-      { topic: "operative", count: 150, label: "ENDURANCE 150 operative", mode: "learn" },
-    ],
+    quizSets: [{"topic":"operative","count":50,"label":"Block 1 — Operative 50 (learn)","mode":"learn"},{"topic":"operative","count":50,"label":"Block 2 — Operative 50 more","mode":"learn"},{"topic":"operative","count":50,"label":"Block 3 — Operative 50 (third pass)","mode":"learn"},{"topic":"operative","count":100,"label":"Mega — Operative 100","mode":"learn"},{"topic":"restorative","count":50,"label":"Mixed restorative 50 (includes some prostho bleed)","mode":"learn"},{"topic":"operative","count":150,"label":"ENDURANCE 150 operative","mode":"learn"}],
     cardDeck: "restorative",
     mockType: "op50",
     mockLabel: "Timed Operative 50 (~60 min, exam pace)",
     mockType2: "resto100",
-    mockLabel2: "Timed Restorative 100 (optional if energy)",
+    mockLabel2: "Timed Restorative 100 (optional if energy)"
   },
   {
     day: 2,
@@ -1480,30 +1487,37 @@ window.LESSONS = [
 
 <p><em>Optional energy left:</em> mix restorative 50 including operative bleed so Day‑1 rules stay warm for Day‑4 integration. Phone stays away until wrong book is written.</p>
 <p><em>ADHD honesty check:</em> if your “read” of A–K took under 20 minutes total with no written gates, you did not do Day 2 reading — you performed reading theater. Redo bold lines + gates before quizzes.</p>
+<div class="where-read textbook-grounded">
+  <strong>From SCFHS Appendix C textbooks (local extracts)</strong>
+  <p>Source: <code>Rosenstiel Contemporary Fixed 4e (local extract)</code>. Study aid only — not SCFHS exam keys. Snippets below are grounded in local <code>data/raw/books/text/</code>.</p>
+</div>
+<h3>Z. Textbook anchors — fixed</h3>
+<ul>
+  <li>essential to help determine the exact amount selection of certain types of finish line geometry.53 of reduction necessary to develop an optimum occlusion. Occlusal considerations A satisfactory tooth preparation allows sufficient Preventing tooth fracture space for deve</li>
+  <li>cham·fer chăm¢fer n: 1: a finish line design for tooth axial inclination ăk¢sē-al ı̄n¢kla nā¢shun 1: the relation- preparation in which the gingival aspect meets the exter- ship of the long axis of a body to a designated plane 2: nal axial surface at an obtuse ang</li>
+  <li>curve from the axial wall to 2 bevel ĕv¢al vt: the process of slanting the finish line the cavosurface and curve of a tooth preparation chamfer angle chăm¢fer ăng¢gel n: the angle between a bur ûr n (14c): a steel or tungsten carbide rotary cutting chamfered surface</li>
+  <li>us ages. A, Maxillary central incisor with a metal-ceramic shape. Shoulder- and chamfer-shaped diamonds crown preparation. B, Maxillary lateral incisor with a metal- may accumulate less debris. Debris is not readily ceramic crown preparation. C, Maxillary canine with a pinledg…</li>
+  <li>tive than a is conservative of tooth chamfer (1). structure. 9 degrees B A C</li>
+  <li>ial con- Although they are conservative of tooth structure, tours. Chamfers can be placed expediently and with feather edge or shoulderless crown preparations precision, although care is needed to avoid leaving a (Fig. 7-19A) should be avoided because they do not ledge of unsu…</li>
+  <li>hich have better physical properties than do the improved by omitting the metal shoulder and earlier acrylic resins, and adhesive techniques to making the labial margin in porcelain. As discussed improve the bond to the supporting metal.3,4 in Chapter 24, this is a more demand…</li>
+  <li>various ages. A, Maxillary central incisor with a metal-ceramic shape. Shoulder- and chamfer-shaped diamonds crown preparation. B, Maxillary lateral incisor with a metal- may accumulate less debris. Debris is not readily ceramic crown preparation. C, Maxillary canine with a pi…</li>
+  <li>post length premolar, or molar) and the amount of remaining ferrule prefabricated posts coronal tooth structure. The latter is probably the multipiece cast cores root most important indicator in determining the post shape root diameter prognosis. post removal</li>
+  <li>ginate from these concavities, is known as a restoration with a ferrule, which is because the remaining dentin thickness is defined as a metal band or ring used to fit the root minimal.20 Therefore, the root canal should be or crown of a tooth, as opposed to a crown that enlar…</li>
+  <li>5). This preparation has no ferrule. C, crown length; R, root Extending a preparation apically creates a ferrule and helps pre- length. B, Creating a ferrule with orthodontic extrusion (see Fig. vents fracture of an endodontically treated tooth during func- 6–21) reduces root …</li>
+  <li>Examples to be avoided: {retention} fixed, removable, cement, screw, friction, tissue rigid interim mandibular removable partial dental {support} tooth, implant, tissue prosthesis replacing tee</li>
+  <li>Removable Dental Prosthesis (retention), (type) noun (retention), (type) noun Cement-Retained FDP Complete RDP (retention), (reten</li>
+  <li>(retention), (type) noun (retention), (type) noun Cement-Retained FDP Complete RDP (retention), (retention) noun (form), (retention)</li>
+</ul>
+<p class="adhd-stop"><b>STOP 30 sec:</b> Write 3 rules from the list above without looking. Department: fixed.</p>
 `,
-    videos: [
-      { file: "prostho/lec.9/المحاصضره التاسعه الجزء الول.mp4", label: "1/8 · Prostho lec 9 · part 1 (disk typos in name) · VERIFIED" },
-      { file: "prostho/lec.9/المحاضره التاسعه الجزء الثاني.mp4", label: "2/8 · Prostho lec 9 · part 2 · VERIFIED" },
-      { file: "prostho/lec.9/المحاضره التاسعه الجزء الثالث.mp4", label: "3/8 · Prostho lec 9 · part 3 · VERIFIED" },
-      { file: "prostho/lec.10/المحاضره العاشره الجزء الاول.mp4", label: "4/8 · Prostho lec 10 · part 1 · VERIFIED" },
-      { file: "prostho/lec.10/المحاضره العاشره الجزء الثاني.mp4", label: "5/8 · Prostho lec 10 · part 2 · VERIFIED" },
-      { file: "prostho/lec.11/المحاضره الحاديه عشر الجزء الاول.mp4", label: "6/8 · Prostho lec 11 · part 1 · VERIFIED" },
-      { file: "prostho/lec.11/المحاضره الحاديه عشر الجزء الثاني.mp4", label: "7/8 · Prostho lec 11 · part 2 · VERIFIED" },
-      { file: "prostho/lec.11/المحاضره الحاديه عشر الجزء الثالث.mp4", label: "8/8 · Prostho lec 11 · part 3 · VERIFIED" },
-    ],
+    videos: [{"file":"prostho/lec.9/المحاصضره التاسعه الجزء الول.mp4","label":"1/8 · Prostho lec 9 · part 1 (disk typos in name) · VERIFIED"},{"file":"prostho/lec.9/المحاضره التاسعه الجزء الثاني.mp4","label":"2/8 · Prostho lec 9 · part 2 · VERIFIED"},{"file":"prostho/lec.9/المحاضره التاسعه الجزء الثالث.mp4","label":"3/8 · Prostho lec 9 · part 3 · VERIFIED"},{"file":"prostho/lec.10/المحاضره العاشره الجزء الاول.mp4","label":"4/8 · Prostho lec 10 · part 1 · VERIFIED"},{"file":"prostho/lec.10/المحاضره العاشره الجزء الثاني.mp4","label":"5/8 · Prostho lec 10 · part 2 · VERIFIED"},{"file":"prostho/lec.11/المحاضره الحاديه عشر الجزء الاول.mp4","label":"6/8 · Prostho lec 11 · part 1 · VERIFIED"},{"file":"prostho/lec.11/المحاضره الحاديه عشر الجزء الثاني.mp4","label":"7/8 · Prostho lec 11 · part 2 · VERIFIED"},{"file":"prostho/lec.11/المحاضره الحاديه عشر الجزء الثالث.mp4","label":"8/8 · Prostho lec 11 · part 3 · VERIFIED"}],
     videoNote: "YES — prostho lec.9–11 (fixed/implant). All 8 files verified. Order: 9 p1–3 → 10 p1–2 → 11 p1–3. Day 3 is RPD/CD.",
     quizTopic: "restorative",
     quizCount: 100,
-    quizSets: [
-      { topic: "fixed", count: 50, label: "Block 1 — Fixed 50", mode: "learn" },
-      { topic: "fixed", count: 50, label: "Block 2 — Fixed 50 more", mode: "learn" },
-      { topic: "implant", count: 50, label: "Block 3 — Implant 50", mode: "learn" },
-      { topic: "restorative", count: 100, label: "Mega restorative 100", mode: "learn" },
-      { topic: "restorative", count: 150, label: "ENDURANCE 150 restorative", mode: "learn" }
-    ],
+    quizSets: [{"topic":"fixed","count":50,"label":"Block 1 — Fixed 50","mode":"learn"},{"topic":"fixed","count":50,"label":"Block 2 — Fixed 50 more","mode":"learn"},{"topic":"implant","count":50,"label":"Block 3 — Implant 50","mode":"learn"},{"topic":"restorative","count":100,"label":"Mega restorative 100","mode":"learn"},{"topic":"restorative","count":150,"label":"ENDURANCE 150 restorative","mode":"learn"}],
     cardDeck: "always",
     mockType: "25",
-    mockLabel: "Quick mock 25",
+    mockLabel: "Quick mock 25"
   },
   {
     day: 3,
@@ -2277,29 +2291,37 @@ If any line fails, bold re‑pass H–J before videos.</p>
 </section>
 
 <p><em>Bridge to Day 4:</em> tomorrow is integration — no new encyclopedia. Your wrong book from Days 1–3 is the real textbook. Keep Kennedy drawings and RPI in working memory so mixed restorative sets do not re‑teach Day 3 from zero.</p>
+<div class="where-read textbook-grounded">
+  <strong>From SCFHS Appendix C textbooks (local extracts)</strong>
+  <p>Source: <code>McCracken RPD + Complete Dentures (local extract)</code>. Study aid only — not SCFHS exam keys. Snippets below are grounded in local <code>data/raw/books/text/</code>.</p>
+</div>
+<h3>Z. Textbook anchors — rpd</h3>
+<ul>
+  <li>17 Retainers 99 Kennedy Classification 17 Auxiliary Functions of Indirect Retainers 99 Applegate’s Rules for Applying the Kennedy Forms of Indirect Retainers 99 Classification</li>
+  <li>ions of Indirect Retainers 99 Applegate’s Rules for Applying the Kennedy Forms of Indirect Retainers 99 Classification 20 9 Denture Base Considerations 103 4 Biomechanics of Removable Parti</li>
+  <li>ure 1-2 Mandibular framework designed for a partially edentulous arch with a Kennedy Classification II, modification 1 (see Chapter 3). Various component parts of the framework are labeled for identification. Subsequent chapters will describe their function, fabrication, and u…</li>
+  <li>: GENERAL CONCEPTS/TREATMENT Interproximal Occlusal Rest Seats 59 PLANNING Internal Occlusal Rests 61 Support for Rests 61 1 Partially</li>
+  <li>Physiology, and Terminology 2 Incisal Rests and Rest Seats 64 Tooth Loss and Age 3 Implants as a Rest 66 Consequences of Tooth Loss 5 Functional Restoration with Prostheses 5 7 Direct Retai</li>
+  <li>Essentials of Partial Denture Design 119 6 Rests and Rest Seats 56 Components of Partial Denture Design 120 Role of Rests in Prosthesis Movement Control 56 Implant Considerations in Design 126 Form of the Occlusal Rest and Rest Seat 58 Ex</li>
+  <li>Basic Principles of Clasp Design 68 2 Considerations for Managing Partial Types of Direct Retainers 70 Tooth Loss: Tooth Replacements Criteria for Selecting a Given Clasp Design 71 Fro</li>
+  <li>Tooth Replacements Criteria for Selecting a Given Clasp Design 71 From the Patient Perspective 8 Types of Clasp Assemblies 72 Points of View 8 Analysis of Tooth Contours for Retentive Clasps 86 Tooth-Supporte</li>
+  <li>71 From the Patient Perspective 8 Types of Clasp Assemblies 72 Points of View 8 Analysis of Tooth Contours for Retentive Clasps 86 Tooth-Supported Prostheses 9 Amount of Retention</li>
+  <li>114 5 Major and Minor Connectors 29 Role of Major Connectors in Control of 10 Principles of Removable Partial Denture Prosthesis Movement 30 Design 115 Minor Connectors 46 Difference in Prosthe</li>
+  <li>allic Coverage 49 Differentiation Between Two Main Types of Major Connectors in Review 52 Removable Partial Dentures 116 Essentials of Partial Denture Design 119 6 Rests and Rest Seats 56</li>
+  <li>ion. Subsequent chapters will describe their function, fabrication, and use. A, Major connector. B, Rests. C, Direct retainer. D, Minor connector. E, Guide plane. F, Indirect retainer. B B A</li>
+  <li>14 8 Indirect Retainers 96 3 Classification of Partially Edentulous Role of Indirect Retainers in Control of Arches 16 Prosthesis Movement 96 Requirements of</li>
+  <li>96 3 Classification of Partially Edentulous Role of Indirect Retainers in Control of Arches 16 Prosthesis Movement 96 Requirements of an Acceptable Method of Factors Influencing Effectiveness of Indirect Classification</li>
+</ul>
+<p class="adhd-stop"><b>STOP 30 sec:</b> Write 3 rules from the list above without looking. Department: rpd.</p>
 `,
-    videos: [
-      { file: "prostho/lec.12/المحاضره الثانيه عشر  الجزء الاول.mp4", label: "1/7 · Prostho lec 12 · part 1 · VERIFIED" },
-      { file: "prostho/lec.12/المحاضره الثانيه عشر الجزء الثاني.mp4", label: "2/7 · Prostho lec 12 · part 2 · VERIFIED" },
-      { file: "prostho/lec.13/المحاضره الثالثه شر الجزء الاول.mp4", label: "3/7 · Prostho lec 13 · part 1 (disk: شر typo) · VERIFIED" },
-      { file: "prostho/lec.13/المحاضره الثالثه شر الجزء الثاني.mp4", label: "4/7 · Prostho lec 13 · part 2 · VERIFIED" },
-      { file: "prostho/lec.14/المحاضره الرابعه عشر الجزء الاول.mp4", label: "5/7 · Prostho lec 14 · part 1 · VERIFIED" },
-      { file: "prostho/lec.14/المحاضره الرابعه عشر الجزء الثاني.mp4", label: "6/7 · Prostho lec 14 · part 2 · VERIFIED" },
-      { file: "prostho/lec.14/المحاضره الرابعه عشر الجزء الثالث.mp4", label: "7/7 · Prostho lec 14 · part 3 · VERIFIED" },
-    ],
+    videos: [{"file":"prostho/lec.12/المحاضره الثانيه عشر  الجزء الاول.mp4","label":"1/7 · Prostho lec 12 · part 1 · VERIFIED"},{"file":"prostho/lec.12/المحاضره الثانيه عشر الجزء الثاني.mp4","label":"2/7 · Prostho lec 12 · part 2 · VERIFIED"},{"file":"prostho/lec.13/المحاضره الثالثه شر الجزء الاول.mp4","label":"3/7 · Prostho lec 13 · part 1 (disk: شر typo) · VERIFIED"},{"file":"prostho/lec.13/المحاضره الثالثه شر الجزء الثاني.mp4","label":"4/7 · Prostho lec 13 · part 2 · VERIFIED"},{"file":"prostho/lec.14/المحاضره الرابعه عشر الجزء الاول.mp4","label":"5/7 · Prostho lec 14 · part 1 · VERIFIED"},{"file":"prostho/lec.14/المحاضره الرابعه عشر الجزء الثاني.mp4","label":"6/7 · Prostho lec 14 · part 2 · VERIFIED"},{"file":"prostho/lec.14/المحاضره الرابعه عشر الجزء الثالث.mp4","label":"7/7 · Prostho lec 14 · part 3 · VERIFIED"}],
     videoNote: "YES — prostho lec.12–14 (RPD/CD/materials). All 7 files verified. Order: 12 → 13 → 14.",
     quizTopic: "restorative",
     quizCount: 100,
-    quizSets: [
-      { topic: "rpd", count: 50, label: "Block 1 — RPD 50", mode: "learn" },
-      { topic: "complete_denture", count: 40, label: "Block 2 — Complete denture ~40", mode: "learn" },
-      { topic: "materials", count: 50, label: "Block 3 — Materials/impressions 50", mode: "learn" },
-      { topic: "restorative", count: 100, label: "Mega restorative 100", mode: "learn" },
-      { topic: "restorative", count: 150, label: "ENDURANCE 150 restorative", mode: "learn" }
-    ],
+    quizSets: [{"topic":"rpd","count":50,"label":"Block 1 — RPD 50","mode":"learn"},{"topic":"complete_denture","count":40,"label":"Block 2 — Complete denture ~40","mode":"learn"},{"topic":"materials","count":50,"label":"Block 3 — Materials/impressions 50","mode":"learn"},{"topic":"restorative","count":100,"label":"Mega restorative 100","mode":"learn"},{"topic":"restorative","count":150,"label":"ENDURANCE 150 restorative","mode":"learn"}],
     cardDeck: "restorative",
     mockType: "25",
-    mockLabel: "Quick mock 25",
+    mockLabel: "Quick mock 25"
   },
   {
     day: 4,
@@ -2811,36 +2833,85 @@ If any line fails, bold re‑pass H–J before videos.</p>
 </ul>
 <p><b>Write gate final:</b> copy five templates into your real wrong book in the next 5 minutes. If you skip this, the appendix was entertainment — and entertainment does not raise SDLE scores.</p>
 <p class="adhd-stop"><b>STOP end of Day 4 page:</b> Product = timed volume + wrong book + triage sticky. Block A was the only full read. Everything else is practice. Go practice.</p>
+<div class="where-read textbook-grounded">
+  <strong>From SCFHS Appendix C textbooks (local extracts)</strong>
+  <p>Source: <code>Sturdevant Operative Dentistry 5e (local extract)</code>. Study aid only — not SCFHS exam keys. Snippets below are grounded in local <code>data/raw/books/text/</code>.</p>
+</div>
+<h3>Z. Textbook anchors — operative</h3>
+<ul>
+  <li>tin altered layer is created on the surface. This smear layer is only a few micrometers thick and is composed of denatured collagen, hydroxyapatite, and other cutting Dentin Predentin</li>
+  <li>Occlusion CHAPTER 2 31 debris (Fig. 2-28). The smear layer serves as a natural the primary mechanism of attachment is mechanical bandage over the cut dentinal surface because it occludes interlocking. Most dentin-bonding systems have acids many of the dentinal tubules with deb…</li>
+  <li>many of the dentinal tubules with debris called smear that remove the smear layer and partially demineralize plugs (Fig. 2-29). Although the smear layer is a good the intertubular dentin. In most systems, these acidic protective barrier, it has a relatively weak attachment to …</li>
+  <li>resin interdiffusion zone often is termed the hybrid layer (Figs. 2-31 and 2-32). Although dentin bond strengths have improved, they vary because</li>
+  <li>remove or solubilize the smear layer, allowing resins to penetrate and form a “hybrid layer” with dentin structures. Ideally, smear plugs would not be removed. (From Pashley DH: The effects of acid etching on the root. Accessory canals may extend from the pulp canals pulpodent…</li>
+  <li>tin. Dentin-bonding agent has extensive penetration into dentin structures. The hybrid layer (H) is in the caries and various other irritating factors. In cases of middle, with resin (R) above and dentin (D) below. (From severe irritation, the pulp responds by an inflammatory …</li>
+  <li>ystems may be used, but special resistance form, but the increase in retention form is not 4-methyloxy ethyl trimellitic anhydride (4-META)–based signiﬁcant. Adhesion of amalgam to tooth structure is systems are used frequently. This monomer molecule unnecessary in clinical ci…</li>
+  <li>Inlay and onlay preparations have short enough external and retention form of the preparation. walls so that the castings do not usually require escape channels (see Chapter 20), but crowns may require Clinical Considerations. Zinc p</li>
+  <li>the basic concepts of retention form, but also the resist- adhesion have been described, as follows:7 ance form of the remaining tooth structure. Bonding 1. Mechanical adhesion—interlocking of the adhesive techniques allow more conservative too</li>
+  <li>medication but some increases in retention and resistance forms usually occur. When used, however, the bonded amal- gam tooth preparation also should employ conventional Pulp secondary retention and resistance form features (see Chapters 17 and 19). Amalgam bonding agents (see…</li>
+  <li>loy conventional Pulp secondary retention and resistance form features (see Chapters 17 and 19). Amalgam bonding agents (see the FIGURE 4-44 Schematic view of needs for pulpal section on bonding systems) also are proposed for seal- protection below metallic restoration. Varnis…</li>
+  <li>and improved Typical dentin bonding systems may be used, but special resistance form, but the increase in retention form is not 4-methyloxy ethyl trimellitic anhydride (4-META)–based signiﬁcant. Adhesion of amalgam to tooth structure is systems are used frequently. This monome…</li>
+  <li>ng stress-breaker indications, advantages, and disadvantages of the and C-factor issues, and new restorative techniques, presented procedure; and finally the tooth preparation especially the Class IV composite restoration. factors and restorative factors that relate to the pro- c</li>
+  <li>0 5.0 a signiﬁcant concern.15,88,186,191 C-Factor There is no clear relationship of clinical performance FIGURE 4-78 C-factors associated with polymer- to any single mechanical property. Most investigators ization shrinkage for different situations using dental agree, however,</li>
+</ul>
+<p class="adhd-stop"><b>STOP 30 sec:</b> Write 3 rules from the list above without looking. Department: operative.</p>
+<div class="where-read textbook-grounded">
+  <strong>From SCFHS Appendix C textbooks (local extracts)</strong>
+  <p>Source: <code>Rosenstiel Contemporary Fixed 4e (local extract)</code>. Study aid only — not SCFHS exam keys. Snippets below are grounded in local <code>data/raw/books/text/</code>.</p>
+</div>
+<h3>Z. Textbook anchors — fixed</h3>
+<ul>
+  <li>essential to help determine the exact amount selection of certain types of finish line geometry.53 of reduction necessary to develop an optimum occlusion. Occlusal considerations A satisfactory tooth preparation allows sufficient Preventing tooth fracture space for deve</li>
+  <li>cham·fer chăm¢fer n: 1: a finish line design for tooth axial inclination ăk¢sē-al ı̄n¢kla nā¢shun 1: the relation- preparation in which the gingival aspect meets the exter- ship of the long axis of a body to a designated plane 2: nal axial surface at an obtuse ang</li>
+  <li>curve from the axial wall to 2 bevel ĕv¢al vt: the process of slanting the finish line the cavosurface and curve of a tooth preparation chamfer angle chăm¢fer ăng¢gel n: the angle between a bur ûr n (14c): a steel or tungsten carbide rotary cutting chamfered surface</li>
+  <li>us ages. A, Maxillary central incisor with a metal-ceramic shape. Shoulder- and chamfer-shaped diamonds crown preparation. B, Maxillary lateral incisor with a metal- may accumulate less debris. Debris is not readily ceramic crown preparation. C, Maxillary canine with a pinledg…</li>
+  <li>tive than a is conservative of tooth chamfer (1). structure. 9 degrees B A C</li>
+  <li>ial con- Although they are conservative of tooth structure, tours. Chamfers can be placed expediently and with feather edge or shoulderless crown preparations precision, although care is needed to avoid leaving a (Fig. 7-19A) should be avoided because they do not ledge of unsu…</li>
+  <li>hich have better physical properties than do the improved by omitting the metal shoulder and earlier acrylic resins, and adhesive techniques to making the labial margin in porcelain. As discussed improve the bond to the supporting metal.3,4 in Chapter 24, this is a more demand…</li>
+  <li>various ages. A, Maxillary central incisor with a metal-ceramic shape. Shoulder- and chamfer-shaped diamonds crown preparation. B, Maxillary lateral incisor with a metal- may accumulate less debris. Debris is not readily ceramic crown preparation. C, Maxillary canine with a pi…</li>
+  <li>post length premolar, or molar) and the amount of remaining ferrule prefabricated posts coronal tooth structure. The latter is probably the multipiece cast cores root most important indicator in determining the post shape root diameter prognosis. post removal</li>
+  <li>ginate from these concavities, is known as a restoration with a ferrule, which is because the remaining dentin thickness is defined as a metal band or ring used to fit the root minimal.20 Therefore, the root canal should be or crown of a tooth, as opposed to a crown that enlar…</li>
+  <li>5). This preparation has no ferrule. C, crown length; R, root Extending a preparation apically creates a ferrule and helps pre- length. B, Creating a ferrule with orthodontic extrusion (see Fig. vents fracture of an endodontically treated tooth during func- 6–21) reduces root …</li>
+  <li>Examples to be avoided: {retention} fixed, removable, cement, screw, friction, tissue rigid interim mandibular removable partial dental {support} tooth, implant, tissue prosthesis replacing tee</li>
+  <li>Removable Dental Prosthesis (retention), (type) noun (retention), (type) noun Cement-Retained FDP Complete RDP (retention), (reten</li>
+  <li>(retention), (type) noun (retention), (type) noun Cement-Retained FDP Complete RDP (retention), (retention) noun (form), (retention)</li>
+</ul>
+<p class="adhd-stop"><b>STOP 30 sec:</b> Write 3 rules from the list above without looking. Department: fixed.</p>
+<div class="where-read textbook-grounded">
+  <strong>From SCFHS Appendix C textbooks (local extracts)</strong>
+  <p>Source: <code>McCracken RPD + Complete Dentures (local extract)</code>. Study aid only — not SCFHS exam keys. Snippets below are grounded in local <code>data/raw/books/text/</code>.</p>
+</div>
+<h3>Z. Textbook anchors — rpd</h3>
+<ul>
+  <li>17 Retainers 99 Kennedy Classification 17 Auxiliary Functions of Indirect Retainers 99 Applegate’s Rules for Applying the Kennedy Forms of Indirect Retainers 99 Classification</li>
+  <li>ions of Indirect Retainers 99 Applegate’s Rules for Applying the Kennedy Forms of Indirect Retainers 99 Classification 20 9 Denture Base Considerations 103 4 Biomechanics of Removable Parti</li>
+  <li>ure 1-2 Mandibular framework designed for a partially edentulous arch with a Kennedy Classification II, modification 1 (see Chapter 3). Various component parts of the framework are labeled for identification. Subsequent chapters will describe their function, fabrication, and u…</li>
+  <li>: GENERAL CONCEPTS/TREATMENT Interproximal Occlusal Rest Seats 59 PLANNING Internal Occlusal Rests 61 Support for Rests 61 1 Partially</li>
+  <li>Physiology, and Terminology 2 Incisal Rests and Rest Seats 64 Tooth Loss and Age 3 Implants as a Rest 66 Consequences of Tooth Loss 5 Functional Restoration with Prostheses 5 7 Direct Retai</li>
+  <li>Essentials of Partial Denture Design 119 6 Rests and Rest Seats 56 Components of Partial Denture Design 120 Role of Rests in Prosthesis Movement Control 56 Implant Considerations in Design 126 Form of the Occlusal Rest and Rest Seat 58 Ex</li>
+  <li>Basic Principles of Clasp Design 68 2 Considerations for Managing Partial Types of Direct Retainers 70 Tooth Loss: Tooth Replacements Criteria for Selecting a Given Clasp Design 71 Fro</li>
+  <li>Tooth Replacements Criteria for Selecting a Given Clasp Design 71 From the Patient Perspective 8 Types of Clasp Assemblies 72 Points of View 8 Analysis of Tooth Contours for Retentive Clasps 86 Tooth-Supporte</li>
+  <li>71 From the Patient Perspective 8 Types of Clasp Assemblies 72 Points of View 8 Analysis of Tooth Contours for Retentive Clasps 86 Tooth-Supported Prostheses 9 Amount of Retention</li>
+  <li>114 5 Major and Minor Connectors 29 Role of Major Connectors in Control of 10 Principles of Removable Partial Denture Prosthesis Movement 30 Design 115 Minor Connectors 46 Difference in Prosthe</li>
+  <li>allic Coverage 49 Differentiation Between Two Main Types of Major Connectors in Review 52 Removable Partial Dentures 116 Essentials of Partial Denture Design 119 6 Rests and Rest Seats 56</li>
+  <li>ion. Subsequent chapters will describe their function, fabrication, and use. A, Major connector. B, Rests. C, Direct retainer. D, Minor connector. E, Guide plane. F, Indirect retainer. B B A</li>
+  <li>14 8 Indirect Retainers 96 3 Classification of Partially Edentulous Role of Indirect Retainers in Control of Arches 16 Prosthesis Movement 96 Requirements of</li>
+  <li>96 3 Classification of Partially Edentulous Role of Indirect Retainers in Control of Arches 16 Prosthesis Movement 96 Requirements of an Acceptable Method of Factors Influencing Effectiveness of Indirect Classification</li>
+</ul>
+<p class="adhd-stop"><b>STOP 30 sec:</b> Write 3 rules from the list above without looking. Department: rpd.</p>
 `,
-    videos: [
-      { file: "operative/lec.20/المحاضره العشرون.mp4", label: "1/8 · INTEGRATION · Op lec 20 · part 1 · VERIFIED" },
-      { file: "operative/lec.20/المحاضره العشرون الجزء الثاني.mp4", label: "2/8 · INTEGRATION · Op lec 20 · part 2 · VERIFIED" },
-      { file: "operative/lec.20/المحاضره العشرون الجزظء الثالث.mp4", label: "3/8 · INTEGRATION · Op lec 20 · part 3 · VERIFIED" },
-      { file: "prostho/lec.10/المحاضره العاشره الجزء الاول.mp4", label: "4/8 · INTEGRATION · Fixed/implant lec 10 · part 1 · VERIFIED" },
-      { file: "prostho/lec.10/المحاضره العاشره الجزء الثاني.mp4", label: "5/8 · INTEGRATION · Fixed/implant lec 10 · part 2 · VERIFIED" },
-      { file: "prostho/lec.14/المحاضره الرابعه عشر الجزء الاول.mp4", label: "6/8 · INTEGRATION · Materials/CD lec 14 · part 1 · VERIFIED" },
-      { file: "prostho/lec.14/المحاضره الرابعه عشر الجزء الثاني.mp4", label: "7/8 · INTEGRATION · Materials/CD lec 14 · part 2 · VERIFIED" },
-      { file: "prostho/lec.14/المحاضره الرابعه عشر الجزء الثالث.mp4", label: "8/8 · INTEGRATION · Materials/CD lec 14 · part 3 · VERIFIED" },
-    ],
+    videos: [{"file":"operative/lec.20/المحاضره العشرون.mp4","label":"1/8 · INTEGRATION · Op lec 20 · part 1 · VERIFIED"},{"file":"operative/lec.20/المحاضره العشرون الجزء الثاني.mp4","label":"2/8 · INTEGRATION · Op lec 20 · part 2 · VERIFIED"},{"file":"operative/lec.20/المحاضره العشرون الجزظء الثالث.mp4","label":"3/8 · INTEGRATION · Op lec 20 · part 3 · VERIFIED"},{"file":"prostho/lec.10/المحاضره العاشره الجزء الاول.mp4","label":"4/8 · INTEGRATION · Fixed/implant lec 10 · part 1 · VERIFIED"},{"file":"prostho/lec.10/المحاضره العاشره الجزء الثاني.mp4","label":"5/8 · INTEGRATION · Fixed/implant lec 10 · part 2 · VERIFIED"},{"file":"prostho/lec.14/المحاضره الرابعه عشر الجزء الاول.mp4","label":"6/8 · INTEGRATION · Materials/CD lec 14 · part 1 · VERIFIED"},{"file":"prostho/lec.14/المحاضره الرابعه عشر الجزء الثاني.mp4","label":"7/8 · INTEGRATION · Materials/CD lec 14 · part 2 · VERIFIED"},{"file":"prostho/lec.14/المحاضره الرابعه عشر الجزء الثالث.mp4","label":"8/8 · INTEGRATION · Materials/CD lec 14 · part 3 · VERIFIED"}],
     videoNote: "Day 4 = integration rewatch (not new lectures). Op lec.20 + Fixed lec.10 + Materials lec.14. Skip any lecture you already own cold — prioritize timed MCQs + wrong book.",
     quizTopic: "restorative",
     quizCount: 150,
-    quizSets: [
-      { topic: "restorative", count: 50, label: "Warm-up 50", mode: "learn" },
-      { topic: "restorative", count: 100, label: "Main 100", mode: "learn" },
-      { topic: "restorative", count: 150, label: "ENDURANCE 150", mode: "learn" },
-      { topic: "operative", count: 50, label: "Operative review 50", mode: "learn" },
-      { topic: "unseen", count: 100, label: "Unseen mixed 100", mode: "learn" },
-      { topic: "weak", count: 50, label: "Weak pack 50", mode: "learn" },
-      { topic: "wrong", count: 50, label: "Wrong book 50", mode: "learn" }
-    ],
+    quizSets: [{"topic":"restorative","count":50,"label":"Warm-up 50","mode":"learn"},{"topic":"restorative","count":100,"label":"Main 100","mode":"learn"},{"topic":"restorative","count":150,"label":"ENDURANCE 150","mode":"learn"},{"topic":"operative","count":50,"label":"Operative review 50","mode":"learn"},{"topic":"unseen","count":100,"label":"Unseen mixed 100","mode":"learn"},{"topic":"weak","count":50,"label":"Weak pack 50","mode":"learn"},{"topic":"wrong","count":50,"label":"Wrong book 50","mode":"learn"}],
     cardDeck: "always",
     mockType: "resto100",
     mockLabel: "Restorative 100 timed (main)",
     mockType2: "resto40",
     mockLabel2: "Restorative 40 timed (if low energy)",
     mockType3: "200",
-    mockLabel3: "Optional full bank 200 timed",
+    mockLabel3: "Optional full bank 200 timed"
   },
   {
     day: 5,
@@ -3548,30 +3619,37 @@ If any line fails, bold re‑pass H–J before videos.</p>
 <li>Exam stem with “implant” in it almost always wants mucositis vs implantitis discrimination or spacing numbers — lock both.</li>
 </ul>
 <p class="adhd-stop"><b>STOP page end:</b> Table cold · SRP sequence cold · implant words cold · triad cold. Videos next. Then volume. Day 5 is definition day plus practice — definitions first so volume sticks.</p>
+<div class="where-read textbook-grounded">
+  <strong>From SCFHS Appendix C textbooks (local extracts)</strong>
+  <p>Source: <code>Carranza / Lang-Lindhe / Rose perio (local extract)</code>. Study aid only — not SCFHS exam keys. Snippets below are grounded in local <code>data/raw/books/text/</code>.</p>
+</div>
+<h3>Z. Textbook anchors — perio</h3>
+<ul>
+  <li>t disruption, removal, and control of subgingival plaque biofilms. Reduction in probing depths is a desirable outcome of treatment because periodontal pockets are the primary habitat of bacteria that cause the disease.1 However, pocket reduction is not an absolute requirement …</li>
+  <li>Silness J, Røynstrand T: Partial mouth recording of plaque, gingivitis and probing depth in adolescents, J Clin Periodontol 15:189, 1988. 33. Kingman A, Morrison E, Löe H, Smith J: Systematic errors in estimating the prevalence and severity of periodontal disease, J Periodonto…</li>
+  <li>et al: Diagnostic predictibility of scores of plaque, bleeding, suppuration and probing depth for probing attachment loss. 3½ years of observation following initial periodontal therapy, J Clin Periodontol 17:108, 1990. 172. Haffajee AD, Socransky SS, Dzink JL, et al: Clinical,…</li>
+  <li>cess will continue in a coronal direction until the split approaches the normal clinical attachment level at the cementoenamel junction. The epithelium on the opposite side of the split will continue to recede until it is slightly coronal to the cementoenamel junction. This sp…</li>
+  <li>s been recommended that severity be characterized on the basis of the amount of clinical attachment loss (CAL) as follows: slight = 1 or 2 mm of CAL, moderate = 3 to 4 mm of CAL, and severe = 5 mm or more of CAL.3 CAL is measured with a periodontal probe and is the distance fr…</li>
+  <li>f sites involved). Severity can be characterized on the basis of the amount of clinical attachment loss (CAL) as follows: slight = 1 to 2 mm of CAL, moderate = 3 to 4 mm of CAL, and severe ≥5 mm of CAL. GINGIVAL DISEASES Dental Plaque-Induced Gingival Diseases Gingival disease…</li>
+  <li>crosurgery 23 Resective Periodontal Surgery 24 Treatment of Molar Furcations 25 Periodontal Regeneration and Reconstructive Surgery 26 Dental Implants in the Periodontally Compromised Dentition PART IV MULTIDISCIPLINARY CARE John Kois Louis F. Rose Brian L. Mealey 27 Restorati…</li>
+  <li>eriodontal microsurgery, resective surgical techniques, and management of molar furcation problems. Included in this section is a detailed chapter on conscious sedation and anxiety control. The section ends with an extensive chapter on dental implant therapy. Part IV, Multidis…</li>
+  <li>icular direction to the root surface, whereas near the root apex and within the furcations of molars, these fibers will orient more vertically and perpendicularly to the root surface. Thus periodontal ligament fiber groups can be classified based on their orientation (see Fig.…</li>
+  <li>ct that the disease will respond well to oral hygiene instructions and thorough scaling and root planing, followed by a program of periodic periodontal maintenance care. In addition, a good long-term prognosis for the affected teeth would be anticipated. Conversely, in many ca…</li>
+  <li>periodontal pockets,65–67 (2) incomplete removal of subgingival calculus during scaling and root planing,65–68 (3) occlusion of the pocket orifice by foreign bodies,66,69,70 and (4) administration of antibiotics to patients with periodontitis in the absence of mechanical thera…</li>
+  <li>le, subjects with generalized moderate to severe chronic periodontitis received scaling and root planing followed by surgical therapy in one half of the mouth and scaling and root planing alone on the contralateral side. The cases were followed for several years to compare the…</li>
+  <li>disease will respond well to oral hygiene instructions and thorough scaling and root planing, followed by a program of periodic periodontal maintenance care. In addition, a good long-term prognosis for the affected teeth would be anticipated. Conversely, in many cases of gener…</li>
+  <li>pockets,65–67 (2) incomplete removal of subgingival calculus during scaling and root planing,65–68 (3) occlusion of the pocket orifice by foreign bodies,66,69,70 and (4) administration of antibiotics to patients with periodontitis in the absence of mechanical therapy.71 Absces…</li>
+</ul>
+<p class="adhd-stop"><b>STOP 30 sec:</b> Write 3 rules from the list above without looking. Department: perio.</p>
 `,
-    videos: [
-      { file: "perio/lec.5/المحاضرة الخامسة البريو.mp4", label: "1/8 · Perio lec 5 · VERIFIED" },
-      { file: "perio/lec.6/المحاضره السادسه كورس 46.mp4", label: "2/8 · Perio lec 6 · VERIFIED" },
-      { file: "perio/lec.7/المحاضره السابعه الجزء الاول.mp4", label: "3/8 · Perio lec 7 · part 1 · VERIFIED" },
-      { file: "perio/lec.7/المحاضره السابعه الجزء الثاني.mp4", label: "4/8 · Perio lec 7 · part 2 · VERIFIED" },
-      { file: "perio/lec.7/المحاضره السابعه الجزء الثالث.mp4", label: "5/8 · Perio lec 7 · part 3 · VERIFIED" },
-      { file: "perio/lec.8/المحاضره الثامنه الجزء الاول.mp4", label: "6/8 · Perio lec 8 · part 1 · VERIFIED" },
-      { file: "perio/lec.8/المحاضره الثامنه الجزء الثاني.mp4", label: "7/8 · Perio lec 8 · part 2 · VERIFIED" },
-      { file: "perio/lec.8/الجزء الثالث.mp4", label: "8/8 · Perio lec 8 · part 3 · VERIFIED" },
-    ],
+    videos: [{"file":"perio/lec.5/المحاضرة الخامسة البريو.mp4","label":"1/8 · Perio lec 5 · VERIFIED"},{"file":"perio/lec.6/المحاضره السادسه كورس 46.mp4","label":"2/8 · Perio lec 6 · VERIFIED"},{"file":"perio/lec.7/المحاضره السابعه الجزء الاول.mp4","label":"3/8 · Perio lec 7 · part 1 · VERIFIED"},{"file":"perio/lec.7/المحاضره السابعه الجزء الثاني.mp4","label":"4/8 · Perio lec 7 · part 2 · VERIFIED"},{"file":"perio/lec.7/المحاضره السابعه الجزء الثالث.mp4","label":"5/8 · Perio lec 7 · part 3 · VERIFIED"},{"file":"perio/lec.8/المحاضره الثامنه الجزء الاول.mp4","label":"6/8 · Perio lec 8 · part 1 · VERIFIED"},{"file":"perio/lec.8/المحاضره الثامنه الجزء الثاني.mp4","label":"7/8 · Perio lec 8 · part 2 · VERIFIED"},{"file":"perio/lec.8/الجزء الثالث.mp4","label":"8/8 · Perio lec 8 · part 3 · VERIFIED"}],
     videoNote: "YES — perio lec.5–8 only. All 8 files verified. Order: 5 → 6 → 7 p1–3 → 8 p1–3.",
     quizTopic: "perio",
     quizCount: 100,
-    quizSets: [
-      { topic: "perio", count: 50, label: "Block 1 — Perio 50", mode: "learn" },
-      { topic: "perio", count: 50, label: "Block 2 — Perio 50 more", mode: "learn" },
-      { topic: "perio", count: 100, label: "Mega perio 100", mode: "learn" },
-      { topic: "perio", count: 150, label: "ENDURANCE perio 150", mode: "learn" },
-      { topic: "restorative", count: 40, label: "Night review resto 40", mode: "learn" }
-    ],
+    quizSets: [{"topic":"perio","count":50,"label":"Block 1 — Perio 50","mode":"learn"},{"topic":"perio","count":50,"label":"Block 2 — Perio 50 more","mode":"learn"},{"topic":"perio","count":100,"label":"Mega perio 100","mode":"learn"},{"topic":"perio","count":150,"label":"ENDURANCE perio 150","mode":"learn"},{"topic":"restorative","count":40,"label":"Night review resto 40","mode":"learn"}],
     cardDeck: "perio",
     mockType: "25",
-    mockLabel: "Quick mock 25",
+    mockLabel: "Quick mock 25"
   },
   {
     day: 6,
@@ -4382,26 +4460,37 @@ If any blank, bold re‑pass B–D before Block B.</p>
 </ul>
 <p class="adhd-stop"><b>STOP 45 sec (eyes closed):</b> Say N1–N4 hinges without looking. Any blank → bold re‑pass that section only, then quiz blocks.</p>
 <p><b>Day‑6 product check:</b> reading done with gates · videos lec 1–4 · cards · 100–150 endo Q · wrong book one‑liners for every miss on diagnosis, irrigant, mishap, trauma, VRF.</p>
+<div class="where-read textbook-grounded">
+  <strong>From SCFHS Appendix C textbooks (local extracts)</strong>
+  <p>Source: <code>Cohen Pathways / Endodontics principles (local SCFHS Appendix C extract)</code>. Study aid only — not SCFHS exam keys. Snippets below are grounded in local <code>data/raw/books/text/</code>.</p>
+</div>
+<h3>Z. Textbook anchors — endo</h3>
+<ul>
+  <li>of pulp neural responses (vitality) can also be FIG. 1-19 Irreversible pulpitis associated with the mandibular right second accomplished by electric pulp testing.79 Electric pulp testers of molar. Patient has found that the only way to alleviate the pain is to place a differen…</li>
+  <li>Irreversible Pulpitis Pulpitis As the disease state of the pulp progresses, the inflammatory This is a clinical and histologic term denoting inflammation condition of the pulp can change to irreversible pulp</li>
+  <li>denoting inflammation condition of the pulp can change to irreversible pulpitis. At this of the dental pulp, clinically described as reversible or irre- stage, treatment to remove the diseased pulp will be necessary. versible and histologically described as acute, chronic, or …</li>
+  <li>pulp neural responses (vitality) can also be FIG. 1-19 Irreversible pulpitis associated with the mandibular right second accomplished by electric pulp testing.79 Electric pulp testers of molar. Patient has found that the only way to alleviate the pain is to place a different d…</li>
+  <li>Reversible Pulpitis This is a clinical diagnosis based on subjective and objective findings indicating that the inflammation should res</li>
+  <li>ly exhibit any spontaneous ity sensation from that of reversible pulpitis, which would be symptoms. The symptoms produced from pulp tests are mild, secondary to caries, trauma, or new or defective restorations. do not cause the patient distress, and result in a transient sen- …</li>
+  <li>sponses Obtained from Electric Pulp Testing False-Positive Responses Partial pulp necrosis Patient’s high anxiety Ineffective tooth isolation Contact with metal restorations False-Negative Responses Calcific obliterations in the root canals Recently traumatized teeth Immature …</li>
+  <li>ubjective and objective symptoms of symptomatic irreversible pulpitis. Pulp necrosis, findings indicating that the vital inflamed pulp is incapable of in the absence of restorations, caries, or luxation injuries, is healing.6 Teeth that are classified as having symptomatic irr…</li>
+  <li>the pulp tissue has already been removed. Pulp Necrosis This is a clinical diagnostic category indicating death of the Apical (Periapical) Disease dental pulp. The pulp is usually nonresponsive to pulp testing.6 Normal Apical Tissues When pulpal necrosis (or nonvital pulp) occ…</li>
+  <li>• Chapter 27: Bleaching Procedures cervicofacial subcutaneous emphysema, sodium hypochlorite • Chapter 28: Understanding and Managing the Fearful accidents, perforations (nonsurgical), inferior alveolar nerve Dental Patient injury (surgical), sinus perforation, instrument sepa…</li>
+  <li>m arsenic tial morbidity from toxic non-selective chemicals. We still use to sodium hypochlorite, from bird droppings to gutta percha, files that can inadvertently separate. The resolution may be in from hand files to motor-driven files, from culturing to one- a complete trans…</li>
+  <li>l procedures is necessary because many teeth FIG. 5-2 Allowing sodium hypochlorite (NaOCl) to remain in the pulp present with unusual canal morphology. Unfortunately, the chamber may help locate a calcified root canal orifice. Tiny bubbles may interpretation of traditional rad…</li>
+  <li>urate when the of 17% aqueous ethylene diaminetetraacetic acid (EDTA) and information from several radiographic views is integrated with 95% ethanol has been recommended for effective cleaning and a thorough clinical exploration of the interior and exterior drying of the pulp …</li>
+  <li>contain EDTA may even be counterproductive. Details in irriga- tion solution interactions are described later in this chapter. Instrument Breakage with Torsional Load</li>
+</ul>
+<p class="adhd-stop"><b>STOP 30 sec:</b> Write 3 rules from the list above without looking. Department: endo.</p>
 `,
-    videos: [
-      { file: "endo/lec.1/المحاضره الاولي كورس 46.mp4", label: "1/4 · Endo lec 1 · VERIFIED" },
-      { file: "endo/lec.2/محاضره الثانيه كورس 46.mp4", label: "2/4 · Endo lec 2 · VERIFIED" },
-      { file: "endo/lec.3/المحاضره الثالثه كورس 46.mp4", label: "3/4 · Endo lec 3 · VERIFIED" },
-      { file: "endo/lec.4/محاضره الرابعه كورس 46.mp4", label: "4/4 · Endo lec 4 · VERIFIED" },
-    ],
+    videos: [{"file":"endo/lec.1/المحاضره الاولي كورس 46.mp4","label":"1/4 · Endo lec 1 · VERIFIED"},{"file":"endo/lec.2/محاضره الثانيه كورس 46.mp4","label":"2/4 · Endo lec 2 · VERIFIED"},{"file":"endo/lec.3/المحاضره الثالثه كورس 46.mp4","label":"3/4 · Endo lec 3 · VERIFIED"},{"file":"endo/lec.4/محاضره الرابعه كورس 46.mp4","label":"4/4 · Endo lec 4 · VERIFIED"}],
     videoNote: "YES — endo lec.1–4 only. All 4 files verified. Watch 1→2→3→4.",
     quizTopic: "endo",
     quizCount: 100,
-    quizSets: [
-      { topic: "endo", count: 50, label: "Block 1 — Endo 50", mode: "learn" },
-      { topic: "endo", count: 50, label: "Block 2 — Endo 50 more", mode: "learn" },
-      { topic: "endo", count: 100, label: "Mega endo 100", mode: "learn" },
-      { topic: "endo", count: 150, label: "ENDURANCE endo 150", mode: "learn" },
-      { topic: "restorative", count: 30, label: "Night resto 30", mode: "learn" }
-    ],
+    quizSets: [{"topic":"endo","count":50,"label":"Block 1 — Endo 50","mode":"learn"},{"topic":"endo","count":50,"label":"Block 2 — Endo 50 more","mode":"learn"},{"topic":"endo","count":100,"label":"Mega endo 100","mode":"learn"},{"topic":"endo","count":150,"label":"ENDURANCE endo 150","mode":"learn"},{"topic":"restorative","count":30,"label":"Night resto 30","mode":"learn"}],
     cardDeck: "endo",
     mockType: "25",
-    mockLabel: "Quick mock 25",
+    mockLabel: "Quick mock 25"
   },
   {
     day: 7,
@@ -5197,31 +5286,37 @@ If any blank, bold re‑pass A–D before Block B.</p>
 </ul>
 <p class="adhd-stop"><b>STOP 60 sec (eyes closed):</b> Dry socket timing · warfarin rule · Winter vs Pell · Ludwig · ZMC · MRONJ vs ORN · lido+epi 7 mg/kg · toxicity first signs · IM epi for anaphylaxis. Any blank → bold re‑pass that section only.</p>
 <p><b>Day‑7 product check:</b> reading done with gates · surgery videos lec 15–18 · cards · 150 OMS Q · wrong book one‑liners for dry socket, anticoagulants, spaces, fractures, MRONJ, LA dose/toxicity, emergencies.</p>
+<div class="where-read textbook-grounded">
+  <strong>From SCFHS Appendix C textbooks (local extracts)</strong>
+  <p>Source: <code>Hupp OMFS + Neville path + Little med (local extract)</code>. Study aid only — not SCFHS exam keys. Snippets below are grounded in local <code>data/raw/books/text/</code>.</p>
+</div>
+<h3>Z. Textbook anchors — oms</h3>
+<ul>
+  <li>e physical examination lengthy history of a painful, nonhealing extraction site in a patient should be tailored to each patient, taking into consideration the who received therapeutic irradiation. In this more complex case, a patient’s medical problems, age, intelligence, and …</li>
+  <li>7. Have you had abnormal bleeding associated with previous extractions, surgery, or trauma . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . YES NO a. Do you bruise easily . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . YES NO</li>
+  <li>tive bleeding becomes a However, in many patients, prolonged bleeding after the extraction problem. However, platelet transfusions may be given to patients of a tooth may be the first evidence that a bleeding disorder exists. with counts higher than 50,000/mm3 if a qualitative…</li>
+  <li>. As a general guideline, if the follicular space around the crown specifically dry socket and postoperative infection, increases if the of the tooth is greater than 3 mm, the preoperative diagnosis of a tooth is removed during the time of active soft tissue infection. More de…</li>
+  <li>medications are used to control the sequelae of third molar extraction sicca (dry socket). surgery. The use of long-acting local anesthetics should be considered The closure of the incision made for an impacted third molar is in the mandible. These anesthetics provide the pati…</li>
+  <li>dence of osteitis sicca (dry socket) in mandibular molar extraction sites. Placing one fourth of the contents of a 250-mg capsule into the socket is adequate to gi</li>
+  <li>tial inte- occur as the result of facial fractures, during the treatment of impacted gration has occurred, some limited daily pressure on the implant teeth or oral pathologic conditions, or when maxillofacial reconstruc- (1000 μm of strain) will actually hasten cortical bone d…</li>
+  <li>surface of a prepared implant site becomes nonviable as a 5. Removal of impacted lower third molars result of thermal and vascular trauma. Although the living cells in Lingual nerve damage occurs in the course of surgery to remove bone die, the inorganic bone structure remains…</li>
+  <li>organic bone structure remains. Under the influence oral malignancies or impacted third molars. of local growth factors, bone cells directly underlying this bone struc- Classification. Research and clinical experience have shown that ture and bloodborne undifferentiated mesenc…</li>
+  <li>MEDICAL CONDITIONS 8 gery, under local anesthesia, nitrous oxide sedation, or both, differs Cardiovascular Problems 8 substantially from that necessary for a patient requiring hospital Ischemic Heart Disease 8 admission and general anesthesia for</li>
+  <li>ety. An anxiety-reduction protocol should therefore be used (Box 1-9). Profound local anesthesia is the best means of limit- ing patient anxiety. Although some controversy exists over the use of local anesthetics containing epinephrine in patients with angina, the Box 1-10 Man…</li>
+  <li>ring surgery, vital signs should be monitored peri- 4. Ensure profound local anesthesia before starting surgery. odically. In addition, regular verbal contact with the patient should 5. Consider the use of nitrous oxide sedation. be maintained. The use of nitrous oxide or othe…</li>
+  <li>orticosteroids, immuno- approach may be indicated. suppressive agents, bisphosphonates, and cancer chemotherapeutic agents. Mobility of the Tooth Local Contraindications The mobility of the tooth to be extracted should be assessed preop-</li>
+  <li>d location), clinical biotype (e.g., thin, syndrome [AIDS]), medications (e.g., bisphosphonates—oral and moderate, or thick), redundancy and mobility, and pathology. Clini- intravenous), and medical treatments such as chemotherapy and cal inspection of soft tissue often requir…</li>
+</ul>
+<p class="adhd-stop"><b>STOP 30 sec:</b> Write 3 rules from the list above without looking. Department: oms.</p>
 `,
-    videos: [
-      { file: "surgery/lec.15/المحاضره الخامسه عشر الجزء الاول.mp4", label: "1/10 · Surgery lec 15 · part 1 · VERIFIED" },
-      { file: "surgery/lec.15/المحاضره الخامسه عشر الجزء الثاني.mp4", label: "2/10 · Surgery lec 15 · part 2 · VERIFIED" },
-      { file: "surgery/lec.16/المحاضره السادسه عشر الجزء الاول.mp4", label: "3/10 · Surgery lec 16 · part 1 · VERIFIED" },
-      { file: "surgery/lec.16/المحاضره السادسه عشر الجزء الثاني.mp4", label: "4/10 · Surgery lec 16 · part 2 · VERIFIED" },
-      { file: "surgery/lec.16/المحاضره السادسه عشر الجزء الثالث.mp4", label: "5/10 · Surgery lec 16 · part 3 · VERIFIED" },
-      { file: "surgery/lec.17/المحاضره السابعه عشر الجزء الاول.mp4", label: "6/10 · Surgery lec 17 · part 1 · VERIFIED" },
-      { file: "surgery/lec.17/المحاضره السابعه عشر الجزء الثاني.mp4", label: "7/10 · Surgery lec 17 · part 2 · VERIFIED" },
-      { file: "surgery/lec.17/المحاضره السابعه عشر الجزء الثالث.mp4", label: "8/10 · Surgery lec 17 · part 3 · VERIFIED" },
-      { file: "surgery/lec.18/المحاضره الثامنه عشر الجزء الاول.mp4", label: "9/10 · Surgery lec 18 · part 1 · VERIFIED" },
-      { file: "surgery/lec.18/المحاضره الثامنه عشر الجزء الثاني.mp4", label: "10/10 · Surgery lec 18 · part 2 · VERIFIED" },
-    ],
+    videos: [{"file":"surgery/lec.15/المحاضره الخامسه عشر الجزء الاول.mp4","label":"1/10 · Surgery lec 15 · part 1 · VERIFIED"},{"file":"surgery/lec.15/المحاضره الخامسه عشر الجزء الثاني.mp4","label":"2/10 · Surgery lec 15 · part 2 · VERIFIED"},{"file":"surgery/lec.16/المحاضره السادسه عشر الجزء الاول.mp4","label":"3/10 · Surgery lec 16 · part 1 · VERIFIED"},{"file":"surgery/lec.16/المحاضره السادسه عشر الجزء الثاني.mp4","label":"4/10 · Surgery lec 16 · part 2 · VERIFIED"},{"file":"surgery/lec.16/المحاضره السادسه عشر الجزء الثالث.mp4","label":"5/10 · Surgery lec 16 · part 3 · VERIFIED"},{"file":"surgery/lec.17/المحاضره السابعه عشر الجزء الاول.mp4","label":"6/10 · Surgery lec 17 · part 1 · VERIFIED"},{"file":"surgery/lec.17/المحاضره السابعه عشر الجزء الثاني.mp4","label":"7/10 · Surgery lec 17 · part 2 · VERIFIED"},{"file":"surgery/lec.17/المحاضره السابعه عشر الجزء الثالث.mp4","label":"8/10 · Surgery lec 17 · part 3 · VERIFIED"},{"file":"surgery/lec.18/المحاضره الثامنه عشر الجزء الاول.mp4","label":"9/10 · Surgery lec 18 · part 1 · VERIFIED"},{"file":"surgery/lec.18/المحاضره الثامنه عشر الجزء الثاني.mp4","label":"10/10 · Surgery lec 18 · part 2 · VERIFIED"}],
     videoNote: "YES — surgery lec.15–18 only. All 10 files verified. Order: 15→16→17→18 (parts in order).",
     quizTopic: "oms",
     quizCount: 150,
-    quizSets: [
-      { topic: "oms", count: 50, label: "Block 1 — OMS 50", mode: "learn" },
-      { topic: "oms", count: 100, label: "Block 2 — OMS 100", mode: "learn" },
-      { topic: "oms", count: 150, label: "ENDURANCE OMS 150", mode: "learn" },
-      { topic: "ethics", count: 40, label: "Medical/ethics 40", mode: "learn" }
-    ],
+    quizSets: [{"topic":"oms","count":50,"label":"Block 1 — OMS 50","mode":"learn"},{"topic":"oms","count":100,"label":"Block 2 — OMS 100","mode":"learn"},{"topic":"oms","count":150,"label":"ENDURANCE OMS 150","mode":"learn"},{"topic":"ethics","count":40,"label":"Medical/ethics 40","mode":"learn"}],
     cardDeck: "oms",
     mockType: "50",
-    mockLabel: "Half mock 50 timed",
+    mockLabel: "Half mock 50 timed"
   },
   {
     day: 8,
@@ -5992,27 +6087,37 @@ If any blank, bold re‑pass A–D before Block B.</p>
 </ol>
 <p><em>Optional:</em> re-skim Day 7 MRONJ/bleeding/LA if weak. Core product of Day 8 = this page + videos + path/ethics MCQs + wrong book. IC free points should now be automatic forever across all exam days.</p>
 <p class="adhd-stop"><b>Day 8 close:</b> Lesion → discriminator → next step. Dirty instruments → clean first. Suspicious red → do not watch forever. Transplant elective → later. Phone away. Mark done. Move to quizzes.</p>
+<div class="where-read textbook-grounded">
+  <strong>From SCFHS Appendix C textbooks (local extracts)</strong>
+  <p>Source: <code>Malamed LA + SCFHS ethics + infection control (local extract)</code>. Study aid only — not SCFHS exam keys. Snippets below are grounded in local <code>data/raw/books/text/</code>.</p>
+</div>
+<h3>Z. Textbook anchors — ethics</h3>
+<ul>
+  <li>75 Case scenario 1: Autonomy as the basis of informed consent 75 Case scenario 2: Scope and limitations of consent 75 Case scenario 3: Consent and protection of the patient 75 Case scenario 4: Consent and the protection of the physician 76 Case scenario 5: The process of in</li>
+  <li>the protection of the physician 76 Case scenario 5: The process of informed consent 76 Case scenario 6: Capacity/competence to consent 76 Case scenario 7: Proxy consent/substitute decision maker 76 Case scenario 8: Prospective consent/advance directives 77 Case scenario 9: Con…</li>
+  <li>olicy Issues 79 Autonomy as the basis of informed consent 79 Scope and limitations of consent 79 Consent and protection of the patient 80 Consent and the protection of the physician 80 The process of in</li>
+  <li>ggested Readings 85 MODULE 8 - PRIVACY AND CONFIDENTIALITY 87 8.1 Objectives of the Module 89 8.2 Case (Ethical Scenario) 89 8.3 Introduction</li>
+  <li>90 How privacy and confidentiality differ 90 Measures to protect patients‟ privacy 90 Measures to protect the confidentiality of your patients‟ information 91 Condi</li>
+  <li>nts‟ privacy 90 Measures to protect the confidentiality of your patients‟ information 91 Conditions to disclose identifiable medical information 92 8.4 Why is Learning About Privacy and Confidentiality Important? 93 8.5 Ethical, Lega</li>
+  <li>the method of contraception must be based on the Sharia (‫)شريعخ‬. Irreversible sterilization is generally forbidden, but there is no consensus among legal experts on sterilization. The permissible reversible methods for males are the condom, coitus saxonicus (consisting of sq…</li>
+  <li>zation is generally forbidden, but there is no consensus among legal experts on sterilization. The permissible reversible methods for males are the condom, coitus saxonicus (consisting of squeezing the urethra at the base of the penis immediately prior to ejaculation), coitus …</li>
+  <li>e individual level includes immunization, good nutrition, personal hygiene, and disinfection. Physical promotion at the community level involves environmental sanitation. Health promotion involves proactive measures that make health better, such as exercise, good nutrition, ad…</li>
+  <li>not generalize a Casuistry consensus; appeal to precedent Fatwa that permitted it is the theory of (“paradigm cases”) is abortion for one patient adopting no theory possible to all patients with the</li>
+  <li>order should be 1 Most Islamic duties are either minimized or completely dropped from the disabled or incompetent person until his/her capacity to do them is restored. 17 considered to achieve the goal of preserving wealth (of the family). On the other hand, another may counte…</li>
+  <li>h would be due to (Mashaqqat happen while he is in the OR) before the start of the - ‫)مشقة‬ surgery. The principle Custom is It is left to the custom of the (lay and professional) of Custom recognized as a</li>
+  <li>g-in-Publication Data Saudi Commission for Health Specialties, Riyadh - 2015 Professionalism and Ethics Handbook for Residents 232p; 14.8cm × 21cm ISBN: 978-603-90608-2-6 1-Medical ethics 2-Professional ethics I-Title 174.2 dc 1436/2924 L.D. no. 1436/2924 ISBN: 978-603-90608-2…</li>
+  <li>s and the organizations involved. Citation: Hussein GM, Alkabba AF, Kasule OH. Professionalism and Ethics Handbook for Residents (PEHR): A Practical Guide. Ware J, Kattan T (eds). 1st Edition. Riyadh, Saudi Arabia: Saudi Commission for Health Specialties, 2015. FOREWORD XVI AC…</li>
+</ul>
+<p class="adhd-stop"><b>STOP 30 sec:</b> Write 3 rules from the list above without looking. Department: ethics.</p>
 `,
-    videos: [
-      { file: "مدسن وباثولوجي/lec.23/المحاضره الثالثه والعشرون الجزء الاول.mp4", label: "1/6 · Path/med lec 23 · part 1 · VERIFIED" },
-      { file: "مدسن وباثولوجي/lec.23/المحاضره الثالثه والعشرون الجزء الثاني.mp4", label: "2/6 · Path/med lec 23 · part 2 · VERIFIED" },
-      { file: "مدسن وباثولوجي/lec.24/محاضره الخامسه والعشرين الجزء الاول.mp4", label: "3/6 · Path/med lec.24 folder · part 1 (filename says 25th) · VERIFIED" },
-      { file: "مدسن وباثولوجي/lec.24/محاضره الخامسه وعشرون الجزء الثاني.mp4", label: "4/6 · Path/med lec.24 folder · part 2 · VERIFIED" },
-      { file: "مدسن وباثولوجي/lec.24/محاضره الخامسه وعشرين الجزء الثالث.mp4", label: "5/6 · Path/med lec.24 folder · part 3 · VERIFIED" },
-      { file: "ethics/محاضره الثلاثين الجزء الثاني.mp4", label: "6/6 · Ethics lec 30 · part 2 only (only ethics file on disk) · VERIFIED" },
-    ],
+    videos: [{"file":"مدسن وباثولوجي/lec.23/المحاضره الثالثه والعشرون الجزء الاول.mp4","label":"1/6 · Path/med lec 23 · part 1 · VERIFIED"},{"file":"مدسن وباثولوجي/lec.23/المحاضره الثالثه والعشرون الجزء الثاني.mp4","label":"2/6 · Path/med lec 23 · part 2 · VERIFIED"},{"file":"مدسن وباثولوجي/lec.24/محاضره الخامسه والعشرين الجزء الاول.mp4","label":"3/6 · Path/med lec.24 folder · part 1 (filename says 25th) · VERIFIED"},{"file":"مدسن وباثولوجي/lec.24/محاضره الخامسه وعشرون الجزء الثاني.mp4","label":"4/6 · Path/med lec.24 folder · part 2 · VERIFIED"},{"file":"مدسن وباثولوجي/lec.24/محاضره الخامسه وعشرين الجزء الثالث.mp4","label":"5/6 · Path/med lec.24 folder · part 3 · VERIFIED"},{"file":"ethics/محاضره الثلاثين الجزء الثاني.mp4","label":"6/6 · Ethics lec 30 · part 2 only (only ethics file on disk) · VERIFIED"}],
     videoNote: "YES — path folder lec.23–24 + ethics. All 6 verified. Order: 23 p1–2 → 24-folder p1–3 → ethics. Disk: lec.24 filenames say 25th; ethics is part-2-only file.",
     quizTopic: "oms,ethics",
     quizCount: 100,
-    quizSets: [
-      { topic: "oms", count: 50, label: "Path/OMS 50", mode: "learn" },
-      { topic: "ethics", count: 50, label: "Ethics/IC/Medical 50", mode: "learn" },
-      { topic: "oms,ethics", count: 100, label: "Combined 100", mode: "learn" },
-      { topic: "oms,ethics", count: 150, label: "ENDURANCE 150 path+ethics", mode: "learn" }
-    ],
+    quizSets: [{"topic":"oms","count":50,"label":"Path/OMS 50","mode":"learn"},{"topic":"ethics","count":50,"label":"Ethics/IC/Medical 50","mode":"learn"},{"topic":"oms,ethics","count":100,"label":"Combined 100","mode":"learn"},{"topic":"oms,ethics","count":150,"label":"ENDURANCE 150 path+ethics","mode":"learn"}],
     cardDeck: "always",
     mockType: "25",
-    mockLabel: "Quick mock 25",
+    mockLabel: "Quick mock 25"
   },
   {
     day: 9,
@@ -6826,386 +6931,130 @@ If any blank, bold re‑pass A–D before Block B.</p>
 </ol>
 <p><em>Optional:</em> resto 40Q tonight if energy remains. Sleep beats extra cephalometrics before mocks. The 10% is won by automatic discriminators, not by reading more PDFs.</p>
 <p class="adhd-stop"><b>Day 9 close:</b> Tables beat paragraphs. Space tree beats guessing. SSC after pulp. No systemic F if water optimal. Tell-Show-Do. Primary avulsion stays out. Phone away. Mark done. Run the 80.</p>
+<div class="where-read textbook-grounded">
+  <strong>From SCFHS Appendix C textbooks (local extracts)</strong>
+  <p>Source: <code>Proffit/Mitchell ortho + McDonald pedo (local extract)</code>. Study aid only — not SCFHS exam keys. Snippets below are grounded in local <code>data/raw/books/text/</code>.</p>
+</div>
+<h3>Z. Textbook anchors — ortho / pedo</h3>
+<ul>
+  <li>always were achieved when the patient had ideal occlusion. Note that the Angle classification has four classes: normal As time passed, it became clear that even an excellent occlusion, Class I malocclusion, Class II malocclusion, and occlusion was unsatisfactory if it was achi…</li>
+  <li>ward and backward growth direction of the man- I, II, and III. The basis of the Angle classification was the dible, which would tend to create and maintain Class II jaw relationship of the first molar teeth and the alignment (or and molar relationships. Class I and Class III g…</li>
+  <li>malocclusion FIGURE 6-63 The Angle classification has come to describe four different things that can be seen on clinical examination, dental casts, and/or cephalograms: the type of malocclusion, the molar relationship, the jaw relationship, and the pattern of growth, as shown…</li>
+  <li>of posterior crossbite (Figure 1-6). In addition, overjet THE USUAL ORTHODONTIC (Figure 1-7) and overbite/open bite (Figure 1-8) were mea- PROBLEMS: EPIDEMIOLOGY sured. Overjet reflects Angle’s Class II and Class III molar OF MALOCCLUS</li>
+  <li>PROBLEMS: EPIDEMIOLOGY sured. Overjet reflects Angle’s Class II and Class III molar OF MALOCCLUSION relationships. Because overjet can be evaluated much more precisely than molar relationsh</li>
+  <li>ION relationships. Because overjet can be evaluated much more precisely than molar relationship in a clinical examination, Angle’s “normal occlusion” more properly should be consid- molar relationship was not evaluated directly.</li>
+  <li>UAL ORTHODONTIC (Figure 1-7) and overbite/open bite (Figure 1-8) were mea- PROBLEMS: EPIDEMIOLOGY sured. Overjet reflects Angle’s Class II and Class III molar OF MALOCCLUSION relationships. Because overjet can be eva</li>
+  <li>Overbite FIGURE 1-5 A space between adjacent teeth is called a diastema. A maxillary midline diastema is relatively common, especially during the mixed dentition in childhood, and disappears or decreases in width as the permanent canines erupt. Spontaneous correction of a child</li>
+  <li>FIGURE 1-8 Overbite is defined as the vertical overlap of the inci- sors. Normally, the lower incisal edges contact the lingual surface of the</li>
+  <li>as information). formed), a space maintainer is unnecessary. If there is not Summary. Which of these methods is best for an indi- enough space for the permanent tooth or if it is missing, vidual patient depends on the circumstances. The prediction space maintenance alone is in…</li>
+  <li>consulted. Band-and-Loop Space Maintainers On the other hand, if the patient does not fit the popula- The band and loop is a unilateral fixed appliance indicated tion group from which the correlations were derived, as an for space maintenance in the posterior segments. The sim…</li>
+  <li>D FIGURE 11-52 A band-and-loop space maintainer is generally used in the mixed dentition to save the space of a single prematurely lost primary molar. It consists of a band on either a primary or permanent molar and a wire loop to maintain space. A, The loop portion made from …</li>
+  <li>tooth in place (with a calcium hydroxide pulpotomy and temporary restoration) until the permanent tooth has been brought forward for that half of the total distance. Then the</li>
+  <li>when brushed? h. Does your child use fluoride products: rinses, drops, tabs? i. Does or has your child had any clicking or pain in the jaw joint? j. Does or has your child had any problems opening or closing their mouth?</li>
+</ul>
+<p class="adhd-stop"><b>STOP 30 sec:</b> Write 3 rules from the list above without looking. Department: ortho_pedo.</p>
 `,
-    videos: [
-      { file: "ortho and pedo/lec.22/المحاضره الثانيه والعشرون الجزء الاول.mp4", label: "1/2 · FULL SET · Ortho/pedo lec 22 · part 1 · VERIFIED on disk+Drive" },
-      { file: "ortho and pedo/lec.22/المحاضره الثانيه والعشرون الجزء الثاني.mp4", label: "2/2 · FULL SET · Ortho/pedo lec 22 · part 2 · VERIFIED on disk+Drive" },
-    ],
+    videos: [{"file":"ortho and pedo/lec.22/المحاضره الثانيه والعشرون الجزء الاول.mp4","label":"1/2 · FULL SET · Ortho/pedo lec 22 · part 1 · VERIFIED on disk+Drive"},{"file":"ortho and pedo/lec.22/المحاضره الثانيه والعشرون الجزء الثاني.mp4","label":"2/2 · FULL SET · Ortho/pedo lec 22 · part 2 · VERIFIED on disk+Drive"}],
     videoNote: "FULL local/Drive ortho+pedo library = lec.22 only (2 parts). No lec.23+ in this course tree. Order: part 1 → part 2. Folder name has a space: ortho and pedo. After videos → Ortho/Pedo ALL MCQs.",
     quizTopic: "ortho_pedo",
     quizCount: 150,
-    quizSets: [
-      { topic: "ortho_pedo", count: 50, label: "Block 1 — Ortho/pedo 50", mode: "learn" },
-      { topic: "ortho_pedo", count: 50, label: "Block 2 — Ortho/pedo 50 more", mode: "learn" },
-      { topic: "ortho_pedo", count: 100, label: "Mega ortho/pedo 100", mode: "learn" },
-      { topic: "ortho_pedo", count: 150, label: "ENDURANCE ortho/pedo 150", mode: "learn" },
-      { topic: "ortho_pedo", count: 99999, label: "Ortho/Pedo ALL", mode: "learn" },
-      { topic: "unseen", count: 50, label: "Unseen 50 (any topic)", mode: "learn" },
-      { topic: "restorative", count: 40, label: "Resto maintenance 40", mode: "learn" },
-      { topic: "always_src", count: 25, label: "Free points 25", mode: "learn" }
-    ],
+    quizSets: [{"topic":"ortho_pedo","count":50,"label":"Block 1 — Ortho/pedo 50","mode":"learn"},{"topic":"ortho_pedo","count":50,"label":"Block 2 — Ortho/pedo 50 more","mode":"learn"},{"topic":"ortho_pedo","count":100,"label":"Mega ortho/pedo 100","mode":"learn"},{"topic":"ortho_pedo","count":150,"label":"ENDURANCE ortho/pedo 150","mode":"learn"},{"topic":"ortho_pedo","count":99999,"label":"Ortho/Pedo ALL","mode":"learn"},{"topic":"unseen","count":50,"label":"Unseen 50 (any topic)","mode":"learn"},{"topic":"restorative","count":40,"label":"Resto maintenance 40","mode":"learn"},{"topic":"always_src","count":25,"label":"Free points 25","mode":"learn"}],
     cardDeck: "pedo",
     mockType: "ortho50",
     mockLabel: "Ortho/Pedo 50 timed",
     mockType2: "25",
-    mockLabel2: "Quick mixed 25 timed",
+    mockLabel2: "Quick mixed 25 timed"
   },
   {
     day: 10,
     title: "Full mock #1 (exam simulation)",
-    focus: "mixed",
-    goal: "Baseline ≥70%. Review every miss.",
+    focus: "Full exam simulation · Preferred bank · blueprint weights (resto≈40%)",
+    goal: "Complete 200Q timed (or 2×100). Score every miss into wrong book. No new theory mid-mock.",
     hours: "9–10 hours",
-    reading: `
-<div class="where-read">
-  <strong>ADHD Day‑10 — FULL MOCK (not a reading day)</strong>
-  <p><b>Exam fact:</b> SDLE = <b>200 MCQs</b>, ~4 hours, often two ~100Q sections with a break. Pass scaled ~542/800. No negative marking. Answer everything.</p>
-  <p><b>Today is simulation only.</b> There is no 45‑minute textbook block. If you “study new theory” today you break the sim.</p>
-  <p><b>Honest time map (~7–8h):</b></p>
-  <ol>
-    <li><b>15 min setup</b> — phone out of room, water, bathroom, timer ready, earplugs if needed</li>
-    <li><b>120 min</b> — Part 1: 100Q timed (exam pace ~72 s/Q)</li>
-    <li><b>30 min break</b> — walk, food, no Instagram rabbit hole, no checking answers yet</li>
-    <li><b>120 min</b> — Part 2: 100Q timed</li>
-    <li><b>15 min</b> — score + emotion dump (write 3 feelings, then ignore them)</li>
-    <li><b>2–3 h</b> — review every wrong + every guess: one hinge rule per item in wrong book</li>
-    <li><b>15 min</b> — list top 3 weak domains for Day 11</li>
-  </ol>
-  <p><b>Success:</b> finished 200 under conditions · wrong book updated · no new PDFs opened.</p>
-</div>
-<h3>How to simulate the real KSA SDLE</h3>
-<ol>
-<li>Phone off. Sit as if Prometric. Same chair blocks if possible.</li>
-<li>Do <b>Part 1: 100 questions</b> timed in the app.</li>
-<li>Real <b>30‑minute break</b> (walk, water, bathroom).</li>
-<li>Do <b>Part 2: another 100 questions</b>.</li>
-<li>Rest of day: review <b>every wrong and every guess</b> — one line rule each.</li>
-</ol>
-<p><b>Exam facts:</b> 200 MCQs · ~4 hours · pass ~542/800 · no negative marking · FDI numbering · English.</p>
-<p><b>Videos today:</b> none. <b>Reading today:</b> this page only (5 min) then mock.</p>
-<p class="adhd-stop"><b>STOP before Part 1:</b> “I will not pause the timer to google. I will flag and move.”</p>
-`,
+    reading: `<div class="where-read mock-day-guide"><ul><li>Today is MOCK #1 — not a reading day.</li><li>Warm-up optional: 15–25 free points (Always) then start timed mock.</li><li>Mocks draw a SCFHS-style mix from Preferred MCQs (not the raw 15k dump).</li><li>Rules: 72s/Q pace, flag uncertain, no textbook mid-exam, review ALL wrongs same day.</li><li>After mock: export wrong-book topics → Day 11 fuel.</li></ul></div>`,
     videos: [],
     videoNote: "Mock day — no new videos. Re-open a weak lecture path only after scoring the mock.",
-    quizTopic: "all",
+    quizTopic: "preferred",
     quizCount: 100,
-    quizSets: [
-      { topic: "always_src", count: 25, label: "Warm free points 25", mode: "learn" },
-      { topic: "wrong", count: 50, label: "Pre-mock wrong book 50", mode: "learn" },
-      { topic: "unseen", count: 50, label: "Unseen 50 (optional warm)", mode: "learn" },
-      { topic: "weak", count: 50, label: "Weak pack 50 (optional)", mode: "learn" }
-    ],
+    quizSets: [{"topic":"preferred","count":50,"label":"Warm Preferred 50","mode":"learn"},{"topic":"preferred","count":100,"label":"Preferred volume 100","mode":"learn"}],
     cardDeck: "always",
     mockType: "100",
-    mockLabel: "EXAM #1 Part 1 — 100Q timed",
+    mockLabel: "EXAM #1 Part 1 — 100Q blueprint mix (timed ~2h)",
     mockType2: "100",
-    mockLabel2: "EXAM #1 Part 2 — 100Q timed (30 min break)",
+    mockLabel2: "EXAM #1 Part 2 — 100Q blueprint mix (30 min break)",
     mockType3: "200",
-    mockLabel3: "EXAM #1 FULL 200 (alt single sitting)",
+    mockLabel3: "EXAM #1 FULL 200 blueprint (single sitting ~4h)"
   },
   {
     day: 11,
     title: "Fix weaknesses only",
-    focus: "mixed",
-    goal: "Close gaps from mock #1. No new random topics.",
+    focus: "Wrong book + weakest blueprint topics only",
+    goal: "Empty wrong book as far as possible; rebuild accuracy on weak depts to ≥75% before Mock #2.",
     hours: "8–10 hours",
-    reading: `
-<div class="where-read">
-  <strong>ADHD Day‑11 — WEAKNESS SURGERY (targeted, not random)</strong>
-  <p><b>Not a new content day.</b> You only repair what Day 10 exposed. Random full re‑reads of strong topics waste the day.</p>
-  <p><b>Honest time map (~6–8h):</b></p>
-  <ol>
-    <li><b>20 min</b> — Progress + Day‑10 wrong book → write top 3 weak domains</li>
-    <li><b>90–120 min</b> — Re‑read ONLY the weak day’s bold lines + write gates (not whole 14‑day plan)</li>
-    <li><b>5 min break</b></li>
-    <li><b>90–120 min</b> — Wrong‑book quiz until empty / near empty</li>
-    <li><b>60 min</b> — One Quick 50 mixed timed in weak‑heavy mix</li>
-    <li><b>60–90 min</b> — Optional second weak domain block if energy remains</li>
-    <li><b>15 min</b> — Always‑comes skim for free points you missed</li>
-  </ol>
-  <p><b>Success:</b> top‑3 weaknesses each have a written rule set · wrong book shrinking · no “study everything.”</p>
-</div>
-<h3>How to study today</h3>
-<ol>
-<li>Open <b>Progress</b> — note topics under 75% and Day‑10 miss clusters.</li>
-<li>Re‑read the Day reading for <b>ONLY</b> those weak days (day picker) — bold + STOPs.</li>
-<li>Wrong‑book quiz until empty or almost empty.</li>
-<li>One Quick 50 mixed timed — exam pace.</li>
-</ol>
-<p><b>Videos:</b> only rewatch files from the weak subject’s day list — not everything.</p>
-<p>If restorative weak → Days 1–3. If endo weak → Day 6 only. If perio → Day 5. Etc.</p>
-<p class="adhd-stop"><b>Rule:</b> If it was not on the top‑3 miss list, do not open it today.</p>
-`,
+    reading: `<div class="where-read mock-day-guide"><ul><li>No full re-read. Open Progress → weak ranking.</li><li>Priority packs: Wrong book → Weak topic 50s → free points if ethics soft.</li><li>Write 1-line hinge for every miss. Stop when weak topics trend up.</li></ul></div>`,
     videos: [],
     videoNote: "Weakness day — no new videos unless one topic is bleeding. Prefer Wrong + Weak pack MCQs.",
     quizTopic: "weak",
-    quizCount: 100,
-    quizSets: [
-      { topic: "wrong", count: 50, label: "Wrong book 50", mode: "learn" },
-      { topic: "wrong", count: 99999, label: "Wrong book ALL", mode: "learn" },
-      { topic: "weak", count: 50, label: "Weak pack 50", mode: "learn" },
-      { topic: "weak", count: 100, label: "Weak pack 100", mode: "learn" },
-      { topic: "weak", count: 150, label: "Weak pack 150", mode: "learn" },
-      { topic: "weak", count: 99999, label: "Weak pack ALL", mode: "learn" },
-      { topic: "unseen", count: 100, label: "Unseen 100", mode: "learn" },
-      { topic: "always_src", count: 50, label: "Free points 50", mode: "learn" }
-    ],
+    quizCount: 120,
+    quizSets: [{"topic":"wrong","count":50,"label":"Wrong book 50","mode":"learn"},{"topic":"weak","count":50,"label":"Weak pack 50","mode":"learn"},{"topic":"always_src","count":25,"label":"Free points 25","mode":"learn"}],
     cardDeck: "unknown",
     mockType: "50",
-    mockLabel: "Check mock 50 timed",
+    mockLabel: "Weak-check mock 50 timed",
     mockType2: "100",
-    mockLabel2: "Check mock 100 timed",
+    mockLabel2: "Weak-check mock 100 timed"
   },
   {
     day: 12,
     title: "Full mock #2 + medical polish",
-    focus: "mixed",
-    goal: "Mock ≥75–78%.",
+    focus: "Second full mock · compare to Mock #1 by topic",
+    goal: "Beat Mock #1 total and flatten weak depts. Medical/ethics free points in the mix.",
     hours: "9–10 hours",
-    reading: `
-<div class="where-read">
-  <strong>ADHD Day‑12 — MOCK #2 + medical free points</strong>
-  <p><b>Compare to Day 10.</b> Same sim rules. Morning medical polish is short on purpose — then full 200 again.</p>
-  <p><b>Honest time map (~7–8h):</b></p>
-  <ol>
-    <li><b>25–40 min</b> — Medical &amp; IC rapid list below (active: say each line out loud)</li>
-    <li><b>120 min</b> — Part 1: 100Q</li>
-    <li><b>30 min break</b></li>
-    <li><b>120 min</b> — Part 2: 100Q</li>
-    <li><b>2–3 h</b> — wrong/guess review + compare domain scores vs Day 10</li>
-  </ol>
-</div>
-<h3>Medical &amp; IC rapid list (memorize again)</h3>
-<ul>
-<li>Clean → disinfect → sterilize (never dirty into autoclave as “done”)</li>
-<li>Asthma → prefer paracetamol; NSAID caution if sensitive</li>
-<li>Nifedipine / phenytoin / cyclosporine → gingival enlargement</li>
-<li>COPD → semi‑supine / avoid fully flat when possible</li>
-<li>Warfarin simple extraction → often continue if INR therapeutic/OK per protocol + local hemostasis</li>
-<li>MRONJ → antiresorptives / antiangiogenics history</li>
-<li>ORN → radiation field history (not the same as MRONJ)</li>
-<li>Transplant recent / unstable medical → defer elective</li>
-<li>Hyperthyroid + epinephrine → caution</li>
-<li>LA toxicity → stop, airway, BLS, EMS thinking</li>
-<li>Syncope most common emergency → supine, legs up, airway</li>
-<li>Anaphylaxis → IM epinephrine protocol mindset</li>
-</ul>
-<p>Then run full 200 simulation again (2 × 100). Compare scores to Day 10.</p>
-<p class="adhd-stop"><b>After mock:</b> write only NEW wrong rules — do not rewrite your whole notebook.</p>
-`,
+    reading: `<div class="where-read mock-day-guide"><ul><li>Same exam rules as Mock #1. Track topic breakdown after finish.</li><li>If one department collapses, do a 50Q preferred pack on it before Day 13.</li></ul></div>`,
     videos: [],
     videoNote: "Mock #2 day — optional ethics/path rewatch only if medical stems tanked mock #1.",
-    quizTopic: "all",
+    quizTopic: "preferred",
     quizCount: 100,
-    quizSets: [
-      { topic: "always_src", count: 25, label: "Free points warm 25", mode: "learn" },
-      { topic: "ethics", count: 50, label: "Ethics/med polish 50", mode: "learn" },
-      { topic: "ethics", count: 100, label: "Ethics 100", mode: "learn" },
-      { topic: "wrong", count: 50, label: "Wrong book 50", mode: "learn" },
-      { topic: "weak", count: 50, label: "Weak pack 50", mode: "learn" },
-      { topic: "unseen", count: 50, label: "Unseen 50", mode: "learn" }
-    ],
+    quizSets: [{"topic":"preferred","count":50,"label":"Warm Preferred 50","mode":"learn"},{"topic":"preferred","count":100,"label":"Preferred volume 100","mode":"learn"}],
     cardDeck: "always",
     mockType: "100",
-    mockLabel: "MOCK #2 Part 1 — 100Q timed",
+    mockLabel: "MOCK #2 Part 1 — 100Q blueprint timed",
     mockType2: "100",
-    mockLabel2: "MOCK #2 Part 2 — 100Q timed",
+    mockLabel2: "MOCK #2 Part 2 — 100Q blueprint timed",
     mockType3: "200",
-    mockLabel3: "MOCK #2 FULL 200 timed",
+    mockLabel3: "MOCK #2 FULL 200 blueprint timed"
   },
   {
     day: 13,
     title: "Mock #3 + consolidation",
-    focus: "mixed",
-    goal: "Hit ≥80% on a timed mock.",
+    focus: "Final hard mock + wrong-book consolidation",
+    goal: "Last full pressure day. Wrong book must be short by tonight.",
     hours: "8–9 hours",
-    reading: `
-<div class="where-read">
-  <strong>ADHD Day‑13 — MOCK #3 + consolidation (no new books)</strong>
-  <p><b>Goal:</b> confidence under fatigue + clean wrong book. New PDFs today = self‑sabotage.</p>
-  <p><b>Honest time map (~6–7h):</b></p>
-  <ol>
-    <li><b>Morning 60–90 min</b> — cards “still learning” + wrong book + Always‑comes skim</li>
-    <li><b>Afternoon 100–200Q</b> — one full or 100Q timed mock</li>
-    <li><b>90 min</b> — light review of misses only</li>
-    <li><b>Night</b> — sleep ≥7 hours (non‑negotiable memory step)</li>
-  </ol>
-</div>
-<h3>Morning</h3>
-<ul>
-<li>Cards deck “Still learning” until green.</li>
-<li>Wrong book quiz.</li>
-<li>Skim Always‑comes list (step below).</li>
-</ul>
-<h3>Afternoon</h3>
-<ul>
-<li>One full or 100Q timed mock.</li>
-<li>Light review only — no new books.</li>
-</ul>
-<h3>Night</h3>
-<ul>
-<li>Sleep ≥7 hours. Memory consolidates during sleep.</li>
-</ul>
-<p class="adhd-stop"><b>Ban list today:</b> new Telegram banks · new YouTube series · reopening “just one more” PDF.</p>
-`,
+    reading: `<div class="where-read mock-day-guide"><ul><li>Morning: wrong-book purge. Afternoon: Mock #3.</li><li>Evening: only free points + sleep logistics — no new banks.</li></ul></div>`,
     videos: [],
     videoNote: "Consolidation — no new theory videos. Wrong book + weak pack + one hard mock.",
     quizTopic: "wrong",
     quizCount: 100,
-    quizSets: [
-      { topic: "wrong", count: 99999, label: "Wrong book ALL", mode: "learn" },
-      { topic: "weak", count: 100, label: "Weak pack 100", mode: "learn" },
-      { topic: "unseen", count: 100, label: "Unseen 100", mode: "learn" },
-      { topic: "always_src", count: 50, label: "Free points 50", mode: "learn" },
-      { topic: "restorative", count: 50, label: "Resto maintenance 50", mode: "learn" }
-    ],
+    quizSets: [{"topic":"wrong","count":50,"label":"Wrong purge 50","mode":"learn"},{"topic":"preferred","count":50,"label":"Preferred 50","mode":"learn"}],
     cardDeck: "unknown",
     mockType: "100",
-    mockLabel: "MOCK #3 — 100Q timed",
+    mockLabel: "MOCK #3 — 100Q blueprint timed",
     mockType2: "200",
-    mockLabel2: "MOCK #3 — FULL 200 timed",
+    mockLabel2: "MOCK #3 — FULL 200 blueprint timed"
   },
   {
     day: 14,
     title: "Light day + exam logistics",
-    focus: "mixed",
-    goal: "Calm, logistics locked, brain fresh.",
+    focus: "Logistics + free points only · protect sleep",
+    goal: "ID, route, water, sleep. No new theory. Optional 25 free points only.",
     hours: "4–5 hours max",
-    reading: `
-<div class="where-read">
-  <strong>ADHD Day‑14 — LIGHT DAY + logistics (protect the brain)</strong>
-  <p><b>Not a study volume day.</b> Anxiety loves last‑minute 200Q marathons. Do logistics + free‑point skim only.</p>
-  <p><b>Honest time map (~2–3h max cognitive):</b></p>
-  <ol>
-    <li><b>30–40 min</b> — Always‑comes 20 rules out loud</li>
-    <li><b>Optional 10 easy Q</b> — stop if anxiety spikes</li>
-    <li><b>30 min</b> — ID, appointment, route, Mumaris, glasses, arrival plan</li>
-    <li><b>Rest</b> — walk, food, sleep early</li>
-  </ol>
-</div>
-<h3>Do</h3>
-<ul>
-<li>Read Always‑comes only (20 rules).</li>
-<li>Optional 10 easy confidence questions — stop if anxious.</li>
-<li>Confirm: Prometric appointment, ID, route, arrival time, Mumaris eligibility.</li>
-<li>Pack: ID, confirmation, glasses if needed.</li>
-</ul>
-<h3>Do NOT</h3>
-<ul>
-<li>No all‑nighter.</li>
-<li>No new PDF banks.</li>
-<li>No 200Q mock today.</li>
-</ul>
-<h3>Exam day reminder</h3>
-<ul>
-<li>200 Q · often 2 parts · ~120 min each · break between</li>
-<li>Answer everything (no negative marking)</li>
-<li>Flag and move — do not burn 5 minutes on one stem</li>
-<li>FDI tooth numbers · read stems fully · eliminate first</li>
-</ul>
-<p class="adhd-stop"><b>Final line:</b> You already did the volume days. Tomorrow is execution, not learning a new textbook.</p>
-`,
+    reading: `<div class="where-read mock-day-guide"><ul><li>Exam day logistics: ID, arrival time, snacks, breaks.</li><li>Skim Always-comes free points only if calm.</li><li>Do NOT open huge banks. Trust the plan.</li></ul></div>`,
     videos: [],
     videoNote: "Light day — zero new videos. Logistics > MCQs. Stop if anxiety rises.",
     quizTopic: "always_src",
     quizCount: 25,
-    quizSets: [
-      { topic: "always_src", count: 25, label: "Free points light 25", mode: "learn" },
-      { topic: "always_src", count: 50, label: "Free points 50 max", mode: "learn" },
-      { topic: "wrong", count: 20, label: "Sticky wrongs only 20", mode: "learn" }
-    ],
+    quizSets: [{"topic":"always_src","count":25,"label":"Calm free points 25","mode":"learn"}],
     cardDeck: "always",
     mockType: "25",
-    mockLabel: "Optional calm 25 timed (SKIP if anxious)",
-  },
+    mockLabel: "Optional calm 25 free-points timed (SKIP if anxious)"
+  }
 ];
-
-window.VIDEO_ROOT = "/data/prometric/prometric/";
-
-window.ALWAYS_COMES_READ = [
-  ["1. Instrument order", "Cleaning → Disinfection → Sterilization"],
-  ["2. Recent transplant", "Defer elective care; coordinate physician"],
-  ["3. Asthma pain", "Paracetamol; caution NSAIDs"],
-  ["4. Gingival enlargement drugs", "Nifedipine, phenytoin, cyclosporine"],
-  ["5. Implant–IAN distance", "≈ 2 mm safety zone"],
-  ["6. Crown food packing", "Open proximal contact (or bad emergence)"],
-  ["7. Rotary file break", "Torsional fatigue when tip locks"],
-  ["8. Narrowest canal", "Apical constriction"],
-  ["9. Pulp cap / apexification", "MTA / bioceramic"],
-  ["10. Avulsion splint", "Often ~2 weeks flexible (IADT)"],
-  ["11. Kennedy Class I", "Bilateral distal extension"],
-  ["12. Worst RPD force", "Horizontal / lateral on abutments"],
-  ["13. Leukoplakia", "White patch that cannot be wiped"],
-  ["14. Thrush", "Pseudomembrane wipes off"],
-  ["15. Pierre Robin", "Micrognathia + glossoptosis + cleft"],
-  ["16. Natal vs neonatal", "At birth vs first 30 days"],
-  ["17. Diastema + frenum", "Often ortho then frenectomy"],
-  ["18. Zygoma fracture", "Diplopia common test answer"],
-  ["19. Odontogenic infection", "Mixed flora"],
-  ["20. Dry socket timing", "2–4 days post-extraction"],
-  ["21. MRONJ drugs", "Bisphosphonates / denosumab"],
-  ["22. COPD position", "Semi-supine"],
-  ["23. Rubber dam wrinkle", "Holes punched too far apart"],
-  ["24. Uncontrolled DM prostho", "Prefer RPD over implants until controlled"],
-  ["25. Light handle IC", "Barrier or disinfect every patient"],
-  ["26. Microfill fractures", "Replace with hybrid / nanohybrid"],
-  ["27. Enamel critical pH", "≈ 5.5"],
-  ["28. Eugenol under composite", "Inhibits resin polymerization"],
-  ["29. High bite after fill", "Adjust occlusion first"],
-  ["30. Missed MB2", "Persistent MB lesion after 3-canal molar"],
-  ["31. VRF clue", "Isolated deep pocket + J-shaped lucency"],
-  ["32. Perforation repair", "MTA / bioceramic"],
-  ["33. GIC Type I", "Luting cement"],
-  ["34. Final fixed impression", "PVS (addition silicone) accuracy"],
-  ["35. Tilted abutment bridge", "Fixed-movable / non-rigid connector"],
-  ["36. Implant–tooth distance", "≈ 1.5 mm commonly tested"],
-  ["37. Pedo multi-surface primary", "Stainless steel crown"],
-  ["38. Child professional F", "Fluoride varnish preferred"],
-  ["39. Reverse overjet", "Class III pattern"],
-  ["40. Growing Class III", "Facemask / reverse-pull"],
-  ["41. Chin trauma", "Think condylar fracture"],
-  ["42. Blowout fracture", "Diplopia on upward gaze"],
-  ["43. Ludwig angina", "Bilateral submandibular + sublingual + submental"],
-  ["44. Nikolsky + blisters", "Pemphigus vulgaris"],
-  ["45. Butterfly rash + ANA", "SLE"],
-  ["46. Do no harm", "Non-maleficence"],
-  ["47. Minor consent", "Parent / legal guardian"],
-  ["48. Patient demands veneers", "Offer conservative best option first"],
-  ["49. Papilla fill (Tarnow)", "Contact-to-crest ≤ ~5 mm"],
-  ["50. Closed-mouth IAN block", "Vazirani-Akinosi"],
-  ["51. Sinus tract tracing", "Gutta-percha point + radiograph"],
-  ["52. Internal bleach risk", "External cervical resorption"],
-  ["53. Centric relation", "Reproducible jaw relation independent of teeth"],
-  ["54. Cluster headache", "Often relieved by 100% oxygen"],
-  ["55. Pass score / target", "Official ~542/800 · practice target ≥80%"],
-];
-
-// ADHD pass protocol (Pass tab) — what actually moves the score
-window.PASS_PROTOCOL = {
-  passScore: "542 / 800 (~65–68%)",
-  practiceTarget: "≥80% (~160/200)",
-  format: "200 MCQs · ~4 h · often 2×100 @ ~120 min · ~30 min break · no negative marking · FDI · English",
-  weights: [
-    ["Restorative (op + prostho + materials + basic implant)", "~40%"],
-    ["Periodontics", "~18%"],
-    ["Endodontics", "~17%"],
-    ["OMS / oral med", "~15%"],
-    ["Ortho / Pedo", "~10%"],
-  ],
-  daily: [
-    "One day only in the app (Today). Phone away during pomodoros.",
-    "Read → listed videos only → cards → 100–200 MCQs → always-comes skim.",
-    "Every miss → one hinge line in Wrong book. Re-drill wrongs same night.",
-    "Restorative is the score-maker: never skip Days 1–4 volume.",
-    "Free points (Pass / Always-comes) every morning 10–15 min before new content.",
-    "Mocks Days 10/12/13: full exam conditions — no googling mid-timer.",
-    "Sleep ≥7 h. No all-nighter before exam. Day 14 is light only.",
-  ],
-  examDay: [
-    "Answer everything (no penalty).",
-    "≈72 seconds/Q average — flag hard stems and move.",
-    "Read the last line of the stem (what is asked) before options.",
-    "Eliminate 2 wrong → pick best of remaining.",
-    "Medical/IC stems first pass for free points if time-pressured mid-block.",
-  ],
-};
