@@ -3230,59 +3230,67 @@
     }
     if (filt.q) {
       const qq = String(filt.q).toLowerCase();
-      list = list.filter((n) => {
-        const blob = [n.text, n.stemPreview, n.sourcePack, n.department].join(" ").toLowerCase();
-        return blob.includes(qq);
-      });
+      list = list.filter((n) => String(n.text || "").toLowerCase().includes(qq));
     }
     const by = meta.byDepartment || {};
-    const chips = NOTE_DEPTS.map((d) => {
-      const n =
-        d.id === "all" ? all.length : by[d.id] != null ? by[d.id] : all.filter((x) => x.department === d.id).length;
-      const on = (filt.dept || "all") === d.id;
-      return `<button type="button" class="btn sm ${on ? "" : "ghost"}" data-note-dept="${d.id}">${escapeHtml(
-        d.label
-      )} (${n})</button>`;
-    }).join("");
+    /* Few departments only — same as Practice */
+    const SIMPLE_NOTE_DEPTS = [
+      { id: "all", label: "All" },
+      { id: "operative", label: "Operative" },
+      { id: "fixed", label: "Fixed" },
+      { id: "rpd", label: "RPD" },
+      { id: "endo", label: "Endo" },
+      { id: "perio", label: "Perio" },
+      { id: "oms", label: "OMS" },
+      { id: "ortho_pedo", label: "Ortho/Pedo" },
+      { id: "ethics", label: "Ethics" },
+    ];
+    const limit = state.notesLimit || 40;
+    const shown = list.slice(0, limit);
 
     app.innerHTML = `
-      <h1>Notes</h1>
-      <p class="lead">All extracted study notes by <strong>department</strong>
-        (رفيع · أبطال · MyWay). <b>Total ${all.length}</b>.
-        Not SCFHS official — verify clinically.</p>
-      <p class="muted pack-disclaimer">${escapeHtml(meta.disclaimer || "")}</p>
-      <div class="pack-filter-bar">
-        <input type="search" id="notes-search" class="pack-search" placeholder="Search notes…" value="${escapeHtml(
-          filt.q || ""
-        )}" />
-      </div>
-      <div class="pack-month-row">${chips}</div>
-      <p class="muted">Showing <strong>${list.length}</strong> of ${all.length}</p>
-      <div class="pack-items">
-        ${list
-          .slice(0, state.notesLimit || 200)
-          .map((n) => {
-            return `<article class="pack-item has-notes">
-              <header>
-                <span class="badge blue">${escapeHtml(n.department || "mixed")}</span>
-                <span class="muted">${escapeHtml(n.sourcePack || "")}</span>
-                ${n.stemPreview ? `<span class="muted">${escapeHtml(String(n.stemPreview).slice(0, 80))}</span>` : ""}
-              </header>
-              <p class="pack-stem" style="font-weight:400">${escapeHtml(n.text || "")}</p>
-            </article>`;
-          })
-          .join("")}
-      </div>
-      ${
-        list.length > (state.notesLimit || 200)
-          ? `<p class="muted">Showing ${Math.min(state.notesLimit || 200, list.length)} of <strong>${list.length}</strong> (filter total ${all.length} in bank).
-             <button type="button" class="btn sm" id="notes-more">Load 200 more</button></p>`
-          : ""
-      }
-      ${!list.length ? `<p class="muted">No notes match.</p>` : ""}
-    `;
+      <div class="simple-hub">
+        <h1>Notes</h1>
+        <p class="simple-lead">Short study notes. Pick a subject.</p>
+        <div class="simple-dept-row">
+          ${SIMPLE_NOTE_DEPTS.map((d) => {
+            const n =
+              d.id === "all"
+                ? all.length
+                : by[d.id] != null
+                  ? by[d.id]
+                  : all.filter((x) => x.department === d.id).length;
+            const on = (filt.dept || "all") === d.id;
+            return `<button type="button" class="btn ${on ? "success" : "ghost"} simple-dept-btn" data-note-dept="${d.id}">${escapeHtml(d.label)}</button>`;
+          }).join("")}
+        </div>
+        <input type="search" id="notes-search" class="simple-search" placeholder="Search…" value="${escapeHtml(filt.q || "")}" />
+        <p class="muted simple-count">${shown.length < list.length ? shown.length + " of " : ""}${list.length} notes</p>
+        <div class="simple-note-list">
+          ${
+            shown.length
+              ? shown
+                  .map(
+                    (n) =>
+                      `<div class="simple-note">
+                        <span class="simple-note-tag">${escapeHtml(n.department || "")}</span>
+                        <p>${escapeHtml(n.text || "")}</p>
+                      </div>`
+                  )
+                  .join("")
+              : `<p class="muted">No notes here.</p>`
+          }
+        </div>
+        ${
+          list.length > limit
+            ? `<button type="button" class="btn" id="notes-more" style="width:100%;margin-top:12px">Show more</button>`
+            : ""
+        }
+      </div>`;
+
     const apply = (patch) => {
       state.notesFilter = Object.assign({}, state.notesFilter || {}, patch);
+      if (patch.dept) state.notesLimit = 40;
       renderNotes();
     };
     app.querySelectorAll("[data-note-dept]").forEach((b) => {
@@ -3299,7 +3307,7 @@
     const more = $("#notes-more");
     if (more) {
       more.onclick = () => {
-        state.notesLimit = (state.notesLimit || 200) + 200;
+        state.notesLimit = (state.notesLimit || 40) + 40;
         renderNotes();
       };
     }
@@ -3709,180 +3717,86 @@
   }
 
   function renderPractice() {
-    hydratePracticeScope();
+    /* Always use plan banks (preferred) — no scope maze for simple mode */
+    setPracticeScope("plan");
     const inv = bankInventory();
-    const rawTotal = (window.QUESTION_BANK || []).length;
     const L = lesson();
     const focusTopic = L.quizTopic || "restorative";
-    const subject = humanLessonTitle(L);
-    const scope = getPracticeScope();
-    const b = ensurePracticeBuild();
+    const focusDept = [
+      "restorative",
+      "perio",
+      "endo",
+      "oms",
+      "ortho_pedo",
+      "ethics",
+      "operative",
+    ].includes(focusTopic)
+      ? focusTopic
+      : "restorative";
 
-    const DEPTS = [
-      { id: "restorative", title: "Restorative", sub: "Op + fixed + RPD · 40%", star: true },
-      { id: "operative", title: "Operative", sub: "Fillings · caries · materials" },
-      { id: "fixed", title: "Fixed prosth", sub: "Crowns · FPD · impression" },
-      { id: "rpd", title: "RPD", sub: "Partial denture design" },
-      { id: "perio", title: "Periodontics", sub: "18% blueprint", star: true },
-      { id: "endo", title: "Endodontics", sub: "17% blueprint", star: true },
-      { id: "oms", title: "OMS / Path", sub: "15% · surgery · LA · lesions", star: true },
-      { id: "ortho_pedo", title: "Ortho / Pedo", sub: "10% blueprint" },
-      { id: "ethics", title: "Ethics / IC / LA", sub: "Cross-cutting" },
+    /* 6 exam subjects only — one tap = start 50 MCQs */
+    const SUBJECTS = [
+      { id: "restorative", label: "Restorative", ar: "ترميم / تعويضات" },
+      { id: "perio", label: "Perio", ar: "لثة" },
+      { id: "endo", label: "Endo", ar: "علاج جذور" },
+      { id: "oms", label: "OMS / Path", ar: "جراحة وباثو" },
+      { id: "ortho_pedo", label: "Ortho / Pedo", ar: "تقويم وأطفال" },
+      { id: "ethics", label: "Ethics", ar: "أخلاقيات" },
     ];
 
-    const SCOPE_OPTS = [
-      { id: "plan", label: "Plan banks", tip: "أبطال + preferred رفيع (خطة)" },
-      { id: "abtal", label: "أبطال only", tip: "Highly recommended recalls" },
-      { id: "rafi_core", label: "رفيع 11–19", tip: "First wave · refs" },
-      { id: "rafi_second", label: "رفيع 2nd", tip: "7·5·10·9·1·3" },
-      { id: "rafi_plan", label: "All plan رفيع", tip: "11–19 + second wave" },
-      { id: "all", label: "Full dump", tip: "Entire bank" },
-    ];
-
-    function deptPool(deptId) {
-      return deptId + "@" + scope;
+    function poolKey(dept) {
+      return dept + "@plan";
     }
-
-    /* Pick count for one department (or source dump) */
-    if (b.step === "count" && b.topic) {
-      const topic = b.topic;
-      const nPool = poolN(topic);
-      const sizes = [25, 50, 100, 150, 200, 500].filter((n) => n <= nPool);
-      app.innerHTML = `
-          <div class="practice-hub">
-            <button type="button" class="btn ghost sm" id="pb-back-hub">← Departments</button>
-            <h1>${escapeHtml(practiceTopicLabel(topic))}</h1>
-            <p class="hub-sub">${nPool} questions in this department · scope: <b>${escapeHtml(practiceTopicLabel(scope))}</b></p>
-            <div class="bank-card-actions bank-card-actions-lg">
-              ${sizes
-                .map((n) => `<button type="button" class="btn" data-qz="${escapeHtml(topic)}" data-n="${n}">${n}</button>`)
-                .join("")}
-              ${
-                nPool
-                  ? `<button type="button" class="btn success" data-qz="${escapeHtml(topic)}" data-n="${QUIZ_ALL}">All (${nPool})</button>`
-                  : `<p class="muted">No questions — try another scope (أبطال / رفيع / Full).</p>`
-              }
-            </div>
-            <div class="bank-card-actions" style="margin-top:12px">
-              <button type="button" class="btn warn" data-qz-timed="${escapeHtml(topic)}" data-n="50">Timed 50</button>
-              <button type="button" class="btn warn" data-qz-timed="${escapeHtml(topic)}" data-n="100">Timed 100</button>
-            </div>
-          </div>`;
-      $("#pb-back-hub") &&
-        ($("#pb-back-hub").onclick = () => {
-          resetPracticeBuild();
-          renderPractice();
-        });
-      bindBankQuizButtons(app);
-      app.querySelectorAll("[data-qz-timed]").forEach((btn) => {
-        btn.onclick = () => startQuiz(btn.dataset.qzTimed, +btn.dataset.n, "exam", true, 72);
-      });
-      return;
-    }
-
-    const focusPool = matchesDepartment({ topic: focusTopic, department: focusTopic }, focusTopic)
-      ? deptPool(focusTopic === "all" ? "restorative" : focusTopic)
-      : deptPool("restorative");
-    const focusDept =
-      focusTopic && ["restorative", "perio", "endo", "oms", "ortho_pedo", "ethics", "operative"].includes(focusTopic)
-        ? focusTopic
-        : "restorative";
 
     app.innerHTML = `
-        <div class="practice-hub">
-          <h1>Practice · by department</h1>
-          <p class="hub-sub">خطة المذاكرة: study <b>one department across all files</b>
-            (endo in every رفيع/أبطال → then resto…), not one PDF at a time.
-            Today’s focus: <b>${escapeHtml(subject)}</b>.</p>
+      <div class="simple-hub">
+        <h1>Practice</h1>
+        <p class="simple-lead">Pick a subject. Do MCQs. That is all.</p>
 
-          <h2 class="section-label practice-sec">1 · Which files? (source scope)</h2>
-          <div class="scope-chip-row" role="group" aria-label="Source scope">
-            ${SCOPE_OPTS.map(
-              (s) =>
-                `<button type="button" class="btn scope-chip ${s.id === scope ? "success" : "ghost"}" data-scope="${s.id}" title="${escapeHtml(s.tip)}">${escapeHtml(s.label)}</button>`
-            ).join("")}
+        <div class="simple-mcq-list">
+          ${SUBJECTS.map((s) => {
+            const key = poolKey(s.id);
+            const n = poolN(key);
+            const today = s.id === focusDept ? " is-today" : "";
+            return `<button type="button" class="simple-mcq-row${today}" data-qz="${escapeHtml(key)}" data-n="50" ${n < 1 ? "disabled" : ""}>
+              <span class="simple-mcq-label">
+                <strong>${escapeHtml(s.label)}</strong>
+                <span class="muted">${escapeHtml(s.ar)}</span>
+              </span>
+              <span class="simple-mcq-meta">
+                <span class="badge blue">${n}</span>
+                <span class="simple-go">Start →</span>
+              </span>
+            </button>`;
+          }).join("")}
+        </div>
+
+        <p class="simple-subhead">Also</p>
+        <div class="simple-also">
+          <button type="button" class="btn success" data-qz="abtal" data-n="50" ${poolN("abtal") < 1 ? "disabled" : ""}>أبطال · 50</button>
+          <button type="button" class="btn" data-qz="wrong" data-n="25" ${poolN("wrong") < 1 ? "disabled" : ""}>Wrong book</button>
+          <button type="button" class="btn ghost" data-qz="always_src" data-n="25">Free points</button>
+        </div>
+
+        <details class="simple-more">
+          <summary>More options</summary>
+          <div class="simple-also" style="margin-top:10px">
+            <button type="button" class="btn ghost" data-qz="${escapeHtml(poolKey(focusDept))}" data-n="100">Today subject · 100</button>
+            <button type="button" class="btn warn" id="p-timed">Timed 50</button>
+            <button type="button" class="btn ghost" data-qz="preferred" data-n="50">Mixed preferred · 50</button>
+            <button type="button" class="btn ghost" id="p-cards">Flashcards</button>
           </div>
-          <p class="muted scope-hint">${escapeHtml((SCOPE_OPTS.find((s) => s.id === scope) || {}).tip || "")}
-            · counts below update with this scope</p>
-
-          <h2 class="section-label practice-sec">2 · Department (drill this subject fully)</h2>
-          <div class="bank-hub-grid">
-            ${DEPTS.map((d) => {
-              const poolKey = deptPool(d.id);
-              const n = poolN(poolKey);
-              const today = d.id === focusDept ? " bank-card-today" : "";
-              return `<article class="bank-card${d.star ? " bank-card-star" : ""}${today}">
-                <div class="bank-card-top">
-                  <div>
-                    <h3 class="bank-card-title">${d.star ? "★ " : ""}${escapeHtml(d.title)}</h3>
-                    <p class="bank-card-sub">${escapeHtml(d.sub)}${d.id === focusDept ? " · today’s focus" : ""}</p>
-                  </div>
-                  <span class="badge ${d.star ? "warn" : "blue"}">${n}</span>
-                </div>
-                <div class="bank-card-actions">
-                  <button type="button" class="btn ${d.star ? "success" : "ghost"}" data-qz="${escapeHtml(poolKey)}" data-n="50" ${n < 1 ? "disabled" : ""}>50</button>
-                  <button type="button" class="btn ghost" data-qz="${escapeHtml(poolKey)}" data-n="100" ${n < 1 ? "disabled" : ""}>100</button>
-                  <button type="button" class="btn ${d.star ? "success" : ""}" data-qz="${escapeHtml(poolKey)}" data-n="${QUIZ_ALL}" ${n < 1 ? "disabled" : ""}>All</button>
-                  <button type="button" class="btn ghost sm" data-open-pool="${escapeHtml(poolKey)}">More…</button>
-                </div>
-              </article>`;
-            }).join("")}
-          </div>
-
-          <h2 class="section-label practice-sec">3 · Whole source (mixed departments)</h2>
-          <div class="bank-hub-grid bank-hub-grid-sm">
-            ${bankCardHtml({ pool: "abtal", title: "أبطال ★ all depts", sub: "Mixed bag — prefer dept cards above", star: true })}
-            ${bankCardHtml({ pool: "rafi_core", title: "رفيع 11–19 all depts", sub: "Then filter by dept above" })}
-            ${bankCardHtml({ pool: "preferred", title: "Preferred mix", sub: "All depts · plan quality" })}
-            ${bankCardHtml({ pool: "always_src", title: "Free points", sub: "Always-comes" })}
-            ${bankCardHtml({ pool: "saud_delta", title: "Saud delta", sub: "New vs رفيع 16/19" })}
-            ${bankCardHtml({ pool: "wrong", title: "Wrong book", sub: inv.wrong ? "Your misses" : "Empty for now" })}
-          </div>
-
-          <h2 class="section-label practice-sec">Quick</h2>
-          <div class="bank-card-actions bank-card-actions-wrap">
-            <button type="button" class="btn success" id="p-today-dept">Today’s dept 50</button>
-            <button type="button" class="btn warn" id="p-mock-50">Timed 50</button>
-            <button type="button" class="btn warn" id="p-mock-100">Timed 100</button>
-            <button type="button" class="btn warn" id="p-mock-200">Mock 200</button>
-            <button type="button" class="btn" id="p-cards">Flashcards</button>
-            <button type="button" class="btn ghost" id="p-notes">Notes by dept</button>
-            <button type="button" class="btn ghost" id="p-more">Settings</button>
-          </div>
-
-          <p class="muted hub-foot">Scope <b>${escapeHtml(scope)}</b> · loaded ${rawTotal} · أبطال ${inv.abtal || 0}
-            · ${sdleGptButtonHtml("link")}</p>
-        </div>`;
+        </details>
+      </div>`;
 
     bindBankQuizButtons(app);
-    bindSdleGptButtons(app, () =>
-      buildSdleGptContext({
-        subject,
-        topic: focusDept,
-      })
-    );
-
-    app.querySelectorAll("[data-scope]").forEach((btn) => {
-      btn.onclick = () => {
-        setPracticeScope(btn.dataset.scope);
-        renderPractice();
-      };
+    /* rows are buttons with data-qz — also bind simple-mcq-row */
+    app.querySelectorAll(".simple-mcq-row[data-qz]").forEach((b) => {
+      b.onclick = () => startQuiz(b.dataset.qz, +b.dataset.n, "learn", false);
     });
-    app.querySelectorAll("[data-open-pool]").forEach((btn) => {
-      btn.onclick = () => {
-        b.step = "count";
-        b.topic = btn.dataset.openPool;
-        renderPractice();
-      };
-    });
-    $("#p-today-dept") &&
-      ($("#p-today-dept").onclick = () => startQuiz(deptPool(focusDept), 50, "learn", false));
-    $("#p-mock-50") && ($("#p-mock-50").onclick = () => startQuiz(deptPool(focusDept), 50, "exam", true, 72));
-    $("#p-mock-100") && ($("#p-mock-100").onclick = () => startQuiz("preferred", 100, "exam", true, 72));
-    $("#p-mock-200") && ($("#p-mock-200").onclick = () => startQuiz("preferred", 200, "exam", true, 72));
+    $("#p-timed") &&
+      ($("#p-timed").onclick = () => startQuiz(poolKey(focusDept), 50, "exam", true, 72));
     $("#p-cards") && ($("#p-cards").onclick = () => openCards(L.cardDeck || "all"));
-    $("#p-notes") && ($("#p-notes").onclick = () => navigateTo("notes", { push: true }));
-    $("#p-more") && ($("#p-more").onclick = () => navigateTo("more", { push: true }));
   }
 
   function exportWrongBook() {

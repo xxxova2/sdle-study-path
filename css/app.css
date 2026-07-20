@@ -676,6 +676,146 @@ button:focus-visible,
   outline: 1px solid rgba(96, 165, 250, 0.45);
 }
 
+/* Ultra-simple Practice / Notes */
+.simple-hub h1 {
+  margin: 0 0 4px;
+  font-size: 1.5rem;
+}
+.simple-lead {
+  margin: 0 0 16px;
+  color: var(--muted);
+  font-size: 1rem;
+}
+.simple-mcq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+.simple-mcq-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+  text-align: start;
+  padding: 14px 16px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--bg2);
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  min-height: 56px;
+}
+.simple-mcq-row:hover:not(:disabled) {
+  border-color: #5b8def;
+  background: rgba(42, 58, 92, 0.35);
+}
+.simple-mcq-row.is-today {
+  border-color: #c9a227;
+  box-shadow: 0 0 0 1px rgba(201, 162, 39, 0.25);
+}
+.simple-mcq-row:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+.simple-mcq-label {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.simple-mcq-label strong {
+  font-size: 1.08rem;
+}
+.simple-mcq-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+.simple-go {
+  font-weight: 700;
+  color: #7eb6ff;
+}
+.simple-subhead {
+  margin: 8px 0 8px;
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-weight: 600;
+}
+.simple-also {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.simple-also .btn {
+  flex: 1 1 auto;
+  min-width: 120px;
+}
+.simple-more {
+  margin-top: 8px;
+  border-top: 1px solid var(--border);
+  padding-top: 10px;
+}
+.simple-more > summary {
+  cursor: pointer;
+  color: var(--muted);
+  font-size: 0.9rem;
+  list-style: none;
+}
+.simple-more > summary::-webkit-details-marker {
+  display: none;
+}
+.simple-dept-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+.simple-dept-btn {
+  font-size: 0.88rem;
+  padding: 8px 12px;
+}
+.simple-search {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--bg2);
+  color: inherit;
+  font: inherit;
+  margin-bottom: 10px;
+}
+.simple-count {
+  margin: 0 0 10px;
+  font-size: 0.88rem;
+}
+.simple-note-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.simple-note {
+  padding: 12px 14px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--bg2);
+}
+.simple-note p {
+  margin: 6px 0 0;
+  line-height: 1.45;
+  font-size: 0.95rem;
+}
+.simple-note-tag {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--muted);
+}
+
 .form-switch-grid,
 .ac-rules-grid {
   display: grid;
