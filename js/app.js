@@ -1390,6 +1390,9 @@
    */
   const MCQ_CATEGORIES = [
     { id: "preferred", label: "Preferred (SDLE)", pool: "preferred", primary: true },
+    { id: "abtal_src", label: "أبطال ★ priority", pool: "abtal", primary: true },
+    { id: "rafi_core", label: "رفيع 11–19 first", pool: "rafi_core", primary: true },
+    { id: "rafi_second", label: "رفيع 7·5·10·9·1·3", pool: "rafi_second", primary: true },
     { id: "all", label: "All MCQs", pool: "all", primary: true },
     { id: "archive", label: "Archive (rest)", pool: "archive", primary: false },
     { id: "restorative", label: "Restorative", pool: "restorative", primary: true },
@@ -1407,8 +1410,7 @@
     { id: "materials", label: "Materials", pool: "materials", primary: false },
     { id: "always_src", label: "Free points", pool: "always_src", primary: true },
     { id: "saud_delta", label: "Saud delta", pool: "saud_delta", primary: true },
-    { id: "rafi", label: "رفيع المقام", pool: "rafi", primary: true },
-    { id: "abtal_src", label: "أبطال bank", pool: "abtal", primary: true },
+    { id: "rafi", label: "رفيع ALL parts", pool: "rafi", primary: false },
     { id: "wrong", label: "Wrong book", pool: "wrong", primary: true },
   ];
 
@@ -3544,14 +3546,14 @@
 
     app.innerHTML = `
       <h1>MCQs — practice tests</h1>
-      <p class="lead"><b>Preferred (SDLE)</b> is the study default: curated + quality أبطال + quality رفيع on priority parts
-        (aligned with SCFHS blueprint weights). <b>All MCQs</b> is the full dump (~${inv.all}).
-        <b>Archive</b> is everything not preferred (thin/padded stems kept for reference).
-        Answers stay <b>hidden</b> unless you tap <b>Show answer</b>.</p>
-      <div class="alert"><strong>Preferred ${inv.preferred || 0}</strong> · All ${inv.all} · Archive ${inv.archive || 0}
-        · Free points ${inv.always} · Saud ${inv.saud_delta || 0} · Op ${inv.operative}
-        · Resto ${inv.restorative} · Perio ${inv.perio} · Endo ${inv.endo} · OMS ${inv.oms}
-        · Wrong ${inv.wrong} · loaded ${rawTotal}
+      <p class="lead"><b>أبطال ★</b> = highly recommended (recalls).
+        <b>رفيع</b> from خطة المذاكرة: <b>11–19 first</b> (refs) → then <b>7·5·10·9·1·3</b>;
+        parts 2/4/6/8 = extra only. Study subject-by-subject across files.
+        <b>Preferred</b> = أبطال + curated + quality core رفيع. <b>All</b> = full dump. <b>Archive</b> = rest.</p>
+      <div class="alert"><strong>Preferred ${inv.preferred || 0}</strong> · أبطال ${inv.abtal || 0}
+        · رفيع 11–19 ${inv.rafi_core || 0} · رفيع 2nd ${inv.rafi_second || 0}
+        · All ${inv.all} · Archive ${inv.archive || 0}
+        · Free ${inv.always} · Saud ${inv.saud_delta || 0} · Wrong ${inv.wrong}
       </div>
       <div class="alert muted">
         After you pick an answer, use <b>Show answer</b> for a short why. Next stays on a sticky bar — no scrolling to continue.
@@ -4514,18 +4516,26 @@
   }
 
   /**
-   * Preferred MCQs — exam-first cut for SDLE (SCFHS / Prometric).
-   * Official exam pattern (app blueprint): ~200 scored MCQs, English, 4 options, one best answer.
-   * Weights: Restorative 40% · Perio 18% · Endo 17% · OMS 15% · Ortho/Pedo 10% + ethics/IC/LA.
+   * Preferred MCQs — from «تحديث خطة المذاكرة» (رفيع) + SCFHS SDLE blueprint.
    *
-   * Why not use all 16k? Full bank = رفيع 1–20 dump (~13k) + older packs; many are padded
-   * options, thin stems, or duplicate windows. Preferred keeps study volume sane:
-   *   A) Curated / audited: free points, premium_*, stream, saud_delta
-   *   B) أبطال quality: real options (no “(not listed…)” pads), usable stem
-   *   C) رفيع quality only on study-plan priority parts (1,3,5,7,9–19): 4 real options + stem
-   * Everything else stays in bank under All / Archive / source filters.
+   * أبطال الديجيتال = highly recommended (recalls). Prefer almost all usable أبطال.
+   *
+   * رفيع study order (plan):
+   *   1st — parts 11–19 (mostly أبطال windows + references): 11…19
+   *   2nd — parts 7, 5, 10, 9, 1, 3
+   *   Extra only (archive default): 2, 4, 6, 8 (بيان / board / e-dental) + 20
+   * Study subject-by-subject across files; last 2 weeks = full-file random review.
+   *
+   * Preferred cut (not full 16k dump):
+   *   A) أبطال — nearly all usable (high priority)
+   *   B) Curated: free points, premium_*, stream, saud_delta
+   *   C) رفيع 11–19 quality full MCQs (core)
+   *   D) رفيع 7/5/10/9/1/3 quality full MCQs (second wave)
+   * Archive = thin pads + رفيع 2/4/6/8/20 + other low-signal extracts.
    */
-  const RAFI_PRIORITY_PARTS = new Set([1, 3, 5, 7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]);
+  const RAFI_CORE_FIRST = new Set([11, 12, 13, 14, 15, 16, 17, 18, 19]);
+  const RAFI_CORE_SECOND = new Set([7, 5, 10, 9, 1, 3]);
+  const RAFI_EXTRA_ONLY = new Set([2, 4, 6, 8, 20]);
 
   function optionPadCount(q) {
     const opts = (q && q.options) || [];
@@ -4535,6 +4545,10 @@
       if (t.includes("not listed") || /^option\s*[a-d]\b/i.test(t)) n++;
     }
     return n;
+  }
+
+  function realOptionCount(q) {
+    return Math.max(0, ((q && q.options) || []).length - optionPadCount(q));
   }
 
   function stemLen(q) {
@@ -4564,22 +4578,36 @@
     return m ? parseInt(m[1], 10) : null;
   }
 
+  /** أبطال: highly recommended — keep almost everything with a real stem. */
+  function isAbtalPreferred(q) {
+    if (!isAbtalSource(q)) return false;
+    return stemLen(q) >= 10;
+  }
+
+  function isRafiPreferred(q) {
+    const part = rafiPartNum(q);
+    if (part == null || RAFI_EXTRA_ONLY.has(part)) return false;
+    const real = realOptionCount(q);
+    const sl = stemLen(q);
+    const pads = optionPadCount(q);
+    // Core first (11–19): slightly looser — plan says start here (references)
+    if (RAFI_CORE_FIRST.has(part)) {
+      return real >= 3 && sl >= 25 && pads <= 1;
+    }
+    // Second wave (7,5,10,9,1,3)
+    if (RAFI_CORE_SECOND.has(part)) {
+      return real >= 4 && pads === 0 && sl >= 35;
+    }
+    return false;
+  }
+
   function isPreferredMcq(q) {
     if (!q || q.usable === false) return false;
+    // Order of importance for study: أبطال → curated → رفيع plan waves
+    if (isAbtalPreferred(q)) return true;
     if (isCuratedPreferred(q)) return true;
-    const pads = optionPadCount(q);
-    const opts = (q.options || []).length;
-    const sl = stemLen(q);
-    if (isAbtalSource(q)) {
-      return pads === 0 && opts >= 3 && sl >= 25;
-    }
-    const part = rafiPartNum(q);
-    if (part != null) {
-      if (!RAFI_PRIORITY_PARTS.has(part)) return false;
-      return pads === 0 && opts >= 4 && sl >= 35;
-    }
-    // other sources: full 4-option only
-    return pads === 0 && opts >= 4 && sl >= 35;
+    if (isRafiPreferred(q)) return true;
+    return false;
   }
 
   const SUBTOPIC_KEYS = new Set([
@@ -4670,9 +4698,19 @@
     else if (base === "archive") p = p.filter((q) => !isPreferredMcq(q));
     else if (base === "always_src") p = p.filter((q) => q.source === "always");
     else if (base === "saud_delta") p = p.filter((q) => q.source === "saud_delta");
-    else if (base === "abtal") p = p.filter((q) => q.source === "abtal");
+    else if (base === "abtal") p = p.filter((q) => isAbtalSource(q));
+    else if (base === "rafi_core")
+      p = p.filter((q) => {
+        const part = rafiPartNum(q);
+        return part != null && RAFI_CORE_FIRST.has(part);
+      });
+    else if (base === "rafi_second")
+      p = p.filter((q) => {
+        const part = rafiPartNum(q);
+        return part != null && RAFI_CORE_SECOND.has(part);
+      });
     else if (base === "rafi")
-      p = p.filter((q) => String(q.source || "").startsWith("rafi_"));
+      p = p.filter((q) => String(q.source || "").startsWith("rafi_") || String(q.id || "").startsWith("rafi_"));
     else if (base === "stream")
       p = p.filter((q) => String(q.source || "").startsWith("stream"));
     else if (base === "weak") {
@@ -4737,6 +4775,8 @@
       always: poolN("always_src"),
       saud_delta: poolN("saud_delta"),
       abtal: poolN("abtal"),
+      rafi_core: poolN("rafi_core"),
+      rafi_second: poolN("rafi_second"),
       rafi: poolN("rafi"),
       stream: poolN("stream"),
       restorative: poolN("restorative"),
@@ -4815,7 +4855,10 @@
 
   function inventoryTableHtml(inv) {
     const rows = [
-      ["Preferred (SDLE study cut)", inv.preferred || 0],
+      ["Preferred (أبطال + curated + core رفيع)", inv.preferred || 0],
+      ["أبطال (highly recommended)", inv.abtal || 0],
+      ["رفيع 11–19 first (plan)", inv.rafi_core || 0],
+      ["رفيع 7·5·10·9·1·3 (plan)", inv.rafi_second || 0],
       ["Archive (not preferred)", inv.archive || 0],
       ["Full usable bank", inv.all],
       ["Unseen (never answered)", inv.unseen],
