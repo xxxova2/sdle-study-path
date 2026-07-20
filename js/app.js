@@ -3825,14 +3825,14 @@
 
     /* Each bank: pick how many — never force 50 when the pool is huge */
     function sizeBtns(pool, n) {
-      if (n < 1) return `<span class="muted">0 أسئلة</span>`;
+      if (n < 1) return `<span class="muted">—</span>`;
       const opts = [50, 100, 200].filter((k) => k < n);
       const parts = opts.map(
         (k) =>
           `<button type="button" class="btn ghost simple-sz" data-qz="${escapeHtml(pool)}" data-n="${k}">${k}</button>`
       );
       parts.push(
-        `<button type="button" class="btn success simple-sz" data-qz="${escapeHtml(pool)}" data-n="${QUIZ_ALL}">الكل · All ${n}</button>`
+        `<button type="button" class="btn success simple-sz" data-qz="${escapeHtml(pool)}" data-n="${QUIZ_ALL}">All ${n}</button>`
       );
       return parts.join("");
     }
@@ -3843,48 +3843,47 @@
       const hint = opts.hint
         ? `<span class="simple-hint-ar" dir="rtl">${escapeHtml(opts.hint)}</span>`
         : "";
-      const en = opts.en ? `<span class="muted simple-hint-en">${escapeHtml(opts.en)}</span>` : "";
       return `<div class="simple-mcq-card${today}">
         <div class="simple-mcq-label">
           <strong>${escapeHtml(opts.label)}</strong>
           ${hint}
-          ${en}
-          <span class="simple-pool-n">${n} سؤال متاح · ${n} in bank</span>
+          <span class="simple-pool-n">${n} questions</span>
         </div>
         <div class="simple-sz-row">${sizeBtns(opts.pool, n)}</div>
       </div>`;
     }
 
+    /* Concise MSA — formal study copy, not chatty bilingual filler */
     const SUBJECTS = [
       {
         id: "restorative",
-        label: "Restorative · الترميم والتعويضات",
-        ar: "حشوات · تيجان · جسور · أجهزة جزئية/كاملة · مواد. أكبر قسم في الامتحان تقريباً.",
+        label: "Restorative",
+        ar: "الترميمي والتعويضات — حشوات، تيجان، جسور، أجهزة جزئية وكاملة، مواد.",
       },
       {
         id: "perio",
-        label: "Perio · اللثة",
-        ar: "تشخيص اللثة · جيوب · زراعة حول الزرعة · علاج غير جراحي/جراحي.",
+        label: "Periodontics",
+        ar: "أمراض اللثة — التشخيص، العلاج غير الجراحي والجراحي، ما حول الغرسة.",
       },
       {
         id: "endo",
-        label: "Endo · علاج الجذور",
-        ar: "قناة جذر · أدوات · حوادث · رضوض · التهاب حول الذروة.",
+        label: "Endodontics",
+        ar: "علاج الجذور — الأدوات، التخطيط، المضاعفات، الرضوح اللبية.",
       },
       {
         id: "oms",
-        label: "OMS / Path · جراحة وباثولوجي",
-        ar: "قلع · تخدير · أكياس/أورام · أمراض عامة تؤثر على الأسنان · رضوض الوجه.",
+        label: "OMS / Pathology",
+        ar: "جراحة الفم والباثولوجيا — القلع، التخدير، الأكياس والأورام، الأمراض الجهازية.",
       },
       {
         id: "ortho_pedo",
-        label: "Ortho / Pedo · تقويم وأطفال",
-        ar: "تصنيفات العضة · أجهزة · أسنان أولية · سلوك الطفل · وقاية.",
+        label: "Ortho / Pedodontics",
+        ar: "التقويم وطب أسنان الأطفال — تصنيف الإطباق، الأجهزة، الأسنان اللبنية.",
       },
       {
         id: "ethics",
-        label: "Ethics · أخلاقيات وممارسة",
-        ar: "موافقة · سرّية · ضرر/نفع · مكافحة عدوى · أسئلة «نقاط مجانية» أحياناً.",
+        label: "Ethics & practice",
+        ar: "الأخلاقيات والممارسة — الموافقة، السرية، مكافحة العدوى.",
       },
     ];
 
@@ -3893,37 +3892,30 @@
 
     app.innerHTML = `
       <div class="simple-hub">
-        <h1>Practice · التدرّب</h1>
-        <p class="simple-lead" dir="rtl">
-          اختر <b>البنك</b> ثم <b>كم سؤال</b> تريد. الأرقام <b>50 / 100 / 200</b> = جلسة قصيرة.
-          زر <b>الكل</b> = كل الأسئلة الموجودة في ذلك البنك (حتى الآلاف) — مو 50 فقط.
-        </p>
+        <h1>Practice</h1>
+        <p class="simple-lead" dir="rtl">اختر المصدر، ثم عدد الأسئلة. <b>All</b> = كامل البنك.</p>
 
-        <details class="ar-help" open>
-          <summary dir="rtl">ما هذه البنوك؟ (اضغط للإخفاء/الإظهار)</summary>
+        <details class="ar-help">
+          <summary dir="rtl">دليل المصادر</summary>
           <div class="ar-help-body" dir="rtl">
-            <p><b>مهم:</b> هذا التطبيق <u>ليس</u> منصة الهيئة الرسمية (SCFHS). الأسئلة من مذكرات وتجميعات مجتمع دراسي للمراجعة — تحقق من الإجابة سريرياً ودراسياً.</p>
+            <p>المحتوى لأغراض المراجعة فقط، وليس من الهيئة السعودية للتخصصات الصحية (SCFHS).</p>
             <ul>
-              <li><b>أبطال الديجيتال</b> = تجميعات ريكول (تذكّر امتحانات) عالية الأولوية في خطتك. الاسم الكامل للملف/المصدر: <b>أبطال الديجيتال</b> — نوافذ: سبتمبر 2025 · أكتوبر 2025 · ديسمبر 2025–فبراير 2026 · مارس–يونيو 2026.</li>
-              <li><b>حسب التخصص (بنك الخطة)</b> = أسئلة ذلك القسم من المجموعة المفضّلة: أبطال + رفيع المقام (الأجزاء المهمة) + أسئلة محرّرة/جودة. الرقم = كم سؤال متاح الآن.</li>
-              <li><b>دفتر الأخطاء Wrong book</b> = فقط الأسئلة التي أخطأت فيها سابقاً داخل التطبيق. كلّما تدرّبت امتلأ.</li>
-              <li><b>نقاط مجانية Free points</b> = قواعد قصيرة تتكرر كثيراً في الامتحان (Always-comes) — سريعة للمراجعة.</li>
-              <li><b>البطاقات Flashcards</b> = وجه/ظهر للحفظ السريع. كانت قديماً ~150 بطاقة ثابتة فقط؛ الآن تُثرى من ملاحظات أبطال/رفيع + أخطائك.</li>
+              <li><b>أبطال الديجيتال</b> — تجميع ريكول (سبتمبر 2025 – يونيو 2026). أولوية في خطة المذاكرة.</li>
+              <li><b>حسب التخصص</b> — أسئلة القسم من البنك المفضّل (أبطال + رفيع المقام + محرَّر).</li>
+              <li><b>Wrong book</b> — أسئلتك الخاطئة داخل التطبيق.</li>
+              <li><b>Free points</b> — قواعد قصيرة متكررة في الامتحان.</li>
+              <li><b>Flashcards</b> — بطاقات حفظ؛ تشمل الملاحظات ودفتر الأخطاء (${cardN}).</li>
             </ul>
-            <p class="muted">اختر العدد ثم ابدأ. بعد كل إجابة يظهر الشرح إن وُجد. هدفك العملي غالباً 150–200 سؤال/يوم وليس 20 فقط.</p>
           </div>
         </details>
 
         ${bankRow({
           pool: "abtal",
-          label: "أبطال الديجيتال · " + nAbtal + "Q",
-          hint:
-            "الاسم الكامل: أبطال الديجيتال (تجميعات ريكول / تذكّر امتحان). يُنصح به أولاً — أولوية عالية في خطة المذاكرة. ليس ملفاً رسمياً من الهيئة.",
-          en: "Full name: Abtal Al-Digital (recall compilations Sep 2025 → Jun 2026 windows).",
+          label: "أبطال الديجيتال",
+          hint: "تجميع ريكول · سبتمبر 2025 – يونيو 2026 · " + nAbtal + " سؤالاً · مُوصى به أولاً",
         })}
 
-        <p class="simple-subhead" dir="rtl">حسب التخصص — بنك الخطة (مفضّل)</p>
-        <p class="simple-sub-note" dir="rtl">كل صف = قسم امتحان. اختر 50 أو 100 أو 200 أو <b>الكل</b> لكل أسئلة ذلك القسم في البنك المفضّل.</p>
+        <p class="simple-subhead" dir="rtl">حسب التخصص</p>
         <div class="simple-mcq-list">
           ${SUBJECTS.map((s) =>
             bankRow({
@@ -3935,26 +3927,24 @@
           ).join("")}
         </div>
 
-        <p class="simple-subhead" dir="rtl">قوائمك الشخصية</p>
+        <p class="simple-subhead" dir="rtl">مراجعتك</p>
         <div class="simple-mcq-list">
           ${bankRow({
             pool: "wrong",
-            label: "Wrong book · دفتر الأخطاء",
-            hint: "أسئلة أخطأت فيها أثناء التدرّب. أعدها حتى تتقنها. إذا كان العدد 0 — ابدأ بأي بنك أولاً.",
+            label: "Wrong book",
+            hint: "الأسئلة التي أخطأت فيها — للمراجعة المركّزة.",
           })}
           ${bankRow({
             pool: "always_src",
-            label: "Free points · نقاط مجانية",
-            hint: "قواعد قصيرة ومتكررة (عدوى · أدوية · مسافات زرعات · …). مراجعة سريعة قبل النوم أو قبل الموك.",
+            label: "Free points",
+            hint: "قواعد عالية التكرار — مراجعة سريعة.",
           })}
         </div>
 
-        <p class="simple-subhead" dir="rtl">أدوات أخرى</p>
-        <div class="simple-also">
-          <button type="button" class="btn warn" id="p-timed">موك مؤقّت · Timed 50 (تخصص اليوم)</button>
-          <button type="button" class="btn ghost" id="p-cards">بطاقات · Flashcards (${cardN})</button>
+        <div class="simple-also" style="margin-top:14px">
+          <button type="button" class="btn warn" id="p-timed">Timed mock · 50</button>
+          <button type="button" class="btn ghost" id="p-cards">Flashcards · ${cardN}</button>
         </div>
-        <p class="simple-sub-note" dir="rtl">البطاقات: ${cardN} بطاقة بعد الإثراء (ملاحظات + قواعد + أخطاء). ليست نفس الـ 150 القديمة فقط.</p>
       </div>`;
 
     app.querySelectorAll(".simple-sz[data-qz]").forEach((b) => {
@@ -4998,7 +4988,7 @@
   function topicLabelOf(topic) {
     if (topic === "always_src") return "Free points";
     if (topic === "saud_delta") return "Saud delta";
-    if (topic === "abtal") return "أبطال الديجيتال (ريكول)";
+    if (topic === "abtal") return "أبطال الديجيتال";
     if (topic === "rafi") return "رفيع المقام";
     if (topic === "stream") return "Stream recalls";
     if (topic === "wrong") return "Wrong book";
@@ -5450,8 +5440,8 @@
     if (!pool.length) {
       app.innerHTML = `
         ${backBarHtml("← Back")}
-        <h1>Cards · بطاقات</h1>
-        <div class="alert" dir="rtl">لا توجد بطاقات. حدّث الصفحة بقوة (Ctrl+Shift+R).</div>`;
+        <h1>Flashcards</h1>
+        <div class="alert" dir="rtl">لا بطاقات متاحة. أعد تحميل الصفحة (Ctrl+Shift+R).</div>`;
       bindBackBar();
       return;
     }
@@ -5472,62 +5462,57 @@
       "unknown",
       "all",
     ];
-    const deckAr = {
-      always: "دائماً / قواعد",
-      abtal_notes: "ملاحظات أبطال الديجيتال",
-      restorative: "ترميم",
-      perio: "لثة",
-      endo: "جذور",
-      oms: "جراحة",
-      ortho_pedo: "تقويم/أطفال",
-      ethics: "أخلاقيات",
-      wrong: "أخطاؤك",
-      unknown: "غير معروف لك",
-      all: "الكل",
+    const deckLabel = {
+      always: "Always",
+      abtal_notes: "أبطال الديجيتال",
+      restorative: "Restorative",
+      perio: "Perio",
+      endo: "Endo",
+      oms: "OMS",
+      ortho_pedo: "Ortho/Pedo",
+      ethics: "Ethics",
+      wrong: "Wrong book",
+      unknown: "Unknown",
+      all: "All",
     };
     const srcLabel =
       c.src === "abtal_note"
-        ? "من ملاحظات أبطال الديجيتال"
+        ? "أبطال الديجيتال"
         : c.src === "wrong_book"
-          ? "من دفتر أخطائك"
+          ? "Wrong book"
           : c.src === "always_comes"
-            ? "قاعدة Always-comes"
+            ? "Always-comes"
             : c.src && c.src !== "note"
               ? String(c.src)
-              : "بطاقة أساسية (high-yield)";
+              : "Core";
     app.innerHTML = `
       ${backBarHtml("← Back")}
-      <h1>Cards · بطاقات <span class="badge">${state.cardIx + 1}/${pool.length}</span>
+      <h1>Flashcards <span class="badge">${state.cardIx + 1}/${pool.length}</span>
         <span class="badge green">${knownN} known</span></h1>
-      <details class="ar-help">
-        <summary dir="rtl">لماذا كانت البطاقات «قديمة»؟ وما الجديد؟</summary>
-        <div class="ar-help-body" dir="rtl">
-          <p>سابقاً: ملف ثابت <code>highyield.js</code> فيه نحو <b>150</b> بطاقة إنجليزية قصيرة فقط — لم يُحدَّث مع بنوك أبطال/رفيع.</p>
-          <p>الآن: نفس البطاقات الأساسية + قواعد Always-comes + حتى آلاف البطاقات من <b>ملاحظات أبطال الديجيتال ورفيع</b> (سؤال مختصر → ملاحظة) + بطاقات من <b>دفتر أخطائك</b>.</p>
-          <p>المجموع الحالي: <b>${total}</b> بطاقة. اختر مجموعة بالأسفل (مثلاً ملاحظات أبطال أو أخطاؤك).</p>
-        </div>
-      </details>
-      <p class="lead" dir="rtl">اضغط البطاقة لإظهار الجواب. المجموعة: <b>${escapeHtml(deckAr[deck] || deck)}</b> · الكل ${total}</p>
+      <p class="lead" dir="rtl">
+        ${total} بطاقة — أساسية، ملاحظات أبطال الديجيتال/رفيع، ودفتر الأخطاء.
+        المجموعة: <b>${escapeHtml(deckLabel[deck] || deck)}</b>
+      </p>
       <div class="volume-grid" style="margin-bottom:10px">
         ${decks
           .map(
             (d) =>
-              `<button type="button" class="btn sm ${d === deck ? "" : "ghost"} deck-pick" data-deck="${d}">${escapeHtml(deckAr[d] || d)} (${cardPoolForDeck(d).length})</button>`
+              `<button type="button" class="btn sm ${d === deck ? "" : "ghost"} deck-pick" data-deck="${d}">${escapeHtml(deckLabel[d] || d)} (${cardPoolForDeck(d).length})</button>`
           )
           .join("")}
       </div>
       <div class="card-face" id="flip" tabindex="0">
         <div class="q-meta">${escapeHtml(srcLabel)} · ${escapeHtml(c.deck || "card")}</div>
         <h2 id="cf" style="line-height:1.45">${escapeHtml(c.front)}</h2>
-        <div id="cb" class="explain" hidden><strong>Answer / الجواب:</strong> ${escapeHtml(c.back)}</div>
+        <div id="cb" class="explain" hidden><strong>Answer:</strong> ${escapeHtml(c.back)}</div>
       </div>
       <div class="volume-grid">
-        <button class="btn ghost" id="show">أظهر الجواب · Show</button>
-        <button class="btn success" id="know">أعرفها · Know (1)</button>
-        <button class="btn" id="again" style="background:#6b3a3a">مرة ثانية · Again (2)</button>
-        <button class="btn" id="cnext">التالي · Next (N)</button>
+        <button class="btn ghost" id="show">Show</button>
+        <button class="btn success" id="know">Know (1)</button>
+        <button class="btn" id="again" style="background:#6b3a3a">Again (2)</button>
+        <button class="btn" id="cnext">Next (N)</button>
       </div>
-      <p class="kb-hint">Keys: <b>Space / Enter</b> flip · <b>1</b> Know · <b>2</b> Again · <b>N</b> Next</p>
+      <p class="kb-hint">Space/Enter flip · 1 Know · 2 Again · N Next</p>
     `;
     const show = () => {
       const el = $("#cb");
