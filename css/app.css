@@ -975,6 +975,68 @@ button:focus-visible,
   padding: 6px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
+.bank-search-sec {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: rgba(42, 58, 92, 0.22);
+}
+.bank-search-input {
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 4.5rem;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--bg, #141820);
+  color: inherit;
+  font: inherit;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  resize: vertical;
+  margin: 0 0 10px;
+}
+.bank-search-input:focus {
+  outline: 2px solid rgba(91, 141, 239, 0.55);
+  border-color: #5b8def;
+}
+.bank-search-actions {
+  margin-bottom: 10px;
+}
+.bank-search-results {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  max-height: min(40vh, 320px);
+  overflow-y: auto;
+}
+.bank-hit {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3px;
+  width: 100%;
+  text-align: start;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--bg2);
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+.bank-hit:hover {
+  border-color: #5b8def;
+}
+.bank-hit-meta {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #7eb6ff;
+}
+.bank-hit-q {
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
 .note-full {
   padding: 12px 14px;
 }

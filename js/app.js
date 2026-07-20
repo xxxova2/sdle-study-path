@@ -4099,8 +4099,43 @@
           </div>
         </div>`;
     } else if (pane === "mcqs") {
+      const sq = state.practiceSearch || "";
+      const searchHits = state.searchHitResults || [];
+      const searchHtml = `
+        <section class="hz-section bank-search-sec">
+          <h3 class="hz-sec-title"><span dir="rtl">بحث في البنك</span> Search all MCQs</h3>
+          <p class="hz-hint">Paste a question stem or keywords — searches ~${allQ().length} items (أبطال · رفيع · all).</p>
+          <textarea id="bank-search-q" class="bank-search-input" rows="3" placeholder="Paste MCQ text here…">${escapeHtml(sq)}</textarea>
+          <div class="hz-actions bank-search-actions">
+            <button type="button" class="btn success" id="bank-search-go">Search</button>
+            <button type="button" class="btn ghost" id="bank-search-clear">Clear</button>
+            ${
+              searchHits.length
+                ? `<button type="button" class="btn" id="bank-search-drill">Practice hits (${searchHits.length})</button>`
+                : ""
+            }
+          </div>
+          <div id="bank-search-results" class="bank-search-results">
+            ${
+              state.searchHitRan && !searchHits.length && sq.trim().length >= 3
+                ? `<p class="muted">No match. Try fewer words or a distinctive phrase from the stem.</p>`
+                : searchHits
+                    .map((h, i) => {
+                      const item = h.q;
+                      const src = item.source || item.topic || "";
+                      const preview = String(item.q || "").slice(0, 160);
+                      return `<button type="button" class="bank-hit" data-hit-ix="${i}">
+                        <span class="bank-hit-meta">${i + 1}. ${escapeHtml(String(src))} · ${escapeHtml(String(item.topic || ""))}</span>
+                        <span class="bank-hit-q">${escapeHtml(preview)}${preview.length >= 160 ? "…" : ""}</span>
+                      </button>`;
+                    })
+                    .join("")
+            }
+          </div>
+        </section>`;
       body = `
         <div class="hz-layout">
+          ${searchHtml}
           ${sortToggle()}
           ${banksBySort()}
           ${sizeBar("learn")}
@@ -4177,6 +4212,55 @@
         else startQuiz(b.dataset.qz, n, "learn", false);
       };
     });
+    const runBankSearch = () => {
+      const ta = $("#bank-search-q");
+      const raw = ta ? ta.value : "";
+      state.practiceSearch = raw;
+      state.searchHitRan = true;
+      const hits = searchQuestionBank(raw, 50);
+      state.searchHitResults = hits;
+      state.searchHitIds = hits.map((h) => h.q && h.q.id).filter(Boolean);
+      renderPractice();
+      const ta2 = $("#bank-search-q");
+      if (ta2) {
+        ta2.focus();
+        try {
+          ta2.setSelectionRange(ta2.value.length, ta2.value.length);
+        } catch (_) {}
+      }
+    };
+    $("#bank-search-go") && ($("#bank-search-go").onclick = runBankSearch);
+    $("#bank-search-clear") &&
+      ($("#bank-search-clear").onclick = () => {
+        state.practiceSearch = "";
+        state.searchHitResults = [];
+        state.searchHitIds = [];
+        state.searchHitRan = false;
+        renderPractice();
+      });
+    $("#bank-search-drill") &&
+      ($("#bank-search-drill").onclick = () => {
+        if (!(state.searchHitIds || []).length) return;
+        startQuiz("search_hits", QUIZ_ALL, "learn", false);
+      });
+    app.querySelectorAll("[data-hit-ix]").forEach((b) => {
+      b.onclick = () => {
+        const ix = +b.getAttribute("data-hit-ix");
+        const hit = (state.searchHitResults || [])[ix];
+        if (!hit || !hit.q) return;
+        state.searchHitIds = [hit.q.id];
+        startQuiz("search_hits", 1, "learn", false);
+      };
+    });
+    const searchTa = $("#bank-search-q");
+    if (searchTa) {
+      searchTa.addEventListener("keydown", (e) => {
+        if ((e.ctrlKey || e.metaKey) && e.key === "Enter") {
+          e.preventDefault();
+          runBankSearch();
+        }
+      });
+    }
     $("#cards-today") && ($("#cards-today").onclick = () => openCards(lessonCardDeck(L)));
     $("#cards-abtal") && ($("#cards-abtal").onclick = () => openCards("abtal_notes"));
     $("#cards-all") && ($("#cards-all").onclick = () => openCards("all"));
@@ -5010,7 +5094,11 @@
     }
 
     if (base === "wrong") p = state.wrongBook.map((id) => p.find((q) => q.id === id)).filter(Boolean);
-    else if (base === "preferred") p = p.filter((q) => isPreferredMcq(q));
+    else if (base === "search_hits") {
+      const ids = state.searchHitIds || [];
+      const byId = new Map(p.map((q) => [q.id, q]));
+      p = ids.map((id) => byId.get(id)).filter(Boolean);
+    } else if (base === "preferred") p = p.filter((q) => isPreferredMcq(q));
     else if (base === "archive") p = p.filter((q) => !isPreferredMcq(q));
     else if (base === "always_src") p = p.filter((q) => q.source === "always");
     else if (base === "saud_delta") p = p.filter((q) => q.source === "saud_delta");
@@ -5068,6 +5156,59 @@
 
   function poolN(topic) {
     return pool(topic).length;
+  }
+
+  /** Normalize paste/search text for MCQ lookup across full bank. */
+  function normalizeMcqSearch(s) {
+    return String(s || "")
+      .toLowerCase()
+      .replace(/[\u200f\u200e\u202a-\u202e]/g, "")
+      .replace(/[^\p{L}\p{N}\s]/gu, " ")
+      .replace(/\s+/g, " ")
+      .trim();
+  }
+
+  /**
+   * Search all ~16k MCQs by pasted stem / keywords.
+   * Returns [{ q, score }] sorted best-first.
+   */
+  function searchQuestionBank(rawQuery, limit) {
+    const lim = Math.min(Math.max(limit || 40, 1), 80);
+    const qNorm = normalizeMcqSearch(rawQuery);
+    if (qNorm.length < 3) return [];
+    const words = qNorm.split(" ").filter((w) => w.length >= 3);
+    const phrase = qNorm.length > 100 ? qNorm.slice(0, 90) : qNorm;
+    const shortPhrase = qNorm.slice(0, 48);
+    const bank = allQ();
+    const hits = [];
+    for (let i = 0; i < bank.length; i++) {
+      const item = bank[i];
+      if (!item || !item.q) continue;
+      const stem = normalizeMcqSearch(item.q);
+      if (!stem) continue;
+      let score = 0;
+      if (stem === qNorm) score = 10000;
+      else if (stem.includes(qNorm) || qNorm.includes(stem)) score = 8000 + Math.min(stem.length, 200);
+      else if (shortPhrase.length >= 12 && stem.includes(shortPhrase)) score = 5000;
+      else if (phrase.length >= 16 && stem.includes(phrase)) score = 4000;
+      else if (words.length) {
+        let hit = 0;
+        for (let w = 0; w < words.length; w++) {
+          if (stem.includes(words[w])) hit++;
+        }
+        if (hit === 0) continue;
+        score = hit * 100 + (hit === words.length ? 500 : 0);
+        /* options / explanation boost */
+        const opts = Array.isArray(item.options) ? item.options.join(" ") : "";
+        const blob = normalizeMcqSearch(opts + " " + (item.explanation || ""));
+        for (let w = 0; w < words.length; w++) {
+          if (blob.includes(words[w])) score += 8;
+        }
+      } else continue;
+      if (score > 0) hits.push({ q: item, score });
+    }
+    hits.sort((a, b) => b.score - a.score);
+    return hits.slice(0, lim);
   }
 
   function bankInventory() {
@@ -5227,6 +5368,7 @@
     if (topic === "rafi") return "رفيع المقام";
     if (topic === "stream") return "Stream recalls";
     if (topic === "wrong") return "Wrong book";
+    if (topic === "search_hits") return "Search results";
     if (topic === "all") return "Full bank";
     if (topic === "unseen") return "Unseen";
     if (topic === "weak") return `Weak (${weakTopicKeys(3).join("+")})`;
