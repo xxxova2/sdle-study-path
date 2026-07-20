@@ -3329,7 +3329,9 @@
    * One feedback block for all 2500 MCQs (learn / test reveal / review):
    * 1) Correct. / Incorrect. + which answer is right (once)
    * 2) Why: clinical hinge only (no second copy of the answer)
+   * 3) Dispute strip — auto-tags MCQ + sends suggested answer to feedback
    * opts.ok: true | false | null (null = show answer without right/wrong label)
+   * opts.picked: user choice index when known
    */
   function formatAnswerFeedback(item, opts) {
     opts = opts || {};
@@ -3343,7 +3345,158 @@
     } else {
       head = `<div class="explain"><strong>Correct answer:</strong> ${escapeHtml(ans)}</div>`;
     }
-    return head + formatWhy(item);
+    return head + formatWhy(item) + mcqDisputeHtml(item, opts.picked);
+  }
+
+  /** Compact “is the bank wrong?” form under the revealed answer. */
+  function mcqDisputeHtml(item, picked) {
+    const id = item && item.id != null ? String(item.id) : "";
+    return `<div class="mcq-dispute" data-mcq-id="${escapeHtml(id)}" data-picked="${picked == null ? "" : +picked}">
+      <button type="button" class="mcq-dispute-toggle" id="mcq-dispute-open" aria-expanded="false">
+        ؟ هل الإجابة خاطئة؟ · Is this answer wrong?
+      </button>
+      <div class="mcq-dispute-panel" id="mcq-dispute-panel" hidden>
+        <p class="mcq-dispute-hint" dir="rtl">أرسل الإجابة الصحيحة برأيك — نصل السؤال تلقائيًا مع بلاغك.</p>
+        <p class="mcq-dispute-hint muted" dir="ltr">Send the answer you think is right. Question is tagged automatically.</p>
+        <label class="mcq-dispute-label" for="mcq-dispute-ans">
+          <span dir="rtl">الإجابة الصحيحة (برأيك)</span>
+          <span class="muted"> · Your recommended answer</span>
+        </label>
+        <input type="text" id="mcq-dispute-ans" class="mcq-dispute-input" maxlength="400"
+          placeholder="مثال: B · أو نص الخيار · e.g. B or option text" autocomplete="off" />
+        <label class="mcq-dispute-label" for="mcq-dispute-note">
+          <span dir="rtl">ملاحظة (اختياري)</span>
+          <span class="muted"> · Optional note</span>
+        </label>
+        <textarea id="mcq-dispute-note" class="mcq-dispute-note" rows="2" maxlength="500"
+          placeholder="Why is the bank wrong? / لماذا الإجابة في البنك خطأ؟"></textarea>
+        <div class="mcq-dispute-actions">
+          <button type="button" class="btn success sm" id="mcq-dispute-send">إرسال · Send</button>
+          <button type="button" class="btn ghost sm" id="mcq-dispute-cancel">إلغاء</button>
+        </div>
+        <p class="mcq-dispute-status muted" id="mcq-dispute-status" role="status" aria-live="polite"></p>
+      </div>
+    </div>`;
+  }
+
+  function buildMcqDisputeMessage(item, userAns, note, picked) {
+    const opts = (item.options || [])
+      .map((o, i) => String.fromCharCode(65 + i) + ") " + String(o || ""))
+      .join("\n");
+    const bankLetter =
+      item.answer != null && item.answer >= 0
+        ? String.fromCharCode(65 + item.answer)
+        : "?";
+    const bankOpt =
+      item.options && item.answer != null ? String(item.options[item.answer] || "") : "";
+    const userPick =
+      picked != null && picked >= 0
+        ? String.fromCharCode(65 + picked) +
+          (item.options && item.options[picked] != null ? ") " + item.options[picked] : "")
+        : "(none)";
+    return [
+      "=== MCQ ANSWER DISPUTE ===",
+      "Tag: wrong_answer_report",
+      "Question ID: " + (item.id != null ? item.id : "(no id)"),
+      "Source: " + (item.source || item.pool || item.topic || ""),
+      "Topic: " + (item.topic || ""),
+      "Subtopics: " + ((item.subtopics || []).join(", ") || "—"),
+      "",
+      "STEM:",
+      String(item.q || "").slice(0, 1200),
+      "",
+      "OPTIONS:",
+      opts,
+      "",
+      "BANK ANSWER: " + bankLetter + ") " + bankOpt,
+      "USER PICKED: " + userPick,
+      "USER RECOMMENDED ANSWER: " + String(userAns || "").trim(),
+      note && String(note).trim() ? "USER NOTE: " + String(note).trim() : "",
+      "",
+      "App day: " + state.day + " · plan: " + state.planLength + "d",
+    ]
+      .filter((line) => line !== "")
+      .join("\n");
+  }
+
+  function bindMcqDispute(root, item, picked) {
+    const host = root || app;
+    /* Prefer classes so review lists with many disputes still work */
+    const openBtn =
+      host.querySelector(".mcq-dispute-toggle") || host.querySelector("#mcq-dispute-open");
+    const panel =
+      host.querySelector(".mcq-dispute-panel") || host.querySelector("#mcq-dispute-panel");
+    const sendBtn =
+      host.querySelector("#mcq-dispute-send") ||
+      host.querySelector(".mcq-dispute-actions .btn.success");
+    const cancelBtn =
+      host.querySelector("#mcq-dispute-cancel") ||
+      host.querySelector(".mcq-dispute-actions .btn.ghost");
+    const status =
+      host.querySelector(".mcq-dispute-status") || host.querySelector("#mcq-dispute-status");
+    const ansInp =
+      host.querySelector(".mcq-dispute-input") || host.querySelector("#mcq-dispute-ans");
+    const noteInp =
+      host.querySelector(".mcq-dispute-note") || host.querySelector("#mcq-dispute-note");
+    if (!openBtn || !panel) return;
+
+    openBtn.onclick = () => {
+      const show = panel.hasAttribute("hidden");
+      if (show) panel.removeAttribute("hidden");
+      else panel.setAttribute("hidden", "");
+      openBtn.setAttribute("aria-expanded", show ? "true" : "false");
+      if (show && ansInp) ansInp.focus();
+    };
+    if (cancelBtn) {
+      cancelBtn.onclick = () => {
+        panel.setAttribute("hidden", "");
+        openBtn.setAttribute("aria-expanded", "false");
+        if (status) status.textContent = "";
+      };
+    }
+    if (sendBtn) {
+      sendBtn.onclick = async () => {
+        const userAns = (ansInp && ansInp.value) || "";
+        const note = (noteInp && noteInp.value) || "";
+        if (!String(userAns).trim() || String(userAns).trim().length < 1) {
+          if (status) status.textContent = "اكتب الإجابة الصحيحة · Write the answer you think is right.";
+          return;
+        }
+        sendBtn.disabled = true;
+        sendBtn.textContent = "جاري الإرسال…";
+        if (status) status.textContent = "Sending tagged report…";
+        const message = buildMcqDisputeMessage(item, userAns, note, picked);
+        const result = await deliverFeedback({
+          name: "",
+          kind: "mcq_dispute",
+          kindLabel: "MCQ dispute",
+          message,
+          when: new Date().toISOString(),
+          appUrl: typeof location !== "undefined" ? location.href : "",
+          device: typeof navigator !== "undefined" ? navigator.userAgent : "",
+          tags: ["warning", "mcq", "wrong_answer"],
+        });
+        sendBtn.disabled = false;
+        sendBtn.textContent = "إرسال · Send";
+        if (result.okNtfy || result.okEmail) {
+          if (status)
+            status.innerHTML =
+              "<strong dir='rtl'>تم الإرسال ✓</strong> · Sent with question tag. شكرًا.";
+          if (ansInp) ansInp.value = "";
+          if (noteInp) noteInp.value = "";
+          setTimeout(() => {
+            panel.setAttribute("hidden", "");
+            openBtn.setAttribute("aria-expanded", "false");
+          }, 1600);
+        } else {
+          if (status)
+            status.textContent =
+              "تعذّر الإرسال · Failed (" +
+              ((result.errors || []).join("; ") || "network") +
+              ")";
+        }
+      };
+    }
   }
 
   function formatWhy(item) {
@@ -4532,17 +4685,24 @@
     const errors = [];
     let okNtfy = false;
     let okEmail = false;
+    const ntfyTags =
+      Array.isArray(payload.tags) && payload.tags.length
+        ? payload.tags
+        : ["speech_balloon"];
+    const priority = payload.kind === "mcq_dispute" ? 4 : 3;
 
     // 1) ntfy.sh — free, no login for sender or reader (open topic URL).
     // Use JSON body (not Title/Tags headers): fetch rejects header values with
     // newlines or non-Latin-1 chars → "Invalid value".
     if (cfg.ntfyTopic) {
       try {
-        const title = ("[SDLE " + kindLabel + "] " + String(payload.message || ""))
+        const msgOneLine = String(payload.message || "")
           .replace(/[\r\n\t]+/g, " ")
           .replace(/[^\x20-\x7E]/g, "")
-          .trim()
-          .slice(0, 90) || ("[SDLE " + kindLabel + "]");
+          .trim();
+        const title =
+          ("[SDLE " + kindLabel + "] " + msgOneLine).trim().slice(0, 90) ||
+          "[SDLE " + kindLabel + "]";
         const res = await fetch("https://ntfy.sh/", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -4550,8 +4710,8 @@
             topic: cfg.ntfyTopic,
             title: title,
             message: text,
-            priority: 3,
-            tags: ["speech_balloon"],
+            priority: priority,
+            tags: ntfyTags,
           }),
         });
         if (!res.ok) throw new Error("ntfy HTTP " + res.status);
@@ -5596,6 +5756,7 @@
             revealed
               ? `${formatAnswerFeedback(item, {
                   ok: picked == null ? null : picked === item.answer,
+                  picked,
                 })}${sdleGptButtonHtml("row")}`
               : locked
                 ? `<p class="muted q-feedback-hint">Answer locked. Tap <b>Show answer</b> or <b>Next</b> (bottom bar stays in view).</p>`
@@ -5614,6 +5775,7 @@
     }
     if (revealed) {
       bindSdleGptButtons(app, () => contextFromQuizItem(item, picked));
+      bindMcqDispute(app, item, picked);
     }
     const goNext = () => {
       qz.i++;
@@ -5667,8 +5829,9 @@
     });
     const fb = $("#feedback");
     if (fb) {
-      fb.innerHTML = `${formatAnswerFeedback(item, { ok })}${sdleGptButtonHtml("row")}`;
+      fb.innerHTML = `${formatAnswerFeedback(item, { ok, picked: idx })}${sdleGptButtonHtml("row")}`;
       bindSdleGptButtons(fb, () => contextFromQuizItem(item, idx));
+      bindMcqDispute(fb, item, idx);
     }
     const next = $("#btn-next");
     if (next) {
@@ -5827,6 +5990,7 @@
                   }</div>
                   ${formatAnswerFeedback(item, {
                     ok: skipped ? null : ok,
+                    picked: skipped ? null : ans,
                   })}
                 </div>`;
               })
@@ -5835,9 +5999,35 @@
       }
     `;
     const topicRetake = qz.topic;
+    const reviewItems = showReview ? qz.items.slice() : [];
+    const reviewAnswers = showReview ? (qz.answers || []).slice() : [];
     state.quiz = null;
     bindBackBar();
     bindVolButtons(app);
+    if (showReview && reviewItems.length) {
+      /* Unique ids for multi-dispute forms in review list */
+      app.querySelectorAll(".mcq-dispute").forEach((box, i) => {
+        const item = reviewItems[i];
+        if (!item) return;
+        const openBtn = box.querySelector(".mcq-dispute-toggle");
+        const panel = box.querySelector(".mcq-dispute-panel");
+        const sendBtn = box.querySelector(".mcq-dispute-actions .btn.success");
+        const cancelBtn = box.querySelector(".mcq-dispute-actions .btn.ghost");
+        const status = box.querySelector(".mcq-dispute-status");
+        const ansInp = box.querySelector(".mcq-dispute-input");
+        const noteInp = box.querySelector(".mcq-dispute-note");
+        if (openBtn && panel) {
+          openBtn.id = "mcq-dispute-open-" + i;
+          panel.id = "mcq-dispute-panel-" + i;
+          if (ansInp) ansInp.id = "mcq-dispute-ans-" + i;
+          if (noteInp) noteInp.id = "mcq-dispute-note-" + i;
+          if (sendBtn) sendBtn.id = "mcq-dispute-send-" + i;
+          if (cancelBtn) cancelBtn.id = "mcq-dispute-cancel-" + i;
+          if (status) status.id = "mcq-dispute-status-" + i;
+        }
+        bindMcqDispute(box, item, reviewAnswers[i]);
+      });
+    }
     $("#back").onclick = () => {
       // Prefer stack, fall back to returnView
       if (viewStack.length) goBack();

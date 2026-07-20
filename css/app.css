@@ -1205,6 +1205,74 @@ button:focus-visible,
   border-radius: 8px;
   line-height: 1.45;
 }
+/* MCQ dispute — report bank answer under revealed feedback */
+.mcq-dispute {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px dashed var(--border);
+}
+.mcq-dispute-toggle {
+  display: block;
+  width: 100%;
+  text-align: start;
+  padding: 8px 0;
+  border: 0;
+  background: transparent;
+  color: var(--warn, #e8a838);
+  font: inherit;
+  font-size: 0.92rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.mcq-dispute-toggle:hover {
+  text-decoration: underline;
+}
+.mcq-dispute-panel {
+  margin-top: 6px;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--bg2, #1a2030);
+}
+.mcq-dispute-hint {
+  margin: 0 0 8px;
+  font-size: 0.88rem;
+  line-height: 1.4;
+}
+.mcq-dispute-label {
+  display: block;
+  margin: 8px 0 4px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+.mcq-dispute-input,
+.mcq-dispute-note {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--bg, #141820);
+  color: inherit;
+  font: inherit;
+  font-size: 0.95rem;
+}
+.mcq-dispute-input:focus,
+.mcq-dispute-note:focus {
+  outline: 2px solid rgba(91, 141, 239, 0.55);
+  border-color: #5b8def;
+}
+.mcq-dispute-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+.mcq-dispute-status {
+  margin: 8px 0 0;
+  font-size: 0.88rem;
+  min-height: 1.2em;
+}
 .quiz-actions {
   margin-top: 12px;
   display: flex;
