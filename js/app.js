@@ -1384,9 +1384,14 @@
     setActiveNav(TAB_VIEWS.includes(state.view) ? state.view : "today");
   }
 
-  /** MCQs hub categories → pool() keys (full bank, no thinning). */
+  /**
+   * MCQs hub categories → pool() keys.
+   * Preferred = SDLE-first subset (not the full 16k dump). Archive = rest. All = everything usable.
+   */
   const MCQ_CATEGORIES = [
+    { id: "preferred", label: "Preferred (SDLE)", pool: "preferred", primary: true },
     { id: "all", label: "All MCQs", pool: "all", primary: true },
+    { id: "archive", label: "Archive (rest)", pool: "archive", primary: false },
     { id: "restorative", label: "Restorative", pool: "restorative", primary: true },
     { id: "operative", label: "Operative", pool: "operative", primary: true },
     { id: "perio", label: "Perio", pool: "perio", primary: true },
@@ -3538,14 +3543,15 @@
     }
 
     app.innerHTML = `
-      <h1>MCQs — full bank tests</h1>
-      <p class="lead">Pick a subject. <b>Start full test</b> runs <em>every</em> usable question in that pool
-        (from all in-app sources: free points, أبطال, premium, stream, Saud delta…).
-        Answers stay <b>hidden</b> unless you tap <b>Show answer</b>. Score + review at the end.</p>
-      <div class="alert"><strong>${inv.all} usable</strong> / ${rawTotal} loaded
+      <h1>MCQs — practice tests</h1>
+      <p class="lead"><b>Preferred (SDLE)</b> is the study default: curated + quality أبطال + quality رفيع on priority parts
+        (aligned with SCFHS blueprint weights). <b>All MCQs</b> is the full dump (~${inv.all}).
+        <b>Archive</b> is everything not preferred (thin/padded stems kept for reference).
+        Answers stay <b>hidden</b> unless you tap <b>Show answer</b>.</p>
+      <div class="alert"><strong>Preferred ${inv.preferred || 0}</strong> · All ${inv.all} · Archive ${inv.archive || 0}
         · Free points ${inv.always} · Saud ${inv.saud_delta || 0} · Op ${inv.operative}
         · Resto ${inv.restorative} · Perio ${inv.perio} · Endo ${inv.endo} · OMS ${inv.oms}
-        · Wrong ${inv.wrong}
+        · Wrong ${inv.wrong} · loaded ${rawTotal}
       </div>
       <div class="alert muted">
         After you pick an answer, use <b>Show answer</b> for a short why. Next stays on a sticky bar — no scrolling to continue.
@@ -3667,7 +3673,9 @@
         stepTitle = "Which questions?";
         const pools = [
           { t: focusTopic, label: `Today: ${subject}`, n: focusN, primary: true },
+          { t: "preferred", label: "Preferred (SDLE)", n: inv.preferred || 0, primary: true },
           { t: "all", label: "Full bank", n: inv.all },
+          { t: "archive", label: "Archive", n: inv.archive || 0 },
           { t: "always_src", label: "Free points", n: inv.always },
           { t: "unseen", label: "Unseen only", n: inv.unseen },
           { t: "weak", label: "Weak topics", n: inv.weak },
@@ -3824,9 +3832,9 @@
       ${backBarHtml("← Back")}
       <h1>Extra practice</h1>
       <p class="lead simple-lead">Path: <b>1) wrong book</b> → <b>2) score-makers</b> → <b>3) timed mock</b>.
-        Exam = 200 MCQs. Bank = <b>${inv.all}</b> usable.</p>
+        Exam = <b>200</b> MCQs. Study bank: <b>Preferred ${inv.preferred || 0}</b> (full dump ${inv.all}).</p>
       ${examFocusBannerHtml()}
-      <div class="alert practice-summary"><strong>${inv.all} usable</strong> / ${rawTotal} loaded
+      <div class="alert practice-summary"><strong>Preferred ${inv.preferred || 0}</strong> · All ${inv.all} · Archive ${inv.archive || 0}
         · Free ${inv.always} · Op ${inv.operative} · Resto ${inv.restorative}
         · Perio ${inv.perio} · Endo ${inv.endo} · OMS ${inv.oms} · Wrong ${inv.wrong}
       </div>
@@ -3835,6 +3843,9 @@
         <h3 class="section-label">1 · Start here</h3>
         <p class="muted vol-hint">${escapeHtml(smartPackHint())}</p>
         <div class="volume-grid">
+          ${volBtn("preferred", 50, "Preferred", "success")}
+          ${volBtn("preferred", 100, "Preferred", "success")}
+          ${volBtn("preferred", QUIZ_ALL, "Preferred ALL", "success")}
           ${volBtn("wrong", 25, "Wrong book", "ghost")}
           ${volBtn("wrong", 50, "Wrong book", "ghost")}
           ${volBtn("wrong", QUIZ_ALL, "Wrong ALL", "ghost")}
@@ -4502,6 +4513,75 @@
     return (window.QUESTION_BANK || []).filter((q) => q && q.usable !== false);
   }
 
+  /**
+   * Preferred MCQs — exam-first cut for SDLE (SCFHS / Prometric).
+   * Official exam pattern (app blueprint): ~200 scored MCQs, English, 4 options, one best answer.
+   * Weights: Restorative 40% · Perio 18% · Endo 17% · OMS 15% · Ortho/Pedo 10% + ethics/IC/LA.
+   *
+   * Why not use all 16k? Full bank = رفيع 1–20 dump (~13k) + older packs; many are padded
+   * options, thin stems, or duplicate windows. Preferred keeps study volume sane:
+   *   A) Curated / audited: free points, premium_*, stream, saud_delta
+   *   B) أبطال quality: real options (no “(not listed…)” pads), usable stem
+   *   C) رفيع quality only on study-plan priority parts (1,3,5,7,9–19): 4 real options + stem
+   * Everything else stays in bank under All / Archive / source filters.
+   */
+  const RAFI_PRIORITY_PARTS = new Set([1, 3, 5, 7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]);
+
+  function optionPadCount(q) {
+    const opts = (q && q.options) || [];
+    let n = 0;
+    for (let i = 0; i < opts.length; i++) {
+      const t = String(opts[i] || "").toLowerCase();
+      if (t.includes("not listed") || /^option\s*[a-d]\b/i.test(t)) n++;
+    }
+    return n;
+  }
+
+  function stemLen(q) {
+    return String((q && (q.q || q.stem)) || "").trim().length;
+  }
+
+  function isCuratedPreferred(q) {
+    const s = String((q && q.source) || "");
+    const id = String((q && q.id) || "");
+    if (s === "always" || s === "saud_delta") return true;
+    if (s.startsWith("premium") || s.startsWith("stream")) return true;
+    if (id.startsWith("stream") || id.startsWith("pass_")) return true;
+    if (/^(op_|per_|end_|fr_|oped|eth|hy|gd_)/.test(id)) return true;
+    return false;
+  }
+
+  function isAbtalSource(q) {
+    const s = String((q && q.source) || "");
+    const id = String((q && q.id) || "");
+    return s === "abtal" || id.startsWith("ab2") || id.startsWith("abtal");
+  }
+
+  function rafiPartNum(q) {
+    const s = String((q && q.source) || "");
+    const id = String((q && q.id) || "");
+    const m = s.match(/^rafi_(\d+)/) || id.match(/^rafi_(\d+)/);
+    return m ? parseInt(m[1], 10) : null;
+  }
+
+  function isPreferredMcq(q) {
+    if (!q || q.usable === false) return false;
+    if (isCuratedPreferred(q)) return true;
+    const pads = optionPadCount(q);
+    const opts = (q.options || []).length;
+    const sl = stemLen(q);
+    if (isAbtalSource(q)) {
+      return pads === 0 && opts >= 3 && sl >= 25;
+    }
+    const part = rafiPartNum(q);
+    if (part != null) {
+      if (!RAFI_PRIORITY_PARTS.has(part)) return false;
+      return pads === 0 && opts >= 4 && sl >= 35;
+    }
+    // other sources: full 4-option only
+    return pads === 0 && opts >= 4 && sl >= 35;
+  }
+
   const SUBTOPIC_KEYS = new Set([
     "operative",
     "fixed",
@@ -4512,7 +4592,7 @@
     "restorative_general",
   ]);
 
-  /** ALL / huge counts → entire pool (bank is ~2.2k+ usable) */
+  /** ALL / huge counts → entire pool (bank is large; prefer pool "preferred" for study) */
   const QUIZ_ALL = 99999;
 
   function isSeen(id) {
@@ -4586,6 +4666,8 @@
     const { base, unseenOnly } = parsePoolTopic(topic);
     let p = allQ();
     if (base === "wrong") p = state.wrongBook.map((id) => p.find((q) => q.id === id)).filter(Boolean);
+    else if (base === "preferred") p = p.filter((q) => isPreferredMcq(q));
+    else if (base === "archive") p = p.filter((q) => !isPreferredMcq(q));
     else if (base === "always_src") p = p.filter((q) => q.source === "always");
     else if (base === "saud_delta") p = p.filter((q) => q.source === "saud_delta");
     else if (base === "abtal") p = p.filter((q) => q.source === "abtal");
@@ -4650,6 +4732,8 @@
   function bankInventory() {
     return {
       all: poolN("all"),
+      preferred: poolN("preferred"),
+      archive: poolN("archive"),
       always: poolN("always_src"),
       saud_delta: poolN("saud_delta"),
       abtal: poolN("abtal"),
@@ -4731,6 +4815,8 @@
 
   function inventoryTableHtml(inv) {
     const rows = [
+      ["Preferred (SDLE study cut)", inv.preferred || 0],
+      ["Archive (not preferred)", inv.archive || 0],
       ["Full usable bank", inv.all],
       ["Unseen (never answered)", inv.unseen],
       ["Unseen operative", inv.unseen_operative],
