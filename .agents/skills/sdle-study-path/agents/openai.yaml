@@ -1,0 +1,6 @@
+interface:
+  display_name: "Sdle Study Path"
+  short_description: "Repo-specific patterns and workflows for sdle-study-path"
+  default_prompt: "Use the sdle-study-path repo skill to follow existing architecture, testing, and workflow conventions."
+policy:
+  allow_implicit_invocation: true
