@@ -1,0 +1,15 @@
+{
+  "wave": "02_rafi",
+  "files": 10,
+  "audits": 300,
+  "updated": 299,
+  "missing": [
+    "rafi_16_54dcf11cb4"
+  ],
+  "flips": 49,
+  "confidence": {
+    "high": 261,
+    "low": 11,
+    "med": 28
+  }
+}
