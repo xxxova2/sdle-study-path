@@ -1,0 +1,71 @@
+{
+  "timestamp": "2026-07-20T23:16:40.161Z",
+  "summary": {
+    "total": 16331,
+    "valid": 16325,
+    "warnings": 0,
+    "errors": 6,
+    "unusable": 1186,
+    "missingExplanation": 0,
+    "byTopic": {
+      "ethics": 950,
+      "endo": 2086,
+      "oms": 4033,
+      "ortho_pedo": 1564,
+      "restorative": 5502,
+      "perio": 1660,
+      "mixed": 536
+    },
+    "byDifficulty": {
+      "easy": 491,
+      "medium": 729,
+      "hard": 128,
+      "exam": 14983
+    }
+  },
+  "errors": [
+    {
+      "index": 4476,
+      "id": "rafi_04_04f560ef99",
+      "errors": [
+        "Duplicate ID: \"rafi_04_04f560ef99\""
+      ]
+    },
+    {
+      "index": 4598,
+      "id": "rafi_04_da5abdf804",
+      "errors": [
+        "Duplicate ID: \"rafi_04_da5abdf804\""
+      ]
+    },
+    {
+      "index": 5624,
+      "id": "rafi_04_bef5bee397",
+      "errors": [
+        "Duplicate ID: \"rafi_04_bef5bee397\""
+      ]
+    },
+    {
+      "index": 9289,
+      "id": "rafi_08_2586fb6634",
+      "errors": [
+        "Duplicate ID: \"rafi_08_2586fb6634\""
+      ]
+    },
+    {
+      "index": 12249,
+      "id": "rafi_14_129141c631",
+      "errors": [
+        "Duplicate ID: \"rafi_14_129141c631\""
+      ]
+    },
+    {
+      "index": 12824,
+      "id": "rafi_15_7bd0f00e7a",
+      "errors": [
+        "Duplicate ID: \"rafi_15_7bd0f00e7a\""
+      ]
+    }
+  ],
+  "warnings": []
+}
