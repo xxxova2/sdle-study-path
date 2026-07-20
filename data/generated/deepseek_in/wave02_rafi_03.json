@@ -1,0 +1,459 @@
+{
+  "wave": "02_rafi_priority",
+  "chunk": 3,
+  "count": 30,
+  "instruction": "Audit each MCQ. Correct answer_index + clinical hinge. Set flip if changing answer. Prefer board-standard over community ✅.",
+  "system": "You are auditing KSA SDLE / Prometric-style dental MCQs for a study app.\nRules:\n- Community/PDF ✅ marks are often wrong — decide by clinical board standard, not the mark.\n- Output ONLY a valid JSON array (no markdown fences).\n- Each object MUST have:\n  id, answer_index (0-3), confidence (high|med|low),\n  hinge (clinical why, 1-3 sentences, English),\n  flip (boolean: true if answer_index differs from answer_index_in),\n  department (operative|fixed|rpd|endo|perio|oms|ortho_pedo|ethics|mixed)\n- If image-only / impossible: answer_index null, usable false, hinge explains.\n- operative = direct restorations/preps/materials technique; fixed/rpd = prostho; do not dump all into restorative.\n- Do not invent textbook page numbers.\n",
+  "items": [
+    {
+      "id": "rafi_16_9060274585",
+      "q": "While trying on the final crown ( lithium disilicate) she said I want to place the final crown with temporary cement to evaluate the sensitivity before final cement. Which cement to use?",
+      "options": [
+        "Glass ionomer",
+        "Resin cement",
+        "Non eugenol zinc oxide",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "From رفيع المقام part 16 · operative. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "operative",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_de012dadc4",
+      "q": "a Which of the following Acid base reaction ?",
+      "options": [
+        "Composite",
+        "Glass ionomer",
+        "Componer",
+        "RMGI"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "From رفيع المقام part 16 · operative. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "operative",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_1b029220db",
+      "q": "how many embrasure between two adjacent teeth ?",
+      "options": [
+        "1",
+        "2 (b/w tow teeth",
+        "3",
+        "4(if they say one tooth"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "From رفيع المقام part 16 · operative. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "operative",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_cbe934253a",
+      "q": "What tipe of GIC is Luting agent",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · operative. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "operative",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_0d729e81e8",
+      "q": "Flasking of cast done by?",
+      "options": [
+        "plaste",
+        "die stone",
+        "refectory something",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "From رفيع المقام part 16 · operative. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "operative",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_916b0d8e8f",
+      "q": "What type of collagen in pulp during development ?",
+      "options": [
+        "type 1",
+        "Type 2",
+        "Type 3",
+        "Type 4"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "From رفيع المقام part 16 · operative. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "operative",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_8cda951bb0",
+      "q": "Pt having small amalgam restoration in #16 , need to be changed what you will choose ?",
+      "options": [
+        "gold",
+        "Composite",
+        "Cast ceramic",
+        "Glass ionomer"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "From رفيع المقام part 16 · operative. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "operative",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_bee30ea968",
+      "q": "What the fourth dental material aside from polymers, metal ,porcelain :",
+      "options": [
+        "Stone",
+        "Cement",
+        "Composite",
+        "Alginate"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "From رفيع المقام part 16 · operative. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "operative",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_17880756f9",
+      "q": "15 Y/O patient came with pain and radiolucency under tooth #46 after examination you decide to do root canal treatment and preserve the tooth, his mother was not sure about the decision of treatment and she ask her son , he requested extraction of the tooth, what is the appropriate management in this case:",
+      "options": [
+        "Do the desire of them and take informed consent from the mother.",
+        "Ask for the permission of father and mother then do either extraction or RCT.",
+        "Refuse the extraction.",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "From رفيع المقام part 16 · operative. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "operative",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_f7d0ec51c9",
+      "q": "Slow mixing cement to reach the consistency",
+      "options": [
+        "Resin",
+        "GIC",
+        "Polycarboxylate",
+        "Zinc Phosphate"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "From رفيع المقام part 16 · operative. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "operative",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_28398b37fa",
+      "q": "Dr could not place rd in broken tooth what to do? Radiograph of R.R #15",
+      "options": [
+        "Place it on #16 and stretch it to #14",
+        "Cotton roll isolation",
+        "No need to place rd",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · operative. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "operative",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_dac47fa5de",
+      "q": "Clamp use in class v",
+      "options": [
+        "A12",
+        "A13",
+        "W8",
+        "212"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "From رفيع المقام part 16 · operative. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "operative",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_0a2d7e7d20",
+      "q": "pt placed class 1 amalgam restoration 3 days ago, came to the clinic complaining of pain when clenching, clinically TMJ was normal. What is the problem?",
+      "options": [
+        "galvanic reaction",
+        "over contour restoration",
+        "high point contact",
+        "undercontoured restoration"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "From رفيع المقام part 16 · operative. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "operative",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_bc6d773e59",
+      "q": "Which clamp is used for the upper molar?",
+      "options": [
+        "W7(universal for both jaw)",
+        "W8",
+        "W2",
+        "W4"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "universal for both jaw Community ✅ is provisional.",
+      "topic_in": "restorative",
+      "department_in": "operative",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_b87d255dd8",
+      "q": "How to accelerate stone setting without jeopardising the quality..?",
+      "options": [
+        "Sluury water",
+        "Hot tab water",
+        ". Podwerliqued ratio",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "From رفيع المقام part 16 · operative. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "operative",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_2274a0bd00",
+      "q": "Mild amalgam OD on premolar ? Replace by?",
+      "options": [
+        "composite",
+        "only",
+        "crown",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "From رفيع المقام part 16 · operative. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "operative",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_208c23082f",
+      "q": "class 1 with deep caries RDT is 0.5",
+      "options": [
+        "RMGI",
+        "GIC",
+        "RMGI base with GIC liner",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · operative. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "operative",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_41cf96696d",
+      "q": "Moisture contaminant powder will result in",
+      "options": [
+        "tear in impression",
+        "grainy impression",
+        "chalky cast",
+        "distorted impression"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "From رفيع المقام part 16 · operative. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "operative",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_a98f9bf156",
+      "q": "if you want to evaluate the carbide burs survival and effectiveness (previously mentioned)",
+      "options": [
+        "high speed before contact the tooth",
+        "low speed before contact the tooth",
+        "high speed out of oral cavity",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · operative. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "operative",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_115a4f32a9",
+      "q": "Patient wants to place an amalgam of the remaining dentine 2 mm. What is the linear to use ?",
+      "options": [
+        "No need",
+        "GIc",
+        "Caoh",
+        "RMGlic"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · operative. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "operative",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_5046812b34",
+      "q": "Pt will do whitening and has discoloured class III restorations, when will replace it?(previously mentioned)",
+      "options": [
+        "after 2 days",
+        "After 2 weeks",
+        "Same visit",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "From رفيع المقام part 16 · operative. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "operative",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_d2601616c1",
+      "q": "old pt came with amalgam restoration and wants to replace it with esthetic restoration. He has abnormal salvation and, deep bite, what do you consider to prevent the failure of the final restoration?",
+      "options": [
+        "pulp health",
+        "occlusal adjustment",
+        "impression tech",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "From رفيع المقام part 16 · operative. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "operative",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_a4ee5ea7d8",
+      "q": "most retentive pins in amalgam(previously mentioned)",
+      "options": [
+        "cemented",
+        "self threaded",
+        "friction",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "From رفيع المقام part 16 · operative. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "operative",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_defa95d8bc",
+      "q": "Gag reflux will cause?(previously mentioned)",
+      "options": [
+        "Erosion",
+        "Abrasion",
+        "Abfraction",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · operative. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "operative",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_22de052172",
+      "q": "A gypsum break during flasking, which of these could be attributed?",
+      "options": [
+        "Exothermic reaction that led to it",
+        "Shrinkage of the gypsum",
+        "Insufficient bulk of the gypsum material",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "From رفيع المقام part 16 · operative. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "operative",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_751e3bc66a",
+      "q": "26-year-old woman presented to the clinic requesting to whiten her teeth for her graduation day. Her teeth were otherwise healthy, so it was agreed upon to perform in- office bleaching. 3 minute after initiating the procedure, with adequate isolation the patient complains of severe pain and wants to stop. Which of the following is the most likely cause of the pain?",
+      "options": [
+        "Tooth sensitivity due to vital teeth",
+        "Increase PH of the bleaching agent",
+        "High intensity of the light activating system",
+        "Bleaching of the gingiva due to incorrect placement of plastic dam"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "From رفيع المقام part 16 · operative. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "operative",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_eac9b3f391",
+      "q": "Gic preferred has composite because it has ? (previously mentioned)",
+      "options": [
+        "Fluoride leaching",
+        "Coefficient thermal expansion more than enamel",
+        "Coefficient thermal expansion more than dentine",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · operative. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "operative",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_abf045ee67",
+      "q": "Patient with attrition he have general severe pain especially in the cervical of teeth ?",
+      "options": [
+        "Dentin hypersinsitive",
+        "Irreversiable",
+        "Reversibal",
+        "Srick dentin"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · operative. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "operative",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_5ddf9d9ce1",
+      "q": "avulsion tow central 11-21 dr how difference bw before implantation",
+      "options": [
+        "Crown rounded in destial side",
+        "Crown long in destail slop",
+        "Crown long in mesial slop",
+        "Crown ronded in mesial saide"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · operative. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "operative",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_fa88e54000",
+      "q": "Proximal caries in #36 you will put amalgam but after you prepared the proximal box there was less than 1.6 marginal ridge you change plan to onlay, what you will modify in the mesial and distal wall (previously mentioned)",
+      "options": [
+        "diverge occ",
+        "Converger occ",
+        "oblique",
+        "paralla"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · operative. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "operative",
+      "source": "rafi_16"
+    }
+  ]
+}

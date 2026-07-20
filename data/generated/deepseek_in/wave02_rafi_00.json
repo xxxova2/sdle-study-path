@@ -1,0 +1,459 @@
+{
+  "wave": "02_rafi_priority",
+  "chunk": 0,
+  "count": 30,
+  "instruction": "Audit each MCQ. Correct answer_index + clinical hinge. Set flip if changing answer. Prefer board-standard over community ✅.",
+  "system": "You are auditing KSA SDLE / Prometric-style dental MCQs for a study app.\nRules:\n- Community/PDF ✅ marks are often wrong — decide by clinical board standard, not the mark.\n- Output ONLY a valid JSON array (no markdown fences).\n- Each object MUST have:\n  id, answer_index (0-3), confidence (high|med|low),\n  hinge (clinical why, 1-3 sentences, English),\n  flip (boolean: true if answer_index differs from answer_index_in),\n  department (operative|fixed|rpd|endo|perio|oms|ortho_pedo|ethics|mixed)\n- If image-only / impossible: answer_index null, usable false, hinge explains.\n- operative = direct restorations/preps/materials technique; fixed/rpd = prostho; do not dump all into restorative.\n- Do not invent textbook page numbers.\n",
+  "items": [
+    {
+      "id": "rafi_16_7cd6343390",
+      "q": "There was a case vital tooth with periapical radiolucency asking if it is",
+      "options": [
+        "true combined lesion",
+        "perio origin",
+        "endo origin",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "From رفيع المقام part 16 · endo. Community mark provisional — verify clinically.",
+      "topic_in": "endo",
+      "department_in": "endo",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_fcbe80acbc",
+      "q": "PerioEndo questions: if a patient had a very deep pocket, abscess or cyst, what do you do first?",
+      "options": [
+        "Do curettage first then endo",
+        "Do endo then wait",
+        "Surgical intervention",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "if there is option to do endo first then curettage will be the right choice",
+      "topic_in": "endo",
+      "department_in": "endo",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_e3e0937ada",
+      "q": "Broken file in the middle of the canal, what is the prognosis?",
+      "options": [
+        "Good",
+        "Poor",
+        "Fair",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "Question is missing some information but if they can remove it a good prognosis",
+      "topic_in": "endo",
+      "department_in": "endo",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_da14a6991a",
+      "q": "patient came to the clinic concerned about broken instruments in her tooth that was previously treated 2 years ago. Upon examination of tooth #26 there was no pain on percussion or palpation, Also PA shows no sign of inflammation or any apical lesion (PA shows #26 with two broken instruments in the apical area in two roots with good obturation and crown). What is management? (No follow up in optio",
+      "options": [
+        "Apical surgery",
+        "root amputation",
+        "extraction",
+        "try to bypass it reRCT again."
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "From رفيع المقام part 16 · endo. Community mark provisional — verify clinically.",
+      "topic_in": "endo",
+      "department_in": "endo",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_9f89f9cec3",
+      "q": "patient came with pain in the left upper area. Upon examination, the patient has generalized horizontal bone loss and tooth #26 has pain upon percussion but did not respond to cold or EPT and it was sound. What is the diagnosis?",
+      "options": [
+        "true combined",
+        "primary endo secondary perio",
+        "primary perio secondary endo",
+        "primary endo"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "From رفيع المقام part 16 · endo. Community mark provisional — verify clinically.",
+      "topic_in": "endo",
+      "department_in": "endo",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_b144ed94f6",
+      "q": "location of second canal in lower central ?(mentioned before)",
+      "options": [
+        "Mesial",
+        "Distal",
+        "Labial",
+        "Lingual"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "From رفيع المقام part 16 · endo. Community mark provisional — verify clinically.",
+      "topic_in": "endo",
+      "department_in": "endo",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_a19ee9580f",
+      "q": "Crown fracture involving enamel, dentin and without the pulp, classify?",
+      "options": [
+        "Crown infarction",
+        "complicated crown fracture",
+        "uncomplicated crown fracture",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "From رفيع المقام part 16 · endo. Community mark provisional — verify clinically.",
+      "topic_in": "endo",
+      "department_in": "endo",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_55d37cf714",
+      "q": "Mid root Circular radiolucency(x-ray), the tooth is -ve to cold test and is asymptomatic. What's the next step?",
+      "options": [
+        "perform RCT",
+        "Take shifted xray or CBCT (in the same option)",
+        "Investigate pulp status more using EPT.",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "in the same option Community ✅ is provisional.",
+      "topic_in": "endo",
+      "department_in": "endo",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_fc3ab59e87",
+      "q": "Poorest prognosis ?",
+      "options": [
+        "Avulsion >60 min closed apex",
+        "Avulsion >60 min open apex",
+        "Avulsion <60 min closed apex",
+        "Avulsion <60 min open apex"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "From رفيع المقام part 16 · endo. Community mark provisional — verify clinically.",
+      "topic_in": "endo",
+      "department_in": "endo",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_18523023cb",
+      "q": "Why remove the smear layer before obturation ?",
+      "options": [
+        "To allow the sealer to go into open dentinal tubules",
+        "To remove the sealer easily",
+        "To increase the antimicrobial activity of the sealer",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · endo. Community mark provisional — verify clinically.",
+      "topic_in": "endo",
+      "department_in": "endo",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_36b1301713",
+      "q": "75 years old came to restore broken MO restoration, probing depth was normal, cold test no response, EPT positive response, precaution and palpitation was normal what is the diagnosis",
+      "options": [
+        "normal pulp and apical tissue",
+        "necrotic pulp",
+        "asymptomatic irreversible pulpitis",
+        "symptomatic irreversible pulpitis"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · endo. Community mark provisional — verify clinically.",
+      "topic_in": "endo",
+      "department_in": "endo",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_c108682dbf",
+      "q": "What is the consequence of direct pulp capping in primary tooth ?",
+      "options": [
+        "Pulp obliteration",
+        "Internal resorption",
+        "External resorption",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "From رفيع المقام part 16 · endo. Community mark provisional — verify clinically.",
+      "topic_in": "endo",
+      "department_in": "endo",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_bc30f993c5",
+      "q": "Trauma with pulp exposure 1 day",
+      "options": [
+        "Direct pulp caping",
+        "Pulpotomy",
+        "Partial pulpotomy",
+        "RCT"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "From رفيع المقام part 16 · endo. Community mark provisional — verify clinically.",
+      "topic_in": "endo",
+      "department_in": "endo",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_54dcf11cb1",
+      "q": "Best temporary filling which provides sealing ability after RCT ?",
+      "options": [
+        "Fermit",
+        "IRM",
+        "Cavit",
+        "glass ionomer"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "From رفيع المقام part 16 · endo. Community mark provisional — verify clinically.",
+      "topic_in": "endo",
+      "department_in": "endo",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_af8d563e95",
+      "q": "sound tooth have pain on percussion and no response in cold test ask for diagnosis",
+      "options": [
+        "endo primary with perio 2nd",
+        "perio primary with endo 2nd",
+        "true combined",
+        "periodontal combined"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "From رفيع المقام part 16 · endo. Community mark provisional — verify clinically.",
+      "topic_in": "endo",
+      "department_in": "endo",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_5a79c8a3ae",
+      "q": "you take xray and not clear so you take with mesial shift which is mesial",
+      "options": [
+        "mesiolingual ( SLOB )",
+        ".mesiobuccal",
+        "distal",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · endo. Community mark provisional — verify clinically.",
+      "topic_in": "endo",
+      "department_in": "endo",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_77257f5116",
+      "q": "Patient present to clinic with pain on biting on #45 and #44 Upon examination you found large amalgam restoration in relation to two teeth, what is the best diagnostic to do?",
+      "options": [
+        "Examination and transillumination",
+        "PA",
+        "Percussion",
+        "palpation"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "From رفيع المقام part 16 · endo. Community mark provisional — verify clinically.",
+      "topic_in": "endo",
+      "department_in": "endo",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_b200eeeba5",
+      "q": "Why remove smear layer during endo :",
+      "options": [
+        "To improve properties of sealer",
+        "To allow bacterstatic properties",
+        "To reduce setting time of sealer",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · endo. Community mark provisional — verify clinically.",
+      "topic_in": "endo",
+      "department_in": "endo",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_1af1c0fe86",
+      "q": "pic of short roots with bone replacement",
+      "options": [
+        "external replacement",
+        "surface resorption",
+        "Cervical resorption",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · endo. Community mark provisional — verify clinically.",
+      "topic_in": "endo",
+      "department_in": "endo",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_1446304f98",
+      "q": "A patient reports discomfort while biting and a gap between the gutta percha and the metal post. The patient desires relief from the pain. What would be your course of action?",
+      "options": [
+        "Perform endo surgery.",
+        "Redo the RCT.",
+        "Reassure the patient.",
+        "Prescribe a analgesic"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "From رفيع المقام part 16 · endo. Community mark provisional — verify clinically.",
+      "topic_in": "endo",
+      "department_in": "endo",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_9aee58fbb5",
+      "q": "upper 1st premolar, how many canals?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "From رفيع المقام part 16 · endo. Community mark provisional — verify clinically.",
+      "topic_in": "endo",
+      "department_in": "endo",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_9609a5b9c1",
+      "q": "To have a good antimicrobial effect from using calcium hydroxide it should be placed in the canal for ?",
+      "options": [
+        "24 Hours",
+        "3 days",
+        "2 weeks",
+        "4 weeks"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "From رفيع المقام part 16 · endo. Community mark provisional — verify clinically.",
+      "topic_in": "endo",
+      "department_in": "endo",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_9d9bde52d9",
+      "q": "What is the maximum size of endo voxel?",
+      "options": [
+        "0.2mm",
+        "0.02mm",
+        "0.4mm",
+        "0.04mm"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · endo. Community mark provisional — verify clinically.",
+      "topic_in": "endo",
+      "department_in": "endo",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_b6c8b23863",
+      "q": "Which instrument has an active cutting tip?",
+      "options": [
+        "K file",
+        "H file",
+        "Reamer",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · endo. Community mark provisional — verify clinically.",
+      "topic_in": "endo",
+      "department_in": "endo",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_1f371876a9",
+      "q": "13 yrs avulsed of 11 and already keep it in milk (",
+      "options": [
+        "extra oral RCT",
+        "keep it in NF",
+        "splint it directly",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "From رفيع المقام part 16 · endo. Community mark provisional — verify clinically.",
+      "topic_in": "endo",
+      "department_in": "endo",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_189acdbb12",
+      "q": "Non vital bleaching can cause what type of resorption?",
+      "options": [
+        "External cervical",
+        "Internal",
+        "Surface",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · endo. Community mark provisional — verify clinically.",
+      "topic_in": "endo",
+      "department_in": "endo",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_f105aca1b4",
+      "q": "Initial way to diagnose VRF",
+      "options": [
+        "Occlusal xray",
+        "CBCT",
+        "PA",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "From رفيع المقام part 16 · endo. Community mark provisional — verify clinically.",
+      "topic_in": "endo",
+      "department_in": "endo",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_f646ebfdbb",
+      "q": "patient has trauma 1 year ago , and she came with throbbing pain what can to prevent further complications",
+      "options": [
+        "Chx irrigation",
+        "Double side vented needle",
+        "Single ended side needle",
+        "Low concentration Naocl"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "From رفيع المقام part 16 · endo. Community mark provisional — verify clinically.",
+      "topic_in": "endo",
+      "department_in": "endo",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_e1c74634bc",
+      "q": "What is the treatment",
+      "options": [
+        "bypass or retrieve",
+        "extraction",
+        "obturation until the file",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · endo. Community mark provisional — verify clinically.",
+      "topic_in": "endo",
+      "department_in": "endo",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_fda6980632",
+      "q": "blood during pulpotomy (mentioned before)",
+      "options": [
+        "irreversible pulpitis",
+        "reversible pulpitis",
+        "necrosis",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · endo. Community mark provisional — verify clinically.",
+      "topic_in": "endo",
+      "department_in": "endo",
+      "source": "rafi_16"
+    }
+  ]
+}

@@ -1,0 +1,459 @@
+{
+  "wave": "02_rafi_priority",
+  "chunk": 9,
+  "count": 30,
+  "instruction": "Audit each MCQ. Correct answer_index + clinical hinge. Set flip if changing answer. Prefer board-standard over community ✅.",
+  "system": "You are auditing KSA SDLE / Prometric-style dental MCQs for a study app.\nRules:\n- Community/PDF ✅ marks are often wrong — decide by clinical board standard, not the mark.\n- Output ONLY a valid JSON array (no markdown fences).\n- Each object MUST have:\n  id, answer_index (0-3), confidence (high|med|low),\n  hinge (clinical why, 1-3 sentences, English),\n  flip (boolean: true if answer_index differs from answer_index_in),\n  department (operative|fixed|rpd|endo|perio|oms|ortho_pedo|ethics|mixed)\n- If image-only / impossible: answer_index null, usable false, hinge explains.\n- operative = direct restorations/preps/materials technique; fixed/rpd = prostho; do not dump all into restorative.\n- Do not invent textbook page numbers.\n",
+  "items": [
+    {
+      "id": "rafi_16_64cda905d0",
+      "q": "What you can see in maxilla and mandible during impression taking?",
+      "options": [
+        "pterygomandibular raphe",
+        "Max tuberosity.",
+        "Retromolar pad.",
+        "Humular notch."
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · rpd. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "rpd",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_3d48e8d242",
+      "q": "Pt have all upper teeth , lower only the anterior lingually tilted what to do?",
+      "options": [
+        "Extraction",
+        "swing lock rpd",
+        "immediate",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "From رفيع المقام part 16 · rpd. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "rpd",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_90e7f57b1f",
+      "q": "Pt Most common attachment for mandibular overdenture with 2 implants?",
+      "options": [
+        "Clasp",
+        "Bar",
+        "Ball",
+        "Locator"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "From رفيع المقام part 16 · rpd. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "rpd",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_bc4e936e7d",
+      "q": "a case need RBD .The tooth has cervical undercut. Which clasp you will use?",
+      "options": [
+        "Ring,",
+        "Aker",
+        "RPI",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "From رفيع المقام part 16 · rpd. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "rpd",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_5e92bfda06",
+      "q": "tooth did survey crown and after that you see that it didn’t required management",
+      "options": [
+        "full coverage crown",
+        "Restoration",
+        "contour",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "From رفيع المقام part 16 · rpd. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "rpd",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_9521579083",
+      "q": "Pt complain of Complete denture come out when he pull the lip what is the cause :",
+      "options": [
+        "Labial frenum",
+        "Buccal frenum",
+        "Posterior palatal seal",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · rpd. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "rpd",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_22ac94b668",
+      "q": "I bar got broken for pt has metal base rpd what is the conservative way to fix it:",
+      "options": [
+        "WW",
+        "Recasting bar clasp",
+        "Refabricating",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · rpd. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "rpd",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_ebd3baa599",
+      "q": "What is the absolute contraindication for i bar clasp:",
+      "options": [
+        "High esthetic demand",
+        "Severe undercut",
+        "Lingual or labial tilted",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "From رفيع المقام part 16 · rpd. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "rpd",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_b2ec3f0ea8",
+      "q": "To have a high posterior cusp?",
+      "options": [
+        "Shallow condylar guidance",
+        "Increased vertical overlap of anterior teeth",
+        "Increased horizontal overlap of anterior teeth",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "From رفيع المقام part 16 · rpd. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "rpd",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_98f633fe19",
+      "q": "The patient does not compliant because her denture came with pinpoint \"hematoma\" (red dots, I forget the exact term ) diabetic and controlled. What should the dentist do ?",
+      "options": [
+        "Antifungal",
+        "Wear the denture only during daytime.",
+        "Take vitamins.",
+        "Remove denture until healing of the lesion."
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · rpd. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "rpd",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_7c1a905cca",
+      "q": "ask about patient complaint of retention of recently completed denture ( if everything it was okay, except flat ridge)",
+      "options": [
+        "Give him a Adhesive",
+        "Remake",
+        "Reline",
+        "rebase"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · rpd. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "rpd",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_1af178f6c3",
+      "q": "48 yo diabetic patient came for follow up complaining form upper RPD he feels discomfort while wearing it what is the management? same this pic and the choices are exactly like this?",
+      "options": [
+        "Prednisone",
+        "Prescribe insulin",
+        "Reduction from the fitting surface",
+        "Prescribe acyclovir"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "From رفيع المقام part 16 · rpd. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "rpd",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_be9481d832",
+      "q": "Patient has Kennedy class I and you found a usable undercut on the last abutment. What is the most flexible clasp and its cross section ?",
+      "options": [
+        "cast Clasp with round cross section",
+        "Cast Clasp with half round cross section",
+        "WW with round cross section",
+        "WW with half round cross section"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "From رفيع المقام part 16 · rpd. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "rpd",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_46450f2c3c",
+      "q": "Increase of VD",
+      "options": [
+        "gag reflex",
+        "tmj dysfunction",
+        "angular chelitis",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · rpd. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "rpd",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_6d272bbbd0",
+      "q": "A patient presents with a gunshot wound affecting the bone and teeth in quadrant four, with the exception of one area. A picture of a denture with an implant for quadrant four is also provided..‫حسب الصورة‬",
+      "options": [
+        "Overdenture",
+        "Fixed hybrid denture",
+        "Cemented FPD",
+        "Partial Removable retained implant"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "From رفيع المقام part 16 · rpd. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "rpd",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_4c937e4141",
+      "q": "Complete denture delivered to the patient with wellbalance occlusion. He removes it at night then in the morning he can’t insert it. What is the cause?",
+      "options": [
+        "Lack of frenum relief",
+        "Lack of insertion skills",
+        "Something in occlusion",
+        "Left in dry filed at night"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "From رفيع المقام part 16 · rpd. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "rpd",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_5b37c1f747",
+      "q": "class III kennedy mandibular have mid buccal undercut",
+      "options": [
+        "Rpi",
+        "Circumferential",
+        "Double",
+        "Reverse"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · rpd. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "rpd",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_7e9aeb95ad",
+      "q": "what’s metal used in denture",
+      "options": [
+        "Alloy",
+        "Titanum",
+        "Palladium",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · rpd. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "rpd",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_7ba36eb9aa",
+      "q": "Which of the following articulators captures the record of mandibular border movement?",
+      "options": [
+        "Fully adjustable",
+        "Arcon",
+        "Non acron",
+        "Semi adjustable"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · rpd. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "rpd",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_03060d3f8e",
+      "q": "fracture of retentive arm with good reciprocal arm how to treat conservative?",
+      "options": [
+        "Solder",
+        "Wrought wire",
+        "Do new one",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "From رفيع المقام part 16 · rpd. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "rpd",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_5ff2c7547c",
+      "q": "Patient with missing 4 upper anterior teeth and left upper second premolar, how many rest seats?",
+      "options": [
+        "4 rest seats, 4 retentive arms",
+        "5 rest seats, 5 retentive arms",
+        "6 rest seats, 6 retentive arms",
+        "6 rest seats, 5 retentive arms"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "may be they mean connectors and not retentive arms",
+      "topic_in": "restorative",
+      "department_in": "rpd",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_2062493a3d",
+      "q": "At which stage we pack the acrylic?",
+      "options": [
+        "Dough stage",
+        "Rubbery stage",
+        "Sticky stage",
+        "Stiff stage"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · rpd. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "rpd",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_e93fff9ea2",
+      "q": "Safe wrought wire cross section against dislodgement ?",
+      "options": [
+        "Triangular",
+        "Square",
+        "Round",
+        "Half round"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "From رفيع المقام part 16 · rpd. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "rpd",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_84c9326d46",
+      "q": "RPD components that give stability .",
+      "options": [
+        "Reciprocal arm and minor connector",
+        "Retentive arm and minor connector",
+        "Plate and retentive arm",
+        "Rest and minor"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · rpd. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "rpd",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_c1b4c6404d",
+      "q": "Patient has lost all of his teeth posterior to 45 and 35 (Kennedy class 1) the undercut was not in the cervical part and infrabulge is contraindicated which of the following would you do?",
+      "options": [
+        "Mesial rest and distal i bar",
+        "Distal rest and mesial i bar",
+        "Distal rest and mesial circumferential",
+        "Mesial rest and distal circumferential"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "From رفيع المقام part 16 · rpd. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "rpd",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_a33cba4133",
+      "q": "What’s the thing that’s attached for Complete over denture:",
+      "options": [
+        "Locator",
+        "Implant",
+        "Analog",
+        "Coping"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · rpd. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "rpd",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_a442d3d368",
+      "q": "35 Y/O female patient with lower RPD replace the posterior teeth in quadrant 3 which opposing natural teeth, she complain from interference when closing to the optimum condyle on the glenoid fossa, what is the type of interference:",
+      "options": [
+        "Centric",
+        "Protrusive.",
+        "Working.",
+        "Non-working."
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · rpd. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "rpd",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_077ce3acad",
+      "q": "pt with 4 anterior missing upper with severe ridge resorption best esthetic prostho tx",
+      "options": [
+        "Implant",
+        "FPD",
+        "RPD",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "From رفيع المقام part 16 · rpd. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "rpd",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_a3b4889f0d",
+      "q": "while the use of surveyor, the Finish line of height of contour varies in width and position during surveying of cast, why?",
+      "options": [
+        "Poor Quality of carbon",
+        "Wrong angulation of the cast ·",
+        "Tip of carbon touching to sides",
+        "Carbon markers need resharpening"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "From رفيع المقام part 16 · rpd. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "rpd",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_78da0dc0fe",
+      "q": "What is the importance of the posterior palatal seal?",
+      "options": [
+        "Increased durability of the denture",
+        "Improve stability.",
+        "Decrease gag reflex.",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "From رفيع المقام part 16 · rpd. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "rpd",
+      "source": "rafi_16"
+    }
+  ]
+}

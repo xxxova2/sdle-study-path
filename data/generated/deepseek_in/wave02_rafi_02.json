@@ -1,0 +1,459 @@
+{
+  "wave": "02_rafi_priority",
+  "chunk": 2,
+  "count": 30,
+  "instruction": "Audit each MCQ. Correct answer_index + clinical hinge. Set flip if changing answer. Prefer board-standard over community ✅.",
+  "system": "You are auditing KSA SDLE / Prometric-style dental MCQs for a study app.\nRules:\n- Community/PDF ✅ marks are often wrong — decide by clinical board standard, not the mark.\n- Output ONLY a valid JSON array (no markdown fences).\n- Each object MUST have:\n  id, answer_index (0-3), confidence (high|med|low),\n  hinge (clinical why, 1-3 sentences, English),\n  flip (boolean: true if answer_index differs from answer_index_in),\n  department (operative|fixed|rpd|endo|perio|oms|ortho_pedo|ethics|mixed)\n- If image-only / impossible: answer_index null, usable false, hinge explains.\n- operative = direct restorations/preps/materials technique; fixed/rpd = prostho; do not dump all into restorative.\n- Do not invent textbook page numbers.\n",
+  "items": [
+    {
+      "id": "rafi_16_34746e89f9",
+      "q": "4 years old had trauma and both primary incisors intruded and touched the permanents, what is your management?",
+      "options": [
+        "Allow for spontaneous eruption",
+        "Extract both teeth",
+        "carefully Reposition and splint",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "From رفيع المقام part 16 · endo. Community mark provisional — verify clinically.",
+      "topic_in": "endo",
+      "department_in": "endo",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_d798292b69",
+      "q": "Percentage of accessory canal in apical third?",
+      "options": [
+        "15",
+        "74",
+        "11",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "From رفيع المقام part 16 · endo. Community mark provisional — verify clinically.",
+      "topic_in": "endo",
+      "department_in": "endo",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_f04ec0595a",
+      "q": "7years old has 5mm intrusion whats to do?(previously mentioned)",
+      "options": [
+        "Surgical repositioning",
+        "Ortho repositioning",
+        "No repositioning until 3 weeks",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "From رفيع المقام part 16 · endo. Community mark provisional — verify clinically.",
+      "topic_in": "endo",
+      "department_in": "endo",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_07919ecfd7",
+      "q": "( Long case scenario ) the pt. has endo treated tooth with post and metal ceramic crown. Has an isolated pocket. The Pt. suspected with VRF. What is the recommended investigation initially ?",
+      "options": [
+        "PA",
+        "Bitewing",
+        "Occlusal radiograph",
+        "CBCT"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "From رفيع المقام part 16 · endo. Community mark provisional — verify clinically.",
+      "topic_in": "endo",
+      "department_in": "endo",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_400e9b6389",
+      "q": "which instrument to crack in the crown root fracture , he didn’t mention any thing only clinically ?",
+      "options": [
+        "tooth sloth",
+        "D16 explorer",
+        "D 1 explorer",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · endo. Community mark provisional — verify clinically.",
+      "topic_in": "endo",
+      "department_in": "endo",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_88f951a105",
+      "q": "female patient came for check up or may be complain from biting and she has upper premolar previously treated 4 years ago and she did retreatmemt before 1 year and doctor used methylene blue dye and notic line extended from the distal surface extended to tho tooth distal surface and isolated pocket and aske hat is prognosis of retreatemtn for this tooth ?",
+      "options": [
+        "Poor",
+        "fair",
+        "Good",
+        "Excellent"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · endo. Community mark provisional — verify clinically.",
+      "topic_in": "endo",
+      "department_in": "endo",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_9fe2c3596c",
+      "q": "child with gingival abscess related to primary molar what is the pulp condition that cause this case ?",
+      "options": [
+        "Hypremia",
+        "Reversible pulpitis",
+        "Obiletrated",
+        "Irreversible pulpitits"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "From رفيع المقام part 16 · endo. Community mark provisional — verify clinically.",
+      "topic_in": "endo",
+      "department_in": "endo",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_6974c859c2",
+      "q": "Metal sound after truma more in ?",
+      "options": [
+        "Intrusion",
+        "Subluxation",
+        "Latrale laxution",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · endo. Community mark provisional — verify clinically.",
+      "topic_in": "endo",
+      "department_in": "endo",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_3d6e92f10f",
+      "q": "Which trauma causes pulp necrosis?",
+      "options": [
+        "Avulsion",
+        "Concussion",
+        "Subluxation",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · endo. Community mark provisional — verify clinically.",
+      "topic_in": "endo",
+      "department_in": "endo",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_452206e5be",
+      "q": "PA of central with open apex had trauma before and the last dentist did something what is it - there was something filling the root to the middle only",
+      "options": [
+        "endo regeneration",
+        "pulpectomy",
+        "apexogenesis",
+        "RCt"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "From رفيع المقام part 16 · endo. Community mark provisional — verify clinically.",
+      "topic_in": "endo",
+      "department_in": "endo",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_1596bca472",
+      "q": "Deep carious lesion and indicated for extraction. Which of the following criteria help in choosing type of extraction?",
+      "options": [
+        "Gingival swelling in buccal",
+        "3 site caries",
+        "Pulpal pain",
+        "Percussion"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "From رفيع المقام part 16 · operative. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "operative",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_2d0fc3a918",
+      "q": "Patient bruxer has fracture amalgam what to do ?",
+      "options": [
+        "Composite",
+        "ceramic inlay",
+        "Cast restoration",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "From رفيع المقام part 16 · operative. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "operative",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_c34429ccef",
+      "q": "Tooth # 16 has furcation grade lV how to manage it ?",
+      "options": [
+        "Odontoplasty",
+        "Hemisection",
+        "Resection of root",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "From رفيع المقام part 16 · operative. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "operative",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_0a7121720c",
+      "q": "Pt came with white pigments all around his teeth after he removed his ortho appliance. What is the most suitable thing you can do?",
+      "options": [
+        "Florid varnish",
+        "Florid gel",
+        "Emphasise on Oral hygiene instructions",
+        "Restoration"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "From رفيع المقام part 16 · operative. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "operative",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_1a1fc1b30c",
+      "q": "When the dentist did tooth preparation, Patient experienced pain even on the enamel layer this may be due to?",
+      "options": [
+        "Enamel tufts",
+        "Enamel spindle",
+        "Enamel Lamellae",
+        "Rods"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "From رفيع المقام part 16 · operative. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "operative",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_81923071cc",
+      "q": "deferential radiopacity between fiber post and flowable composite in xray?",
+      "options": [
+        "Less",
+        "More",
+        "Same",
+        "Not different"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · operative. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "operative",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_3d74e6361f",
+      "q": "Deep class II restoration, xray provided good margin and adaptation but with bone loss in the area of restoration what is affected?",
+      "options": [
+        "Periodontium",
+        "Pulp",
+        "Enamel",
+        "Dentin"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · operative. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "operative",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_4b7385ae4a",
+      "q": "What type of restoration for posterior have esthetic, strength, durable:",
+      "options": [
+        "High filler composite",
+        "Low filler composite",
+        "Amalgam",
+        "RMGI"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · operative. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "operative",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_51fa6381db",
+      "q": "Why do we use water spray during cavity preparation ?",
+      "options": [
+        "To decrease dentine heating",
+        "To prevent inspiration of particles",
+        "To decrease dentinal fluids movement",
+        "To clean the field"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · operative. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "operative",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_996906aab2",
+      "q": "Pa of #25 that has a relatively short root and Periapical radiolucency with around 2 mm above the bone” they mentioned that the tooth is equigingival clinically and asked what is the best way to isolate the tooth",
+      "options": [
+        "no need",
+        "cotton roll",
+        "extract and implant",
+        "Clamp the #26 and extend the dam to #24(‫)هي اﻹجابة اﻷقرب حسب اﻻختيارات‬"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "From رفيع المقام part 16 · operative. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "operative",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_b90f5e35c7",
+      "q": "amalgam restoration which opposite to gold and cause pain, ask for management",
+      "options": [
+        "varnish in amalgam",
+        "Extraction",
+        "change restoration",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "From رفيع المقام part 16 · operative. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "operative",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_fa14977d4d",
+      "q": "you want to work on buccal of quadrant 1 and palate of qudrant 2 , position",
+      "options": [
+        "11-12 clock",
+        "8 clock,",
+        "6 clock",
+        "9 clocK"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "From رفيع المقام part 16 · operative. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "operative",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_1664c2abd1",
+      "q": "Pt came with conservative MO access throw amalgam restoration , what to do after endo.",
+      "options": [
+        "Amalgam core and crown",
+        "composite core and crown",
+        "fiber post and ceramic crown",
+        "cast post and PfM"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · operative. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "operative",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_ebe6291bd0",
+      "q": "Stock tray retention with irreversible material",
+      "options": [
+        "Micro mechanical",
+        "Mechanical",
+        "chemical",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "From رفيع المقام part 16 · operative. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "operative",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_c79cae31ca",
+      "q": "Restoration of caries extending to dej",
+      "options": [
+        "Composite",
+        "Amalgam",
+        "Gic",
+        "RMGIC"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "From رفيع المقام part 16 · operative. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "operative",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_64f38794d4",
+      "q": "content of titanium alloy",
+      "options": [
+        "Silver",
+        "Gold",
+        "aluminium",
+        "Palladium"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "From رفيع المقام part 16 · operative. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "operative",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_1133df3bca",
+      "q": "ask about hyperplasia in incisors tip and occlusal surface of molar?",
+      "options": [
+        "Tetracycline",
+        "Fluorosis",
+        "Metallic",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "From رفيع المقام part 16 · operative. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "operative",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_8de8a2e4ee",
+      "q": "special tray impression for final impression?",
+      "options": [
+        "Rigidity",
+        "Strength",
+        "Flexibility",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · operative. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "operative",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_b0c16d6048",
+      "q": "most ductile and malleable",
+      "options": [
+        "gold",
+        "Titanium",
+        "Platinum",
+        "Amalgam"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · operative. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "operative",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_9e5456e5c8",
+      "q": "instrument used to finish the buccal an lingual proximal wall ?",
+      "options": [
+        "Gingival margin",
+        "Enamel hatchet",
+        "Chisel",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "From رفيع المقام part 16 · operative. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "operative",
+      "source": "rafi_16"
+    }
+  ]
+}

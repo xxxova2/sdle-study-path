@@ -1,0 +1,459 @@
+{
+  "wave": "02_rafi_priority",
+  "chunk": 5,
+  "count": 30,
+  "instruction": "Audit each MCQ. Correct answer_index + clinical hinge. Set flip if changing answer. Prefer board-standard over community ✅.",
+  "system": "You are auditing KSA SDLE / Prometric-style dental MCQs for a study app.\nRules:\n- Community/PDF ✅ marks are often wrong — decide by clinical board standard, not the mark.\n- Output ONLY a valid JSON array (no markdown fences).\n- Each object MUST have:\n  id, answer_index (0-3), confidence (high|med|low),\n  hinge (clinical why, 1-3 sentences, English),\n  flip (boolean: true if answer_index differs from answer_index_in),\n  department (operative|fixed|rpd|endo|perio|oms|ortho_pedo|ethics|mixed)\n- If image-only / impossible: answer_index null, usable false, hinge explains.\n- operative = direct restorations/preps/materials technique; fixed/rpd = prostho; do not dump all into restorative.\n- Do not invent textbook page numbers.\n",
+  "items": [
+    {
+      "id": "rafi_16_18c50c27e5",
+      "q": "Generalized ulceration, body temperatures: 37 Management:",
+      "options": [
+        "CHX mouthwash for two weeks then re evaluation",
+        "CHX + SRP",
+        "SRP + two types of Ab",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · perio. Community mark provisional — verify clinically.",
+      "topic_in": "perio",
+      "department_in": "perio",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_ee295a5e78",
+      "q": "case about a patient with gingival overgrowth asking for the surgical treatment of the overgrowth?",
+      "options": [
+        "Crown lengthening",
+        "External bevel gingivectomy",
+        "Internal bevel gingivectomy",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "From رفيع المقام part 16 · perio. Community mark provisional — verify clinically.",
+      "topic_in": "perio",
+      "department_in": "perio",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_15c94f9092",
+      "q": "function of periodontal probe?",
+      "options": [
+        "check caries",
+        "check BOP",
+        "excavate caries",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "From رفيع المقام part 16 · perio. Community mark provisional — verify clinically.",
+      "topic_in": "perio",
+      "department_in": "perio",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_e3529ffcce",
+      "q": "Recession or Crowns i can’t remember and Food impaction under contact area best way to brush this area ?",
+      "options": [
+        "Interdental brush",
+        "Dental floss",
+        "Dental brush",
+        "Super floss"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "From رفيع المقام part 16 · perio. Community mark provisional — verify clinically.",
+      "topic_in": "perio",
+      "department_in": "perio",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_d13a2d9d96",
+      "q": "year old woman complains of deposits on her teeth. Examination revealed yellowishcolored soft deposits which could not be easily dislodged with a water spray. Which of thefollowing best describes the patient's complaint?",
+      "options": [
+        "Pellicle",
+        "Plaque",
+        "Calculus",
+        "Material alba"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "From رفيع المقام part 16 · perio. Community mark provisional — verify clinically.",
+      "topic_in": "perio",
+      "department_in": "perio",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_e8f7fb4ff4",
+      "q": "Propping depth of lower canine 5 mm , pt is medically free , no bleeding or sign of gingival inflammation , attached gingiva 4mm",
+      "options": [
+        "Deficient attached",
+        "Healthy periodontium",
+        "Gingival overgrowth  ( fibrotic type )",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "fibrotic type Community ✅ is provisional.",
+      "topic_in": "perio",
+      "department_in": "perio",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_7c154de348",
+      "q": "Healthy patient smoke 1 pac per day since several years suffers from deep pockets (there wasn’t any other disease), he needs topical antibiotic, which antibiotic you will give him:",
+      "options": [
+        "Metronidazole gel.",
+        "Doxycycline gel .",
+        "Minocycline gel.",
+        "Tetracycline fibers."
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "From رفيع المقام part 16 · perio. Community mark provisional — verify clinically.",
+      "topic_in": "perio",
+      "department_in": "perio",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_a1b644d6fd",
+      "q": "Pt. taking cyclosporine and causes malalignment of teeth and facets and bad breath, Cal 5-6 with two pictures. What of the following if treated first will aid in treating other problems. The clinical pictures have severe gingival enlargement and no plaque will evident",
+      "options": [
+        "Gingival enlargement",
+        "Bad breath",
+        "Maligned teeth",
+        "Oral hygiene"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · perio. Community mark provisional — verify clinically.",
+      "topic_in": "perio",
+      "department_in": "perio",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_9568321085",
+      "q": "Diabetic patient, hb1ac in the last period 8,9,11. He have treatment plan include multiple implant and crowns and he need bone graft in #46 area and implant:",
+      "options": [
+        "Change treatment plane optional",
+        "do phase I treatment and defer other until disease control",
+        "keep treatment as it",
+        "do phase I and II and do something"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "From رفيع المقام part 16 · perio. Community mark provisional — verify clinically.",
+      "topic_in": "perio",
+      "department_in": "perio",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_47ed38b347",
+      "q": "pt with recession of upper first molar only in MB cusp with deep pocket what is your management?",
+      "options": [
+        "GTR",
+        "root amputation",
+        "hemisection",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "From رفيع المقام part 16 · perio. Community mark provisional — verify clinically.",
+      "topic_in": "perio",
+      "department_in": "perio",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_84e4426ac3",
+      "q": "Shank of the instrument during scaling?",
+      "options": [
+        "Perpendicular to long axis",
+        "Parallel to long axis",
+        "45 degree",
+        "75 degree"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "From رفيع المقام part 16 · perio. Community mark provisional — verify clinically.",
+      "topic_in": "perio",
+      "department_in": "perio",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_2f919fa6c4",
+      "q": "pic of pt, she is unsatisfied with her smile, good occlusion, short clinical crown, 12 mm sulcus depth…. How to improve appearance (pic shows discolored teeth)",
+      "options": [
+        "Crown lengthening",
+        "Ortho extrusion",
+        "Gingivectomy",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · perio. Community mark provisional — verify clinically.",
+      "topic_in": "perio",
+      "department_in": "perio",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_289a2d5a87",
+      "q": "Pt have grade 2 furcation Generalized horizontal bone loss?",
+      "options": [
+        "Extraction",
+        "Plasty",
+        "Resection",
+        "GTR"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "From رفيع المقام part 16 · perio. Community mark provisional — verify clinically.",
+      "topic_in": "perio",
+      "department_in": "perio",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_31838a5dea",
+      "q": "Pt wants crowns but she has bleeding and pocket depth ranges from 2 to 3 what is the appropriate to do?",
+      "options": [
+        "polishing and prep",
+        "SRP every 4 week",
+        "SRP and polishing and reevaluate",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "From رفيع المقام part 16 · perio. Community mark provisional — verify clinically.",
+      "topic_in": "perio",
+      "department_in": "perio",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_14a382ac1d",
+      "q": "The is just going through final exam week and has foul older what is the 1st thing u do:",
+      "options": [
+        "remove pseudomembrane",
+        "Superficial scaling",
+        "AB",
+        "Measure Pd"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · perio. Community mark provisional — verify clinically.",
+      "topic_in": "perio",
+      "department_in": "perio",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_7ca9258403",
+      "q": "pt did new upper anterior crowns and came back after 4 weeks with erythema , bleeding and inflammation and back odor what is the cause",
+      "options": [
+        "Biological width violation",
+        "Allergy",
+        "plasma cell gingivitis",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · perio. Community mark provisional — verify clinically.",
+      "topic_in": "perio",
+      "department_in": "perio",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_a5352d129d",
+      "q": "Pt has had anterior fixed crowns for 6 years and recently before 3 months, she noticed recession and metal appearance, cause?(previously mentioned)",
+      "options": [
+        "hard brushing",
+        "BW violation",
+        "Excess cement",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · perio. Community mark provisional — verify clinically.",
+      "topic_in": "perio",
+      "department_in": "perio",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_6e1e51b57a",
+      "q": "tooth with 5mm Pd and 2mm recession what is the cal?(previously mentioned)",
+      "options": [
+        "7mm",
+        "3mm",
+        "2mm",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · perio. Community mark provisional — verify clinically.",
+      "topic_in": "perio",
+      "department_in": "perio",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_4150cd35b1",
+      "q": "Most common clinical picture of thin biotype",
+      "options": [
+        "Mccall festoons",
+        "Stillman clefts",
+        "Fenestration and dehiscence",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "From رفيع المقام part 16 · perio. Community mark provisional — verify clinically.",
+      "topic_in": "perio",
+      "department_in": "perio",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_41e800f67f",
+      "q": "Patient has recession and reduced interdental papilla, what is the management?",
+      "options": [
+        "esthetic periodontal surgery",
+        "Pocket reduction surgery",
+        "osseous surgery",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · perio. Community mark provisional — verify clinically.",
+      "topic_in": "perio",
+      "department_in": "perio",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_dde588e85e",
+      "q": "What instrument is used to measure gingival thickness?",
+      "options": [
+        "perio probe",
+        "explorer",
+        "casterviego caliber",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "From رفيع المقام part 16 · perio. Community mark provisional — verify clinically.",
+      "topic_in": "perio",
+      "department_in": "perio",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_ba2098c413",
+      "q": "Pt. has impacted canine #23. What is the future expectation to gingival level of #23 if the dentist decided to do disimpaction ?",
+      "options": [
+        "Recession",
+        "Same as #13",
+        "Normal",
+        "Overgrowth"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · perio. Community mark provisional — verify clinically.",
+      "topic_in": "perio",
+      "department_in": "perio",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_2b7104f829",
+      "q": "you decide root amputation/resection what is important?",
+      "options": [
+        "Root anatomy",
+        "Gingival phenotype",
+        "Amount of keratinized tissue",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "From رفيع المقام part 16 · perio. Community mark provisional — verify clinically.",
+      "topic_in": "perio",
+      "department_in": "perio",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_1b4162a924",
+      "q": "furcation class II in molar with 4 mm depth with bleeding in brushing related to this tooth and good oral hygiene what is treatment and picture provide is was slight ?",
+      "options": [
+        "Refer to periodontist to do flap surgery",
+        "furcation plasty",
+        "root planning",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · perio. Community mark provisional — verify clinically.",
+      "topic_in": "perio",
+      "department_in": "perio",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_63d72ad4f4",
+      "q": "diabetic patient has calculus teeth severe bleeding deep pockt 5-6 whate mangment ?",
+      "options": [
+        "mechanical clean +Chlorhexidine gely",
+        "CHX mouth wash",
+        "Doxycyclin + Amoxicillin",
+        "augmentin"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · perio. Community mark provisional — verify clinically.",
+      "topic_in": "perio",
+      "department_in": "perio",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_a45b6796f9",
+      "q": "what happened to the interdental papilla when two teeth planed to moved apart by ortho ?(mentioned before )",
+      "options": [
+        "Split and form deep pocket",
+        "Became fibrous",
+        "Adapt on the bone",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "From رفيع المقام part 16 · perio. Community mark provisional — verify clinically.",
+      "topic_in": "perio",
+      "department_in": "perio",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_cf71ea94d0",
+      "q": "minocycline time in the pocket ?",
+      "options": [
+        "2",
+        "7",
+        "14",
+        "30"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "From رفيع المقام part 16 · perio. Community mark provisional — verify clinically.",
+      "topic_in": "perio",
+      "department_in": "perio",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_49bdabf703",
+      "q": "GCF during inflammation ?",
+      "options": [
+        "Increase gcf",
+        "Decrease gcf",
+        "No chamge",
+        "Totally disappear"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · perio. Community mark provisional — verify clinically.",
+      "topic_in": "perio",
+      "department_in": "perio",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_db30ebb553",
+      "q": "minimum between restoration margin and bone crest ?",
+      "options": [
+        "1-2",
+        "3-4",
+        "5-6",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · perio. Community mark provisional — verify clinically.",
+      "topic_in": "perio",
+      "department_in": "perio",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_7bf00dd2ec",
+      "q": "Pt came with pain and bone loss related to upper #16 which had an overhang restoration and medial 5 mm pd, generalized bone loss and history of uncontrolled DM. Asking about the cause of bone resorption mesial to #16 ?",
+      "options": [
+        "Diabetes",
+        "Periodontitis",
+        "Overhanging restoration",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "From رفيع المقام part 16 · perio. Community mark provisional — verify clinically.",
+      "topic_in": "perio",
+      "department_in": "perio",
+      "source": "rafi_16"
+    }
+  ]
+}

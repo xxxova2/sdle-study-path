@@ -1,0 +1,459 @@
+{
+  "wave": "02_rafi_priority",
+  "chunk": 6,
+  "count": 30,
+  "instruction": "Audit each MCQ. Correct answer_index + clinical hinge. Set flip if changing answer. Prefer board-standard over community ✅.",
+  "system": "You are auditing KSA SDLE / Prometric-style dental MCQs for a study app.\nRules:\n- Community/PDF ✅ marks are often wrong — decide by clinical board standard, not the mark.\n- Output ONLY a valid JSON array (no markdown fences).\n- Each object MUST have:\n  id, answer_index (0-3), confidence (high|med|low),\n  hinge (clinical why, 1-3 sentences, English),\n  flip (boolean: true if answer_index differs from answer_index_in),\n  department (operative|fixed|rpd|endo|perio|oms|ortho_pedo|ethics|mixed)\n- If image-only / impossible: answer_index null, usable false, hinge explains.\n- operative = direct restorations/preps/materials technique; fixed/rpd = prostho; do not dump all into restorative.\n- Do not invent textbook page numbers.\n",
+  "items": [
+    {
+      "id": "rafi_16_cb4e8e326b",
+      "q": "implant with recession buccally and asking about the treatment",
+      "options": [
+        "change crown",
+        "remove whole implant and add new implant",
+        "CT Graft",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "From رفيع المقام part 16 · fixed. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "fixed",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_5487cb0d5a",
+      "q": "best impression coping for esthetic zone ?",
+      "options": [
+        "Plastic coping",
+        "Pick up coping",
+        "Custom coping",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "From رفيع المقام part 16 · fixed. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "fixed",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_971715f4e1",
+      "q": "External hex?",
+      "options": [
+        "5",
+        "7",
+        "10",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "From رفيع المقام part 16 · fixed. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "fixed",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_4ef97390b7",
+      "q": "Scenario Pt want to replace 14 space available 5 mm: What is tx",
+      "options": [
+        "Fpd 13,15",
+        "Cemented crown implant",
+        "Screw crown retained implant",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "I think he means 5mm occlusally . Community ✅ is provisional.",
+      "topic_in": "restorative",
+      "department_in": "fixed",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_79f821626c",
+      "q": "Implant crown with 5 mm probing with bleeding and a cropped radiograph of only the fixture (u can’t tell if it’s screw or cement retained but no exccess cement present) clinical picture of slight recession but not extending to show the threads",
+      "options": [
+        "excess cement",
+        "retighten the screw",
+        "adjust the contour",
+        "adjust the occlusion"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "From رفيع المقام part 16 · fixed. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "fixed",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_c49b3c73f0",
+      "q": "why D4 in implant is the worst",
+      "options": [
+        "high occlusion",
+        "high vascularity",
+        "lack of primary stability",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "From رفيع المقام part 16 · fixed. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "fixed",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_fbf52c5294",
+      "q": "What are the minimum implants in mandibular overdenture?",
+      "options": [
+        "4",
+        "2",
+        "6",
+        "1"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "From رفيع المقام part 16 · fixed. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "fixed",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_c8d9e89862",
+      "q": "diabetic patient with a controlled condition wants to replace the missing areas?",
+      "options": [
+        "removable",
+        "fixed",
+        "implant",
+        "Can’t replace it"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "From رفيع المقام part 16 · fixed. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "fixed",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_6c8f5bfc67",
+      "q": "How to manage bone loss around this implant exact same pic",
+      "options": [
+        "Remove Implant",
+        "Bone graft",
+        "Remove excess cement",
+        "Change the overcounted crown"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "From رفيع المقام part 16 · fixed. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "fixed",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_b4e813951d",
+      "q": "3.5 to 4.5 implants considered as what?",
+      "options": [
+        "wide",
+        "regular",
+        "narrow",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "From رفيع المقام part 16 · fixed. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "fixed",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_81c1c173a2",
+      "q": "3.5 or 4.1 implant size what the category:",
+      "options": [
+        "wide",
+        "small or narrow",
+        "regular",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "From رفيع المقام part 16 · fixed. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "fixed",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_8ecadde62d",
+      "q": "what is the minimum space for cemented crown implant for central incisor :",
+      "options": [
+        "5-6",
+        "7-8",
+        "9-10",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "From رفيع المقام part 16 · fixed. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "fixed",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_7015a87124",
+      "q": "standard treatment of lower missing teeth ?",
+      "options": [
+        "overdenture with 2 implants (minimum)",
+        "overdenture with 4 implants",
+        "complete denture",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "From رفيع المقام part 16 · fixed. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "fixed",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_4d975d2cbd",
+      "q": "37 years old PT case scenario (pic clinical and radiograph ) heavily destructed lateral incisor ,endo treated with history of fractured post and core ,asking about long term treatment ?",
+      "options": [
+        "Ortho extrusion followed by osseous surgery (will compromise the tooth\\root ratio)",
+        "Maryland resin bridge",
+        "Extraction and implant",
+        "Redo the post and crown"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "will compromise the tooth\\root ratio Community ✅ is provisional.",
+      "topic_in": "restorative",
+      "department_in": "fixed",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_c63703e410",
+      "q": "pic of upper lateral broken it was build up with post ask about the treatment (depend on the picture but mostly extrusion due to the aesthetic demand) ?",
+      "options": [
+        "Extraction and implant",
+        "Re-do the post and crown",
+        "Ortho extrusion",
+        "maryland bridge"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · fixed. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "fixed",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_fa35ca2ab3",
+      "q": "Pt complained of anaesthetic metal appearance on the upper central implant , POB and 3 pockets were there with saucer-shape bone loss around the implant, what is the diagnosis?",
+      "options": [
+        "Peri-mucositis",
+        "Peri-implantitis",
+        "Buccal perforation",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "From رفيع المقام part 16 · fixed. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "fixed",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_55cb4edbe4",
+      "q": "The pt have anterior implant with black line and she concern about aesthetic What is the abutment material",
+      "options": [
+        "titanium",
+        "alloy",
+        "zirconia abutment  (UCLA)",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "From رفيع المقام part 16 · fixed. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "fixed",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_5aa42e656b",
+      "q": "2 implants, in 2 stage one of them was good, and the distal one exhibited mobility and crestal bone loss. What is the recommended treatment?",
+      "options": [
+        "Remove the distal implant",
+        "Put implants on functional load",
+        "Do vertical bone graft by using .. mesh",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · fixed. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "fixed",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_0a23cf9dff",
+      "q": "Factors which indicate the failure of implant in posterior upper maxilla ?(previously mentioned)",
+      "options": [
+        "high remodelling",
+        "Insufficient primary stability",
+        "high occlusal force",
+        "increase blood supply"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "From رفيع المقام part 16 · fixed. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "fixed",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_5ad08aa4ef",
+      "q": "patient comply to all first year recall visits after implant, what the recommended interval after that ?",
+      "options": [
+        "1-2 mon",
+        "3-4 mon",
+        "5-6 mon",
+        "7-8 mon"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "From رفيع المقام part 16 · fixed. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "fixed",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_16910b4a30",
+      "q": "From the papilla to crest of bone in one implant?",
+      "options": [
+        "Less 5 mm",
+        "Less 6 mm",
+        "Less 7 mm",
+        "Less 8 mm"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · fixed. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "fixed",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_24a147f226",
+      "q": "anterior implant placment ?",
+      "options": [
+        "At midline",
+        "Lingual paplila",
+        "Insicive papilla",
+        "Lateral to midline"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "From رفيع المقام part 16 · fixed. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "fixed",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_ccca0f59f0",
+      "q": "Implant to #16.. the time needs for complete osteointegration",
+      "options": [
+        "4",
+        "5",
+        "6 months",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "From رفيع المقام part 16 · fixed. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "fixed",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_1e52e8bf27",
+      "q": "Comparing Three Unit FPD replacing upper canine with three unit FPD replacing lower canine on the same side, which statement is true?",
+      "options": [
+        "Upper canine is subjected to more lateral forces",
+        "Lower canine is subjected to more lateral forces",
+        "Upper fpd doesn’t follow, ante’s low",
+        "Lower fpd doesn’t follow ante’s low"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · fixed. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "fixed",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_a3567a2715",
+      "q": "patient has thin gingival phenotype of prepared tooth , what should you do before taking impression ?",
+      "options": [
+        "do gingivectomy",
+        "do crown lengthening",
+        "trough with laser for gingival retraction",
+        "Use smaller core"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "From رفيع المقام part 16 · fixed. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "fixed",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_095b48b244",
+      "q": "Vital tooth Which material to avoid",
+      "options": [
+        "bis Acrylic",
+        "poly meth meth",
+        "poly eth meth",
+        "poly vin meth meth"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "From رفيع المقام part 16 · fixed. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "fixed",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_53eaa7d45d",
+      "q": "What is the role of flux in soldering?",
+      "options": [
+        "improve flow of solder",
+        "reduce melting temp of solder.",
+        "act as separating medium",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · fixed. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "fixed",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_9b1235fac4",
+      "q": "Patient cares about the esthetics and came for anterior crowns, what's the healthiest and most esthetic finish line?",
+      "options": [
+        "Supragingival",
+        "Subgingival",
+        "Supra or suprabony",
+        "equgingival"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "From رفيع المقام part 16 · fixed. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "fixed",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_6ca46ddadc",
+      "q": "What is considered a parafunctional habit?",
+      "options": [
+        "Erosion",
+        "Chewing",
+        "Clenching",
+        "Abfraction"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "From رفيع المقام part 16 · fixed. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "fixed",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_af29d2a94f",
+      "q": "Female patient came complaining from rough teeth surfaces, upon IO, she has staple occlusions with mild attrition and linea alba, pt is bruxiser, what is the immediate management?",
+      "options": [
+        "Reassure the patient",
+        "Educate the patient and construct night guard",
+        "smooth the teeth roughness",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "From رفيع المقام part 16 · fixed. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "fixed",
+      "source": "rafi_16"
+    }
+  ]
+}

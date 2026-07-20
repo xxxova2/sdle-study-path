@@ -60,3 +60,18 @@ Will use notes_seed.json after Phase A notes extract.
 - If unsure: confidence med/low — still pick best answer
 - flip:true must have hinge that explains why community key was wrong
 - No empty hinges
+
+
+## Wave 02 — رفيع priority (first 300 community-marked)
+- `wave02_rafi_00.json`
+- `wave02_rafi_01.json`
+- `wave02_rafi_02.json`
+- `wave02_rafi_03.json`
+- `wave02_rafi_04.json`
+- `wave02_rafi_05.json`
+- `wave02_rafi_06.json`
+- `wave02_rafi_07.json`
+- `wave02_rafi_08.json`
+- `wave02_rafi_09.json`
+
+Save outputs as `data/generated/deepseek_out/wave02_rafi_XX.json`

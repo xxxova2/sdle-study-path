@@ -1,0 +1,459 @@
+{
+  "wave": "02_rafi_priority",
+  "chunk": 4,
+  "count": 30,
+  "instruction": "Audit each MCQ. Correct answer_index + clinical hinge. Set flip if changing answer. Prefer board-standard over community ✅.",
+  "system": "You are auditing KSA SDLE / Prometric-style dental MCQs for a study app.\nRules:\n- Community/PDF ✅ marks are often wrong — decide by clinical board standard, not the mark.\n- Output ONLY a valid JSON array (no markdown fences).\n- Each object MUST have:\n  id, answer_index (0-3), confidence (high|med|low),\n  hinge (clinical why, 1-3 sentences, English),\n  flip (boolean: true if answer_index differs from answer_index_in),\n  department (operative|fixed|rpd|endo|perio|oms|ortho_pedo|ethics|mixed)\n- If image-only / impossible: answer_index null, usable false, hinge explains.\n- operative = direct restorations/preps/materials technique; fixed/rpd = prostho; do not dump all into restorative.\n- Do not invent textbook page numbers.\n",
+  "items": [
+    {
+      "id": "rafi_16_17eb44fc5b",
+      "q": "Radiograph with RL in molar just between the roots ,",
+      "options": [
+        "Interdental bone loss",
+        "Vertical bone loss",
+        "Interradicular bone loss",
+        "Horizontal bone loss"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "From رفيع المقام part 16 · perio. Community mark provisional — verify clinically.",
+      "topic_in": "perio",
+      "department_in": "perio",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_37d565b848",
+      "q": "Image for tooth #46 has grade II buccal furcation asking about the Tx",
+      "options": [
+        "Furcation plasty",
+        "Tunnel preparation",
+        "GTR",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "From رفيع المقام part 16 · perio. Community mark provisional — verify clinically.",
+      "topic_in": "perio",
+      "department_in": "perio",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_b96afed38b",
+      "q": "Pic after removal of badly broken bridge and carious teeth with inflamed gingiva ?",
+      "options": [
+        "Take impression",
+        "disease control",
+        "crown lengthening",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "From رفيع المقام part 16 · perio. Community mark provisional — verify clinically.",
+      "topic_in": "perio",
+      "department_in": "perio",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_452a313258",
+      "q": "interdental inflammation #11,12,13 this is ?",
+      "options": [
+        "localized diffuse",
+        "localized marginal",
+        "localized papillary gingivitis",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "From رفيع المقام part 16 · perio. Community mark provisional — verify clinically.",
+      "topic_in": "perio",
+      "department_in": "perio",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_333b2f1ea7",
+      "q": "Patient came and needed crown lengthening but has a short root trunk, what should you worry about?",
+      "options": [
+        "Damage the bifurcation area",
+        "Make perforation in furcation area",
+        "Cause sensitivity",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "From رفيع المقام part 16 · perio. Community mark provisional — verify clinically.",
+      "topic_in": "perio",
+      "department_in": "perio",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_754b5d9261",
+      "q": "Scenario about a lady who came in with edematous swollen gingiva and she started OH measures 3 days ago, there was a histopath description suggesting plasma cell gingivitis (please read about it) what tx?",
+      "options": [
+        "gingivectomy",
+        "plaque control and removal of the causative factor.",
+        "Allergen identification and removal.",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "From رفيع المقام part 16 · perio. Community mark provisional — verify clinically.",
+      "topic_in": "perio",
+      "department_in": "perio",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_f29b22ff89",
+      "q": "Healthy gingival tissue what is found?",
+      "options": [
+        "Mild Lymphocytes",
+        "Moderate lymphocytes (chronic infection)",
+        "Sever lymphocyte (acute infection)",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "chronic infection acute infection Community ✅ is provisional.",
+      "topic_in": "perio",
+      "department_in": "perio",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_09302575a4",
+      "q": "healthy gingiva histo?",
+      "options": [
+        "mild lymphocyte",
+        "abundant PMNs",
+        "plasma cell",
+        "no inflammatory cells at all."
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · perio. Community mark provisional — verify clinically.",
+      "topic_in": "perio",
+      "department_in": "perio",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_cc2892004d",
+      "q": "a patient who is healthy and has a healthy periodontium. He had anterior crowns placed a while ago and now presents with spacing and other issues indicating trauma from occlusion. What type of occlusal trauma does he have",
+      "options": [
+        "Primary",
+        "Secondary",
+        "Combined",
+        "Persistent"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · perio. Community mark provisional — verify clinically.",
+      "topic_in": "perio",
+      "department_in": "perio",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_894b1c517a",
+      "q": "patient who is taking phenytoin and has gingival growth. What needs to be done",
+      "options": [
+        "changing the drug",
+        "gingivectomy",
+        "consult the physician and do plaque control or scaling",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "From رفيع المقام part 16 · perio. Community mark provisional — verify clinically.",
+      "topic_in": "perio",
+      "department_in": "perio",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_f06ab600d7",
+      "q": "about the most difficult tooth access during the treatment of furcation involvement?",
+      "options": [
+        "1st max molar",
+        "2nd max molar",
+        "1st mand molar",
+        "2 mand molar"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · perio. Community mark provisional — verify clinically.",
+      "topic_in": "perio",
+      "department_in": "perio",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_4e741d05e1",
+      "q": "Most difficult tooth during perio",
+      "options": [
+        "1st maxillary premolar",
+        "Maxillary distobuccal root of 1st molar",
+        "Lower molar",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · perio. Community mark provisional — verify clinically.",
+      "topic_in": "perio",
+      "department_in": "perio",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_80b56b482b",
+      "q": "Most difficult to access during Perio surgery I think",
+      "options": [
+        "Maxillary 1st premolar",
+        "Mandibular molar",
+        "Maxillary 1st molar",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · perio. Community mark provisional — verify clinically.",
+      "topic_in": "perio",
+      "department_in": "perio",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_613ec64fed",
+      "q": "85 y uncontrolled diabetes came for annual routine visit exam revealed she has 12 probing depth and localized bleeding on 31 32 41 radiographs revealed she has 50% bone loss what to do?",
+      "options": [
+        "SRP and OHI every 2 month",
+        "SRP and OHI every 3 weeks",
+        "SRP and OHI every 6 months",
+        "SRP and prescrip ab to prevent bone destruction."
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · perio. Community mark provisional — verify clinically.",
+      "topic_in": "perio",
+      "department_in": "perio",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_e345d09357",
+      "q": "Patient healthy and discuss with the dentist about his advice on how to choose dental floss, so choosing the dental floss is based on?",
+      "options": [
+        "using the most comfortable for him",
+        "according to the proximal contact tightness",
+        "according to the roughness of contact",
+        "based on manual dexterity."
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · perio. Community mark provisional — verify clinically.",
+      "topic_in": "perio",
+      "department_in": "perio",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_773db185c1",
+      "q": "Long case scenario about Fibrous gingival inflammation and bone loss (it is referred to chronic periodontitis) what bacteria causes?",
+      "options": [
+        "Streptococcus mitis",
+        "Aggregatibacter actinomycetemcomitans",
+        "Treponema denticola",
+        "Bacteroides fragilis"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "From رفيع المقام part 16 · perio. Community mark provisional — verify clinically.",
+      "topic_in": "perio",
+      "department_in": "perio",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_4663df3a27",
+      "q": "Pt came complaint of bleeding and pain around crown done recently pt mentioned that doctor did something laser What is the management :",
+      "options": [
+        "Crown lengthening",
+        "Assure follow up",
+        "Refabricate another crown",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · perio. Community mark provisional — verify clinically.",
+      "topic_in": "perio",
+      "department_in": "perio",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_a2317633df",
+      "q": "What could prevent interproximal papilla from healing after surgery",
+      "options": [
+        "Releasing flap",
+        "Intrasulcular incision",
+        "Persistent inflammation",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "From رفيع المقام part 16 · perio. Community mark provisional — verify clinically.",
+      "topic_in": "perio",
+      "department_in": "perio",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_b74cba8987",
+      "q": "A patient presents with a condition where measuring the Probing Depth is challenging. What type of gingiva the patient have?",
+      "options": [
+        "Thick scalloped",
+        "Thin scalloped",
+        "Thick flat",
+        "Thin flat"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "From رفيع المقام part 16 · perio. Community mark provisional — verify clinically.",
+      "topic_in": "perio",
+      "department_in": "perio",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_71165af097",
+      "q": "Patient came complaining of sensitivity in the lower right area, clinical examination showed caries on #47 With generalized calculus deposits, radiographic examination showed an impacted molar, what is the best treatment sequence?",
+      "options": [
+        "Restoration, scaling, extraction",
+        "Extract, scaling, restoration",
+        "Scaling, restoration, extraction",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "From رفيع المقام part 16 · perio. Community mark provisional — verify clinically.",
+      "topic_in": "perio",
+      "department_in": "perio",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_ee1ff2db5e",
+      "q": "What type of gingivitis extends from margin to mucobuccal fold?",
+      "options": [
+        "localized marginal",
+        "Localized diffused",
+        "localized papillary",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "From رفيع المقام part 16 · perio. Community mark provisional — verify clinically.",
+      "topic_in": "perio",
+      "department_in": "perio",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_fbd5762897",
+      "q": "What is the maximum length that the curette can achieve in a nonsurgical department?",
+      "options": [
+        "2.75",
+        "3.75",
+        "4.75",
+        "5.75"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "From رفيع المقام part 16 · perio. Community mark provisional — verify clinically.",
+      "topic_in": "perio",
+      "department_in": "perio",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_b32a3012f8",
+      "q": "Which of the following factors doesn't increase GCF fluid?",
+      "options": [
+        "Smoking",
+        "Hormones changes",
+        "Trauma from occlusion",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "From رفيع المقام part 16 · perio. Community mark provisional — verify clinically.",
+      "topic_in": "perio",
+      "department_in": "perio",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_bed2594767",
+      "q": "pic of periodontal abscess with pus discharge :",
+      "options": [
+        "RCT",
+        "incision and drainage",
+        "extraction ,",
+        "Observe"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "From رفيع المقام part 16 · perio. Community mark provisional — verify clinically.",
+      "topic_in": "perio",
+      "department_in": "perio",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_5ef26cc322",
+      "q": "patient with nug what you will do?",
+      "options": [
+        "Antibiotics",
+        "Non surgical treatment",
+        "RCT",
+        "extraction"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "From رفيع المقام part 16 · perio. Community mark provisional — verify clinically.",
+      "topic_in": "perio",
+      "department_in": "perio",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_baae788c12",
+      "q": "21 year old Patient, what will happen when she’s menstruating?",
+      "options": [
+        "bone loss",
+        "increase exudate and bacteria",
+        "tooth mobility",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "From رفيع المقام part 16 · perio. Community mark provisional — verify clinically.",
+      "topic_in": "perio",
+      "department_in": "perio",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_a269f2472f",
+      "q": "Patient has 35 recesion on her upper anterior teeth and thin gingival biotype , what is the tx ? (Same photo)",
+      "options": [
+        "Crowns",
+        "Connective tissue graft",
+        "widman flap",
+        "apically positioned flap"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "From رفيع المقام part 16 · perio. Community mark provisional — verify clinically.",
+      "topic_in": "perio",
+      "department_in": "perio",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_7a14114fb3",
+      "q": "23y old Pat has history in family with severe periodontitis ,he is diagnosed with periodontitis Stage III , grade C and asking about what is the most initial treatment to do for him",
+      "options": [
+        "scaling and follow after 46 week",
+        "scaling and follow every 2 months",
+        "clearance and prosthetic treatment",
+        "scaling and applying AB amoxicillin + metronidazole"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "From رفيع المقام part 16 · perio. Community mark provisional — verify clinically.",
+      "topic_in": "perio",
+      "department_in": "perio",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_34e1d7cf4c",
+      "q": "Tooth with displaced 1 mm buccally , mobility miller classification",
+      "options": [
+        "Class1",
+        "Class 2",
+        "Class 3",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "From رفيع المقام part 16 · perio. Community mark provisional — verify clinically.",
+      "topic_in": "perio",
+      "department_in": "perio",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_e9ca56f8a5",
+      "q": "Recession in the margin gingiva and not extended to mucogingival junction , what type ?",
+      "options": [
+        "Class 1",
+        "Class 2",
+        "Class 3",
+        "Class 4"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · perio. Community mark provisional — verify clinically.",
+      "topic_in": "perio",
+      "department_in": "perio",
+      "source": "rafi_16"
+    }
+  ]
+}

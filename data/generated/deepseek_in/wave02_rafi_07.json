@@ -1,0 +1,459 @@
+{
+  "wave": "02_rafi_priority",
+  "chunk": 7,
+  "count": 30,
+  "instruction": "Audit each MCQ. Correct answer_index + clinical hinge. Set flip if changing answer. Prefer board-standard over community ✅.",
+  "system": "You are auditing KSA SDLE / Prometric-style dental MCQs for a study app.\nRules:\n- Community/PDF ✅ marks are often wrong — decide by clinical board standard, not the mark.\n- Output ONLY a valid JSON array (no markdown fences).\n- Each object MUST have:\n  id, answer_index (0-3), confidence (high|med|low),\n  hinge (clinical why, 1-3 sentences, English),\n  flip (boolean: true if answer_index differs from answer_index_in),\n  department (operative|fixed|rpd|endo|perio|oms|ortho_pedo|ethics|mixed)\n- If image-only / impossible: answer_index null, usable false, hinge explains.\n- operative = direct restorations/preps/materials technique; fixed/rpd = prostho; do not dump all into restorative.\n- Do not invent textbook page numbers.\n",
+  "items": [
+    {
+      "id": "rafi_16_570f92fbeb",
+      "q": "Patient had a provisional crown for 2 weeks and you wanted to make a final impression but you couldn’t control the bleeding, what to do?",
+      "options": [
+        "RC+ferric sulphate with polyether impression",
+        "Adjust (or remake) the provisional and take it after 2 weeks",
+        "RC + Epinephrine and PVS impression",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "From رفيع المقام part 16 · fixed. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "fixed",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_e818db31fb",
+      "q": "Principle of tooth preparation for full ceramic margin supragingival 0.5mm interocclusal space 1.5mm Length of axial wall 2mm What does the dentist violate?",
+      "options": [
+        "marginal integrity",
+        "retention and support",
+        "Preservation of tooth structure",
+        "Preservation of periodontium"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "From رفيع المقام part 16 · fixed. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "fixed",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_bf3827b3e3",
+      "q": "Short anterior with brown fluorosis pigmentation, the treatment is veneers what type of preparation?",
+      "options": [
+        "Window",
+        "feather",
+        "Buttjoint",
+        "Lapped"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "From رفيع المقام part 16 · fixed. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "fixed",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_1f3b75a661",
+      "q": "Pt wants to extract a lateral insicor what is the temporary FPD pontic design",
+      "options": [
+        "ovate",
+        "conical/bullet",
+        "Modefied ridge lap",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · fixed. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "fixed",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_f37c332ef3",
+      "q": "A patient returns two weeks after an anterior tooth with a metal post threaded crown has fallen out. What would be your approach?",
+      "options": [
+        "Reattach the crown.",
+        "Remove the post and fit a new post on the same crown.",
+        "Remake everything.",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · fixed. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "fixed",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_141a352a8e",
+      "q": "How much is the width of a shoulder margin finish line",
+      "options": [
+        "0.5-0.7",
+        "1-1.5",
+        "1.6-2",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "From رفيع المقام part 16 · fixed. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "fixed",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_5a7dd32843",
+      "q": "Which pf the following is an disadvantage of zirconia core :",
+      "options": [
+        "Fracture",
+        "marginal discrepancy",
+        "weak bonding with porcelain",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "From رفيع المقام part 16 · fixed. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "fixed",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_ea1ecb197e",
+      "q": "When you do preparation for onlay, and you want to do beveling, what instrument do you use?",
+      "options": [
+        "chisel",
+        "gingival margin trimmer",
+        "diamond instrument",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "From رفيع المقام part 16 · fixed. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "fixed",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_1ee48a9295",
+      "q": "the patient has 6 anterior PFM crowns unsatisfied with her appearance. Why ?",
+      "options": [
+        "Over contour and opaque",
+        "Under contour and opaque",
+        "over contour and translucent",
+        "under contour andtranslucent"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · fixed. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "fixed",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_96bdf45c1a",
+      "q": "what is the minimum preparation, not thickness of metal retainer of resin bonded bridge?",
+      "options": [
+        "1-0.5",
+        "2-0.7",
+        "3-1.1",
+        "4-1.5"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · fixed. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "fixed",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_a95189538d",
+      "q": "pt is missing from 14-17, 34-37,44,47",
+      "options": [
+        "face bow maxillary and occlusal rim in MIP",
+        "Arbitrarily and occlusal rim in MIP",
+        "Arbitrarily and occlusal rim in CR",
+        "face bow maxillary and occlusal rim in CR"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "From رفيع المقام part 16 · fixed. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "fixed",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_334289e893",
+      "q": "pt with hx of Myocardial infarction and came to for PFM",
+      "options": [
+        "defer the tx",
+        "do it and avoid retraction cord with Epinphrine",
+        "RPD",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "From رفيع المقام part 16 · fixed. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "fixed",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_ebc9e49281",
+      "q": "the doctor is checking occlusal disharmony of a young patient, and there was interference in an eccentric relationship. Centric relationship was normal",
+      "options": [
+        "reduce upper incisal edge",
+        "reduce lower incisal edge",
+        "buccal of upper",
+        "buccal of lower"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "if there is reduce from lingual inclines of maxillary will be the right choice",
+      "topic_in": "restorative",
+      "department_in": "fixed",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_2cf0f39f96",
+      "q": "ceramic advantage",
+      "options": [
+        "opaque",
+        "tensile",
+        "transparent",
+        "translucent"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "From رفيع المقام part 16 · fixed. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "fixed",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_81920d390b",
+      "q": "Patient complain from food accumulation and bleeding, upon clinical examination tooth was previously initiated, slight tender to percussion, probing depth was 4 or 5mm only on the distal site, with bleeding on probing. What is your management? (Pic of PFM crown with defective margins especially distally)",
+      "options": [
+        "Deep scaling and root planing",
+        "Combined endodontic treatment with periodontal surgery",
+        "Proceeds with endodontic treatment through PFM crown",
+        "Suction the crown and assess restorability"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "From رفيع المقام part 16 · fixed. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "fixed",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_3b890861e6",
+      "q": "After you finish from teeth preparation You apply putty index to waxup cast and then do temp to the patient intraorally",
+      "options": [
+        "Direct",
+        "Indirect",
+        "Indirect direct",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · fixed. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "fixed",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_b531696e44",
+      "q": "photo of crown on #21 high restoration (higher than occlusion level ) and there is gingival swelling localized to the tooth , tooth is tender to percussion, isolated pocket ,what management ?",
+      "options": [
+        "Adjust occlusion",
+        "Extraction",
+        "SRP",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · fixed. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "fixed",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_809b710303",
+      "q": "Patient having edge to edge occlusion which type of restoration ?",
+      "options": [
+        "Full crown",
+        "Composite veneer",
+        "Porcelain veneer",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · fixed. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "fixed",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_4b3fb08afe",
+      "q": "Pic of lateral incisor that fractured at gingival level + x ray showing long root , what is the best tx ?",
+      "options": [
+        "extraction",
+        "Post , core, and crown",
+        "Gingivectomy",
+        "Extrusion + osseous"
+      ],
+      "answer_index_in": 3,
+      "explanation_in": "From رفيع المقام part 16 · fixed. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "fixed",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_f2f1aa9f84",
+      "q": "Adjusting the try in of upper molar and it was noticed that it glides superior anteriorly :",
+      "options": [
+        "Distal inclination of the mandible",
+        "Lingual inclination of the mandible",
+        "Mesial inclination of the upper",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 2,
+      "explanation_in": "From رفيع المقام part 16 · fixed. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "fixed",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_868700c097",
+      "q": "pt want to to fixed crown and dr reduce the following, margin Supra gingival 0.5 Inter arch 1.5, occlusal gingival axial wall 2mm ,What is violet?",
+      "options": [
+        "marginal integrity",
+        "resistance and retention",
+        "tooth reduction",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "From رفيع المقام part 16 · fixed. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "fixed",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_05a1d058f3",
+      "q": "Patient have crown in tooth #26 and there is a protrusive interference, how can you manage it:",
+      "options": [
+        "Mesial inclination of upper.",
+        "Buccal inclination of upper.",
+        "Lingual inclination of upper.",
+        "Buccal inclination of lower"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · fixed. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "fixed",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_eaad5211cd",
+      "q": "How long should you etch enamel for veneer cementation in Seconds:",
+      "options": [
+        "30",
+        "20",
+        "15",
+        "40"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "From رفيع المقام part 16 · fixed. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "fixed",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_a60cd6d952",
+      "q": "Missing 17-14 , 34-37 and 44-47 all third molars are missing how should you record occlusion",
+      "options": [
+        "Arbitrary mounting with CR",
+        "Bite block and face bow with CR",
+        "Arbitrary mounting with MIC",
+        "Bite block with MIC"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "From رفيع المقام part 16 · fixed. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "fixed",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_d9c2cbbe01",
+      "q": "case of bridge 34x36. Patient complaining of malodor. Bubbles under retainer of 34 found. cause?",
+      "options": [
+        "space between abutment and retainer",
+        "food impingement under pontic",
+        "fractured connector",
+        "fractured abutment or retainer (cant remember)"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · fixed. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "fixed",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_27c7310ef8",
+      "q": "case pt with good OH and sound abutments want to replace missing central incisor due to trauma, what tx option you will give her",
+      "options": [
+        "Cantilever FPD",
+        "conventional FPD  (best option)",
+        "removable",
+        "implant supported FPD (if it is a single implant will be the correct answer ?)"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "if it is a single implant will be the correct answer ?",
+      "topic_in": "restorative",
+      "department_in": "fixed",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_fe888d5760",
+      "q": "rounded bur finish line?",
+      "options": [
+        "chamfer",
+        "Bshoulder",
+        "shoulder with bevel",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · fixed. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "fixed",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_351d8c4e15",
+      "q": "complication of mesial tilted 37 for 3 unit bridge ?",
+      "options": [
+        "pulp exposure",
+        "short mesial axial wall",
+        "irrivirsble pulpitis",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "From رفيع المقام part 16 · fixed. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "fixed",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_904469812f",
+      "q": "Mild facial staining and md incipient caries Preparation for more esthetic",
+      "options": [
+        "facial",
+        "lingual",
+        "occlusal gingival",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 0,
+      "explanation_in": "From رفيع المقام part 16 · fixed. Community mark provisional — verify clinically.",
+      "topic_in": "restorative",
+      "department_in": "fixed",
+      "source": "rafi_16"
+    },
+    {
+      "id": "rafi_16_6fdba0fe3f",
+      "q": "Pt wants to restore centrals In which scheme they will touch?",
+      "options": [
+        "MIC",
+        "Protrusive 🔁 ( restorations could be too weak to go through protrusive )",
+        "CO",
+        "(not listed in source extract)"
+      ],
+      "answer_index_in": 1,
+      "explanation_in": "restorations could be too weak to go through protrusive",
+      "topic_in": "restorative",
+      "department_in": "fixed",
+      "source": "rafi_16"
+    }
+  ]
+}
