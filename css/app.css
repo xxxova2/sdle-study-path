@@ -829,54 +829,39 @@ button:focus-visible,
   margin: 0 0 8px;
   font-size: 0.82rem;
 }
-/* تدرب — all banks visible in one grid (wide screens: sidebar + sizes) */
+/* تدرب — banks always in 3×3 grid (not a side list) */
 .hz-hint {
   margin: 0 0 8px;
   font-size: 0.88rem;
   color: var(--muted);
 }
 .hz-layout {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 12px;
-  align-items: start;
-}
-@media (min-width: 720px) {
-  .hz-layout {
-    grid-template-columns: minmax(200px, 280px) 1fr;
-    gap: 16px;
-  }
 }
 .hz-strip {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(9.5rem, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 8px;
   padding: 0;
   margin: 0;
-  overflow: visible;
+  width: 100%;
 }
-@media (min-width: 720px) {
+@media (max-width: 420px) {
   .hz-strip {
-    grid-template-columns: 1fr;
-    gap: 6px;
-    max-height: none;
-  }
-}
-/* ~9 banks: force 3×3 on medium, full list in sidebar on large */
-@media (min-width: 520px) and (max-width: 719px) {
-  .hz-strip {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 .hz-bank {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  gap: 8px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 4px;
   width: 100%;
   min-width: 0;
-  max-width: none;
+  min-height: 3.4rem;
   padding: 10px 12px;
   border-radius: 10px;
   border: 1px solid var(--border);
@@ -908,14 +893,12 @@ button:focus-visible,
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  min-width: 0;
-  flex: 1 1 auto;
+  max-width: 100%;
 }
 .hz-bank-n {
   font-size: 0.8rem;
   font-weight: 600;
   color: #7eb6ff;
-  flex-shrink: 0;
 }
 .hz-main {
   display: flex;
@@ -928,7 +911,7 @@ button:focus-visible,
   align-items: center;
   gap: 10px;
   flex-wrap: wrap;
-  padding: 14px 16px;
+  padding: 12px 14px;
   border-radius: 10px;
   border: 1px solid var(--border);
   background: rgba(42, 58, 92, 0.28);

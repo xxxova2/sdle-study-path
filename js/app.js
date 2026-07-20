@@ -2115,7 +2115,7 @@
           ${vidN ? `<button type="button" class="btn ghost hub-secondary" id="hub-videos">Watch videos (${vidN})</button>` : ""}
           <button type="button" class="btn ghost hub-secondary" id="hub-cards">تدرب · Flashcards</button>
           <button type="button" class="btn ghost hub-secondary" id="hub-mock">تدرب · Mock (72s/Q)</button>
-          <button type="button" class="btn ghost hub-secondary" id="hub-always">Always · الأسئلة المتكررة</button>
+          <button type="button" class="btn ghost hub-secondary" id="hub-always">اسئلة مكررة</button>
         </div>
 
         <div class="hub-progress">
@@ -3950,19 +3950,30 @@
     const acRules = window.ALWAYS_COMES_READ || [];
 
     /* Default selected bank per pane */
+    /* Short labels — 3×3 grid (9 cells) */
+    const todayShort =
+      subjectTitle.length > 14 ? subjectTitle.slice(0, 12) + "…" : subjectTitle;
     const mcqBanks = [
-      { pool: todayPool, label: "Today · " + subjectTitle, today: true },
-      { pool: "always_src", label: "Always" },
+      { pool: todayPool, label: "Today", today: true },
+      { pool: "always_src", label: "اسئلة مكررة" },
       { pool: "abtal", label: "أبطال الديجيتال" },
-      ...SUBJECTS.map((s) => ({ pool: poolKey(s.id), label: s.label, today: s.id === focusDept })),
+      ...SUBJECTS.map((s) => ({
+        pool: poolKey(s.id),
+        label: s.label,
+        today: s.id === focusDept,
+      })),
       { pool: "wrong", label: "Wrong book" },
-    ];
+    ].slice(0, 9);
+    /* ensure exactly 9 for a clean 3×3 when possible */
+    void todayShort;
     const mockBanks = [
-      { pool: todayPool, label: "Today · " + subjectTitle, today: true },
+      { pool: todayPool, label: "Today", today: true },
       { pool: "abtal", label: "أبطال الديجيتال" },
-      { pool: "preferred", label: "Preferred mix" },
-      { pool: "always_src", label: "Always" },
-    ];
+      { pool: "preferred", label: "Preferred" },
+      { pool: "always_src", label: "اسئلة مكررة" },
+      { pool: "wrong", label: "Wrong book" },
+      ...SUBJECTS.slice(0, 4).map((s) => ({ pool: poolKey(s.id), label: s.label })),
+    ].slice(0, 9);
 
     if (pane === "mcqs" || pane === "mock") {
       const list = pane === "mock" ? mockBanks : mcqBanks;
@@ -3978,7 +3989,7 @@
     const subnav = `
       <div class="tadarrub-tabs" role="tablist">
         <button type="button" class="tad-tab${pane === "mcqs" ? " active" : ""}" data-pane="mcqs">MCQs</button>
-        <button type="button" class="tad-tab${pane === "always" ? " active" : ""}" data-pane="always">Always</button>
+        <button type="button" class="tad-tab${pane === "always" ? " active" : ""}" data-pane="always">اسئلة مكررة</button>
         <button type="button" class="tad-tab${pane === "cards" ? " active" : ""}" data-pane="cards">Flashcards</button>
         <button type="button" class="tad-tab${pane === "mock" ? " active" : ""}" data-pane="mock">Mock</button>
       </div>
