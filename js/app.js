@@ -3947,8 +3947,7 @@
     const nAlways = poolN("always_src");
     const acRules = window.ALWAYS_COMES_READ || [];
 
-    /* Grouped banks: providers (أبطال / رفيع / …) then departments */
-    const bankToday = [{ pool: todayPool, label: "Today", today: true }];
+    /* Grouped banks — no separate "Today" tile (same pool as focus department) */
     const bankProviders = [
       { pool: "abtal", label: "أبطال الديجيتال" },
       { pool: "rafi", label: "رفيع المقام" },
@@ -3978,22 +3977,22 @@
       { pool: "wrong", label: "Wrong book" },
     ];
 
-    const allBanksFlat = bankToday
-      .concat(bankProviders)
+    const allBanksFlat = bankProviders
       .concat(bankDepts)
       .concat(bankDeptAbtal)
       .concat(bankDeptRafi)
       .concat(bankReview);
 
     if (pane === "mcqs" || pane === "mock") {
+      /* No default selection — size chips only after user picks a bank */
       const valid = allBanksFlat.some((b) => b.pool === state.practiceBank);
-      if (!valid) state.practiceBank = bankToday[0].pool;
+      if (!valid) state.practiceBank = "";
     }
     if (pane === "always") state.practiceBank = "always_src";
 
-    const selectedPool = state.practiceBank || todayPool;
-    const selectedN = poolN(selectedPool);
-    const sortMode = state.practiceSort === "department" ? "department" : "provider";
+    const selectedPool = state.practiceBank || "";
+    /* Default: by department (not provider) */
+    const sortMode = state.practiceSort === "provider" ? "provider" : "department";
 
     const subnav = `
       <div class="tadarrub-tabs" role="tablist">
@@ -4005,11 +4004,11 @@
 
     const sizeMode = pane === "mock" ? "exam" : "learn";
 
-    /** Bank grid: sizes render right under the selected tile (not page bottom). */
+    /** Bank grid: 50/100/200/All only under the one bank the user clicked. */
     function bankStrip(banks) {
       const parts = [];
       banks.forEach((b) => {
-        const on = b.pool === selectedPool;
+        const on = !!selectedPool && b.pool === selectedPool;
         parts.push(
           bankChip({
             pool: b.pool,
@@ -4021,7 +4020,6 @@
         if (on) {
           const n = poolN(b.pool);
           parts.push(`<div class="hz-under-sizes" role="group" aria-label="How many">
-            <span class="hz-under-label">${escapeHtml(b.label)} · ${n} Q</span>
             <div class="hz-size-chips">${sizeChips(b.pool, n, sizeMode)}</div>
           </div>`);
         }
@@ -4039,26 +4037,25 @@
 
     function sortToggle() {
       return `<div class="hz-sort" role="group" aria-label="Sort banks">
-        <button type="button" class="btn sm ${sortMode === "provider" ? "success" : "ghost"}" data-sort="provider">By provider</button>
-        <button type="button" class="btn sm ${sortMode === "department" ? "success" : "ghost"}" data-sort="department">By department</button>
+        <button type="button" class="btn sm ${sortMode === "department" ? "success" : "ghost"}" data-sort="department">By department · حسب التخصص</button>
+        <button type="button" class="btn sm ${sortMode === "provider" ? "success" : "ghost"}" data-sort="provider">By provider · المصادر</button>
       </div>`;
     }
 
     function banksBySort() {
-      if (sortMode === "department") {
+      if (sortMode === "provider") {
         return (
-          bankSection("Today", "اليوم", bankToday) +
+          bankSection("Exam providers", "مصادر · أبطال · رفيع", bankProviders) +
           bankSection("By department", "حسب التخصص", bankDepts) +
-          bankSection("Department · أبطال", "تخصص × أبطال", bankDeptAbtal) +
-          bankSection("Department · رفيع", "تخصص × رفيع", bankDeptRafi) +
-          bankSection("Exam providers", "مصادر الامتحان", bankProviders) +
           bankSection("Review", "مراجعة", bankReview)
         );
       }
+      /* Default: department first — no extra Today row (today’s subject is starred) */
       return (
-        bankSection("Today", "اليوم", bankToday) +
-        bankSection("Exam providers", "مصادر · أبطال · رفيع", bankProviders) +
         bankSection("By department", "حسب التخصص", bankDepts) +
+        bankSection("Department · أبطال", "تخصص × أبطال", bankDeptAbtal) +
+        bankSection("Department · رفيع", "تخصص × رفيع", bankDeptRafi) +
+        bankSection("Exam providers", "مصادر الامتحان", bankProviders) +
         bankSection("Review", "مراجعة", bankReview)
       );
     }
