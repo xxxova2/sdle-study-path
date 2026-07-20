@@ -799,21 +799,26 @@ button:focus-visible,
 }
 .tadarrub-tabs {
   display: flex;
-  gap: 6px;
-  margin: 0 0 10px;
-  flex-wrap: wrap;
+  gap: 4px;
+  margin: 0 0 6px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
 }
 .tad-tab {
-  flex: 1 1 auto;
-  min-width: 88px;
-  padding: 10px 12px;
-  border-radius: var(--radius);
+  flex: 1 0 auto;
+  min-width: 0;
+  padding: 8px 10px;
+  border-radius: 8px;
   border: 1px solid var(--border);
   background: var(--bg2);
   color: inherit;
   font: inherit;
+  font-size: 0.9rem;
   font-weight: 600;
   cursor: pointer;
+  white-space: nowrap;
 }
 .tad-tab.active {
   border-color: #5b8def;
@@ -821,8 +826,123 @@ button:focus-visible,
   color: #cfe0ff;
 }
 .simple-day-sync {
-  margin: 0 0 14px;
+  margin: 0 0 8px;
+  font-size: 0.82rem;
+}
+/* تدرب — horizontal bank strip (no tall card stack) */
+.hz-hint {
+  margin: 0 0 8px;
   font-size: 0.88rem;
+  color: var(--muted);
+}
+.hz-strip {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 8px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  padding: 2px 2px 10px;
+  margin: 0 0 10px;
+  scroll-snap-type: x proximity;
+}
+.hz-bank {
+  flex: 0 0 auto;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  min-width: 7.5rem;
+  max-width: 11rem;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--bg2);
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  text-align: start;
+  scroll-snap-align: start;
+}
+.hz-bank:hover:not(:disabled) {
+  border-color: #5b8def;
+}
+.hz-bank.is-on {
+  border-color: #5b8def;
+  background: rgba(91, 141, 239, 0.2);
+  box-shadow: 0 0 0 1px rgba(91, 141, 239, 0.35);
+}
+.hz-bank.is-today:not(.is-on) {
+  border-color: rgba(201, 162, 39, 0.55);
+}
+.hz-bank:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+.hz-bank-name {
+  font-weight: 700;
+  font-size: 0.92rem;
+  line-height: 1.25;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 9.5rem;
+}
+.hz-bank-n {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #7eb6ff;
+}
+.hz-size-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: rgba(42, 58, 92, 0.28);
+  margin-bottom: 8px;
+}
+.hz-size-label {
+  font-weight: 700;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  color: #cfe0ff;
+}
+.hz-size-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  flex: 1 1 auto;
+}
+.hz-size-chips .btn {
+  min-width: 52px;
+  padding: 8px 12px;
+}
+.hz-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 10px;
+}
+.hz-rules-scroll {
+  max-height: 38vh;
+  overflow-y: auto;
+  border-top: 1px solid var(--border);
+  padding-top: 8px;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+.hz-rule {
+  padding: 6px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+.simple-hub h1 {
+  margin: 0 0 6px;
+  font-size: 1.35rem;
 }
 .note-full {
   padding: 12px 14px;

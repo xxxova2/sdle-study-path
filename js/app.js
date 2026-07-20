@@ -2115,6 +2115,7 @@
           ${vidN ? `<button type="button" class="btn ghost hub-secondary" id="hub-videos">Watch videos (${vidN})</button>` : ""}
           <button type="button" class="btn ghost hub-secondary" id="hub-cards">تدرب · Flashcards</button>
           <button type="button" class="btn ghost hub-secondary" id="hub-mock">تدرب · Mock (72s/Q)</button>
+          <button type="button" class="btn ghost hub-secondary" id="hub-always">Always · الأسئلة المتكررة</button>
         </div>
 
         <div class="hub-progress">
@@ -2162,6 +2163,8 @@
       ($("#hub-cards").onclick = () => openPracticePane("cards"));
     $("#hub-mock") &&
       ($("#hub-mock").onclick = () => openPracticePane("mock"));
+    $("#hub-always") &&
+      ($("#hub-always").onclick = () => openPracticePane("always"));
     $("#hub-change-pace") &&
       ($("#hub-change-pace").onclick = () => {
         state._hubRepickPlan = true;
@@ -3898,210 +3901,160 @@
       return dept + "@plan";
     }
 
-    function sizeBtns(pool, n, mode) {
-      if (n < 1) return `<span class="muted">—</span>`;
+    /** Compact size chips for one selected bank (horizontal). */
+    function sizeChips(pool, n, mode) {
+      if (n < 1) return `<span class="muted">Empty bank</span>`;
       const isExam = mode === "exam";
-      const sizes = isExam ? [50, 100, 200] : [50, 100, 200];
-      const parts = sizes
-        .filter((k) => k <= n)
-        .map(
-          (k, i, arr) =>
-            `<button type="button" class="btn ${i === arr.length - 1 && isExam ? "success" : "ghost"} simple-sz" data-qz="${escapeHtml(pool)}" data-n="${k}" data-mode="${isExam ? "exam" : "learn"}">${k}</button>`
-        );
+      const sizes = [50, 100, 200].filter((k) => k <= n);
+      const parts = sizes.map(
+        (k) =>
+          `<button type="button" class="btn ghost simple-sz" data-qz="${escapeHtml(pool)}" data-n="${k}" data-mode="${isExam ? "exam" : "learn"}">${k}</button>`
+      );
       if (!isExam) {
         parts.push(
           `<button type="button" class="btn success simple-sz" data-qz="${escapeHtml(pool)}" data-n="${QUIZ_ALL}" data-mode="learn">All ${n}</button>`
         );
+      } else if (n >= 50) {
+        parts.push(
+          `<button type="button" class="btn success simple-sz" data-qz="${escapeHtml(pool)}" data-n="${Math.min(200, n)}" data-mode="exam">Go ${Math.min(200, n)}</button>`
+        );
       }
-      return parts.join("") || `<span class="muted">${n}</span>`;
+      return parts.join("");
     }
 
-    function bankRow(opts) {
+    /** Horizontal bank chip (select only). */
+    function bankChip(opts) {
       const n = poolN(opts.pool);
-      const today = opts.today ? " is-today" : "";
-      const hint = opts.hint
-        ? `<span class="simple-hint-ar" dir="rtl">${escapeHtml(opts.hint)}</span>`
-        : "";
-      return `<div class="simple-mcq-card${today}">
-        <div class="simple-mcq-label">
-          <strong>${escapeHtml(opts.label)}</strong>
-          ${hint}
-          <span class="simple-pool-n">${n} questions</span>
-        </div>
-        <div class="simple-sz-row">${sizeBtns(opts.pool, n, opts.mode || "learn")}</div>
-      </div>`;
+      const on = opts.selected ? " is-on" : "";
+      const star = opts.today ? " is-today" : "";
+      return `<button type="button" class="hz-bank${on}${star}" data-pick-pool="${escapeHtml(opts.pool)}" ${n < 1 ? "disabled" : ""}>
+        <span class="hz-bank-name">${escapeHtml(opts.label)}</span>
+        <span class="hz-bank-n">${n}</span>
+      </button>`;
     }
 
     const SUBJECTS = [
-      { id: "restorative", label: "Restorative", ar: "الترميمي والتعويضات" },
-      { id: "perio", label: "Periodontics", ar: "أمراض اللثة" },
-      { id: "endo", label: "Endodontics", ar: "علاج الجذور" },
-      { id: "oms", label: "OMS / Pathology", ar: "جراحة الفم والباثولوجيا" },
-      { id: "ortho_pedo", label: "Ortho / Pedodontics", ar: "التقويم وطب أسنان الأطفال" },
-      { id: "ethics", label: "Ethics & practice", ar: "الأخلاقيات والممارسة" },
+      { id: "restorative", label: "Restorative" },
+      { id: "perio", label: "Perio" },
+      { id: "endo", label: "Endo" },
+      { id: "oms", label: "OMS" },
+      { id: "ortho_pedo", label: "Ortho/Pedo" },
+      { id: "ethics", label: "Ethics" },
     ];
 
     const cardN = ensureFlashcards().length;
     const nAbtal = poolN("abtal");
     const todayPool = poolKey(focusDept);
     const nToday = poolN(todayPool);
-
     const nAlways = poolN("always_src");
     const acRules = window.ALWAYS_COMES_READ || [];
+
+    /* Default selected bank per pane */
+    const mcqBanks = [
+      { pool: todayPool, label: "Today · " + subjectTitle, today: true },
+      { pool: "always_src", label: "Always" },
+      { pool: "abtal", label: "أبطال الديجيتال" },
+      ...SUBJECTS.map((s) => ({ pool: poolKey(s.id), label: s.label, today: s.id === focusDept })),
+      { pool: "wrong", label: "Wrong book" },
+    ];
+    const mockBanks = [
+      { pool: todayPool, label: "Today · " + subjectTitle, today: true },
+      { pool: "abtal", label: "أبطال الديجيتال" },
+      { pool: "preferred", label: "Preferred mix" },
+      { pool: "always_src", label: "Always" },
+    ];
+
+    if (pane === "mcqs" || pane === "mock") {
+      const list = pane === "mock" ? mockBanks : mcqBanks;
+      const valid = list.some((b) => b.pool === state.practiceBank);
+      if (!valid) state.practiceBank = list[0].pool;
+    }
+    if (pane === "always") state.practiceBank = "always_src";
+
+    const selectedPool = state.practiceBank || todayPool;
+    const selectedN = poolN(selectedPool);
+    const examMode = pane === "mock";
 
     const subnav = `
       <div class="tadarrub-tabs" role="tablist">
         <button type="button" class="tad-tab${pane === "mcqs" ? " active" : ""}" data-pane="mcqs">MCQs</button>
         <button type="button" class="tad-tab${pane === "always" ? " active" : ""}" data-pane="always">Always</button>
         <button type="button" class="tad-tab${pane === "cards" ? " active" : ""}" data-pane="cards">Flashcards</button>
-        <button type="button" class="tad-tab${pane === "mock" ? " active" : ""}" data-pane="mock">Mock exam</button>
+        <button type="button" class="tad-tab${pane === "mock" ? " active" : ""}" data-pane="mock">Mock</button>
       </div>
-      <p class="simple-day-sync muted">Today · ${escapeHtml(subjectTitle)} · Day ${state.day}/${maxDay()}</p>`;
+      <p class="simple-day-sync muted">Today · ${escapeHtml(subjectTitle)} · D${state.day}/${maxDay()}</p>`;
+
+    function bankStrip(banks) {
+      return `<div class="hz-strip" role="listbox" aria-label="Banks">
+        ${banks
+          .map((b) =>
+            bankChip({
+              pool: b.pool,
+              label: b.label,
+              today: b.today,
+              selected: b.pool === selectedPool,
+            })
+          )
+          .join("")}
+      </div>`;
+    }
+
+    function sizeBar(mode) {
+      return `<div class="hz-size-bar">
+        <span class="hz-size-label">${selectedN} Q</span>
+        <div class="hz-size-chips">${sizeChips(selectedPool, selectedN, mode)}</div>
+      </div>`;
+    }
 
     let body = "";
 
     if (pane === "always") {
       body = `
-        <p class="simple-lead" dir="rtl"><b>Always-comes · الأسئلة المتكررة</b> — قواعد ونقاط مجانية تتكرر في الامتحان.</p>
-        <p class="muted">${nAlways} free-point MCQs · ${acRules.length} rules</p>
-        <div class="simple-mcq-list">
-          ${bankRow({
-            pool: "always_src",
-            label: "Free points · الأسئلة المتكررة",
-            hint: "MCQs · Always-comes bank",
-            today: true,
-          })}
+        <p class="hz-hint" dir="rtl">Always · الأسئلة المتكررة · ${nAlways} MCQs · ${acRules.length} rules</p>
+        ${bankStrip([{ pool: "always_src", label: "Always MCQs", today: true }])}
+        ${sizeBar("learn")}
+        <div class="hz-actions">
+          <button type="button" class="btn sm" id="ac-open-cards">Cards</button>
+          <button type="button" class="btn sm ghost" id="ac-full-page">All rules</button>
         </div>
-        <div class="simple-also" style="margin-top:12px">
-          <button type="button" class="btn" id="ac-open-cards">Always flashcards</button>
-          <button type="button" class="btn ghost" id="ac-full-page">Full Always page</button>
-        </div>
-        <p class="simple-subhead" dir="rtl">القواعد (${acRules.length})</p>
-        <div class="simple-note-list ac-rule-list">
+        <div class="hz-rules-scroll">
           ${acRules
-            .slice(0, 40)
+            .slice(0, 24)
             .map((r, i) => {
               const front = Array.isArray(r) ? r[0] : r && r.front;
               const back = Array.isArray(r) ? r[1] : r && r.back;
               if (!front) return "";
-              return `<article class="simple-note note-full">
-                <p class="note-stem"><strong>${i + 1}.</strong> ${escapeHtml(String(front).replace(/^\d+\.\s*/, ""))}</p>
-                ${back ? `<p class="note-body">${escapeHtml(String(back))}</p>` : ""}
-              </article>`;
+              return `<div class="hz-rule"><b>${i + 1}.</b> ${escapeHtml(String(front).replace(/^\d+\.\s*/, ""))}${
+                back ? ` — <span class="muted">${escapeHtml(String(back))}</span>` : ""
+              }</div>`;
             })
             .join("")}
-        </div>
-        ${
-          acRules.length > 40
-            ? `<button type="button" class="btn ghost" id="ac-full-page-2" style="width:100%;margin-top:10px">See all ${acRules.length} rules</button>`
-            : ""
-        }`;
+        </div>`;
     } else if (pane === "mcqs") {
       body = `
-        <p class="simple-lead">Choose a bank, then how many. <b>All</b> = entire bank.</p>
-        ${bankRow({
-          pool: "always_src",
-          label: "Always · الأسئلة المتكررة",
-          hint: "Free points · " + nAlways + " MCQs",
-          today: false,
-        })}
-        ${bankRow({
-          pool: todayPool,
-          label: "Today’s subject · " + subjectTitle,
-          hint: "متزامن مع درس اليوم · " + nToday + " سؤالاً",
-          today: true,
-        })}
-        ${bankRow({
-          pool: "abtal",
-          label: "أبطال الديجيتال",
-          hint: "ريكول · سبتمبر 2025 – يونيو 2026 · " + nAbtal + " · أولوية",
-        })}
-        <p class="simple-subhead">By subject</p>
-        <div class="simple-mcq-list">
-          ${SUBJECTS.map((s) =>
-            bankRow({
-              pool: poolKey(s.id),
-              label: s.label,
-              hint: s.ar,
-              today: s.id === focusDept,
-            })
-          ).join("")}
-        </div>
-        <p class="simple-subhead">Review</p>
-        <div class="simple-mcq-list">
-          ${bankRow({ pool: "wrong", label: "Wrong book", hint: "أسئلتك الخاطئة" })}
-        </div>`;
+        <p class="hz-hint">Bank → size. Swipe banks sideways.</p>
+        ${bankStrip(mcqBanks)}
+        ${sizeBar("learn")}`;
     } else if (pane === "cards") {
       const deck = lessonCardDeck(L);
       const deckN = cardPoolForDeck(deck).length;
       const abtalN = cardPoolForDeck("abtal_notes").length;
+      const wrongN = cardPoolForDeck("wrong").length;
       body = `
-        <p class="simple-lead">${cardN} cards loaded (core + notes + wrong book). Not the old 150-only set.</p>
-        <div class="simple-mcq-list">
-          <div class="simple-mcq-card is-today">
-            <div class="simple-mcq-label">
-              <strong>Today’s deck · ${escapeHtml(subjectTitle)}</strong>
-              <span class="simple-hint-ar" dir="rtl">مجموعة درس اليوم</span>
-              <span class="simple-pool-n">${deckN} cards · deck “${escapeHtml(deck)}”</span>
-            </div>
-            <div class="simple-sz-row">
-              <button type="button" class="btn success" id="cards-today">Open</button>
-            </div>
-          </div>
-          <div class="simple-mcq-card">
-            <div class="simple-mcq-label">
-              <strong>أبطال الديجيتال notes</strong>
-              <span class="simple-pool-n">${abtalN} cards</span>
-            </div>
-            <div class="simple-sz-row">
-              <button type="button" class="btn" id="cards-abtal">Open</button>
-            </div>
-          </div>
-          <div class="simple-mcq-card">
-            <div class="simple-mcq-label">
-              <strong>All cards</strong>
-              <span class="simple-pool-n">${cardN} cards</span>
-            </div>
-            <div class="simple-sz-row">
-              <button type="button" class="btn ghost" id="cards-all">Open</button>
-            </div>
-          </div>
-          <div class="simple-mcq-card">
-            <div class="simple-mcq-label">
-              <strong>Wrong book cards</strong>
-              <span class="simple-pool-n">${cardPoolForDeck("wrong").length} cards</span>
-            </div>
-            <div class="simple-sz-row">
-              <button type="button" class="btn ghost" id="cards-wrong">Open</button>
-            </div>
-          </div>
-        </div>`;
-    } else {
-      /* Mock — timed 72 sec per question */
-      body = `
-        <p class="simple-lead">Timed mock · <b>72 seconds per question</b> · exam mode (answers after finish).</p>
-        <div class="simple-mcq-list">
-          ${bankRow({
-            pool: todayPool,
-            label: "Mock · today’s subject",
-            hint: subjectTitle + " · 72s/Q",
-            today: true,
-            mode: "exam",
-          })}
-          ${bankRow({
-            pool: "abtal",
-            label: "Mock · أبطال الديجيتال",
-            hint: "72s/Q",
-            mode: "exam",
-          })}
-          ${bankRow({
-            pool: "preferred",
-            label: "Mock · preferred mix",
-            hint: "72s/Q",
-            mode: "exam",
-          })}
+        <p class="hz-hint">${cardN} cards · pick a deck</p>
+        <div class="hz-strip">
+          <button type="button" class="hz-bank is-today is-on" id="cards-today"><span class="hz-bank-name">Today</span><span class="hz-bank-n">${deckN}</span></button>
+          <button type="button" class="hz-bank" id="cards-abtal"><span class="hz-bank-name">أبطال notes</span><span class="hz-bank-n">${abtalN}</span></button>
+          <button type="button" class="hz-bank" id="cards-all"><span class="hz-bank-name">All</span><span class="hz-bank-n">${cardN}</span></button>
+          <button type="button" class="hz-bank" id="cards-wrong"><span class="hz-bank-name">Wrong</span><span class="hz-bank-n">${wrongN}</span></button>
+          <button type="button" class="hz-bank" id="cards-always"><span class="hz-bank-name">Always</span><span class="hz-bank-n">${cardPoolForDeck("always").length}</span></button>
         </div>
-        <p class="muted" style="margin-top:12px">Pick 50 / 100 / 200. Timer = count × 72s.</p>`;
+        <p class="muted hz-hint">Tap a deck to open (shuffled, enriched).</p>`;
+    } else {
+      body = `
+        <p class="hz-hint">Mock · <b>72s / question</b> · exam mode</p>
+        ${bankStrip(mockBanks)}
+        ${sizeBar("exam")}`;
     }
 
     app.innerHTML = `
@@ -4117,6 +4070,12 @@
         renderPractice();
       };
     });
+    app.querySelectorAll("[data-pick-pool]").forEach((b) => {
+      b.onclick = () => {
+        state.practiceBank = b.getAttribute("data-pick-pool");
+        renderPractice();
+      };
+    });
     app.querySelectorAll(".simple-sz[data-qz]").forEach((b) => {
       b.onclick = () => {
         const mode = b.dataset.mode || "learn";
@@ -4129,6 +4088,10 @@
     $("#cards-abtal") && ($("#cards-abtal").onclick = () => openCards("abtal_notes"));
     $("#cards-all") && ($("#cards-all").onclick = () => openCards("all"));
     $("#cards-wrong") && ($("#cards-wrong").onclick = () => openCards("wrong"));
+    $("#cards-always") && ($("#cards-always").onclick = () => openCards("always"));
+    $("#ac-open-cards") && ($("#ac-open-cards").onclick = () => openCards("always"));
+    const goAlways = () => navigateTo("always", { push: true });
+    $("#ac-full-page") && ($("#ac-full-page").onclick = goAlways);
   }
 
   function exportWrongBook() {
