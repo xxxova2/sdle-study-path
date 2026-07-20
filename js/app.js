@@ -1236,7 +1236,8 @@
     "feedback",
     "more",
   ];
-  const SIMPLE_PRIMARY = ["today", "practice", "progress"];
+  /** Simple chrome: 4 tabs — Practice is bank hub (أبطال first). Notes is 1st-class. */
+  const SIMPLE_PRIMARY = ["today", "practice", "notes", "progress"];
   /** Public source repo (docs only — feedback does NOT open GitHub). */
   const REPO_URL = "https://github.com/xxxova2/sdle-study-path";
   /** External ChatGPT custom GPT — academic tutor only (not SCFHS, not clinical care). */
@@ -1362,17 +1363,17 @@
     applyChromeMode();
     if (isSimpleMode()) {
       nav.innerHTML = `
-        <button type="button" data-view="today" title="Today">Today</button>
-        <button type="button" data-view="practice" title="Practice MCQs">Practice</button>
-        <button type="button" data-view="progress" title="Progress">Progress</button>
-        <button type="button" data-view="more" title="More">More</button>`;
+        <button type="button" data-view="today" title="Today’s lesson">Today</button>
+        <button type="button" data-view="practice" title="أبطال · رفيع · MCQs">Practice</button>
+        <button type="button" data-view="notes" title="Notes by department">Notes</button>
+        <button type="button" data-view="progress" title="Scores & settings">Progress</button>`;
     } else {
       nav.innerHTML = `
         <button type="button" data-view="today" title="Today">Today</button>
         <button type="button" data-view="days" title="All days">Days</button>
         <button type="button" data-view="pass" title="Pass plan">Pass</button>
         <button type="button" data-view="always" title="Always-comes free points">Always</button>
-        <button type="button" data-view="practice" title="Extra practice">Extra</button>
+        <button type="button" data-view="practice" title="Practice banks">Practice</button>
         <button type="button" data-view="mcqs" title="MCQs hub">MCQs</button>
         <button type="button" data-view="recalls" title="Exam recall packs">Recalls</button>
         <button type="button" data-view="notes" title="Study notes by department">Notes</button>
@@ -1416,8 +1417,12 @@
 
   function setActiveNav(view) {
     let navView = TAB_VIEWS.includes(view) ? view : "today";
-    if (isSimpleMode() && !SIMPLE_PRIMARY.includes(navView) && navView !== "more") {
-      navView = "more";
+    if (isSimpleMode() && !SIMPLE_PRIMARY.includes(navView)) {
+      /* secondary screens: highlight closest primary tab */
+      if (navView === "mcqs" || navView === "recalls" || navView === "always") navView = "practice";
+      else if (navView === "feedback" || navView === "more") navView = "progress";
+      else if (navView === "days" || navView === "pass") navView = "today";
+      else navView = "practice";
     }
     document.querySelectorAll(".simple-nav button").forEach((x) => {
       const on = x.dataset.view === navView;
@@ -3596,6 +3601,13 @@
   function practiceTopicLabel(topic) {
     const map = {
       all: "Full bank",
+      preferred: "Preferred (SDLE)",
+      archive: "Archive",
+      abtal: "أبطال",
+      rafi_core: "رفيع 11–19",
+      rafi_second: "رفيع 7·5·10·9·1·3",
+      rafi: "رفيع ALL",
+      saud_delta: "Saud delta",
       wrong: "Wrong book",
       always_src: "Free points",
       unseen: "Unseen",
@@ -3621,18 +3633,48 @@
 
   function ensurePracticeBuild() {
     if (!state.practiceBuild || typeof state.practiceBuild !== "object") {
-      state.practiceBuild = { step: "kind" };
+      state.practiceBuild = { step: "hub" };
     }
     return state.practiceBuild;
   }
 
   function resetPracticeBuild() {
-    state.practiceBuild = { step: "kind" };
+    state.practiceBuild = { step: "hub" };
   }
 
   function goPracticeBuilder() {
     resetPracticeBuild();
     navigateTo("practice", { push: true });
+  }
+
+  /** One bank card: title, count, 50 / 100 / All — أبطال uses star styling */
+  function bankCardHtml(opts) {
+    const o = opts || {};
+    const pool = o.pool;
+    const n = poolN(pool);
+    const star = o.star ? " bank-card-star" : "";
+    const sub = o.sub ? `<p class="bank-card-sub">${escapeHtml(o.sub)}</p>` : "";
+    const disabled = n < 1 ? "disabled" : "";
+    return `<article class="bank-card${star}" data-bank-pool="${escapeHtml(pool)}">
+      <div class="bank-card-top">
+        <div>
+          <h3 class="bank-card-title">${o.star ? "★ " : ""}${escapeHtml(o.title)}</h3>
+          ${sub}
+        </div>
+        <span class="badge ${o.star ? "warn" : "blue"}">${n}</span>
+      </div>
+      <div class="bank-card-actions">
+        <button type="button" class="btn ${o.star ? "success" : "ghost"}" data-qz="${escapeHtml(pool)}" data-n="50" ${n < 1 ? "disabled" : ""}>50</button>
+        <button type="button" class="btn ghost" data-qz="${escapeHtml(pool)}" data-n="100" ${n < 1 ? "disabled" : ""}>100</button>
+        <button type="button" class="btn ${o.star ? "success" : ""}" data-qz="${escapeHtml(pool)}" data-n="${QUIZ_ALL}" ${disabled}>All</button>
+      </div>
+    </article>`;
+  }
+
+  function bindBankQuizButtons(root) {
+    (root || app).querySelectorAll("button[data-qz]").forEach((b) => {
+      b.onclick = () => startQuiz(b.dataset.qz, +b.dataset.n, "learn", false);
+    });
   }
 
   function renderPractice() {
@@ -3641,333 +3683,168 @@
     const L = lesson();
     const focusTopic = L.quizTopic || "all";
     const subject = humanLessonTitle(L);
+    const focusN = poolN(focusTopic);
 
-    if (isSimpleMode()) {
-      const b = ensurePracticeBuild();
-      const focusN = poolN(focusTopic);
-      const focusName = practiceTopicLabel(focusTopic);
+    /* Clean bank hub — أبطال / رفيع first (no multi-step maze) */
+    const b = ensurePracticeBuild();
 
-      const chip = (label, attrs, cls) =>
-        `<button type="button" class="btn practice-choice ${cls || "ghost"}" ${attrs}>${label}</button>`;
-
-      let body = "";
-      let stepTitle = "";
-
-      if (b.step === "kind" || !b.step) {
-        stepTitle = "What do you want?";
-        body = `
-          <div class="practice-choices" role="group">
-            ${chip("MCQs", 'data-pb="kind" data-v="mcq"', "success")}
-            ${chip("Flashcards", 'data-pb="kind" data-v="cards"', "")}
-            ${chip(`Wrong book${inv.wrong ? " (" + inv.wrong + ")" : ""}`, 'data-pb="kind" data-v="wrong"', inv.wrong ? "" : "ghost")}
-          </div>`;
-      } else if (b.step === "cards") {
-        stepTitle = "Which flashcards?";
-        body = `
-          <div class="practice-choices" role="group">
-            ${chip("Today’s deck", 'data-pb="cards" data-v="today"', "success")}
-            ${chip("Free points", 'data-pb="cards" data-v="always"', "")}
-            ${chip("All cards", 'data-pb="cards" data-v="all"', "")}
-            ${chip("Unknown only", 'data-pb="cards" data-v="unknown"', "")}
-          </div>
-          <button type="button" class="btn ghost sm" data-pb="back">← Back</button>`;
-      } else if (b.step === "pool") {
-        stepTitle = "Which questions?";
-        const pools = [
-          { t: focusTopic, label: `Today: ${subject}`, n: focusN, primary: true },
-          { t: "preferred", label: "Preferred (SDLE)", n: inv.preferred || 0, primary: true },
-          { t: "all", label: "Full bank", n: inv.all },
-          { t: "archive", label: "Archive", n: inv.archive || 0 },
-          { t: "always_src", label: "Free points", n: inv.always },
-          { t: "unseen", label: "Unseen only", n: inv.unseen },
-          { t: "weak", label: "Weak topics", n: inv.weak },
-          { t: "wrong", label: "Wrong book", n: inv.wrong },
-        ];
-        const main = pools
-          .filter((p) => p.n > 0 || p.primary)
-          .map(
-            (p) =>
-              chip(
-                `${escapeHtml(p.label)} · ${p.n}`,
-                `data-pb="pool" data-t="${escapeHtml(p.t)}"`,
-                p.primary ? "success" : ""
-              )
-          )
-          .join("");
-        const extras = [
-          ["operative", inv.operative],
-          ["restorative", inv.restorative],
-          ["perio", inv.perio],
-          ["endo", inv.endo],
-          ["oms", inv.oms],
-          ["ortho_pedo", inv.ortho_pedo],
-          ["ethics", inv.ethics],
-          ["fixed", inv.fixed],
-          ["rpd", inv.rpd],
-          ["implant", inv.implant],
-        ]
-          .filter(([t, n]) => n > 0 && t !== focusTopic)
-          .map(([t, n]) => chip(`${practiceTopicLabel(t)} · ${n}`, `data-pb="pool" data-t="${t}"`, "ghost"));
-        body = `
-          <div class="practice-choices" role="group">${main}</div>
-          ${
-            extras.length
-              ? `<details class="practice-more-pools"><summary>Other subjects</summary>
-                  <div class="practice-choices" style="margin-top:8px">${extras.join("")}</div>
-                </details>`
-              : ""
-          }
-          <button type="button" class="btn ghost sm" data-pb="back">← Back</button>`;
-      } else if (b.step === "count") {
-        const topic = b.topic || focusTopic;
+    /* Optional thin pick-count when user opens a subject or full bank */
+    if (b.step === "count" && b.topic) {
+        const topic = b.topic;
         const nPool = poolN(topic);
-        stepTitle = `How many? · ${escapeHtml(practiceTopicLabel(topic))} (${nPool})`;
-        /* Offer every rung that fits the pool; All always last if pool > 0 */
-        const sizes = [20, 50, 100, 150, 200, 500].filter((n) => n <= nPool);
-        const opts = sizes
-          .map((n) => chip(String(n), `data-pb="count" data-n="${n}"`, ""))
-          .join("");
-        const allBtn =
-          nPool > 0
-            ? chip(`All (${nPool})`, `data-pb="count" data-n="${QUIZ_ALL}"`, "success")
-            : `<p class="muted">No questions in this pool.</p>`;
-        body = `
-          <div class="practice-choices practice-counts" role="group">
-            ${opts}${allBtn}
-          </div>
-          <button type="button" class="btn ghost sm" data-pb="back">← Back</button>`;
-      } else if (b.step === "mode") {
-        const topic = b.topic || focusTopic;
-        const n = b.count != null ? b.count : 50;
-        const nShow = n >= QUIZ_ALL ? poolN(topic) : Math.min(n, poolN(topic));
-        stepTitle = `Mode · ${nShow} × ${escapeHtml(practiceTopicLabel(topic))}`;
-        body = `
-          <div class="practice-choices" role="group">
-            ${chip("Learn — answer after each Q", 'data-pb="mode" data-v="learn"', "success")}
-            ${chip("Timed — exam pace (~72s/Q)", 'data-pb="mode" data-v="timed"', "warn")}
-          </div>
-          <button type="button" class="btn ghost sm" data-pb="back">← Back</button>`;
-      }
-
-      app.innerHTML = `
-        <div class="practice-builder">
-          <h1>Practice</h1>
-          <p class="hub-sub">Today: <b>${escapeHtml(subject)}</b>${
-            focusTopic !== "all" ? ` · ${focusN} in ${escapeHtml(focusName)}` : ""
-          } · ${inv.all} in bank</p>
-          <h2 class="practice-step-title">${stepTitle}</h2>
-          ${body}
-          <p class="hub-foot-links practice-tutor-link">${sdleGptButtonHtml("link")}</p>
-        </div>`;
-
-      bindSdleGptButtons(app, () =>
-        buildSdleGptContext({
-          subject,
-          topic: focusTopic !== "all" ? focusTopic : "",
-        })
-      );
-
-      app.querySelectorAll("[data-pb]").forEach((el) => {
-        el.onclick = () => {
-          const act = el.dataset.pb;
-          if (act === "back") {
-            if (b.step === "cards" || b.step === "pool") b.step = "kind";
-            else if (b.step === "count") b.step = "pool";
-            else if (b.step === "mode") b.step = "count";
-            else b.step = "kind";
-            renderPractice();
-            return;
-          }
-          if (act === "kind") {
-            const v = el.dataset.v;
-            if (v === "cards") {
-              b.step = "cards";
-              renderPractice();
-              return;
-            }
-            if (v === "wrong") {
-              b.kind = "mcq";
-              b.topic = "wrong";
-              b.step = "count";
-              renderPractice();
-              return;
-            }
-            b.kind = "mcq";
-            b.step = "pool";
-            renderPractice();
-            return;
-          }
-          if (act === "cards") {
-            const deck = el.dataset.v;
-            if (deck === "today") openCards(L.cardDeck || "always");
-            else openCards(deck);
-            return;
-          }
-          if (act === "pool") {
-            b.topic = el.dataset.t;
-            b.step = "count";
-            renderPractice();
-            return;
-          }
-          if (act === "count") {
-            b.count = +el.dataset.n;
-            b.step = "mode";
-            renderPractice();
-            return;
-          }
-          if (act === "mode") {
-            const topic = b.topic || focusTopic;
-            const count = b.count || 50;
-            if (el.dataset.v === "timed") {
-              startQuiz(topic, count, "exam", true, 72);
-            } else {
-              startQuiz(topic, count, "learn", false);
-            }
+        const sizes = [25, 50, 100, 150, 200, 500].filter((n) => n <= nPool);
+        app.innerHTML = `
+          <div class="practice-hub">
+            <button type="button" class="btn ghost sm" id="pb-back-hub">← Banks</button>
+            <h1>${escapeHtml(practiceTopicLabel(topic))}</h1>
+            <p class="hub-sub">${nPool} questions · pick how many</p>
+            <div class="bank-card-actions bank-card-actions-lg">
+              ${sizes
+                .map(
+                  (n) =>
+                    `<button type="button" class="btn" data-qz="${escapeHtml(topic)}" data-n="${n}">${n}</button>`
+                )
+                .join("")}
+              ${
+                nPool
+                  ? `<button type="button" class="btn success" data-qz="${escapeHtml(topic)}" data-n="${QUIZ_ALL}">All (${nPool})</button>`
+                  : ""
+              }
+            </div>
+            <div class="bank-card-actions" style="margin-top:12px">
+              <button type="button" class="btn warn" data-qz-timed="${escapeHtml(topic)}" data-n="50">Timed 50</button>
+              <button type="button" class="btn warn" data-qz-timed="${escapeHtml(topic)}" data-n="100">Timed 100</button>
+            </div>
+          </div>`;
+        $("#pb-back-hub") &&
+          ($("#pb-back-hub").onclick = () => {
             resetPracticeBuild();
-          }
-        };
-      });
-      return;
+            renderPractice();
+          });
+        bindBankQuizButtons(app);
+        app.querySelectorAll("[data-qz-timed]").forEach((btn) => {
+          btn.onclick = () => startQuiz(btn.dataset.qzTimed, +btn.dataset.n, "exam", true, 72);
+        });
+        return;
     }
 
     app.innerHTML = `
-      ${backBarHtml("← Back")}
-      <h1>Extra practice</h1>
-      <p class="lead simple-lead">Path: <b>1) wrong book</b> → <b>2) score-makers</b> → <b>3) timed mock</b>.
-        Exam = <b>200</b> MCQs. Study bank: <b>Preferred ${inv.preferred || 0}</b> (full dump ${inv.all}).</p>
-      ${examFocusBannerHtml()}
-      <div class="alert practice-summary"><strong>Preferred ${inv.preferred || 0}</strong> · All ${inv.all} · Archive ${inv.archive || 0}
-        · Free ${inv.always} · Op ${inv.operative} · Resto ${inv.restorative}
-        · Perio ${inv.perio} · Endo ${inv.endo} · OMS ${inv.oms} · Wrong ${inv.wrong}
-      </div>
+        <div class="practice-hub">
+          <h1>Practice</h1>
+          <p class="hub-sub">خطة: <b>أبطال</b> first → <b>رفيع 11–19</b> → <b>7·5·10·9·1·3</b>.
+            Today: <b>${escapeHtml(subject)}</b>${focusTopic !== "all" ? ` (${focusN})` : ""}.</p>
 
-      <section class="practice-section practice-start simple-panel">
-        <h3 class="section-label">1 · Start here</h3>
-        <p class="muted vol-hint">${escapeHtml(smartPackHint())}</p>
-        <div class="volume-grid">
-          ${volBtn("preferred", 50, "Preferred", "success")}
-          ${volBtn("preferred", 100, "Preferred", "success")}
-          ${volBtn("preferred", QUIZ_ALL, "Preferred ALL", "success")}
-          ${volBtn("wrong", 25, "Wrong book", "ghost")}
-          ${volBtn("wrong", 50, "Wrong book", "ghost")}
-          ${volBtn("wrong", QUIZ_ALL, "Wrong ALL", "ghost")}
-          ${volBtn("always_src", 25, "Free points", "")}
-          ${volBtn("always_src", 50, "Free points", "")}
-          ${volBtn("unseen", 50, "Unseen", "")}
-          ${volBtn("unseen", 100, "Unseen", "")}
-          ${volBtn("weak", 50, "Weak pack", "")}
-          ${volBtn("weak", 100, "Weak pack", "")}
-          <button type="button" class="btn ghost" id="practice-to-mcqs">Full subject tests (MCQs tab)</button>
-          <button type="button" class="btn" id="p-cards">Flashcards</button>
-        </div>
-      </section>
+          <h2 class="section-label practice-sec">★ Highly recommended</h2>
+          <div class="bank-hub-grid">
+            ${bankCardHtml({
+              pool: "abtal",
+              title: "أبطال الديجيتال",
+              sub: "Recalls — drill these hard",
+              star: true,
+            })}
+            ${bankCardHtml({
+              pool: "rafi_core",
+              title: "رفيع 11–19",
+              sub: "Start here (most have refs)",
+              star: true,
+            })}
+            ${bankCardHtml({
+              pool: "rafi_second",
+              title: "رفيع 7 · 5 · 10 · 9 · 1 · 3",
+              sub: "Second wave in the plan",
+            })}
+            ${bankCardHtml({
+              pool: "preferred",
+              title: "Preferred mix",
+              sub: "أبطال + curated + core رفيع",
+            })}
+          </div>
 
-      <section class="practice-section simple-panel">
-        <h3 class="section-label">2 · Score-makers (resto · perio · prosthesis)</h3>
-        <div class="volume-grid">
-          ${volBtn("operative", 50, "Operative 50", "")}
-          ${volBtn("operative", 100, "Operative 100", "")}
-          ${volBtn("operative", QUIZ_ALL, "Operative ALL", "success")}
-          ${volBtn("restorative", 50, "Resto 50", "")}
-          ${volBtn("restorative", 100, "Resto 100", "")}
-          ${volBtn("restorative", QUIZ_ALL, "Resto ALL", "success")}
-          ${volBtn("perio", 50, "Perio 50", "")}
-          ${volBtn("perio", 100, "Perio 100", "")}
-          ${volBtn("fixed", 50, "Fixed 50", "")}
-          ${volBtn("rpd", 25, "RPD 25", "")}
-        </div>
-      </section>
+          <h2 class="section-label practice-sec">Also useful</h2>
+          <div class="bank-hub-grid bank-hub-grid-sm">
+            ${bankCardHtml({ pool: "always_src", title: "Free points", sub: "Always-comes" })}
+            ${bankCardHtml({ pool: "saud_delta", title: "Saud delta", sub: "New vs رفيع 16/19" })}
+            ${bankCardHtml({
+              pool: "wrong",
+              title: "Wrong book",
+              sub: inv.wrong ? "Review misses" : "Empty until you miss Qs",
+            })}
+            ${bankCardHtml({
+              pool: focusTopic,
+              title: "Today’s subject",
+              sub: subject,
+            })}
+          </div>
 
-      <section class="practice-section simple-panel">
-        <h3 class="section-label">3 · Timed mocks (~72s / Q)</h3>
-        <div class="volume-grid">
-          <button type="button" class="btn warn" data-m="25">Quick 25</button>
-          <button type="button" class="btn warn" data-m="50">Quick 50</button>
-          <button type="button" class="btn warn" data-m="100">Section 100</button>
-          <button type="button" class="btn warn" data-m="200">FULL 200</button>
-        </div>
-      </section>
+          <h2 class="section-label practice-sec">By subject (SDLE blueprint)</h2>
+          <div class="subject-chip-row">
+            ${[
+              ["restorative", "Resto 40%"],
+              ["operative", "Operative"],
+              ["perio", "Perio 18%"],
+              ["endo", "Endo 17%"],
+              ["oms", "OMS 15%"],
+              ["ortho_pedo", "Ortho/Pedo 10%"],
+              ["ethics", "Ethics"],
+            ]
+              .map(([t, lab]) => {
+                const n = poolN(t);
+                return `<button type="button" class="btn ghost subject-chip" data-open-pool="${t}" ${n < 1 ? "disabled" : ""}>${escapeHtml(lab)} <span class="chip-n">${n}</span></button>`;
+              })
+              .join("")}
+          </div>
 
-      <details class="study-fold">
-        <summary>More volume · all packs (nothing removed)</summary>
-        ${volBlock("Unseen only (full bank)", "unseen", [50, 100, 150, 200, 300, 500], "Unseen")}
-        ${volBlock("Weak topics pack", "weak", [50, 100, 150, 200, 300], "Weak pack")}
-        <div class="volume-grid">
-          ${volBtn("always_src", 100, "Free points", "")}
-          ${volBtn("always_src", QUIZ_ALL, "Free points", "success")}
-          ${volBtn("wrong", 100, "Wrong book", "ghost")}
-          ${volBtn("operative", 150, "Operative", "")}
-          ${volBtn("operative", 200, "Operative", "")}
-          ${volBtn("operative", 300, "Operative", "")}
-          ${volBtn("operative", 500, "Operative", "")}
-        </div>
-        ${volBlock("Restorative", "restorative", [50, 100, 150, 200, 300, 500], "Resto")}
-        ${volBlock("Perio", "perio", [50, 100, 150, 200], "Perio")}
-        ${volBlock("Fixed subtopic", "fixed", [25, 50, 100, 150], "Fixed")}
-        ${volBlock("RPD subtopic", "rpd", [25, 50], "RPD")}
-        ${volBlock("Complete denture", "complete_denture", [25, 50], "CD")}
-        ${volBlock("Implant subtopic", "implant", [25, 50, 100, 150], "Implant")}
-        ${volBlock("Materials", "materials", [25, 50], "Materials")}
-        ${volBlock("Endo", "endo", [50, 100, 150, 200], "Endo")}
-        ${volBlock("OMS", "oms", [50, 100, 150, 200, 300], "OMS")}
-        ${volBlock("Ortho/Pedo", "ortho_pedo", [50, 100, 150, 200], "Ortho/Pedo")}
-        ${volBlock("Ethics/Med", "ethics", [50, 100], "Ethics")}
-        ${volBlock("Mixed topic", "mixed", [50, 100], "Mixed")}
-        ${volBlock("Full usable bank", "all", [50, 100, 150, 200, 300, 500, 1000], "Full bank")}
-        ${volBlock("Unseen Operative", "unseen:operative", [50, 100, 150, 200, 300], "Unseen Op")}
-        ${volBlock("Unseen Restorative", "unseen:restorative", [50, 100, 150, 200, 300], "Unseen Resto")}
-        ${volBlock("Unseen Perio", "unseen:perio", [50, 100, 150], "Unseen Perio")}
-        ${volBlock("Unseen Endo", "unseen:endo", [50, 100, 150], "Unseen Endo")}
-        ${volBlock("Unseen OMS", "unseen:oms", [50, 100, 150, 200], "Unseen OMS")}
-        ${volBlock("Unseen Ortho/Pedo", "unseen:ortho_pedo", [50, 100], "Unseen Ortho")}
-        ${volBlock("Unseen Ethics", "unseen:ethics", [50, 100], "Unseen Ethics")}
-        <h4 class="vol-sub">Saud delta · ${inv.saud_delta || 0} Q</h4>
-        <div class="volume-grid">
-          ${volBtn("saud_delta", 25, "Saud delta", "")}
-          ${volBtn("saud_delta", 50, "Saud delta", "")}
-          ${volBtn("saud_delta", 100, "Saud delta", "")}
-          ${volBtn("saud_delta", 150, "Saud delta", "")}
-          ${volBtn("saud_delta", QUIZ_ALL, "Saud delta", "success")}
-        </div>
-        <h4 class="vol-sub">All timed mocks</h4>
-        <div class="volume-grid">
-          <button type="button" class="btn warn" data-m="150">Section 150</button>
-          <button type="button" class="btn warn" data-m="op50">Operative 50 timed</button>
-          <button type="button" class="btn warn" data-m="op100">Operative 100 timed</button>
-          <button type="button" class="btn warn" data-m="op150">Operative 150 timed</button>
-          <button type="button" class="btn warn" data-m="op200">Operative 200 timed</button>
-          <button type="button" class="btn warn" data-m="resto50">Resto 50 timed</button>
-          <button type="button" class="btn warn" data-m="resto100">Resto 100 timed</button>
-          <button type="button" class="btn warn" data-m="resto150">Resto 150 timed</button>
-          <button type="button" class="btn warn" data-m="resto200">Resto 200 timed</button>
-          <button type="button" class="btn warn" data-m="perio50">Perio 50 timed</button>
-          <button type="button" class="btn warn" data-m="perio100">Perio 100 timed</button>
-          <button type="button" class="btn warn" data-m="endo50">Endo 50 timed</button>
-          <button type="button" class="btn warn" data-m="endo100">Endo 100 timed</button>
-          <button type="button" class="btn warn" data-m="oms50">OMS 50 timed</button>
-          <button type="button" class="btn warn" data-m="oms100">OMS 100 timed</button>
-          <button type="button" class="btn warn" data-m="oms200">OMS 200 timed</button>
-          <button type="button" class="btn warn" data-m="ortho50">Ortho/Pedo 50 timed</button>
-          <button type="button" class="btn warn" data-m="ortho100">Ortho/Pedo 100 timed</button>
-          <button type="button" class="btn warn" data-m="ethics50">Ethics 50 timed</button>
-          <button type="button" class="btn warn" data-m="fp50">Free points 50 timed</button>
-        </div>
-      </details>
+          <h2 class="section-label practice-sec">Quick actions</h2>
+          <div class="bank-card-actions bank-card-actions-wrap">
+            <button type="button" class="btn warn" id="p-mock-50">Timed mock 50</button>
+            <button type="button" class="btn warn" id="p-mock-100">Timed mock 100</button>
+            <button type="button" class="btn warn" id="p-mock-200">Full mock 200</button>
+            <button type="button" class="btn" id="p-cards">Flashcards</button>
+            <button type="button" class="btn ghost" id="p-notes">Notes</button>
+            <button type="button" class="btn ghost" id="p-recalls">Recall packs</button>
+            <button type="button" class="btn ghost" id="p-all-bank">Full bank ${inv.all}</button>
+            <button type="button" class="btn ghost" id="p-archive">Archive ${inv.archive || 0}</button>
+            <button type="button" class="btn ghost" id="p-more">Settings / coach</button>
+          </div>
 
-      <details class="study-fold">
-        <summary>Pool inventory (live counts)</summary>
-        ${inventoryTableHtml(inv)}
-      </details>
-      <div id="inline-area" style="margin-top:16px"></div>
-    `;
-    bindBackBar();
-    bindVolButtons(app);
-    app.querySelectorAll("[data-m]").forEach((b) => {
-      b.onclick = () => runMock(b.dataset.m);
+          <p class="muted hub-foot">${rawTotal} loaded · Preferred ${inv.preferred || 0} · أبطال ${inv.abtal || 0}
+            · ${sdleGptButtonHtml("link")}</p>
+        </div>`;
+
+    bindBankQuizButtons(app);
+    bindSdleGptButtons(app, () =>
+      buildSdleGptContext({
+        subject,
+        topic: focusTopic !== "all" ? focusTopic : "",
+      })
+    );
+
+    app.querySelectorAll("[data-open-pool]").forEach((btn) => {
+      btn.onclick = () => {
+        b.step = "count";
+        b.topic = btn.dataset.openPool;
+        renderPractice();
+      };
     });
-    $("#p-cards").onclick = () => openCards("all");
-    $("#practice-to-mcqs") &&
-      ($("#practice-to-mcqs").onclick = () => navigateTo("mcqs", { push: true }));
+    $("#p-mock-50") && ($("#p-mock-50").onclick = () => startQuiz("preferred", 50, "exam", true, 72));
+    $("#p-mock-100") && ($("#p-mock-100").onclick = () => startQuiz("preferred", 100, "exam", true, 72));
+    $("#p-mock-200") && ($("#p-mock-200").onclick = () => startQuiz("preferred", 200, "exam", true, 72));
+    $("#p-cards") && ($("#p-cards").onclick = () => openCards(L.cardDeck || "all"));
+    $("#p-notes") && ($("#p-notes").onclick = () => navigateTo("notes", { push: true }));
+    $("#p-recalls") && ($("#p-recalls").onclick = () => navigateTo("recalls", { push: true }));
+    $("#p-more") && ($("#p-more").onclick = () => navigateTo("more", { push: true }));
+    $("#p-all-bank") &&
+      ($("#p-all-bank").onclick = () => {
+        b.step = "count";
+        b.topic = "all";
+        renderPractice();
+      });
+    $("#p-archive") &&
+      ($("#p-archive").onclick = () => {
+        b.step = "count";
+        b.topic = "archive";
+        renderPractice();
+      });
   }
 
   function exportWrongBook() {
