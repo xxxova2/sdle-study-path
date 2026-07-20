@@ -1231,6 +1231,7 @@
     "practice",
     "mcqs",
     "recalls",
+    "notes",
     "progress",
     "feedback",
     "more",
@@ -1374,6 +1375,7 @@
         <button type="button" data-view="practice" title="Extra practice">Extra</button>
         <button type="button" data-view="mcqs" title="MCQs hub">MCQs</button>
         <button type="button" data-view="recalls" title="Exam recall packs">Recalls</button>
+        <button type="button" data-view="notes" title="Study notes by department">Notes</button>
         <button type="button" data-view="progress" title="Progress">Progress</button>
         <button type="button" data-view="feedback" title="Send feedback — no login">Feedback</button>
         <button type="button" data-view="more" title="Simple mode">Simple</button>`;
@@ -1400,6 +1402,8 @@
     { id: "materials", label: "Materials", pool: "materials", primary: false },
     { id: "always_src", label: "Free points", pool: "always_src", primary: true },
     { id: "saud_delta", label: "Saud delta", pool: "saud_delta", primary: true },
+    { id: "rafi", label: "رفيع المقام", pool: "rafi", primary: true },
+    { id: "abtal_src", label: "أبطال bank", pool: "abtal", primary: true },
     { id: "wrong", label: "Wrong book", pool: "wrong", primary: true },
   ];
 
@@ -1548,6 +1552,7 @@
     else if (state.view === "practice") renderPractice();
     else if (state.view === "mcqs") renderMcqs();
     else if (state.view === "recalls") renderRecalls();
+    else if (state.view === "notes") renderNotes();
     else if (state.view === "progress") renderProgress();
     else if (state.view === "feedback") renderFeedback();
     else if (state.view === "more") renderMore();
@@ -1568,6 +1573,7 @@
             <button type="button" class="btn ghost more-link" data-go="pass">Pass plan</button>
             <button type="button" class="btn ghost more-link" data-go="always">Free points list</button>
             <button type="button" class="btn ghost more-link" data-go="recalls">Recalls (أبطال + رفيع/سعود)</button>
+            <button type="button" class="btn ghost more-link" data-go="notes">Notes by department</button>
           </div>
         </details>
         <details class="more-branch" open>
@@ -3185,6 +3191,108 @@
     return (window.EXAM_PACKS && window.EXAM_PACKS.packs) || [];
   }
 
+  function notesBankMeta() {
+    return window.NOTES_BANK || { notes: [], count: 0, byDepartment: {} };
+  }
+
+  const NOTE_DEPTS = [
+    { id: "all", label: "All" },
+    { id: "operative", label: "Operative" },
+    { id: "fixed", label: "Fixed / implant" },
+    { id: "rpd", label: "Removable" },
+    { id: "endo", label: "Endo" },
+    { id: "perio", label: "Perio" },
+    { id: "oms", label: "OMS / med" },
+    { id: "ortho_pedo", label: "Ortho / Pedo" },
+    { id: "ethics", label: "Ethics / IC" },
+    { id: "mixed", label: "Mixed" },
+  ];
+
+  function renderNotes() {
+    const meta = notesBankMeta();
+    const all = meta.notes || [];
+    const filt = state.notesFilter || { dept: "all", q: "" };
+    let list = all;
+    if (filt.dept && filt.dept !== "all") {
+      list = list.filter((n) => (n.department || "mixed") === filt.dept);
+    }
+    if (filt.q) {
+      const qq = String(filt.q).toLowerCase();
+      list = list.filter((n) => {
+        const blob = [n.text, n.stemPreview, n.sourcePack, n.department].join(" ").toLowerCase();
+        return blob.includes(qq);
+      });
+    }
+    const by = meta.byDepartment || {};
+    const chips = NOTE_DEPTS.map((d) => {
+      const n =
+        d.id === "all" ? all.length : by[d.id] != null ? by[d.id] : all.filter((x) => x.department === d.id).length;
+      const on = (filt.dept || "all") === d.id;
+      return `<button type="button" class="btn sm ${on ? "" : "ghost"}" data-note-dept="${d.id}">${escapeHtml(
+        d.label
+      )} (${n})</button>`;
+    }).join("");
+
+    app.innerHTML = `
+      <h1>Notes</h1>
+      <p class="lead">All extracted study notes by <strong>department</strong>
+        (رفيع · أبطال · MyWay). <b>Total ${all.length}</b>.
+        Not SCFHS official — verify clinically.</p>
+      <p class="muted pack-disclaimer">${escapeHtml(meta.disclaimer || "")}</p>
+      <div class="pack-filter-bar">
+        <input type="search" id="notes-search" class="pack-search" placeholder="Search notes…" value="${escapeHtml(
+          filt.q || ""
+        )}" />
+      </div>
+      <div class="pack-month-row">${chips}</div>
+      <p class="muted">Showing <strong>${list.length}</strong> of ${all.length}</p>
+      <div class="pack-items">
+        ${list
+          .slice(0, state.notesLimit || 200)
+          .map((n) => {
+            return `<article class="pack-item has-notes">
+              <header>
+                <span class="badge blue">${escapeHtml(n.department || "mixed")}</span>
+                <span class="muted">${escapeHtml(n.sourcePack || "")}</span>
+                ${n.stemPreview ? `<span class="muted">${escapeHtml(String(n.stemPreview).slice(0, 80))}</span>` : ""}
+              </header>
+              <p class="pack-stem" style="font-weight:400">${escapeHtml(n.text || "")}</p>
+            </article>`;
+          })
+          .join("")}
+      </div>
+      ${
+        list.length > (state.notesLimit || 200)
+          ? `<p class="muted">Showing ${Math.min(state.notesLimit || 200, list.length)} of <strong>${list.length}</strong> (filter total ${all.length} in bank).
+             <button type="button" class="btn sm" id="notes-more">Load 200 more</button></p>`
+          : ""
+      }
+      ${!list.length ? `<p class="muted">No notes match.</p>` : ""}
+    `;
+    const apply = (patch) => {
+      state.notesFilter = Object.assign({}, state.notesFilter || {}, patch);
+      renderNotes();
+    };
+    app.querySelectorAll("[data-note-dept]").forEach((b) => {
+      b.onclick = () => apply({ dept: b.getAttribute("data-note-dept") });
+    });
+    const search = $("#notes-search");
+    if (search) {
+      let t = null;
+      search.oninput = () => {
+        clearTimeout(t);
+        t = setTimeout(() => apply({ q: search.value.trim() }), 200);
+      };
+    }
+    const more = $("#notes-more");
+    if (more) {
+      more.onclick = () => {
+        state.notesLimit = (state.notesLimit || 200) + 200;
+        renderNotes();
+      };
+    }
+  }
+
   function renderRecalls() {
     const packs = examPacksMeta()
       .slice()
@@ -3347,13 +3455,15 @@
     const invAbtal = poolN("abtal");
     const invSaud = poolN("saud_delta");
     const invStream = poolN("stream");
+    const invRafi = poolN("rafi");
     app.innerHTML = `
       <h1>Recalls · exam packs</h1>
-      <p class="lead">Recent أبطال windows + <strong>سعود vs رفيع المقام 16/19</strong> turned into browseable stems and one-tap practice.
+      <p class="lead">أبطال windows + <strong>رفيع المقام</strong> + سعود delta. Browse stems; drill bank pools.
         <b>Not official SCFHS keys</b> — community marks can be wrong.</p>
       <div class="volume-grid pack-quick">
-        <button type="button" class="btn success" data-pack-pool="abtal" data-n="${QUIZ_ALL}">أبطال bank ALL (${invAbtal})</button>
-        <button type="button" class="btn" data-pack-pool="saud_delta" data-n="${QUIZ_ALL}">سعود delta ALL (${invSaud})</button>
+        <button type="button" class="btn success" data-pack-pool="rafi" data-n="${QUIZ_ALL}">رفيع ALL (${invRafi})</button>
+        <button type="button" class="btn" data-pack-pool="abtal" data-n="${QUIZ_ALL}">أبطال bank (${invAbtal})</button>
+        <button type="button" class="btn" data-pack-pool="saud_delta" data-n="${QUIZ_ALL}">سعود delta (${invSaud})</button>
         <button type="button" class="btn ghost" data-pack-pool="stream" data-n="${QUIZ_ALL}">Stream (${invStream})</button>
       </div>
       <div class="pack-grid">
@@ -4479,6 +4589,8 @@
     else if (base === "always_src") p = p.filter((q) => q.source === "always");
     else if (base === "saud_delta") p = p.filter((q) => q.source === "saud_delta");
     else if (base === "abtal") p = p.filter((q) => q.source === "abtal");
+    else if (base === "rafi")
+      p = p.filter((q) => String(q.source || "").startsWith("rafi_"));
     else if (base === "stream")
       p = p.filter((q) => String(q.source || "").startsWith("stream"));
     else if (base === "weak") {
@@ -4541,6 +4653,7 @@
       always: poolN("always_src"),
       saud_delta: poolN("saud_delta"),
       abtal: poolN("abtal"),
+      rafi: poolN("rafi"),
       stream: poolN("stream"),
       restorative: poolN("restorative"),
       operative: poolN("operative"),
@@ -4679,6 +4792,7 @@
     if (topic === "always_src") return "Free points";
     if (topic === "saud_delta") return "Saud delta";
     if (topic === "abtal") return "أبطال bank";
+    if (topic === "rafi") return "رفيع المقام";
     if (topic === "stream") return "Stream recalls";
     if (topic === "wrong") return "Wrong book";
     if (topic === "all") return "Full bank";

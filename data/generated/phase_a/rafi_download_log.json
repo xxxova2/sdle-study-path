@@ -1,0 +1,122 @@
+[
+  {
+    "part": 1,
+    "path": "/data/prometric/rafi/rafi_part_01.pdf",
+    "ok_pdf": true,
+    "mb": 1.0
+  },
+  {
+    "part": 2,
+    "path": "/data/prometric/rafi/rafi_part_02.pdf",
+    "ok_pdf": true,
+    "mb": 1.0
+  },
+  {
+    "part": 3,
+    "path": "/data/prometric/rafi/rafi_part_03.pdf",
+    "ok_pdf": true,
+    "mb": 4.3
+  },
+  {
+    "part": 4,
+    "path": "/data/prometric/rafi/rafi_part_04.pdf",
+    "ok_pdf": true,
+    "mb": 3.2
+  },
+  {
+    "part": 5,
+    "path": "/data/prometric/rafi/rafi_part_05.pdf",
+    "ok_pdf": true,
+    "mb": 7.0
+  },
+  {
+    "part": 6,
+    "path": "/data/prometric/rafi/rafi_part_06.pdf",
+    "ok_pdf": true,
+    "mb": 1.6
+  },
+  {
+    "part": 7,
+    "path": "/data/prometric/rafi/rafi_part_07.pdf",
+    "ok_pdf": true,
+    "mb": 3.3
+  },
+  {
+    "part": 8,
+    "path": "/data/prometric/rafi/rafi_part_08.pdf",
+    "ok_pdf": true,
+    "mb": 1.9
+  },
+  {
+    "part": 9,
+    "path": "/data/prometric/rafi/rafi_part_09.pdf",
+    "ok_pdf": true,
+    "mb": 1.2
+  },
+  {
+    "part": 10,
+    "path": "/data/prometric/rafi/rafi_part_10.pdf",
+    "ok_pdf": true,
+    "mb": 34.3
+  },
+  {
+    "part": 11,
+    "path": "/data/prometric/rafi/rafi_part_11.pdf",
+    "ok_pdf": true,
+    "mb": 27.2
+  },
+  {
+    "part": 12,
+    "path": "/data/prometric/rafi/rafi_part_12.pdf",
+    "ok_pdf": true,
+    "mb": 36.6
+  },
+  {
+    "part": 13,
+    "path": "/data/prometric/rafi/rafi_part_13.pdf",
+    "ok_pdf": true,
+    "mb": 49.5
+  },
+  {
+    "part": 14,
+    "path": "/data/prometric/rafi/rafi_part_14.pdf",
+    "ok_pdf": true,
+    "mb": 82.4
+  },
+  {
+    "part": 15,
+    "path": "/data/prometric/rafi/rafi_part_15.pdf",
+    "ok_pdf": true,
+    "mb": 71.0
+  },
+  {
+    "part": 16,
+    "path": "/data/prometric/rafi/rafi_part_16.pdf",
+    "ok_pdf": true,
+    "mb": 76.4
+  },
+  {
+    "part": 17,
+    "path": "/data/prometric/rafi/rafi_part_17.pdf",
+    "ok_pdf": true,
+    "mb": 179.9
+  },
+  {
+    "part": 18,
+    "path": "/data/prometric/rafi/rafi_part_18.pdf",
+    "ok_pdf": true,
+    "mb": 151.4
+  },
+  {
+    "part": 19,
+    "path": "/data/prometric/rafi/rafi_part_19.pdf",
+    "ok_pdf": true,
+    "mb": 97.8
+  },
+  {
+    "part": 20,
+    "path": "/data/prometric/rafi/rafi_part_20.pdf",
+    "ok_pdf": true,
+    "mb": 420.3
+  }
+]

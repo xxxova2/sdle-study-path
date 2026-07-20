@@ -1,0 +1,37 @@
+{
+  "before": 2533,
+  "after": 15825,
+  "imported": 13292,
+  "skipped_dup": 205,
+  "skipped_opts": 13777,
+  "by_topic": {
+    "endo": 1756,
+    "restorative": 4588,
+    "perio": 1337,
+    "ortho_pedo": 1294,
+    "ethics": 779,
+    "oms": 3538
+  },
+  "by_source": {
+    "rafi_01": 513,
+    "rafi_02": 761,
+    "rafi_03": 273,
+    "rafi_04": 2136,
+    "rafi_05": 5,
+    "rafi_06": 1342,
+    "rafi_07": 555,
+    "rafi_08": 1410,
+    "rafi_09": 5,
+    "rafi_10": 490,
+    "rafi_11": 460,
+    "rafi_12": 662,
+    "rafi_13": 389,
+    "rafi_14": 729,
+    "rafi_15": 588,
+    "rafi_16": 838,
+    "rafi_17": 876,
+    "rafi_18": 774,
+    "rafi_19": 258,
+    "rafi_20": 228
+  }
+}
