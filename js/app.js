@@ -342,11 +342,46 @@
   /** Plan options with live hours/focus for Day 1 learn (so pickers never look hard-coded). */
   function planOptionsMeta() {
     return [
-      { n: 14, title: "14 days", short: "14d blitz" },
-      { n: 30, title: "30 days", short: "30d spaced" },
-      { n: 45, title: "45 days", short: "45d" },
-      { n: 60, title: "2 months", short: "2 mo" },
-      { n: 90, title: "3 months", short: "3 mo" },
+      {
+        n: 14,
+        title: "14 days",
+        short: "14d",
+        titleAr: "١٤ يوم",
+        timeAr: "أسبوعان",
+        descAr: "مكثّف — ساعات طويلة كل يوم",
+      },
+      {
+        n: 30,
+        title: "30 days",
+        short: "30d",
+        titleAr: "٣٠ يوم",
+        timeAr: "شهر واحد",
+        descAr: "موصى به — تعلّم + تكرار + مراجعة",
+      },
+      {
+        n: 45,
+        title: "45 days",
+        short: "45d",
+        titleAr: "٤٥ يوم",
+        timeAr: "شهر ونصف",
+        descAr: "وتيرة ثابتة — وقت إضافي للمراجعة",
+      },
+      {
+        n: 60,
+        title: "2 months",
+        short: "2 mo",
+        titleAr: "شهران",
+        timeAr: "٦٠ يوم",
+        descAr: "هادئ — تركيز على مواضيع الدرجة العالية",
+      },
+      {
+        n: 90,
+        title: "3 months",
+        short: "3 mo",
+        titleAr: "٣ أشهر",
+        timeAr: "٩٠ يوم",
+        descAr: "مخطط كامل — جلسات أقصر يوميًا",
+      },
     ].map((o) => {
       const learnH =
         typeof window.dayHours === "function" ? window.dayHours(o.n, "learn") : o.n <= 14 ? 8 : 3;
@@ -361,7 +396,8 @@
         learnH,
         focus,
         goal,
-        sub: `~${learnH}h learn days · ${focus} min focus · Day1 goal ~${goal}Q`,
+        sub: `~${learnH}h · ${focus} min · ~${goal}Q`,
+        subAr: `≈${learnH} ساعة/يوم · تركيز ${focus} د · هدف ≈${goal} سؤال`,
         desc:
           o.n === 14
             ? "Full engine days. Same 14 lessons, max hours."
@@ -374,6 +410,15 @@
                   : "Calm full map. Short focus blocks.",
       };
     });
+  }
+
+  /** True when user has explicitly picked exam prep length. */
+  function hasChosenPlan() {
+    /* Old builds set planChosen without a real tap — require explicit pick. */
+    if (store.get("planChosen", false) && !store.get("planPickedExplicit", false)) {
+      store.set("planChosen", false);
+    }
+    return !!store.get("planPickedExplicit", false) || !!store.get("planChosen", false);
   }
 
   /** Live schedule for current calendar day (hours + ordered timed steps). */
@@ -1663,6 +1708,12 @@
   /* ——— RENDER ——— */
   function render() {
     updateTop();
+    /* New user: always ask prep time (Arabic) before any other screen */
+    if (!hasChosenPlan() && state.view !== "quiz" && state.view !== "cards") {
+      state.view = "today";
+      renderToday();
+      return;
+    }
     if (state.view === "today") renderToday();
     else if (state.view === "days") renderDays();
     else if (state.view === "pass") renderPass();
@@ -2051,24 +2102,38 @@
     const planChosen = !!store.get("planChosen", false);
     const repick = !!state._hubRepickPlan;
 
-    /* ——— Page 1: choose plan only (not Day 1 / not 14 forced) ——— */
+    /* ——— Page 1 (new user): ask prep time in Arabic before the plan opens ——— */
     if (!planChosen || repick) {
       const opts = planOptionsMeta();
       const row = opts
         .map((t) => {
-          /* First visit: nothing pre-selected as “yours”. 30 only labeled recommended. */
           const rec = t.n === 30 ? " rec" : "";
           const cur = repick && state.planLength === t.n ? " active" : "";
-          return `<button type="button" class="btn hub-plan-pick${rec}${cur}" data-pick-plan="${t.n}">${escapeHtml(t.title)}${t.n === 30 ? " ★" : ""}</button>`;
+          const badge = t.n === 30 ? `<span class="hub-plan-badge">موصى به · Recommended</span>` : "";
+          return `<button type="button" class="btn hub-plan-pick${rec}${cur}" data-pick-plan="${t.n}">
+            <span class="hub-plan-ar" dir="rtl">${escapeHtml(t.titleAr)} · ${escapeHtml(t.timeAr)}</span>
+            <span class="hub-plan-en">${escapeHtml(t.title)}</span>
+            <span class="hub-plan-meta" dir="rtl">${escapeHtml(t.descAr)}</span>
+            <span class="hub-plan-meta muted">${escapeHtml(t.subAr || t.sub)}</span>
+            ${badge}
+          </button>`;
         })
         .join("");
 
       app.innerHTML = `
-        <div class="today-hub hub-setup">
-          <h1 class="hub-title">${repick ? "Change plan" : "Choose your plan"}</h1>
-          <p class="hub-sub">Same 14 topics either way. Pick how many days to study.</p>
-          <div class="hub-plan-picks" role="group" aria-label="Plan length">${row}</div>
-          ${repick ? `<button type="button" class="btn ghost" id="hub-pace-cancel">Cancel</button>` : ""}
+        <div class="today-hub hub-setup" dir="rtl" lang="ar">
+          <p class="hub-kicker">مسار SDLE · خطة المذاكرة</p>
+          <h1 class="hub-title">${repick ? "تغيير مدة التحضير" : "كم مدة تحضيرك للامتحان؟"}</h1>
+          <p class="hub-sub">
+            اختر الوقت المتبقي قبل الامتحان — نضبط لك <b>خطة الأيام</b> وساعات اليوم وهدف الأسئلة.
+            <br /><span class="muted" dir="ltr" lang="en">Same 14 topics · only pace &amp; daily hours change.</span>
+          </p>
+          <div class="hub-plan-picks" role="group" aria-label="مدة التحضير للامتحان">${row}</div>
+          ${
+            repick
+              ? `<button type="button" class="btn ghost" id="hub-pace-cancel">إلغاء · Cancel</button>`
+              : `<p class="hub-setup-foot muted">اضغط خيارًا واحدًا للمتابعة · Tap one option to continue</p>`
+          }
         </div>`;
 
       app.querySelectorAll("[data-pick-plan]").forEach((b) => {
