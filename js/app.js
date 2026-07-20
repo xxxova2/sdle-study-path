@@ -3949,12 +3949,19 @@
     const nAlways = poolN("always_src");
     const acRules = window.ALWAYS_COMES_READ || [];
 
-    /* Default selected bank per pane */
-    /* Exactly 9 banks → 3×3 grid */
+    /*
+     * 3-column grid (not a side list). Was cut to 9 cells earlier — that hid
+     * رفيع / All MCQs; put sources back first, then subjects.
+     */
     const mcqBanks = [
       { pool: todayPool, label: "Today", today: true },
-      { pool: "always_src", label: "اسئلة مكررة" },
       { pool: "abtal", label: "أبطال الديجيتال" },
+      { pool: "rafi", label: "رفيع المقام" },
+      { pool: "rafi_core", label: "رفيع 11–19" },
+      { pool: "all", label: "All MCQs" },
+      { pool: "preferred", label: "Preferred" },
+      { pool: "always_src", label: "اسئلة مكررة" },
+      { pool: "wrong", label: "Wrong book" },
       ...SUBJECTS.map((s) => ({
         pool: poolKey(s.id),
         label: s.label,
@@ -3964,11 +3971,12 @@
     const mockBanks = [
       { pool: todayPool, label: "Today", today: true },
       { pool: "abtal", label: "أبطال الديجيتال" },
+      { pool: "rafi", label: "رفيع المقام" },
+      { pool: "all", label: "All MCQs" },
       { pool: "preferred", label: "Preferred" },
       { pool: "always_src", label: "اسئلة مكررة" },
-      { pool: "wrong", label: "Wrong book" },
-      ...SUBJECTS.slice(0, 4).map((s) => ({ pool: poolKey(s.id), label: s.label })),
-    ].slice(0, 9);
+      ...SUBJECTS.map((s) => ({ pool: poolKey(s.id), label: s.label })),
+    ];
 
     if (pane === "mcqs" || pane === "mock") {
       const list = pane === "mock" ? mockBanks : mcqBanks;
