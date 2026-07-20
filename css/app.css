@@ -797,6 +797,55 @@ button:focus-visible,
 .ar-help-body p {
   margin: 0 0 8px;
 }
+.tadarrub-tabs {
+  display: flex;
+  gap: 6px;
+  margin: 0 0 10px;
+  flex-wrap: wrap;
+}
+.tad-tab {
+  flex: 1 1 auto;
+  min-width: 88px;
+  padding: 10px 12px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--bg2);
+  color: inherit;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+.tad-tab.active {
+  border-color: #5b8def;
+  background: rgba(91, 141, 239, 0.18);
+  color: #cfe0ff;
+}
+.simple-day-sync {
+  margin: 0 0 14px;
+  font-size: 0.88rem;
+}
+.note-full {
+  padding: 12px 14px;
+}
+.simple-note-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 6px;
+}
+.note-src {
+  font-size: 0.8rem;
+}
+.note-stem {
+  margin: 0 0 6px;
+  line-height: 1.45;
+}
+.note-body {
+  margin: 0;
+  line-height: 1.5;
+  color: var(--text, inherit);
+}
 .simple-dept-row {
   display: flex;
   flex-wrap: wrap;

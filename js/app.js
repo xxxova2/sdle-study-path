@@ -509,12 +509,30 @@
     if (b) b.onclick = () => goBack();
   }
 
+  function lessonCardDeck(L) {
+    const L0 = L || lesson();
+    const d = (L0 && L0.cardDeck) || "";
+    if (d && d !== "always") return d;
+    const t = String((L0 && L0.quizTopic) || "").split(",")[0].trim();
+    if (t === "operative" || t === "restorative") return "restorative";
+    if (["perio", "endo", "oms", "ethics", "ortho_pedo"].includes(t)) return t;
+    if (t === "pedo" || t === "ortho") return "ortho_pedo";
+    /* Prefer enriched bank, not the old 150-card "always" deck alone */
+    return "all";
+  }
+
   function openCards(deck) {
-    state._cardDeck = deck || "always";
+    state._cardDeck = deck || lessonCardDeck();
     state.cardIx = 0;
+    state._cardPoolKey = ""; /* force reshuffle */
     /* rebuild so wrong-book + notes enrichment stay current */
     window.__FLASHCARDS_ENRICHED = false;
     navigateTo("cards", { push: true });
+  }
+
+  function openPracticePane(pane) {
+    state.practicePane = pane || "mcqs";
+    navigateTo("practice", { push: true });
   }
 
   /** Student pass-readiness (practice ≥80% — not an exam guarantee). */
@@ -1322,8 +1340,8 @@
     "feedback",
     "more",
   ];
-  /** Simple chrome: 4 tabs — Practice is bank hub (أبطال first). Notes is 1st-class. */
-  const SIMPLE_PRIMARY = ["today", "practice", "notes", "progress"];
+  /** Simple chrome: Today · تدرب · Notes · Progress · Feedback */
+  const SIMPLE_PRIMARY = ["today", "practice", "notes", "progress", "feedback"];
   /** Public source repo (docs only — feedback does NOT open GitHub). */
   const REPO_URL = "https://github.com/xxxova2/sdle-study-path";
   /** External ChatGPT custom GPT — academic tutor only (not SCFHS, not clinical care). */
@@ -1450,16 +1468,17 @@
     if (isSimpleMode()) {
       nav.innerHTML = `
         <button type="button" data-view="today" title="Today’s lesson">Today</button>
-        <button type="button" data-view="practice" title="أبطال · رفيع · MCQs">Practice</button>
-        <button type="button" data-view="notes" title="Notes by department">Notes</button>
-        <button type="button" data-view="progress" title="Scores & settings">Progress</button>`;
+        <button type="button" data-view="practice" title="MCQs · Flashcards · Mock">تدرب</button>
+        <button type="button" data-view="notes" title="Review all notes">Notes</button>
+        <button type="button" data-view="progress" title="Scores & settings">Progress</button>
+        <button type="button" data-view="feedback" title="Send feedback">Feedback</button>`;
     } else {
       nav.innerHTML = `
         <button type="button" data-view="today" title="Today">Today</button>
         <button type="button" data-view="days" title="All days">Days</button>
         <button type="button" data-view="pass" title="Pass plan">Pass</button>
         <button type="button" data-view="always" title="Always-comes free points">Always</button>
-        <button type="button" data-view="practice" title="Practice banks">Practice</button>
+        <button type="button" data-view="practice" title="تدرب">تدرب</button>
         <button type="button" data-view="mcqs" title="MCQs hub">MCQs</button>
         <button type="button" data-view="recalls" title="Exam recall packs">Recalls</button>
         <button type="button" data-view="notes" title="Study notes by department">Notes</button>
@@ -1505,8 +1524,9 @@
     let navView = TAB_VIEWS.includes(view) ? view : "today";
     if (isSimpleMode() && !SIMPLE_PRIMARY.includes(navView)) {
       /* secondary screens: highlight closest primary tab */
-      if (navView === "mcqs" || navView === "recalls" || navView === "always") navView = "practice";
-      else if (navView === "feedback" || navView === "more") navView = "progress";
+      if (navView === "mcqs" || navView === "recalls" || navView === "always" || navView === "cards" || navView === "quiz")
+        navView = "practice";
+      else if (navView === "more") navView = "progress";
       else if (navView === "days" || navView === "pass") navView = "today";
       else navView = "practice";
     }
@@ -2091,9 +2111,10 @@
 
         <div class="hub-actions" role="group" aria-label="Start studying">
           <button type="button" class="btn success path-primary hub-primary" id="hub-read">Start today’s lesson</button>
-          <button type="button" class="btn ghost hub-secondary" id="hub-practice">Practice questions</button>
+          <button type="button" class="btn ghost hub-secondary" id="hub-practice">تدرب · MCQs (today’s subject)</button>
           ${vidN ? `<button type="button" class="btn ghost hub-secondary" id="hub-videos">Watch videos (${vidN})</button>` : ""}
-          <button type="button" class="btn ghost hub-secondary" id="hub-cards">Flashcards</button>
+          <button type="button" class="btn ghost hub-secondary" id="hub-cards">تدرب · Flashcards</button>
+          <button type="button" class="btn ghost hub-secondary" id="hub-mock">تدرب · Mock (72s/Q)</button>
         </div>
 
         <div class="hub-progress">
@@ -2124,7 +2145,7 @@
         renderToday();
       });
     $("#hub-practice") &&
-      ($("#hub-practice").onclick = () => goPracticeBuilder());
+      ($("#hub-practice").onclick = () => openPracticePane("mcqs"));
     bindSdleGptButtons(app, () =>
       buildSdleGptContext({
         subject: humanLessonTitle(L),
@@ -2138,7 +2159,9 @@
         renderToday();
       });
     $("#hub-cards") &&
-      ($("#hub-cards").onclick = () => openCards(L.cardDeck || "always"));
+      ($("#hub-cards").onclick = () => openPracticePane("cards"));
+    $("#hub-mock") &&
+      ($("#hub-mock").onclick = () => openPracticePane("mock"));
     $("#hub-change-pace") &&
       ($("#hub-change-pace").onclick = () => {
         state._hubRepickPlan = true;
@@ -3309,17 +3332,36 @@
   function renderNotes() {
     const meta = notesBankMeta();
     const all = meta.notes || [];
-    const filt = state.notesFilter || { dept: "all", q: "" };
+    const L = lesson();
+    const focusTopic = String(L.quizTopic || "").split(",")[0].trim();
+    const defaultDept =
+      focusTopic === "operative" || focusTopic === "restorative"
+        ? "operative"
+        : ["perio", "endo", "oms", "ortho_pedo", "ethics", "fixed", "rpd"].includes(focusTopic)
+          ? focusTopic
+          : "all";
+    if (!state.notesFilter) state.notesFilter = { dept: defaultDept, q: "" };
+    const filt = state.notesFilter;
     let list = all;
     if (filt.dept && filt.dept !== "all") {
-      list = list.filter((n) => (n.department || "mixed") === filt.dept);
+      if (filt.dept === "restorative") {
+        list = list.filter((n) =>
+          ["operative", "fixed", "rpd", "restorative"].includes(n.department || "")
+        );
+      } else {
+        list = list.filter((n) => (n.department || "mixed") === filt.dept);
+      }
     }
     if (filt.q) {
       const qq = String(filt.q).toLowerCase();
-      list = list.filter((n) => String(n.text || "").toLowerCase().includes(qq));
+      list = list.filter(
+        (n) =>
+          String(n.text || "").toLowerCase().includes(qq) ||
+          String(n.stemPreview || "").toLowerCase().includes(qq) ||
+          String(n.sourcePack || "").toLowerCase().includes(qq)
+      );
     }
     const by = meta.byDepartment || {};
-    /* Few departments only — same as Practice */
     const SIMPLE_NOTE_DEPTS = [
       { id: "all", label: "All" },
       { id: "operative", label: "Operative" },
@@ -3330,14 +3372,26 @@
       { id: "oms", label: "OMS" },
       { id: "ortho_pedo", label: "Ortho/Pedo" },
       { id: "ethics", label: "Ethics" },
+      { id: "mixed", label: "Mixed" },
     ];
-    const limit = state.notesLimit || 40;
+    const limit = state.notesLimit || 50;
     const shown = list.slice(0, limit);
+    const packLabel = (pack) => {
+      const p = String(pack || "");
+      if (/abtal_mar_june/i.test(p)) return "أبطال الديجيتال · Mar–Jun 2026";
+      if (/abtal_dec_feb/i.test(p)) return "أبطال الديجيتال · Dec–Feb 2026";
+      if (/abtal_oct/i.test(p)) return "أبطال الديجيتال · Oct 2025";
+      if (/abtal_sep/i.test(p)) return "أبطال الديجيتال · Sep 2025";
+      if (/abtal/i.test(p)) return "أبطال الديجيتال";
+      if (/rafi|saud/i.test(p)) return p.replace(/_/g, " ");
+      return p || "note";
+    };
 
     app.innerHTML = `
       <div class="simple-hub">
         <h1>Notes</h1>
-        <p class="simple-lead">Short study notes. Pick a subject.</p>
+        <p class="simple-lead">Full notes · stem + answer. Today: <b>${escapeHtml(humanLessonTitle(L))}</b></p>
+        <p class="simple-day-sync muted">Day ${state.day}/${maxDay()} · ${all.length} notes in bank</p>
         <div class="simple-dept-row">
           ${SIMPLE_NOTE_DEPTS.map((d) => {
             const n =
@@ -3347,36 +3401,46 @@
                   ? by[d.id]
                   : all.filter((x) => x.department === d.id).length;
             const on = (filt.dept || "all") === d.id;
-            return `<button type="button" class="btn ${on ? "success" : "ghost"} simple-dept-btn" data-note-dept="${d.id}">${escapeHtml(d.label)}</button>`;
+            return `<button type="button" class="btn ${on ? "success" : "ghost"} simple-dept-btn" data-note-dept="${d.id}">${escapeHtml(d.label)} <span class="badge">${n}</span></button>`;
           }).join("")}
         </div>
-        <input type="search" id="notes-search" class="simple-search" placeholder="Search…" value="${escapeHtml(filt.q || "")}" />
-        <p class="muted simple-count">${shown.length < list.length ? shown.length + " of " : ""}${list.length} notes</p>
+        <input type="search" id="notes-search" class="simple-search" placeholder="Search stem or note…" value="${escapeHtml(filt.q || "")}" />
+        <p class="muted simple-count">${shown.length < list.length ? shown.length + " of " : ""}${list.length}</p>
         <div class="simple-note-list">
           ${
             shown.length
               ? shown
-                  .map(
-                    (n) =>
-                      `<div class="simple-note">
-                        <span class="simple-note-tag">${escapeHtml(n.department || "")}</span>
-                        <p>${escapeHtml(n.text || "")}</p>
-                      </div>`
-                  )
+                  .map((n) => {
+                    const stem = String(n.stemPreview || "").trim();
+                    const text = String(n.text || "").trim();
+                    return `<article class="simple-note note-full">
+                      <div class="simple-note-meta">
+                        <span class="simple-note-tag">${escapeHtml(n.department || "mixed")}</span>
+                        <span class="muted note-src">${escapeHtml(packLabel(n.sourcePack))}</span>
+                      </div>
+                      ${stem ? `<p class="note-stem"><strong>Q:</strong> ${escapeHtml(stem)}</p>` : ""}
+                      <p class="note-body"><strong>Note:</strong> ${escapeHtml(text || "—")}</p>
+                    </article>`;
+                  })
                   .join("")
-              : `<p class="muted">No notes here.</p>`
+              : `<p class="muted">No notes in this filter.</p>`
           }
         </div>
         ${
           list.length > limit
-            ? `<button type="button" class="btn" id="notes-more" style="width:100%;margin-top:12px">Show more</button>`
+            ? `<button type="button" class="btn" id="notes-more" style="width:100%;margin-top:12px">Show more (${list.length - limit} left)</button>`
+            : ""
+        }
+        ${
+          list.length > 0 && limit < list.length
+            ? `<button type="button" class="btn ghost" id="notes-all" style="width:100%;margin-top:8px">Load all ${list.length}</button>`
             : ""
         }
       </div>`;
 
     const apply = (patch) => {
       state.notesFilter = Object.assign({}, state.notesFilter || {}, patch);
-      if (patch.dept) state.notesLimit = 40;
+      if (patch.dept) state.notesLimit = 50;
       renderNotes();
     };
     app.querySelectorAll("[data-note-dept]").forEach((b) => {
@@ -3393,7 +3457,14 @@
     const more = $("#notes-more");
     if (more) {
       more.onclick = () => {
-        state.notesLimit = (state.notesLimit || 40) + 40;
+        state.notesLimit = (state.notesLimit || 50) + 80;
+        renderNotes();
+      };
+    }
+    const loadAll = $("#notes-all");
+    if (loadAll) {
+      loadAll.onclick = () => {
+        state.notesLimit = list.length;
         renderNotes();
       };
     }
@@ -3803,10 +3874,9 @@
   }
 
   function renderPractice() {
-    /* Always use plan banks (preferred) — no scope maze for simple mode */
     setPracticeScope("plan");
     const L = lesson();
-    const focusTopic = L.quizTopic || "restorative";
+    const focusTopic = String(L.quizTopic || "restorative").split(",")[0].trim();
     const focusDept = [
       "restorative",
       "perio",
@@ -3816,25 +3886,34 @@
       "ethics",
       "operative",
     ].includes(focusTopic)
-      ? focusTopic
+      ? focusTopic === "operative"
+        ? "restorative"
+        : focusTopic
       : "restorative";
+    const subjectTitle = humanLessonTitle(L);
+    const pane = state.practicePane || "mcqs";
+    if (!["mcqs", "cards", "mock"].includes(pane)) state.practicePane = "mcqs";
 
     function poolKey(dept) {
       return dept + "@plan";
     }
 
-    /* Each bank: pick how many — never force 50 when the pool is huge */
-    function sizeBtns(pool, n) {
+    function sizeBtns(pool, n, mode) {
       if (n < 1) return `<span class="muted">—</span>`;
-      const opts = [50, 100, 200].filter((k) => k < n);
-      const parts = opts.map(
-        (k) =>
-          `<button type="button" class="btn ghost simple-sz" data-qz="${escapeHtml(pool)}" data-n="${k}">${k}</button>`
-      );
-      parts.push(
-        `<button type="button" class="btn success simple-sz" data-qz="${escapeHtml(pool)}" data-n="${QUIZ_ALL}">All ${n}</button>`
-      );
-      return parts.join("");
+      const isExam = mode === "exam";
+      const sizes = isExam ? [50, 100, 200] : [50, 100, 200];
+      const parts = sizes
+        .filter((k) => k <= n)
+        .map(
+          (k, i, arr) =>
+            `<button type="button" class="btn ${i === arr.length - 1 && isExam ? "success" : "ghost"} simple-sz" data-qz="${escapeHtml(pool)}" data-n="${k}" data-mode="${isExam ? "exam" : "learn"}">${k}</button>`
+        );
+      if (!isExam) {
+        parts.push(
+          `<button type="button" class="btn success simple-sz" data-qz="${escapeHtml(pool)}" data-n="${QUIZ_ALL}" data-mode="learn">All ${n}</button>`
+        );
+      }
+      return parts.join("") || `<span class="muted">${n}</span>`;
     }
 
     function bankRow(opts) {
@@ -3849,73 +3928,49 @@
           ${hint}
           <span class="simple-pool-n">${n} questions</span>
         </div>
-        <div class="simple-sz-row">${sizeBtns(opts.pool, n)}</div>
+        <div class="simple-sz-row">${sizeBtns(opts.pool, n, opts.mode || "learn")}</div>
       </div>`;
     }
 
-    /* Concise MSA — formal study copy, not chatty bilingual filler */
     const SUBJECTS = [
-      {
-        id: "restorative",
-        label: "Restorative",
-        ar: "الترميمي والتعويضات — حشوات، تيجان، جسور، أجهزة جزئية وكاملة، مواد.",
-      },
-      {
-        id: "perio",
-        label: "Periodontics",
-        ar: "أمراض اللثة — التشخيص، العلاج غير الجراحي والجراحي، ما حول الغرسة.",
-      },
-      {
-        id: "endo",
-        label: "Endodontics",
-        ar: "علاج الجذور — الأدوات، التخطيط، المضاعفات، الرضوح اللبية.",
-      },
-      {
-        id: "oms",
-        label: "OMS / Pathology",
-        ar: "جراحة الفم والباثولوجيا — القلع، التخدير، الأكياس والأورام، الأمراض الجهازية.",
-      },
-      {
-        id: "ortho_pedo",
-        label: "Ortho / Pedodontics",
-        ar: "التقويم وطب أسنان الأطفال — تصنيف الإطباق، الأجهزة، الأسنان اللبنية.",
-      },
-      {
-        id: "ethics",
-        label: "Ethics & practice",
-        ar: "الأخلاقيات والممارسة — الموافقة، السرية، مكافحة العدوى.",
-      },
+      { id: "restorative", label: "Restorative", ar: "الترميمي والتعويضات" },
+      { id: "perio", label: "Periodontics", ar: "أمراض اللثة" },
+      { id: "endo", label: "Endodontics", ar: "علاج الجذور" },
+      { id: "oms", label: "OMS / Pathology", ar: "جراحة الفم والباثولوجيا" },
+      { id: "ortho_pedo", label: "Ortho / Pedodontics", ar: "التقويم وطب أسنان الأطفال" },
+      { id: "ethics", label: "Ethics & practice", ar: "الأخلاقيات والممارسة" },
     ];
 
     const cardN = ensureFlashcards().length;
     const nAbtal = poolN("abtal");
+    const todayPool = poolKey(focusDept);
+    const nToday = poolN(todayPool);
 
-    app.innerHTML = `
-      <div class="simple-hub">
-        <h1>Practice</h1>
-        <p class="simple-lead" dir="rtl">اختر المصدر، ثم عدد الأسئلة. <b>All</b> = كامل البنك.</p>
+    const subnav = `
+      <div class="tadarrub-tabs" role="tablist">
+        <button type="button" class="tad-tab${pane === "mcqs" ? " active" : ""}" data-pane="mcqs">MCQs</button>
+        <button type="button" class="tad-tab${pane === "cards" ? " active" : ""}" data-pane="cards">Flashcards</button>
+        <button type="button" class="tad-tab${pane === "mock" ? " active" : ""}" data-pane="mock">Mock exam</button>
+      </div>
+      <p class="simple-day-sync muted">Today · ${escapeHtml(subjectTitle)} · Day ${state.day}/${maxDay()}</p>`;
 
-        <details class="ar-help">
-          <summary dir="rtl">دليل المصادر</summary>
-          <div class="ar-help-body" dir="rtl">
-            <p>المحتوى لأغراض المراجعة فقط، وليس من الهيئة السعودية للتخصصات الصحية (SCFHS).</p>
-            <ul>
-              <li><b>أبطال الديجيتال</b> — تجميع ريكول (سبتمبر 2025 – يونيو 2026). أولوية في خطة المذاكرة.</li>
-              <li><b>حسب التخصص</b> — أسئلة القسم من البنك المفضّل (أبطال + رفيع المقام + محرَّر).</li>
-              <li><b>Wrong book</b> — أسئلتك الخاطئة داخل التطبيق.</li>
-              <li><b>Free points</b> — قواعد قصيرة متكررة في الامتحان.</li>
-              <li><b>Flashcards</b> — بطاقات حفظ؛ تشمل الملاحظات ودفتر الأخطاء (${cardN}).</li>
-            </ul>
-          </div>
-        </details>
+    let body = "";
 
+    if (pane === "mcqs") {
+      body = `
+        <p class="simple-lead">Choose a bank, then how many. <b>All</b> = entire bank.</p>
+        ${bankRow({
+          pool: todayPool,
+          label: "Today’s subject · " + subjectTitle,
+          hint: "متزامن مع درس اليوم · " + nToday + " سؤالاً",
+          today: true,
+        })}
         ${bankRow({
           pool: "abtal",
           label: "أبطال الديجيتال",
-          hint: "تجميع ريكول · سبتمبر 2025 – يونيو 2026 · " + nAbtal + " سؤالاً · مُوصى به أولاً",
+          hint: "ريكول · سبتمبر 2025 – يونيو 2026 · " + nAbtal + " · أولوية",
         })}
-
-        <p class="simple-subhead" dir="rtl">حسب التخصص</p>
+        <p class="simple-subhead">By subject</p>
         <div class="simple-mcq-list">
           ${SUBJECTS.map((s) =>
             bankRow({
@@ -3926,33 +3981,109 @@
             })
           ).join("")}
         </div>
-
-        <p class="simple-subhead" dir="rtl">مراجعتك</p>
+        <p class="simple-subhead">Review</p>
+        <div class="simple-mcq-list">
+          ${bankRow({ pool: "wrong", label: "Wrong book", hint: "أسئلتك الخاطئة" })}
+          ${bankRow({ pool: "always_src", label: "Free points", hint: "قواعد عالية التكرار" })}
+        </div>`;
+    } else if (pane === "cards") {
+      const deck = lessonCardDeck(L);
+      const deckN = cardPoolForDeck(deck).length;
+      const abtalN = cardPoolForDeck("abtal_notes").length;
+      body = `
+        <p class="simple-lead">${cardN} cards loaded (core + notes + wrong book). Not the old 150-only set.</p>
+        <div class="simple-mcq-list">
+          <div class="simple-mcq-card is-today">
+            <div class="simple-mcq-label">
+              <strong>Today’s deck · ${escapeHtml(subjectTitle)}</strong>
+              <span class="simple-hint-ar" dir="rtl">مجموعة درس اليوم</span>
+              <span class="simple-pool-n">${deckN} cards · deck “${escapeHtml(deck)}”</span>
+            </div>
+            <div class="simple-sz-row">
+              <button type="button" class="btn success" id="cards-today">Open</button>
+            </div>
+          </div>
+          <div class="simple-mcq-card">
+            <div class="simple-mcq-label">
+              <strong>أبطال الديجيتال notes</strong>
+              <span class="simple-pool-n">${abtalN} cards</span>
+            </div>
+            <div class="simple-sz-row">
+              <button type="button" class="btn" id="cards-abtal">Open</button>
+            </div>
+          </div>
+          <div class="simple-mcq-card">
+            <div class="simple-mcq-label">
+              <strong>All cards</strong>
+              <span class="simple-pool-n">${cardN} cards</span>
+            </div>
+            <div class="simple-sz-row">
+              <button type="button" class="btn ghost" id="cards-all">Open</button>
+            </div>
+          </div>
+          <div class="simple-mcq-card">
+            <div class="simple-mcq-label">
+              <strong>Wrong book cards</strong>
+              <span class="simple-pool-n">${cardPoolForDeck("wrong").length} cards</span>
+            </div>
+            <div class="simple-sz-row">
+              <button type="button" class="btn ghost" id="cards-wrong">Open</button>
+            </div>
+          </div>
+        </div>`;
+    } else {
+      /* Mock — timed 72 sec per question */
+      body = `
+        <p class="simple-lead">Timed mock · <b>72 seconds per question</b> · exam mode (answers after finish).</p>
         <div class="simple-mcq-list">
           ${bankRow({
-            pool: "wrong",
-            label: "Wrong book",
-            hint: "الأسئلة التي أخطأت فيها — للمراجعة المركّزة.",
+            pool: todayPool,
+            label: "Mock · today’s subject",
+            hint: subjectTitle + " · 72s/Q",
+            today: true,
+            mode: "exam",
           })}
           ${bankRow({
-            pool: "always_src",
-            label: "Free points",
-            hint: "قواعد عالية التكرار — مراجعة سريعة.",
+            pool: "abtal",
+            label: "Mock · أبطال الديجيتال",
+            hint: "72s/Q",
+            mode: "exam",
+          })}
+          ${bankRow({
+            pool: "preferred",
+            label: "Mock · preferred mix",
+            hint: "72s/Q",
+            mode: "exam",
           })}
         </div>
+        <p class="muted" style="margin-top:12px">Pick 50 / 100 / 200. Timer = count × 72s.</p>`;
+    }
 
-        <div class="simple-also" style="margin-top:14px">
-          <button type="button" class="btn warn" id="p-timed">Timed mock · 50</button>
-          <button type="button" class="btn ghost" id="p-cards">Flashcards · ${cardN}</button>
-        </div>
+    app.innerHTML = `
+      <div class="simple-hub">
+        <h1>تدرب</h1>
+        ${subnav}
+        ${body}
       </div>`;
 
-    app.querySelectorAll(".simple-sz[data-qz]").forEach((b) => {
-      b.onclick = () => startQuiz(b.dataset.qz, +b.dataset.n, "learn", false);
+    app.querySelectorAll("[data-pane]").forEach((b) => {
+      b.onclick = () => {
+        state.practicePane = b.getAttribute("data-pane");
+        renderPractice();
+      };
     });
-    $("#p-timed") &&
-      ($("#p-timed").onclick = () => startQuiz(poolKey(focusDept), 50, "exam", true, 72));
-    $("#p-cards") && ($("#p-cards").onclick = () => openCards(L.cardDeck || "all"));
+    app.querySelectorAll(".simple-sz[data-qz]").forEach((b) => {
+      b.onclick = () => {
+        const mode = b.dataset.mode || "learn";
+        const n = +b.dataset.n;
+        if (mode === "exam") startQuiz(b.dataset.qz, n, "exam", true, 72);
+        else startQuiz(b.dataset.qz, n, "learn", false);
+      };
+    });
+    $("#cards-today") && ($("#cards-today").onclick = () => openCards(lessonCardDeck(L)));
+    $("#cards-abtal") && ($("#cards-abtal").onclick = () => openCards("abtal_notes"));
+    $("#cards-all") && ($("#cards-all").onclick = () => openCards("all"));
+    $("#cards-wrong") && ($("#cards-wrong").onclick = () => openCards("wrong"));
   }
 
   function exportWrongBook() {
@@ -5435,20 +5566,26 @@
 
   function renderCardsUI() {
     unbindQuizKeys();
-    const deck = state._cardDeck || "always";
-    let pool = cardPoolForDeck(deck);
+    const deck = state._cardDeck || lessonCardDeck();
+    const total = ensureFlashcards().length;
+    const poolKey = deck + ":" + total + ":" + (state.wrongBook || []).length;
+    if (state._cardPoolKey !== poolKey || !Array.isArray(state._cardPool) || !state._cardPool.length) {
+      state._cardPool = shuffle(cardPoolForDeck(deck));
+      state._cardPoolKey = poolKey;
+      state.cardIx = 0;
+    }
+    let pool = state._cardPool;
     if (!pool.length) {
       app.innerHTML = `
         ${backBarHtml("← Back")}
         <h1>Flashcards</h1>
-        <div class="alert" dir="rtl">لا بطاقات متاحة. أعد تحميل الصفحة (Ctrl+Shift+R).</div>`;
+        <div class="alert">No cards. Hard-refresh (Ctrl+Shift+R). Need notes_bank + highyield.</div>`;
       bindBackBar();
       return;
     }
     if (state.cardIx >= pool.length) state.cardIx = 0;
     const c = pool[state.cardIx];
     const knownN = pool.filter((x) => state.cardKnown[x.id]).length;
-    const total = ensureFlashcards().length;
     const decks = [
       "always",
       "abtal_notes",
