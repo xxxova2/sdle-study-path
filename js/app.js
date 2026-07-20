@@ -3607,6 +3607,8 @@
       rafi_core: "رفيع 11–19",
       rafi_second: "رفيع 7·5·10·9·1·3",
       rafi: "رفيع ALL",
+      rafi_plan: "رفيع plan parts",
+      plan: "Plan banks",
       saud_delta: "Saud delta",
       wrong: "Wrong book",
       always_src: "Free points",
@@ -3626,9 +3628,38 @@
       complete_denture: "Complete denture",
       mixed: "Mixed",
     };
+    const raw = String(topic || "");
+    if (raw.includes("@")) {
+      const [dept, scope] = raw.split("@");
+      return (map[dept] || dept) + " · " + (map[scope] || scope);
+    }
     if (map[topic]) return map[topic];
-    if (String(topic).indexOf("unseen:") === 0) return "Unseen " + (map[topic.slice(7)] || topic.slice(7));
+    if (raw.indexOf("unseen:") === 0) {
+      const rest = raw.slice(7);
+      if (rest.includes("@")) return "Unseen " + practiceTopicLabel(rest);
+      return "Unseen " + (map[rest] || rest);
+    }
     return topic || "Pool";
+  }
+
+  function getPracticeScope() {
+    if (!state.practiceScope) state.practiceScope = "plan";
+    return state.practiceScope;
+  }
+
+  function setPracticeScope(scope) {
+    state.practiceScope = scope || "plan";
+    try {
+      store.set("practiceScope", state.practiceScope);
+    } catch (_) {}
+  }
+
+  /** Restore scope from storage once */
+  function hydratePracticeScope() {
+    if (state._scopeHydrated) return;
+    state._scopeHydrated = true;
+    const s = store.get("practiceScope", null);
+    if (s) state.practiceScope = s;
   }
 
   function ensurePracticeBuild() {
@@ -3678,37 +3709,58 @@
   }
 
   function renderPractice() {
+    hydratePracticeScope();
     const inv = bankInventory();
     const rawTotal = (window.QUESTION_BANK || []).length;
     const L = lesson();
-    const focusTopic = L.quizTopic || "all";
+    const focusTopic = L.quizTopic || "restorative";
     const subject = humanLessonTitle(L);
-    const focusN = poolN(focusTopic);
-
-    /* Clean bank hub — أبطال / رفيع first (no multi-step maze) */
+    const scope = getPracticeScope();
     const b = ensurePracticeBuild();
 
-    /* Optional thin pick-count when user opens a subject or full bank */
+    const DEPTS = [
+      { id: "restorative", title: "Restorative", sub: "Op + fixed + RPD · 40%", star: true },
+      { id: "operative", title: "Operative", sub: "Fillings · caries · materials" },
+      { id: "fixed", title: "Fixed prosth", sub: "Crowns · FPD · impression" },
+      { id: "rpd", title: "RPD", sub: "Partial denture design" },
+      { id: "perio", title: "Periodontics", sub: "18% blueprint", star: true },
+      { id: "endo", title: "Endodontics", sub: "17% blueprint", star: true },
+      { id: "oms", title: "OMS / Path", sub: "15% · surgery · LA · lesions", star: true },
+      { id: "ortho_pedo", title: "Ortho / Pedo", sub: "10% blueprint" },
+      { id: "ethics", title: "Ethics / IC / LA", sub: "Cross-cutting" },
+    ];
+
+    const SCOPE_OPTS = [
+      { id: "plan", label: "Plan banks", tip: "أبطال + preferred رفيع (خطة)" },
+      { id: "abtal", label: "أبطال only", tip: "Highly recommended recalls" },
+      { id: "rafi_core", label: "رفيع 11–19", tip: "First wave · refs" },
+      { id: "rafi_second", label: "رفيع 2nd", tip: "7·5·10·9·1·3" },
+      { id: "rafi_plan", label: "All plan رفيع", tip: "11–19 + second wave" },
+      { id: "all", label: "Full dump", tip: "Entire bank" },
+    ];
+
+    function deptPool(deptId) {
+      return deptId + "@" + scope;
+    }
+
+    /* Pick count for one department (or source dump) */
     if (b.step === "count" && b.topic) {
-        const topic = b.topic;
-        const nPool = poolN(topic);
-        const sizes = [25, 50, 100, 150, 200, 500].filter((n) => n <= nPool);
-        app.innerHTML = `
+      const topic = b.topic;
+      const nPool = poolN(topic);
+      const sizes = [25, 50, 100, 150, 200, 500].filter((n) => n <= nPool);
+      app.innerHTML = `
           <div class="practice-hub">
-            <button type="button" class="btn ghost sm" id="pb-back-hub">← Banks</button>
+            <button type="button" class="btn ghost sm" id="pb-back-hub">← Departments</button>
             <h1>${escapeHtml(practiceTopicLabel(topic))}</h1>
-            <p class="hub-sub">${nPool} questions · pick how many</p>
+            <p class="hub-sub">${nPool} questions in this department · scope: <b>${escapeHtml(practiceTopicLabel(scope))}</b></p>
             <div class="bank-card-actions bank-card-actions-lg">
               ${sizes
-                .map(
-                  (n) =>
-                    `<button type="button" class="btn" data-qz="${escapeHtml(topic)}" data-n="${n}">${n}</button>`
-                )
+                .map((n) => `<button type="button" class="btn" data-qz="${escapeHtml(topic)}" data-n="${n}">${n}</button>`)
                 .join("")}
               ${
                 nPool
                   ? `<button type="button" class="btn success" data-qz="${escapeHtml(topic)}" data-n="${QUIZ_ALL}">All (${nPool})</button>`
-                  : ""
+                  : `<p class="muted">No questions — try another scope (أبطال / رفيع / Full).</p>`
               }
             </div>
             <div class="bank-card-actions" style="margin-top:12px">
@@ -3716,98 +3768,89 @@
               <button type="button" class="btn warn" data-qz-timed="${escapeHtml(topic)}" data-n="100">Timed 100</button>
             </div>
           </div>`;
-        $("#pb-back-hub") &&
-          ($("#pb-back-hub").onclick = () => {
-            resetPracticeBuild();
-            renderPractice();
-          });
-        bindBankQuizButtons(app);
-        app.querySelectorAll("[data-qz-timed]").forEach((btn) => {
-          btn.onclick = () => startQuiz(btn.dataset.qzTimed, +btn.dataset.n, "exam", true, 72);
+      $("#pb-back-hub") &&
+        ($("#pb-back-hub").onclick = () => {
+          resetPracticeBuild();
+          renderPractice();
         });
-        return;
+      bindBankQuizButtons(app);
+      app.querySelectorAll("[data-qz-timed]").forEach((btn) => {
+        btn.onclick = () => startQuiz(btn.dataset.qzTimed, +btn.dataset.n, "exam", true, 72);
+      });
+      return;
     }
+
+    const focusPool = matchesDepartment({ topic: focusTopic, department: focusTopic }, focusTopic)
+      ? deptPool(focusTopic === "all" ? "restorative" : focusTopic)
+      : deptPool("restorative");
+    const focusDept =
+      focusTopic && ["restorative", "perio", "endo", "oms", "ortho_pedo", "ethics", "operative"].includes(focusTopic)
+        ? focusTopic
+        : "restorative";
 
     app.innerHTML = `
         <div class="practice-hub">
-          <h1>Practice</h1>
-          <p class="hub-sub">خطة: <b>أبطال</b> first → <b>رفيع 11–19</b> → <b>7·5·10·9·1·3</b>.
-            Today: <b>${escapeHtml(subject)}</b>${focusTopic !== "all" ? ` (${focusN})` : ""}.</p>
+          <h1>Practice · by department</h1>
+          <p class="hub-sub">خطة المذاكرة: study <b>one department across all files</b>
+            (endo in every رفيع/أبطال → then resto…), not one PDF at a time.
+            Today’s focus: <b>${escapeHtml(subject)}</b>.</p>
 
-          <h2 class="section-label practice-sec">★ Highly recommended</h2>
+          <h2 class="section-label practice-sec">1 · Which files? (source scope)</h2>
+          <div class="scope-chip-row" role="group" aria-label="Source scope">
+            ${SCOPE_OPTS.map(
+              (s) =>
+                `<button type="button" class="btn scope-chip ${s.id === scope ? "success" : "ghost"}" data-scope="${s.id}" title="${escapeHtml(s.tip)}">${escapeHtml(s.label)}</button>`
+            ).join("")}
+          </div>
+          <p class="muted scope-hint">${escapeHtml((SCOPE_OPTS.find((s) => s.id === scope) || {}).tip || "")}
+            · counts below update with this scope</p>
+
+          <h2 class="section-label practice-sec">2 · Department (drill this subject fully)</h2>
           <div class="bank-hub-grid">
-            ${bankCardHtml({
-              pool: "abtal",
-              title: "أبطال الديجيتال",
-              sub: "Recalls — drill these hard",
-              star: true,
-            })}
-            ${bankCardHtml({
-              pool: "rafi_core",
-              title: "رفيع 11–19",
-              sub: "Start here (most have refs)",
-              star: true,
-            })}
-            ${bankCardHtml({
-              pool: "rafi_second",
-              title: "رفيع 7 · 5 · 10 · 9 · 1 · 3",
-              sub: "Second wave in the plan",
-            })}
-            ${bankCardHtml({
-              pool: "preferred",
-              title: "Preferred mix",
-              sub: "أبطال + curated + core رفيع",
-            })}
+            ${DEPTS.map((d) => {
+              const poolKey = deptPool(d.id);
+              const n = poolN(poolKey);
+              const today = d.id === focusDept ? " bank-card-today" : "";
+              return `<article class="bank-card${d.star ? " bank-card-star" : ""}${today}">
+                <div class="bank-card-top">
+                  <div>
+                    <h3 class="bank-card-title">${d.star ? "★ " : ""}${escapeHtml(d.title)}</h3>
+                    <p class="bank-card-sub">${escapeHtml(d.sub)}${d.id === focusDept ? " · today’s focus" : ""}</p>
+                  </div>
+                  <span class="badge ${d.star ? "warn" : "blue"}">${n}</span>
+                </div>
+                <div class="bank-card-actions">
+                  <button type="button" class="btn ${d.star ? "success" : "ghost"}" data-qz="${escapeHtml(poolKey)}" data-n="50" ${n < 1 ? "disabled" : ""}>50</button>
+                  <button type="button" class="btn ghost" data-qz="${escapeHtml(poolKey)}" data-n="100" ${n < 1 ? "disabled" : ""}>100</button>
+                  <button type="button" class="btn ${d.star ? "success" : ""}" data-qz="${escapeHtml(poolKey)}" data-n="${QUIZ_ALL}" ${n < 1 ? "disabled" : ""}>All</button>
+                  <button type="button" class="btn ghost sm" data-open-pool="${escapeHtml(poolKey)}">More…</button>
+                </div>
+              </article>`;
+            }).join("")}
           </div>
 
-          <h2 class="section-label practice-sec">Also useful</h2>
+          <h2 class="section-label practice-sec">3 · Whole source (mixed departments)</h2>
           <div class="bank-hub-grid bank-hub-grid-sm">
+            ${bankCardHtml({ pool: "abtal", title: "أبطال ★ all depts", sub: "Mixed bag — prefer dept cards above", star: true })}
+            ${bankCardHtml({ pool: "rafi_core", title: "رفيع 11–19 all depts", sub: "Then filter by dept above" })}
+            ${bankCardHtml({ pool: "preferred", title: "Preferred mix", sub: "All depts · plan quality" })}
             ${bankCardHtml({ pool: "always_src", title: "Free points", sub: "Always-comes" })}
             ${bankCardHtml({ pool: "saud_delta", title: "Saud delta", sub: "New vs رفيع 16/19" })}
-            ${bankCardHtml({
-              pool: "wrong",
-              title: "Wrong book",
-              sub: inv.wrong ? "Review misses" : "Empty until you miss Qs",
-            })}
-            ${bankCardHtml({
-              pool: focusTopic,
-              title: "Today’s subject",
-              sub: subject,
-            })}
+            ${bankCardHtml({ pool: "wrong", title: "Wrong book", sub: inv.wrong ? "Your misses" : "Empty for now" })}
           </div>
 
-          <h2 class="section-label practice-sec">By subject (SDLE blueprint)</h2>
-          <div class="subject-chip-row">
-            ${[
-              ["restorative", "Resto 40%"],
-              ["operative", "Operative"],
-              ["perio", "Perio 18%"],
-              ["endo", "Endo 17%"],
-              ["oms", "OMS 15%"],
-              ["ortho_pedo", "Ortho/Pedo 10%"],
-              ["ethics", "Ethics"],
-            ]
-              .map(([t, lab]) => {
-                const n = poolN(t);
-                return `<button type="button" class="btn ghost subject-chip" data-open-pool="${t}" ${n < 1 ? "disabled" : ""}>${escapeHtml(lab)} <span class="chip-n">${n}</span></button>`;
-              })
-              .join("")}
-          </div>
-
-          <h2 class="section-label practice-sec">Quick actions</h2>
+          <h2 class="section-label practice-sec">Quick</h2>
           <div class="bank-card-actions bank-card-actions-wrap">
-            <button type="button" class="btn warn" id="p-mock-50">Timed mock 50</button>
-            <button type="button" class="btn warn" id="p-mock-100">Timed mock 100</button>
-            <button type="button" class="btn warn" id="p-mock-200">Full mock 200</button>
+            <button type="button" class="btn success" id="p-today-dept">Today’s dept 50</button>
+            <button type="button" class="btn warn" id="p-mock-50">Timed 50</button>
+            <button type="button" class="btn warn" id="p-mock-100">Timed 100</button>
+            <button type="button" class="btn warn" id="p-mock-200">Mock 200</button>
             <button type="button" class="btn" id="p-cards">Flashcards</button>
-            <button type="button" class="btn ghost" id="p-notes">Notes</button>
-            <button type="button" class="btn ghost" id="p-recalls">Recall packs</button>
-            <button type="button" class="btn ghost" id="p-all-bank">Full bank ${inv.all}</button>
-            <button type="button" class="btn ghost" id="p-archive">Archive ${inv.archive || 0}</button>
-            <button type="button" class="btn ghost" id="p-more">Settings / coach</button>
+            <button type="button" class="btn ghost" id="p-notes">Notes by dept</button>
+            <button type="button" class="btn ghost" id="p-more">Settings</button>
           </div>
 
-          <p class="muted hub-foot">${rawTotal} loaded · Preferred ${inv.preferred || 0} · أبطال ${inv.abtal || 0}
+          <p class="muted hub-foot">Scope <b>${escapeHtml(scope)}</b> · loaded ${rawTotal} · أبطال ${inv.abtal || 0}
             · ${sdleGptButtonHtml("link")}</p>
         </div>`;
 
@@ -3815,10 +3858,16 @@
     bindSdleGptButtons(app, () =>
       buildSdleGptContext({
         subject,
-        topic: focusTopic !== "all" ? focusTopic : "",
+        topic: focusDept,
       })
     );
 
+    app.querySelectorAll("[data-scope]").forEach((btn) => {
+      btn.onclick = () => {
+        setPracticeScope(btn.dataset.scope);
+        renderPractice();
+      };
+    });
     app.querySelectorAll("[data-open-pool]").forEach((btn) => {
       btn.onclick = () => {
         b.step = "count";
@@ -3826,25 +3875,14 @@
         renderPractice();
       };
     });
-    $("#p-mock-50") && ($("#p-mock-50").onclick = () => startQuiz("preferred", 50, "exam", true, 72));
+    $("#p-today-dept") &&
+      ($("#p-today-dept").onclick = () => startQuiz(deptPool(focusDept), 50, "learn", false));
+    $("#p-mock-50") && ($("#p-mock-50").onclick = () => startQuiz(deptPool(focusDept), 50, "exam", true, 72));
     $("#p-mock-100") && ($("#p-mock-100").onclick = () => startQuiz("preferred", 100, "exam", true, 72));
     $("#p-mock-200") && ($("#p-mock-200").onclick = () => startQuiz("preferred", 200, "exam", true, 72));
     $("#p-cards") && ($("#p-cards").onclick = () => openCards(L.cardDeck || "all"));
     $("#p-notes") && ($("#p-notes").onclick = () => navigateTo("notes", { push: true }));
-    $("#p-recalls") && ($("#p-recalls").onclick = () => navigateTo("recalls", { push: true }));
     $("#p-more") && ($("#p-more").onclick = () => navigateTo("more", { push: true }));
-    $("#p-all-bank") &&
-      ($("#p-all-bank").onclick = () => {
-        b.step = "count";
-        b.topic = "all";
-        renderPractice();
-      });
-    $("#p-archive") &&
-      ($("#p-archive").onclick = () => {
-        b.step = "count";
-        b.topic = "archive";
-        renderPractice();
-      });
   }
 
   function exportWrongBook() {
@@ -4554,22 +4592,118 @@
     return `Seen ${seenN} · Unseen ${unseenN} · Weak focus: ${ranks.join(" · ") || weakKeys.join(", ")}`;
   }
 
-  /** "unseen" | "unseen:operative" | "unseen:restorative" → base pool + unseen filter */
+  /** "unseen" | "unseen:operative" | "dept@scope" (plan: endo across all rafi/abtal) */
   function unseenTopic(base) {
     const b = !base || base === "all" || base === "unseen" || base === "weak" || base === "wrong" ? "all" : base;
     return b === "all" ? "unseen" : "unseen:" + b;
   }
 
+  /**
+   * Pool keys:
+   *   endo | restorative | …
+   *   endo@plan | endo@abtal | endo@rafi_core | endo@rafi_second | endo@rafi_plan | endo@all
+   * Scope = which files; dept = subject (خطة: department across files, not file-by-file).
+   */
   function parsePoolTopic(topic) {
     const raw = String(topic == null ? "all" : topic);
-    if (raw === "unseen") return { base: "all", unseenOnly: true };
-    if (raw.startsWith("unseen:")) return { base: raw.slice(7) || "all", unseenOnly: true };
-    return { base: raw, unseenOnly: false };
+    if (raw === "unseen") return { base: "all", sourceScope: null, unseenOnly: true };
+    if (raw.startsWith("unseen:")) {
+      const rest = raw.slice(7) || "all";
+      if (rest.includes("@")) {
+        const [dept, scope] = rest.split("@");
+        return { base: dept || "all", sourceScope: scope || "plan", unseenOnly: true };
+      }
+      return { base: rest, sourceScope: null, unseenOnly: true };
+    }
+    if (raw.includes("@")) {
+      const [dept, scope] = raw.split("@");
+      return { base: dept || "all", sourceScope: scope || "plan", unseenOnly: false };
+    }
+    return { base: raw, sourceScope: null, unseenOnly: false };
+  }
+
+  /** Blueprint department from topic + department + subtopics (رفيع tags both). */
+  function matchesDepartment(q, dept) {
+    if (!dept || dept === "all") return true;
+    const d = String((q && q.department) || "").toLowerCase();
+    const t = String((q && q.topic) || "").toLowerCase();
+    const st = (q && q.subtopics) || [];
+    const has = (s) => st.includes(s);
+
+    if (dept === "endo") return t === "endo" || d === "endo";
+    if (dept === "perio") return t === "perio" || d === "perio";
+    if (dept === "oms") return t === "oms" || d === "oms";
+    if (dept === "ortho_pedo") return t === "ortho_pedo" || d === "ortho_pedo";
+    if (dept === "ethics") return t === "ethics" || d === "ethics";
+    if (dept === "mixed") return t === "mixed" || d === "mixed";
+    if (dept === "operative") {
+      if (d === "operative" || has("operative")) return true;
+      if (String((q && q.source) || "") === "premium_operative") return true;
+      if (t === "restorative" && !has("fixed") && !has("rpd") && !has("implant") && d !== "fixed" && d !== "rpd") {
+        /* bare restorative without prostho tags — count as operative-ish only if no prostho dept */
+        return d === "" || d === "operative" || has("restorative_general") || has("materials") || has("isolation");
+      }
+      return false;
+    }
+    if (dept === "fixed") return d === "fixed" || has("fixed");
+    if (dept === "rpd") return d === "rpd" || has("rpd");
+    if (dept === "implant") return d === "implant" || has("implant");
+    if (dept === "materials") return has("materials") || d === "materials";
+    if (dept === "complete_denture") return has("complete_denture");
+    if (dept === "restorative") {
+      if (t === "restorative") return true;
+      if (["operative", "fixed", "rpd", "implant"].includes(d)) return true;
+      if (st.some((s) => ["operative", "fixed", "rpd", "implant", "materials", "complete_denture", "restorative_general"].includes(s)))
+        return true;
+      return false;
+    }
+    return t === dept || d === dept;
+  }
+
+  function inSourceScope(q, scope) {
+    if (!scope || scope === "all") return true;
+    if (scope === "plan" || scope === "preferred") return isPreferredMcq(q);
+    if (scope === "abtal") return isAbtalSource(q);
+    if (scope === "rafi_core") {
+      const part = rafiPartNum(q);
+      return part != null && RAFI_CORE_FIRST.has(part);
+    }
+    if (scope === "rafi_second") {
+      const part = rafiPartNum(q);
+      return part != null && RAFI_CORE_SECOND.has(part);
+    }
+    if (scope === "rafi_plan") {
+      /* خطة: 11–19 then 7,5,10,9,1,3 — not 2/4/6/8 */
+      const part = rafiPartNum(q);
+      return part != null && (RAFI_CORE_FIRST.has(part) || RAFI_CORE_SECOND.has(part));
+    }
+    if (scope === "rafi") {
+      return String((q && q.source) || "").startsWith("rafi_") || String((q && q.id) || "").startsWith("rafi_");
+    }
+    if (scope === "archive") return !isPreferredMcq(q);
+    return true;
   }
 
   function pool(topic) {
-    const { base, unseenOnly } = parsePoolTopic(topic);
+    const { base, sourceScope, unseenOnly } = parsePoolTopic(topic);
     let p = allQ();
+
+    /* Source scope first when using dept@scope (department-first plan) */
+    if (sourceScope) {
+      p = p.filter((q) => inSourceScope(q, sourceScope));
+      if (base && base !== "all") {
+        if (base === "operative") {
+          p = p.filter((q) => matchesDepartment(q, "operative"));
+        } else if (SUBTOPIC_KEYS.has(base)) {
+          p = p.filter((q) => matchesDepartment(q, base));
+        } else {
+          p = p.filter((q) => matchesDepartment(q, base));
+        }
+      }
+      if (unseenOnly) p = p.filter((q) => !isSeen(q.id));
+      return p;
+    }
+
     if (base === "wrong") p = state.wrongBook.map((id) => p.find((q) => q.id === id)).filter(Boolean);
     else if (base === "preferred") p = p.filter((q) => isPreferredMcq(q));
     else if (base === "archive") p = p.filter((q) => !isPreferredMcq(q));
@@ -4591,8 +4725,8 @@
     else if (base === "stream")
       p = p.filter((q) => String(q.source || "").startsWith("stream"));
     else if (base === "weak") {
-      const keys = new Set(weakTopicKeys(3));
-      p = p.filter((q) => keys.has(q.topic));
+      const keys = weakTopicKeys(3);
+      p = p.filter((q) => keys.some((k) => matchesDepartment(q, k)));
       const wrongSet = new Set(state.wrongBook || []);
       p = p.slice().sort((a, b) => (wrongSet.has(b.id) ? 1 : 0) - (wrongSet.has(a.id) ? 1 : 0));
     } else if (base === "all" || !base) {
@@ -4608,33 +4742,20 @@
       p = p.filter((q) => {
         if (wantUnseen && isSeen(q.id)) return false;
         const st = q.subtopics || [];
-        const topicOk = !topicSet.size || topicSet.has(q.topic);
-        const subOk = !subSet.size || st.some((s) => subSet.has(s));
+        const topicOk = !topicSet.size || [...topicSet].some((td) => matchesDepartment(q, td));
+        const subOk = !subSet.size || st.some((s) => subSet.has(s)) || [...subSet].some((s) => matchesDepartment(q, s));
         if (topicSet.size && subSet.size) return topicOk && subOk;
-        if (subSet.size) return subOk || (q.topic === "restorative" && subSet.has("operative") && st.includes("operative"));
+        if (subSet.size) return subOk;
         return topicOk;
       });
     } else if (base === "operative") {
-      // Real operative (fillings/caries/isolation/materials) — not ethics/ortho, not prostho multi-tags
-      const prostho = new Set(["fixed", "implant", "rpd", "complete_denture"]);
-      p = p.filter((q) => {
-        const st = q.subtopics || [];
-        if (q.source === "premium_operative") return true;
-        if (q.topic !== "restorative") return false;
-        if (st.some((s) => prostho.has(s))) return false;
-        if (st.includes("operative") || st.includes("restorative_general")) return true;
-        if (st.includes("materials") || st.includes("isolation")) return true;
-        return false;
-      });
+      p = p.filter((q) => matchesDepartment(q, "operative"));
     } else if (SUBTOPIC_KEYS.has(base)) {
-      p = p.filter((q) => (q.subtopics || []).includes(base));
-      // Prefer restorative-tagged items for prostho/materials when pool is large enough.
-      // Never pad with unrelated restorative — keep the label honest (short pool is OK).
-      if (["fixed", "implant", "rpd", "complete_denture", "materials"].includes(base)) {
-        const strict = p.filter((q) => q.topic === "restorative" || (q.subtopics || []).includes(base));
-        if (strict.length >= 15) p = strict;
-      }
-    } else p = p.filter((q) => q.topic === base);
+      p = p.filter((q) => matchesDepartment(q, base));
+    } else {
+      /* Blueprint topics: use department field too (رفيع tagged both) */
+      p = p.filter((q) => matchesDepartment(q, base));
+    }
 
     if (unseenOnly) p = p.filter((q) => !isSeen(q.id));
     return p;

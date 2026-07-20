@@ -659,6 +659,22 @@ button:focus-visible,
   margin-top: 18px;
   font-size: 0.88rem;
 }
+.scope-chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+.scope-chip {
+  font-size: 0.88rem;
+}
+.scope-hint {
+  margin: 0 0 8px;
+  font-size: 0.85rem;
+}
+.bank-card-today {
+  outline: 1px solid rgba(96, 165, 250, 0.45);
+}
 
 .form-switch-grid,
 .ac-rules-grid {
