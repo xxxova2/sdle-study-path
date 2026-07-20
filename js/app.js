@@ -4063,47 +4063,45 @@
       );
     }
 
-    /* Corner search (collapsed by default — not mid-page block) */
+    /* Centered upper search — always visible on MCQs / Mock */
     const sq = state.practiceSearch || "";
     const searchHits = state.searchHitResults || [];
-    const searchOpen = !!state.practiceSearchOpen;
-    const searchCorner = `
-      <div class="search-corner ${searchOpen ? "is-open" : ""}">
-        <button type="button" class="search-corner-btn" id="bank-search-toggle" title="Search bank" aria-expanded="${searchOpen}">
-          ${searchOpen ? "✕" : "⌕"} Search
-          ${searchHits.length ? `<span class="badge">${searchHits.length}</span>` : ""}
-        </button>
-        <div class="search-corner-panel" ${searchOpen ? "" : "hidden"}>
-          <p class="hz-hint">Paste stem · ~${allQ().length} MCQs</p>
-          <textarea id="bank-search-q" class="bank-search-input" rows="3" placeholder="Paste MCQ…">${escapeHtml(sq)}</textarea>
-          <div class="hz-actions bank-search-actions">
-            <button type="button" class="btn success sm" id="bank-search-go">Search</button>
-            <button type="button" class="btn ghost sm" id="bank-search-clear">Clear</button>
-            ${
-              searchHits.length
-                ? `<button type="button" class="btn sm" id="bank-search-drill">Practice ${searchHits.length}</button>`
-                : ""
-            }
-          </div>
-          <div class="bank-search-results">
-            ${
-              state.searchHitRan && !searchHits.length && sq.trim().length >= 3
-                ? `<p class="muted">No match.</p>`
-                : searchHits
-                    .map((h, i) => {
-                      const item = h.q;
-                      const src = item.source || item.topic || "";
-                      const preview = String(item.q || "").slice(0, 140);
-                      return `<button type="button" class="bank-hit" data-hit-ix="${i}">
-                        <span class="bank-hit-meta">${i + 1}. ${escapeHtml(String(src))}</span>
-                        <span class="bank-hit-q">${escapeHtml(preview)}${preview.length >= 140 ? "…" : ""}</span>
-                      </button>`;
-                    })
-                    .join("")
-            }
-          </div>
+    const showSearch = pane === "mcqs" || pane === "mock";
+    const searchTop = showSearch
+      ? `
+      <div class="search-top">
+        <div class="search-top-row">
+          <input type="search" id="bank-search-q" class="bank-search-center" autocomplete="off"
+            placeholder="Search MCQs here · ابحث عن الأسئلة هنا"
+            value="${escapeHtml(sq)}"
+            aria-label="Search MCQs here · ابحث عن الأسئلة هنا" />
+          <button type="button" class="btn success sm" id="bank-search-go">Search · بحث</button>
+          ${sq.trim() ? `<button type="button" class="btn ghost sm" id="bank-search-clear">Clear</button>` : ""}
+          ${
+            searchHits.length
+              ? `<button type="button" class="btn sm" id="bank-search-drill">Practice ${searchHits.length}</button>`
+              : ""
+          }
         </div>
-      </div>`;
+        <div class="bank-search-results">
+          ${
+            state.searchHitRan && !searchHits.length && sq.trim().length >= 3
+              ? `<p class="muted">No match · لا نتائج</p>`
+              : searchHits
+                  .map((h, i) => {
+                    const item = h.q;
+                    const src = item.source || item.topic || "";
+                    const preview = String(item.q || "").slice(0, 140);
+                    return `<button type="button" class="bank-hit" data-hit-ix="${i}">
+                      <span class="bank-hit-meta">${i + 1}. ${escapeHtml(String(src))}</span>
+                      <span class="bank-hit-q">${escapeHtml(preview)}${preview.length >= 140 ? "…" : ""}</span>
+                    </button>`;
+                  })
+                  .join("")
+          }
+        </div>
+      </div>`
+      : "";
 
     let body = "";
 
@@ -4180,8 +4178,8 @@
             <h1>تدرب</h1>
             <p class="simple-day-sync muted">Today · ${escapeHtml(subjectTitle)} · D${state.day}/${maxDay()}</p>
           </div>
-          ${pane === "mcqs" || pane === "mock" ? searchCorner : ""}
         </div>
+        ${searchTop}
         ${subnav}
         ${body}
       </div>`;
@@ -4213,19 +4211,19 @@
       };
     });
     const runBankSearch = () => {
-      const ta = $("#bank-search-q");
-      const raw = ta ? ta.value : "";
+      const inp = $("#bank-search-q");
+      const raw = inp ? inp.value : "";
       state.practiceSearch = raw;
       state.searchHitRan = true;
       const hits = searchQuestionBank(raw, 50);
       state.searchHitResults = hits;
       state.searchHitIds = hits.map((h) => h.q && h.q.id).filter(Boolean);
       renderPractice();
-      const ta2 = $("#bank-search-q");
-      if (ta2) {
-        ta2.focus();
+      const inp2 = $("#bank-search-q");
+      if (inp2) {
+        inp2.focus();
         try {
-          ta2.setSelectionRange(ta2.value.length, ta2.value.length);
+          inp2.setSelectionRange(inp2.value.length, inp2.value.length);
         } catch (_) {}
       }
     };
@@ -4252,10 +4250,10 @@
         startQuiz("search_hits", 1, "learn", false);
       };
     });
-    const searchTa = $("#bank-search-q");
-    if (searchTa) {
-      searchTa.addEventListener("keydown", (e) => {
-        if ((e.ctrlKey || e.metaKey) && e.key === "Enter") {
+    const searchInp = $("#bank-search-q");
+    if (searchInp) {
+      searchInp.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") {
           e.preventDefault();
           runBankSearch();
         }
