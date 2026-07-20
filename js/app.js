@@ -512,6 +512,8 @@
   function openCards(deck) {
     state._cardDeck = deck || "always";
     state.cardIx = 0;
+    /* rebuild so wrong-book + notes enrichment stay current */
+    window.__FLASHCARDS_ENRICHED = false;
     navigateTo("cards", { push: true });
   }
 
@@ -830,19 +832,101 @@
     </div>`;
   }
 
-  /** Ensure flashcards always exist: highyield bank + Always-comes rules as cards */
+  function noteDeptToCardDeck(dept) {
+    const d = String(dept || "mixed");
+    if (d === "fixed" || d === "operative" || d === "rpd") return "restorative";
+    if (d === "ortho_pedo" || d === "ortho" || d === "pedo") return "ortho_pedo";
+    if (["perio", "endo", "oms", "ethics", "restorative"].includes(d)) return d;
+    return "always";
+  }
+
+  /**
+   * Flashcards = static highyield (~150) + always-comes rules + notes_bank stems
+   * + open wrong-book items. Rebuilt once per page load (notes are large).
+   */
   function ensureFlashcards() {
+    if (window.__FLASHCARDS_ENRICHED && Array.isArray(window.FLASHCARDS) && window.FLASHCARDS.length > 200) {
+      return window.FLASHCARDS;
+    }
     let cards = Array.isArray(window.FLASHCARDS) ? window.FLASHCARDS.slice() : [];
     const ids = new Set(cards.map((c) => c && c.id).filter(Boolean));
+
     (window.ALWAYS_COMES_READ || []).forEach((r, i) => {
       if (!r || !r[0]) return;
       const id = "ac_rule_" + (i + 1);
       if (ids.has(id)) return;
       const front = String(r[0]).replace(/^\d+\.\s*/, "").trim();
-      cards.push({ id, deck: "always", front: front || "Always-comes rule", back: String(r[1] || "") });
+      cards.push({
+        id,
+        deck: "always",
+        front: front || "Always-comes rule",
+        back: String(r[1] || ""),
+        src: "always_comes",
+      });
       ids.add(id);
     });
+
+    /* Enrich from NOTES_BANK (أبطال / رفيع extracts) — stem → note */
+    const notes = (window.NOTES_BANK && window.NOTES_BANK.notes) || [];
+    let noteAdded = 0;
+    const NOTE_CAP = 3500;
+    for (let i = 0; i < notes.length && noteAdded < NOTE_CAP; i++) {
+      const n = notes[i];
+      if (!n || !n.id) continue;
+      const front = String(n.stemPreview || "").replace(/\s+/g, " ").trim();
+      const back = String(n.text || "").replace(/\s+/g, " ").trim();
+      if (front.length < 8 || back.length < 10) continue;
+      if (back.length > 400) continue;
+      const id = "note_" + n.id;
+      if (ids.has(id)) continue;
+      const pack = String(n.sourcePack || "");
+      const fromAbtal = /abtal/i.test(pack);
+      cards.push({
+        id,
+        deck: noteDeptToCardDeck(n.department),
+        front,
+        back,
+        src: fromAbtal ? "abtal_note" : pack || "note",
+      });
+      ids.add(id);
+      noteAdded++;
+    }
+
+    /* Live wrong-book → personal cards */
+    try {
+      const wrongIds = state.wrongBook || [];
+      const bank = window.QUESTION_BANK || [];
+      const byId = new Map(bank.map((q) => [q.id, q]));
+      wrongIds.slice(0, 400).forEach((wid) => {
+        const q = byId.get(wid);
+        if (!q || !q.q) return;
+        const id = "wb_" + wid;
+        if (ids.has(id)) return;
+        const ans =
+          q.options && q.answer != null && q.options[q.answer] != null
+            ? String(q.options[q.answer])
+            : "";
+        const exp = q.explanation ? " — " + String(q.explanation) : "";
+        cards.push({
+          id,
+          deck: "wrong",
+          front: String(q.q).slice(0, 320),
+          back: (ans + exp).trim() || "(no answer text)",
+          src: "wrong_book",
+        });
+        ids.add(id);
+      });
+    } catch (_) {
+      /* ignore */
+    }
+
     window.FLASHCARDS = cards;
+    window.__FLASHCARDS_ENRICHED = true;
+    window.__FLASHCARDS_META = {
+      total: cards.length,
+      fromNotes: noteAdded,
+      staticBase: Math.max(0, cards.length - noteAdded - (state.wrongBook || []).length),
+    };
     return cards;
   }
 
@@ -854,6 +938,8 @@
       const unk = cards.filter((c) => c && !state.cardKnown[c.id]);
       return unk.length ? unk : cards.slice();
     }
+    if (d === "wrong") return cards.filter((c) => c.deck === "wrong");
+    if (d === "abtal_notes") return cards.filter((c) => c.src === "abtal_note");
     if (d === "always") return cards.filter((c) => c.deck === "always");
     // Day 9 uses pedo; include ortho cards too
     if (d === "pedo" || d === "ortho" || d === "ortho_pedo") {
@@ -3739,14 +3825,14 @@
 
     /* Each bank: pick how many — never force 50 when the pool is huge */
     function sizeBtns(pool, n) {
-      if (n < 1) return `<span class="muted">0</span>`;
+      if (n < 1) return `<span class="muted">0 أسئلة</span>`;
       const opts = [50, 100, 200].filter((k) => k < n);
       const parts = opts.map(
         (k) =>
           `<button type="button" class="btn ghost simple-sz" data-qz="${escapeHtml(pool)}" data-n="${k}">${k}</button>`
       );
       parts.push(
-        `<button type="button" class="btn success simple-sz" data-qz="${escapeHtml(pool)}" data-n="${QUIZ_ALL}">All ${n}</button>`
+        `<button type="button" class="btn success simple-sz" data-qz="${escapeHtml(pool)}" data-n="${QUIZ_ALL}">الكل · All ${n}</button>`
       );
       return parts.join("");
     }
@@ -3754,39 +3840,90 @@
     function bankRow(opts) {
       const n = poolN(opts.pool);
       const today = opts.today ? " is-today" : "";
-      const hint = opts.hint ? `<span class="muted">${escapeHtml(opts.hint)}</span>` : "";
+      const hint = opts.hint
+        ? `<span class="simple-hint-ar" dir="rtl">${escapeHtml(opts.hint)}</span>`
+        : "";
+      const en = opts.en ? `<span class="muted simple-hint-en">${escapeHtml(opts.en)}</span>` : "";
       return `<div class="simple-mcq-card${today}">
         <div class="simple-mcq-label">
           <strong>${escapeHtml(opts.label)}</strong>
           ${hint}
-          <span class="simple-pool-n">${n} in bank</span>
+          ${en}
+          <span class="simple-pool-n">${n} سؤال متاح · ${n} in bank</span>
         </div>
         <div class="simple-sz-row">${sizeBtns(opts.pool, n)}</div>
       </div>`;
     }
 
     const SUBJECTS = [
-      { id: "restorative", label: "Restorative", ar: "ترميم / تعويضات" },
-      { id: "perio", label: "Perio", ar: "لثة" },
-      { id: "endo", label: "Endo", ar: "علاج جذور" },
-      { id: "oms", label: "OMS / Path", ar: "جراحة وباثو" },
-      { id: "ortho_pedo", label: "Ortho / Pedo", ar: "تقويم وأطفال" },
-      { id: "ethics", label: "Ethics", ar: "أخلاقيات" },
+      {
+        id: "restorative",
+        label: "Restorative · الترميم والتعويضات",
+        ar: "حشوات · تيجان · جسور · أجهزة جزئية/كاملة · مواد. أكبر قسم في الامتحان تقريباً.",
+      },
+      {
+        id: "perio",
+        label: "Perio · اللثة",
+        ar: "تشخيص اللثة · جيوب · زراعة حول الزرعة · علاج غير جراحي/جراحي.",
+      },
+      {
+        id: "endo",
+        label: "Endo · علاج الجذور",
+        ar: "قناة جذر · أدوات · حوادث · رضوض · التهاب حول الذروة.",
+      },
+      {
+        id: "oms",
+        label: "OMS / Path · جراحة وباثولوجي",
+        ar: "قلع · تخدير · أكياس/أورام · أمراض عامة تؤثر على الأسنان · رضوض الوجه.",
+      },
+      {
+        id: "ortho_pedo",
+        label: "Ortho / Pedo · تقويم وأطفال",
+        ar: "تصنيفات العضة · أجهزة · أسنان أولية · سلوك الطفل · وقاية.",
+      },
+      {
+        id: "ethics",
+        label: "Ethics · أخلاقيات وممارسة",
+        ar: "موافقة · سرّية · ضرر/نفع · مكافحة عدوى · أسئلة «نقاط مجانية» أحياناً.",
+      },
     ];
+
+    const cardN = ensureFlashcards().length;
+    const nAbtal = poolN("abtal");
 
     app.innerHTML = `
       <div class="simple-hub">
-        <h1>Practice</h1>
-        <p class="simple-lead">Pick a subject, then how many MCQs. <b>All</b> = every question in that bank (not only 50).</p>
+        <h1>Practice · التدرّب</h1>
+        <p class="simple-lead" dir="rtl">
+          اختر <b>البنك</b> ثم <b>كم سؤال</b> تريد. الأرقام <b>50 / 100 / 200</b> = جلسة قصيرة.
+          زر <b>الكل</b> = كل الأسئلة الموجودة في ذلك البنك (حتى الآلاف) — مو 50 فقط.
+        </p>
+
+        <details class="ar-help" open>
+          <summary dir="rtl">ما هذه البنوك؟ (اضغط للإخفاء/الإظهار)</summary>
+          <div class="ar-help-body" dir="rtl">
+            <p><b>مهم:</b> هذا التطبيق <u>ليس</u> منصة الهيئة الرسمية (SCFHS). الأسئلة من مذكرات وتجميعات مجتمع دراسي للمراجعة — تحقق من الإجابة سريرياً ودراسياً.</p>
+            <ul>
+              <li><b>أبطال الديجيتال</b> = تجميعات ريكول (تذكّر امتحانات) عالية الأولوية في خطتك. الاسم الكامل للملف/المصدر: <b>أبطال الديجيتال</b> — نوافذ: سبتمبر 2025 · أكتوبر 2025 · ديسمبر 2025–فبراير 2026 · مارس–يونيو 2026.</li>
+              <li><b>حسب التخصص (بنك الخطة)</b> = أسئلة ذلك القسم من المجموعة المفضّلة: أبطال + رفيع المقام (الأجزاء المهمة) + أسئلة محرّرة/جودة. الرقم = كم سؤال متاح الآن.</li>
+              <li><b>دفتر الأخطاء Wrong book</b> = فقط الأسئلة التي أخطأت فيها سابقاً داخل التطبيق. كلّما تدرّبت امتلأ.</li>
+              <li><b>نقاط مجانية Free points</b> = قواعد قصيرة تتكرر كثيراً في الامتحان (Always-comes) — سريعة للمراجعة.</li>
+              <li><b>البطاقات Flashcards</b> = وجه/ظهر للحفظ السريع. كانت قديماً ~150 بطاقة ثابتة فقط؛ الآن تُثرى من ملاحظات أبطال/رفيع + أخطائك.</li>
+            </ul>
+            <p class="muted">اختر العدد ثم ابدأ. بعد كل إجابة يظهر الشرح إن وُجد. هدفك العملي غالباً 150–200 سؤال/يوم وليس 20 فقط.</p>
+          </div>
+        </details>
 
         ${bankRow({
           pool: "abtal",
-          label: "أبطال (high yield)",
-          hint: "Recent exam-style bank — recommended first",
-          today: false,
+          label: "أبطال الديجيتال · " + nAbtal + "Q",
+          hint:
+            "الاسم الكامل: أبطال الديجيتال (تجميعات ريكول / تذكّر امتحان). يُنصح به أولاً — أولوية عالية في خطة المذاكرة. ليس ملفاً رسمياً من الهيئة.",
+          en: "Full name: Abtal Al-Digital (recall compilations Sep 2025 → Jun 2026 windows).",
         })}
 
-        <p class="simple-subhead">By subject (plan bank)</p>
+        <p class="simple-subhead" dir="rtl">حسب التخصص — بنك الخطة (مفضّل)</p>
+        <p class="simple-sub-note" dir="rtl">كل صف = قسم امتحان. اختر 50 أو 100 أو 200 أو <b>الكل</b> لكل أسئلة ذلك القسم في البنك المفضّل.</p>
         <div class="simple-mcq-list">
           ${SUBJECTS.map((s) =>
             bankRow({
@@ -3798,24 +3935,26 @@
           ).join("")}
         </div>
 
-        <p class="simple-subhead">Your lists</p>
+        <p class="simple-subhead" dir="rtl">قوائمك الشخصية</p>
         <div class="simple-mcq-list">
           ${bankRow({
             pool: "wrong",
-            label: "Wrong book",
-            hint: "Questions you missed before",
+            label: "Wrong book · دفتر الأخطاء",
+            hint: "أسئلة أخطأت فيها أثناء التدرّب. أعدها حتى تتقنها. إذا كان العدد 0 — ابدأ بأي بنك أولاً.",
           })}
           ${bankRow({
             pool: "always_src",
-            label: "Free points",
-            hint: "Short high-yield / always-tested items",
+            label: "Free points · نقاط مجانية",
+            hint: "قواعد قصيرة ومتكررة (عدوى · أدوية · مسافات زرعات · …). مراجعة سريعة قبل النوم أو قبل الموك.",
           })}
         </div>
 
-        <div class="simple-also" style="margin-top:12px">
-          <button type="button" class="btn warn" id="p-timed">Timed mock · 50 (today subject)</button>
-          <button type="button" class="btn ghost" id="p-cards">Flashcards</button>
+        <p class="simple-subhead" dir="rtl">أدوات أخرى</p>
+        <div class="simple-also">
+          <button type="button" class="btn warn" id="p-timed">موك مؤقّت · Timed 50 (تخصص اليوم)</button>
+          <button type="button" class="btn ghost" id="p-cards">بطاقات · Flashcards (${cardN})</button>
         </div>
+        <p class="simple-sub-note" dir="rtl">البطاقات: ${cardN} بطاقة بعد الإثراء (ملاحظات + قواعد + أخطاء). ليست نفس الـ 150 القديمة فقط.</p>
       </div>`;
 
     app.querySelectorAll(".simple-sz[data-qz]").forEach((b) => {
@@ -3824,10 +3963,6 @@
     $("#p-timed") &&
       ($("#p-timed").onclick = () => startQuiz(poolKey(focusDept), 50, "exam", true, 72));
     $("#p-cards") && ($("#p-cards").onclick = () => openCards(L.cardDeck || "all"));
-    /* silence unused if pool empty paths still render */
-    void nWrong;
-    void nFp;
-    void nAbtal;
   }
 
   function exportWrongBook() {
@@ -4863,7 +4998,7 @@
   function topicLabelOf(topic) {
     if (topic === "always_src") return "Free points";
     if (topic === "saud_delta") return "Saud delta";
-    if (topic === "abtal") return "أبطال bank";
+    if (topic === "abtal") return "أبطال الديجيتال (ريكول)";
     if (topic === "rafi") return "رفيع المقام";
     if (topic === "stream") return "Stream recalls";
     if (topic === "wrong") return "Wrong book";
@@ -5315,38 +5450,82 @@
     if (!pool.length) {
       app.innerHTML = `
         ${backBarHtml("← Back")}
-        <h1>Cards</h1>
-        <div class="alert">No flashcards loaded. Hard-refresh the page (Ctrl+Shift+R). Expected source: data/highyield.js + Always-comes rules.</div>`;
+        <h1>Cards · بطاقات</h1>
+        <div class="alert" dir="rtl">لا توجد بطاقات. حدّث الصفحة بقوة (Ctrl+Shift+R).</div>`;
       bindBackBar();
       return;
     }
     if (state.cardIx >= pool.length) state.cardIx = 0;
     const c = pool[state.cardIx];
     const knownN = pool.filter((x) => state.cardKnown[x.id]).length;
-    const decks = ["always", "restorative", "perio", "endo", "oms", "pedo", "ethics", "unknown", "all"];
+    const total = ensureFlashcards().length;
+    const decks = [
+      "always",
+      "abtal_notes",
+      "restorative",
+      "perio",
+      "endo",
+      "oms",
+      "ortho_pedo",
+      "ethics",
+      "wrong",
+      "unknown",
+      "all",
+    ];
+    const deckAr = {
+      always: "دائماً / قواعد",
+      abtal_notes: "ملاحظات أبطال الديجيتال",
+      restorative: "ترميم",
+      perio: "لثة",
+      endo: "جذور",
+      oms: "جراحة",
+      ortho_pedo: "تقويم/أطفال",
+      ethics: "أخلاقيات",
+      wrong: "أخطاؤك",
+      unknown: "غير معروف لك",
+      all: "الكل",
+    };
+    const srcLabel =
+      c.src === "abtal_note"
+        ? "من ملاحظات أبطال الديجيتال"
+        : c.src === "wrong_book"
+          ? "من دفتر أخطائك"
+          : c.src === "always_comes"
+            ? "قاعدة Always-comes"
+            : c.src && c.src !== "note"
+              ? String(c.src)
+              : "بطاقة أساسية (high-yield)";
     app.innerHTML = `
       ${backBarHtml("← Back")}
-      <h1>Cards <span class="badge">${state.cardIx + 1}/${pool.length}</span>
-        <span class="badge green">${knownN} known in deck</span></h1>
-      <p class="lead">Tap card to show answer. Deck: <b>${escapeHtml(deck)}</b> · total bank ${ensureFlashcards().length}</p>
+      <h1>Cards · بطاقات <span class="badge">${state.cardIx + 1}/${pool.length}</span>
+        <span class="badge green">${knownN} known</span></h1>
+      <details class="ar-help">
+        <summary dir="rtl">لماذا كانت البطاقات «قديمة»؟ وما الجديد؟</summary>
+        <div class="ar-help-body" dir="rtl">
+          <p>سابقاً: ملف ثابت <code>highyield.js</code> فيه نحو <b>150</b> بطاقة إنجليزية قصيرة فقط — لم يُحدَّث مع بنوك أبطال/رفيع.</p>
+          <p>الآن: نفس البطاقات الأساسية + قواعد Always-comes + حتى آلاف البطاقات من <b>ملاحظات أبطال الديجيتال ورفيع</b> (سؤال مختصر → ملاحظة) + بطاقات من <b>دفتر أخطائك</b>.</p>
+          <p>المجموع الحالي: <b>${total}</b> بطاقة. اختر مجموعة بالأسفل (مثلاً ملاحظات أبطال أو أخطاؤك).</p>
+        </div>
+      </details>
+      <p class="lead" dir="rtl">اضغط البطاقة لإظهار الجواب. المجموعة: <b>${escapeHtml(deckAr[deck] || deck)}</b> · الكل ${total}</p>
       <div class="volume-grid" style="margin-bottom:10px">
         ${decks
           .map(
             (d) =>
-              `<button type="button" class="btn sm ${d === deck ? "" : "ghost"} deck-pick" data-deck="${d}">${d} (${cardPoolForDeck(d).length})</button>`
+              `<button type="button" class="btn sm ${d === deck ? "" : "ghost"} deck-pick" data-deck="${d}">${escapeHtml(deckAr[d] || d)} (${cardPoolForDeck(d).length})</button>`
           )
           .join("")}
       </div>
       <div class="card-face" id="flip" tabindex="0">
-        <div class="q-meta">${escapeHtml(c.deck || "card")}</div>
+        <div class="q-meta">${escapeHtml(srcLabel)} · ${escapeHtml(c.deck || "card")}</div>
         <h2 id="cf" style="line-height:1.45">${escapeHtml(c.front)}</h2>
-        <div id="cb" class="explain" hidden><strong>Answer:</strong> ${escapeHtml(c.back)}</div>
+        <div id="cb" class="explain" hidden><strong>Answer / الجواب:</strong> ${escapeHtml(c.back)}</div>
       </div>
       <div class="volume-grid">
-        <button class="btn ghost" id="show">Show answer</button>
-        <button class="btn success" id="know">Know (1)</button>
-        <button class="btn" id="again" style="background:#6b3a3a">Again (2)</button>
-        <button class="btn" id="cnext">Next (N)</button>
+        <button class="btn ghost" id="show">أظهر الجواب · Show</button>
+        <button class="btn success" id="know">أعرفها · Know (1)</button>
+        <button class="btn" id="again" style="background:#6b3a3a">مرة ثانية · Again (2)</button>
+        <button class="btn" id="cnext">التالي · Next (N)</button>
       </div>
       <p class="kb-hint">Keys: <b>Space / Enter</b> flip · <b>1</b> Know · <b>2</b> Again · <b>N</b> Next</p>
     `;

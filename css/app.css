@@ -748,6 +748,55 @@ button:focus-visible,
   flex: 1 1 auto;
   min-width: 120px;
 }
+.simple-hint-ar {
+  display: block;
+  font-size: 0.92rem;
+  line-height: 1.45;
+  color: var(--muted);
+  margin-top: 4px;
+}
+.simple-hint-en {
+  display: block;
+  font-size: 0.8rem;
+  margin-top: 2px;
+}
+.simple-sub-note {
+  margin: -4px 0 10px;
+  font-size: 0.88rem;
+  color: var(--muted);
+  line-height: 1.4;
+}
+.ar-help {
+  margin: 0 0 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: rgba(42, 58, 92, 0.28);
+  padding: 10px 14px;
+}
+.ar-help > summary {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 0.98rem;
+  list-style: none;
+}
+.ar-help > summary::-webkit-details-marker {
+  display: none;
+}
+.ar-help-body {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+.ar-help-body ul {
+  margin: 8px 0;
+  padding-inline-start: 1.25rem;
+}
+.ar-help-body li {
+  margin-bottom: 8px;
+}
+.ar-help-body p {
+  margin: 0 0 8px;
+}
 .simple-dept-row {
   display: flex;
   flex-wrap: wrap;
