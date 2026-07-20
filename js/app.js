@@ -3892,7 +3892,7 @@
       : "restorative";
     const subjectTitle = humanLessonTitle(L);
     const pane = state.practicePane || "mcqs";
-    if (!["mcqs", "cards", "mock"].includes(pane)) state.practicePane = "mcqs";
+    if (!["mcqs", "cards", "mock", "always"].includes(pane)) state.practicePane = "mcqs";
 
     function poolKey(dept) {
       return dept + "@plan";
@@ -3946,9 +3946,13 @@
     const todayPool = poolKey(focusDept);
     const nToday = poolN(todayPool);
 
+    const nAlways = poolN("always_src");
+    const acRules = window.ALWAYS_COMES_READ || [];
+
     const subnav = `
       <div class="tadarrub-tabs" role="tablist">
         <button type="button" class="tad-tab${pane === "mcqs" ? " active" : ""}" data-pane="mcqs">MCQs</button>
+        <button type="button" class="tad-tab${pane === "always" ? " active" : ""}" data-pane="always">Always</button>
         <button type="button" class="tad-tab${pane === "cards" ? " active" : ""}" data-pane="cards">Flashcards</button>
         <button type="button" class="tad-tab${pane === "mock" ? " active" : ""}" data-pane="mock">Mock exam</button>
       </div>
@@ -3956,9 +3960,51 @@
 
     let body = "";
 
-    if (pane === "mcqs") {
+    if (pane === "always") {
+      body = `
+        <p class="simple-lead" dir="rtl"><b>Always-comes · الأسئلة المتكررة</b> — قواعد ونقاط مجانية تتكرر في الامتحان.</p>
+        <p class="muted">${nAlways} free-point MCQs · ${acRules.length} rules</p>
+        <div class="simple-mcq-list">
+          ${bankRow({
+            pool: "always_src",
+            label: "Free points · الأسئلة المتكررة",
+            hint: "MCQs · Always-comes bank",
+            today: true,
+          })}
+        </div>
+        <div class="simple-also" style="margin-top:12px">
+          <button type="button" class="btn" id="ac-open-cards">Always flashcards</button>
+          <button type="button" class="btn ghost" id="ac-full-page">Full Always page</button>
+        </div>
+        <p class="simple-subhead" dir="rtl">القواعد (${acRules.length})</p>
+        <div class="simple-note-list ac-rule-list">
+          ${acRules
+            .slice(0, 40)
+            .map((r, i) => {
+              const front = Array.isArray(r) ? r[0] : r && r.front;
+              const back = Array.isArray(r) ? r[1] : r && r.back;
+              if (!front) return "";
+              return `<article class="simple-note note-full">
+                <p class="note-stem"><strong>${i + 1}.</strong> ${escapeHtml(String(front).replace(/^\d+\.\s*/, ""))}</p>
+                ${back ? `<p class="note-body">${escapeHtml(String(back))}</p>` : ""}
+              </article>`;
+            })
+            .join("")}
+        </div>
+        ${
+          acRules.length > 40
+            ? `<button type="button" class="btn ghost" id="ac-full-page-2" style="width:100%;margin-top:10px">See all ${acRules.length} rules</button>`
+            : ""
+        }`;
+    } else if (pane === "mcqs") {
       body = `
         <p class="simple-lead">Choose a bank, then how many. <b>All</b> = entire bank.</p>
+        ${bankRow({
+          pool: "always_src",
+          label: "Always · الأسئلة المتكررة",
+          hint: "Free points · " + nAlways + " MCQs",
+          today: false,
+        })}
         ${bankRow({
           pool: todayPool,
           label: "Today’s subject · " + subjectTitle,
@@ -3984,7 +4030,6 @@
         <p class="simple-subhead">Review</p>
         <div class="simple-mcq-list">
           ${bankRow({ pool: "wrong", label: "Wrong book", hint: "أسئلتك الخاطئة" })}
-          ${bankRow({ pool: "always_src", label: "Free points", hint: "قواعد عالية التكرار" })}
         </div>`;
     } else if (pane === "cards") {
       const deck = lessonCardDeck(L);
@@ -5677,6 +5722,7 @@
       b.onclick = () => {
         state._cardDeck = b.dataset.deck;
         state.cardIx = 0;
+        state._cardPoolKey = "";
         renderCardsUI();
       };
     });
