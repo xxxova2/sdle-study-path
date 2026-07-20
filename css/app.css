@@ -829,7 +829,7 @@ button:focus-visible,
   margin: 0 0 8px;
   font-size: 0.82rem;
 }
-/* تدرب — banks always in 3×3 grid (not a side list) */
+/* تدرب — banks in 3-col grids, grouped by provider / department */
 .hz-hint {
   margin: 0 0 8px;
   font-size: 0.88rem;
@@ -840,12 +840,35 @@ button:focus-visible,
   flex-direction: column;
   gap: 12px;
 }
+.hz-sort {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 4px;
+}
+.hz-section {
+  margin: 0;
+}
+.hz-sec-title {
+  margin: 0 0 8px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--muted);
+  letter-spacing: 0.02em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 10px;
+  align-items: baseline;
+}
+.hz-sec-title span {
+  color: #cfe0ff;
+}
 .hz-strip {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 8px;
   padding: 0;
-  margin: 0;
+  margin: 0 0 4px;
   width: 100%;
 }
 @media (max-width: 420px) {

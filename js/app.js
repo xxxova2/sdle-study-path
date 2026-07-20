@@ -3943,51 +3943,57 @@
     ];
 
     const cardN = ensureFlashcards().length;
-    const nAbtal = poolN("abtal");
     const todayPool = poolKey(focusDept);
-    const nToday = poolN(todayPool);
     const nAlways = poolN("always_src");
     const acRules = window.ALWAYS_COMES_READ || [];
 
-    /*
-     * 3-column grid (not a side list). Was cut to 9 cells earlier — that hid
-     * رفيع / All MCQs; put sources back first, then subjects.
-     */
-    const mcqBanks = [
-      { pool: todayPool, label: "Today", today: true },
+    /* Grouped banks: providers (أبطال / رفيع / …) then departments */
+    const bankToday = [{ pool: todayPool, label: "Today", today: true }];
+    const bankProviders = [
       { pool: "abtal", label: "أبطال الديجيتال" },
       { pool: "rafi", label: "رفيع المقام" },
       { pool: "rafi_core", label: "رفيع 11–19" },
-      { pool: "all", label: "All MCQs" },
+      { pool: "rafi_second", label: "رفيع 7·5·10…" },
+      { pool: "saud_delta", label: "سعود delta" },
+      { pool: "stream", label: "Stream" },
       { pool: "preferred", label: "Preferred" },
+      { pool: "all", label: "All MCQs" },
+    ];
+    const bankDepts = SUBJECTS.map((s) => ({
+      pool: poolKey(s.id),
+      label: s.label,
+      today: s.id === focusDept,
+    }));
+    /* Department × provider (full dump for that dept from one source) */
+    const bankDeptAbtal = SUBJECTS.map((s) => ({
+      pool: s.id + "@abtal",
+      label: s.label + " · أبطال",
+    }));
+    const bankDeptRafi = SUBJECTS.map((s) => ({
+      pool: s.id + "@rafi",
+      label: s.label + " · رفيع",
+    }));
+    const bankReview = [
       { pool: "always_src", label: "اسئلة مكررة" },
       { pool: "wrong", label: "Wrong book" },
-      ...SUBJECTS.map((s) => ({
-        pool: poolKey(s.id),
-        label: s.label,
-        today: s.id === focusDept,
-      })),
-    ];
-    const mockBanks = [
-      { pool: todayPool, label: "Today", today: true },
-      { pool: "abtal", label: "أبطال الديجيتال" },
-      { pool: "rafi", label: "رفيع المقام" },
-      { pool: "all", label: "All MCQs" },
-      { pool: "preferred", label: "Preferred" },
-      { pool: "always_src", label: "اسئلة مكررة" },
-      ...SUBJECTS.map((s) => ({ pool: poolKey(s.id), label: s.label })),
     ];
 
+    const allBanksFlat = bankToday
+      .concat(bankProviders)
+      .concat(bankDepts)
+      .concat(bankDeptAbtal)
+      .concat(bankDeptRafi)
+      .concat(bankReview);
+
     if (pane === "mcqs" || pane === "mock") {
-      const list = pane === "mock" ? mockBanks : mcqBanks;
-      const valid = list.some((b) => b.pool === state.practiceBank);
-      if (!valid) state.practiceBank = list[0].pool;
+      const valid = allBanksFlat.some((b) => b.pool === state.practiceBank);
+      if (!valid) state.practiceBank = bankToday[0].pool;
     }
     if (pane === "always") state.practiceBank = "always_src";
 
     const selectedPool = state.practiceBank || todayPool;
     const selectedN = poolN(selectedPool);
-    const examMode = pane === "mock";
+    const sortMode = state.practiceSort === "department" ? "department" : "provider";
 
     const subnav = `
       <div class="tadarrub-tabs" role="tablist">
@@ -3999,7 +4005,7 @@
       <p class="simple-day-sync muted">Today · ${escapeHtml(subjectTitle)} · D${state.day}/${maxDay()}</p>`;
 
     function bankStrip(banks) {
-      return `<aside class="hz-strip" role="listbox" aria-label="Banks">
+      return `<div class="hz-strip" role="listbox">
         ${banks
           .map((b) =>
             bankChip({
@@ -4010,20 +4016,23 @@
             })
           )
           .join("")}
-      </aside>`;
+      </div>`;
+    }
+
+    function bankSection(title, titleAr, banks) {
+      if (!banks || !banks.length) return "";
+      return `<section class="hz-section">
+        <h3 class="hz-sec-title"><span dir="rtl">${escapeHtml(titleAr || "")}</span> ${escapeHtml(title)}</h3>
+        ${bankStrip(banks)}
+      </section>`;
     }
 
     function sizeBar(mode) {
-      const label =
-        (pane === "mcqs" || pane === "mock" || pane === "always"
-          ? mcqBanks.concat(mockBanks).find((b) => b.pool === selectedPool)
-          : null) || { label: selectedPool };
+      const found = allBanksFlat.find((b) => b.pool === selectedPool);
       const nice =
         pane === "always" || selectedPool === "always_src"
           ? "اسئلة مكررة"
-          : (mockBanks.find((b) => b.pool === selectedPool) ||
-              mcqBanks.find((b) => b.pool === selectedPool) ||
-              label).label;
+          : (found && found.label) || selectedPool;
       return `<div class="hz-main">
         <div class="hz-size-bar">
           <span class="hz-size-label">${escapeHtml(String(nice))} · ${selectedN} Q</span>
@@ -4032,15 +4041,39 @@
       </div>`;
     }
 
+    function sortToggle() {
+      return `<div class="hz-sort" role="group" aria-label="Sort banks">
+        <button type="button" class="btn sm ${sortMode === "provider" ? "success" : "ghost"}" data-sort="provider">By provider · المصادر</button>
+        <button type="button" class="btn sm ${sortMode === "department" ? "success" : "ghost"}" data-sort="department">By department · التخصص</button>
+      </div>`;
+    }
+
+    function banksBySort() {
+      if (sortMode === "department") {
+        return (
+          bankSection("Today", "اليوم", bankToday) +
+          bankSection("By department", "حسب التخصص", bankDepts) +
+          bankSection("Department · أبطال", "تخصص × أبطال", bankDeptAbtal) +
+          bankSection("Department · رفيع", "تخصص × رفيع", bankDeptRafi) +
+          bankSection("Exam providers", "مصادر الامتحان", bankProviders) +
+          bankSection("Review", "مراجعة", bankReview)
+        );
+      }
+      return (
+        bankSection("Today", "اليوم", bankToday) +
+        bankSection("Exam providers", "مصادر · أبطال · رفيع", bankProviders) +
+        bankSection("By department", "حسب التخصص", bankDepts) +
+        bankSection("Review", "مراجعة", bankReview)
+      );
+    }
+
     let body = "";
 
     if (pane === "always") {
       body = `
         <p class="hz-hint" dir="rtl">اسئلة مكررة · ${nAlways} MCQs · ${acRules.length} rules</p>
         <div class="hz-layout">
-          <div class="hz-strip">
-            ${bankChip({ pool: "always_src", label: "اسئلة مكررة", today: true, selected: true })}
-          </div>
+          ${bankSection("اسئلة مكررة", "", [{ pool: "always_src", label: "اسئلة مكررة", today: true }])}
           <div class="hz-main">
             <div class="hz-size-bar">
               <span class="hz-size-label">اسئلة مكررة · ${nAlways} Q</span>
@@ -4068,7 +4101,8 @@
     } else if (pane === "mcqs") {
       body = `
         <div class="hz-layout">
-          ${bankStrip(mcqBanks)}
+          ${sortToggle()}
+          ${banksBySort()}
           ${sizeBar("learn")}
         </div>`;
     } else if (pane === "cards") {
@@ -4079,22 +4113,33 @@
       const alwaysN = cardPoolForDeck("always").length;
       body = `
         <div class="hz-layout">
-          <div class="hz-strip">
-            <button type="button" class="hz-bank is-today" id="cards-today"><span class="hz-bank-name">Today</span><span class="hz-bank-n">${deckN}</span></button>
-            <button type="button" class="hz-bank" id="cards-abtal"><span class="hz-bank-name">أبطال</span><span class="hz-bank-n">${abtalN}</span></button>
-            <button type="button" class="hz-bank" id="cards-all"><span class="hz-bank-name">All</span><span class="hz-bank-n">${cardN}</span></button>
-            <button type="button" class="hz-bank" id="cards-wrong"><span class="hz-bank-name">Wrong</span><span class="hz-bank-n">${wrongN}</span></button>
-            <button type="button" class="hz-bank" id="cards-always"><span class="hz-bank-name">اسئلة مكررة</span><span class="hz-bank-n">${alwaysN}</span></button>
-            <button type="button" class="hz-bank" id="cards-restorative" data-card-deck="restorative"><span class="hz-bank-name">Restorative</span><span class="hz-bank-n">${cardPoolForDeck("restorative").length}</span></button>
-            <button type="button" class="hz-bank" id="cards-perio" data-card-deck="perio"><span class="hz-bank-name">Perio</span><span class="hz-bank-n">${cardPoolForDeck("perio").length}</span></button>
-            <button type="button" class="hz-bank" id="cards-endo" data-card-deck="endo"><span class="hz-bank-name">Endo</span><span class="hz-bank-n">${cardPoolForDeck("endo").length}</span></button>
-            <button type="button" class="hz-bank" id="cards-oms" data-card-deck="oms"><span class="hz-bank-name">OMS</span><span class="hz-bank-n">${cardPoolForDeck("oms").length}</span></button>
-          </div>
+          <section class="hz-section">
+            <h3 class="hz-sec-title"><span dir="rtl">مصادر</span> Providers</h3>
+            <div class="hz-strip">
+              <button type="button" class="hz-bank is-today" id="cards-today"><span class="hz-bank-name">Today</span><span class="hz-bank-n">${deckN}</span></button>
+              <button type="button" class="hz-bank" id="cards-abtal"><span class="hz-bank-name">أبطال</span><span class="hz-bank-n">${abtalN}</span></button>
+              <button type="button" class="hz-bank" id="cards-always"><span class="hz-bank-name">اسئلة مكررة</span><span class="hz-bank-n">${alwaysN}</span></button>
+              <button type="button" class="hz-bank" id="cards-all"><span class="hz-bank-name">All</span><span class="hz-bank-n">${cardN}</span></button>
+              <button type="button" class="hz-bank" id="cards-wrong"><span class="hz-bank-name">Wrong</span><span class="hz-bank-n">${wrongN}</span></button>
+            </div>
+          </section>
+          <section class="hz-section">
+            <h3 class="hz-sec-title"><span dir="rtl">حسب التخصص</span> Department</h3>
+            <div class="hz-strip">
+              <button type="button" class="hz-bank" data-card-deck="restorative"><span class="hz-bank-name">Restorative</span><span class="hz-bank-n">${cardPoolForDeck("restorative").length}</span></button>
+              <button type="button" class="hz-bank" data-card-deck="perio"><span class="hz-bank-name">Perio</span><span class="hz-bank-n">${cardPoolForDeck("perio").length}</span></button>
+              <button type="button" class="hz-bank" data-card-deck="endo"><span class="hz-bank-name">Endo</span><span class="hz-bank-n">${cardPoolForDeck("endo").length}</span></button>
+              <button type="button" class="hz-bank" data-card-deck="oms"><span class="hz-bank-name">OMS</span><span class="hz-bank-n">${cardPoolForDeck("oms").length}</span></button>
+              <button type="button" class="hz-bank" data-card-deck="ortho_pedo"><span class="hz-bank-name">Ortho/Pedo</span><span class="hz-bank-n">${cardPoolForDeck("ortho_pedo").length}</span></button>
+              <button type="button" class="hz-bank" data-card-deck="ethics"><span class="hz-bank-name">Ethics</span><span class="hz-bank-n">${cardPoolForDeck("ethics").length}</span></button>
+            </div>
+          </section>
         </div>`;
     } else {
       body = `
         <div class="hz-layout">
-          ${bankStrip(mockBanks)}
+          ${sortToggle()}
+          ${banksBySort()}
           ${sizeBar("exam")}
         </div>`;
     }
@@ -4109,6 +4154,12 @@
     app.querySelectorAll("[data-pane]").forEach((b) => {
       b.onclick = () => {
         state.practicePane = b.getAttribute("data-pane");
+        renderPractice();
+      };
+    });
+    app.querySelectorAll("[data-sort]").forEach((b) => {
+      b.onclick = () => {
+        state.practiceSort = b.getAttribute("data-sort");
         renderPractice();
       };
     });
