@@ -3985,7 +3985,7 @@
       <p class="simple-day-sync muted">Today · ${escapeHtml(subjectTitle)} · D${state.day}/${maxDay()}</p>`;
 
     function bankStrip(banks) {
-      return `<div class="hz-strip" role="listbox" aria-label="Banks">
+      return `<aside class="hz-strip" role="listbox" aria-label="Banks">
         ${banks
           .map((b) =>
             bankChip({
@@ -3996,13 +3996,25 @@
             })
           )
           .join("")}
-      </div>`;
+      </aside>`;
     }
 
     function sizeBar(mode) {
-      return `<div class="hz-size-bar">
-        <span class="hz-size-label">${selectedN} Q</span>
-        <div class="hz-size-chips">${sizeChips(selectedPool, selectedN, mode)}</div>
+      const label =
+        (pane === "mcqs" || pane === "mock" || pane === "always"
+          ? mcqBanks.concat(mockBanks).find((b) => b.pool === selectedPool)
+          : null) || { label: selectedPool };
+      const nice =
+        pane === "always"
+          ? "Always"
+          : (mockBanks.find((b) => b.pool === selectedPool) ||
+              mcqBanks.find((b) => b.pool === selectedPool) ||
+              label).label;
+      return `<div class="hz-main">
+        <div class="hz-size-bar">
+          <span class="hz-size-label">${escapeHtml(String(nice))} · ${selectedN} Q</span>
+          <div class="hz-size-chips">${sizeChips(selectedPool, selectedN, mode)}</div>
+        </div>
       </div>`;
     }
 
@@ -4011,50 +4023,65 @@
     if (pane === "always") {
       body = `
         <p class="hz-hint" dir="rtl">Always · الأسئلة المتكررة · ${nAlways} MCQs · ${acRules.length} rules</p>
-        ${bankStrip([{ pool: "always_src", label: "Always MCQs", today: true }])}
-        ${sizeBar("learn")}
-        <div class="hz-actions">
-          <button type="button" class="btn sm" id="ac-open-cards">Cards</button>
-          <button type="button" class="btn sm ghost" id="ac-full-page">All rules</button>
-        </div>
-        <div class="hz-rules-scroll">
-          ${acRules
-            .slice(0, 24)
-            .map((r, i) => {
-              const front = Array.isArray(r) ? r[0] : r && r.front;
-              const back = Array.isArray(r) ? r[1] : r && r.back;
-              if (!front) return "";
-              return `<div class="hz-rule"><b>${i + 1}.</b> ${escapeHtml(String(front).replace(/^\d+\.\s*/, ""))}${
-                back ? ` — <span class="muted">${escapeHtml(String(back))}</span>` : ""
-              }</div>`;
-            })
-            .join("")}
+        <div class="hz-layout">
+          ${bankStrip([{ pool: "always_src", label: "Always MCQs", today: true }])}
+          <div class="hz-main">
+            <div class="hz-size-bar">
+              <span class="hz-size-label">Always · ${nAlways} Q</span>
+              <div class="hz-size-chips">${sizeChips("always_src", nAlways, "learn")}</div>
+            </div>
+            <div class="hz-actions">
+              <button type="button" class="btn sm" id="ac-open-cards">Cards</button>
+              <button type="button" class="btn sm ghost" id="ac-full-page">All rules</button>
+            </div>
+            <div class="hz-rules-scroll">
+              ${acRules
+                .slice(0, 24)
+                .map((r, i) => {
+                  const front = Array.isArray(r) ? r[0] : r && r.front;
+                  const back = Array.isArray(r) ? r[1] : r && r.back;
+                  if (!front) return "";
+                  return `<div class="hz-rule"><b>${i + 1}.</b> ${escapeHtml(String(front).replace(/^\d+\.\s*/, ""))}${
+                    back ? ` — <span class="muted">${escapeHtml(String(back))}</span>` : ""
+                  }</div>`;
+                })
+                .join("")}
+            </div>
+          </div>
         </div>`;
     } else if (pane === "mcqs") {
       body = `
-        <p class="hz-hint">Bank → size. Swipe banks sideways.</p>
-        ${bankStrip(mcqBanks)}
-        ${sizeBar("learn")}`;
+        <p class="hz-hint">Select bank (all visible) → size</p>
+        <div class="hz-layout">
+          ${bankStrip(mcqBanks)}
+          ${sizeBar("learn")}
+        </div>`;
     } else if (pane === "cards") {
       const deck = lessonCardDeck(L);
       const deckN = cardPoolForDeck(deck).length;
       const abtalN = cardPoolForDeck("abtal_notes").length;
       const wrongN = cardPoolForDeck("wrong").length;
       body = `
-        <p class="hz-hint">${cardN} cards · pick a deck</p>
-        <div class="hz-strip">
-          <button type="button" class="hz-bank is-today is-on" id="cards-today"><span class="hz-bank-name">Today</span><span class="hz-bank-n">${deckN}</span></button>
-          <button type="button" class="hz-bank" id="cards-abtal"><span class="hz-bank-name">أبطال notes</span><span class="hz-bank-n">${abtalN}</span></button>
-          <button type="button" class="hz-bank" id="cards-all"><span class="hz-bank-name">All</span><span class="hz-bank-n">${cardN}</span></button>
-          <button type="button" class="hz-bank" id="cards-wrong"><span class="hz-bank-name">Wrong</span><span class="hz-bank-n">${wrongN}</span></button>
-          <button type="button" class="hz-bank" id="cards-always"><span class="hz-bank-name">Always</span><span class="hz-bank-n">${cardPoolForDeck("always").length}</span></button>
-        </div>
-        <p class="muted hz-hint">Tap a deck to open (shuffled, enriched).</p>`;
+        <p class="hz-hint">${cardN} cards · all decks visible</p>
+        <div class="hz-layout">
+          <aside class="hz-strip">
+            <button type="button" class="hz-bank is-today" id="cards-today"><span class="hz-bank-name">Today</span><span class="hz-bank-n">${deckN}</span></button>
+            <button type="button" class="hz-bank" id="cards-abtal"><span class="hz-bank-name">أبطال notes</span><span class="hz-bank-n">${abtalN}</span></button>
+            <button type="button" class="hz-bank" id="cards-all"><span class="hz-bank-name">All</span><span class="hz-bank-n">${cardN}</span></button>
+            <button type="button" class="hz-bank" id="cards-wrong"><span class="hz-bank-name">Wrong</span><span class="hz-bank-n">${wrongN}</span></button>
+            <button type="button" class="hz-bank" id="cards-always"><span class="hz-bank-name">Always</span><span class="hz-bank-n">${cardPoolForDeck("always").length}</span></button>
+          </aside>
+          <div class="hz-main">
+            <p class="muted">Tap a deck on the left to open.</p>
+          </div>
+        </div>`;
     } else {
       body = `
-        <p class="hz-hint">Mock · <b>72s / question</b> · exam mode</p>
-        ${bankStrip(mockBanks)}
-        ${sizeBar("exam")}`;
+        <p class="hz-hint">Mock · <b>72s / question</b></p>
+        <div class="hz-layout">
+          ${bankStrip(mockBanks)}
+          ${sizeBar("exam")}
+        </div>`;
     }
 
     app.innerHTML = `
